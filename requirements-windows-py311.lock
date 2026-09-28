@@ -1,0 +1,75 @@
+# Hash-checked Windows Python 3.11.9 full DineIQ runtime/test lock
+# Generated from downloaded artifacts on 2026-09-28.
+# Install with pip using --require-hashes and the matching --find-links directory.
+--no-index
+--find-links results/submission/dependencies/windows-py311
+blinker==1.9.0 \
+    --hash=sha256:ba0efaa9080b619ff2f3459d1d500c57bddea4a6b424b60a91141db6fd2f08bc  # blinker-1.9.0-py3-none-any.whl
+certifi==2026.7.22 \
+    --hash=sha256:62f22742b58a1a33014a2b6b706588a8d7e2a88ae7bd1a6ebe8c992928483775  # certifi-2026.7.22-py3-none-any.whl
+charset-normalizer==3.5.1 \
+    --hash=sha256:f9b1e28d0e8dbfa858abdba91d6b547beaf2df1a59bec6da6faae7b96a4991a9  # charset_normalizer-3.5.1-cp311-cp311-win_amd64.whl
+click==8.5.0 \
+    --hash=sha256:255bc9599cf7748b4b1a446ccc735421bd08a2ae529a8b88597d3de5664ee360  # click-8.5.0-py3-none-any.whl
+cloudpickle==3.1.2 \
+    --hash=sha256:9acb47f6afd73f60dc1df93bb801b472f05ff42fa6c84167d25cb206be1fbf4a  # cloudpickle-3.1.2-py3-none-any.whl
+colorama==0.4.6 \
+    --hash=sha256:4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6  # colorama-0.4.6-py2.py3-none-any.whl
+flask==3.1.3 \
+    --hash=sha256:f4bcbefc124291925f1a26446da31a5178f9483862233b23c0c96a20701f670c  # flask-3.1.3-py3-none-any.whl
+idna==3.20 \
+    --hash=sha256:ab7ae7122974553370f0bdb919e1a960b2cd1bc1ef0276416d896db81c14582c  # idna-3.20-py3-none-any.whl
+iniconfig==2.3.0 \
+    --hash=sha256:f631c04d2c48c52b84d0d0549c99ff3859c98df65b3101406327ecc7d53fbf12  # iniconfig-2.3.0-py3-none-any.whl
+itsdangerous==2.2.0 \
+    --hash=sha256:c6242fc49e35958c8b15141343aa660db5fc54d4f13a1db01a3f5891b98700ef  # itsdangerous-2.2.0-py3-none-any.whl
+jinja2==3.1.6 \
+    --hash=sha256:85ece4451f492d0c13c5dd7c13a64681a86afae63a5f347908daf103ce6d2f67  # jinja2-3.1.6-py3-none-any.whl
+joblib==1.6.0 \
+    --hash=sha256:3dbbf9f6e4b592a2357b854608e980fe6390d131d7a82f011a377ef2ebef7aba  # joblib-1.6.0-py3-none-any.whl
+markupsafe==3.0.3 \
+    --hash=sha256:de8a88e63464af587c950061a5e6a67d3632e36df62b986892331d4620a35c01  # markupsafe-3.0.3-cp311-cp311-win_amd64.whl
+narwhals==2.26.0 \
+    --hash=sha256:29326d74f107c347fd1009bd58e38d9f7c7c5b51e6de97bc93dbc325d9038b54  # narwhals-2.26.0-py3-none-any.whl
+numpy==2.4.6 \
+    --hash=sha256:1e254a00cdf42b1e4d5b3d68d33af63268d41340d8885df2ab6470f2e1500147  # numpy-2.4.6-cp311-cp311-win_amd64.whl
+packaging==26.3 \
+    --hash=sha256:d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c  # packaging-26.3-py3-none-any.whl
+pandas==3.0.6 \
+    --hash=sha256:2e5fa32ff162dfdbc280157d664f44d23049ae414725af9676df339c501d82cd  # pandas-3.0.6-cp311-cp311-win_amd64.whl
+pluggy==1.6.0 \
+    --hash=sha256:e920276dd6813095e9377c0bc5566d94c932c33b27a3e3945d8389c374dd4746  # pluggy-1.6.0-py3-none-any.whl
+psutil==7.0.0 \
+    --hash=sha256:4cf3d4eb1aa9b348dec30105c55cd9b7d4629285735a102beb4441e38db90553  # psutil-7.0.0-cp37-abi3-win_amd64.whl
+py4j==0.10.9.7 \
+    --hash=sha256:85defdfd2b2376eb3abf5ca6474b51ab7e0de341c75a02f46dc9b5976f5a5c1b  # py4j-0.10.9.7-py2.py3-none-any.whl
+pyarrow==25.0.1 \
+    --hash=sha256:62cd0d785b8aa6675ee355f9fc02252a340f4441257c42674937826fd7594325  # pyarrow-25.0.1-cp311-cp311-win_amd64.whl
+pygments==2.21.0 \
+    --hash=sha256:2363c69b61c4a97c838da3b130dcd6468f4848992b21a82f2a63ec34377137d9  # pygments-2.21.0-py3-none-any.whl
+pyspark==3.5.7 \
+    --hash=sha256:80e36514e0c5c126d35a26adf4f405cd4a69de96a8ea8a3c1e9a65fce2fb4eaa  # pyspark-3.5.7.tar.gz
+pytest==8.4.1 \
+    --hash=sha256:539c70ba6fcead8e78eebbf1115e8b589e7565830d7d006a8723f19ac8a0afb7  # pytest-8.4.1-py3-none-any.whl
+python-dateutil==2.9.0.post0 \
+    --hash=sha256:a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427  # python_dateutil-2.9.0.post0-py2.py3-none-any.whl
+requests==2.32.3 \
+    --hash=sha256:70761cfe03c773ceb22aa2f671b4757976145175cdfca038c02654d061d6dcc6  # requests-2.32.3-py3-none-any.whl
+scikit-learn==1.9.1 \
+    --hash=sha256:220fa18152852a5ce29c49e1eaba9d44ec44631cd2e5cf65f5a40eafa5ab3412  # scikit_learn-1.9.1-cp311-cp311-win_amd64.whl
+scipy==1.17.1 \
+    --hash=sha256:d30e57c72013c2a4fe441c2fcb8e77b14e152ad48b5464858e07e2ad9fbfceff  # scipy-1.17.1-cp311-cp311-win_amd64.whl
+six==1.17.0 \
+    --hash=sha256:4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274  # six-1.17.0-py2.py3-none-any.whl
+threadpoolctl==3.7.0 \
+    --hash=sha256:cd8b60b5641b45c67bbf73c64c843235fc2d8a480c87389f52f5dbee893b86be  # threadpoolctl-3.7.0-py3-none-any.whl
+tzdata==2026.4 \
+    --hash=sha256:c2169a8b0a7a5e9674da5a135ccdfb2b3e671b333ed9fed17b41f73c34476e81  # tzdata-2026.4-py2.py3-none-any.whl
+urllib3==2.8.0 \
+    --hash=sha256:0cf3cae568d36aa9576b28dfb35f11328f1cb974ca7647d9475ebb86c75ac6e3  # urllib3-2.8.0-py3-none-any.whl
+waitress==3.0.2 \
+    --hash=sha256:c56d67fd6e87c2ee598b76abdd4e96cfad1f24cacdea5078d382b1f9d7b5ed2e  # waitress-3.0.2-py3-none-any.whl
+websocket-client==1.9.2 \
+    --hash=sha256:e1a673830a9c7bfa47b1cd3d5e4178f4c9651d80a4eab02c9c23a1c3ec6250ce  # websocket_client-1.9.2-py3-none-any.whl
+werkzeug==3.1.8 \
+    --hash=sha256:63a77fb8892bf28ebc3178683445222aa500e48ebad5ec77b0ad80f8726b1f50  # werkzeug-3.1.8-py3-none-any.whl

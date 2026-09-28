@@ -1,0 +1,64 @@
+DineIQ
+
+ANALYTICS PLATFORM
+
+OVERVIEW
+
+Executive Dashboard
+
+INTELLIGENCE
+
+Menu Intelligence
+Customer Intelligence
+Basket & Bundles
+
+OPERATIONS
+
+Demand Forecast
+Wastage
+Locations
+Channels
+
+DECISIONS & ACTIONS
+
+Pricing & Promotions
+Anomalies
+Recommendations
+What-If Simulator
+
+PLATFORM
+
+Model Comparison
+Reports & Export
+Admin
+Collapse
+Channels
+Full history –
+Outlets:
+All outlets
+Categories:
+All categories
+Channels:
+Takeaway
+API CONNECTED
+API CONNECTED
+Search
+⌘K
+F
+frontend-verification@dineq.local
+Administrator
+Channel Economics
+
+Dine-in, delivery, takeaway and app side by side — one card per channel
+
+Loading analytics…
+Channel × Hour Order Heatmap
+
+Orders per channel per trading hour · rows sum to each channel’s 30-day total
+
+Loading analytics…
+Channel Comparison
+
+Full economics rows per channel, as shipped by the backend
+
+Loading analytics…

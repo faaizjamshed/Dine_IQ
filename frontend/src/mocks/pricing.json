@@ -1,0 +1,836 @@
+{
+  "data": {
+    "periodLabel": "Aug 25 – Sep 23, 2026",
+    "pricingKpis": {
+      "itemsAnalyzed": 52,
+      "avgElasticity": -1.1,
+      "inelasticItems": 21,
+      "elasticItems": 31,
+      "testCandidates": 10,
+      "revenueAtStake": 4886600
+    },
+    "elasticity": [
+      {
+        "itemId": "itm-032",
+        "name": "Loaded Fries",
+        "category": "Snacks & Sides",
+        "currentPrice": 420,
+        "elasticity": -1.9,
+        "marginPct": 23.8,
+        "trendPct": -11.1,
+        "recommendation": "hold",
+        "rationale": "Elasticity -1.9 with 23.8% margin — current price sits inside its efficient band.",
+        "confidence": 0.76
+      },
+      {
+        "itemId": "itm-042",
+        "name": "Fresh Lime Soda",
+        "category": "Beverages",
+        "currentPrice": 190,
+        "elasticity": -1.83,
+        "marginPct": 36,
+        "trendPct": 8.4,
+        "recommendation": "hold",
+        "rationale": "Elasticity -1.83 with 36% margin — current price sits inside its efficient band.",
+        "confidence": 0.8
+      },
+      {
+        "itemId": "itm-035",
+        "name": "Mozzarella Sticks",
+        "category": "Snacks & Sides",
+        "currentPrice": 450,
+        "elasticity": -1.69,
+        "marginPct": 13,
+        "trendPct": 20.7,
+        "recommendation": "hold",
+        "rationale": "Elasticity -1.69 with 13% margin — current price sits inside its efficient band.",
+        "confidence": 0.66
+      },
+      {
+        "itemId": "itm-038",
+        "name": "Falooda",
+        "category": "Desserts",
+        "currentPrice": 340,
+        "elasticity": -1.69,
+        "marginPct": 31.4,
+        "trendPct": 12.5,
+        "recommendation": "hold",
+        "rationale": "Elasticity -1.69 with 31.4% margin — current price sits inside its efficient band.",
+        "confidence": 0.85
+      },
+      {
+        "itemId": "itm-043",
+        "name": "Mango Lassi",
+        "category": "Beverages",
+        "currentPrice": 280,
+        "elasticity": -1.69,
+        "marginPct": 28.1,
+        "trendPct": 20.8,
+        "recommendation": "hold",
+        "rationale": "Elasticity -1.69 with 28.1% margin — current price sits inside its efficient band.",
+        "confidence": 0.7
+      },
+      {
+        "itemId": "itm-033",
+        "name": "Masala Fries",
+        "category": "Snacks & Sides",
+        "currentPrice": 280,
+        "elasticity": -1.66,
+        "marginPct": 29.9,
+        "trendPct": -9,
+        "recommendation": "hold",
+        "rationale": "Elasticity -1.66 with 29.9% margin — current price sits inside its efficient band.",
+        "confidence": 0.74
+      },
+      {
+        "itemId": "itm-041",
+        "name": "Cold Coffee",
+        "category": "Beverages",
+        "currentPrice": 320,
+        "elasticity": -1.66,
+        "marginPct": 27.1,
+        "trendPct": -3.1,
+        "recommendation": "hold",
+        "rationale": "Elasticity -1.66 with 27.1% margin — current price sits inside its efficient band.",
+        "confidence": 0.75
+      },
+      {
+        "itemId": "itm-040",
+        "name": "Mint Margarita",
+        "category": "Beverages",
+        "currentPrice": 220,
+        "elasticity": -1.62,
+        "marginPct": 41.6,
+        "trendPct": -7.8,
+        "recommendation": "hold",
+        "rationale": "Elasticity -1.62 with 41.6% margin — current price sits inside its efficient band.",
+        "confidence": 0.88
+      },
+      {
+        "itemId": "itm-020",
+        "name": "Zinger Burger",
+        "category": "Burgers & Sandwiches",
+        "currentPrice": 620,
+        "elasticity": -1.52,
+        "marginPct": 26.9,
+        "trendPct": 14.7,
+        "recommendation": "hold",
+        "rationale": "Elasticity -1.52 with 26.9% margin — current price sits inside its efficient band.",
+        "confidence": 0.75
+      },
+      {
+        "itemId": "itm-026",
+        "name": "Beef Paratha Roll",
+        "category": "Wraps & Rolls",
+        "currentPrice": 420,
+        "elasticity": -1.5,
+        "marginPct": 31.7,
+        "trendPct": 6.8,
+        "recommendation": "hold",
+        "rationale": "Elasticity -1.5 with 31.7% margin — current price sits inside its efficient band.",
+        "confidence": 0.78
+      },
+      {
+        "itemId": "itm-037",
+        "name": "Kheer",
+        "category": "Desserts",
+        "currentPrice": 260,
+        "elasticity": -1.5,
+        "marginPct": 35.7,
+        "trendPct": -11.3,
+        "recommendation": "hold",
+        "rationale": "Elasticity -1.5 with 35.7% margin — current price sits inside its efficient band.",
+        "confidence": 0.75
+      },
+      {
+        "itemId": "itm-034",
+        "name": "Chicken Nuggets",
+        "category": "Snacks & Sides",
+        "currentPrice": 380,
+        "elasticity": -1.45,
+        "marginPct": 16.2,
+        "trendPct": 23.4,
+        "recommendation": "hold",
+        "rationale": "Elasticity -1.45 with 16.2% margin — current price sits inside its efficient band.",
+        "confidence": 0.65
+      },
+      {
+        "itemId": "itm-039",
+        "name": "Chocolate Lava Cake",
+        "category": "Desserts",
+        "currentPrice": 490,
+        "elasticity": -1.44,
+        "marginPct": 9.9,
+        "trendPct": -2.6,
+        "recommendation": "hold",
+        "rationale": "Elasticity -1.44 with 9.9% margin — current price sits inside its efficient band.",
+        "confidence": 0.73
+      },
+      {
+        "itemId": "itm-024",
+        "name": "Chicken Shawarma",
+        "category": "Wraps & Rolls",
+        "currentPrice": 350,
+        "elasticity": -1.42,
+        "marginPct": 22.2,
+        "trendPct": 0,
+        "recommendation": "hold",
+        "rationale": "Elasticity -1.42 with 22.2% margin — current price sits inside its efficient band.",
+        "confidence": 0.8
+      },
+      {
+        "itemId": "itm-021",
+        "name": "Beef Burger",
+        "category": "Burgers & Sandwiches",
+        "currentPrice": 580,
+        "elasticity": -1.4,
+        "marginPct": 25.3,
+        "trendPct": -9.8,
+        "recommendation": "hold",
+        "rationale": "Elasticity -1.4 with 25.3% margin — current price sits inside its efficient band.",
+        "confidence": 0.64
+      },
+      {
+        "itemId": "itm-036",
+        "name": "Gulab Jamun",
+        "category": "Desserts",
+        "currentPrice": 220,
+        "elasticity": -1.38,
+        "marginPct": 37.7,
+        "trendPct": 11.6,
+        "recommendation": "hold",
+        "rationale": "Elasticity -1.38 with 37.7% margin — current price sits inside its efficient band.",
+        "confidence": 0.79
+      },
+      {
+        "itemId": "itm-046",
+        "name": "Russian Salad",
+        "category": "Soups & Salads",
+        "currentPrice": 290,
+        "elasticity": -1.27,
+        "marginPct": 13,
+        "trendPct": -12.6,
+        "recommendation": "reduce",
+        "rationale": "Volume fading -12.6% at a 13% margin — a small reduction defends contribution before the trend locks in.",
+        "confidence": 0.9
+      },
+      {
+        "itemId": "itm-003",
+        "name": "Mutton Biryani",
+        "category": "Biryani & Rice",
+        "currentPrice": 720,
+        "elasticity": -1.25,
+        "marginPct": 32.4,
+        "trendPct": -5.2,
+        "recommendation": "hold",
+        "rationale": "Elasticity -1.25 with 32.4% margin — current price sits inside its efficient band.",
+        "confidence": 0.86
+      },
+      {
+        "itemId": "itm-005",
+        "name": "Mutton Pulao",
+        "category": "Biryani & Rice",
+        "currentPrice": 690,
+        "elasticity": -1.23,
+        "marginPct": 12.3,
+        "trendPct": -4.4,
+        "recommendation": "hold",
+        "rationale": "Elasticity -1.23 with 12.3% margin — current price sits inside its efficient band.",
+        "confidence": 0.87
+      },
+      {
+        "itemId": "itm-006",
+        "name": "Zarda",
+        "category": "Biryani & Rice",
+        "currentPrice": 250,
+        "elasticity": -1.23,
+        "marginPct": 10.4,
+        "trendPct": 12.7,
+        "recommendation": "hold",
+        "rationale": "Elasticity -1.23 with 10.4% margin — current price sits inside its efficient band.",
+        "confidence": 0.81
+      },
+      {
+        "itemId": "itm-044",
+        "name": "Chicken Corn Soup",
+        "category": "Soups & Salads",
+        "currentPrice": 320,
+        "elasticity": -1.23,
+        "marginPct": 26.3,
+        "trendPct": 11,
+        "recommendation": "hold",
+        "rationale": "Elasticity -1.23 with 26.3% margin — current price sits inside its efficient band.",
+        "confidence": 0.68
+      },
+      {
+        "itemId": "itm-025",
+        "name": "Chicken Paratha Roll",
+        "category": "Wraps & Rolls",
+        "currentPrice": 380,
+        "elasticity": -1.21,
+        "marginPct": 24.6,
+        "trendPct": -3.6,
+        "recommendation": "hold",
+        "rationale": "Elasticity -1.21 with 24.6% margin — current price sits inside its efficient band.",
+        "confidence": 0.77
+      },
+      {
+        "itemId": "itm-002",
+        "name": "Beef Biryani",
+        "category": "Biryani & Rice",
+        "currentPrice": 550,
+        "elasticity": -1.16,
+        "marginPct": 36.2,
+        "trendPct": 8.4,
+        "recommendation": "hold",
+        "rationale": "Elasticity -1.16 with 36.2% margin — current price sits inside its efficient band.",
+        "confidence": 0.75
+      },
+      {
+        "itemId": "itm-023",
+        "name": "Club Sandwich",
+        "category": "Burgers & Sandwiches",
+        "currentPrice": 520,
+        "elasticity": -1.13,
+        "marginPct": 11.3,
+        "trendPct": 7.2,
+        "recommendation": "hold",
+        "rationale": "Elasticity -1.13 with 11.3% margin — current price sits inside its efficient band.",
+        "confidence": 0.65
+      },
+      {
+        "itemId": "itm-027",
+        "name": "Shawarma Roll",
+        "category": "Wraps & Rolls",
+        "currentPrice": 320,
+        "elasticity": -1.12,
+        "marginPct": 9.8,
+        "trendPct": 2.2,
+        "recommendation": "hold",
+        "rationale": "Elasticity -1.12 with 9.8% margin — current price sits inside its efficient band.",
+        "confidence": 0.79
+      },
+      {
+        "itemId": "itm-022",
+        "name": "Grilled Chicken Burger",
+        "category": "Burgers & Sandwiches",
+        "currentPrice": 640,
+        "elasticity": -1.11,
+        "marginPct": 10.2,
+        "trendPct": 18.8,
+        "recommendation": "hold",
+        "rationale": "Elasticity -1.11 with 10.2% margin — current price sits inside its efficient band.",
+        "confidence": 0.65
+      },
+      {
+        "itemId": "itm-028",
+        "name": "Chicken Chowmein",
+        "category": "Chinese",
+        "currentPrice": 690,
+        "elasticity": -1.07,
+        "marginPct": 28.6,
+        "trendPct": -4,
+        "recommendation": "hold",
+        "rationale": "Elasticity -1.07 with 28.6% margin — current price sits inside its efficient band.",
+        "confidence": 0.64
+      },
+      {
+        "itemId": "itm-052",
+        "name": "Chai",
+        "category": "Breakfast",
+        "currentPrice": 120,
+        "elasticity": -1.05,
+        "marginPct": 35.9,
+        "trendPct": -3.6,
+        "recommendation": "test",
+        "rationale": "Mid-band elasticity (-1.05) and 35.9% margin — an A/B price test beats a national move.",
+        "confidence": 0.65
+      },
+      {
+        "itemId": "itm-045",
+        "name": "Hot & Sour Soup",
+        "category": "Soups & Salads",
+        "currentPrice": 320,
+        "elasticity": -1.02,
+        "marginPct": 34,
+        "trendPct": -4.6,
+        "recommendation": "test",
+        "rationale": "Mid-band elasticity (-1.02) and 34% margin — an A/B price test beats a national move.",
+        "confidence": 0.88
+      },
+      {
+        "itemId": "itm-019",
+        "name": "Grill Platter",
+        "category": "BBQ & Kebabs",
+        "currentPrice": 2450,
+        "elasticity": -1.01,
+        "marginPct": 33.4,
+        "trendPct": -2.9,
+        "recommendation": "test",
+        "rationale": "Mid-band elasticity (-1.01) and 33.4% margin — an A/B price test beats a national move.",
+        "confidence": 0.79
+      },
+      {
+        "itemId": "itm-029",
+        "name": "Chicken Manchurian",
+        "category": "Chinese",
+        "currentPrice": 750,
+        "elasticity": -1.01,
+        "marginPct": 33.3,
+        "trendPct": 12,
+        "recommendation": "test",
+        "rationale": "Mid-band elasticity (-1.01) and 33.3% margin — an A/B price test beats a national move.",
+        "confidence": 0.84
+      },
+      {
+        "itemId": "itm-007",
+        "name": "Haleem",
+        "category": "Biryani & Rice",
+        "currentPrice": 380,
+        "elasticity": -0.99,
+        "marginPct": 31.3,
+        "trendPct": -7.3,
+        "recommendation": "test",
+        "rationale": "Mid-band elasticity (-0.99) and 31.3% margin — an A/B price test beats a national move.",
+        "confidence": 0.72
+      },
+      {
+        "itemId": "itm-001",
+        "name": "Chicken Biryani",
+        "category": "Biryani & Rice",
+        "currentPrice": 480,
+        "elasticity": -0.97,
+        "marginPct": 35.3,
+        "trendPct": -10.7,
+        "recommendation": "test",
+        "rationale": "Mid-band elasticity (-0.97) and 35.3% margin — an A/B price test beats a national move.",
+        "confidence": 0.63
+      },
+      {
+        "itemId": "itm-015",
+        "name": "Seekh Kebab",
+        "category": "BBQ & Kebabs",
+        "currentPrice": 560,
+        "elasticity": -0.96,
+        "marginPct": 40.2,
+        "trendPct": -4.1,
+        "recommendation": "test",
+        "rationale": "Mid-band elasticity (-0.96) and 40.2% margin — an A/B price test beats a national move.",
+        "confidence": 0.66
+      },
+      {
+        "itemId": "itm-030",
+        "name": "Egg Fried Rice",
+        "category": "Chinese",
+        "currentPrice": 480,
+        "elasticity": -0.95,
+        "marginPct": 11.9,
+        "trendPct": 19,
+        "recommendation": "hold",
+        "rationale": "Elasticity -0.95 with 11.9% margin — current price sits inside its efficient band.",
+        "confidence": 0.9
+      },
+      {
+        "itemId": "itm-004",
+        "name": "Chicken Pulao",
+        "category": "Biryani & Rice",
+        "currentPrice": 450,
+        "elasticity": -0.94,
+        "marginPct": 26.2,
+        "trendPct": -6.9,
+        "recommendation": "hold",
+        "rationale": "Elasticity -0.94 with 26.2% margin — current price sits inside its efficient band.",
+        "confidence": 0.84
+      },
+      {
+        "itemId": "itm-018",
+        "name": "Behari Kebab",
+        "category": "BBQ & Kebabs",
+        "currentPrice": 590,
+        "elasticity": -0.94,
+        "marginPct": 27.4,
+        "trendPct": -10.7,
+        "recommendation": "hold",
+        "rationale": "Elasticity -0.94 with 27.4% margin — current price sits inside its efficient band.",
+        "confidence": 0.88
+      },
+      {
+        "itemId": "itm-031",
+        "name": "Dragon Chicken",
+        "category": "Chinese",
+        "currentPrice": 890,
+        "elasticity": -0.92,
+        "marginPct": 12.5,
+        "trendPct": 12.3,
+        "recommendation": "hold",
+        "rationale": "Elasticity -0.92 with 12.5% margin — current price sits inside its efficient band.",
+        "confidence": 0.71
+      },
+      {
+        "itemId": "itm-050",
+        "name": "Halwa Puri",
+        "category": "Breakfast",
+        "currentPrice": 290,
+        "elasticity": -0.92,
+        "marginPct": 22.5,
+        "trendPct": 6,
+        "recommendation": "hold",
+        "rationale": "Elasticity -0.92 with 22.5% margin — current price sits inside its efficient band.",
+        "confidence": 0.85
+      },
+      {
+        "itemId": "itm-014",
+        "name": "Chicken Tikka",
+        "category": "BBQ & Kebabs",
+        "currentPrice": 520,
+        "elasticity": -0.89,
+        "marginPct": 40.5,
+        "trendPct": 0.3,
+        "recommendation": "test",
+        "rationale": "Mid-band elasticity (-0.89) and 40.5% margin — an A/B price test beats a national move.",
+        "confidence": 0.81
+      },
+      {
+        "itemId": "itm-016",
+        "name": "Malai Boti",
+        "category": "BBQ & Kebabs",
+        "currentPrice": 640,
+        "elasticity": -0.87,
+        "marginPct": 28.3,
+        "trendPct": 1.8,
+        "recommendation": "hold",
+        "rationale": "Elasticity -0.87 with 28.3% margin — current price sits inside its efficient band.",
+        "confidence": 0.76
+      },
+      {
+        "itemId": "itm-051",
+        "name": "Omelette Paratha",
+        "category": "Breakfast",
+        "currentPrice": 240,
+        "elasticity": -0.87,
+        "marginPct": 15.5,
+        "trendPct": 18.5,
+        "recommendation": "hold",
+        "rationale": "Elasticity -0.87 with 15.5% margin — current price sits inside its efficient band.",
+        "confidence": 0.9
+      },
+      {
+        "itemId": "itm-017",
+        "name": "Chapli Kebab",
+        "category": "BBQ & Kebabs",
+        "currentPrice": 480,
+        "elasticity": -0.86,
+        "marginPct": 34.2,
+        "trendPct": -2.4,
+        "recommendation": "test",
+        "rationale": "Mid-band elasticity (-0.86) and 34.2% margin — an A/B price test beats a national move.",
+        "confidence": 0.63
+      },
+      {
+        "itemId": "itm-048",
+        "name": "Family Feast Deal",
+        "category": "Family Deals",
+        "currentPrice": 3900,
+        "elasticity": -0.8,
+        "marginPct": 36.6,
+        "trendPct": 21.8,
+        "recommendation": "test",
+        "rationale": "Mid-band elasticity (-0.8) and 36.6% margin — an A/B price test beats a national move.",
+        "confidence": 0.91
+      },
+      {
+        "itemId": "itm-049",
+        "name": "Jumbo Platter",
+        "category": "Family Deals",
+        "currentPrice": 4600,
+        "elasticity": -0.66,
+        "marginPct": 14.3,
+        "trendPct": 2.5,
+        "recommendation": "hold",
+        "rationale": "Elasticity -0.66 with 14.3% margin — current price sits inside its efficient band.",
+        "confidence": 0.85
+      },
+      {
+        "itemId": "itm-047",
+        "name": "Deal for Two",
+        "category": "Family Deals",
+        "currentPrice": 2200,
+        "elasticity": -0.65,
+        "marginPct": 34.5,
+        "trendPct": 4.8,
+        "recommendation": "raise",
+        "rationale": "Inelastic demand (-0.65) with 34.5% margin — a 5% test increase is projected to hold volume within 3.5%.",
+        "confidence": 0.72
+      },
+      {
+        "itemId": "itm-009",
+        "name": "Mutton Karahi",
+        "category": "Karahi & Handi",
+        "currentPrice": 2400,
+        "elasticity": -0.48,
+        "marginPct": 38.1,
+        "trendPct": 4.5,
+        "recommendation": "raise",
+        "rationale": "Inelastic demand (-0.48) with 38.1% margin — a 5% test increase is projected to hold volume within 3.5%.",
+        "confidence": 0.83
+      },
+      {
+        "itemId": "itm-012",
+        "name": "Mutton Handi",
+        "category": "Karahi & Handi",
+        "currentPrice": 2200,
+        "elasticity": -0.48,
+        "marginPct": 11.9,
+        "trendPct": 20.7,
+        "recommendation": "hold",
+        "rationale": "Elasticity -0.48 with 11.9% margin — current price sits inside its efficient band.",
+        "confidence": 0.84
+      },
+      {
+        "itemId": "itm-013",
+        "name": "Nihari",
+        "category": "Karahi & Handi",
+        "currentPrice": 540,
+        "elasticity": -0.47,
+        "marginPct": 31.5,
+        "trendPct": 13.6,
+        "recommendation": "hold",
+        "rationale": "Elasticity -0.47 with 31.5% margin — current price sits inside its efficient band.",
+        "confidence": 0.91
+      },
+      {
+        "itemId": "itm-011",
+        "name": "Chicken Handi",
+        "category": "Karahi & Handi",
+        "currentPrice": 1450,
+        "elasticity": -0.46,
+        "marginPct": 24.1,
+        "trendPct": 18.7,
+        "recommendation": "hold",
+        "rationale": "Elasticity -0.46 with 24.1% margin — current price sits inside its efficient band.",
+        "confidence": 0.82
+      },
+      {
+        "itemId": "itm-008",
+        "name": "Chicken Karahi",
+        "category": "Karahi & Handi",
+        "currentPrice": 1650,
+        "elasticity": -0.39,
+        "marginPct": 35.2,
+        "trendPct": 15.8,
+        "recommendation": "raise",
+        "rationale": "Inelastic demand (-0.39) with 35.2% margin — a 5% test increase is projected to hold volume within 3.5%.",
+        "confidence": 0.91
+      },
+      {
+        "itemId": "itm-010",
+        "name": "White Karahi",
+        "category": "Karahi & Handi",
+        "currentPrice": 1800,
+        "elasticity": -0.38,
+        "marginPct": 36.1,
+        "trendPct": -7.5,
+        "recommendation": "raise",
+        "rationale": "Inelastic demand (-0.38) with 36.1% margin — a 5% test increase is projected to hold volume within 3.5%.",
+        "confidence": 0.82
+      }
+    ],
+    "promoKpis": {
+      "activeCampaigns": 4,
+      "revenueOnPromoPct": 34.6,
+      "avgDiscountPct": 12.5,
+      "positiveRoiCampaigns": 4,
+      "trappedItems": 3
+    },
+    "campaigns": [
+      {
+        "id": "cmp-001",
+        "name": "September Dine-in Week",
+        "channel": "dine_in",
+        "window": "Sep 4 – Sep 8, 2026",
+        "discountPct": 15,
+        "orders": 6120,
+        "revenue": 9860000,
+        "incrementalRevenue": 1040000,
+        "roi": 2.4,
+        "marginImpactPct": -4.1,
+        "status": "completed",
+        "verdict": "scale"
+      },
+      {
+        "id": "cmp-002",
+        "name": "App-exclusive 20% Off",
+        "channel": "app",
+        "window": "Sep 1 – Sep 30, 2026",
+        "discountPct": 20,
+        "orders": 4480,
+        "revenue": 5410000,
+        "incrementalRevenue": 390000,
+        "roi": 1.1,
+        "marginImpactPct": -8.6,
+        "status": "active",
+        "verdict": "optimize"
+      },
+      {
+        "id": "cmp-003",
+        "name": "Weekend Family Deal Push",
+        "channel": "delivery",
+        "window": "Sep 5 – Sep 28, 2026",
+        "discountPct": 10,
+        "orders": 2270,
+        "revenue": 4890000,
+        "incrementalRevenue": -120000,
+        "roi": -0.3,
+        "marginImpactPct": -6.2,
+        "status": "active",
+        "verdict": "retire"
+      },
+      {
+        "id": "cmp-004",
+        "name": "Student Lunch Combo",
+        "channel": "takeaway",
+        "window": "Sep 8 – Sep 30, 2026",
+        "discountPct": 12,
+        "orders": 3810,
+        "revenue": 2140000,
+        "incrementalRevenue": 610000,
+        "roi": 1.9,
+        "marginImpactPct": -2.8,
+        "status": "active",
+        "verdict": "scale"
+      },
+      {
+        "id": "cmp-005",
+        "name": "Free Delivery over PKR 2,000",
+        "channel": "delivery",
+        "window": "Sep 1 – Sep 30, 2026",
+        "discountPct": 0,
+        "orders": 5240,
+        "revenue": 7320000,
+        "incrementalRevenue": 480000,
+        "roi": 1.4,
+        "marginImpactPct": -1.9,
+        "status": "active",
+        "verdict": "optimize"
+      },
+      {
+        "id": "cmp-006",
+        "name": "Iftar Preview Bundles",
+        "channel": "app",
+        "window": "Aug 20 – Sep 2, 2026",
+        "discountPct": 18,
+        "orders": 1990,
+        "revenue": 3410000,
+        "incrementalRevenue": 290000,
+        "roi": 0.9,
+        "marginImpactPct": -5.4,
+        "status": "completed",
+        "verdict": "optimize"
+      }
+    ],
+    "promoTraps": [
+      {
+        "itemId": "itm-020",
+        "name": "Zinger Burger",
+        "promoDependencyPct": 61,
+        "profitOnPromoDaysPct": -18,
+        "evidence": [
+          {
+            "metric": "Promo dependency",
+            "value": "61%",
+            "detail": "Share of volume sold on discount"
+          },
+          {
+            "metric": "Profit on promo days",
+            "value": "-18%",
+            "detail": "Per order vs non-promo days"
+          },
+          {
+            "metric": "Margin",
+            "value": "26.9%",
+            "detail": "Regular-day contribution margin"
+          }
+        ]
+      },
+      {
+        "itemId": "itm-021",
+        "name": "Beef Burger",
+        "promoDependencyPct": 44,
+        "profitOnPromoDaysPct": -12.4,
+        "evidence": [
+          {
+            "metric": "Promo dependency",
+            "value": "44%",
+            "detail": "Share of volume sold on discount"
+          },
+          {
+            "metric": "Profit on promo days",
+            "value": "-12.4%",
+            "detail": "Per order vs non-promo days"
+          },
+          {
+            "metric": "Margin",
+            "value": "25.3%",
+            "detail": "Regular-day contribution margin"
+          }
+        ]
+      },
+      {
+        "itemId": "itm-024",
+        "name": "Chicken Shawarma",
+        "promoDependencyPct": 38,
+        "profitOnPromoDaysPct": -9.1,
+        "evidence": [
+          {
+            "metric": "Promo dependency",
+            "value": "38%",
+            "detail": "Share of volume sold on discount"
+          },
+          {
+            "metric": "Profit on promo days",
+            "value": "-9.1%",
+            "detail": "Per order vs non-promo days"
+          },
+          {
+            "metric": "Margin",
+            "value": "22.2%",
+            "detail": "Regular-day contribution margin"
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "generatedAt": "2026-09-24T08:29:51.861Z",
+    "filters": {},
+    "modelName": "ElasticityModel (Spark MLlib)",
+    "modelVersion": "2.0",
+    "pipeline": "spark"
+  },
+  "insight": {
+    "summary": [
+      "52 items were scored for price elasticity: 21 are inelastic (|e| < 1) and 10 are A/B test candidates this cycle.",
+      "4 of 6 active or recent campaigns clear ROI 1.0; the Weekend Family Deal Push is increment-negative and queued for retirement.",
+      "3 items are promo traps — Zinger Burger depends on discounts for 61% of volume while losing 18% profit per promo order."
+    ],
+    "whyItMatters": "Pricing moves and promotion spend draw on the same margin pool: raising inelastic items funds retirement of negative-ROI discounts, and the trap list shows exactly where discount dependency has become structural.",
+    "evidence": [
+      {
+        "metric": "Inelastic items",
+        "value": "21",
+        "detail": "Safe zone for measured increases"
+      },
+      {
+        "metric": "Campaigns above ROI 1.0",
+        "value": "4 of 6",
+        "detail": "Scale candidates"
+      },
+      {
+        "metric": "Revenue at stake",
+        "value": "PKR 4.9M",
+        "detail": "10% of revenue touches a pricing lever"
+      }
+    ],
+    "period": "Aug 25 – Sep 23, 2026"
+  }
+}

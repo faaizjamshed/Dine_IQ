@@ -1,0 +1,91 @@
+services:
+
+  namenode:
+    image: apache/hadoop:3.4.2
+    container_name: dineq-namenode
+    hostname: namenode
+    user: root
+
+    command:
+      - bash
+      - -c
+      - |
+        mkdir -p /data/dfs/name
+        chown -R hadoop:hadoop /data/dfs
+
+        if [ ! -d /data/dfs/name/current ]; then
+          echo "Formatting NameNode for first-time initialization..."
+          su hadoop -c "hdfs namenode -format -force -nonInteractive"
+        else
+          echo "Existing NameNode metadata found. Skipping format."
+        fi
+
+        exec su hadoop -c "hdfs namenode"
+
+    ports:
+      - "127.0.0.1:9870:9870"
+      - "127.0.0.1:9000:9000"
+
+    volumes:
+      - namenode_data:/data/dfs/name
+      - ./config/core-site.xml:/opt/hadoop/etc/hadoop/core-site.xml:ro
+      - ./config/hdfs-site.xml:/opt/hadoop/etc/hadoop/hdfs-site.xml:ro
+
+    deploy:
+      resources:
+        limits:
+          cpus: "2.0"
+          memory: 2G
+
+    networks:
+      - dineq-network
+
+    restart: unless-stopped
+
+
+  datanode:
+    image: apache/hadoop:3.4.2
+    container_name: dineq-datanode
+    hostname: datanode
+    user: root
+
+    command:
+      - bash
+      - -c
+      - |
+        mkdir -p /data/dfs/data
+        chown -R hadoop:hadoop /data/dfs
+        exec su hadoop -c "hdfs datanode"
+
+    depends_on:
+      - namenode
+
+    ports:
+      - "127.0.0.1:9864:9864"
+      - "127.0.0.1:9866:9866"
+
+    volumes:
+      - datanode_data:/data/dfs/data
+      - ./config/core-site.xml:/opt/hadoop/etc/hadoop/core-site.xml:ro
+      - ./config/hdfs-site.xml:/opt/hadoop/etc/hadoop/hdfs-site.xml:ro
+
+    deploy:
+      resources:
+        limits:
+          cpus: "2.0"
+          memory: 2G
+
+    networks:
+      - dineq-network
+
+    restart: unless-stopped
+
+
+volumes:
+  namenode_data:
+  datanode_data:
+
+
+networks:
+  dineq-network:
+    driver: bridge

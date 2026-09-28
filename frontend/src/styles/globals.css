@@ -1,0 +1,195 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * DineIQ Analytics — Design tokens
+ *
+ * Default theme: dark restaurant command centre (#0B1020).
+ * `html.light` swaps the token values for the light theme.
+ * Components consume semantic utilities only (bg-surface, text-muted, …)
+ * and never hardcode hex values, so theme switching is a class toggle.
+ */
+
+:root {
+  /* Surfaces */
+  --bg: #0b1020;
+  --bg-subtle: #0d1226;
+  --surface: rgba(255, 255, 255, 0.05);
+  --surface-strong: rgba(255, 255, 255, 0.08);
+  --surface-raised: #111832;
+  --border: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.16);
+
+  /* Foreground */
+  --fg: #e7ebf4;
+  --fg-muted: #9aa7bd;
+  --fg-subtle: #64748b;
+
+  /* Brand — amber → orange */
+  --primary: #f59e0b;
+  --primary-strong: #f97316;
+  --primary-foreground: #160f02;
+
+  /* Semantics */
+  --positive: #34d399;
+  --negative: #fb7185;
+  --neutral: #94a3b8;
+
+  /* Priority ladder */
+  --critical: #ef4444;
+  --high: #f97316;
+  --medium: #f59e0b;
+  --low: #64748b;
+
+  /* Business performance classes */
+  --profit-driver: #34d399;
+  --volume-driver: #38bdf8;
+  --hidden-opportunity: #a78bfa;
+  --low-performer: #fb7185;
+
+  --ring: #f59e0b;
+  color-scheme: dark;
+}
+
+html.light {
+  --bg: #f2f4fa;
+  --bg-subtle: #ffffff;
+  --surface: #ffffff;
+  --surface-strong: #f6f8fc;
+  --surface-raised: #ffffff;
+  --border: rgba(15, 23, 42, 0.1);
+  --border-strong: rgba(15, 23, 42, 0.18);
+
+  --fg: #0f172a;
+  --fg-muted: #475569;
+  --fg-subtle: #64748b;
+
+  --primary: #d97706;
+  --primary-strong: #ea580c;
+  --primary-foreground: #fffbeb;
+
+  --positive: #059669;
+  --negative: #e11d48;
+  --neutral: #64748b;
+
+  --critical: #dc2626;
+  --high: #ea580c;
+  --medium: #d97706;
+  --low: #64748b;
+
+  --profit-driver: #059669;
+  --volume-driver: #0284c7;
+  --hidden-opportunity: #7c3aed;
+  --low-performer: #e11d48;
+
+  --ring: #d97706;
+  color-scheme: light;
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    @apply bg-background font-sans text-foreground antialiased;
+    background-image: radial-gradient(
+        1100px 520px at 85% -10%,
+        rgba(245, 158, 11, 0.07),
+        transparent 60%
+      ),
+      radial-gradient(900px 500px at -10% 110%, rgba(56, 189, 248, 0.05), transparent 60%);
+    background-attachment: fixed;
+  }
+
+  ::selection {
+    background: rgba(245, 158, 11, 0.32);
+  }
+
+  /* Keyboard focus — visible amber ring on every interactive element */
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  /* Slim scrollbars that match the command-centre chrome */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--border-strong) transparent;
+  }
+  *::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  *::-webkit-scrollbar-thumb {
+    background: var(--border-strong);
+    border-radius: 8px;
+  }
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}
+
+@layer components {
+  /* Glass card — the primary container surface */
+  .glass-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    backdrop-filter: blur(14px);
+    border-radius: 1rem;
+  }
+
+  html.light .glass-card {
+    backdrop-filter: none;
+    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06), 0 8px 24px rgba(15, 23, 42, 0.06);
+  }
+
+  .gradient-text {
+    background: linear-gradient(90deg, var(--primary), var(--primary-strong));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* Numeric emphasis — KPI values and data readouts */
+  .data-value {
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.01em;
+  }
+
+  .overline-label {
+    @apply text-[11px] font-semibold uppercase tracking-[0.14em];
+  }
+}
+
+@layer utilities {
+  /* Critical severity pulse — used sparingly, only for CRITICAL states */
+  .priority-critical-dot {
+    animation: priority-pulse 1.6s ease-in-out infinite;
+  }
+}
+
+/* Respect reduced motion globally (Framer Motion also checks this) */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ECharts canvas should not capture text selection */
+.echart-container canvas {
+  user-select: none;
+}

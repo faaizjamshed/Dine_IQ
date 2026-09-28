@@ -1,0 +1,288 @@
+{
+  "problem": "hourly restaurant demand regression",
+  "target": "Count of order records with order_datetime in [hour_start, hour_start + 1 hour), regardless of eventual order status.",
+  "prediction_point": "At the start of each UTC timestamp hour in the source data, before that hour's orders occur; restaurant-specific time zones are not provided.",
+  "features": [
+    "restaurant_id",
+    "hour_of_day",
+    "day_of_week",
+    "month",
+    "lag_1h",
+    "lag_24h",
+    "lag_168h"
+  ],
+  "leakage_exclusions": [
+    "order_status",
+    "subtotal",
+    "discount_amount",
+    "tax_amount",
+    "delivery_fee",
+    "final_amount",
+    "payment_method",
+    "promotion_id",
+    "customer_id",
+    "order items",
+    "ratings",
+    "inventory and wastage observed during/after target hour"
+  ],
+  "source": "data/generated/orders.csv (frozen source, deduplicated and aggregated independently with pandas)",
+  "panel_rows": 329400,
+  "usable_rows": 325200,
+  "split": {
+    "train": 233400,
+    "validation": 36600,
+    "test": 55200,
+    "train_range": "2025-03-08 00:00 through 2026-03-31 23:00",
+    "validation_range": "2026-04-01 through 2026-05-31",
+    "test_range": "2026-06-01 through 2026-08-31"
+  },
+  "seed": 42,
+  "preprocessing": "pandas hourly aggregation and complete grid, groupwise 1h/24h/168h lags, median imputation, standardized numeric features, restaurant one-hot encoding",
+  "models": {
+    "ridge": {
+      "validation": {
+        "rmse": 1.6107553296070913,
+        "mae": 1.1921540858518658,
+        "r2": 0.3938807706021936
+      },
+      "hyperparameters": {
+        "alpha": 1.0,
+        "copy_X": true,
+        "fit_intercept": true,
+        "max_iter": null,
+        "positive": false,
+        "random_state": null,
+        "solver": "auto",
+        "tol": 0.0001
+      }
+    },
+    "random_forest": {
+      "validation": {
+        "rmse": 1.4371643180776013,
+        "mae": 1.0487977796016572,
+        "r2": 0.5174839538911731
+      },
+      "hyperparameters": {
+        "bootstrap": true,
+        "ccp_alpha": 0.0,
+        "criterion": "squared_error",
+        "max_depth": 12,
+        "max_features": 0.8,
+        "max_leaf_nodes": null,
+        "max_samples": null,
+        "min_impurity_decrease": 0.0,
+        "min_samples_leaf": 3,
+        "min_samples_split": 2,
+        "min_weight_fraction_leaf": 0.0,
+        "monotonic_cst": null,
+        "n_estimators": 40,
+        "n_jobs": 4,
+        "oob_score": false,
+        "random_state": 42,
+        "verbose": 0,
+        "warm_start": false
+      }
+    },
+    "hist_gradient_boosting": {
+      "validation": {
+        "rmse": 1.431242308476989,
+        "mae": 1.049329203840438,
+        "r2": 0.5214522925940888
+      },
+      "hyperparameters": {
+        "categorical_features": "from_dtype",
+        "early_stopping": "auto",
+        "interaction_cst": null,
+        "l2_regularization": 1.0,
+        "learning_rate": 0.08,
+        "loss": "squared_error",
+        "max_bins": 255,
+        "max_depth": null,
+        "max_features": 1.0,
+        "max_iter": 100,
+        "max_leaf_nodes": 31,
+        "min_samples_leaf": 20,
+        "monotonic_cst": null,
+        "n_iter_no_change": 10,
+        "quantile": null,
+        "random_state": 42,
+        "scoring": "loss",
+        "tol": 1e-07,
+        "validation_fraction": 0.1,
+        "verbose": 0,
+        "warm_start": false
+      }
+    }
+  },
+  "selected_model": "random_forest",
+  "test_metrics": {
+    "rmse": 1.3896010209901337,
+    "mae": 1.0245097312399378,
+    "r2": 0.5058888605074192
+  },
+  "sample_predictions": [
+    {
+      "restaurant_id": "R001",
+      "hour_start": "2026-06-01 00:00:00",
+      "actual": 1.0,
+      "prediction": 0.46108234232718226
+    },
+    {
+      "restaurant_id": "R002",
+      "hour_start": "2026-06-01 00:00:00",
+      "actual": 0.0,
+      "prediction": 0.42978683741458756
+    },
+    {
+      "restaurant_id": "R003",
+      "hour_start": "2026-06-01 00:00:00",
+      "actual": 0.0,
+      "prediction": 0.44131809490321894
+    },
+    {
+      "restaurant_id": "R004",
+      "hour_start": "2026-06-01 00:00:00",
+      "actual": 2.0,
+      "prediction": 0.5423083908706778
+    },
+    {
+      "restaurant_id": "R005",
+      "hour_start": "2026-06-01 00:00:00",
+      "actual": 0.0,
+      "prediction": 0.43118643076403673
+    },
+    {
+      "restaurant_id": "R006",
+      "hour_start": "2026-06-01 00:00:00",
+      "actual": 1.0,
+      "prediction": 0.4559761706919624
+    },
+    {
+      "restaurant_id": "R007",
+      "hour_start": "2026-06-01 00:00:00",
+      "actual": 1.0,
+      "prediction": 0.3643710545103209
+    },
+    {
+      "restaurant_id": "R008",
+      "hour_start": "2026-06-01 00:00:00",
+      "actual": 1.0,
+      "prediction": 0.3940381104322198
+    },
+    {
+      "restaurant_id": "R009",
+      "hour_start": "2026-06-01 00:00:00",
+      "actual": 0.0,
+      "prediction": 0.4395130359143584
+    },
+    {
+      "restaurant_id": "R010",
+      "hour_start": "2026-06-01 00:00:00",
+      "actual": 2.0,
+      "prediction": 0.4285693243302703
+    },
+    {
+      "restaurant_id": "R011",
+      "hour_start": "2026-06-01 00:00:00",
+      "actual": 0.0,
+      "prediction": 0.45707789917602726
+    },
+    {
+      "restaurant_id": "R012",
+      "hour_start": "2026-06-01 00:00:00",
+      "actual": 0.0,
+      "prediction": 0.40297758386380844
+    },
+    {
+      "restaurant_id": "R013",
+      "hour_start": "2026-06-01 00:00:00",
+      "actual": 1.0,
+      "prediction": 0.4538842043338562
+    },
+    {
+      "restaurant_id": "R014",
+      "hour_start": "2026-06-01 00:00:00",
+      "actual": 1.0,
+      "prediction": 0.36386110111372
+    },
+    {
+      "restaurant_id": "R015",
+      "hour_start": "2026-06-01 00:00:00",
+      "actual": 0.0,
+      "prediction": 0.42174524947533876
+    },
+    {
+      "restaurant_id": "R016",
+      "hour_start": "2026-06-01 00:00:00",
+      "actual": 0.0,
+      "prediction": 0.44347396393424515
+    },
+    {
+      "restaurant_id": "R017",
+      "hour_start": "2026-06-01 00:00:00",
+      "actual": 0.0,
+      "prediction": 0.43853972287240606
+    },
+    {
+      "restaurant_id": "R018",
+      "hour_start": "2026-06-01 00:00:00",
+      "actual": 1.0,
+      "prediction": 0.4292152976256799
+    },
+    {
+      "restaurant_id": "R019",
+      "hour_start": "2026-06-01 00:00:00",
+      "actual": 1.0,
+      "prediction": 0.4083936843334099
+    },
+    {
+      "restaurant_id": "R020",
+      "hour_start": "2026-06-01 00:00:00",
+      "actual": 0.0,
+      "prediction": 0.39330604677021164
+    },
+    {
+      "restaurant_id": "R021",
+      "hour_start": "2026-06-01 00:00:00",
+      "actual": 1.0,
+      "prediction": 0.43786528820241405
+    },
+    {
+      "restaurant_id": "R022",
+      "hour_start": "2026-06-01 00:00:00",
+      "actual": 0.0,
+      "prediction": 0.43770973624037673
+    },
+    {
+      "restaurant_id": "R023",
+      "hour_start": "2026-06-01 00:00:00",
+      "actual": 1.0,
+      "prediction": 0.3829584869244155
+    },
+    {
+      "restaurant_id": "R024",
+      "hour_start": "2026-06-01 00:00:00",
+      "actual": 1.0,
+      "prediction": 0.4327626250641545
+    },
+    {
+      "restaurant_id": "R025",
+      "hour_start": "2026-06-01 00:00:00",
+      "actual": 0.0,
+      "prediction": 0.4241214491865882
+    }
+  ],
+  "model_path": "D:\\DineIQ\\results\\submission\\aligned-python-v1\\selected_model.joblib",
+  "python_version": "3.11.9",
+  "sklearn_version": "1.9.1",
+  "pandas_version": "3.0.6",
+  "numpy_version": "2.4.6",
+  "joblib_version": "1.6.0",
+  "timestamp_utc": "2026-09-28T13:49:06.400178+00:00",
+  "elapsed_seconds": 16.138,
+  "reload_smoke_test": {
+    "rows_with_prediction": 8,
+    "passed": true
+  },
+  "weekday_convention": "sunday-zero"
+}

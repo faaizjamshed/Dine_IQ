@@ -1,0 +1,188 @@
+{
+  "version": "v1",
+  "fixture_count": 15,
+  "passed_count": 15,
+  "all_passed": true,
+  "cases": [
+    {
+      "id": "high_selling_loss_making",
+      "expected_class": "Volume Driver",
+      "actual_class": "Volume Driver",
+      "expected_findings": [
+        "high_sales_loss_making"
+      ],
+      "actual_findings": [
+        "high_sales_loss_making"
+      ],
+      "passed": true
+    },
+    {
+      "id": "low_selling_high_margin",
+      "expected_class": "Hidden Opportunity",
+      "actual_class": "Hidden Opportunity",
+      "expected_findings": [
+        "low_sales_high_margin"
+      ],
+      "actual_findings": [
+        "low_sales_high_margin"
+      ],
+      "passed": true
+    },
+    {
+      "id": "popular_high_wastage",
+      "expected_class": "Volume Driver",
+      "actual_class": "Volume Driver",
+      "expected_findings": [
+        "popular_high_wastage"
+      ],
+      "actual_findings": [
+        "popular_high_wastage"
+      ],
+      "passed": true
+    },
+    {
+      "id": "high_rating_low_profit",
+      "expected_class": "Volume Driver",
+      "actual_class": "Volume Driver",
+      "expected_findings": [
+        "high_rating_low_profit"
+      ],
+      "actual_findings": [
+        "high_rating_low_profit"
+      ],
+      "passed": true
+    },
+    {
+      "id": "low_rating_high_sales",
+      "expected_class": "Volume Driver",
+      "actual_class": "Volume Driver",
+      "expected_findings": [
+        "low_rating_high_sales"
+      ],
+      "actual_findings": [
+        "low_rating_high_sales"
+      ],
+      "passed": true
+    },
+    {
+      "id": "promotion_dependent",
+      "expected_class": "Volume Driver",
+      "actual_class": "Volume Driver",
+      "expected_findings": [
+        "promotion_dependent"
+      ],
+      "actual_findings": [
+        "promotion_dependent"
+      ],
+      "passed": true
+    },
+    {
+      "id": "location_split",
+      "expected_class": "Volume Driver",
+      "actual_class": "Volume Driver",
+      "expected_findings": [
+        "location_contradiction"
+      ],
+      "actual_findings": [
+        "location_contradiction"
+      ],
+      "passed": true
+    },
+    {
+      "id": "weekend_only",
+      "expected_class": "Volume Driver",
+      "actual_class": "Volume Driver",
+      "expected_findings": [
+        "weekend_concentration"
+      ],
+      "actual_findings": [
+        "weekend_concentration"
+      ],
+      "passed": true
+    },
+    {
+      "id": "seasonal_menu_item",
+      "expected_class": "Volume Driver",
+      "actual_class": "Volume Driver",
+      "expected_findings": [
+        "seasonal_menu"
+      ],
+      "actual_findings": [
+        "seasonal_menu"
+      ],
+      "passed": true
+    },
+    {
+      "id": "new_item_insufficient_history",
+      "expected_class": "Insufficient history",
+      "actual_class": "Insufficient history",
+      "expected_findings": [
+        "new_item_insufficient_history"
+      ],
+      "actual_findings": [
+        "new_item_insufficient_history"
+      ],
+      "passed": true
+    },
+    {
+      "id": "price_sensitive",
+      "expected_class": "Volume Driver",
+      "actual_class": "Volume Driver",
+      "expected_findings": [
+        "high_price_sensitivity"
+      ],
+      "actual_findings": [
+        "high_price_sensitivity"
+      ],
+      "passed": true
+    },
+    {
+      "id": "rating_spike",
+      "expected_class": "Volume Driver",
+      "actual_class": "Volume Driver",
+      "expected_findings": [
+        "rating_spike"
+      ],
+      "actual_findings": [
+        "rating_spike"
+      ],
+      "passed": true
+    },
+    {
+      "id": "sales_spike",
+      "expected_class": "Volume Driver",
+      "actual_class": "Volume Driver",
+      "expected_findings": [
+        "sales_spike"
+      ],
+      "actual_findings": [
+        "sales_spike"
+      ],
+      "passed": true
+    },
+    {
+      "id": "churn_decline",
+      "expected_class": "Volume Driver",
+      "actual_class": "Volume Driver",
+      "expected_findings": [
+        "churn_risk"
+      ],
+      "actual_findings": [
+        "churn_risk"
+      ],
+      "passed": true
+    },
+    {
+      "id": "spark_python_disagreement",
+      "expected_class": "Volume Driver",
+      "actual_class": "Volume Driver",
+      "expected_findings": [
+        "spark_python_disagreement"
+      ],
+      "actual_findings": [
+        "spark_python_disagreement"
+      ],
+      "passed": true
+    }
+  ]
+}

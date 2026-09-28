@@ -1,0 +1,1608 @@
+{
+  "data": {
+    "periodLabel": "Aug 25 – Sep 23, 2026",
+    "kpis": {
+      "outlets": 24,
+      "cities": 6,
+      "bestOutlet": "DineIQ DHA Phase 6",
+      "flaggedOutlets": 3,
+      "avgMarginPct": 29.1
+    },
+    "cityAggregates": [
+      {
+        "city": "Karachi",
+        "outlets": 9,
+        "revenue": 29712828,
+        "revenueShare": 0.61,
+        "avgMarginPct": 30.4,
+        "bestOutlet": "DineIQ DHA Phase 6",
+        "worstOutlet": "DineIQ Shahra-e-Faisal"
+      },
+      {
+        "city": "Lahore",
+        "outlets": 6,
+        "revenue": 9058933,
+        "revenueShare": 0.19,
+        "avgMarginPct": 29.1,
+        "bestOutlet": "DineIQ Gulberg III",
+        "worstOutlet": "DineIQ MM Alam Road"
+      },
+      {
+        "city": "Islamabad",
+        "outlets": 4,
+        "revenue": 4972192,
+        "revenueShare": 0.1,
+        "avgMarginPct": 27.7,
+        "bestOutlet": "DineIQ Blue Area",
+        "worstOutlet": "DineIQ F-7 Markaz"
+      },
+      {
+        "city": "Rawalpindi",
+        "outlets": 2,
+        "revenue": 2171269,
+        "revenueShare": 0.04,
+        "avgMarginPct": 28.9,
+        "bestOutlet": "DineIQ Saddar",
+        "worstOutlet": "DineIQ Bahria Town"
+      },
+      {
+        "city": "Faisalabad",
+        "outlets": 2,
+        "revenue": 1971057,
+        "revenueShare": 0.04,
+        "avgMarginPct": 27.9,
+        "bestOutlet": "DineIQ D Ground",
+        "worstOutlet": "DineIQ Kohinoor City"
+      },
+      {
+        "city": "Multan",
+        "outlets": 1,
+        "revenue": 979722,
+        "revenueShare": 0.02,
+        "avgMarginPct": 25.3,
+        "bestOutlet": "DineIQ Gulgasht",
+        "worstOutlet": "DineIQ Gulgasht"
+      }
+    ],
+    "matrix": {
+      "outletIds": [
+        "out-01",
+        "out-02",
+        "out-03",
+        "out-04",
+        "out-05",
+        "out-06",
+        "out-07",
+        "out-08",
+        "out-09",
+        "out-10",
+        "out-11",
+        "out-12",
+        "out-13",
+        "out-14",
+        "out-15",
+        "out-16",
+        "out-17",
+        "out-18",
+        "out-19",
+        "out-20",
+        "out-21",
+        "out-22",
+        "out-23",
+        "out-24"
+      ],
+      "outletNames": [
+        "DineIQ DHA Phase 6",
+        "DineIQ Clifton",
+        "DineIQ Gulshan-e-Iqbal",
+        "DineIQ Bahadurabad",
+        "DineIQ Zamzama",
+        "DineIQ Nazimabad",
+        "DineIQ Malir Cantt",
+        "DineIQ North Nazimabad",
+        "DineIQ Shahra-e-Faisal",
+        "DineIQ Gulberg III",
+        "DineIQ DHA Phase 5",
+        "DineIQ Johar Town",
+        "DineIQ Bahria Town",
+        "DineIQ Model Town",
+        "DineIQ MM Alam Road",
+        "DineIQ F-7 Markaz",
+        "DineIQ Blue Area",
+        "DineIQ DHA Phase 2",
+        "DineIQ Bahria Enclave",
+        "DineIQ Saddar",
+        "DineIQ Bahria Town",
+        "DineIQ D Ground",
+        "DineIQ Kohinoor City",
+        "DineIQ Gulgasht"
+      ],
+      "categories": [
+        "Biryani & Rice",
+        "Karahi & Handi",
+        "BBQ & Kebabs",
+        "Burgers & Sandwiches",
+        "Chinese",
+        "Wraps & Rolls",
+        "Snacks & Sides",
+        "Desserts",
+        "Beverages",
+        "Soups & Salads",
+        "Family Deals",
+        "Breakfast"
+      ],
+      "values": [
+        {
+          "outletId": "out-01",
+          "categoryId": "cat-biryani-rice",
+          "revenue": 1339435
+        },
+        {
+          "outletId": "out-01",
+          "categoryId": "cat-karahi-handi",
+          "revenue": 762441
+        },
+        {
+          "outletId": "out-01",
+          "categoryId": "cat-bbq-kebabs",
+          "revenue": 1378704
+        },
+        {
+          "outletId": "out-01",
+          "categoryId": "cat-burgers",
+          "revenue": 444367
+        },
+        {
+          "outletId": "out-01",
+          "categoryId": "cat-chinese",
+          "revenue": 268116
+        },
+        {
+          "outletId": "out-01",
+          "categoryId": "cat-wraps-rolls",
+          "revenue": 519730
+        },
+        {
+          "outletId": "out-01",
+          "categoryId": "cat-snacks-sides",
+          "revenue": 353562
+        },
+        {
+          "outletId": "out-01",
+          "categoryId": "cat-desserts",
+          "revenue": 423345
+        },
+        {
+          "outletId": "out-01",
+          "categoryId": "cat-beverages",
+          "revenue": 583707
+        },
+        {
+          "outletId": "out-01",
+          "categoryId": "cat-soups-salads",
+          "revenue": 183927
+        },
+        {
+          "outletId": "out-01",
+          "categoryId": "cat-family-deals",
+          "revenue": 319546
+        },
+        {
+          "outletId": "out-01",
+          "categoryId": "cat-breakfast",
+          "revenue": 322376
+        },
+        {
+          "outletId": "out-02",
+          "categoryId": "cat-biryani-rice",
+          "revenue": 951087
+        },
+        {
+          "outletId": "out-02",
+          "categoryId": "cat-karahi-handi",
+          "revenue": 763005
+        },
+        {
+          "outletId": "out-02",
+          "categoryId": "cat-bbq-kebabs",
+          "revenue": 902829
+        },
+        {
+          "outletId": "out-02",
+          "categoryId": "cat-burgers",
+          "revenue": 299230
+        },
+        {
+          "outletId": "out-02",
+          "categoryId": "cat-chinese",
+          "revenue": 197010
+        },
+        {
+          "outletId": "out-02",
+          "categoryId": "cat-wraps-rolls",
+          "revenue": 446011
+        },
+        {
+          "outletId": "out-02",
+          "categoryId": "cat-snacks-sides",
+          "revenue": 281994
+        },
+        {
+          "outletId": "out-02",
+          "categoryId": "cat-desserts",
+          "revenue": 321041
+        },
+        {
+          "outletId": "out-02",
+          "categoryId": "cat-beverages",
+          "revenue": 455833
+        },
+        {
+          "outletId": "out-02",
+          "categoryId": "cat-soups-salads",
+          "revenue": 142532
+        },
+        {
+          "outletId": "out-02",
+          "categoryId": "cat-family-deals",
+          "revenue": 280830
+        },
+        {
+          "outletId": "out-02",
+          "categoryId": "cat-breakfast",
+          "revenue": 220114
+        },
+        {
+          "outletId": "out-03",
+          "categoryId": "cat-biryani-rice",
+          "revenue": 624757
+        },
+        {
+          "outletId": "out-03",
+          "categoryId": "cat-karahi-handi",
+          "revenue": 607983
+        },
+        {
+          "outletId": "out-03",
+          "categoryId": "cat-bbq-kebabs",
+          "revenue": 841071
+        },
+        {
+          "outletId": "out-03",
+          "categoryId": "cat-burgers",
+          "revenue": 285959
+        },
+        {
+          "outletId": "out-03",
+          "categoryId": "cat-chinese",
+          "revenue": 141306
+        },
+        {
+          "outletId": "out-03",
+          "categoryId": "cat-wraps-rolls",
+          "revenue": 345664
+        },
+        {
+          "outletId": "out-03",
+          "categoryId": "cat-snacks-sides",
+          "revenue": 220526
+        },
+        {
+          "outletId": "out-03",
+          "categoryId": "cat-desserts",
+          "revenue": 228620
+        },
+        {
+          "outletId": "out-03",
+          "categoryId": "cat-beverages",
+          "revenue": 368539
+        },
+        {
+          "outletId": "out-03",
+          "categoryId": "cat-soups-salads",
+          "revenue": 108366
+        },
+        {
+          "outletId": "out-03",
+          "categoryId": "cat-family-deals",
+          "revenue": 171121
+        },
+        {
+          "outletId": "out-03",
+          "categoryId": "cat-breakfast",
+          "revenue": 183553
+        },
+        {
+          "outletId": "out-04",
+          "categoryId": "cat-biryani-rice",
+          "revenue": 418216
+        },
+        {
+          "outletId": "out-04",
+          "categoryId": "cat-karahi-handi",
+          "revenue": 389527
+        },
+        {
+          "outletId": "out-04",
+          "categoryId": "cat-bbq-kebabs",
+          "revenue": 547512
+        },
+        {
+          "outletId": "out-04",
+          "categoryId": "cat-burgers",
+          "revenue": 180483
+        },
+        {
+          "outletId": "out-04",
+          "categoryId": "cat-chinese",
+          "revenue": 120606
+        },
+        {
+          "outletId": "out-04",
+          "categoryId": "cat-wraps-rolls",
+          "revenue": 225910
+        },
+        {
+          "outletId": "out-04",
+          "categoryId": "cat-snacks-sides",
+          "revenue": 193885
+        },
+        {
+          "outletId": "out-04",
+          "categoryId": "cat-desserts",
+          "revenue": 181051
+        },
+        {
+          "outletId": "out-04",
+          "categoryId": "cat-beverages",
+          "revenue": 275510
+        },
+        {
+          "outletId": "out-04",
+          "categoryId": "cat-soups-salads",
+          "revenue": 90536
+        },
+        {
+          "outletId": "out-04",
+          "categoryId": "cat-family-deals",
+          "revenue": 134420
+        },
+        {
+          "outletId": "out-04",
+          "categoryId": "cat-breakfast",
+          "revenue": 124295
+        },
+        {
+          "outletId": "out-05",
+          "categoryId": "cat-biryani-rice",
+          "revenue": 422560
+        },
+        {
+          "outletId": "out-05",
+          "categoryId": "cat-karahi-handi",
+          "revenue": 360669
+        },
+        {
+          "outletId": "out-05",
+          "categoryId": "cat-bbq-kebabs",
+          "revenue": 572825
+        },
+        {
+          "outletId": "out-05",
+          "categoryId": "cat-burgers",
+          "revenue": 221896
+        },
+        {
+          "outletId": "out-05",
+          "categoryId": "cat-chinese",
+          "revenue": 120564
+        },
+        {
+          "outletId": "out-05",
+          "categoryId": "cat-wraps-rolls",
+          "revenue": 250836
+        },
+        {
+          "outletId": "out-05",
+          "categoryId": "cat-snacks-sides",
+          "revenue": 138094
+        },
+        {
+          "outletId": "out-05",
+          "categoryId": "cat-desserts",
+          "revenue": 187258
+        },
+        {
+          "outletId": "out-05",
+          "categoryId": "cat-beverages",
+          "revenue": 263443
+        },
+        {
+          "outletId": "out-05",
+          "categoryId": "cat-soups-salads",
+          "revenue": 82902
+        },
+        {
+          "outletId": "out-05",
+          "categoryId": "cat-family-deals",
+          "revenue": 144101
+        },
+        {
+          "outletId": "out-05",
+          "categoryId": "cat-breakfast",
+          "revenue": 111949
+        },
+        {
+          "outletId": "out-06",
+          "categoryId": "cat-biryani-rice",
+          "revenue": 455144
+        },
+        {
+          "outletId": "out-06",
+          "categoryId": "cat-karahi-handi",
+          "revenue": 312694
+        },
+        {
+          "outletId": "out-06",
+          "categoryId": "cat-bbq-kebabs",
+          "revenue": 379108
+        },
+        {
+          "outletId": "out-06",
+          "categoryId": "cat-burgers",
+          "revenue": 151512
+        },
+        {
+          "outletId": "out-06",
+          "categoryId": "cat-chinese",
+          "revenue": 104015
+        },
+        {
+          "outletId": "out-06",
+          "categoryId": "cat-wraps-rolls",
+          "revenue": 176922
+        },
+        {
+          "outletId": "out-06",
+          "categoryId": "cat-snacks-sides",
+          "revenue": 170733
+        },
+        {
+          "outletId": "out-06",
+          "categoryId": "cat-desserts",
+          "revenue": 120031
+        },
+        {
+          "outletId": "out-06",
+          "categoryId": "cat-beverages",
+          "revenue": 226456
+        },
+        {
+          "outletId": "out-06",
+          "categoryId": "cat-soups-salads",
+          "revenue": 66231
+        },
+        {
+          "outletId": "out-06",
+          "categoryId": "cat-family-deals",
+          "revenue": 110933
+        },
+        {
+          "outletId": "out-06",
+          "categoryId": "cat-breakfast",
+          "revenue": 86144
+        },
+        {
+          "outletId": "out-07",
+          "categoryId": "cat-biryani-rice",
+          "revenue": 379494
+        },
+        {
+          "outletId": "out-07",
+          "categoryId": "cat-karahi-handi",
+          "revenue": 317920
+        },
+        {
+          "outletId": "out-07",
+          "categoryId": "cat-bbq-kebabs",
+          "revenue": 422690
+        },
+        {
+          "outletId": "out-07",
+          "categoryId": "cat-burgers",
+          "revenue": 156056
+        },
+        {
+          "outletId": "out-07",
+          "categoryId": "cat-chinese",
+          "revenue": 90512
+        },
+        {
+          "outletId": "out-07",
+          "categoryId": "cat-wraps-rolls",
+          "revenue": 172613
+        },
+        {
+          "outletId": "out-07",
+          "categoryId": "cat-snacks-sides",
+          "revenue": 110588
+        },
+        {
+          "outletId": "out-07",
+          "categoryId": "cat-desserts",
+          "revenue": 113838
+        },
+        {
+          "outletId": "out-07",
+          "categoryId": "cat-beverages",
+          "revenue": 190189
+        },
+        {
+          "outletId": "out-07",
+          "categoryId": "cat-soups-salads",
+          "revenue": 64782
+        },
+        {
+          "outletId": "out-07",
+          "categoryId": "cat-family-deals",
+          "revenue": 114699
+        },
+        {
+          "outletId": "out-07",
+          "categoryId": "cat-breakfast",
+          "revenue": 95414
+        },
+        {
+          "outletId": "out-08",
+          "categoryId": "cat-biryani-rice",
+          "revenue": 297516
+        },
+        {
+          "outletId": "out-08",
+          "categoryId": "cat-karahi-handi",
+          "revenue": 203933
+        },
+        {
+          "outletId": "out-08",
+          "categoryId": "cat-bbq-kebabs",
+          "revenue": 380348
+        },
+        {
+          "outletId": "out-08",
+          "categoryId": "cat-burgers",
+          "revenue": 114913
+        },
+        {
+          "outletId": "out-08",
+          "categoryId": "cat-chinese",
+          "revenue": 81965
+        },
+        {
+          "outletId": "out-08",
+          "categoryId": "cat-wraps-rolls",
+          "revenue": 136985
+        },
+        {
+          "outletId": "out-08",
+          "categoryId": "cat-snacks-sides",
+          "revenue": 99505
+        },
+        {
+          "outletId": "out-08",
+          "categoryId": "cat-desserts",
+          "revenue": 119812
+        },
+        {
+          "outletId": "out-08",
+          "categoryId": "cat-beverages",
+          "revenue": 195724
+        },
+        {
+          "outletId": "out-08",
+          "categoryId": "cat-soups-salads",
+          "revenue": 50526
+        },
+        {
+          "outletId": "out-08",
+          "categoryId": "cat-family-deals",
+          "revenue": 88672
+        },
+        {
+          "outletId": "out-08",
+          "categoryId": "cat-breakfast",
+          "revenue": 85040
+        },
+        {
+          "outletId": "out-09",
+          "categoryId": "cat-biryani-rice",
+          "revenue": 357609
+        },
+        {
+          "outletId": "out-09",
+          "categoryId": "cat-karahi-handi",
+          "revenue": 190418
+        },
+        {
+          "outletId": "out-09",
+          "categoryId": "cat-bbq-kebabs",
+          "revenue": 285368
+        },
+        {
+          "outletId": "out-09",
+          "categoryId": "cat-burgers",
+          "revenue": 131212
+        },
+        {
+          "outletId": "out-09",
+          "categoryId": "cat-chinese",
+          "revenue": 65639
+        },
+        {
+          "outletId": "out-09",
+          "categoryId": "cat-wraps-rolls",
+          "revenue": 125939
+        },
+        {
+          "outletId": "out-09",
+          "categoryId": "cat-snacks-sides",
+          "revenue": 101034
+        },
+        {
+          "outletId": "out-09",
+          "categoryId": "cat-desserts",
+          "revenue": 120193
+        },
+        {
+          "outletId": "out-09",
+          "categoryId": "cat-beverages",
+          "revenue": 160162
+        },
+        {
+          "outletId": "out-09",
+          "categoryId": "cat-soups-salads",
+          "revenue": 60071
+        },
+        {
+          "outletId": "out-09",
+          "categoryId": "cat-family-deals",
+          "revenue": 95168
+        },
+        {
+          "outletId": "out-09",
+          "categoryId": "cat-breakfast",
+          "revenue": 80388
+        },
+        {
+          "outletId": "out-10",
+          "categoryId": "cat-biryani-rice",
+          "revenue": 297057
+        },
+        {
+          "outletId": "out-10",
+          "categoryId": "cat-karahi-handi",
+          "revenue": 211090
+        },
+        {
+          "outletId": "out-10",
+          "categoryId": "cat-bbq-kebabs",
+          "revenue": 377257
+        },
+        {
+          "outletId": "out-10",
+          "categoryId": "cat-burgers",
+          "revenue": 151831
+        },
+        {
+          "outletId": "out-10",
+          "categoryId": "cat-chinese",
+          "revenue": 66403
+        },
+        {
+          "outletId": "out-10",
+          "categoryId": "cat-wraps-rolls",
+          "revenue": 167294
+        },
+        {
+          "outletId": "out-10",
+          "categoryId": "cat-snacks-sides",
+          "revenue": 124430
+        },
+        {
+          "outletId": "out-10",
+          "categoryId": "cat-desserts",
+          "revenue": 121521
+        },
+        {
+          "outletId": "out-10",
+          "categoryId": "cat-beverages",
+          "revenue": 161846
+        },
+        {
+          "outletId": "out-10",
+          "categoryId": "cat-soups-salads",
+          "revenue": 47176
+        },
+        {
+          "outletId": "out-10",
+          "categoryId": "cat-family-deals",
+          "revenue": 107071
+        },
+        {
+          "outletId": "out-10",
+          "categoryId": "cat-breakfast",
+          "revenue": 73018
+        },
+        {
+          "outletId": "out-11",
+          "categoryId": "cat-biryani-rice",
+          "revenue": 334490
+        },
+        {
+          "outletId": "out-11",
+          "categoryId": "cat-karahi-handi",
+          "revenue": 225416
+        },
+        {
+          "outletId": "out-11",
+          "categoryId": "cat-bbq-kebabs",
+          "revenue": 301230
+        },
+        {
+          "outletId": "out-11",
+          "categoryId": "cat-burgers",
+          "revenue": 104504
+        },
+        {
+          "outletId": "out-11",
+          "categoryId": "cat-chinese",
+          "revenue": 53875
+        },
+        {
+          "outletId": "out-11",
+          "categoryId": "cat-wraps-rolls",
+          "revenue": 127708
+        },
+        {
+          "outletId": "out-11",
+          "categoryId": "cat-snacks-sides",
+          "revenue": 99754
+        },
+        {
+          "outletId": "out-11",
+          "categoryId": "cat-desserts",
+          "revenue": 94574
+        },
+        {
+          "outletId": "out-11",
+          "categoryId": "cat-beverages",
+          "revenue": 164979
+        },
+        {
+          "outletId": "out-11",
+          "categoryId": "cat-soups-salads",
+          "revenue": 44461
+        },
+        {
+          "outletId": "out-11",
+          "categoryId": "cat-family-deals",
+          "revenue": 70044
+        },
+        {
+          "outletId": "out-11",
+          "categoryId": "cat-breakfast",
+          "revenue": 55189
+        },
+        {
+          "outletId": "out-12",
+          "categoryId": "cat-biryani-rice",
+          "revenue": 279030
+        },
+        {
+          "outletId": "out-12",
+          "categoryId": "cat-karahi-handi",
+          "revenue": 196007
+        },
+        {
+          "outletId": "out-12",
+          "categoryId": "cat-bbq-kebabs",
+          "revenue": 252095
+        },
+        {
+          "outletId": "out-12",
+          "categoryId": "cat-burgers",
+          "revenue": 113324
+        },
+        {
+          "outletId": "out-12",
+          "categoryId": "cat-chinese",
+          "revenue": 51147
+        },
+        {
+          "outletId": "out-12",
+          "categoryId": "cat-wraps-rolls",
+          "revenue": 113387
+        },
+        {
+          "outletId": "out-12",
+          "categoryId": "cat-snacks-sides",
+          "revenue": 91304
+        },
+        {
+          "outletId": "out-12",
+          "categoryId": "cat-desserts",
+          "revenue": 87648
+        },
+        {
+          "outletId": "out-12",
+          "categoryId": "cat-beverages",
+          "revenue": 122418
+        },
+        {
+          "outletId": "out-12",
+          "categoryId": "cat-soups-salads",
+          "revenue": 44719
+        },
+        {
+          "outletId": "out-12",
+          "categoryId": "cat-family-deals",
+          "revenue": 81644
+        },
+        {
+          "outletId": "out-12",
+          "categoryId": "cat-breakfast",
+          "revenue": 52893
+        },
+        {
+          "outletId": "out-13",
+          "categoryId": "cat-biryani-rice",
+          "revenue": 222850
+        },
+        {
+          "outletId": "out-13",
+          "categoryId": "cat-karahi-handi",
+          "revenue": 155535
+        },
+        {
+          "outletId": "out-13",
+          "categoryId": "cat-bbq-kebabs",
+          "revenue": 239870
+        },
+        {
+          "outletId": "out-13",
+          "categoryId": "cat-burgers",
+          "revenue": 82616
+        },
+        {
+          "outletId": "out-13",
+          "categoryId": "cat-chinese",
+          "revenue": 59079
+        },
+        {
+          "outletId": "out-13",
+          "categoryId": "cat-wraps-rolls",
+          "revenue": 101072
+        },
+        {
+          "outletId": "out-13",
+          "categoryId": "cat-snacks-sides",
+          "revenue": 78206
+        },
+        {
+          "outletId": "out-13",
+          "categoryId": "cat-desserts",
+          "revenue": 88727
+        },
+        {
+          "outletId": "out-13",
+          "categoryId": "cat-beverages",
+          "revenue": 126712
+        },
+        {
+          "outletId": "out-13",
+          "categoryId": "cat-soups-salads",
+          "revenue": 47877
+        },
+        {
+          "outletId": "out-13",
+          "categoryId": "cat-family-deals",
+          "revenue": 60163
+        },
+        {
+          "outletId": "out-13",
+          "categoryId": "cat-breakfast",
+          "revenue": 46971
+        },
+        {
+          "outletId": "out-14",
+          "categoryId": "cat-biryani-rice",
+          "revenue": 280722
+        },
+        {
+          "outletId": "out-14",
+          "categoryId": "cat-karahi-handi",
+          "revenue": 183577
+        },
+        {
+          "outletId": "out-14",
+          "categoryId": "cat-bbq-kebabs",
+          "revenue": 304735
+        },
+        {
+          "outletId": "out-14",
+          "categoryId": "cat-burgers",
+          "revenue": 110041
+        },
+        {
+          "outletId": "out-14",
+          "categoryId": "cat-chinese",
+          "revenue": 66800
+        },
+        {
+          "outletId": "out-14",
+          "categoryId": "cat-wraps-rolls",
+          "revenue": 125292
+        },
+        {
+          "outletId": "out-14",
+          "categoryId": "cat-snacks-sides",
+          "revenue": 80940
+        },
+        {
+          "outletId": "out-14",
+          "categoryId": "cat-desserts",
+          "revenue": 78939
+        },
+        {
+          "outletId": "out-14",
+          "categoryId": "cat-beverages",
+          "revenue": 158373
+        },
+        {
+          "outletId": "out-14",
+          "categoryId": "cat-soups-salads",
+          "revenue": 49155
+        },
+        {
+          "outletId": "out-14",
+          "categoryId": "cat-family-deals",
+          "revenue": 87028
+        },
+        {
+          "outletId": "out-14",
+          "categoryId": "cat-breakfast",
+          "revenue": 53067
+        },
+        {
+          "outletId": "out-15",
+          "categoryId": "cat-biryani-rice",
+          "revenue": 190638
+        },
+        {
+          "outletId": "out-15",
+          "categoryId": "cat-karahi-handi",
+          "revenue": 182012
+        },
+        {
+          "outletId": "out-15",
+          "categoryId": "cat-bbq-kebabs",
+          "revenue": 245184
+        },
+        {
+          "outletId": "out-15",
+          "categoryId": "cat-burgers",
+          "revenue": 80742
+        },
+        {
+          "outletId": "out-15",
+          "categoryId": "cat-chinese",
+          "revenue": 54793
+        },
+        {
+          "outletId": "out-15",
+          "categoryId": "cat-wraps-rolls",
+          "revenue": 102383
+        },
+        {
+          "outletId": "out-15",
+          "categoryId": "cat-snacks-sides",
+          "revenue": 71585
+        },
+        {
+          "outletId": "out-15",
+          "categoryId": "cat-desserts",
+          "revenue": 83376
+        },
+        {
+          "outletId": "out-15",
+          "categoryId": "cat-beverages",
+          "revenue": 124562
+        },
+        {
+          "outletId": "out-15",
+          "categoryId": "cat-soups-salads",
+          "revenue": 41782
+        },
+        {
+          "outletId": "out-15",
+          "categoryId": "cat-family-deals",
+          "revenue": 55393
+        },
+        {
+          "outletId": "out-15",
+          "categoryId": "cat-breakfast",
+          "revenue": 45808
+        },
+        {
+          "outletId": "out-16",
+          "categoryId": "cat-biryani-rice",
+          "revenue": 184049
+        },
+        {
+          "outletId": "out-16",
+          "categoryId": "cat-karahi-handi",
+          "revenue": 155307
+        },
+        {
+          "outletId": "out-16",
+          "categoryId": "cat-bbq-kebabs",
+          "revenue": 220360
+        },
+        {
+          "outletId": "out-16",
+          "categoryId": "cat-burgers",
+          "revenue": 81340
+        },
+        {
+          "outletId": "out-16",
+          "categoryId": "cat-chinese",
+          "revenue": 49820
+        },
+        {
+          "outletId": "out-16",
+          "categoryId": "cat-wraps-rolls",
+          "revenue": 101080
+        },
+        {
+          "outletId": "out-16",
+          "categoryId": "cat-snacks-sides",
+          "revenue": 63763
+        },
+        {
+          "outletId": "out-16",
+          "categoryId": "cat-desserts",
+          "revenue": 64990
+        },
+        {
+          "outletId": "out-16",
+          "categoryId": "cat-beverages",
+          "revenue": 102161
+        },
+        {
+          "outletId": "out-16",
+          "categoryId": "cat-soups-salads",
+          "revenue": 35671
+        },
+        {
+          "outletId": "out-16",
+          "categoryId": "cat-family-deals",
+          "revenue": 66658
+        },
+        {
+          "outletId": "out-16",
+          "categoryId": "cat-breakfast",
+          "revenue": 42286
+        },
+        {
+          "outletId": "out-17",
+          "categoryId": "cat-biryani-rice",
+          "revenue": 252308
+        },
+        {
+          "outletId": "out-17",
+          "categoryId": "cat-karahi-handi",
+          "revenue": 191960
+        },
+        {
+          "outletId": "out-17",
+          "categoryId": "cat-bbq-kebabs",
+          "revenue": 228749
+        },
+        {
+          "outletId": "out-17",
+          "categoryId": "cat-burgers",
+          "revenue": 90538
+        },
+        {
+          "outletId": "out-17",
+          "categoryId": "cat-chinese",
+          "revenue": 53260
+        },
+        {
+          "outletId": "out-17",
+          "categoryId": "cat-wraps-rolls",
+          "revenue": 87117
+        },
+        {
+          "outletId": "out-17",
+          "categoryId": "cat-snacks-sides",
+          "revenue": 80026
+        },
+        {
+          "outletId": "out-17",
+          "categoryId": "cat-desserts",
+          "revenue": 82051
+        },
+        {
+          "outletId": "out-17",
+          "categoryId": "cat-beverages",
+          "revenue": 121245
+        },
+        {
+          "outletId": "out-17",
+          "categoryId": "cat-soups-salads",
+          "revenue": 42553
+        },
+        {
+          "outletId": "out-17",
+          "categoryId": "cat-family-deals",
+          "revenue": 70231
+        },
+        {
+          "outletId": "out-17",
+          "categoryId": "cat-breakfast",
+          "revenue": 48653
+        },
+        {
+          "outletId": "out-18",
+          "categoryId": "cat-biryani-rice",
+          "revenue": 224992
+        },
+        {
+          "outletId": "out-18",
+          "categoryId": "cat-karahi-handi",
+          "revenue": 157488
+        },
+        {
+          "outletId": "out-18",
+          "categoryId": "cat-bbq-kebabs",
+          "revenue": 264859
+        },
+        {
+          "outletId": "out-18",
+          "categoryId": "cat-burgers",
+          "revenue": 87340
+        },
+        {
+          "outletId": "out-18",
+          "categoryId": "cat-chinese",
+          "revenue": 52297
+        },
+        {
+          "outletId": "out-18",
+          "categoryId": "cat-wraps-rolls",
+          "revenue": 87058
+        },
+        {
+          "outletId": "out-18",
+          "categoryId": "cat-snacks-sides",
+          "revenue": 62559
+        },
+        {
+          "outletId": "out-18",
+          "categoryId": "cat-desserts",
+          "revenue": 68305
+        },
+        {
+          "outletId": "out-18",
+          "categoryId": "cat-beverages",
+          "revenue": 127348
+        },
+        {
+          "outletId": "out-18",
+          "categoryId": "cat-soups-salads",
+          "revenue": 44153
+        },
+        {
+          "outletId": "out-18",
+          "categoryId": "cat-family-deals",
+          "revenue": 65167
+        },
+        {
+          "outletId": "out-18",
+          "categoryId": "cat-breakfast",
+          "revenue": 49290
+        },
+        {
+          "outletId": "out-19",
+          "categoryId": "cat-biryani-rice",
+          "revenue": 251088
+        },
+        {
+          "outletId": "out-19",
+          "categoryId": "cat-karahi-handi",
+          "revenue": 180087
+        },
+        {
+          "outletId": "out-19",
+          "categoryId": "cat-bbq-kebabs",
+          "revenue": 239179
+        },
+        {
+          "outletId": "out-19",
+          "categoryId": "cat-burgers",
+          "revenue": 99032
+        },
+        {
+          "outletId": "out-19",
+          "categoryId": "cat-chinese",
+          "revenue": 56768
+        },
+        {
+          "outletId": "out-19",
+          "categoryId": "cat-wraps-rolls",
+          "revenue": 118618
+        },
+        {
+          "outletId": "out-19",
+          "categoryId": "cat-snacks-sides",
+          "revenue": 71108
+        },
+        {
+          "outletId": "out-19",
+          "categoryId": "cat-desserts",
+          "revenue": 63161
+        },
+        {
+          "outletId": "out-19",
+          "categoryId": "cat-beverages",
+          "revenue": 115937
+        },
+        {
+          "outletId": "out-19",
+          "categoryId": "cat-soups-salads",
+          "revenue": 35860
+        },
+        {
+          "outletId": "out-19",
+          "categoryId": "cat-family-deals",
+          "revenue": 63272
+        },
+        {
+          "outletId": "out-19",
+          "categoryId": "cat-breakfast",
+          "revenue": 49969
+        },
+        {
+          "outletId": "out-20",
+          "categoryId": "cat-biryani-rice",
+          "revenue": 196540
+        },
+        {
+          "outletId": "out-20",
+          "categoryId": "cat-karahi-handi",
+          "revenue": 145109
+        },
+        {
+          "outletId": "out-20",
+          "categoryId": "cat-bbq-kebabs",
+          "revenue": 191392
+        },
+        {
+          "outletId": "out-20",
+          "categoryId": "cat-burgers",
+          "revenue": 72840
+        },
+        {
+          "outletId": "out-20",
+          "categoryId": "cat-chinese",
+          "revenue": 47130
+        },
+        {
+          "outletId": "out-20",
+          "categoryId": "cat-wraps-rolls",
+          "revenue": 86520
+        },
+        {
+          "outletId": "out-20",
+          "categoryId": "cat-snacks-sides",
+          "revenue": 72008
+        },
+        {
+          "outletId": "out-20",
+          "categoryId": "cat-desserts",
+          "revenue": 61168
+        },
+        {
+          "outletId": "out-20",
+          "categoryId": "cat-beverages",
+          "revenue": 116727
+        },
+        {
+          "outletId": "out-20",
+          "categoryId": "cat-soups-salads",
+          "revenue": 31335
+        },
+        {
+          "outletId": "out-20",
+          "categoryId": "cat-family-deals",
+          "revenue": 48351
+        },
+        {
+          "outletId": "out-20",
+          "categoryId": "cat-breakfast",
+          "revenue": 50711
+        },
+        {
+          "outletId": "out-21",
+          "categoryId": "cat-biryani-rice",
+          "revenue": 184638
+        },
+        {
+          "outletId": "out-21",
+          "categoryId": "cat-karahi-handi",
+          "revenue": 114519
+        },
+        {
+          "outletId": "out-21",
+          "categoryId": "cat-bbq-kebabs",
+          "revenue": 206217
+        },
+        {
+          "outletId": "out-21",
+          "categoryId": "cat-burgers",
+          "revenue": 63729
+        },
+        {
+          "outletId": "out-21",
+          "categoryId": "cat-chinese",
+          "revenue": 48501
+        },
+        {
+          "outletId": "out-21",
+          "categoryId": "cat-wraps-rolls",
+          "revenue": 72166
+        },
+        {
+          "outletId": "out-21",
+          "categoryId": "cat-snacks-sides",
+          "revenue": 64260
+        },
+        {
+          "outletId": "out-21",
+          "categoryId": "cat-desserts",
+          "revenue": 67695
+        },
+        {
+          "outletId": "out-21",
+          "categoryId": "cat-beverages",
+          "revenue": 108373
+        },
+        {
+          "outletId": "out-21",
+          "categoryId": "cat-soups-salads",
+          "revenue": 36639
+        },
+        {
+          "outletId": "out-21",
+          "categoryId": "cat-family-deals",
+          "revenue": 53538
+        },
+        {
+          "outletId": "out-21",
+          "categoryId": "cat-breakfast",
+          "revenue": 44455
+        },
+        {
+          "outletId": "out-22",
+          "categoryId": "cat-biryani-rice",
+          "revenue": 172817
+        },
+        {
+          "outletId": "out-22",
+          "categoryId": "cat-karahi-handi",
+          "revenue": 158412
+        },
+        {
+          "outletId": "out-22",
+          "categoryId": "cat-bbq-kebabs",
+          "revenue": 204433
+        },
+        {
+          "outletId": "out-22",
+          "categoryId": "cat-burgers",
+          "revenue": 74870
+        },
+        {
+          "outletId": "out-22",
+          "categoryId": "cat-chinese",
+          "revenue": 48510
+        },
+        {
+          "outletId": "out-22",
+          "categoryId": "cat-wraps-rolls",
+          "revenue": 93201
+        },
+        {
+          "outletId": "out-22",
+          "categoryId": "cat-snacks-sides",
+          "revenue": 65400
+        },
+        {
+          "outletId": "out-22",
+          "categoryId": "cat-desserts",
+          "revenue": 54698
+        },
+        {
+          "outletId": "out-22",
+          "categoryId": "cat-beverages",
+          "revenue": 79426
+        },
+        {
+          "outletId": "out-22",
+          "categoryId": "cat-soups-salads",
+          "revenue": 29734
+        },
+        {
+          "outletId": "out-22",
+          "categoryId": "cat-family-deals",
+          "revenue": 55656
+        },
+        {
+          "outletId": "out-22",
+          "categoryId": "cat-breakfast",
+          "revenue": 39055
+        },
+        {
+          "outletId": "out-23",
+          "categoryId": "cat-biryani-rice",
+          "revenue": 157657
+        },
+        {
+          "outletId": "out-23",
+          "categoryId": "cat-karahi-handi",
+          "revenue": 103970
+        },
+        {
+          "outletId": "out-23",
+          "categoryId": "cat-bbq-kebabs",
+          "revenue": 145176
+        },
+        {
+          "outletId": "out-23",
+          "categoryId": "cat-burgers",
+          "revenue": 70000
+        },
+        {
+          "outletId": "out-23",
+          "categoryId": "cat-chinese",
+          "revenue": 37900
+        },
+        {
+          "outletId": "out-23",
+          "categoryId": "cat-wraps-rolls",
+          "revenue": 65943
+        },
+        {
+          "outletId": "out-23",
+          "categoryId": "cat-snacks-sides",
+          "revenue": 57979
+        },
+        {
+          "outletId": "out-23",
+          "categoryId": "cat-desserts",
+          "revenue": 53720
+        },
+        {
+          "outletId": "out-23",
+          "categoryId": "cat-beverages",
+          "revenue": 83278
+        },
+        {
+          "outletId": "out-23",
+          "categoryId": "cat-soups-salads",
+          "revenue": 31983
+        },
+        {
+          "outletId": "out-23",
+          "categoryId": "cat-family-deals",
+          "revenue": 46116
+        },
+        {
+          "outletId": "out-23",
+          "categoryId": "cat-breakfast",
+          "revenue": 34798
+        },
+        {
+          "outletId": "out-24",
+          "categoryId": "cat-biryani-rice",
+          "revenue": 185065
+        },
+        {
+          "outletId": "out-24",
+          "categoryId": "cat-karahi-handi",
+          "revenue": 131149
+        },
+        {
+          "outletId": "out-24",
+          "categoryId": "cat-bbq-kebabs",
+          "revenue": 155711
+        },
+        {
+          "outletId": "out-24",
+          "categoryId": "cat-burgers",
+          "revenue": 56844
+        },
+        {
+          "outletId": "out-24",
+          "categoryId": "cat-chinese",
+          "revenue": 36473
+        },
+        {
+          "outletId": "out-24",
+          "categoryId": "cat-wraps-rolls",
+          "revenue": 85276
+        },
+        {
+          "outletId": "out-24",
+          "categoryId": "cat-snacks-sides",
+          "revenue": 67933
+        },
+        {
+          "outletId": "out-24",
+          "categoryId": "cat-desserts",
+          "revenue": 65891
+        },
+        {
+          "outletId": "out-24",
+          "categoryId": "cat-beverages",
+          "revenue": 88272
+        },
+        {
+          "outletId": "out-24",
+          "categoryId": "cat-soups-salads",
+          "revenue": 27580
+        },
+        {
+          "outletId": "out-24",
+          "categoryId": "cat-family-deals",
+          "revenue": 55548
+        },
+        {
+          "outletId": "out-24",
+          "categoryId": "cat-breakfast",
+          "revenue": 34559
+        }
+      ]
+    }
+  },
+  "meta": {
+    "generatedAt": "2026-09-24T08:29:51.861Z",
+    "filters": {}
+  },
+  "insight": {
+    "summary": [
+      "24 outlets across 6 cities generated PKR 48.9M; DineIQ DHA Phase 6 leads with a 0.14 revenue share.",
+      "Karachi contributes 61% of national revenue — city concentration is the structural risk in the network.",
+      "3 outlets carry performance flags (wastage, rating, sales) and their evidence is attached in the comparison table."
+    ],
+    "whyItMatters": "Outlet variance exceeds category variance this period: the same menu performs differently by location, so staffing, prep and local price tests should be decided per outlet cluster rather than nationally.",
+    "evidence": [
+      {
+        "metric": "Top outlet",
+        "value": "DineIQ DHA Phase 6",
+        "detail": "PKR 7M revenue"
+      },
+      {
+        "metric": "Cities",
+        "value": "6",
+        "detail": "Karachi, Lahore, Islamabad, Rawalpindi, Faisalabad, Multan"
+      },
+      {
+        "metric": "Flagged outlets",
+        "value": "3",
+        "detail": "wastage_abnormal · rating_drop · sales_drop"
+      }
+    ],
+    "period": "Aug 25 – Sep 23, 2026"
+  }
+}

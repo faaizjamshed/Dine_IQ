@@ -1,0 +1,8 @@
+{
+  "status": "INTERRUPTED_UNVERIFIED",
+  "command": ".venv\\Scripts\\python.exe scripts\\spark\\gap1_recommendations.py --input-version v6 --version v7",
+  "input": "/dineq/results/gap1/v6/{basket_rules,menu_profitability,customer_rfm} and canonical v4 inventory/menu",
+  "intended_output": "/dineq/results/gap1/v7/recommendations",
+  "observed": "Spark remained at Stage 11 with 3 of 4 tasks complete over repeated polls; process was interrupted. No local results/analytics/gap1/v7/recommendations.json manifest was produced. HDFS may contain a partial v7 output; it was not deleted.",
+  "accepted_output": "The prior read-back-verified 1,222-row recommendations table at /dineq/results/gap1/v6/recommendations remains the only accepted recommendation output. Its basket action label is generic and does not itself distinguish the two confidence directions; treat basket rows as candidate pair evidence and FR-xlvii remains PARTIAL."
+}

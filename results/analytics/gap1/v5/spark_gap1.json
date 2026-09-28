@@ -1,0 +1,2041 @@
+{
+  "requirement_map": {
+    "menu_profitability": [
+      "FR-xx",
+      "FR-xxi"
+    ],
+    "menu_by_location": [
+      "FR-xxxix"
+    ],
+    "basket_rules": [
+      "FR-xxv",
+      "FR-xxvi",
+      "FR-xxvii",
+      "FR-xlvii"
+    ],
+    "customer_rfm": [
+      "FR-xxiii",
+      "FR-xxiv",
+      "FR-xli"
+    ],
+    "wastage_dimensions": [
+      "FR-xxx"
+    ],
+    "wastage_risk_ranking": [
+      "FR-xxxi"
+    ],
+    "price_sensitivity": [
+      "FR-xxxii"
+    ],
+    "promotion_intelligence": [
+      "FR-xxxiii",
+      "FR-xxxiv"
+    ],
+    "rating_anomalies": [
+      "FR-xxxv",
+      "FR-xxxvi"
+    ],
+    "sales_anomalies": [
+      "FR-xxxvii"
+    ]
+  },
+  "source": "hdfs://localhost:9000/dineq/processed/v4",
+  "hdfs_output_root": "hdfs://localhost:9000/dineq/results/gap1/v5",
+  "version": "v5",
+  "net_revenue_method": "canonical cleaned item line revenue less order-level discount allocated proportional to line value using source order subtotal; rows with invalid/null discount or nonpositive subtotal excluded from profitability",
+  "basket": {
+    "basket_count": 610827,
+    "min_pair_count": 100,
+    "min_confidence": 0.1,
+    "pair_unit": "distinct completed order x menu item"
+  },
+  "menu_classification": {
+    "popularity_quantile": 0.75,
+    "margin_quantile": 0.75,
+    "wastage_ratio_quantile": 0.75,
+    "popularity_cut": 20140,
+    "margin_pct_cut": 0.5469518001136113,
+    "wastage_ratio_cut": 0.1259224917840036,
+    "as_of": "2026-08-31",
+    "labels_follow_srs": "Profit Driver, Volume Driver, Hidden Opportunity, Low Performer; explicit insufficient-history/cost exceptions"
+  },
+  "churn": {
+    "target": "no orders in 90+ days as of max completed-order date; customers need >=2 completed orders",
+    "is_predictive_model": false,
+    "source_is_churned_excluded": true
+  },
+  "price": {
+    "before_after_window_days": 30,
+    "causal_claim": false
+  },
+  "promotion": {
+    "method": "promotional cohort vs non-promotion overall baseline",
+    "causal_claim": false
+  },
+  "anomalies": {
+    "method": "per-restaurant modified z score >3, minimum rating daily count=30"
+  },
+  "elapsed_seconds": 111.229,
+  "outputs": {
+    "menu_profitability": {
+      "path": "hdfs://localhost:9000/dineq/results/gap1/v5/menu_profitability",
+      "rows": 200,
+      "schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "menu_item_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "category_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "item_name",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "base_price",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "cost_price",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "preparation_time_min",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "is_vegetarian",
+            "type": "boolean",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "is_available",
+            "type": "boolean",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "launch_date",
+            "type": "date",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "units_sold",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "order_count",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "gross_item_sales",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "revenue",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "estimated_cost",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "unit_cost",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "contribution_margin",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "contribution_margin_pct",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "category_name",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "quantity_wasted",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "wastage_cost",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "popularity_threshold_units_p75",
+            "type": "double",
+            "nullable": false,
+            "metadata": {}
+          },
+          {
+            "name": "margin_threshold_pct_p75",
+            "type": "double",
+            "nullable": false,
+            "metadata": {}
+          },
+          {
+            "name": "wastage_cost_ratio",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "performance_class",
+            "type": "string",
+            "nullable": false,
+            "metadata": {}
+          },
+          {
+            "name": "classification_method",
+            "type": "string",
+            "nullable": false,
+            "metadata": {}
+          }
+        ]
+      },
+      "sample": [
+        {
+          "menu_item_id": "M0007",
+          "category_id": "CAT007",
+          "item_name": "Smoky Chinese 1",
+          "base_price": 1280.0,
+          "cost_price": 633.58,
+          "preparation_time_min": 22,
+          "is_vegetarian": false,
+          "is_available": true,
+          "launch_date": "2025-07-29",
+          "units_sold": 85131,
+          "order_count": 52498,
+          "gross_item_sales": 107678495.99999999,
+          "revenue": 104697640.51078677,
+          "estimated_cost": 53937298.98000401,
+          "unit_cost": 633.58,
+          "contribution_margin": 50760341.53078276,
+          "contribution_margin_pct": 0.48482794151939873,
+          "category_name": "Chinese",
+          "quantity_wasted": 1197.5,
+          "wastage_cost": 758712.0600000002,
+          "popularity_threshold_units_p75": 20140.0,
+          "margin_threshold_pct_p75": 0.5469518001136113,
+          "wastage_cost_ratio": 0.014066556434004507,
+          "performance_class": "Volume Driver",
+          "classification_method": "within-catalog 75th percentile units and margin%; profit-driver wastage-cost <= 10% of estimated cost; as-of 2026-08-31; descriptive"
+        },
+        {
+          "menu_item_id": "M0063",
+          "category_id": "CAT003",
+          "item_name": "Fresh Pakistani 5",
+          "base_price": 1210.0,
+          "cost_price": 533.01,
+          "preparation_time_min": 20,
+          "is_vegetarian": false,
+          "is_available": true,
+          "launch_date": "2025-06-10",
+          "units_sold": 17300,
+          "order_count": 10991,
+          "gross_item_sales": 20687393.64,
+          "revenue": 20111783.77465565,
+          "estimated_cost": 9221073.00000012,
+          "unit_cost": 533.01,
+          "contribution_margin": 10890710.774655532,
+          "contribution_margin_pct": 0.5415089430495829,
+          "category_name": "Pakistani",
+          "quantity_wasted": 1191.9699999999998,
+          "wastage_cost": 635331.9800000001,
+          "popularity_threshold_units_p75": 20140.0,
+          "margin_threshold_pct_p75": 0.5469518001136113,
+          "wastage_cost_ratio": 0.06890000545489575,
+          "performance_class": "Low Performer",
+          "classification_method": "within-catalog 75th percentile units and margin%; profit-driver wastage-cost <= 10% of estimated cost; as-of 2026-08-31; descriptive"
+        },
+        {
+          "menu_item_id": "M0079",
+          "category_id": "CAT004",
+          "item_name": "Supreme BBQ 6",
+          "base_price": 1050.0,
+          "cost_price": 624.61,
+          "preparation_time_min": 42,
+          "is_vegetarian": false,
+          "is_available": false,
+          "launch_date": "2026-01-24",
+          "units_sold": 14651,
+          "order_count": 9386,
+          "gross_item_sales": 15205246.830000002,
+          "revenue": 14803765.80245512,
+          "estimated_cost": 9151161.109999923,
+          "unit_cost": 624.61,
+          "contribution_margin": 5652604.692455197,
+          "contribution_margin_pct": 0.38183559290824126,
+          "category_name": "BBQ",
+          "quantity_wasted": 1204.1200000000003,
+          "wastage_cost": 752105.4700000002,
+          "popularity_threshold_units_p75": 20140.0,
+          "margin_threshold_pct_p75": 0.5469518001136113,
+          "wastage_cost_ratio": 0.0821868898339182,
+          "performance_class": "Low Performer",
+          "classification_method": "within-catalog 75th percentile units and margin%; profit-driver wastage-cost <= 10% of estimated cost; as-of 2026-08-31; descriptive"
+        },
+        {
+          "menu_item_id": "M0084",
+          "category_id": "CAT009",
+          "item_name": "Spicy Breakfast 6",
+          "base_price": 1540.0,
+          "cost_price": 797.35,
+          "preparation_time_min": 20,
+          "is_vegetarian": true,
+          "is_available": true,
+          "launch_date": "2025-12-14",
+          "units_sold": 14421,
+          "order_count": 9134,
+          "gross_item_sales": 21965297.2,
+          "revenue": 21368990.190466277,
+          "estimated_cost": 11498584.350000028,
+          "unit_cost": 797.35,
+          "contribution_margin": 9870405.84046625,
+          "contribution_margin_pct": 0.46190324168289,
+          "category_name": "Breakfast",
+          "quantity_wasted": 1218.8099999999995,
+          "wastage_cost": 971818.2100000002,
+          "popularity_threshold_units_p75": 20140.0,
+          "margin_threshold_pct_p75": 0.5469518001136113,
+          "wastage_cost_ratio": 0.08451633526521879,
+          "performance_class": "Low Performer",
+          "classification_method": "within-catalog 75th percentile units and margin%; profit-driver wastage-cost <= 10% of estimated cost; as-of 2026-08-31; descriptive"
+        },
+        {
+          "menu_item_id": "M0092",
+          "category_id": "CAT002",
+          "item_name": "Fiery Pizza 7",
+          "base_price": 890.0,
+          "cost_price": 487.83,
+          "preparation_time_min": 22,
+          "is_vegetarian": false,
+          "is_available": true,
+          "launch_date": "2025-11-03",
+          "units_sold": 13074,
+          "order_count": 8392,
+          "gross_item_sales": 11486709.84,
+          "revenue": 11173876.639027102,
+          "estimated_cost": 6377889.419999945,
+          "unit_cost": 487.83,
+          "contribution_margin": 4795987.219027157,
+          "contribution_margin_pct": 0.4292142623336442,
+          "category_name": "Pizza",
+          "quantity_wasted": 1170.4500000000005,
+          "wastage_cost": 570980.7600000004,
+          "popularity_threshold_units_p75": 20140.0,
+          "margin_threshold_pct_p75": 0.5469518001136113,
+          "wastage_cost_ratio": 0.08952503287521804,
+          "performance_class": "Low Performer",
+          "classification_method": "within-catalog 75th percentile units and margin%; profit-driver wastage-cost <= 10% of estimated cost; as-of 2026-08-31; descriptive"
+        },
+        {
+          "menu_item_id": "M0112",
+          "category_id": "CAT007",
+          "item_name": "Fiery Chinese 8",
+          "base_price": 610.0,
+          "cost_price": 226.87,
+          "preparation_time_min": 20,
+          "is_vegetarian": true,
+          "is_available": true,
+          "launch_date": "2025-03-02",
+          "units_sold": 11504,
+          "order_count": 7385,
+          "gross_item_sales": 6933060.180000001,
+          "revenue": 6731401.285777269,
+          "estimated_cost": 2609912.479999971,
+          "unit_cost": 226.87,
+          "contribution_margin": 4121488.805777298,
+          "contribution_margin_pct": 0.6122779835582768,
+          "category_name": "Chinese",
+          "quantity_wasted": 1154.0699999999997,
+          "wastage_cost": 261823.81999999998,
+          "popularity_threshold_units_p75": 20140.0,
+          "margin_threshold_pct_p75": 0.5469518001136113,
+          "wastage_cost_ratio": 0.10031900380046571,
+          "performance_class": "Hidden Opportunity",
+          "classification_method": "within-catalog 75th percentile units and margin%; profit-driver wastage-cost <= 10% of estimated cost; as-of 2026-08-31; descriptive"
+        },
+        {
+          "menu_item_id": "M0119",
+          "category_id": "CAT014",
+          "item_name": "Supreme Rice 8",
+          "base_price": 240.0,
+          "cost_price": 112.0,
+          "preparation_time_min": 25,
+          "is_vegetarian": false,
+          "is_available": false,
+          "launch_date": "2025-06-26",
+          "units_sold": 10906,
+          "order_count": 6945,
+          "gross_item_sales": 2588217.6,
+          "revenue": 2514578.043434078,
+          "estimated_cost": 1221472.0,
+          "unit_cost": 112.0,
+          "contribution_margin": 1293106.0434340779,
+          "contribution_margin_pct": 0.5142437502827014,
+          "category_name": "Rice",
+          "quantity_wasted": 1132.0599999999997,
+          "wastage_cost": 126790.71999999997,
+          "popularity_threshold_units_p75": 20140.0,
+          "margin_threshold_pct_p75": 0.5469518001136113,
+          "wastage_cost_ratio": 0.10380157711351547,
+          "performance_class": "Low Performer",
+          "classification_method": "within-catalog 75th percentile units and margin%; profit-driver wastage-cost <= 10% of estimated cost; as-of 2026-08-31; descriptive"
+        },
+        {
+          "menu_item_id": "M0176",
+          "category_id": "CAT011",
+          "item_name": "Cheesy Pasta 12",
+          "base_price": 1780.0,
+          "cost_price": 882.63,
+          "preparation_time_min": 16,
+          "is_vegetarian": true,
+          "is_available": true,
+          "launch_date": "2025-05-07",
+          "units_sold": 8444,
+          "order_count": 5388,
+          "gross_item_sales": 14846619.549999999,
+          "revenue": 14441115.135914747,
+          "estimated_cost": 7452927.720000032,
+          "unit_cost": 882.63,
+          "contribution_margin": 6988187.415914714,
+          "contribution_margin_pct": 0.4839091268329577,
+          "category_name": "Pasta",
+          "quantity_wasted": 1187.499999999999,
+          "wastage_cost": 1048123.25,
+          "popularity_threshold_units_p75": 20140.0,
+          "margin_threshold_pct_p75": 0.5469518001136113,
+          "wastage_cost_ratio": 0.14063241847728472,
+          "performance_class": "Low Performer",
+          "classification_method": "within-catalog 75th percentile units and margin%; profit-driver wastage-cost <= 10% of estimated cost; as-of 2026-08-31; descriptive"
+        }
+      ]
+    },
+    "menu_by_location": {
+      "path": "hdfs://localhost:9000/dineq/results/gap1/v5/menu_by_location",
+      "rows": 5000,
+      "schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "restaurant_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "menu_item_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "item_name",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "units_sold",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "gross_item_sales",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "revenue",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "estimated_cost",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "orders",
+            "type": "long",
+            "nullable": false,
+            "metadata": {}
+          },
+          {
+            "name": "contribution_margin",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "contribution_margin_pct",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "sample": [
+        {
+          "restaurant_id": "R011",
+          "menu_item_id": "M0030",
+          "item_name": "Grilled Coffee & Tea 2",
+          "units_sold": 1180,
+          "gross_item_sales": 315466.64999999997,
+          "revenue": 304535.0680949541,
+          "estimated_cost": 161766.20000000013,
+          "orders": 773,
+          "contribution_margin": 142768.868094954,
+          "contribution_margin_pct": 0.46880928685178097
+        },
+        {
+          "restaurant_id": "R014",
+          "menu_item_id": "M0119",
+          "item_name": "Supreme Rice 8",
+          "units_sold": 387,
+          "gross_item_sales": 92038.8,
+          "revenue": 88749.33795778132,
+          "estimated_cost": 43344.0,
+          "orders": 250,
+          "contribution_margin": 45405.33795778132,
+          "contribution_margin_pct": 0.511613258223751
+        },
+        {
+          "restaurant_id": "R011",
+          "menu_item_id": "M0025",
+          "item_name": "House Salad 2",
+          "units_sold": 1321,
+          "gross_item_sales": 339500.85,
+          "revenue": 331377.60380070086,
+          "estimated_cost": 212879.15000000014,
+          "orders": 843,
+          "contribution_margin": 118498.45380070072,
+          "contribution_margin_pct": 0.3575934294943142
+        },
+        {
+          "restaurant_id": "R021",
+          "menu_item_id": "M0013",
+          "item_name": "Crispy Sandwiche 1",
+          "units_sold": 2227,
+          "gross_item_sales": 3292743.75,
+          "revenue": 3211623.834170093,
+          "estimated_cost": 2051245.1599999962,
+          "orders": 1395,
+          "contribution_margin": 1160378.6741700966,
+          "contribution_margin_pct": 0.3613059106811452
+        },
+        {
+          "restaurant_id": "R013",
+          "menu_item_id": "M0029",
+          "item_name": "Special Rice 2",
+          "units_sold": 1253,
+          "gross_item_sales": 814223.8500000001,
+          "revenue": 788888.8887450221,
+          "estimated_cost": 505735.86000000057,
+          "orders": 788,
+          "contribution_margin": 283153.02874502155,
+          "contribution_margin_pct": 0.35892637453097637
+        },
+        {
+          "restaurant_id": "R010",
+          "menu_item_id": "M0001",
+          "item_name": "Classic Burger 1",
+          "units_sold": 13736,
+          "gross_item_sales": 20084669.3,
+          "revenue": 19525746.94213772,
+          "estimated_cost": 9317266.160000172,
+          "orders": 7548,
+          "contribution_margin": 10208480.782137547,
+          "contribution_margin_pct": 0.5228215244409954
+        },
+        {
+          "restaurant_id": "R009",
+          "menu_item_id": "M0008",
+          "item_name": "Royal Fast Food 1",
+          "units_sold": 3120,
+          "gross_item_sales": 2709000.8,
+          "revenue": 2631342.6860440318,
+          "estimated_cost": 1297296.0,
+          "orders": 1930,
+          "contribution_margin": 1334046.6860440318,
+          "contribution_margin_pct": 0.506983257300341
+        },
+        {
+          "restaurant_id": "R003",
+          "menu_item_id": "M0028",
+          "item_name": "Royal Sandwiche 2",
+          "units_sold": 1180,
+          "gross_item_sales": 1019002.75,
+          "revenue": 987586.1423281406,
+          "estimated_cost": 624656.6000000001,
+          "orders": 759,
+          "contribution_margin": 362929.54232814047,
+          "contribution_margin_pct": 0.36749152987563044
+        }
+      ]
+    },
+    "basket_rules": {
+      "path": "hdfs://localhost:9000/dineq/results/gap1/v5/basket_rules",
+      "rows": 955,
+      "schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "item_b",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "item_a",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "pair_count",
+            "type": "long",
+            "nullable": false,
+            "metadata": {}
+          },
+          {
+            "name": "count_a",
+            "type": "long",
+            "nullable": false,
+            "metadata": {}
+          },
+          {
+            "name": "count_b",
+            "type": "long",
+            "nullable": false,
+            "metadata": {}
+          },
+          {
+            "name": "support",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "confidence_a_to_b",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "confidence_b_to_a",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "lift_a_to_b",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "lift_b_to_a",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "item_a_name",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "item_b_name",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "sample": [
+        {
+          "item_b": "M0009",
+          "item_a": "M0002",
+          "pair_count": 8238,
+          "count_a": 121270,
+          "count_b": 43848,
+          "support": 0.01348663369497419,
+          "confidence_a_to_b": 0.06793106291745692,
+          "confidence_b_to_a": 0.18787629994526547,
+          "lift_a_to_b": 0.9463174459195733,
+          "lift_b_to_a": 0.9463174459195735,
+          "item_a_name": "Signature Pizza 1",
+          "item_b_name": "Special Breakfast 1"
+        },
+        {
+          "item_b": "M0083",
+          "item_a": "M0005",
+          "pair_count": 934,
+          "count_a": 65883,
+          "count_b": 9061,
+          "support": 0.0015290745170072704,
+          "confidence_a_to_b": 0.014176646479364934,
+          "confidence_b_to_a": 0.1030791303388147,
+          "lift_a_to_b": 0.9556868379926107,
+          "lift_b_to_a": 0.9556868379926107,
+          "item_a_name": "House Beverage 1",
+          "item_b_name": "Fresh Fast Food 6"
+        },
+        {
+          "item_b": "M0090",
+          "item_a": "M0005",
+          "pair_count": 920,
+          "count_a": 65883,
+          "count_b": 8702,
+          "support": 0.0015061547704996669,
+          "confidence_a_to_b": 0.01396414856639801,
+          "confidence_b_to_a": 0.10572282233969202,
+          "lift_a_to_b": 0.9801975380794296,
+          "lift_b_to_a": 0.9801975380794296,
+          "item_a_name": "House Beverage 1",
+          "item_b_name": "Grilled Coffee & Tea 6"
+        },
+        {
+          "item_b": "M0007",
+          "item_a": "M0005",
+          "pair_count": 5334,
+          "count_a": 65883,
+          "count_b": 52498,
+          "support": 0.008732423419396982,
+          "confidence_a_to_b": 0.08096170484039888,
+          "confidence_b_to_a": 0.1016038706236428,
+          "lift_a_to_b": 0.9420091295391506,
+          "lift_b_to_a": 0.9420091295391507,
+          "item_a_name": "House Beverage 1",
+          "item_b_name": "Smoky Chinese 1"
+        },
+        {
+          "item_b": "M0144",
+          "item_a": "M0004",
+          "pair_count": 755,
+          "count_a": 76168,
+          "count_b": 6106,
+          "support": 0.0012360291866600527,
+          "confidence_a_to_b": 0.009912299128242832,
+          "confidence_b_to_a": 0.12364886996396987,
+          "lift_a_to_b": 0.9915984178852252,
+          "lift_b_to_a": 0.9915984178852251,
+          "item_a_name": "Spicy BBQ 1",
+          "item_b_name": "Spicy Breakfast 10"
+        },
+        {
+          "item_b": "M0070",
+          "item_a": "M0004",
+          "pair_count": 1205,
+          "count_a": 76168,
+          "count_b": 10475,
+          "support": 0.001972735324404455,
+          "confidence_a_to_b": 0.01582029198613591,
+          "confidence_b_to_a": 0.11503579952267304,
+          "lift_a_to_b": 0.9225261568511159,
+          "lift_b_to_a": 0.922526156851116,
+          "item_a_name": "Spicy BBQ 1",
+          "item_b_name": "Grilled Salad 5"
+        },
+        {
+          "item_b": "M0134",
+          "item_a": "M0002",
+          "pair_count": 1198,
+          "count_a": 121270,
+          "count_b": 6543,
+          "support": 0.001961275451150653,
+          "confidence_a_to_b": 0.009878782881174239,
+          "confidence_b_to_a": 0.18309643894238117,
+          "lift_a_to_b": 0.9222416798042207,
+          "lift_b_to_a": 0.9222416798042209,
+          "item_a_name": "Signature Pizza 1",
+          "item_b_name": "Masala Rice 9"
+        },
+        {
+          "item_b": "M0171",
+          "item_a": "M0001",
+          "pair_count": 1572,
+          "count_a": 187164,
+          "count_b": 5402,
+          "support": 0.0025735601078537788,
+          "confidence_a_to_b": 0.00839905109957043,
+          "confidence_b_to_a": 0.2910033320992225,
+          "lift_a_to_b": 0.9497162506474096,
+          "lift_b_to_a": 0.9497162506474097,
+          "item_a_name": "Classic Burger 1",
+          "item_b_name": "Tandoori Dessert 12"
+        }
+      ]
+    },
+    "customer_rfm": {
+      "path": "hdfs://localhost:9000/dineq/results/gap1/v5/customer_rfm",
+      "rows": 74437,
+      "schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "customer_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "last_order",
+            "type": "timestamp",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "frequency",
+            "type": "long",
+            "nullable": false,
+            "metadata": {}
+          },
+          {
+            "name": "monetary_value",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "avg_order_value",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "restaurant_diversity",
+            "type": "long",
+            "nullable": false,
+            "metadata": {}
+          },
+          {
+            "name": "recency_days",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "r_score",
+            "type": "integer",
+            "nullable": false,
+            "metadata": {}
+          },
+          {
+            "name": "f_score",
+            "type": "integer",
+            "nullable": false,
+            "metadata": {}
+          },
+          {
+            "name": "m_score",
+            "type": "integer",
+            "nullable": false,
+            "metadata": {}
+          },
+          {
+            "name": "behavior_segment",
+            "type": "string",
+            "nullable": false,
+            "metadata": {}
+          },
+          {
+            "name": "analysis_as_of",
+            "type": "string",
+            "nullable": false,
+            "metadata": {}
+          }
+        ]
+      },
+      "sample": [
+        {
+          "customer_id": "C0029111",
+          "last_order": "2026-05-12T00:51:52.000Z",
+          "frequency": 1,
+          "monetary_value": 215.88,
+          "avg_order_value": 215.88,
+          "restaurant_diversity": 1,
+          "recency_days": 111,
+          "r_score": 4,
+          "f_score": 1,
+          "m_score": 1,
+          "behavior_segment": "One-time customer",
+          "analysis_as_of": "2026-08-31"
+        },
+        {
+          "customer_id": "C0032102",
+          "last_order": "2026-07-28T09:52:24.000Z",
+          "frequency": 1,
+          "monetary_value": 264.5,
+          "avg_order_value": 264.5,
+          "restaurant_diversity": 1,
+          "recency_days": 34,
+          "r_score": 2,
+          "f_score": 1,
+          "m_score": 1,
+          "behavior_segment": "One-time customer",
+          "analysis_as_of": "2026-08-31"
+        },
+        {
+          "customer_id": "C0049751",
+          "last_order": "2025-04-18T13:45:13.000Z",
+          "frequency": 1,
+          "monetary_value": 437.0,
+          "avg_order_value": 437.0,
+          "restaurant_diversity": 1,
+          "recency_days": 500,
+          "r_score": 5,
+          "f_score": 1,
+          "m_score": 1,
+          "behavior_segment": "One-time customer",
+          "analysis_as_of": "2026-08-31"
+        },
+        {
+          "customer_id": "C0070193",
+          "last_order": "2025-09-24T13:21:47.000Z",
+          "frequency": 1,
+          "monetary_value": 446.02,
+          "avg_order_value": 446.02,
+          "restaurant_diversity": 1,
+          "recency_days": 341,
+          "r_score": 5,
+          "f_score": 1,
+          "m_score": 1,
+          "behavior_segment": "One-time customer",
+          "analysis_as_of": "2026-08-31"
+        },
+        {
+          "customer_id": "C0059737",
+          "last_order": "2026-04-15T23:09:05.000Z",
+          "frequency": 1,
+          "monetary_value": 549.78,
+          "avg_order_value": 549.78,
+          "restaurant_diversity": 1,
+          "recency_days": 138,
+          "r_score": 4,
+          "f_score": 1,
+          "m_score": 1,
+          "behavior_segment": "One-time customer",
+          "analysis_as_of": "2026-08-31"
+        },
+        {
+          "customer_id": "C0064046",
+          "last_order": "2026-03-03T18:54:26.000Z",
+          "frequency": 1,
+          "monetary_value": 614.5,
+          "avg_order_value": 614.5,
+          "restaurant_diversity": 1,
+          "recency_days": 181,
+          "r_score": 5,
+          "f_score": 1,
+          "m_score": 1,
+          "behavior_segment": "One-time customer",
+          "analysis_as_of": "2026-08-31"
+        },
+        {
+          "customer_id": "C0042543",
+          "last_order": "2026-08-04T11:15:34.000Z",
+          "frequency": 1,
+          "monetary_value": 619.22,
+          "avg_order_value": 619.22,
+          "restaurant_diversity": 1,
+          "recency_days": 27,
+          "r_score": 2,
+          "f_score": 1,
+          "m_score": 1,
+          "behavior_segment": "One-time customer",
+          "analysis_as_of": "2026-08-31"
+        },
+        {
+          "customer_id": "C0056495",
+          "last_order": "2026-07-28T05:28:57.000Z",
+          "frequency": 1,
+          "monetary_value": 633.0,
+          "avg_order_value": 633.0,
+          "restaurant_diversity": 1,
+          "recency_days": 34,
+          "r_score": 2,
+          "f_score": 1,
+          "m_score": 1,
+          "behavior_segment": "One-time customer",
+          "analysis_as_of": "2026-08-31"
+        }
+      ]
+    },
+    "wastage_dimensions": {
+      "path": "hdfs://localhost:9000/dineq/results/gap1/v5/wastage_dimensions",
+      "rows": 107941,
+      "schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "restaurant_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "restaurant_name",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "city",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "menu_item_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "item_name",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "category_name",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "waste_month",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "weekday",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "reason",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "quantity_wasted",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "wastage_cost",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "records",
+            "type": "long",
+            "nullable": false,
+            "metadata": {}
+          }
+        ]
+      },
+      "sample": [
+        {
+          "restaurant_id": "R015",
+          "restaurant_name": "DineIQ Bahria Town",
+          "city": "Rawalpindi",
+          "menu_item_id": "M0033",
+          "item_name": "Crispy Pakistani 3",
+          "category_name": "Pakistani",
+          "waste_month": "2025-10",
+          "weekday": "Monday",
+          "reason": "Unsold",
+          "quantity_wasted": 1.35,
+          "wastage_cost": 220.75,
+          "records": 1
+        },
+        {
+          "restaurant_id": "R011",
+          "restaurant_name": "DineIQ F-10",
+          "city": "Islamabad",
+          "menu_item_id": "M0171",
+          "item_name": "Tandoori Dessert 12",
+          "category_name": "Desserts",
+          "waste_month": "2026-06",
+          "weekday": "Friday",
+          "reason": "Damaged",
+          "quantity_wasted": 0.61,
+          "wastage_cost": 524.31,
+          "records": 1
+        },
+        {
+          "restaurant_id": "R011",
+          "restaurant_name": "DineIQ F-10",
+          "city": "Islamabad",
+          "menu_item_id": "M0133",
+          "item_name": "Crispy Sandwiche 9",
+          "category_name": "Sandwiches",
+          "waste_month": "2025-04",
+          "weekday": "Tuesday",
+          "reason": "Damaged",
+          "quantity_wasted": 0.58,
+          "wastage_cost": 340.7,
+          "records": 1
+        },
+        {
+          "restaurant_id": "R015",
+          "restaurant_name": "DineIQ Bahria Town",
+          "city": "Rawalpindi",
+          "menu_item_id": "M0151",
+          "item_name": "Tandoori Burger 11",
+          "category_name": "Burgers",
+          "waste_month": "2025-05",
+          "weekday": "Thursday",
+          "reason": "Expired",
+          "quantity_wasted": 3.32,
+          "wastage_cost": 1132.65,
+          "records": 1
+        },
+        {
+          "restaurant_id": "R001",
+          "restaurant_name": "DineIQ Clifton",
+          "city": "Karachi",
+          "menu_item_id": "M0118",
+          "item_name": "Deluxe Sandwiche 8",
+          "category_name": "Sandwiches",
+          "waste_month": "2026-05",
+          "weekday": "Sunday",
+          "reason": "Unsold",
+          "quantity_wasted": 1.54,
+          "wastage_cost": 1219.56,
+          "records": 1
+        },
+        {
+          "restaurant_id": "R011",
+          "restaurant_name": "DineIQ F-10",
+          "city": "Islamabad",
+          "menu_item_id": "M0123",
+          "item_name": "Fresh Pakistani 9",
+          "category_name": "Pakistani",
+          "waste_month": "2025-07",
+          "weekday": "Monday",
+          "reason": "Expired",
+          "quantity_wasted": 2.38,
+          "wastage_cost": 774.93,
+          "records": 1
+        },
+        {
+          "restaurant_id": "R011",
+          "restaurant_name": "DineIQ F-10",
+          "city": "Islamabad",
+          "menu_item_id": "M0113",
+          "item_name": "Crispy Fast Food 8",
+          "category_name": "Fast Food",
+          "waste_month": "2026-02",
+          "weekday": "Thursday",
+          "reason": "Expired",
+          "quantity_wasted": 0.78,
+          "wastage_cost": 351.27,
+          "records": 1
+        },
+        {
+          "restaurant_id": "R007",
+          "restaurant_name": "DineIQ DHA",
+          "city": "Lahore",
+          "menu_item_id": "M0168",
+          "item_name": "Royal Pakistani 12",
+          "category_name": "Pakistani",
+          "waste_month": "2026-02",
+          "weekday": "Saturday",
+          "reason": "Unsold",
+          "quantity_wasted": 1.52,
+          "wastage_cost": 1203.86,
+          "records": 1
+        }
+      ]
+    },
+    "wastage_risk_ranking": {
+      "path": "hdfs://localhost:9000/dineq/results/gap1/v5/wastage_risk_ranking",
+      "rows": 5000,
+      "schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "restaurant_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "menu_item_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "item_name",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "historical_quantity_wasted",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "historical_wastage_cost",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "waste_periods",
+            "type": "long",
+            "nullable": false,
+            "metadata": {}
+          },
+          {
+            "name": "risk_rank",
+            "type": "integer",
+            "nullable": false,
+            "metadata": {}
+          },
+          {
+            "name": "method",
+            "type": "string",
+            "nullable": false,
+            "metadata": {}
+          }
+        ]
+      },
+      "sample": [
+        {
+          "restaurant_id": "R014",
+          "menu_item_id": "M0037",
+          "item_name": "Creamy Chinese 3",
+          "historical_quantity_wasted": 94.6,
+          "historical_wastage_cost": 89465.13,
+          "waste_periods": 35,
+          "risk_rank": 1,
+          "method": "historical burden ranking; descriptive, not predictive"
+        },
+        {
+          "restaurant_id": "R022",
+          "menu_item_id": "M0153",
+          "item_name": "Crispy Pakistani 11",
+          "historical_quantity_wasted": 88.28999999999999,
+          "historical_wastage_cost": 82002.91,
+          "waste_periods": 39,
+          "risk_rank": 2,
+          "method": "historical burden ranking; descriptive, not predictive"
+        },
+        {
+          "restaurant_id": "R016",
+          "menu_item_id": "M0053",
+          "item_name": "Crispy Fast Food 4",
+          "historical_quantity_wasted": 89.74000000000002,
+          "historical_wastage_cost": 78590.70000000001,
+          "waste_periods": 33,
+          "risk_rank": 3,
+          "method": "historical burden ranking; descriptive, not predictive"
+        },
+        {
+          "restaurant_id": "R024",
+          "menu_item_id": "M0086",
+          "item_name": "Double Pasta 6",
+          "historical_quantity_wasted": 82.64000000000001,
+          "historical_wastage_cost": 78217.1,
+          "waste_periods": 30,
+          "risk_rank": 4,
+          "method": "historical burden ranking; descriptive, not predictive"
+        },
+        {
+          "restaurant_id": "R024",
+          "menu_item_id": "M0037",
+          "item_name": "Creamy Chinese 3",
+          "historical_quantity_wasted": 81.94,
+          "historical_wastage_cost": 77492.31,
+          "waste_periods": 30,
+          "risk_rank": 5,
+          "method": "historical burden ranking; descriptive, not predictive"
+        },
+        {
+          "restaurant_id": "R002",
+          "menu_item_id": "M0129",
+          "item_name": "Special Breakfast 9",
+          "historical_quantity_wasted": 84.95,
+          "historical_wastage_cost": 76908.65,
+          "waste_periods": 31,
+          "risk_rank": 6,
+          "method": "historical burden ranking; descriptive, not predictive"
+        },
+        {
+          "restaurant_id": "R008",
+          "menu_item_id": "M0120",
+          "item_name": "Loaded Coffee & Tea 8",
+          "historical_quantity_wasted": 76.48,
+          "historical_wastage_cost": 76612.28,
+          "waste_periods": 31,
+          "risk_rank": 7,
+          "method": "historical burden ranking; descriptive, not predictive"
+        },
+        {
+          "restaurant_id": "R023",
+          "menu_item_id": "M0086",
+          "item_name": "Double Pasta 6",
+          "historical_quantity_wasted": 80.71,
+          "historical_wastage_cost": 76390.41,
+          "waste_periods": 34,
+          "risk_rank": 8,
+          "method": "historical burden ranking; descriptive, not predictive"
+        }
+      ]
+    },
+    "price_sensitivity": {
+      "path": "hdfs://localhost:9000/dineq/results/gap1/v5/price_sensitivity",
+      "rows": 2992,
+      "schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "menu_item_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "restaurant_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "old_price",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "new_price",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "effective_from",
+            "type": "date",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "pre_units",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "post_units",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "price_change_pct",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "demand_change_pct",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "observational_arc_elasticity",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "sensitivity",
+            "type": "string",
+            "nullable": false,
+            "metadata": {}
+          },
+          {
+            "name": "interpretation",
+            "type": "string",
+            "nullable": false,
+            "metadata": {}
+          }
+        ]
+      },
+      "sample": [
+        {
+          "menu_item_id": "M0158",
+          "restaurant_id": "R002",
+          "old_price": 792.01,
+          "new_price": 860.33,
+          "effective_from": "2025-11-14",
+          "pre_units": 16,
+          "post_units": 27,
+          "price_change_pct": 0.08626153710180433,
+          "demand_change_pct": 0.6875,
+          "observational_arc_elasticity": 7.96994840456674,
+          "sensitivity": "Highly Price Sensitive",
+          "interpretation": "uncontrolled pre/post association; not causal; each window 30 days"
+        },
+        {
+          "menu_item_id": "M0001",
+          "restaurant_id": "R003",
+          "old_price": 1480.0,
+          "new_price": 1528.7,
+          "effective_from": "2025-07-02",
+          "pre_units": 794,
+          "post_units": 754,
+          "price_change_pct": 0.03290540540540544,
+          "demand_change_pct": -0.05037783375314862,
+          "observational_arc_elasticity": -1.5309896089252542,
+          "sensitivity": "Highly Price Sensitive",
+          "interpretation": "uncontrolled pre/post association; not causal; each window 30 days"
+        },
+        {
+          "menu_item_id": "M0002",
+          "restaurant_id": "R021",
+          "old_price": 541.01,
+          "new_price": 559.6,
+          "effective_from": "2025-11-23",
+          "pre_units": 444,
+          "post_units": 520,
+          "price_change_pct": 0.03436165690098156,
+          "demand_change_pct": 0.17117117117117117,
+          "observational_arc_elasticity": 4.981458596843203,
+          "sensitivity": "Highly Price Sensitive",
+          "interpretation": "uncontrolled pre/post association; not causal; each window 30 days"
+        },
+        {
+          "menu_item_id": "M0065",
+          "restaurant_id": "R008",
+          "old_price": 973.93,
+          "new_price": 1006.51,
+          "effective_from": "2026-06-12",
+          "pre_units": 34,
+          "post_units": 31,
+          "price_change_pct": 0.03345209614654035,
+          "demand_change_pct": -0.08823529411764706,
+          "observational_arc_elasticity": -2.637661141804785,
+          "sensitivity": "Highly Price Sensitive",
+          "interpretation": "uncontrolled pre/post association; not causal; each window 30 days"
+        },
+        {
+          "menu_item_id": "M0039",
+          "restaurant_id": "R016",
+          "old_price": 1997.2,
+          "new_price": 2177.87,
+          "effective_from": "2026-06-22",
+          "pre_units": 49,
+          "post_units": 54,
+          "price_change_pct": 0.09046164630482668,
+          "demand_change_pct": 0.10204081632653061,
+          "observational_arc_elasticity": 1.1280008765558593,
+          "sensitivity": "Highly Price Sensitive",
+          "interpretation": "uncontrolled pre/post association; not causal; each window 30 days"
+        },
+        {
+          "menu_item_id": "M0119",
+          "restaurant_id": "R001",
+          "old_price": 240.0,
+          "new_price": 258.49,
+          "effective_from": "2026-06-01",
+          "pre_units": 13,
+          "post_units": 19,
+          "price_change_pct": 0.0770416666666667,
+          "demand_change_pct": 0.46153846153846156,
+          "observational_arc_elasticity": 5.9907642384656965,
+          "sensitivity": "Highly Price Sensitive",
+          "interpretation": "uncontrolled pre/post association; not causal; each window 30 days"
+        },
+        {
+          "menu_item_id": "M0026",
+          "restaurant_id": "R001",
+          "old_price": 491.07,
+          "new_price": 521.69,
+          "effective_from": "2025-12-15",
+          "pre_units": 87,
+          "post_units": 70,
+          "price_change_pct": 0.06235363593785013,
+          "demand_change_pct": -0.19540229885057472,
+          "observational_arc_elasticity": -3.1337755354850274,
+          "sensitivity": "Highly Price Sensitive",
+          "interpretation": "uncontrolled pre/post association; not causal; each window 30 days"
+        },
+        {
+          "menu_item_id": "M0117",
+          "restaurant_id": "R005",
+          "old_price": 1212.9,
+          "new_price": 1341.82,
+          "effective_from": "2026-08-09",
+          "pre_units": 22,
+          "post_units": 27,
+          "price_change_pct": 0.10629070821996854,
+          "demand_change_pct": 0.22727272727272727,
+          "observational_arc_elasticity": 2.1382182043832705,
+          "sensitivity": "Highly Price Sensitive",
+          "interpretation": "uncontrolled pre/post association; not causal; each window 30 days"
+        }
+      ]
+    },
+    "promotion_intelligence": {
+      "path": "hdfs://localhost:9000/dineq/results/gap1/v5/promotion_intelligence",
+      "rows": 80,
+      "schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "promotion_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "orders",
+            "type": "long",
+            "nullable": false,
+            "metadata": {}
+          },
+          {
+            "name": "customers",
+            "type": "long",
+            "nullable": false,
+            "metadata": {}
+          },
+          {
+            "name": "avg_order_value",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "revenue",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "estimated_contribution_margin",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "avg_estimated_margin",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "promotion_name",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "start_date",
+            "type": "date",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "end_date",
+            "type": "date",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "baseline_orders",
+            "type": "long",
+            "nullable": false,
+            "metadata": {}
+          },
+          {
+            "name": "baseline_customers",
+            "type": "long",
+            "nullable": false,
+            "metadata": {}
+          },
+          {
+            "name": "baseline_aov",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "baseline_margin",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "promo_trap_signal",
+            "type": "string",
+            "nullable": false,
+            "metadata": {}
+          }
+        ]
+      },
+      "sample": [
+        {
+          "promotion_id": "P0033",
+          "orders": 2165,
+          "customers": 2070,
+          "avg_order_value": 7832.865030023094,
+          "revenue": 16958152.79,
+          "estimated_contribution_margin": 6629680.300000001,
+          "avg_estimated_margin": 3065.0394359685624,
+          "promotion_name": "Campaign 033",
+          "start_date": "2025-12-31",
+          "end_date": "2026-01-29",
+          "baseline_orders": 440165,
+          "baseline_customers": 73063,
+          "baseline_aov": 8674.258712073948,
+          "baseline_margin": 3811.2740407346964,
+          "promo_trap_signal": "No configured trap signal"
+        },
+        {
+          "promotion_id": "P0007",
+          "orders": 1979,
+          "customers": 1910,
+          "avg_order_value": 8296.570459828197,
+          "revenue": 16418912.940000001,
+          "estimated_contribution_margin": 7026929.370520803,
+          "avg_estimated_margin": 3554.339590551747,
+          "promotion_name": "Campaign 007",
+          "start_date": "2025-12-19",
+          "end_date": "2026-01-18",
+          "baseline_orders": 440165,
+          "baseline_customers": 73063,
+          "baseline_aov": 8674.258712073948,
+          "baseline_margin": 3811.2740407346964,
+          "promo_trap_signal": "No configured trap signal"
+        },
+        {
+          "promotion_id": "P0080",
+          "orders": 2122,
+          "customers": 2031,
+          "avg_order_value": 8402.700725730441,
+          "revenue": 17830530.939999998,
+          "estimated_contribution_margin": 7540176.10069939,
+          "avg_estimated_margin": 3556.6868399525424,
+          "promotion_name": "Campaign 080",
+          "start_date": "2025-04-03",
+          "end_date": "2025-04-27",
+          "baseline_orders": 440165,
+          "baseline_customers": 73063,
+          "baseline_aov": 8674.258712073948,
+          "baseline_margin": 3811.2740407346964,
+          "promo_trap_signal": "No configured trap signal"
+        },
+        {
+          "promotion_id": "P0049",
+          "orders": 2106,
+          "customers": 2002,
+          "avg_order_value": 6100.566476733144,
+          "revenue": 12847793.0,
+          "estimated_contribution_margin": 3324813.677741866,
+          "avg_estimated_margin": 1580.2346377100123,
+          "promotion_name": "Campaign 049",
+          "start_date": "2025-04-26",
+          "end_date": "2025-06-01",
+          "baseline_orders": 440165,
+          "baseline_customers": 73063,
+          "baseline_aov": 8674.258712073948,
+          "baseline_margin": 3811.2740407346964,
+          "promo_trap_signal": "No configured trap signal"
+        },
+        {
+          "promotion_id": "P0002",
+          "orders": 2107,
+          "customers": 2017,
+          "avg_order_value": 8184.465956336025,
+          "revenue": 17244669.770000003,
+          "estimated_contribution_margin": 7218575.461689434,
+          "avg_estimated_margin": 3425.9968968625694,
+          "promotion_name": "Campaign 002",
+          "start_date": "2025-09-19",
+          "end_date": "2025-11-01",
+          "baseline_orders": 440165,
+          "baseline_customers": 73063,
+          "baseline_aov": 8674.258712073948,
+          "baseline_margin": 3811.2740407346964,
+          "promo_trap_signal": "No configured trap signal"
+        },
+        {
+          "promotion_id": "P0023",
+          "orders": 2114,
+          "customers": 2002,
+          "avg_order_value": 7508.985799432355,
+          "revenue": 15873995.979999999,
+          "estimated_contribution_margin": 5788549.389723907,
+          "avg_estimated_margin": 2739.493322159918,
+          "promotion_name": "Campaign 023",
+          "start_date": "2025-11-23",
+          "end_date": "2026-01-06",
+          "baseline_orders": 440165,
+          "baseline_customers": 73063,
+          "baseline_aov": 8674.258712073948,
+          "baseline_margin": 3811.2740407346964,
+          "promo_trap_signal": "No configured trap signal"
+        },
+        {
+          "promotion_id": "P0004",
+          "orders": 2065,
+          "customers": 1964,
+          "avg_order_value": 7720.859878934625,
+          "revenue": 15943575.65,
+          "estimated_contribution_margin": 6241298.4190092245,
+          "avg_estimated_margin": 3025.3506636011753,
+          "promotion_name": "Campaign 004",
+          "start_date": "2025-11-10",
+          "end_date": "2025-12-12",
+          "baseline_orders": 440165,
+          "baseline_customers": 73063,
+          "baseline_aov": 8674.258712073948,
+          "baseline_margin": 3811.2740407346964,
+          "promo_trap_signal": "No configured trap signal"
+        },
+        {
+          "promotion_id": "P0014",
+          "orders": 2156,
+          "customers": 2057,
+          "avg_order_value": 8314.622769016696,
+          "revenue": 17926326.689999998,
+          "estimated_contribution_margin": 7570519.480335719,
+          "avg_estimated_margin": 3513.0020790420967,
+          "promotion_name": "Campaign 014",
+          "start_date": "2025-05-30",
+          "end_date": "2025-07-14",
+          "baseline_orders": 440165,
+          "baseline_customers": 73063,
+          "baseline_aov": 8674.258712073948,
+          "baseline_margin": 3811.2740407346964,
+          "promo_trap_signal": "No configured trap signal"
+        }
+      ]
+    },
+    "rating_anomalies": {
+      "path": "hdfs://localhost:9000/dineq/results/gap1/v5/rating_anomalies",
+      "rows": 0,
+      "schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "restaurant_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "event_date",
+            "type": "date",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "mean_rating",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "n",
+            "type": "long",
+            "nullable": false,
+            "metadata": {}
+          },
+          {
+            "name": "median_rating",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "mad",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "method",
+            "type": "string",
+            "nullable": false,
+            "metadata": {}
+          }
+        ]
+      },
+      "sample": []
+    },
+    "sales_anomalies": {
+      "path": "hdfs://localhost:9000/dineq/results/gap1/v5/sales_anomalies",
+      "rows": 2138,
+      "schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "restaurant_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "hour_start",
+            "type": "timestamp",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "orders",
+            "type": "long",
+            "nullable": false,
+            "metadata": {}
+          },
+          {
+            "name": "hour_of_week",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "median_orders",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "mad",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "method",
+            "type": "string",
+            "nullable": false,
+            "metadata": {}
+          }
+        ]
+      },
+      "sample": [
+        {
+          "restaurant_id": "R001",
+          "hour_start": "2025-03-23T14:00:00.000Z",
+          "orders": 8,
+          "hour_of_week": 38,
+          "median_orders": 3,
+          "mad": 1,
+          "method": "same restaurant/hour-of-week robust modified-z >3"
+        },
+        {
+          "restaurant_id": "R001",
+          "hour_start": "2025-06-01T14:00:00.000Z",
+          "orders": 8,
+          "hour_of_week": 38,
+          "median_orders": 3,
+          "mad": 1,
+          "method": "same restaurant/hour-of-week robust modified-z >3"
+        },
+        {
+          "restaurant_id": "R001",
+          "hour_start": "2025-12-01T13:00:00.000Z",
+          "orders": 8,
+          "hour_of_week": 61,
+          "median_orders": 3,
+          "mad": 1,
+          "method": "same restaurant/hour-of-week robust modified-z >3"
+        },
+        {
+          "restaurant_id": "R001",
+          "hour_start": "2025-07-07T13:00:00.000Z",
+          "orders": 8,
+          "hour_of_week": 61,
+          "median_orders": 3,
+          "mad": 1,
+          "method": "same restaurant/hour-of-week robust modified-z >3"
+        },
+        {
+          "restaurant_id": "R001",
+          "hour_start": "2026-01-05T19:00:00.000Z",
+          "orders": 11,
+          "hour_of_week": 67,
+          "median_orders": 3,
+          "mad": 1,
+          "method": "same restaurant/hour-of-week robust modified-z >3"
+        },
+        {
+          "restaurant_id": "R001",
+          "hour_start": "2025-11-24T19:00:00.000Z",
+          "orders": 8,
+          "hour_of_week": 67,
+          "median_orders": 3,
+          "mad": 1,
+          "method": "same restaurant/hour-of-week robust modified-z >3"
+        },
+        {
+          "restaurant_id": "R001",
+          "hour_start": "2026-06-01T19:00:00.000Z",
+          "orders": 8,
+          "hour_of_week": 67,
+          "median_orders": 3,
+          "mad": 1,
+          "method": "same restaurant/hour-of-week robust modified-z >3"
+        },
+        {
+          "restaurant_id": "R001",
+          "hour_start": "2025-03-10T19:00:00.000Z",
+          "orders": 10,
+          "hour_of_week": 67,
+          "median_orders": 3,
+          "mad": 1,
+          "method": "same restaurant/hour-of-week robust modified-z >3"
+        }
+      ]
+    },
+    "recommendations": {
+      "path": "hdfs://localhost:9000/dineq/results/gap1/v5/recommendations",
+      "rows": 1222,
+      "schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "source",
+            "type": "string",
+            "nullable": false,
+            "metadata": {}
+          },
+          {
+            "name": "action",
+            "type": "string",
+            "nullable": false,
+            "metadata": {}
+          },
+          {
+            "name": "subject",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "evidence",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "sample": [
+        {
+          "source": "basket association",
+          "action": "bundle/cross-sell",
+          "subject": "Double Dessert 1 + House Beverage 13",
+          "evidence": "Observed pair_count=514; support=8.4E-4; confidence=0.0089; lift=1.0678"
+        },
+        {
+          "source": "basket association",
+          "action": "bundle/cross-sell",
+          "subject": "Double Dessert 1 + Fiery Chinese 12",
+          "evidence": "Observed pair_count=551; support=9.0E-4; confidence=0.0095; lift=1.0599"
+        },
+        {
+          "source": "basket association",
+          "action": "bundle/cross-sell",
+          "subject": "Fresh Pakistani 1 + Signature Pizza 13",
+          "evidence": "Observed pair_count=814; support=0.00133; confidence=0.0088; lift=1.0353"
+        },
+        {
+          "source": "basket association",
+          "action": "bundle/cross-sell",
+          "subject": "Spicy BBQ 1 + Masala Rice 9",
+          "evidence": "Observed pair_count=843; support=0.00138; confidence=0.0111; lift=1.0332"
+        },
+        {
+          "source": "basket association",
+          "action": "bundle/cross-sell",
+          "subject": "Spicy BBQ 1 + Creamy Pizza 14",
+          "evidence": "Observed pair_count=647; support=0.00106; confidence=0.0085; lift=1.0285"
+        },
+        {
+          "source": "basket association",
+          "action": "bundle/cross-sell",
+          "subject": "Fresh Pakistani 1 + Supreme BBQ 14",
+          "evidence": "Observed pair_count=749; support=0.00123; confidence=0.0081; lift=1.0248"
+        },
+        {
+          "source": "basket association",
+          "action": "bundle/cross-sell",
+          "subject": "Spicy BBQ 1 + Spicy Rice 11",
+          "evidence": "Observed pair_count=720; support=0.00118; confidence=0.0095; lift=1.021"
+        },
+        {
+          "source": "basket association",
+          "action": "bundle/cross-sell",
+          "subject": "Spicy BBQ 1 + Loaded Coffee & Tea 8",
+          "evidence": "Observed pair_count=882; support=0.00144; confidence=0.0116; lift=1.0195"
+        }
+      ]
+    }
+  }
+}

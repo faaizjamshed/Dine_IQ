@@ -1,0 +1,317 @@
+DineIQ
+
+ANALYTICS PLATFORM
+
+OVERVIEW
+
+Executive Dashboard
+
+INTELLIGENCE
+
+Menu Intelligence
+Customer Intelligence
+Basket & Bundles
+
+OPERATIONS
+
+Demand Forecast
+Wastage
+Locations
+Channels
+
+DECISIONS & ACTIONS
+
+Pricing & Promotions
+Anomalies
+Recommendations
+What-If Simulator
+
+PLATFORM
+
+Model Comparison
+Reports & Export
+Admin
+Collapse
+Model Comparison
+Full history
+Outlets:
+All outlets
+Categories:
+All categories
+Channels:
+All channels
+API CONNECTED
+API CONNECTED
+Search
+⌘K
+F
+
+Spark training day_of_week maps Sunday=0; Python training uses pandas Monday=0. Python inference here uses its native Monday=0 convention. Metrics are same-period but feature semantics differ; this is not an exact controlled model comparison. Agreement KPI refers to aggregate analytics checks, not equality of model predictions. Record table shows 100 of 500 keyed evaluation cases. Job history is saved evidence; start times and live status are unavailable.
+
+Record agreement
+100.0%
+Spark vs Python record diffs
+Spark jobs (24h)
+3
+Distributed engine
+Python jobs (24h)
+—
+Single-node engine
+Records compared
+500
+Across all audit tables
+Last compared
+Time unavailable
+Unavailable
+Engine Metrics — Spark vs Python
+
+Per-metric comparison · bar widths normalized per row for readability, real values printed
+
+Spark
+Python
+RMSE
+ORDERS
+Spark
+1.393
+Python
+1.389
+
+Spark training day_of_week maps Sunday=0; Python training uses pandas Monday=0. Python inference here uses its native Monday=0 convention. Metrics are same-period but feature semantics differ; this is not an exact controlled model comparison.
+
+MAE
+ORDERS
+Spark
+1.023
+Python
+1.024
+
+Spark training day_of_week maps Sunday=0; Python training uses pandas Monday=0. Python inference here uses its native Monday=0 convention. Metrics are same-period but feature semantics differ; this is not an exact controlled model comparison.
+
+R2
+SCORE
+Spark
+0.503
+Python
+0.506
+
+Spark training day_of_week maps Sunday=0; Python training uses pandas Monday=0. Python inference here uses its native Monday=0 convention. Metrics are same-period but feature semantics differ; this is not an exact controlled model comparison.
+
+Output Agreement by Metric
+
+How closely the two pipelines agree on each aggregation contract
+
+No agreement metrics in the parity audit payload.
+
+Record-Level Diff Sample
+
+Fields where the two pipelines were compared record by record
+
+RECORD	FIELD	SPARK	PYTHON	MATCH
+R001 2026-06-01 00:00:00	Hourly orders prediction	0.43321428745688173	0.5071328469665753	
+
+R002 2026-06-01 00:00:00	Hourly orders prediction	0.43321428745688173	0.394565664327642	
+
+R003 2026-06-01 00:00:00	Hourly orders prediction	0.43321428745688173	0.43457147501788623	
+
+R004 2026-06-01 00:00:00	Hourly orders prediction	0.43321428745688173	0.5919908234675834	
+
+R005 2026-06-01 00:00:00	Hourly orders prediction	0.43321428745688173	0.5038220056018118	
+
+R006 2026-06-01 00:00:00	Hourly orders prediction	0.43321428745688173	0.42092355430484246	
+
+R007 2026-06-01 00:00:00	Hourly orders prediction	0.43321428745688173	0.35457335335263684	
+
+R008 2026-06-01 00:00:00	Hourly orders prediction	0.43321428745688173	0.3758808669589638	
+
+R009 2026-06-01 00:00:00	Hourly orders prediction	0.43321428745688173	0.4580681349601847	
+
+R010 2026-06-01 00:00:00	Hourly orders prediction	0.43321428745688173	0.42343914685330164	
+
+R011 2026-06-01 00:00:00	Hourly orders prediction	0.43321428745688173	0.44447602263742114	
+
+R012 2026-06-01 00:00:00	Hourly orders prediction	0.43321428745688173	0.4012970213168649	
+
+R013 2026-06-01 00:00:00	Hourly orders prediction	0.43321428745688173	0.4437268373303496	
+
+R014 2026-06-01 00:00:00	Hourly orders prediction	0.35362136638152075	0.4008419085384226	
+
+R015 2026-06-01 00:00:00	Hourly orders prediction	0.43321428745688173	0.4026973470271452	
+
+R016 2026-06-01 00:00:00	Hourly orders prediction	0.43321428745688173	0.4347307588068114	
+
+R017 2026-06-01 00:00:00	Hourly orders prediction	0.43321428745688173	0.4353856112696059	
+
+R018 2026-06-01 00:00:00	Hourly orders prediction	0.43321428745688173	0.4284352203177568	
+
+R019 2026-06-01 00:00:00	Hourly orders prediction	0.43321428745688173	0.41675924560155925	
+
+R020 2026-06-01 00:00:00	Hourly orders prediction	0.43321428745688173	0.4090152430107806	
+
+R021 2026-06-01 00:00:00	Hourly orders prediction	0.43321428745688173	0.4164976381003882	
+
+R022 2026-06-01 00:00:00	Hourly orders prediction	0.43321428745688173	0.4170698310966821	
+
+R023 2026-06-01 00:00:00	Hourly orders prediction	0.43321428745688173	0.3859932428785021	
+
+R024 2026-06-01 00:00:00	Hourly orders prediction	0.43321428745688173	0.4316399346009729	
+
+R025 2026-06-01 00:00:00	Hourly orders prediction	0.43321428745688173	0.41730837071052373	
+
+R001 2026-06-01 01:00:00	Hourly orders prediction	0.20994156018415436	0.2110906937004101	
+
+R002 2026-06-01 01:00:00	Hourly orders prediction	0.20994156018415436	0.2118561089149497	
+
+R003 2026-06-01 01:00:00	Hourly orders prediction	0.20994156018415436	0.21971119884127432	
+
+R004 2026-06-01 01:00:00	Hourly orders prediction	0.20994156018415436	0.2062323943192605	
+
+R005 2026-06-01 01:00:00	Hourly orders prediction	0.20994156018415436	0.2211781857671462	
+
+R006 2026-06-01 01:00:00	Hourly orders prediction	0.20994156018415436	0.2180807514878233	
+
+R007 2026-06-01 01:00:00	Hourly orders prediction	0.20994156018415436	0.22809469807177657	
+
+R008 2026-06-01 01:00:00	Hourly orders prediction	0.20994156018415436	0.22087546440688008	
+
+R009 2026-06-01 01:00:00	Hourly orders prediction	0.20994156018415436	0.20934048517234274	
+
+R010 2026-06-01 01:00:00	Hourly orders prediction	0.20994156018415436	0.21729481421857272	
+
+R011 2026-06-01 01:00:00	Hourly orders prediction	0.20994156018415436	0.2230424962168475	
+
+R012 2026-06-01 01:00:00	Hourly orders prediction	0.20994156018415436	0.22484326403663993	
+
+R013 2026-06-01 01:00:00	Hourly orders prediction	0.20994156018415436	0.21859569703357323	
+
+R014 2026-06-01 01:00:00	Hourly orders prediction	0.20994156018415436	0.21115148322934035	
+
+R015 2026-06-01 01:00:00	Hourly orders prediction	0.20994156018415436	0.2269950022361864	
+
+R016 2026-06-01 01:00:00	Hourly orders prediction	0.20994156018415436	0.22424870042014683	
+
+R017 2026-06-01 01:00:00	Hourly orders prediction	0.20994156018415436	0.22753639766746528	
+
+R018 2026-06-01 01:00:00	Hourly orders prediction	0.20994156018415436	0.2070811213083958	
+
+R019 2026-06-01 01:00:00	Hourly orders prediction	0.20994156018415436	0.25613768238002577	
+
+R020 2026-06-01 01:00:00	Hourly orders prediction	0.20994156018415436	0.2228846938623615	
+
+R021 2026-06-01 01:00:00	Hourly orders prediction	0.20994156018415436	0.21015653996276215	
+
+R022 2026-06-01 01:00:00	Hourly orders prediction	0.20994156018415436	0.22582206715334685	
+
+R023 2026-06-01 01:00:00	Hourly orders prediction	0.20994156018415436	0.22429079394894674	
+
+R024 2026-06-01 01:00:00	Hourly orders prediction	0.20994156018415436	0.21821051699014626	
+
+R025 2026-06-01 01:00:00	Hourly orders prediction	0.20994156018415436	0.2518355172725018	
+
+R001 2026-06-01 02:00:00	Hourly orders prediction	0.20994156018415436	0.2199522968681748	
+
+R002 2026-06-01 02:00:00	Hourly orders prediction	0.20994156018415436	0.21231896026456024	
+
+R003 2026-06-01 02:00:00	Hourly orders prediction	0.20994156018415436	0.21880283430963338	
+
+R004 2026-06-01 02:00:00	Hourly orders prediction	0.20994156018415436	0.21222800285064639	
+
+R005 2026-06-01 02:00:00	Hourly orders prediction	0.20994156018415436	0.2142746704323934	
+
+R006 2026-06-01 02:00:00	Hourly orders prediction	0.20994156018415436	0.21975199972898274	
+
+R007 2026-06-01 02:00:00	Hourly orders prediction	0.20994156018415436	0.24200430315504828	
+
+R008 2026-06-01 02:00:00	Hourly orders prediction	0.20994156018415436	0.21750589522695565	
+
+R009 2026-06-01 02:00:00	Hourly orders prediction	0.20994156018415436	0.2240549304358912	
+
+R010 2026-06-01 02:00:00	Hourly orders prediction	0.20994156018415436	0.22229300819627715	
+
+R011 2026-06-01 02:00:00	Hourly orders prediction	0.20994156018415436	0.21988827969569513	
+
+R012 2026-06-01 02:00:00	Hourly orders prediction	0.20994156018415436	0.22338661909425558	
+
+R013 2026-06-01 02:00:00	Hourly orders prediction	0.20994156018415436	0.2109962747619075	
+
+R014 2026-06-01 02:00:00	Hourly orders prediction	0.20994156018415436	0.22150110745295865	
+
+R015 2026-06-01 02:00:00	Hourly orders prediction	0.20994156018415436	0.2255865302829984	
+
+R016 2026-06-01 02:00:00	Hourly orders prediction	0.20994156018415436	0.22471155176975738	
+
+R017 2026-06-01 02:00:00	Hourly orders prediction	0.20994156018415436	0.21926540823111065	
+
+R018 2026-06-01 02:00:00	Hourly orders prediction	0.20994156018415436	0.20661272759849297	
+
+R019 2026-06-01 02:00:00	Hourly orders prediction	0.20994156018415436	0.21457996838018928	
+
+R020 2026-06-01 02:00:00	Hourly orders prediction	0.20994156018415436	0.24540660826139388	
+
+R021 2026-06-01 02:00:00	Hourly orders prediction	0.20994156018415436	0.20405581242420112	
+
+R022 2026-06-01 02:00:00	Hourly orders prediction	0.20994156018415436	0.2061919827645217	
+
+R023 2026-06-01 02:00:00	Hourly orders prediction	0.20994156018415436	0.2239285298045985	
+
+R024 2026-06-01 02:00:00	Hourly orders prediction	0.20994156018415436	0.2186733683397568	
+
+R025 2026-06-01 02:00:00	Hourly orders prediction	0.20994156018415436	0.24003326909049233	
+
+R001 2026-06-01 03:00:00	Hourly orders prediction	0.20994156018415436	0.22194562852960492	
+
+R002 2026-06-01 03:00:00	Hourly orders prediction	0.20994156018415436	0.2129786724651535	
+
+R003 2026-06-01 03:00:00	Hourly orders prediction	0.20994156018415436	0.22764747025441395	
+
+R004 2026-06-01 03:00:00	Hourly orders prediction	0.20994156018415436	0.2211700860761341	
+
+R005 2026-06-01 03:00:00	Hourly orders prediction	0.20994156018415436	0.2193961131285727	
+
+R006 2026-06-01 03:00:00	Hourly orders prediction	0.20994156018415436	0.22696707700488367	
+
+R007 2026-06-01 03:00:00	Hourly orders prediction	0.20994156018415436	0.24807745885612292	
+
+R008 2026-06-01 03:00:00	Hourly orders prediction	0.20994156018415436	0.23129730619944552	
+
+R009 2026-06-01 03:00:00	Hourly orders prediction	0.20994156018415436	0.20765710162459555	
+
+R010 2026-06-01 03:00:00	Hourly orders prediction	0.20994156018415436	0.22548580559124592	
+
+R011 2026-06-01 03:00:00	Hourly orders prediction	0.20994156018415436	0.22462388144928475	
+
+R012 2026-06-01 03:00:00	Hourly orders prediction	0.20994156018415436	0.22986569685135888	
+
+R013 2026-06-01 03:00:00	Hourly orders prediction	0.20994156018415436	0.21575208881108576	
+
+R014 2026-06-01 03:00:00	Hourly orders prediction	0.20994156018415436	0.21396573122590815	
+
+R015 2026-06-01 03:00:00	Hourly orders prediction	0.20994156018415436	0.23503638757628895	
+
+R016 2026-06-01 03:00:00	Hourly orders prediction	0.20994156018415436	0.22355697447520564	
+
+R017 2026-06-01 03:00:00	Hourly orders prediction	0.20994156018415436	0.2246935355927014	
+
+R018 2026-06-01 03:00:00	Hourly orders prediction	0.20994156018415436	0.21044515869548003	
+
+R019 2026-06-01 03:00:00	Hourly orders prediction	0.20994156018415436	0.21896046260517749	
+
+R020 2026-06-01 03:00:00	Hourly orders prediction	0.20994156018415436	0.2297250703849393	
+
+R021 2026-06-01 03:00:00	Hourly orders prediction	0.20994156018415436	0.2074511208378557	
+
+R022 2026-06-01 03:00:00	Hourly orders prediction	0.20994156018415436	0.21490950530382769	
+
+R023 2026-06-01 03:00:00	Hourly orders prediction	0.20994156018415436	0.21992552688904396	
+
+R024 2026-06-01 03:00:00	Hourly orders prediction	0.20994156018415436	0.2276966741580689	
+
+R025 2026-06-01 03:00:00	Hourly orders prediction	0.20994156018415436	0.24746227499647827	
+Recent Pipeline Runs
+
+Latest jobs across both engines — failure history included
+
+RUN ID	JOB	PIPELINE	STARTED	DURATION	ROWS IN / OUT	STATUS
+0	Canonical V4 Analytics	Spark	Time unavailable	0m 27s	— / —	Success
+1	Gap1 Analytics V6	Spark	Time unavailable	1m 51s	— / —	Success
+2	Wastage Risk V3	Spark	Time unavailable	0m 47s	— / —	Success
+Classic Burger 1

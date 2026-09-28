@@ -1,0 +1,3957 @@
+DineIQ
+
+ANALYTICS PLATFORM
+
+OVERVIEW
+
+Executive Dashboard
+
+INTELLIGENCE
+
+Menu Intelligence
+Customer Intelligence
+Basket & Bundles
+
+OPERATIONS
+
+Demand Forecast
+Wastage
+Locations
+Channels
+
+DECISIONS & ACTIONS
+
+Pricing & Promotions
+Anomalies
+Recommendations
+What-If Simulator
+
+PLATFORM
+
+Model Comparison
+Reports & Export
+Admin
+Collapse
+Basket & Bundles
+Full history
+Outlets:
+All outlets
+Categories:
+All categories
+Channels:
+All channels
+API CONNECTED
+API CONNECTED
+Search
+⌘K
+F
+
+Scope: Full historical completed-order basketsShowing 965 of 965 directional rules. Supported means confidence ≥ 0.1 and lift > 1, as supplied by the backend. Basket-size distribution, category-pair totals and priced bundle suggestions are unavailable.
+
+Baskets analyzed
+610,827
+Complete orders in scope
+Avg basket size
+— items
+Line items per order
+Avg basket value
+—
+Per completed order
+Attach rate
+—
+Orders with an add-on
+Supported rules returned
+49
+confidence ≥ 10% · lift > 1
+Bundle opportunities
+—
+Rules-backed bundles
+Category Pair Flow
+
+Category co-occurrence in the same basket · top 8 pairs by order volume
+
+Category-pair totals are unavailable from the existing backend.
+
+Basket Size Distribution
+
+Share of baskets by line-item count
+
+Basket-size distribution is unavailable from the existing backend.
+
+Bundle Opportunities
+
+Rules-backed bundles priced from observed pair frequency
+
+Priced bundle suggestions are unavailable. See real cross-sell rules below.
+
+Association Rules
+
+Antecedent → consequent pairs · ordered by the backend, never re-ranked
+
+965 rules · backend-ranked
+Rank
+Lift
+Support
+Confidence
+RULE	CATEGORY	SUPPORT	CONFIDENCE	LIFT	ORDERS	OPPORTUNITY
+
+House Beverage 13
+Double Dessert 1
+	Beverages	0.1%	10%	1.1×	514	Cross Sell
+
+Fiery Chinese 12
+Double Dessert 1
+	Chinese	0.1%	10%	1.1×	551	Cross Sell
+
+Signature Pizza 13
+Fresh Pakistani 1
+	Pizza	0.1%	16%	1.0×	814	Cross Sell
+
+Masala Rice 9
+Spicy BBQ 1
+	Rice	0.1%	13%	1.0×	843	Cross Sell
+
+Creamy Pizza 14
+Spicy BBQ 1
+	Pizza	0.1%	13%	1.0×	647	Cross Sell
+
+Supreme BBQ 14
+Fresh Pakistani 1
+	BBQ	0.1%	16%	1.0×	749	Cross Sell
+
+Spicy Rice 11
+Spicy BBQ 1
+	Rice	0.1%	13%	1.0×	720	Cross Sell
+
+Loaded Coffee & Tea 8
+Spicy BBQ 1
+	Coffee & Tea	0.1%	13%	1.0×	882	Cross Sell
+
+Fiery Pizza 7
+Spicy BBQ 1
+	Pizza	0.2%	13%	1.0×	1,063	Cross Sell
+
+Supreme Breakfast 11
+Spicy BBQ 1
+	Breakfast	0.1%	13%	1.0×	742	Cross Sell
+
+Smoky Seafood 10
+Fresh Pakistani 1
+	Seafood	0.2%	15%	1.0×	939	Cross Sell
+
+Deluxe Pakistani 14
+House Beverage 1
+	Pakistani	0.1%	11%	1.0×	532	Cross Sell
+
+Masala Breakfast 12
+House Beverage 1
+	Breakfast	0.1%	11%	1.0×	591	Cross Sell
+
+Deluxe Pakistani 14
+Fresh Pakistani 1
+	Pakistani	0.1%	15%	1.0×	749	Cross Sell
+
+Deluxe Fast Food 11
+Spicy BBQ 1
+	Fast Food	0.1%	13%	1.0×	728	Cross Sell
+
+Cheesy Burger 6
+Spicy BBQ 1
+	Burgers	0.2%	13%	1.0×	1,228	Cross Sell
+
+Deluxe Sandwiche 12
+House Beverage 1
+	Sandwiches	0.1%	11%	1.0×	582	Cross Sell
+
+Creamy Pizza 10
+Signature Pizza 1
+	Pizza	0.2%	20%	1.0×	1,274	Cross Sell
+
+Crispy Sandwiche 9
+House Beverage 1
+	Sandwiches	0.1%	11%	1.0×	706	Cross Sell
+
+Signature Seafood 11
+House Beverage 1
+	Seafood	0.1%	11%	1.0×	621	Cross Sell
+
+Cheesy Dessert 11
+Signature Pizza 1
+	Desserts	0.2%	20%	1.0×	1,127	Cross Sell
+
+Fresh Fast Food 6
+Signature Pizza 1
+	Fast Food	0.3%	20%	1.0×	1,813	Cross Sell
+
+Deluxe Pakistani 6
+Classic Burger 1
+	Pakistani	0.5%	31%	1.0×	2,945	Cross Sell
+
+Double Pasta 10
+Spicy BBQ 1
+	Pasta	0.1%	13%	1.0×	765	Cross Sell
+
+Fresh Fast Food 2
+House Beverage 1
+	Fast Food	0.4%	11%	1.0×	2,450	Cross Sell
+
+Supreme Rice 12
+House Beverage 1
+	Rice	0.1%	11%	1.0×	551	Cross Sell
+
+House Beverage 9
+House Beverage 1
+	Beverages	0.1%	11%	1.0×	733	Cross Sell
+
+Double Pasta 10
+House Beverage 1
+	Pasta	0.1%	11%	1.0×	661	Cross Sell
+
+Tandoori Pasta 9
+Classic Burger 1
+	Pasta	0.3%	31%	1.0×	2,049	Cross Sell
+
+House Beverage 13
+Signature Pizza 1
+	Beverages	0.2%	20%	1.0×	1,012	Cross Sell
+
+House Salad 10
+Fresh Pakistani 1
+	Salads	0.2%	15%	1.0×	937	Cross Sell
+
+Fresh Sandwiche 7
+Fresh Pakistani 1
+	Sandwiches	0.2%	15%	1.0×	1,192	Cross Sell
+
+Signature Pizza 9
+Spicy BBQ 1
+	Pizza	0.1%	13%	1.0×	847	Cross Sell
+
+Supreme BBQ 10
+House Beverage 1
+	BBQ	0.1%	11%	1.0×	674	Cross Sell
+
+Creamy Chinese 11
+House Beverage 1
+	Chinese	0.1%	11%	1.0×	612	Cross Sell
+
+Loaded Beverage 14
+Classic Burger 1
+	Beverages	0.2%	31%	1.0×	1,466	Cross Sell
+
+Classic Burger 13
+Classic Burger 1
+	Burgers	0.3%	31%	1.0×	1,613	Cross Sell
+
+Loaded Beverage 10
+House Beverage 1
+	Beverages	0.1%	11%	1.0×	693	Cross Sell
+
+Signature Chinese 10
+Spicy BBQ 1
+	Chinese	0.1%	13%	1.0×	773	Cross Sell
+
+Creamy Seafood 8
+Fresh Pakistani 1
+	Seafood	0.2%	15%	1.0×	1,081	Cross Sell
+
+Deluxe Pakistani 14
+Signature Pizza 1
+	Pakistani	0.2%	20%	1.0×	968	Cross Sell
+
+Smoky Pizza 4
+House Beverage 1
+	Pizza	0.2%	11%	1.0×	1,491	Cross Sell
+
+Creamy Chinese 7
+Spicy BBQ 1
+	Chinese	0.2%	12%	1.0×	1,025	Cross Sell
+
+Loaded Beverage 6
+Fresh Pakistani 1
+	Beverages	0.2%	15%	1.0×	1,429	Cross Sell
+
+Deluxe Sandwiche 12
+Fresh Pakistani 1
+	Sandwiches	0.1%	15%	1.0×	812	Cross Sell
+
+Masala Rice 9
+Fresh Pakistani 1
+	Rice	0.2%	15%	1.0×	995	Cross Sell
+
+Fresh Sandwiche 3
+Spicy BBQ 1
+	Sandwiches	0.3%	12%	1.0×	1,816	Cross Sell
+
+Fresh Pakistani 13
+Spicy BBQ 1
+	Pakistani	0.1%	12%	1.0×	639	Cross Sell
+
+Creamy Seafood 8
+Spicy BBQ 1
+	Seafood	0.1%	12%	1.0×	885	Cross Sell
+
+Fiery Seafood 13
+Classic Burger 1
+	Seafood	0.2%	31%	1.0×	1,494	None
+
+Crispy Sandwiche 13
+Spicy BBQ 1
+	Sandwiches	0.1%	12%	1.0×	629	None
+
+Fresh Sandwiche 11
+Signature Pizza 1
+	Sandwiches	0.2%	20%	1.0×	1,135	None
+
+Supreme BBQ 10
+Spicy BBQ 1
+	BBQ	0.1%	12%	1.0×	775	None
+
+Signature Pizza 9
+Classic Burger 1
+	Pizza	0.3%	31%	1.0×	2,069	None
+
+Double Dessert 5
+Spicy BBQ 1
+	Desserts	0.2%	12%	1.0×	1,334	None
+
+Fiery Pizza 11
+Classic Burger 1
+	Pizza	0.3%	31%	1.0×	1,773	None
+
+Smoky Seafood 6
+House Beverage 1
+	Seafood	0.2%	11%	1.0×	953	None
+
+House Coffee & Tea 11
+Classic Burger 1
+	Coffee & Tea	0.3%	31%	1.0×	1,708	None
+
+Creamy Seafood 12
+Classic Burger 1
+	Seafood	0.3%	31%	1.0×	1,616	None
+
+Grilled Salad 9
+Spicy BBQ 1
+	Salads	0.1%	12%	1.0×	819	None
+
+Royal Fast Food 13
+Fresh Pakistani 1
+	Fast Food	0.1%	15%	1.0×	768	None
+
+Royal Pakistani 12
+House Beverage 1
+	Pakistani	0.1%	11%	1.0×	590	None
+
+Grilled Salad 9
+House Beverage 1
+	Salads	0.1%	11%	1.0×	707	None
+
+Special BBQ 8
+Spicy BBQ 1
+	BBQ	0.2%	12%	1.0×	931	None
+
+Supreme BBQ 14
+Spicy BBQ 1
+	BBQ	0.1%	12%	1.0×	596	None
+
+Royal Pakistani 8
+Spicy BBQ 1
+	Pakistani	0.2%	12%	1.0×	938	None
+
+Fresh Pakistani 9
+House Beverage 1
+	Pakistani	0.1%	11%	1.0×	731	None
+
+Cheesy Burger 14
+Spicy BBQ 1
+	Burgers	0.1%	12%	1.0×	616	None
+
+Fiery Pizza 11
+Spicy BBQ 1
+	Pizza	0.1%	12%	1.0×	718	None
+
+Spicy BBQ 9
+Classic Burger 1
+	BBQ	0.3%	30%	1.0×	2,075	None
+
+Deluxe Pakistani 14
+Spicy BBQ 1
+	Pakistani	0.1%	12%	1.0×	602	None
+
+Special Rice 6
+Fresh Pakistani 1
+	Rice	0.2%	15%	1.0×	1,309	None
+
+Spicy Breakfast 10
+Spicy BBQ 1
+	Breakfast	0.1%	12%	1.0×	755	None
+
+Creamy Seafood 12
+Spicy BBQ 1
+	Seafood	0.1%	12%	1.0×	654	None
+
+Special Rice 10
+House Beverage 1
+	Rice	0.1%	11%	1.0×	651	None
+
+Double Burger 12
+Classic Burger 1
+	Burgers	0.3%	30%	1.0×	1,687	None
+
+Supreme BBQ 10
+Classic Burger 1
+	BBQ	0.3%	30%	1.0×	1,887	None
+
+Tandoori Burger 7
+House Beverage 1
+	Burgers	0.1%	11%	1.0×	905	None
+
+Herb Coffee & Tea 5
+Spicy BBQ 1
+	Coffee & Tea	0.2%	12%	1.0×	1,205	None
+
+Cheesy Pasta 12
+House Beverage 1
+	Pasta	0.1%	11%	1.0×	575	None
+
+Double Burger 4
+Signature Pizza 1
+	Burgers	0.5%	20%	1.0×	2,754	None
+
+Classic Burger 13
+Signature Pizza 1
+	Burgers	0.2%	20%	1.0×	1,030	None
+
+Deluxe Fast Food 3
+House Beverage 1
+	Fast Food	0.3%	11%	1.0×	1,700	None
+
+Royal Fast Food 9
+Signature Pizza 1
+	Fast Food	0.2%	20%	1.0×	1,310	None
+
+Special Breakfast 9
+Classic Burger 1
+	Breakfast	0.3%	30%	1.0×	2,056	None
+
+Creamy Pizza 14
+House Beverage 1
+	Pizza	0.1%	11%	1.0×	538	None
+
+Grilled Salad 9
+Fresh Pakistani 1
+	Salads	0.2%	15%	1.0×	990	None
+
+Special Rice 6
+Signature Pizza 1
+	Rice	0.3%	20%	1.0×	1,703	None
+
+Fiery Chinese 4
+Signature Pizza 1
+	Chinese	0.4%	20%	1.0×	2,518	None
+
+Classic Dessert 10
+Fresh Pakistani 1
+	Desserts	0.2%	15%	1.0×	933	None
+
+Fresh Pakistani 5
+House Beverage 1
+	Pakistani	0.2%	11%	1.0×	1,171	None
+
+Classic Burger 13
+Fresh Pakistani 1
+	Burgers	0.1%	15%	1.0×	787	None
+
+Special Rice 6
+Spicy BBQ 1
+	Rice	0.2%	12%	1.0×	1,069	None
+
+Tandoori Dessert 4
+Fresh Pakistani 1
+	Desserts	0.3%	15%	1.0×	1,929	None
+
+Crispy Fast Food 12
+Spicy BBQ 1
+	Fast Food	0.1%	12%	1.0×	664	None
+
+Smoky Seafood 6
+Fresh Pakistani 1
+	Seafood	0.2%	15%	1.0×	1,328	None
+
+Masala BBQ 11
+House Beverage 1
+	BBQ	0.1%	11%	1.0×	620	None
+
+Grilled Beverage 8
+Classic Burger 1
+	Beverages	0.4%	30%	1.0×	2,256	None
+
+Deluxe Pakistani 6
+House Beverage 1
+	Pakistani	0.2%	11%	1.0×	1,015	None
+
+Masala BBQ 7
+Spicy BBQ 1
+	BBQ	0.2%	12%	1.0×	1,020	None
+
+Supreme BBQ 14
+Classic Burger 1
+	BBQ	0.2%	30%	1.0×	1,453	None
+
+Signature Pizza 5
+House Beverage 1
+	Pizza	0.2%	11%	1.0×	1,190	None
+
+Double Burger 4
+House Beverage 1
+	Burgers	0.2%	11%	1.0×	1,490	None
+
+Fresh Pakistani 9
+Signature Pizza 1
+	Pakistani	0.2%	20%	1.0×	1,334	None
+
+Double Pasta 10
+Signature Pizza 1
+	Pasta	0.2%	20%	1.0×	1,191	None
+
+Double Burger 8
+Spicy BBQ 1
+	Burgers	0.2%	12%	1.0×	948	None
+
+Fresh Fast Food 6
+Spicy BBQ 1
+	Fast Food	0.2%	12%	1.0×	1,112	None
+
+Fiery Chinese 12
+House Beverage 1
+	Chinese	0.1%	11%	1.0×	581	None
+
+Grilled Beverage 8
+House Beverage 1
+	Beverages	0.1%	11%	1.0×	792	None
+
+Double Dessert 5
+Classic Burger 1
+	Desserts	0.5%	30%	1.0×	3,231	None
+
+Cheesy Burger 6
+Fresh Pakistani 1
+	Burgers	0.2%	15%	1.0×	1,455	None
+
+House Coffee & Tea 11
+Fresh Pakistani 1
+	Coffee & Tea	0.1%	15%	1.0×	835	None
+
+Fiery Seafood 9
+House Beverage 1
+	Seafood	0.1%	11%	1.0×	676	None
+
+Crispy Fast Food 4
+Spicy BBQ 1
+	Fast Food	0.3%	12%	1.0×	1,528	None
+
+Grilled Coffee & Tea 6
+Fresh Pakistani 1
+	Coffee & Tea	0.2%	15%	1.0×	1,300	None
+
+Masala Breakfast 4
+Signature Pizza 1
+	Breakfast	0.4%	20%	1.0×	2,429	None
+
+House Beverage 13
+Fresh Pakistani 1
+	Beverages	0.1%	15%	1.0×	757	None
+
+Fiery Pizza 3
+Signature Pizza 1
+	Pizza	0.6%	20%	1.0×	3,458	None
+
+Smoky Chinese 5
+Spicy BBQ 1
+	Chinese	0.2%	12%	1.0×	1,317	None
+
+Supreme BBQ 2
+House Beverage 1
+	BBQ	0.5%	11%	1.0×	2,773	None
+
+Special Breakfast 9
+Spicy BBQ 1
+	Breakfast	0.1%	12%	1.0×	831	None
+
+Special BBQ 8
+Fresh Pakistani 1
+	BBQ	0.2%	15%	1.0×	1,121	None
+
+Tandoori Burger 11
+Fresh Pakistani 1
+	Burgers	0.1%	15%	1.0×	883	None
+
+Fiery Chinese 12
+Fresh Pakistani 1
+	Chinese	0.1%	15%	1.0×	817	None
+
+Loaded Coffee & Tea 12
+House Beverage 1
+	Coffee & Tea	0.1%	11%	1.0×	551	None
+
+Loaded Salad 7
+Signature Pizza 1
+	Salads	0.3%	19%	1.0×	1,557	None
+
+Crispy Sandwiche 5
+Fresh Pakistani 1
+	Sandwiches	0.2%	15%	1.0×	1,499	None
+
+Creamy Seafood 8
+Classic Burger 1
+	Seafood	0.3%	30%	1.0×	2,133	None
+
+Tandoori Dessert 12
+Signature Pizza 1
+	Desserts	0.2%	19%	1.0×	1,052	None
+
+Crispy Sandwiche 13
+Fresh Pakistani 1
+	Sandwiches	0.1%	15%	1.0×	752	None
+
+Herb Coffee & Tea 9
+Classic Burger 1
+	Coffee & Tea	0.3%	30%	1.0×	1,981	None
+
+Tandoori Dessert 4
+Spicy BBQ 1
+	Desserts	0.3%	12%	1.0×	1,572	None
+
+Grilled Coffee & Tea 6
+House Beverage 1
+	Coffee & Tea	0.2%	11%	1.0×	920	None
+
+Crispy Pakistani 3
+House Beverage 1
+	Pakistani	0.3%	11%	1.0×	1,860	None
+
+Special BBQ 8
+Classic Burger 1
+	BBQ	0.4%	30%	1.0×	2,255	None
+
+Loaded Coffee & Tea 4
+House Beverage 1
+	Coffee & Tea	0.2%	11%	1.0×	1,232	None
+
+Fiery Seafood 1
+Spicy BBQ 1
+	Seafood	0.7%	12%	1.0×	4,414	None
+
+Loaded Salad 3
+House Beverage 1
+	Salads	0.3%	11%	1.0×	1,586	None
+
+Grilled Beverage 4
+Signature Pizza 1
+	Beverages	0.4%	19%	1.0×	2,519	None
+
+Royal Fast Food 5
+Classic Burger 1
+	Fast Food	0.5%	30%	1.0×	3,155	None
+
+Loaded Coffee & Tea 8
+Fresh Pakistani 1
+	Coffee & Tea	0.2%	15%	1.0×	1,032	None
+
+Classic Burger 5
+Fresh Pakistani 1
+	Burgers	0.3%	15%	1.0×	1,695	None
+
+Masala Rice 5
+Signature Pizza 1
+	Rice	0.3%	19%	1.0×	1,916	None
+
+Loaded Coffee & Tea 12
+Classic Burger 1
+	Coffee & Tea	0.3%	30%	1.0×	1,560	None
+
+Deluxe Sandwiche 4
+Signature Pizza 1
+	Sandwiches	0.4%	19%	1.0×	2,271	None
+
+Special Breakfast 5
+Classic Burger 1
+	Breakfast	0.5%	30%	1.0×	3,146	None
+
+Supreme Rice 4
+Signature Pizza 1
+	Rice	0.4%	19%	1.0×	2,282	None
+
+Masala Breakfast 12
+Fresh Pakistani 1
+	Breakfast	0.1%	15%	1.0×	804	None
+
+Signature Chinese 2
+Spicy BBQ 1
+	Chinese	0.5%	12%	1.0×	2,830	None
+
+Creamy Pizza 2
+Spicy BBQ 1
+	Pizza	0.6%	12%	1.0×	3,423	None
+
+Smoky Pizza 12
+House Beverage 1
+	Pizza	0.1%	11%	1.0×	579	None
+
+Supreme BBQ 6
+Fresh Pakistani 1
+	BBQ	0.2%	15%	1.0×	1,395	None
+
+Fiery Seafood 9
+Classic Burger 1
+	Seafood	0.3%	30%	1.0×	1,910	None
+
+Fiery Seafood 5
+Classic Burger 1
+	Seafood	0.5%	30%	1.0×	3,029	None
+
+Classic Dessert 10
+Classic Burger 1
+	Desserts	0.3%	30%	1.0×	1,861	None
+
+Smoky Chinese 5
+Signature Pizza 1
+	Chinese	0.3%	19%	1.0×	2,086	None
+
+Royal Fast Food 9
+Spicy BBQ 1
+	Fast Food	0.1%	12%	1.0×	813	None
+
+House Coffee & Tea 11
+House Beverage 1
+	Coffee & Tea	0.1%	11%	1.0×	589	None
+
+Double Dessert 9
+Fresh Pakistani 1
+	Desserts	0.2%	15%	1.0×	993	None
+
+Smoky Pizza 8
+Classic Burger 1
+	Pizza	0.4%	30%	1.0×	2,307	None
+
+Loaded Coffee & Tea 4
+Signature Pizza 1
+	Coffee & Tea	0.4%	19%	1.0×	2,261	None
+
+House Beverage 5
+Fresh Pakistani 1
+	Beverages	0.3%	15%	1.0×	1,602	None
+
+Tandoori Dessert 4
+House Beverage 1
+	Desserts	0.2%	11%	1.0×	1,355	None
+
+Cheesy Burger 2
+Fresh Pakistani 1
+	Burgers	0.7%	15%	1.0×	4,356	None
+
+Loaded Beverage 6
+Classic Burger 1
+	Beverages	0.5%	30%	1.0×	2,811	None
+
+Herb Salad 4
+Signature Pizza 1
+	Salads	0.4%	19%	1.0×	2,362	None
+
+Classic Dessert 6
+Spicy BBQ 1
+	Desserts	0.2%	12%	1.0×	1,113	None
+
+Smoky Seafood 10
+Classic Burger 1
+	Seafood	0.3%	30%	1.0×	1,823	None
+
+Cheesy Dessert 11
+House Beverage 1
+	Desserts	0.1%	11%	1.0×	592	None
+
+Grilled Beverage 4
+Spicy BBQ 1
+	Beverages	0.3%	12%	1.0×	1,577	None
+
+Deluxe Fast Food 3
+Spicy BBQ 1
+	Fast Food	0.3%	12%	1.0×	1,939	None
+
+Masala BBQ 3
+Spicy BBQ 1
+	BBQ	0.3%	12%	1.0×	2,094	None
+
+Classic Pasta 3
+Spicy BBQ 1
+	Pasta	0.3%	12%	1.0×	1,843	None
+
+Smoky Pizza 12
+Classic Burger 1
+	Pizza	0.3%	30%	1.0×	1,641	None
+
+Deluxe Pakistani 2
+Fresh Pakistani 1
+	Pakistani	0.6%	15%	1.0×	3,969	None
+
+House Coffee & Tea 7
+Spicy BBQ 1
+	Coffee & Tea	0.2%	12%	1.0×	932	None
+
+Fiery Pizza 11
+Signature Pizza 1
+	Pizza	0.2%	19%	1.0×	1,123	None
+
+Fresh Fast Food 10
+Spicy BBQ 1
+	Fast Food	0.1%	12%	1.0×	737	None
+
+Signature Seafood 3
+Fresh Pakistani 1
+	Seafood	0.4%	15%	1.0×	2,162	None
+
+Cheesy Pasta 12
+Spicy BBQ 1
+	Pasta	0.1%	12%	1.0×	655	None
+
+Creamy Chinese 11
+Classic Burger 1
+	Chinese	0.3%	30%	1.0×	1,688	None
+
+Deluxe Pakistani 10
+Fresh Pakistani 1
+	Pakistani	0.2%	15%	1.0×	922	None
+
+Tandoori Pasta 13
+Classic Burger 1
+	Pasta	0.2%	30%	1.0×	1,517	None
+
+Double Dessert 13
+Signature Pizza 1
+	Desserts	0.2%	19%	1.0×	982	None
+
+Classic Pasta 7
+Signature Pizza 1
+	Pasta	0.3%	19%	1.0×	1,538	None
+
+Masala Breakfast 12
+Spicy BBQ 1
+	Breakfast	0.1%	12%	1.0×	657	None
+
+Signature Chinese 2
+Fresh Pakistani 1
+	Chinese	0.6%	15%	1.0×	3,435	None
+
+Herb Salad 4
+House Beverage 1
+	Salads	0.2%	11%	1.0×	1,280	None
+
+House Salad 6
+House Beverage 1
+	Salads	0.2%	11%	1.0×	946	None
+
+Crispy Sandwiche 13
+House Beverage 1
+	Sandwiches	0.1%	11%	1.0×	530	None
+
+Creamy Pizza 6
+Spicy BBQ 1
+	Pizza	0.2%	12%	1.0×	1,146	None
+
+Grilled Salad 5
+Signature Pizza 1
+	Salads	0.3%	19%	1.0×	2,025	None
+
+Smoky Seafood 10
+House Beverage 1
+	Seafood	0.1%	11%	1.0×	640	None
+
+Special Breakfast 13
+House Beverage 1
+	Breakfast	0.1%	11%	1.0×	525	None
+
+Masala Breakfast 8
+Signature Pizza 1
+	Breakfast	0.2%	19%	1.0×	1,391	None
+
+Grilled Coffee & Tea 6
+Signature Pizza 1
+	Coffee & Tea	0.3%	19%	1.0×	1,682	None
+
+Spicy BBQ 9
+Spicy BBQ 1
+	BBQ	0.1%	12%	1.0×	828	None
+
+House Beverage 13
+Classic Burger 1
+	Beverages	0.2%	30%	1.0×	1,512	None
+
+Signature Seafood 7
+Classic Burger 1
+	Seafood	0.4%	30%	1.0×	2,324	None
+
+Special BBQ 4
+Spicy BBQ 1
+	BBQ	0.3%	12%	1.0×	1,622	None
+
+Spicy Breakfast 10
+Classic Burger 1
+	Breakfast	0.3%	30%	1.0×	1,821	None
+
+Special BBQ 12
+Signature Pizza 1
+	BBQ	0.2%	19%	1.0×	1,051	None
+
+Deluxe Fast Food 7
+Signature Pizza 1
+	Fast Food	0.3%	19%	1.0×	1,568	None
+
+Spicy Rice 7
+Spicy BBQ 1
+	Rice	0.2%	12%	1.0×	942	None
+
+Royal Pakistani 12
+Signature Pizza 1
+	Pakistani	0.2%	19%	1.0×	1,061	None
+
+Spicy Breakfast 6
+Spicy BBQ 1
+	Breakfast	0.2%	12%	1.0×	1,108	None
+
+Signature Pizza 13
+Signature Pizza 1
+	Pizza	0.2%	19%	1.0×	999	None
+
+Classic Burger 13
+Spicy BBQ 1
+	Burgers	0.1%	12%	1.0×	636	None
+
+Smoky Chinese 9
+House Beverage 1
+	Chinese	0.1%	10%	1.0×	704	None
+
+Deluxe Pakistani 6
+Signature Pizza 1
+	Pakistani	0.3%	19%	1.0×	1,842	None
+
+Cheesy Pasta 8
+Spicy BBQ 1
+	Pasta	0.1%	12%	1.0×	872	None
+
+Grilled Salad 9
+Classic Burger 1
+	Salads	0.3%	30%	1.0×	1,964	None
+
+Double Burger 8
+Signature Pizza 1
+	Burgers	0.2%	19%	1.0×	1,491	None
+
+Double Dessert 5
+Signature Pizza 1
+	Desserts	0.3%	19%	1.0×	2,069	None
+
+Fiery Pizza 7
+House Beverage 1
+	Pizza	0.1%	10%	1.0×	880	None
+
+Crispy Sandwiche 1
+Signature Pizza 1
+	Sandwiches	1.1%	19%	1.0×	6,559	None
+
+Classic Burger 5
+Classic Burger 1
+	Burgers	0.6%	30%	1.0×	3,394	None
+
+Herb Salad 12
+Spicy BBQ 1
+	Salads	0.1%	12%	1.0×	649	None
+
+Supreme Breakfast 7
+House Beverage 1
+	Breakfast	0.1%	10%	1.0×	844	None
+
+Cheesy Pasta 8
+Fresh Pakistani 1
+	Pasta	0.2%	15%	1.0×	1,062	None
+
+Herb Coffee & Tea 5
+Signature Pizza 1
+	Coffee & Tea	0.3%	19%	1.0×	1,884	None
+
+Spicy Breakfast 6
+Signature Pizza 1
+	Breakfast	0.3%	19%	1.0×	1,762	None
+
+Deluxe Fast Food 7
+Fresh Pakistani 1
+	Fast Food	0.2%	15%	1.0×	1,198	None
+
+Crispy Sandwiche 5
+Signature Pizza 1
+	Sandwiches	0.3%	19%	1.0×	1,938	None
+
+Creamy Chinese 11
+Fresh Pakistani 1
+	Chinese	0.1%	15%	1.0×	834	None
+
+Cheesy Burger 6
+Classic Burger 1
+	Burgers	0.5%	30%	1.0×	2,897	None
+
+Crispy Pakistani 3
+Spicy BBQ 1
+	Pakistani	0.3%	12%	1.0×	2,130	None
+
+Loaded Salad 11
+Fresh Pakistani 1
+	Salads	0.1%	15%	1.0×	844	None
+
+Spicy BBQ 13
+Signature Pizza 1
+	BBQ	0.2%	19%	1.0×	998	None
+
+Fiery Seafood 5
+Spicy BBQ 1
+	Seafood	0.2%	12%	1.0×	1,224	None
+
+Deluxe Sandwiche 12
+Signature Pizza 1
+	Sandwiches	0.2%	19%	1.0×	1,029	None
+
+Signature Pizza 5
+Signature Pizza 1
+	Pizza	0.4%	19%	1.0×	2,157	None
+
+Herb Beverage 3
+House Beverage 1
+	Beverages	0.3%	10%	1.0×	1,790	None
+
+Loaded Beverage 6
+Signature Pizza 1
+	Beverages	0.3%	19%	1.0×	1,810	None
+
+Masala Rice 13
+House Beverage 1
+	Rice	0.1%	10%	1.0×	509	None
+
+Signature Chinese 2
+Signature Pizza 1
+	Chinese	0.7%	19%	1.0×	4,469	None
+
+Fiery Pizza 3
+Classic Burger 1
+	Pizza	0.9%	30%	1.0×	5,270	None
+
+Fresh Fast Food 10
+Classic Burger 1
+	Fast Food	0.3%	30%	1.0×	1,802	None
+
+Loaded Beverage 2
+House Beverage 1
+	Beverages	0.4%	10%	1.0×	2,635	None
+
+Loaded Beverage 2
+Classic Burger 1
+	Beverages	1.2%	30%	1.0×	7,485	None
+
+Double Burger 8
+House Beverage 1
+	Burgers	0.1%	10%	1.0×	808	None
+
+Masala BBQ 3
+Classic Burger 1
+	BBQ	0.8%	30%	1.0×	5,113	None
+
+Smoky Chinese 9
+Signature Pizza 1
+	Chinese	0.2%	19%	1.0×	1,292	None
+
+Royal Fast Food 5
+Fresh Pakistani 1
+	Fast Food	0.3%	15%	1.0×	1,550	None
+
+Signature Pizza 13
+Classic Burger 1
+	Pizza	0.3%	30%	1.0×	1,537	None
+
+Tandoori Pasta 5
+Spicy BBQ 1
+	Pasta	0.2%	12%	1.0×	1,244	None
+
+Masala Breakfast 12
+Signature Pizza 1
+	Breakfast	0.2%	19%	1.0×	1,041	None
+
+Double Dessert 13
+Classic Burger 1
+	Desserts	0.2%	30%	1.0×	1,508	None
+
+Signature Seafood 3
+Spicy BBQ 1
+	Seafood	0.3%	12%	1.0×	1,764	None
+
+Fresh Pakistani 5
+Classic Burger 1
+	Pakistani	0.5%	30%	1.0×	3,265	None
+
+Grilled Salad 13
+Fresh Pakistani 1
+	Salads	0.1%	15%	1.0×	732	None
+
+Spicy Rice 3
+Spicy BBQ 1
+	Rice	0.3%	12%	1.0×	1,725	None
+
+Deluxe Pakistani 2
+Spicy BBQ 1
+	Pakistani	0.5%	12%	1.0×	3,235	None
+
+Tandoori Burger 3
+Spicy BBQ 1
+	Burgers	0.4%	12%	1.0×	2,196	None
+
+Spicy Rice 11
+Fresh Pakistani 1
+	Rice	0.1%	15%	1.0×	833	None
+
+Signature Seafood 11
+Classic Burger 1
+	Seafood	0.3%	30%	1.0×	1,693	None
+
+Fiery Pizza 3
+House Beverage 1
+	Pizza	0.3%	10%	1.0×	1,853	None
+
+Creamy Seafood 8
+Signature Pizza 1
+	Seafood	0.2%	19%	1.0×	1,365	None
+
+Crispy Sandwiche 5
+Classic Burger 1
+	Sandwiches	0.5%	30%	1.0×	2,984	None
+
+Cheesy Burger 6
+Signature Pizza 1
+	Burgers	0.3%	19%	1.0×	1,873	None
+
+Royal Fast Food 1
+Signature Pizza 1
+	Fast Food	1.5%	19%	1.0×	9,194	None
+
+Signature Chinese 10
+Signature Pizza 1
+	Chinese	0.2%	19%	1.0×	1,189	None
+
+Smoky Chinese 13
+Fresh Pakistani 1
+	Chinese	0.1%	15%	1.0×	753	None
+
+Royal Pakistani 4
+Classic Burger 1
+	Pakistani	0.7%	30%	1.0×	4,002	None
+
+Royal Pakistani 8
+Fresh Pakistani 1
+	Pakistani	0.2%	15%	1.0×	1,114	None
+
+Tandoori Pasta 5
+Signature Pizza 1
+	Pasta	0.3%	19%	1.0×	1,978	None
+
+Fiery Pizza 3
+Fresh Pakistani 1
+	Pizza	0.4%	15%	1.0×	2,609	None
+
+Royal Sandwiche 2
+Fresh Pakistani 1
+	Sandwiches	0.5%	15%	1.0×	2,911	None
+
+Supreme Breakfast 11
+Classic Burger 1
+	Breakfast	0.3%	30%	1.0×	1,739	None
+
+Tandoori Dessert 12
+Spicy BBQ 1
+	Desserts	0.1%	12%	1.0×	652	None
+
+Smoky Seafood 6
+Spicy BBQ 1
+	Seafood	0.2%	12%	1.0×	1,069	None
+
+Smoky Pizza 8
+Spicy BBQ 1
+	Pizza	0.2%	12%	1.0×	930	None
+
+Masala Breakfast 4
+Fresh Pakistani 1
+	Breakfast	0.3%	15%	1.0×	1,831	None
+
+Grilled Coffee & Tea 10
+Fresh Pakistani 1
+	Coffee & Tea	0.1%	15%	1.0×	873	None
+
+Creamy Pizza 6
+Signature Pizza 1
+	Pizza	0.3%	19%	1.0×	1,813	None
+
+Fresh Pakistani 5
+Spicy BBQ 1
+	Pakistani	0.2%	12%	1.0×	1,326	None
+
+Cheesy Burger 2
+Spicy BBQ 1
+	Burgers	0.6%	12%	1.0×	3,540	None
+
+Grilled Beverage 4
+Fresh Pakistani 1
+	Beverages	0.3%	15%	1.0×	1,905	None
+
+Herb Beverage 3
+Classic Burger 1
+	Beverages	0.8%	30%	1.0×	5,068	None
+
+Classic Pasta 11
+Classic Burger 1
+	Pasta	0.3%	30%	1.0×	1,707	None
+
+Masala Breakfast 4
+Classic Burger 1
+	Breakfast	0.6%	30%	1.0×	3,689	None
+
+Signature Pizza 5
+Spicy BBQ 1
+	Pizza	0.2%	12%	1.0×	1,350	None
+
+Special BBQ 8
+House Beverage 1
+	BBQ	0.1%	10%	1.0×	783	None
+
+Tandoori Pasta 9
+Signature Pizza 1
+	Pasta	0.2%	19%	1.0×	1,276	None
+
+Special Rice 2
+Classic Burger 1
+	Rice	0.9%	30%	1.0×	5,765	None
+
+Supreme BBQ 6
+Classic Burger 1
+	BBQ	0.5%	30%	1.0×	2,780	None
+
+Tandoori Burger 7
+Classic Burger 1
+	Burgers	0.4%	30%	1.0×	2,511	None
+
+Crispy Pakistani 3
+Signature Pizza 1
+	Pakistani	0.6%	19%	1.0×	3,376	None
+
+Deluxe Fast Food 7
+Spicy BBQ 1
+	Fast Food	0.2%	12%	1.0×	978	None
+
+Fiery Pizza 7
+Classic Burger 1
+	Pizza	0.4%	30%	1.0×	2,485	None
+
+Spicy Rice 7
+Classic Burger 1
+	Rice	0.4%	30%	1.0×	2,299	None
+
+Fresh Fast Food 2
+Classic Burger 1
+	Fast Food	1.1%	30%	1.0×	6,681	None
+
+House Beverage 1
+Signature Pizza 1
+	Beverages	2.1%	19%	1.0×	12,639	None
+
+Signature Pizza 1
+House Beverage 1
+	Pizza	2.1%	10%	1.0×	12,639	None
+
+Creamy Pizza 6
+Fresh Pakistani 1
+	Pizza	0.2%	15%	1.0×	1,386	None
+
+Double Burger 4
+Fresh Pakistani 1
+	Burgers	0.3%	15%	1.0×	2,059	None
+
+Masala BBQ 11
+Spicy BBQ 1
+	BBQ	0.1%	12%	1.0×	702	None
+
+Fresh Fast Food 10
+Fresh Pakistani 1
+	Fast Food	0.1%	15%	1.0×	890	None
+
+Spicy BBQ 5
+Classic Burger 1
+	BBQ	0.5%	30%	1.0×	3,256	None
+
+House Salad 6
+Fresh Pakistani 1
+	Salads	0.2%	15%	1.0×	1,322	None
+
+Double Burger 8
+Classic Burger 1
+	Burgers	0.4%	30%	1.0×	2,286	None
+
+Signature Seafood 3
+Signature Pizza 1
+	Seafood	0.5%	19%	1.0×	2,798	None
+
+Smoky Seafood 2
+Classic Burger 1
+	Seafood	1.0%	30%	1.0×	5,894	None
+
+Fiery Seafood 13
+Signature Pizza 1
+	Seafood	0.2%	19%	1.0×	935	None
+
+Cheesy Burger 10
+Classic Burger 1
+	Burgers	0.3%	30%	1.0×	1,897	None
+
+Masala Rice 1
+Fresh Pakistani 1
+	Rice	0.8%	15%	1.0×	4,741	None
+
+Fresh Pakistani 1
+Signature Pizza 1
+	Pakistani	2.9%	19%	1.0×	17,799	None
+
+Signature Pizza 1
+Fresh Pakistani 1
+	Pizza	2.9%	15%	1.0×	17,799	None
+
+Tandoori Pasta 13
+House Beverage 1
+	Pasta	0.1%	10%	1.0×	529	None
+
+Spicy BBQ 13
+Classic Burger 1
+	BBQ	0.3%	30%	1.0×	1,532	None
+
+Masala BBQ 11
+Classic Burger 1
+	BBQ	0.3%	30%	1.0×	1,724	None
+
+Signature Pizza 1
+Classic Burger 1
+	Pizza	5.9%	30%	1.0×	35,877	None
+
+Classic Burger 1
+Signature Pizza 1
+	Burgers	5.9%	19%	1.0×	35,877	None
+
+Herb Beverage 3
+Signature Pizza 1
+	Beverages	0.5%	19%	1.0×	3,278	None
+
+Masala Rice 5
+House Beverage 1
+	Rice	0.2%	10%	1.0×	1,027	None
+
+Deluxe Sandwiche 8
+Classic Burger 1
+	Sandwiches	0.3%	30%	1.0×	2,093	None
+
+Grilled Coffee & Tea 2
+Classic Burger 1
+	Coffee & Tea	0.9%	30%	1.0×	5,546	None
+
+Spicy Rice 7
+Fresh Pakistani 1
+	Rice	0.2%	15%	1.0×	1,139	None
+
+Royal Pakistani 8
+House Beverage 1
+	Pakistani	0.1%	10%	1.0×	788	None
+
+Cheesy Pasta 4
+Spicy BBQ 1
+	Pasta	0.2%	12%	1.0×	1,437	None
+
+Signature Chinese 10
+Classic Burger 1
+	Chinese	0.3%	30%	1.0×	1,828	None
+
+Deluxe Pakistani 6
+Spicy BBQ 1
+	Pakistani	0.2%	12%	1.0×	1,148	None
+
+Cheesy Burger 2
+Classic Burger 1
+	Burgers	1.4%	30%	1.0×	8,675	None
+
+Crispy Fast Food 4
+Fresh Pakistani 1
+	Fast Food	0.3%	15%	1.0×	1,828	None
+
+Smoky Chinese 13
+Classic Burger 1
+	Chinese	0.2%	30%	1.0×	1,512	None
+
+Special BBQ 4
+Classic Burger 1
+	BBQ	0.6%	30%	1.0×	3,950	None
+
+Cheesy Pasta 8
+Signature Pizza 1
+	Pasta	0.2%	19%	1.0×	1,377	None
+
+Grilled Salad 1
+Signature Pizza 1
+	Salads	1.3%	19%	1.0×	7,768	None
+
+Crispy Sandwiche 9
+Signature Pizza 1
+	Sandwiches	0.2%	19%	1.0×	1,241	None
+
+Classic Burger 9
+Signature Pizza 1
+	Burgers	0.2%	19%	1.0×	1,339	None
+
+Fiery Seafood 5
+Signature Pizza 1
+	Seafood	0.3%	19%	1.0×	1,936	None
+
+House Beverage 1
+Classic Burger 1
+	Beverages	3.2%	30%	1.0×	19,467	None
+
+Classic Burger 1
+House Beverage 1
+	Burgers	3.2%	10%	1.0×	19,467	None
+
+Special Breakfast 1
+House Beverage 1
+	Breakfast	0.7%	10%	1.0×	4,560	None
+
+Loaded Salad 7
+Classic Burger 1
+	Salads	0.4%	30%	1.0×	2,360	None
+
+Loaded Coffee & Tea 4
+Fresh Pakistani 1
+	Coffee & Tea	0.3%	15%	1.0×	1,708	None
+
+Crispy Pakistani 7
+Spicy BBQ 1
+	Pakistani	0.2%	12%	1.0×	1,006	None
+
+Loaded Salad 3
+Fresh Pakistani 1
+	Salads	0.4%	15%	1.0×	2,199	None
+
+Creamy Pizza 14
+Classic Burger 1
+	Pizza	0.2%	30%	1.0×	1,490	None
+
+Creamy Pizza 10
+Classic Burger 1
+	Pizza	0.3%	30%	1.0×	1,876	None
+
+Loaded Salad 3
+Classic Burger 1
+	Salads	0.7%	30%	1.0×	4,433	None
+
+Masala BBQ 11
+Signature Pizza 1
+	BBQ	0.2%	19%	1.0×	1,115	None
+
+Herb Coffee & Tea 5
+Classic Burger 1
+	Coffee & Tea	0.5%	30%	1.0×	2,884	None
+
+Classic Pasta 11
+Signature Pizza 1
+	Pasta	0.2%	19%	1.0×	1,102	None
+
+Cheesy Dessert 11
+Classic Burger 1
+	Desserts	0.3%	30%	1.0×	1,660	None
+
+Masala Rice 9
+House Beverage 1
+	Rice	0.1%	10%	1.0×	680	None
+
+Classic Dessert 6
+House Beverage 1
+	Desserts	0.2%	10%	1.0×	950	None
+
+Royal Fast Food 5
+House Beverage 1
+	Fast Food	0.2%	10%	1.0×	1,093	None
+
+Deluxe Sandwiche 4
+House Beverage 1
+	Sandwiches	0.2%	10%	1.0×	1,215	None
+
+Signature Pizza 9
+Signature Pizza 1
+	Pizza	0.2%	19%	1.0×	1,293	None
+
+Double Dessert 1
+Signature Pizza 1
+	Desserts	1.8%	19%	1.0×	11,095	None
+
+Herb Coffee & Tea 1
+House Beverage 1
+	Coffee & Tea	0.5%	10%	1.0×	3,206	None
+
+Classic Pasta 3
+House Beverage 1
+	Pasta	0.3%	10%	1.0×	1,574	None
+
+Special Breakfast 1
+Fresh Pakistani 1
+	Breakfast	1.1%	15%	1.0×	6,420	None
+
+Classic Burger 1
+Fresh Pakistani 1
+	Burgers	4.5%	15%	1.0×	27,403	None
+
+Fresh Pakistani 1
+Classic Burger 1
+	Pakistani	4.5%	30%	1.0×	27,403	None
+
+Royal Pakistani 8
+Classic Burger 1
+	Pakistani	0.4%	30%	1.0×	2,234	None
+
+House Coffee & Tea 3
+Signature Pizza 1
+	Coffee & Tea	0.4%	19%	1.0×	2,702	None
+
+Cheesy Pasta 8
+House Beverage 1
+	Pasta	0.1%	10%	1.0×	747	None
+
+Double Dessert 9
+Classic Burger 1
+	Desserts	0.3%	30%	1.0×	1,973	None
+
+Herb Salad 8
+House Beverage 1
+	Salads	0.1%	10%	1.0×	759	None
+
+Fresh Fast Food 10
+Signature Pizza 1
+	Fast Food	0.2%	19%	1.0×	1,159	None
+
+Special Breakfast 5
+Fresh Pakistani 1
+	Breakfast	0.3%	15%	1.0×	1,536	None
+
+House Coffee & Tea 3
+Fresh Pakistani 1
+	Coffee & Tea	0.3%	15%	1.0×	2,068	None
+
+Smoky Seafood 10
+Signature Pizza 1
+	Seafood	0.2%	19%	1.0×	1,165	None
+
+Crispy Pakistani 11
+Classic Burger 1
+	Pakistani	0.3%	30%	1.0×	1,721	None
+
+Loaded Coffee & Tea 8
+Classic Burger 1
+	Coffee & Tea	0.3%	30%	1.0×	2,047	None
+
+Deluxe Pakistani 10
+Classic Burger 1
+	Pakistani	0.3%	30%	1.0×	1,836	None
+
+Spicy Rice 11
+Signature Pizza 1
+	Rice	0.2%	19%	1.0×	1,081	None
+
+Cheesy Burger 14
+Fresh Pakistani 1
+	Burgers	0.1%	15%	1.0×	728	None
+
+Fresh Sandwiche 3
+Fresh Pakistani 1
+	Sandwiches	0.3%	15%	1.0×	2,130	None
+
+Masala Breakfast 8
+Fresh Pakistani 1
+	Breakfast	0.2%	15%	1.0×	1,053	None
+
+Royal Sandwiche 2
+Classic Burger 1
+	Sandwiches	1.0%	30%	1.0×	5,836	None
+
+Deluxe Sandwiche 12
+Classic Burger 1
+	Sandwiches	0.3%	29%	1.0×	1,575	None
+
+Fiery Chinese 4
+House Beverage 1
+	Chinese	0.2%	10%	1.0×	1,333	None
+
+Fresh Sandwiche 7
+House Beverage 1
+	Sandwiches	0.1%	10%	1.0×	810	None
+
+Tandoori Burger 3
+Classic Burger 1
+	Burgers	0.9%	29%	1.0×	5,359	None
+
+Crispy Pakistani 3
+Classic Burger 1
+	Pakistani	0.8%	29%	1.0×	5,189	None
+
+Smoky Chinese 5
+House Beverage 1
+	Chinese	0.2%	10%	1.0×	1,116	None
+
+Herb Coffee & Tea 13
+Signature Pizza 1
+	Coffee & Tea	0.2%	19%	1.0×	976	None
+
+Deluxe Pakistani 10
+Signature Pizza 1
+	Pakistani	0.2%	19%	1.0×	1,189	None
+
+Double Dessert 9
+House Beverage 1
+	Desserts	0.1%	10%	1.0×	694	None
+
+Fiery Seafood 1
+Fresh Pakistani 1
+	Seafood	0.9%	15%	1.0×	5,284	None
+
+Herb Coffee & Tea 9
+Signature Pizza 1
+	Coffee & Tea	0.2%	19%	1.0×	1,260	None
+
+Spicy Breakfast 6
+House Beverage 1
+	Breakfast	0.2%	10%	1.0×	948	None
+
+Grilled Coffee & Tea 10
+Signature Pizza 1
+	Coffee & Tea	0.2%	19%	1.0×	1,134	None
+
+Loaded Beverage 2
+Signature Pizza 1
+	Beverages	0.8%	19%	1.0×	4,811	None
+
+Cheesy Dessert 7
+House Beverage 1
+	Desserts	0.1%	10%	1.0×	857	None
+
+Classic Pasta 7
+House Beverage 1
+	Pasta	0.1%	10%	1.0×	825	None
+
+Spicy Rice 3
+Signature Pizza 1
+	Rice	0.4%	19%	1.0×	2,726	None
+
+Herb Salad 8
+Classic Burger 1
+	Salads	0.4%	29%	1.0×	2,154	None
+
+Masala Rice 5
+Classic Burger 1
+	Rice	0.5%	29%	1.0×	2,907	None
+
+Deluxe Fast Food 7
+House Beverage 1
+	Fast Food	0.1%	10%	1.0×	842	None
+
+Cheesy Dessert 3
+Spicy BBQ 1
+	Desserts	0.3%	12%	1.0×	1,970	None
+
+Cheesy Burger 14
+Signature Pizza 1
+	Burgers	0.2%	19%	1.0×	950	None
+
+Deluxe Sandwiche 8
+Signature Pizza 1
+	Sandwiches	0.2%	19%	1.0×	1,351	None
+
+Double Pasta 6
+House Beverage 1
+	Pasta	0.1%	10%	1.0×	913	None
+
+Signature Pizza 1
+Spicy BBQ 1
+	Pizza	2.4%	12%	1.0×	14,542	None
+
+Spicy BBQ 1
+Signature Pizza 1
+	BBQ	2.4%	19%	1.0×	14,542	None
+
+Supreme Breakfast 3
+Fresh Pakistani 1
+	Breakfast	0.4%	15%	1.0×	2,253	None
+
+Creamy Chinese 3
+Fresh Pakistani 1
+	Chinese	0.4%	15%	1.0×	2,369	None
+
+Tandoori Pasta 1
+Classic Burger 1
+	Pasta	1.8%	29%	1.0×	11,232	None
+
+Smoky Pizza 12
+Spicy BBQ 1
+	Pizza	0.1%	12%	1.0×	658	None
+
+Smoky Pizza 8
+House Beverage 1
+	Pizza	0.1%	10%	1.0×	799	None
+
+Crispy Fast Food 4
+Signature Pizza 1
+	Fast Food	0.4%	19%	1.0×	2,379	None
+
+Crispy Fast Food 8
+House Beverage 1
+	Fast Food	0.1%	10%	1.0×	767	None
+
+Crispy Sandwiche 1
+House Beverage 1
+	Sandwiches	0.6%	10%	1.0×	3,523	None
+
+Creamy Chinese 7
+Signature Pizza 1
+	Chinese	0.3%	19%	1.0×	1,567	None
+
+Grilled Beverage 8
+Signature Pizza 1
+	Beverages	0.2%	19%	1.0×	1,424	None
+
+Fresh Pakistani 13
+Classic Burger 1
+	Pakistani	0.2%	29%	1.0×	1,508	None
+
+House Beverage 1
+Fresh Pakistani 1
+	Beverages	1.6%	15%	1.0×	9,621	None
+
+Fresh Pakistani 1
+House Beverage 1
+	Pakistani	1.6%	10%	1.0×	9,621	None
+
+Herb Salad 4
+Classic Burger 1
+	Salads	0.6%	29%	1.0×	3,587	None
+
+Masala Breakfast 4
+House Beverage 1
+	Breakfast	0.2%	10%	1.0×	1,290	None
+
+Spicy BBQ 5
+House Beverage 1
+	BBQ	0.2%	10%	1.0×	1,140	None
+
+Deluxe Sandwiche 4
+Classic Burger 1
+	Sandwiches	0.6%	29%	1.0×	3,441	None
+
+Classic Dessert 10
+Signature Pizza 1
+	Desserts	0.2%	19%	1.0×	1,185	None
+
+Herb Beverage 7
+Classic Burger 1
+	Beverages	0.4%	29%	1.0×	2,431	None
+
+Cheesy Pasta 4
+Fresh Pakistani 1
+	Pasta	0.3%	15%	1.0×	1,743	None
+
+Tandoori Pasta 1
+House Beverage 1
+	Pasta	0.6%	10%	1.0×	3,950	None
+
+Classic Burger 1
+Spicy BBQ 1
+	Burgers	3.7%	12%	1.0×	22,414	None
+
+Spicy BBQ 1
+Classic Burger 1
+	BBQ	3.7%	29%	1.0×	22,414	None
+
+Royal Pakistani 4
+House Beverage 1
+	Pakistani	0.2%	10%	1.0×	1,397	None
+
+Double Dessert 1
+Classic Burger 1
+	Desserts	2.8%	29%	1.0×	17,069	None
+
+Fiery Chinese 8
+Signature Pizza 1
+	Chinese	0.2%	19%	1.0×	1,408	None
+
+Loaded Salad 7
+Fresh Pakistani 1
+	Salads	0.2%	15%	1.0×	1,166	None
+
+Crispy Sandwiche 9
+Spicy BBQ 1
+	Sandwiches	0.1%	12%	1.0×	776	None
+
+Fresh Sandwiche 7
+Signature Pizza 1
+	Sandwiches	0.2%	19%	1.0×	1,487	None
+
+Spicy Rice 7
+House Beverage 1
+	Rice	0.1%	10%	1.0×	804	None
+
+Crispy Pakistani 7
+Classic Burger 1
+	Pakistani	0.4%	29%	1.0×	2,462	None
+
+Fiery Chinese 4
+Fresh Pakistani 1
+	Chinese	0.3%	15%	1.0×	1,873	None
+
+House Coffee & Tea 3
+House Beverage 1
+	Coffee & Tea	0.2%	10%	1.0×	1,463	None
+
+House Beverage 5
+House Beverage 1
+	Beverages	0.2%	10%	1.0×	1,117	None
+
+Double Pasta 2
+Spicy BBQ 1
+	Pasta	0.4%	12%	1.0×	2,483	None
+
+Fiery Chinese 12
+Spicy BBQ 1
+	Chinese	0.1%	12%	1.0×	655	None
+
+Crispy Fast Food 4
+Classic Burger 1
+	Fast Food	0.6%	29%	1.0×	3,665	None
+
+Tandoori Dessert 8
+Signature Pizza 1
+	Desserts	0.2%	19%	1.0×	1,378	None
+
+Fresh Pakistani 9
+Classic Burger 1
+	Pakistani	0.3%	29%	1.0×	2,005	None
+
+House Salad 2
+Fresh Pakistani 1
+	Salads	0.5%	15%	1.0×	3,127	None
+
+Herb Coffee & Tea 5
+Fresh Pakistani 1
+	Coffee & Tea	0.2%	15%	1.0×	1,424	None
+
+Double Pasta 2
+House Beverage 1
+	Pasta	0.4%	10%	1.0×	2,147	None
+
+Special Rice 10
+Signature Pizza 1
+	Rice	0.2%	19%	1.0×	1,160	None
+
+Supreme BBQ 2
+Classic Burger 1
+	BBQ	1.3%	29%	1.0×	7,692	None
+
+Classic Dessert 2
+House Beverage 1
+	Desserts	0.4%	10%	1.0×	2,537	None
+
+Deluxe Pakistani 2
+House Beverage 1
+	Pakistani	0.5%	10%	1.0×	2,769	None
+
+Classic Burger 9
+Classic Burger 1
+	Burgers	0.3%	29%	1.0×	2,055	None
+
+Crispy Sandwiche 5
+Spicy BBQ 1
+	Sandwiches	0.2%	12%	1.0×	1,202	None
+
+Double Dessert 1
+Spicy BBQ 1
+	Desserts	1.1%	12%	1.0×	6,936	None
+
+Grilled Salad 13
+Spicy BBQ 1
+	Salads	0.1%	12%	1.0×	594	None
+
+Tandoori Pasta 1
+Signature Pizza 1
+	Pasta	1.2%	19%	1.0×	7,257	None
+
+Grilled Coffee & Tea 6
+Classic Burger 1
+	Coffee & Tea	0.4%	29%	1.0×	2,556	None
+
+Herb Salad 4
+Fresh Pakistani 1
+	Salads	0.3%	15%	1.0×	1,775	None
+
+Loaded Beverage 10
+Fresh Pakistani 1
+	Beverages	0.2%	15%	1.0×	933	None
+
+Supreme BBQ 2
+Fresh Pakistani 1
+	BBQ	0.6%	15%	1.0×	3,812	None
+
+Fiery Seafood 1
+House Beverage 1
+	Seafood	0.6%	10%	1.0×	3,734	None
+
+Double Burger 4
+Spicy BBQ 1
+	Burgers	0.3%	12%	1.0×	1,675	None
+
+Smoky Chinese 1
+Classic Burger 1
+	Chinese	2.5%	29%	1.0×	15,410	None
+
+Masala BBQ 7
+House Beverage 1
+	BBQ	0.1%	10%	1.0×	857	None
+
+Deluxe Fast Food 3
+Classic Burger 1
+	Fast Food	0.8%	29%	1.0×	4,676	None
+
+Supreme Rice 12
+Classic Burger 1
+	Rice	0.2%	29%	1.0×	1,490	None
+
+Royal Fast Food 9
+Fresh Pakistani 1
+	Fast Food	0.2%	15%	1.0×	971	None
+
+Special Breakfast 1
+Classic Burger 1
+	Breakfast	2.1%	29%	1.0×	12,866	None
+
+House Beverage 5
+Signature Pizza 1
+	Beverages	0.3%	19%	1.0×	2,051	None
+
+Supreme Breakfast 3
+Classic Burger 1
+	Breakfast	0.7%	29%	1.0×	4,523	None
+
+Smoky Chinese 5
+Classic Burger 1
+	Chinese	0.5%	29%	1.0×	3,153	None
+
+Creamy Pizza 6
+Classic Burger 1
+	Pizza	0.5%	29%	1.0×	2,768	None
+
+Royal Pakistani 12
+Classic Burger 1
+	Pakistani	0.3%	29%	1.0×	1,611	None
+
+Fresh Sandwiche 3
+Signature Pizza 1
+	Sandwiches	0.5%	19%	1.0×	2,766	None
+
+Grilled Beverage 12
+Classic Burger 1
+	Beverages	0.3%	29%	1.0×	1,596	None
+
+Signature Pizza 13
+House Beverage 1
+	Pizza	0.1%	10%	1.0×	534	None
+
+Fiery Chinese 4
+Spicy BBQ 1
+	Chinese	0.3%	12%	1.0×	1,532	None
+
+Creamy Chinese 3
+Classic Burger 1
+	Chinese	0.8%	29%	1.0×	4,754	None
+
+Cheesy Pasta 4
+Signature Pizza 1
+	Pasta	0.4%	19%	1.0×	2,268	None
+
+Spicy Breakfast 2
+Signature Pizza 1
+	Breakfast	0.7%	19%	1.0×	4,192	None
+
+Royal Pakistani 4
+Spicy BBQ 1
+	Pakistani	0.3%	12%	1.0×	1,609	None
+
+Creamy Seafood 12
+House Beverage 1
+	Seafood	0.1%	10%	1.0×	546	None
+
+Herb Coffee & Tea 13
+House Beverage 1
+	Coffee & Tea	0.1%	10%	1.0×	527	None
+
+Creamy Pizza 2
+Classic Burger 1
+	Pizza	1.3%	29%	1.0×	8,225	None
+
+Crispy Sandwiche 1
+Fresh Pakistani 1
+	Sandwiches	0.8%	15%	1.0×	4,940	None
+
+Crispy Sandwiche 1
+Spicy BBQ 1
+	Sandwiches	0.7%	12%	1.0×	4,053	None
+
+Creamy Seafood 4
+Signature Pizza 1
+	Seafood	0.4%	19%	1.0×	2,269	None
+
+Herb Coffee & Tea 1
+Fresh Pakistani 1
+	Coffee & Tea	0.7%	15%	1.0×	4,484	None
+
+Cheesy Burger 2
+Signature Pizza 1
+	Burgers	0.9%	19%	1.0×	5,570	None
+
+Classic Pasta 3
+Fresh Pakistani 1
+	Pasta	0.4%	15%	1.0×	2,201	None
+
+Double Pasta 6
+Classic Burger 1
+	Pasta	0.4%	29%	1.0×	2,578	None
+
+Cheesy Pasta 12
+Classic Burger 1
+	Pasta	0.3%	29%	1.0×	1,578	None
+
+Supreme BBQ 6
+Signature Pizza 1
+	BBQ	0.3%	19%	1.0×	1,781	None
+
+Spicy BBQ 5
+Fresh Pakistani 1
+	BBQ	0.3%	15%	1.0×	1,598	None
+
+Herb Beverage 3
+Spicy BBQ 1
+	Beverages	0.3%	12%	1.0×	2,038	None
+
+Herb Salad 12
+House Beverage 1
+	Salads	0.1%	10%	1.0×	552	None
+
+Loaded Salad 3
+Signature Pizza 1
+	Salads	0.5%	19%	1.0×	2,848	None
+
+Fresh Fast Food 6
+House Beverage 1
+	Fast Food	0.2%	10%	1.0×	934	None
+
+Special Breakfast 5
+Signature Pizza 1
+	Breakfast	0.3%	19%	1.0×	1,991	None
+
+Deluxe Sandwiche 4
+Spicy BBQ 1
+	Sandwiches	0.2%	12%	1.0×	1,393	None
+
+Royal Fast Food 1
+Classic Burger 1
+	Fast Food	2.3%	29%	1.0×	13,995	None
+
+Fresh Pakistani 5
+Signature Pizza 1
+	Pakistani	0.3%	19%	1.0×	2,085	None
+
+Grilled Salad 1
+Fresh Pakistani 1
+	Salads	1.0%	15%	1.0×	5,891	None
+
+Fresh Pakistani 1
+Spicy BBQ 1
+	Pakistani	1.8%	12%	1.0×	11,060	None
+
+Spicy BBQ 1
+Fresh Pakistani 1
+	BBQ	1.8%	15%	1.0×	11,060	None
+
+Tandoori Pasta 5
+Fresh Pakistani 1
+	Pasta	0.2%	15%	1.0×	1,494	None
+
+Classic Pasta 3
+Signature Pizza 1
+	Pasta	0.5%	19%	1.0×	2,873	None
+
+Grilled Salad 13
+Classic Burger 1
+	Salads	0.2%	29%	1.0×	1,454	None
+
+Smoky Pizza 4
+Signature Pizza 1
+	Pizza	0.4%	19%	1.0×	2,617	None
+
+Crispy Sandwiche 1
+Classic Burger 1
+	Sandwiches	1.6%	29%	1.0×	9,945	None
+
+Fiery Chinese 8
+Fresh Pakistani 1
+	Chinese	0.2%	15%	1.0×	1,072	None
+
+Signature Seafood 11
+Signature Pizza 1
+	Seafood	0.2%	19%	1.0×	1,081	None
+
+Classic Pasta 7
+Fresh Pakistani 1
+	Pasta	0.2%	15%	1.0×	1,154	None
+
+Spicy Breakfast 6
+Classic Burger 1
+	Breakfast	0.4%	29%	1.0×	2,673	None
+
+Royal Fast Food 9
+Classic Burger 1
+	Fast Food	0.3%	29%	1.0×	1,952	None
+
+Royal Pakistani 4
+Signature Pizza 1
+	Pakistani	0.4%	19%	1.0×	2,557	None
+
+Double Burger 8
+Fresh Pakistani 1
+	Burgers	0.2%	15%	1.0×	1,121	None
+
+Masala BBQ 7
+Classic Burger 1
+	BBQ	0.4%	29%	1.0×	2,427	None
+
+Cheesy Dessert 7
+Classic Burger 1
+	Desserts	0.4%	29%	1.0×	2,416	None
+
+Herb Salad 12
+Signature Pizza 1
+	Salads	0.2%	19%	1.0×	1,015	None
+
+Loaded Salad 11
+House Beverage 1
+	Salads	0.1%	10%	1.0×	589	None
+
+Tandoori Dessert 8
+Classic Burger 1
+	Desserts	0.3%	29%	1.0×	2,116	None
+
+Special BBQ 4
+House Beverage 1
+	BBQ	0.2%	10%	1.0×	1,376	None
+
+Special BBQ 12
+House Beverage 1
+	BBQ	0.1%	10%	1.0×	560	None
+
+Fresh Sandwiche 11
+Fresh Pakistani 1
+	Sandwiches	0.1%	15%	1.0×	830	None
+
+Supreme Rice 4
+Classic Burger 1
+	Rice	0.6%	29%	1.0×	3,436	None
+
+Grilled Salad 9
+Signature Pizza 1
+	Salads	0.2%	19%	1.0×	1,249	None
+
+Royal Fast Food 1
+House Beverage 1
+	Fast Food	0.8%	10%	1.0×	4,920	None
+
+Double Pasta 2
+Classic Burger 1
+	Pasta	1.0%	29%	1.0×	6,067	None
+
+Fiery Pizza 11
+Fresh Pakistani 1
+	Pizza	0.1%	15%	1.0×	841	None
+
+Special Breakfast 13
+Signature Pizza 1
+	Breakfast	0.2%	19%	1.0×	947	None
+
+Tandoori Burger 3
+House Beverage 1
+	Burgers	0.3%	10%	1.0×	1,870	None
+
+Cheesy Burger 14
+House Beverage 1
+	Burgers	0.1%	10%	1.0×	512	None
+
+Deluxe Pakistani 2
+Classic Burger 1
+	Pakistani	1.3%	29%	1.0×	7,825	None
+
+Classic Pasta 3
+Classic Burger 1
+	Pasta	0.7%	29%	1.0×	4,428	None
+
+Crispy Pakistani 3
+Fresh Pakistani 1
+	Pakistani	0.4%	14%	1.0×	2,551	None
+
+Fiery Seafood 5
+Fresh Pakistani 1
+	Seafood	0.2%	14%	1.0×	1,466	None
+
+Royal Sandwiche 10
+Classic Burger 1
+	Sandwiches	0.3%	29%	1.0×	1,773	None
+
+Fresh Pakistani 13
+Signature Pizza 1
+	Pakistani	0.2%	19%	1.0×	970	None
+
+Smoky Chinese 1
+Spicy BBQ 1
+	Chinese	1.0%	12%	1.0×	6,244	None
+
+Herb Coffee & Tea 1
+Classic Burger 1
+	Coffee & Tea	1.5%	29%	1.0×	9,017	None
+
+Smoky Pizza 8
+Fresh Pakistani 1
+	Pizza	0.2%	14%	1.0×	1,117	None
+
+Masala BBQ 3
+House Beverage 1
+	BBQ	0.3%	10%	1.0×	1,770	None
+
+Classic Dessert 6
+Classic Burger 1
+	Desserts	0.4%	29%	1.0×	2,671	None
+
+Supreme Breakfast 3
+Signature Pizza 1
+	Breakfast	0.5%	19%	1.0×	2,919	None
+
+Smoky Seafood 2
+Spicy BBQ 1
+	Seafood	0.4%	12%	1.0×	2,368	None
+
+Grilled Salad 1
+House Beverage 1
+	Salads	0.7%	10%	1.0×	4,172	None
+
+Signature Chinese 6
+Fresh Pakistani 1
+	Chinese	0.2%	14%	1.0×	1,327	None
+
+Spicy Breakfast 2
+Fresh Pakistani 1
+	Breakfast	0.5%	14%	1.0×	3,198	None
+
+Grilled Beverage 12
+Spicy BBQ 1
+	Beverages	0.1%	12%	1.0×	647	None
+
+Fiery Seafood 1
+Classic Burger 1
+	Seafood	1.7%	29%	1.0×	10,554	None
+
+Crispy Fast Food 8
+Fresh Pakistani 1
+	Fast Food	0.2%	14%	1.0×	1,072	None
+
+Masala BBQ 7
+Signature Pizza 1
+	BBQ	0.3%	19%	1.0×	1,570	None
+
+Signature Seafood 11
+Fresh Pakistani 1
+	Seafood	0.1%	14%	1.0×	826	None
+
+Loaded Beverage 6
+House Beverage 1
+	Beverages	0.2%	10%	1.0×	966	None
+
+Royal Fast Food 1
+Spicy BBQ 1
+	Fast Food	0.9%	12%	1.0×	5,682	None
+
+Royal Sandwiche 10
+Signature Pizza 1
+	Sandwiches	0.2%	19%	1.0×	1,148	None
+
+House Salad 2
+Spicy BBQ 1
+	Salads	0.4%	12%	1.0×	2,549	None
+
+Signature Chinese 6
+Classic Burger 1
+	Chinese	0.4%	29%	1.0×	2,674	None
+
+Loaded Salad 11
+Classic Burger 1
+	Salads	0.3%	29%	1.0×	1,670	None
+
+Spicy Rice 11
+Classic Burger 1
+	Rice	0.3%	29%	1.0×	1,651	None
+
+Loaded Coffee & Tea 4
+Spicy BBQ 1
+	Coffee & Tea	0.2%	12%	1.0×	1,385	None
+
+Loaded Salad 11
+Signature Pizza 1
+	Salads	0.2%	19%	1.0×	1,082	None
+
+Crispy Pakistani 11
+Spicy BBQ 1
+	Pakistani	0.1%	12%	1.0×	693	None
+
+Special Breakfast 1
+Spicy BBQ 1
+	Breakfast	0.9%	12%	1.0×	5,209	None
+
+Grilled Coffee & Tea 2
+Fresh Pakistani 1
+	Coffee & Tea	0.4%	14%	1.0×	2,715	None
+
+House Beverage 1
+Spicy BBQ 1
+	Beverages	1.3%	12%	1.0×	7,826	None
+
+Spicy BBQ 1
+House Beverage 1
+	BBQ	1.3%	10%	1.0×	7,826	None
+
+Fiery Pizza 7
+Fresh Pakistani 1
+	Pizza	0.2%	14%	1.0×	1,215	None
+
+Tandoori Dessert 12
+House Beverage 1
+	Desserts	0.1%	10%	1.0×	555	None
+
+Classic Dessert 2
+Signature Pizza 1
+	Desserts	0.8%	19%	1.0×	4,637	None
+
+Fiery Seafood 1
+Signature Pizza 1
+	Seafood	1.1%	19%	1.0×	6,830	None
+
+Grilled Salad 5
+Fresh Pakistani 1
+	Salads	0.2%	14%	1.0×	1,516	None
+
+Cheesy Dessert 3
+Classic Burger 1
+	Desserts	0.8%	29%	1.0×	4,792	None
+
+Cheesy Dessert 7
+Signature Pizza 1
+	Desserts	0.3%	19%	1.0×	1,561	None
+
+Double Dessert 1
+House Beverage 1
+	Desserts	1.0%	10%	1.0×	5,957	None
+
+Tandoori Pasta 13
+Signature Pizza 1
+	Pasta	0.2%	19%	1.0×	960	None
+
+Cheesy Pasta 4
+House Beverage 1
+	Pasta	0.2%	10%	1.0×	1,226	None
+
+Spicy Breakfast 2
+House Beverage 1
+	Breakfast	0.4%	10%	1.0×	2,266	None
+
+Masala Breakfast 8
+Classic Burger 1
+	Breakfast	0.3%	29%	1.0×	2,099	None
+
+Fiery Pizza 7
+Signature Pizza 1
+	Pizza	0.3%	19%	1.0×	1,586	None
+
+Supreme BBQ 2
+Spicy BBQ 1
+	BBQ	0.5%	12%	1.0×	3,106	None
+
+House Salad 2
+Classic Burger 1
+	Salads	1.0%	29%	1.0×	6,254	None
+
+Special BBQ 4
+Signature Pizza 1
+	BBQ	0.4%	19%	1.0×	2,525	None
+
+Smoky Chinese 13
+House Beverage 1
+	Chinese	0.1%	10%	1.0×	525	None
+
+Classic Pasta 7
+Classic Burger 1
+	Pasta	0.4%	29%	1.0×	2,318	None
+
+Supreme BBQ 2
+Signature Pizza 1
+	BBQ	0.8%	19%	1.0×	4,944	None
+
+Double Pasta 10
+Fresh Pakistani 1
+	Pasta	0.1%	14%	1.0×	881	None
+
+Signature Chinese 10
+Fresh Pakistani 1
+	Chinese	0.1%	14%	1.0×	894	None
+
+Cheesy Dessert 11
+Fresh Pakistani 1
+	Desserts	0.1%	14%	1.0×	813	None
+
+Royal Sandwiche 2
+Signature Pizza 1
+	Sandwiches	0.6%	19%	1.0×	3,737	None
+
+Special Rice 2
+Spicy BBQ 1
+	Rice	0.4%	12%	1.0×	2,309	None
+
+Special Breakfast 5
+Spicy BBQ 1
+	Breakfast	0.2%	12%	1.0×	1,245	None
+
+Loaded Coffee & Tea 4
+Classic Burger 1
+	Coffee & Tea	0.6%	29%	1.0×	3,398	None
+
+Fresh Pakistani 9
+Spicy BBQ 1
+	Pakistani	0.1%	12%	1.0×	809	None
+
+Tandoori Pasta 5
+Classic Burger 1
+	Pasta	0.5%	29%	1.0×	2,999	None
+
+Smoky Pizza 4
+Spicy BBQ 1
+	Pizza	0.3%	12%	1.0×	1,637	None
+
+Smoky Chinese 1
+Signature Pizza 1
+	Chinese	1.6%	19%	1.0×	9,913	None
+
+Fiery Chinese 4
+Classic Burger 1
+	Chinese	0.6%	29%	1.0×	3,741	None
+
+Signature Seafood 3
+Classic Burger 1
+	Seafood	0.7%	29%	1.0×	4,252	None
+
+House Beverage 5
+Classic Burger 1
+	Beverages	0.5%	29%	1.0×	3,144	None
+
+Supreme BBQ 6
+Spicy BBQ 1
+	BBQ	0.2%	12%	1.0×	1,113	None
+
+Cheesy Burger 10
+Signature Pizza 1
+	Burgers	0.2%	19%	1.0×	1,210	None
+
+Spicy BBQ 13
+House Beverage 1
+	BBQ	0.1%	10%	1.0×	531	None
+
+House Coffee & Tea 7
+Fresh Pakistani 1
+	Coffee & Tea	0.2%	14%	1.0×	1,107	None
+
+Fiery Seafood 13
+House Beverage 1
+	Seafood	0.1%	10%	1.0×	500	None
+
+Tandoori Burger 11
+Classic Burger 1
+	Burgers	0.3%	29%	1.0×	1,723	None
+
+House Coffee & Tea 3
+Spicy BBQ 1
+	Coffee & Tea	0.3%	12%	1.0×	1,675	None
+
+Special Breakfast 9
+Fresh Pakistani 1
+	Breakfast	0.2%	14%	1.0×	980	None
+
+Grilled Salad 1
+Classic Burger 1
+	Salads	1.9%	29%	1.0×	11,813	None
+
+Herb Beverage 3
+Fresh Pakistani 1
+	Beverages	0.4%	14%	1.0×	2,470	None
+
+Royal Fast Food 1
+Fresh Pakistani 1
+	Fast Food	1.1%	14%	1.0×	6,904	None
+
+Masala BBQ 7
+Fresh Pakistani 1
+	BBQ	0.2%	14%	1.0×	1,198	None
+
+Masala Rice 1
+Signature Pizza 1
+	Rice	1.0%	19%	0.9×	6,092	None
+
+Fiery Seafood 5
+House Beverage 1
+	Seafood	0.2%	10%	0.9×	1,036	None
+
+Fiery Seafood 13
+Fresh Pakistani 1
+	Seafood	0.1%	14%	0.9×	704	None
+
+House Beverage 9
+Spicy BBQ 1
+	Beverages	0.1%	12%	0.9×	800	None
+
+Grilled Coffee & Tea 2
+House Beverage 1
+	Coffee & Tea	0.3%	10%	0.9×	1,921	None
+
+Creamy Chinese 3
+Signature Pizza 1
+	Chinese	0.5%	19%	0.9×	3,057	None
+
+Smoky Pizza 12
+Signature Pizza 1
+	Pizza	0.2%	19%	0.9×	1,035	None
+
+Tandoori Pasta 9
+House Beverage 1
+	Pasta	0.1%	10%	0.9×	681	None
+
+Double Dessert 1
+Fresh Pakistani 1
+	Desserts	1.4%	14%	0.9×	8,373	None
+
+Tandoori Dessert 12
+Classic Burger 1
+	Desserts	0.3%	29%	0.9×	1,572	None
+
+Creamy Pizza 2
+Signature Pizza 1
+	Pizza	0.9%	19%	0.9×	5,291	None
+
+Herb Coffee & Tea 1
+Spicy BBQ 1
+	Coffee & Tea	0.6%	12%	0.9×	3,653	None
+
+Classic Pasta 7
+Spicy BBQ 1
+	Pasta	0.2%	12%	0.9×	941	None
+
+Crispy Sandwiche 9
+Classic Burger 1
+	Sandwiches	0.3%	29%	0.9×	1,885	None
+
+Royal Sandwiche 10
+Fresh Pakistani 1
+	Sandwiches	0.1%	14%	0.9×	875	None
+
+Deluxe Fast Food 3
+Fresh Pakistani 1
+	Fast Food	0.4%	14%	0.9×	2,298	None
+
+Masala Rice 1
+Classic Burger 1
+	Rice	1.5%	29%	0.9×	9,392	None
+
+Cheesy Dessert 7
+Fresh Pakistani 1
+	Desserts	0.2%	14%	0.9×	1,191	None
+
+Smoky Chinese 9
+Spicy BBQ 1
+	Chinese	0.1%	12%	0.9×	794	None
+
+Spicy Breakfast 2
+Classic Burger 1
+	Breakfast	1.1%	29%	0.9×	6,416	None
+
+Supreme Rice 8
+Classic Burger 1
+	Rice	0.3%	29%	0.9×	2,019	None
+
+Creamy Pizza 10
+House Beverage 1
+	Pizza	0.1%	10%	0.9×	650	None
+
+Classic Dessert 2
+Fresh Pakistani 1
+	Desserts	0.6%	14%	0.9×	3,535	None
+
+Loaded Coffee & Tea 12
+Fresh Pakistani 1
+	Coffee & Tea	0.1%	14%	0.9×	750	None
+
+Loaded Beverage 6
+Spicy BBQ 1
+	Beverages	0.2%	12%	0.9×	1,111	None
+
+Crispy Pakistani 7
+House Beverage 1
+	Pakistani	0.1%	10%	0.9×	856	None
+
+Fresh Fast Food 10
+House Beverage 1
+	Fast Food	0.1%	10%	0.9×	620	None
+
+Creamy Seafood 4
+Spicy BBQ 1
+	Seafood	0.2%	12%	0.9×	1,413	None
+
+Loaded Salad 7
+House Beverage 1
+	Salads	0.1%	10%	0.9×	817	None
+
+House Salad 6
+Classic Burger 1
+	Salads	0.4%	29%	0.9×	2,616	None
+
+Fiery Pizza 11
+House Beverage 1
+	Pizza	0.1%	10%	0.9×	593	None
+
+Grilled Coffee & Tea 10
+House Beverage 1
+	Coffee & Tea	0.1%	10%	0.9×	607	None
+
+House Beverage 9
+Classic Burger 1
+	Beverages	0.3%	29%	0.9×	1,962	None
+
+Crispy Fast Food 8
+Classic Burger 1
+	Fast Food	0.4%	29%	0.9×	2,149	None
+
+Cheesy Pasta 12
+Signature Pizza 1
+	Pasta	0.2%	19%	0.9×	1,014	None
+
+Supreme Rice 8
+Signature Pizza 1
+	Rice	0.2%	19%	0.9×	1,307	None
+
+Masala Rice 1
+House Beverage 1
+	Rice	0.5%	10%	0.9×	3,302	None
+
+Double Burger 12
+Spicy BBQ 1
+	Burgers	0.1%	12%	0.9×	657	None
+
+Royal Sandwiche 6
+Fresh Pakistani 1
+	Sandwiches	0.2%	14%	0.9×	1,260	None
+
+Signature Chinese 2
+Classic Burger 1
+	Chinese	1.1%	29%	0.9×	6,738	None
+
+Loaded Salad 11
+Spicy BBQ 1
+	Salads	0.1%	12%	0.9×	676	None
+
+Spicy Rice 3
+Classic Burger 1
+	Rice	0.7%	29%	0.9×	4,144	None
+
+Deluxe Sandwiche 8
+Spicy BBQ 1
+	Sandwiches	0.1%	12%	0.9×	836	None
+
+Signature Chinese 6
+Spicy BBQ 1
+	Chinese	0.2%	12%	0.9×	1,082	None
+
+Smoky Chinese 1
+Fresh Pakistani 1
+	Chinese	1.2%	14%	0.9×	7,560	None
+
+Royal Pakistani 12
+Fresh Pakistani 1
+	Pakistani	0.1%	14%	0.9×	791	None
+
+Cheesy Burger 10
+Fresh Pakistani 1
+	Burgers	0.2%	14%	0.9×	923	None
+
+Royal Fast Food 13
+Signature Pizza 1
+	Fast Food	0.2%	19%	0.9×	954	None
+
+Supreme BBQ 6
+House Beverage 1
+	BBQ	0.2%	10%	0.9×	959	None
+
+Special Rice 6
+Classic Burger 1
+	Rice	0.4%	29%	0.9×	2,520	None
+
+Spicy Rice 7
+Signature Pizza 1
+	Rice	0.2%	19%	0.9×	1,460	None
+
+Cheesy Dessert 11
+Spicy BBQ 1
+	Desserts	0.1%	12%	0.9×	664	None
+
+Grilled Coffee & Tea 2
+Signature Pizza 1
+	Coffee & Tea	0.6%	19%	0.9×	3,526	None
+
+Herb Salad 4
+Spicy BBQ 1
+	Salads	0.2%	12%	0.9×	1,439	None
+
+Crispy Fast Food 12
+Classic Burger 1
+	Fast Food	0.3%	29%	0.9×	1,566	None
+
+Classic Burger 5
+House Beverage 1
+	Burgers	0.2%	10%	0.9×	1,164	None
+
+Classic Pasta 11
+Fresh Pakistani 1
+	Pasta	0.1%	14%	0.9×	829	None
+
+Double Burger 12
+Signature Pizza 1
+	Burgers	0.2%	19%	0.9×	1,045	None
+
+Grilled Beverage 12
+Signature Pizza 1
+	Beverages	0.2%	19%	0.9×	1,023	None
+
+Fresh Sandwiche 11
+Classic Burger 1
+	Sandwiches	0.3%	29%	0.9×	1,660	None
+
+Creamy Seafood 4
+Classic Burger 1
+	Seafood	0.6%	29%	0.9×	3,466	None
+
+House Salad 10
+House Beverage 1
+	Salads	0.1%	10%	0.9×	626	None
+
+Crispy Pakistani 11
+Signature Pizza 1
+	Pakistani	0.2%	19%	0.9×	1,096	None
+
+Grilled Beverage 4
+Classic Burger 1
+	Beverages	0.6%	29%	0.9×	3,757	None
+
+House Coffee & Tea 7
+House Beverage 1
+	Coffee & Tea	0.1%	10%	0.9×	782	None
+
+Special Breakfast 1
+Signature Pizza 1
+	Breakfast	1.3%	19%	0.9×	8,238	None
+
+Smoky Seafood 6
+Signature Pizza 1
+	Seafood	0.3%	19%	0.9×	1,664	None
+
+Spicy BBQ 13
+Spicy BBQ 1
+	BBQ	0.1%	12%	0.9×	611	None
+
+Double Burger 4
+Classic Burger 1
+	Burgers	0.7%	29%	0.9×	4,065	None
+
+Creamy Chinese 7
+Fresh Pakistani 1
+	Chinese	0.2%	14%	0.9×	1,181	None
+
+Grilled Coffee & Tea 2
+Spicy BBQ 1
+	Coffee & Tea	0.4%	12%	0.9×	2,212	None
+
+Classic Dessert 10
+Spicy BBQ 1
+	Desserts	0.1%	12%	0.9×	733	None
+
+Supreme Rice 4
+Spicy BBQ 1
+	Rice	0.2%	12%	0.9×	1,386	None
+
+Smoky Pizza 4
+Classic Burger 1
+	Pizza	0.7%	29%	0.9×	4,000	None
+
+Herb Beverage 11
+House Beverage 1
+	Beverages	0.1%	10%	0.9×	600	None
+
+Fiery Chinese 8
+Classic Burger 1
+	Chinese	0.4%	29%	0.9×	2,140	None
+
+Creamy Pizza 10
+Spicy BBQ 1
+	Pizza	0.1%	12%	0.9×	749	None
+
+Creamy Pizza 14
+Signature Pizza 1
+	Pizza	0.2%	19%	0.9×	947	None
+
+Tandoori Pasta 1
+Fresh Pakistani 1
+	Pasta	0.9%	14%	0.9×	5,479	None
+
+Supreme Rice 4
+House Beverage 1
+	Rice	0.2%	10%	0.9×	1,198	None
+
+House Salad 2
+Signature Pizza 1
+	Salads	0.7%	19%	0.9×	4,024	None
+
+Fresh Fast Food 2
+Fresh Pakistani 1
+	Fast Food	0.5%	14%	0.9×	3,241	None
+
+Masala BBQ 11
+Fresh Pakistani 1
+	BBQ	0.1%	14%	0.9×	837	None
+
+Classic Dessert 2
+Classic Burger 1
+	Desserts	1.2%	29%	0.9×	7,101	None
+
+Royal Sandwiche 2
+Spicy BBQ 1
+	Sandwiches	0.4%	12%	0.9×	2,331	None
+
+Creamy Seafood 12
+Fresh Pakistani 1
+	Seafood	0.1%	14%	0.9×	760	None
+
+Supreme Breakfast 11
+Fresh Pakistani 1
+	Breakfast	0.1%	14%	0.9×	842	None
+
+House Coffee & Tea 3
+Classic Burger 1
+	Coffee & Tea	0.7%	29%	0.9×	4,091	None
+
+Deluxe Pakistani 2
+Signature Pizza 1
+	Pakistani	0.8%	19%	0.9×	5,021	None
+
+Herb Salad 12
+Fresh Pakistani 1
+	Salads	0.1%	14%	0.9×	769	None
+
+Creamy Pizza 2
+House Beverage 1
+	Pizza	0.5%	10%	0.9×	2,860	None
+
+Supreme Breakfast 7
+Classic Burger 1
+	Breakfast	0.4%	29%	0.9×	2,331	None
+
+Herb Coffee & Tea 9
+Fresh Pakistani 1
+	Coffee & Tea	0.2%	14%	0.9×	947	None
+
+Smoky Seafood 6
+Classic Burger 1
+	Seafood	0.4%	29%	0.9×	2,564	None
+
+Signature Chinese 2
+House Beverage 1
+	Chinese	0.4%	10%	0.9×	2,364	None
+
+Tandoori Pasta 1
+Spicy BBQ 1
+	Pasta	0.7%	12%	0.9×	4,491	None
+
+Spicy BBQ 9
+Signature Pizza 1
+	BBQ	0.2%	19%	0.9×	1,279	None
+
+Creamy Pizza 2
+Fresh Pakistani 1
+	Pizza	0.7%	14%	0.9×	4,027	None
+
+Supreme Breakfast 11
+House Beverage 1
+	Breakfast	0.1%	10%	0.9×	597	None
+
+Fresh Fast Food 2
+Spicy BBQ 1
+	Fast Food	0.4%	12%	0.9×	2,656	None
+
+Deluxe Fast Food 11
+Classic Burger 1
+	Fast Food	0.3%	29%	0.9×	1,668	None
+
+Royal Sandwiche 10
+Spicy BBQ 1
+	Sandwiches	0.1%	12%	0.9×	714	None
+
+Masala Breakfast 12
+Classic Burger 1
+	Breakfast	0.3%	29%	0.9×	1,564	None
+
+Masala BBQ 3
+Fresh Pakistani 1
+	BBQ	0.4%	14%	0.9×	2,468	None
+
+Creamy Pizza 10
+Fresh Pakistani 1
+	Pizza	0.1%	14%	0.9×	911	None
+
+Creamy Seafood 4
+Fresh Pakistani 1
+	Seafood	0.3%	14%	0.9×	1,714	None
+
+Loaded Salad 7
+Spicy BBQ 1
+	Salads	0.2%	12%	0.9×	940	None
+
+Crispy Pakistani 7
+Fresh Pakistani 1
+	Pakistani	0.2%	14%	0.9×	1,200	None
+
+Creamy Chinese 3
+Spicy BBQ 1
+	Chinese	0.3%	12%	0.9×	1,907	None
+
+Double Burger 12
+Fresh Pakistani 1
+	Burgers	0.1%	14%	0.9×	797	None
+
+Deluxe Sandwiche 12
+Spicy BBQ 1
+	Sandwiches	0.1%	12%	0.9×	628	None
+
+Classic Dessert 2
+Spicy BBQ 1
+	Desserts	0.5%	12%	0.9×	2,884	None
+
+Fiery Pizza 3
+Spicy BBQ 1
+	Pizza	0.3%	12%	0.9×	2,085	None
+
+Crispy Sandwiche 9
+Fresh Pakistani 1
+	Sandwiches	0.2%	14%	0.9×	929	None
+
+Double Pasta 6
+Spicy BBQ 1
+	Pasta	0.2%	12%	0.9×	1,035	None
+
+Deluxe Pakistani 6
+Fresh Pakistani 1
+	Pakistani	0.2%	14%	0.9×	1,367	None
+
+Classic Burger 9
+Fresh Pakistani 1
+	Burgers	0.2%	14%	0.9×	1,002	None
+
+Fresh Sandwiche 3
+House Beverage 1
+	Sandwiches	0.2%	10%	0.9×	1,480	None
+
+Classic Burger 9
+Spicy BBQ 1
+	Burgers	0.1%	12%	0.9×	822	None
+
+Fresh Fast Food 6
+Classic Burger 1
+	Fast Food	0.4%	29%	0.9×	2,617	None
+
+Spicy BBQ 5
+Spicy BBQ 1
+	BBQ	0.2%	12%	0.9×	1,293	None
+
+Special BBQ 8
+Signature Pizza 1
+	BBQ	0.2%	19%	0.9×	1,405	None
+
+Loaded Beverage 2
+Fresh Pakistani 1
+	Beverages	0.6%	14%	0.9×	3,607	None
+
+Crispy Fast Food 8
+Signature Pizza 1
+	Fast Food	0.2%	19%	0.9×	1,384	None
+
+Loaded Beverage 2
+Spicy BBQ 1
+	Beverages	0.5%	12%	0.9×	2,959	None
+
+Tandoori Pasta 9
+Spicy BBQ 1
+	Pasta	0.1%	12%	0.9×	781	None
+
+Smoky Chinese 1
+House Beverage 1
+	Chinese	0.9%	10%	0.9×	5,334	None
+
+Smoky Pizza 8
+Signature Pizza 1
+	Pizza	0.2%	19%	0.9×	1,441	None
+
+Herb Salad 8
+Fresh Pakistani 1
+	Salads	0.2%	14%	0.9×	1,046	None
+
+Grilled Salad 5
+Classic Burger 1
+	Salads	0.5%	29%	0.9×	3,023	None
+
+Grilled Coffee & Tea 10
+Classic Burger 1
+	Coffee & Tea	0.3%	29%	0.9×	1,713	None
+
+Herb Beverage 11
+Classic Burger 1
+	Beverages	0.3%	29%	0.9×	1,697	None
+
+Fresh Sandwiche 7
+Classic Burger 1
+	Sandwiches	0.4%	29%	0.9×	2,251	None
+
+Fresh Sandwiche 3
+Classic Burger 1
+	Sandwiches	0.7%	29%	0.9×	4,200	None
+
+Herb Salad 8
+Signature Pizza 1
+	Salads	0.2%	19%	0.9×	1,366	None
+
+Loaded Beverage 10
+Spicy BBQ 1
+	Beverages	0.1%	12%	0.9×	752	None
+
+Herb Beverage 7
+Fresh Pakistani 1
+	Beverages	0.2%	14%	0.9×	1,182	None
+
+Deluxe Fast Food 11
+Signature Pizza 1
+	Fast Food	0.2%	19%	0.9×	1,078	None
+
+House Coffee & Tea 11
+Spicy BBQ 1
+	Coffee & Tea	0.1%	12%	0.9×	656	None
+
+Grilled Salad 1
+Spicy BBQ 1
+	Salads	0.8%	12%	0.9×	4,762	None
+
+Herb Coffee & Tea 1
+Signature Pizza 1
+	Coffee & Tea	0.9%	19%	0.9×	5,766	None
+
+House Salad 6
+Spicy BBQ 1
+	Salads	0.2%	12%	0.9×	1,057	None
+
+Cheesy Pasta 8
+Classic Burger 1
+	Pasta	0.3%	29%	0.9×	2,074	None
+
+Creamy Chinese 11
+Signature Pizza 1
+	Chinese	0.2%	19%	0.9×	1,056	None
+
+Spicy Breakfast 10
+Signature Pizza 1
+	Breakfast	0.2%	19%	0.9×	1,141	None
+
+Tandoori Burger 7
+Signature Pizza 1
+	Burgers	0.3%	19%	0.9×	1,584	None
+
+Deluxe Fast Food 7
+Classic Burger 1
+	Fast Food	0.4%	29%	0.9×	2,340	None
+
+Royal Fast Food 9
+House Beverage 1
+	Fast Food	0.1%	10%	0.9×	677	None
+
+Grilled Salad 13
+Signature Pizza 1
+	Salads	0.2%	19%	0.9×	928	None
+
+Smoky Seafood 2
+Fresh Pakistani 1
+	Seafood	0.5%	14%	0.9×	2,847	None
+
+Deluxe Fast Food 11
+House Beverage 1
+	Fast Food	0.1%	10%	0.9×	585	None
+
+Tandoori Burger 11
+House Beverage 1
+	Burgers	0.1%	10%	0.9×	600	None
+
+Special Rice 10
+Classic Burger 1
+	Rice	0.3%	29%	0.9×	1,755	None
+
+House Salad 10
+Spicy BBQ 1
+	Salads	0.1%	12%	0.9×	719	None
+
+Cheesy Pasta 4
+Classic Burger 1
+	Pasta	0.6%	29%	0.9×	3,440	None
+
+Tandoori Pasta 9
+Fresh Pakistani 1
+	Pasta	0.2%	14%	0.9×	950	None
+
+Deluxe Sandwiche 8
+Fresh Pakistani 1
+	Sandwiches	0.2%	14%	0.9×	1,011	None
+
+Royal Sandwiche 6
+House Beverage 1
+	Sandwiches	0.1%	10%	0.9×	887	None
+
+Deluxe Fast Food 11
+Fresh Pakistani 1
+	Fast Food	0.1%	14%	0.9×	824	None
+
+Spicy Breakfast 2
+Spicy BBQ 1
+	Breakfast	0.4%	12%	0.9×	2,587	None
+
+Spicy Rice 3
+House Beverage 1
+	Rice	0.2%	10%	0.9×	1,447	None
+
+Signature Pizza 5
+Classic Burger 1
+	Pizza	0.5%	29%	0.9×	3,224	None
+
+Supreme Rice 8
+Spicy BBQ 1
+	Rice	0.1%	12%	0.9×	814	None
+
+Crispy Fast Food 8
+Spicy BBQ 1
+	Fast Food	0.1%	12%	0.9×	867	None
+
+Smoky Seafood 10
+Spicy BBQ 1
+	Seafood	0.1%	12%	0.9×	714	None
+
+House Coffee & Tea 7
+Signature Pizza 1
+	Coffee & Tea	0.2%	19%	0.9×	1,429	None
+
+Masala Breakfast 8
+Spicy BBQ 1
+	Breakfast	0.1%	12%	0.9×	843	None
+
+Cheesy Dessert 3
+House Beverage 1
+	Desserts	0.3%	10%	0.9×	1,664	None
+
+Grilled Coffee & Tea 6
+Spicy BBQ 1
+	Coffee & Tea	0.2%	12%	0.9×	1,019	None
+
+Special Breakfast 9
+House Beverage 1
+	Breakfast	0.1%	10%	0.9×	687	None
+
+Herb Coffee & Tea 13
+Classic Burger 1
+	Coffee & Tea	0.2%	29%	0.9×	1,469	None
+
+Herb Salad 12
+Classic Burger 1
+	Salads	0.3%	29%	0.9×	1,540	None
+
+Supreme Rice 12
+Signature Pizza 1
+	Rice	0.2%	19%	0.9×	946	None
+
+Special Breakfast 13
+Fresh Pakistani 1
+	Breakfast	0.1%	14%	0.9×	713	None
+
+Spicy Breakfast 10
+House Beverage 1
+	Breakfast	0.1%	10%	0.9×	618	None
+
+House Salad 10
+Classic Burger 1
+	Salads	0.3%	29%	0.9×	1,763	None
+
+Fiery Seafood 9
+Fresh Pakistani 1
+	Seafood	0.1%	14%	0.9×	909	None
+
+Supreme BBQ 10
+Fresh Pakistani 1
+	BBQ	0.1%	14%	0.9×	887	None
+
+Tandoori Burger 3
+Signature Pizza 1
+	Burgers	0.6%	19%	0.9×	3,383	None
+
+Smoky Seafood 2
+House Beverage 1
+	Seafood	0.3%	10%	0.9×	2,014	None
+
+Fresh Sandwiche 11
+Spicy BBQ 1
+	Sandwiches	0.1%	12%	0.9×	669	None
+
+Grilled Coffee & Tea 10
+Spicy BBQ 1
+	Coffee & Tea	0.1%	12%	0.9×	694	None
+
+Masala Rice 5
+Spicy BBQ 1
+	Rice	0.2%	12%	0.9×	1,153	None
+
+Cheesy Burger 2
+House Beverage 1
+	Burgers	0.5%	10%	0.9×	2,967	None
+
+Loaded Beverage 14
+Fresh Pakistani 1
+	Beverages	0.1%	14%	0.9×	679	None
+
+Fresh Fast Food 6
+Fresh Pakistani 1
+	Fast Food	0.2%	14%	0.9×	1,290	None
+
+Masala BBQ 3
+Signature Pizza 1
+	BBQ	0.5%	19%	0.9×	3,200	None
+
+Special BBQ 12
+Classic Burger 1
+	BBQ	0.3%	29%	0.9×	1,561	None
+
+Creamy Chinese 11
+Spicy BBQ 1
+	Chinese	0.1%	12%	0.9×	660	None
+
+Cheesy Dessert 3
+Fresh Pakistani 1
+	Desserts	0.4%	14%	0.9×	2,338	None
+
+Tandoori Burger 7
+Spicy BBQ 1
+	Burgers	0.2%	12%	0.9×	990	None
+
+Smoky Chinese 5
+Fresh Pakistani 1
+	Chinese	0.3%	14%	0.9×	1,530	None
+
+House Salad 2
+House Beverage 1
+	Salads	0.4%	10%	0.9×	2,166	None
+
+Double Dessert 9
+Signature Pizza 1
+	Desserts	0.2%	19%	0.9×	1,243	None
+
+Double Pasta 2
+Fresh Pakistani 1
+	Pasta	0.5%	14%	0.9×	2,953	None
+
+Royal Pakistani 8
+Signature Pizza 1
+	Pakistani	0.2%	19%	0.9×	1,407	None
+
+Tandoori Pasta 5
+House Beverage 1
+	Pasta	0.2%	10%	0.9×	1,039	None
+
+Classic Burger 5
+Signature Pizza 1
+	Burgers	0.3%	19%	0.9×	2,118	None
+
+Masala Breakfast 4
+Spicy BBQ 1
+	Breakfast	0.2%	12%	0.9×	1,453	None
+
+Fiery Chinese 8
+Spicy BBQ 1
+	Chinese	0.1%	12%	0.9×	862	None
+
+Royal Fast Food 13
+Spicy BBQ 1
+	Fast Food	0.1%	12%	0.9×	592	None
+
+Tandoori Burger 11
+Signature Pizza 1
+	Burgers	0.2%	19%	0.9×	1,099	None
+
+Smoky Chinese 9
+Classic Burger 1
+	Chinese	0.3%	29%	0.9×	1,924	None
+
+Signature Chinese 6
+House Beverage 1
+	Chinese	0.2%	10%	0.9×	924	None
+
+Smoky Chinese 13
+Signature Pizza 1
+	Chinese	0.2%	19%	0.9×	950	None
+
+Loaded Coffee & Tea 8
+House Beverage 1
+	Coffee & Tea	0.1%	10%	0.9×	700	None
+
+Crispy Fast Food 12
+Signature Pizza 1
+	Fast Food	0.2%	19%	0.9×	1,002	None
+
+Fresh Pakistani 5
+Fresh Pakistani 1
+	Pakistani	0.3%	14%	0.9×	1,562	None
+
+Supreme BBQ 10
+Signature Pizza 1
+	BBQ	0.2%	19%	0.9×	1,155	None
+
+Royal Sandwiche 2
+House Beverage 1
+	Sandwiches	0.3%	10%	0.9×	1,995	None
+
+Double Pasta 2
+Signature Pizza 1
+	Pasta	0.6%	19%	0.9×	3,851	None
+
+Special Rice 2
+Signature Pizza 1
+	Rice	0.6%	19%	0.9×	3,612	None
+
+Masala Rice 9
+Classic Burger 1
+	Rice	0.3%	29%	0.9×	1,874	None
+
+Supreme Breakfast 11
+Signature Pizza 1
+	Breakfast	0.2%	19%	0.9×	1,088	None
+
+Tandoori Dessert 4
+Classic Burger 1
+	Desserts	0.6%	29%	0.9×	3,683	None
+
+Supreme Breakfast 3
+House Beverage 1
+	Breakfast	0.3%	10%	0.9×	1,554	None
+
+Crispy Sandwiche 5
+House Beverage 1
+	Sandwiches	0.2%	10%	0.9×	1,013	None
+
+Tandoori Dessert 8
+House Beverage 1
+	Desserts	0.1%	10%	0.9×	729	None
+
+House Coffee & Tea 7
+Classic Burger 1
+	Coffee & Tea	0.4%	29%	0.9×	2,193	None
+
+House Salad 6
+Signature Pizza 1
+	Salads	0.3%	19%	0.9×	1,670	None
+
+Cheesy Burger 6
+House Beverage 1
+	Burgers	0.2%	10%	0.9×	981	None
+
+Fiery Chinese 8
+House Beverage 1
+	Chinese	0.1%	10%	0.9×	744	None
+
+Fresh Pakistani 9
+Fresh Pakistani 1
+	Pakistani	0.2%	14%	0.9×	968	None
+
+Herb Coffee & Tea 13
+Fresh Pakistani 1
+	Coffee & Tea	0.1%	14%	0.9×	725	None
+
+Special Breakfast 13
+Classic Burger 1
+	Breakfast	0.2%	29%	0.9×	1,430	None
+
+Grilled Beverage 8
+Fresh Pakistani 1
+	Beverages	0.2%	14%	0.9×	1,059	None
+
+Grilled Beverage 12
+Fresh Pakistani 1
+	Beverages	0.1%	14%	0.9×	772	None
+
+Tandoori Dessert 4
+Signature Pizza 1
+	Desserts	0.4%	19%	0.9×	2,383	None
+
+Royal Sandwiche 6
+Spicy BBQ 1
+	Sandwiches	0.2%	12%	0.9×	1,018	None
+
+Creamy Chinese 3
+House Beverage 1
+	Chinese	0.3%	10%	0.9×	1,632	None
+
+House Salad 10
+Signature Pizza 1
+	Salads	0.2%	19%	0.9×	1,136	None
+
+Masala Rice 1
+Spicy BBQ 1
+	Rice	0.6%	12%	0.9×	3,758	None
+
+Deluxe Sandwiche 8
+House Beverage 1
+	Sandwiches	0.1%	10%	0.9×	712	None
+
+Herb Beverage 7
+Spicy BBQ 1
+	Beverages	0.2%	12%	0.9×	961	None
+
+Loaded Beverage 10
+Classic Burger 1
+	Beverages	0.3%	29%	0.9×	1,831	None
+
+Signature Seafood 3
+House Beverage 1
+	Seafood	0.2%	10%	0.9×	1,468	None
+
+Special Rice 2
+House Beverage 1
+	Rice	0.3%	10%	0.9×	1,958	None
+
+Special Breakfast 9
+Signature Pizza 1
+	Breakfast	0.2%	19%	0.9×	1,256	None
+
+Creamy Pizza 6
+House Beverage 1
+	Pizza	0.2%	10%	0.9×	949	None
+
+Special Rice 10
+Spicy BBQ 1
+	Rice	0.1%	12%	0.9×	708	None
+
+House Beverage 5
+Spicy BBQ 1
+	Beverages	0.2%	12%	0.9×	1,254	None
+
+Masala Rice 5
+Fresh Pakistani 1
+	Rice	0.2%	14%	0.9×	1,397	None
+
+Grilled Beverage 12
+House Beverage 1
+	Beverages	0.1%	10%	0.9×	547	None
+
+Royal Fast Food 5
+Spicy BBQ 1
+	Fast Food	0.2%	12%	0.9×	1,222	None
+
+Cheesy Dessert 3
+Signature Pizza 1
+	Desserts	0.5%	18%	0.9×	3,038	None
+
+Double Pasta 10
+Classic Burger 1
+	Pasta	0.3%	29%	0.9×	1,739	None
+
+Cheesy Burger 14
+Classic Burger 1
+	Burgers	0.2%	29%	0.9×	1,420	None
+
+Spicy Breakfast 6
+Fresh Pakistani 1
+	Breakfast	0.2%	14%	0.9×	1,293	None
+
+Crispy Sandwiche 13
+Signature Pizza 1
+	Sandwiches	0.2%	18%	0.9×	933	None
+
+Creamy Pizza 14
+Fresh Pakistani 1
+	Pizza	0.1%	14%	0.9×	714	None
+
+Fiery Seafood 9
+Spicy BBQ 1
+	Seafood	0.1%	12%	0.9×	740	None
+
+Double Pasta 6
+Signature Pizza 1
+	Pasta	0.3%	18%	0.9×	1,626	None
+
+Grilled Beverage 8
+Spicy BBQ 1
+	Beverages	0.1%	12%	0.9×	866	None
+
+Deluxe Sandwiche 4
+Fresh Pakistani 1
+	Sandwiches	0.3%	14%	0.9×	1,653	None
+
+Double Dessert 5
+House Beverage 1
+	Desserts	0.2%	10%	0.9×	1,075	None
+
+Tandoori Burger 3
+Fresh Pakistani 1
+	Burgers	0.4%	14%	0.9×	2,567	None
+
+Herb Coffee & Tea 13
+Spicy BBQ 1
+	Coffee & Tea	0.1%	12%	0.9×	592	None
+
+Grilled Salad 5
+House Beverage 1
+	Salads	0.2%	10%	0.9×	1,050	None
+
+Herb Coffee & Tea 9
+House Beverage 1
+	Coffee & Tea	0.1%	10%	0.9×	661	None
+
+Loaded Salad 3
+Spicy BBQ 1
+	Salads	0.3%	12%	0.9×	1,739	None
+
+Smoky Pizza 12
+Fresh Pakistani 1
+	Pizza	0.1%	14%	0.9×	775	None
+
+Signature Pizza 5
+Fresh Pakistani 1
+	Pizza	0.3%	14%	0.9×	1,580	None
+
+Crispy Fast Food 4
+House Beverage 1
+	Fast Food	0.2%	10%	0.9×	1,248	None
+
+Crispy Fast Food 12
+Fresh Pakistani 1
+	Fast Food	0.1%	14%	0.9×	761	None
+
+Crispy Fast Food 12
+House Beverage 1
+	Fast Food	0.1%	10%	0.9×	540	None
+
+Herb Beverage 11
+Signature Pizza 1
+	Beverages	0.2%	18%	0.9×	1,083	None
+
+Fresh Fast Food 2
+Signature Pizza 1
+	Fast Food	0.7%	18%	0.9×	4,154	None
+
+Spicy BBQ 5
+Signature Pizza 1
+	BBQ	0.3%	18%	0.9×	2,025	None
+
+Loaded Coffee & Tea 8
+Signature Pizza 1
+	Coffee & Tea	0.2%	18%	0.9×	1,277	None
+
+Tandoori Dessert 8
+Fresh Pakistani 1
+	Desserts	0.2%	14%	0.9×	1,019	None
+
+Spicy BBQ 13
+Fresh Pakistani 1
+	BBQ	0.1%	14%	0.9×	729	None
+
+Creamy Seafood 12
+Signature Pizza 1
+	Seafood	0.2%	18%	0.9×	973	None
+
+Tandoori Burger 11
+Spicy BBQ 1
+	Burgers	0.1%	12%	0.9×	683	None
+
+Royal Fast Food 5
+Signature Pizza 1
+	Fast Food	0.3%	18%	0.9×	1,933	None
+
+House Coffee & Tea 11
+Signature Pizza 1
+	Coffee & Tea	0.2%	18%	0.9×	1,027	None
+
+Deluxe Pakistani 14
+Classic Burger 1
+	Pakistani	0.2%	28%	0.9×	1,380	None
+
+Creamy Chinese 7
+Classic Burger 1
+	Chinese	0.4%	28%	0.9×	2,329	None
+
+House Beverage 9
+Fresh Pakistani 1
+	Beverages	0.2%	14%	0.9×	950	None
+
+Deluxe Fast Food 3
+Signature Pizza 1
+	Fast Food	0.5%	18%	0.9×	2,927	None
+
+Supreme Breakfast 7
+Signature Pizza 1
+	Breakfast	0.2%	18%	0.9×	1,479	None
+
+Smoky Chinese 13
+Spicy BBQ 1
+	Chinese	0.1%	12%	0.9×	590	None
+
+Classic Pasta 11
+Spicy BBQ 1
+	Pasta	0.1%	12%	0.9×	664	None
+
+Double Dessert 5
+Fresh Pakistani 1
+	Desserts	0.2%	14%	0.9×	1,506	None
+
+Signature Seafood 7
+Signature Pizza 1
+	Seafood	0.2%	18%	0.9×	1,430	None
+
+Royal Sandwiche 6
+Classic Burger 1
+	Sandwiches	0.4%	28%	0.9×	2,476	None
+
+Tandoori Dessert 8
+Spicy BBQ 1
+	Desserts	0.1%	12%	0.9×	833	None
+
+Supreme Rice 4
+Fresh Pakistani 1
+	Rice	0.3%	14%	0.9×	1,649	None
+
+Spicy BBQ 9
+Fresh Pakistani 1
+	BBQ	0.2%	14%	0.9×	957	None
+
+Grilled Salad 5
+Spicy BBQ 1
+	Salads	0.2%	12%	0.9×	1,205	None
+
+Masala Rice 9
+Signature Pizza 1
+	Rice	0.2%	18%	0.9×	1,198	None
+
+Smoky Pizza 4
+Fresh Pakistani 1
+	Pizza	0.3%	14%	0.9×	1,934	None
+
+Supreme BBQ 14
+Signature Pizza 1
+	BBQ	0.1%	18%	0.9×	880	None
+
+Masala Rice 13
+Spicy BBQ 1
+	Rice	0.1%	11%	0.9×	559	None
+
+Royal Sandwiche 6
+Signature Pizza 1
+	Sandwiches	0.3%	18%	0.9×	1,600	None
+
+Classic Dessert 6
+Fresh Pakistani 1
+	Desserts	0.2%	14%	0.9×	1,280	None
+
+Supreme Breakfast 3
+Spicy BBQ 1
+	Breakfast	0.3%	11%	0.9×	1,771	None
+
+Loaded Beverage 10
+Signature Pizza 1
+	Beverages	0.2%	18%	0.9×	1,171	None
+
+Signature Chinese 6
+Signature Pizza 1
+	Chinese	0.3%	18%	0.9×	1,674	None
+
+Tandoori Dessert 12
+Fresh Pakistani 1
+	Desserts	0.1%	14%	0.9×	756	None
+
+Royal Fast Food 13
+Classic Burger 1
+	Fast Food	0.2%	28%	0.9×	1,431	None
+
+Royal Pakistani 4
+Fresh Pakistani 1
+	Pakistani	0.3%	14%	0.9×	1,887	None
+
+Herb Coffee & Tea 9
+Spicy BBQ 1
+	Coffee & Tea	0.1%	11%	0.9×	757	None
+
+Supreme Breakfast 7
+Spicy BBQ 1
+	Breakfast	0.2%	11%	0.9×	924	None
+
+Masala Rice 13
+Fresh Pakistani 1
+	Rice	0.1%	14%	0.9×	680	None
+
+Loaded Coffee & Tea 12
+Signature Pizza 1
+	Coffee & Tea	0.2%	18%	0.9×	950	None
+
+Masala Rice 13
+Signature Pizza 1
+	Rice	0.1%	18%	0.9×	888	None
+
+House Beverage 9
+Signature Pizza 1
+	Beverages	0.2%	18%	0.9×	1,233	None
+
+Loaded Beverage 14
+Signature Pizza 1
+	Beverages	0.1%	18%	0.9×	870	None
+
+Spicy Rice 3
+Fresh Pakistani 1
+	Rice	0.3%	14%	0.9×	1,994	None
+
+Classic Dessert 6
+Signature Pizza 1
+	Desserts	0.3%	18%	0.9×	1,668	None
+
+Tandoori Burger 7
+Fresh Pakistani 1
+	Burgers	0.2%	14%	0.9×	1,184	None
+
+Fresh Pakistani 13
+Fresh Pakistani 1
+	Pakistani	0.1%	14%	0.9×	715	None
+
+Special Rice 2
+Fresh Pakistani 1
+	Rice	0.4%	14%	0.9×	2,715	None
+
+Cheesy Dessert 7
+Spicy BBQ 1
+	Desserts	0.2%	11%	0.9×	944	None
+
+Special BBQ 4
+Fresh Pakistani 1
+	BBQ	0.3%	14%	0.9×	1,862	None
+
+Herb Beverage 7
+Signature Pizza 1
+	Beverages	0.2%	18%	0.9×	1,503	None
+
+Crispy Pakistani 7
+Signature Pizza 1
+	Pakistani	0.2%	18%	0.9×	1,522	None
+
+Signature Pizza 9
+Fresh Pakistani 1
+	Pizza	0.2%	14%	0.9×	941	None
+
+Fresh Sandwiche 7
+Spicy BBQ 1
+	Sandwiches	0.1%	11%	0.9×	890	None
+
+Supreme Rice 12
+Spicy BBQ 1
+	Rice	0.1%	11%	0.9×	579	None
+
+Fiery Chinese 12
+Classic Burger 1
+	Chinese	0.3%	28%	0.9×	1,533	None
+
+Supreme Rice 12
+Fresh Pakistani 1
+	Rice	0.1%	14%	0.9×	705	None
+
+Special Rice 10
+Fresh Pakistani 1
+	Rice	0.1%	14%	0.9×	845	None
+
+Crispy Sandwiche 13
+Classic Burger 1
+	Sandwiches	0.2%	28%	0.9×	1,411	None
+
+Supreme Rice 8
+Fresh Pakistani 1
+	Rice	0.2%	14%	0.9×	963	None
+
+Signature Seafood 7
+Spicy BBQ 1
+	Seafood	0.1%	11%	0.9×	886	None
+
+Fiery Seafood 9
+Signature Pizza 1
+	Seafood	0.2%	18%	0.9×	1,153	None
+
+Herb Beverage 11
+Fresh Pakistani 1
+	Beverages	0.1%	14%	0.9×	814	None
+
+Double Dessert 9
+Spicy BBQ 1
+	Desserts	0.1%	11%	0.9×	759	None
+
+Signature Seafood 11
+Spicy BBQ 1
+	Seafood	0.1%	11%	0.9×	647	None
+
+Special BBQ 12
+Spicy BBQ 1
+	BBQ	0.1%	11%	0.9×	617	None
+
+Special BBQ 12
+Fresh Pakistani 1
+	BBQ	0.1%	14%	0.9×	752	None
+
+Loaded Coffee & Tea 12
+Spicy BBQ 1
+	Coffee & Tea	0.1%	11%	0.9×	590	None
+
+Double Pasta 6
+Fresh Pakistani 1
+	Pasta	0.2%	14%	0.9×	1,215	None
+
+Fiery Chinese 12
+Signature Pizza 1
+	Chinese	0.2%	18%	0.9×	987	None
+
+Royal Pakistani 12
+Spicy BBQ 1
+	Pakistani	0.1%	11%	0.9×	622	None
+
+Smoky Seafood 2
+Signature Pizza 1
+	Seafood	0.6%	18%	0.9×	3,588	None
+
+Classic Burger 5
+Spicy BBQ 1
+	Burgers	0.2%	11%	0.9×	1,289	None
+
+Signature Pizza 13
+Spicy BBQ 1
+	Pizza	0.1%	11%	0.9×	585	None
+
+Smoky Chinese 9
+Fresh Pakistani 1
+	Chinese	0.2%	14%	0.9×	924	None
+
+Cheesy Burger 10
+Spicy BBQ 1
+	Burgers	0.1%	11%	0.9×	723	None
+
+Masala Rice 13
+Classic Burger 1
+	Rice	0.2%	28%	0.9×	1,347	None
+
+Tandoori Pasta 13
+Fresh Pakistani 1
+	Pasta	0.1%	14%	0.9×	697	None
+
+House Beverage 13
+Spicy BBQ 1
+	Beverages	0.1%	11%	0.9×	569	None
+
+Cheesy Pasta 12
+Fresh Pakistani 1
+	Pasta	0.1%	14%	0.9×	737	None
+
+Deluxe Pakistani 10
+Spicy BBQ 1
+	Pakistani	0.1%	11%	0.9×	698	None
+
+Signature Seafood 7
+Fresh Pakistani 1
+	Seafood	0.2%	14%	0.9×	1,064	None
+
+Fiery Seafood 13
+Spicy BBQ 1
+	Seafood	0.1%	11%	0.9×	546	None
+
+Supreme Breakfast 7
+Fresh Pakistani 1
+	Breakfast	0.2%	14%	0.9×	1,096	None
+
+Herb Salad 8
+Spicy BBQ 1
+	Salads	0.1%	11%	0.9×	816	None
+
+Tandoori Pasta 13
+Spicy BBQ 1
+	Pasta	0.1%	11%	0.9×	567	None
+
+Loaded Beverage 14
+Spicy BBQ 1
+	Beverages	0.1%	11%	0.9×	532	None
+
+Double Dessert 13
+Spicy BBQ 1
+	Desserts	0.1%	11%	0.9×	566	None
+
+Herb Beverage 11
+Spicy BBQ 1
+	Beverages	0.1%	11%	0.9×	655	None
+
+Double Dessert 13
+Fresh Pakistani 1
+	Desserts	0.1%	14%	0.9×	687	None
+
+Special Breakfast 13
+Spicy BBQ 1
+	Breakfast	0.1%	11%	0.9×	545	None
+
+Crispy Pakistani 11
+Fresh Pakistani 1
+	Pakistani	0.1%	13%	0.9×	775	None
+
+Spicy Breakfast 10
+Fresh Pakistani 1
+	Breakfast	0.1%	13%	0.9×	800	None
+Classic Burger 1

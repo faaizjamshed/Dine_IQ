@@ -1,0 +1,57 @@
+{
+  "rows_compared": 200,
+  "target": "menu-level units, distinct order count, revenue, estimated cost and contribution margin",
+  "metric_comparison": {
+    "units_sold": {
+      "rows": 200,
+      "exact_matches_at_1e_8": 200,
+      "within_tolerance_0_01": 200,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0,
+      "mismatch_rows_at_0_01": 0
+    },
+    "order_count": {
+      "rows": 200,
+      "exact_matches_at_1e_8": 200,
+      "within_tolerance_0_01": 200,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0,
+      "mismatch_rows_at_0_01": 0
+    },
+    "gross_item_sales": {
+      "rows": 200,
+      "exact_matches_at_1e_8": 188,
+      "within_tolerance_0_01": 200,
+      "max_abs_difference": 5.960464477539063e-08,
+      "mean_abs_difference": 2.187443897128105e-09,
+      "mismatch_rows_at_0_01": 0
+    },
+    "revenue": {
+      "rows": 200,
+      "exact_matches_at_1e_8": 178,
+      "within_tolerance_0_01": 200,
+      "max_abs_difference": 2.086162567138672e-07,
+      "mean_abs_difference": 5.2526593208312985e-09,
+      "mismatch_rows_at_0_01": 0
+    },
+    "estimated_cost": {
+      "rows": 200,
+      "exact_matches_at_1e_8": 37,
+      "within_tolerance_0_01": 200,
+      "max_abs_difference": 5.200505256652832e-05,
+      "mean_abs_difference": 6.333220517262816e-07,
+      "mismatch_rows_at_0_01": 0
+    },
+    "contribution_margin": {
+      "rows": 200,
+      "exact_matches_at_1e_8": 36,
+      "within_tolerance_0_01": 200,
+      "max_abs_difference": 5.1975250244140625e-05,
+      "mean_abs_difference": 6.334169302135706e-07,
+      "mismatch_rows_at_0_01": 0
+    }
+  },
+  "classification_compared": false,
+  "row_examples_over_tolerance": [],
+  "interpretation": "Pandas reads and independently cleans frozen raw CSV; Spark table is canonical-v4-derived. No tolerance mismatches; residual sub-cent differences are floating-point aggregation order. Duplicate tie winner/cleaning logic can differ. Currency is unspecified."
+}

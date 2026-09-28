@@ -1,0 +1,420 @@
+{
+  "source": "DineIQ Analytics SRS v1.0, section 1.10 and final submission checklist",
+  "audit_date": "2026-09-28",
+  "status_counts": {
+    "COMPLETE": 21,
+    "PARTIAL": 6,
+    "MISSING": 3
+  },
+  "deliverable_count": 30,
+  "deliverables": [
+    {
+      "id": "DEL-01",
+      "name": "Project report with business problem, scope, assumptions, architecture, diagrams, analytics, ML, tests, security, privacy, limitations and future work",
+      "status": "COMPLETE",
+      "evidence": "Project report with business problem, scope, architecture diagram, analytics, ML, tests, security and limitations exists.",
+      "paths": [
+        "PROJECT_REPORT.md",
+        "ARCHITECTURE.md",
+        "ASSUMPTIONS_LIMITATIONS.md"
+      ],
+      "action": "Keep reports aligned with future code/evidence."
+    },
+    {
+      "id": "DEL-02",
+      "name": "Public source-code repository",
+      "status": "MISSING",
+      "evidence": "Workspace has no .git metadata, remote or public URL.",
+      "paths": [
+        "D:/DineIQ"
+      ],
+      "action": "Create/use team GitHub repository after source and secret review."
+    },
+    {
+      "id": "DEL-03",
+      "name": "README.md",
+      "status": "COMPLETE",
+      "evidence": "Repository root documentation package is present: README.md, INSTALLATION.md, DATA_DICTIONARY.md, ARCHITECTURE.md, AI_USAGE.md, ASSUMPTIONS_LIMITATIONS.md, EVALUATOR_INSTRUCTIONS.md, EVIDENCE_INDEX.md, DEVELOPMENT_LOG.md, LICENSE, and requirements.txt.",
+      "paths": [
+        "README.md",
+        "INSTALLATION.md",
+        "DATA_DICTIONARY.md",
+        "ARCHITECTURE.md",
+        "AI_USAGE.md",
+        "ASSUMPTIONS_LIMITATIONS.md",
+        "EVALUATOR_INSTRUCTIONS.md",
+        "EVIDENCE_INDEX.md",
+        "DEVELOPMENT_LOG.md",
+        "LICENSE",
+        "requirements.txt"
+      ],
+      "action": "Maintain the documentation package and keep it aligned with any future code or environment updates."
+    },
+    {
+      "id": "DEL-04",
+      "name": "AI_USAGE.md",
+      "status": "COMPLETE",
+      "evidence": "Repository root documentation package is present: README.md, INSTALLATION.md, DATA_DICTIONARY.md, ARCHITECTURE.md, AI_USAGE.md, ASSUMPTIONS_LIMITATIONS.md, EVALUATOR_INSTRUCTIONS.md, EVIDENCE_INDEX.md, DEVELOPMENT_LOG.md, LICENSE, and requirements.txt.",
+      "paths": [
+        "README.md",
+        "INSTALLATION.md",
+        "DATA_DICTIONARY.md",
+        "ARCHITECTURE.md",
+        "AI_USAGE.md",
+        "ASSUMPTIONS_LIMITATIONS.md",
+        "EVALUATOR_INSTRUCTIONS.md",
+        "EVIDENCE_INDEX.md",
+        "DEVELOPMENT_LOG.md",
+        "LICENSE",
+        "requirements.txt"
+      ],
+      "action": "Maintain the documentation package and keep it aligned with any future code or environment updates."
+    },
+    {
+      "id": "DEL-05",
+      "name": "requirements.txt / full dependency lock",
+      "status": "COMPLETE",
+      "evidence": "Pinned requirements plus hash-checked Windows full-stack and Linux serving locks are present; dry-runs passed.",
+      "paths": [
+        "requirements.txt",
+        "requirements-app.txt",
+        "requirements-windows-py311.lock",
+        "requirements-app-linux-py311.lock"
+      ],
+      "action": "Regenerate locks if dependencies change."
+    },
+    {
+      "id": "DEL-06",
+      "name": "LICENSE",
+      "status": "COMPLETE",
+      "evidence": "Repository root documentation package is present: README.md, INSTALLATION.md, DATA_DICTIONARY.md, ARCHITECTURE.md, AI_USAGE.md, ASSUMPTIONS_LIMITATIONS.md, EVALUATOR_INSTRUCTIONS.md, EVIDENCE_INDEX.md, DEVELOPMENT_LOG.md, LICENSE, and requirements.txt.",
+      "paths": [
+        "README.md",
+        "INSTALLATION.md",
+        "DATA_DICTIONARY.md",
+        "ARCHITECTURE.md",
+        "AI_USAGE.md",
+        "ASSUMPTIONS_LIMITATIONS.md",
+        "EVALUATOR_INSTRUCTIONS.md",
+        "EVIDENCE_INDEX.md",
+        "DEVELOPMENT_LOG.md",
+        "LICENSE",
+        "requirements.txt"
+      ],
+      "action": "Maintain the documentation package and keep it aligned with any future code or environment updates."
+    },
+    {
+      "id": "DEL-07",
+      "name": "Dataset-generation source",
+      "status": "COMPLETE",
+      "evidence": "Generator and dataset validator exist.",
+      "paths": [
+        "scripts/data_generation/generate_dineq_dataset.py",
+        "scripts/data_generation/validate_generated_dataset.py"
+      ],
+      "action": "Document reproducible command and frozen-data provenance."
+    },
+    {
+      "id": "DEL-08",
+      "name": "Big data dataset and access instructions",
+      "status": "PARTIAL",
+      "evidence": "Local data access, generation and serving-bundle instructions are documented. Public dataset URL is still absent.",
+      "paths": [
+        "DATA_ACCESS.md",
+        "data/generated/",
+        "results/submission/serving-v3/manifest.json"
+      ],
+      "action": "Publish full data externally if required."
+    },
+    {
+      "id": "DEL-09",
+      "name": "Data dictionary, schemas, primary/foreign keys, dataset statistics",
+      "status": "COMPLETE",
+      "evidence": "Repository root documentation package is present: README.md, INSTALLATION.md, DATA_DICTIONARY.md, ARCHITECTURE.md, AI_USAGE.md, ASSUMPTIONS_LIMITATIONS.md, EVALUATOR_INSTRUCTIONS.md, EVIDENCE_INDEX.md, DEVELOPMENT_LOG.md, LICENSE, and requirements.txt.",
+      "paths": [
+        "README.md",
+        "INSTALLATION.md",
+        "DATA_DICTIONARY.md",
+        "ARCHITECTURE.md",
+        "AI_USAGE.md",
+        "ASSUMPTIONS_LIMITATIONS.md",
+        "EVALUATOR_INSTRUCTIONS.md",
+        "EVIDENCE_INDEX.md",
+        "DEVELOPMENT_LOG.md",
+        "LICENSE",
+        "requirements.txt"
+      ],
+      "action": "Maintain the documentation package and keep it aligned with any future code or environment updates."
+    },
+    {
+      "id": "DEL-10",
+      "name": "Sample and cleaned sample data",
+      "status": "COMPLETE",
+      "evidence": "Sample CSVs exist for 11 source tables; generated full data and canonical quality evidence show cleaned counts.",
+      "paths": [
+        "data/sample/",
+        "results/spark/quality_cleaning.json"
+      ],
+      "action": "Document sample schema and how to obtain canonical cleaned samples."
+    },
+    {
+      "id": "DEL-11",
+      "name": "Spark ingestion, schemas, quality, cleaning, joins, SQL, aggregation, partition and Parquet evidence",
+      "status": "COMPLETE",
+      "evidence": "Spark ingestion, schemas, quality, cleaning, joins, analytics, partitioned Parquet and bundle export evidence are documented.",
+      "paths": [
+        "RUNBOOK.md",
+        "DATA_QUALITY_VALIDATION.md",
+        "scripts/spark/",
+        "results/spark/",
+        "results/submission/serving-v3/manifest.json"
+      ],
+      "action": "Use fresh versions for reruns."
+    },
+    {
+      "id": "DEL-12",
+      "name": "Spark MLlib model evidence, model file, version and sample predictions",
+      "status": "COMPLETE",
+      "evidence": "Spark MLlib model evidence, persisted model files, version metadata, sample predictions and portable bundle access are present.",
+      "paths": [
+        "results/ml/spark/pipeline.json",
+        "results/ml/spark/reload_smoke.json",
+        "results/submission/serving-v3/manifest.json"
+      ],
+      "action": "No production monitoring claim."
+    },
+    {
+      "id": "DEL-13",
+      "name": "Python model scripts/evidence/model/version/samples",
+      "status": "COMPLETE",
+      "evidence": "Python model scripts, evidence, aligned retrained artifact and dependency instructions are present.",
+      "paths": [
+        "scripts/ml/python_demand.py",
+        "results/submission/aligned-python-v1/pipeline.json",
+        "requirements-windows-py311.lock"
+      ],
+      "action": "Historical model remains separate from aligned evidence artifact."
+    },
+    {
+      "id": "DEL-14",
+      "name": "Dual-pipeline model comparison report on at least 100 unseen cases",
+      "status": "COMPLETE",
+      "evidence": "Aligned dual-pipeline report includes 500 unseen cases, common-panel verification and agreement/disagreement fields.",
+      "paths": [
+        "results/submission/aligned-comparison-v1/demand_model_comparison.json",
+        "results/submission/aligned-comparison-v1/demand_model_comparison_cases.csv"
+      ],
+      "action": "Agreement is technical consistency evidence, not business impact."
+    },
+    {
+      "id": "DEL-15",
+      "name": "Restaurant Intelligence report",
+      "status": "COMPLETE",
+      "evidence": "Restaurant intelligence report exists with menu, customer, basket, forecast, wastage, pricing, promotion, anomaly and recommendation sections.",
+      "paths": [
+        "RESTAURANT_INTELLIGENCE_REPORT.md"
+      ],
+      "action": "Publish/format externally if required."
+    },
+    {
+      "id": "DEL-16",
+      "name": "Functional, integration, domain and difficult-case test results",
+      "status": "COMPLETE",
+      "evidence": "Functional/integration/domain/difficult-case evidence includes full regression, hidden-case harness, quality tests, daily forecast tests and portable integration.",
+      "paths": [
+        "results/submission/verification.json",
+        "tests/test_hidden_srs_cases.py",
+        "tests/test_daily_forecast.py",
+        "results/submission/portable_verification.json"
+      ],
+      "action": "Named hidden cases do not prove universal hidden-data coverage."
+    },
+    {
+      "id": "DEL-17",
+      "name": "Installation instructions (OS, Python, Java, Spark, HDFS, dependencies, troubleshooting)",
+      "status": "COMPLETE",
+      "evidence": "Repository root documentation package is present: README.md, INSTALLATION.md, DATA_DICTIONARY.md, ARCHITECTURE.md, AI_USAGE.md, ASSUMPTIONS_LIMITATIONS.md, EVALUATOR_INSTRUCTIONS.md, EVIDENCE_INDEX.md, DEVELOPMENT_LOG.md, LICENSE, and requirements.txt.",
+      "paths": [
+        "README.md",
+        "INSTALLATION.md",
+        "DATA_DICTIONARY.md",
+        "ARCHITECTURE.md",
+        "AI_USAGE.md",
+        "ASSUMPTIONS_LIMITATIONS.md",
+        "EVALUATOR_INSTRUCTIONS.md",
+        "EVIDENCE_INDEX.md",
+        "DEVELOPMENT_LOG.md",
+        "LICENSE",
+        "requirements.txt"
+      ],
+      "action": "Maintain the documentation package and keep it aligned with any future code or environment updates."
+    },
+    {
+      "id": "DEL-18",
+      "name": "Execution instructions for generation, ingestion, Spark SQL, pipelines, ML, analyses, reports and tests",
+      "status": "COMPLETE",
+      "evidence": "Repository root documentation package is present: README.md, INSTALLATION.md, DATA_DICTIONARY.md, ARCHITECTURE.md, AI_USAGE.md, ASSUMPTIONS_LIMITATIONS.md, EVALUATOR_INSTRUCTIONS.md, EVIDENCE_INDEX.md, DEVELOPMENT_LOG.md, LICENSE, and requirements.txt.",
+      "paths": [
+        "README.md",
+        "INSTALLATION.md",
+        "DATA_DICTIONARY.md",
+        "ARCHITECTURE.md",
+        "AI_USAGE.md",
+        "ASSUMPTIONS_LIMITATIONS.md",
+        "EVALUATOR_INSTRUCTIONS.md",
+        "EVIDENCE_INDEX.md",
+        "DEVELOPMENT_LOG.md",
+        "LICENSE",
+        "requirements.txt"
+      ],
+      "action": "Maintain the documentation package and keep it aligned with any future code or environment updates."
+    },
+    {
+      "id": "DEL-19",
+      "name": "Screenshots",
+      "status": "PARTIAL",
+      "evidence": "Six real Edge screenshots cover overview, intelligence, administrator management, mobile layout, menu recovery and historical Spark monitoring.",
+      "paths": [
+        "results/app/phase2/phase2_overview.png",
+        "results/app/phase2/phase2_intelligence.png",
+        "results/app/phase2/phase2_management.png",
+        "results/app/phase2/phase2_intelligence_mobile.png",
+        "results/app/phase2/phase2_menu_recovery.png",
+        "results/app/phase2/phase2_spark_monitoring.png",
+        "results/app/phase2/browser_verification.json"
+      ],
+      "action": "Capture the dedicated unavailable-state page and additional filtered/report workflows if submission evidence requires them."
+    },
+    {
+      "id": "DEL-20",
+      "name": "Evaluator login credentials",
+      "status": "COMPLETE",
+      "evidence": "Evaluator access uses local registration for analyst accounts and documented admin bootstrap variables; no shared password is published.",
+      "paths": [
+        "EVALUATOR_INSTRUCTIONS.md",
+        "DEPLOYMENT.md"
+      ],
+      "action": "For a hosted deployment, provision evaluator accounts through the selected platform."
+    },
+    {
+      "id": "DEL-21",
+      "name": "Assumptions and limitations",
+      "status": "COMPLETE",
+      "evidence": "Repository root documentation package is present: README.md, INSTALLATION.md, DATA_DICTIONARY.md, ARCHITECTURE.md, AI_USAGE.md, ASSUMPTIONS_LIMITATIONS.md, EVALUATOR_INSTRUCTIONS.md, EVIDENCE_INDEX.md, DEVELOPMENT_LOG.md, LICENSE, and requirements.txt.",
+      "paths": [
+        "README.md",
+        "INSTALLATION.md",
+        "DATA_DICTIONARY.md",
+        "ARCHITECTURE.md",
+        "AI_USAGE.md",
+        "ASSUMPTIONS_LIMITATIONS.md",
+        "EVALUATOR_INSTRUCTIONS.md",
+        "EVIDENCE_INDEX.md",
+        "DEVELOPMENT_LOG.md",
+        "LICENSE",
+        "requirements.txt"
+      ],
+      "action": "Maintain the documentation package and keep it aligned with any future code or environment updates."
+    },
+    {
+      "id": "DEL-22",
+      "name": "Development log with work, data changes, failures, tests and performance",
+      "status": "COMPLETE",
+      "evidence": "Repository root documentation package is present: README.md, INSTALLATION.md, DATA_DICTIONARY.md, ARCHITECTURE.md, AI_USAGE.md, ASSUMPTIONS_LIMITATIONS.md, EVALUATOR_INSTRUCTIONS.md, EVIDENCE_INDEX.md, DEVELOPMENT_LOG.md, LICENSE, and requirements.txt.",
+      "paths": [
+        "README.md",
+        "INSTALLATION.md",
+        "DATA_DICTIONARY.md",
+        "ARCHITECTURE.md",
+        "AI_USAGE.md",
+        "ASSUMPTIONS_LIMITATIONS.md",
+        "EVALUATOR_INSTRUCTIONS.md",
+        "EVIDENCE_INDEX.md",
+        "DEVELOPMENT_LOG.md",
+        "LICENSE",
+        "requirements.txt"
+      ],
+      "action": "Maintain the documentation package and keep it aligned with any future code or environment updates."
+    },
+    {
+      "id": "DEL-23",
+      "name": "Public deployment URL and evaluator/admin access",
+      "status": "PARTIAL",
+      "evidence": "Reproducible local Docker path is complete and verified. Public deployment URL is not configured.",
+      "paths": [
+        "compose.serving.yml",
+        "Dockerfile",
+        "results/submission/portable_verification.json"
+      ],
+      "action": "Needs external hosting account and TLS setup."
+    },
+    {
+      "id": "DEL-24",
+      "name": "Demo video in MP4",
+      "status": "COMPLETE",
+      "evidence": "Local MP4 demo artifact generated from verified evidence slides.",
+      "paths": [
+        "Documentation/submission_media/DineIQ_Demo.mp4"
+      ],
+      "action": "Publish externally if the portal requires a public video link."
+    },
+    {
+      "id": "DEL-25",
+      "name": "Technical blog of at least 2,000 words and project link",
+      "status": "PARTIAL",
+      "evidence": "Technical blog source is 2,000+ words and local; public blog URL/project link is absent.",
+      "paths": [
+        "Documentation/TECHNICAL_BLOG.md"
+      ],
+      "action": "Publish the blog and add the URL."
+    },
+    {
+      "id": "DEL-26",
+      "name": "Project presentation",
+      "status": "COMPLETE",
+      "evidence": "Editable presentation generated locally.",
+      "paths": [
+        "Documentation/submission_media/DineIQ_Submission_Presentation.pptx"
+      ],
+      "action": "Export to PDF if required by the portal."
+    },
+    {
+      "id": "DEL-27",
+      "name": "Public GitHub URL",
+      "status": "MISSING",
+      "evidence": "No repository/remotes available.",
+      "paths": [],
+      "action": "Publish reviewed source and submit public URL."
+    },
+    {
+      "id": "DEL-28",
+      "name": "Meaningful commits across five competition days and every team member contribution",
+      "status": "MISSING",
+      "evidence": "No Git metadata/team-member contribution log in workspace.",
+      "paths": [],
+      "action": "Create truthful team commit and contribution record; do not fabricate past history."
+    },
+    {
+      "id": "DEL-29",
+      "name": "Hidden-data readiness",
+      "status": "PARTIAL",
+      "evidence": "No compatibility guide or hidden-dataset test harness; current flows rely on fixed HDFS/local paths and generator-specific schema.",
+      "paths": [
+        "scripts/spark/common.py",
+        "app/backend.py",
+        "tests/"
+      ],
+      "action": "Test alternate/missing/new categories, restaurants, unknown references, schema drift and malformed rows without changing canonical evidence."
+    },
+    {
+      "id": "DEL-30",
+      "name": "Public full dataset access alternative if GitHub size constraints apply",
+      "status": "PARTIAL",
+      "evidence": "Local/reproducible data access is documented, but no public full-dataset URL exists.",
+      "paths": [
+        "DATA_ACCESS.md"
+      ],
+      "action": "Publish externally if required."
+    }
+  ]
+}

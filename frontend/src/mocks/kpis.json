@@ -1,0 +1,1123 @@
+{
+  "data": {
+    "periodLabel": "Aug 25 – Sep 23, 2026",
+    "kpis": [
+      {
+        "id": "revenue",
+        "label": "Revenue",
+        "unit": "pkr",
+        "value": 48866000,
+        "deltaPct": 8.4,
+        "deltaDirection": "up",
+        "deltaFavorability": "positive",
+        "comparisonLabel": "vs previous 30 days",
+        "source": "GET /api/kpis",
+        "sparkline": [
+          1520000,
+          1927000,
+          2034000,
+          1673000,
+          1288000,
+          1458000,
+          1336000,
+          1481000,
+          1878000,
+          2368000,
+          1878000,
+          1315000,
+          1453000,
+          1392000
+        ]
+      },
+      {
+        "id": "profit",
+        "label": "Contribution Profit",
+        "unit": "pkr",
+        "value": 15197326,
+        "deltaPct": 6.9,
+        "deltaDirection": "up",
+        "deltaFavorability": "positive",
+        "comparisonLabel": "vs previous 30 days",
+        "source": "GET /api/kpis",
+        "sparkline": [
+          472720,
+          599297,
+          632574,
+          520303,
+          400568,
+          453438,
+          415496,
+          460591,
+          584058,
+          736448,
+          584058,
+          408965,
+          451883,
+          432912
+        ]
+      },
+      {
+        "id": "orders",
+        "label": "Orders",
+        "unit": "count",
+        "value": 26616,
+        "deltaPct": 5.2,
+        "deltaDirection": "up",
+        "deltaFavorability": "positive",
+        "comparisonLabel": "vs previous 30 days",
+        "source": "GET /api/kpis",
+        "sparkline": [
+          823,
+          1052,
+          1104,
+          917,
+          689,
+          797,
+          726,
+          815,
+          1021,
+          1288,
+          1011,
+          704,
+          795,
+          765
+        ]
+      },
+      {
+        "id": "aov",
+        "label": "Average Order Value",
+        "unit": "pkr",
+        "value": 1836,
+        "deltaPct": 3,
+        "deltaDirection": "up",
+        "deltaFavorability": "positive",
+        "comparisonLabel": "vs previous 30 days",
+        "source": "GET /api/kpis",
+        "sparkline": [
+          1847,
+          1832,
+          1842,
+          1824,
+          1869,
+          1829,
+          1840,
+          1817,
+          1839,
+          1839,
+          1858,
+          1868,
+          1828,
+          1820
+        ]
+      },
+      {
+        "id": "active-customers",
+        "label": "Active Customers",
+        "unit": "count",
+        "value": 18240,
+        "deltaPct": 4.1,
+        "deltaDirection": "up",
+        "deltaFavorability": "positive",
+        "comparisonLabel": "vs previous 30 days",
+        "source": "GET /api/kpis",
+        "sparkline": [
+          17177,
+          17432,
+          17202,
+          17557,
+          17390,
+          17428,
+          17763,
+          17660,
+          17845,
+          17772,
+          17978,
+          18058,
+          18082,
+          18174
+        ]
+      },
+      {
+        "id": "repeat-customers",
+        "label": "Repeat Customers",
+        "unit": "count",
+        "value": 7860,
+        "deltaPct": 2.4,
+        "deltaDirection": "up",
+        "deltaFavorability": "positive",
+        "comparisonLabel": "43.1% of active customers",
+        "source": "GET /api/kpis",
+        "sparkline": [
+          7497,
+          7562,
+          7536,
+          7590,
+          7593,
+          7595,
+          7592,
+          7731,
+          7719,
+          7769,
+          7683,
+          7838,
+          7806,
+          7789
+        ]
+      },
+      {
+        "id": "wastage-cost",
+        "label": "Wastage Cost",
+        "unit": "pkr",
+        "value": 1949753,
+        "deltaPct": 3.2,
+        "deltaDirection": "up",
+        "deltaFavorability": "negative",
+        "comparisonLabel": "vs previous 30 days",
+        "source": "GET /api/kpis",
+        "sparkline": [
+          54838,
+          75558,
+          75830,
+          69661,
+          57897,
+          60180,
+          59091,
+          51493,
+          68765,
+          108918,
+          65101,
+          47329,
+          50338,
+          57631
+        ]
+      },
+      {
+        "id": "forecast-demand",
+        "label": "Forecast Demand (7d)",
+        "unit": "count",
+        "value": 6640,
+        "deltaPct": 3.7,
+        "deltaDirection": "up",
+        "deltaFavorability": "positive",
+        "comparisonLabel": "next 7 days vs last 7",
+        "source": "GET /api/kpis",
+        "sparkline": [
+          949,
+          968,
+          982,
+          988,
+          985,
+          973,
+          954,
+          935,
+          918,
+          909,
+          910,
+          920,
+          937,
+          957
+        ],
+        "model": {
+          "name": "DemandForecaster (XGBoost)",
+          "version": "3.2",
+          "generatedAt": "2026-09-24T08:29:51.861Z",
+          "pipeline": "python",
+          "confidence": 0.924
+        }
+      }
+    ],
+    "revenueTrend": {
+      "series": [
+        {
+          "date": "2026-08-25",
+          "revenue": 1332000,
+          "orders": 739
+        },
+        {
+          "date": "2026-08-26",
+          "revenue": 1426000,
+          "orders": 786
+        },
+        {
+          "date": "2026-08-27",
+          "revenue": 1606000,
+          "orders": 889
+        },
+        {
+          "date": "2026-08-28",
+          "revenue": 1766000,
+          "orders": 943
+        },
+        {
+          "date": "2026-08-29",
+          "revenue": 1897000,
+          "orders": 1031
+        },
+        {
+          "date": "2026-08-30",
+          "revenue": 1635000,
+          "orders": 893
+        },
+        {
+          "date": "2026-08-31",
+          "revenue": 1205000,
+          "orders": 645
+        },
+        {
+          "date": "2026-09-01",
+          "revenue": 1321000,
+          "orders": 720
+        },
+        {
+          "date": "2026-09-02",
+          "revenue": 1335000,
+          "orders": 714
+        },
+        {
+          "date": "2026-09-03",
+          "revenue": 1627000,
+          "orders": 884
+        },
+        {
+          "date": "2026-09-04",
+          "revenue": 2188000,
+          "orders": 1203
+        },
+        {
+          "date": "2026-09-05",
+          "revenue": 2215000,
+          "orders": 1213
+        },
+        {
+          "date": "2026-09-06",
+          "revenue": 1947000,
+          "orders": 1080
+        },
+        {
+          "date": "2026-09-07",
+          "revenue": 1423000,
+          "orders": 762
+        },
+        {
+          "date": "2026-09-08",
+          "revenue": 1603000,
+          "orders": 870
+        },
+        {
+          "date": "2026-09-09",
+          "revenue": 1339000,
+          "orders": 737
+        },
+        {
+          "date": "2026-09-10",
+          "revenue": 1520000,
+          "orders": 823
+        },
+        {
+          "date": "2026-09-11",
+          "revenue": 1927000,
+          "orders": 1052
+        },
+        {
+          "date": "2026-09-12",
+          "revenue": 2034000,
+          "orders": 1104
+        },
+        {
+          "date": "2026-09-13",
+          "revenue": 1673000,
+          "orders": 917
+        },
+        {
+          "date": "2026-09-14",
+          "revenue": 1288000,
+          "orders": 689
+        },
+        {
+          "date": "2026-09-15",
+          "revenue": 1458000,
+          "orders": 797
+        },
+        {
+          "date": "2026-09-16",
+          "revenue": 1336000,
+          "orders": 726
+        },
+        {
+          "date": "2026-09-17",
+          "revenue": 1481000,
+          "orders": 815
+        },
+        {
+          "date": "2026-09-18",
+          "revenue": 1878000,
+          "orders": 1021
+        },
+        {
+          "date": "2026-09-19",
+          "revenue": 2368000,
+          "orders": 1288
+        },
+        {
+          "date": "2026-09-20",
+          "revenue": 1878000,
+          "orders": 1011
+        },
+        {
+          "date": "2026-09-21",
+          "revenue": 1315000,
+          "orders": 704
+        },
+        {
+          "date": "2026-09-22",
+          "revenue": 1453000,
+          "orders": 795
+        },
+        {
+          "date": "2026-09-23",
+          "revenue": 1392000,
+          "orders": 765
+        }
+      ],
+      "annotations": [
+        {
+          "date": "2026-09-04",
+          "type": "promotion",
+          "label": "Promotion window (Sep 4–8)",
+          "note": "5-day campaign flagged by the promotions engine; affected days carry an estimated +12% uplift."
+        },
+        {
+          "date": "2026-09-19",
+          "type": "peak",
+          "label": "Period revenue peak",
+          "note": "Highest daily revenue of the period: PKR 2.4M."
+        },
+        {
+          "date": "2026-09-19",
+          "type": "anomaly",
+          "label": "Order spike detected",
+          "note": "Dine-in surge at 3 Karachi outlets — see the Anomalies module for evidence."
+        }
+      ]
+    },
+    "channelMix": [
+      {
+        "channel": "dine_in",
+        "label": "Dine-in",
+        "revenue": 21501040,
+        "share": 0.44,
+        "orders": 10000
+      },
+      {
+        "channel": "delivery",
+        "label": "Delivery",
+        "revenue": 12705160,
+        "share": 0.26,
+        "orders": 7138
+      },
+      {
+        "channel": "takeaway",
+        "label": "Takeaway",
+        "revenue": 8307220,
+        "share": 0.17,
+        "orders": 5850
+      },
+      {
+        "channel": "app",
+        "label": "App",
+        "revenue": 6352580,
+        "share": 0.13,
+        "orders": 3326
+      }
+    ],
+    "hourWeekday": {
+      "hours": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "weekdays": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "values": [
+        {
+          "weekday": "Mon",
+          "hour": 10,
+          "orders": 94
+        },
+        {
+          "weekday": "Mon",
+          "hour": 11,
+          "orders": 179
+        },
+        {
+          "weekday": "Mon",
+          "hour": 12,
+          "orders": 264
+        },
+        {
+          "weekday": "Mon",
+          "hour": 13,
+          "orders": 281
+        },
+        {
+          "weekday": "Mon",
+          "hour": 14,
+          "orders": 230
+        },
+        {
+          "weekday": "Mon",
+          "hour": 15,
+          "orders": 145
+        },
+        {
+          "weekday": "Mon",
+          "hour": 16,
+          "orders": 111
+        },
+        {
+          "weekday": "Mon",
+          "hour": 17,
+          "orders": 128
+        },
+        {
+          "weekday": "Mon",
+          "hour": 18,
+          "orders": 179
+        },
+        {
+          "weekday": "Mon",
+          "hour": 19,
+          "orders": 221
+        },
+        {
+          "weekday": "Mon",
+          "hour": 20,
+          "orders": 264
+        },
+        {
+          "weekday": "Mon",
+          "hour": 21,
+          "orders": 298
+        },
+        {
+          "weekday": "Mon",
+          "hour": 22,
+          "orders": 247
+        },
+        {
+          "weekday": "Mon",
+          "hour": 23,
+          "orders": 162
+        },
+        {
+          "weekday": "Tue",
+          "hour": 10,
+          "orders": 131
+        },
+        {
+          "weekday": "Tue",
+          "hour": 11,
+          "orders": 250
+        },
+        {
+          "weekday": "Tue",
+          "hour": 12,
+          "orders": 369
+        },
+        {
+          "weekday": "Tue",
+          "hour": 13,
+          "orders": 393
+        },
+        {
+          "weekday": "Tue",
+          "hour": 14,
+          "orders": 322
+        },
+        {
+          "weekday": "Tue",
+          "hour": 15,
+          "orders": 203
+        },
+        {
+          "weekday": "Tue",
+          "hour": 16,
+          "orders": 155
+        },
+        {
+          "weekday": "Tue",
+          "hour": 17,
+          "orders": 179
+        },
+        {
+          "weekday": "Tue",
+          "hour": 18,
+          "orders": 250
+        },
+        {
+          "weekday": "Tue",
+          "hour": 19,
+          "orders": 310
+        },
+        {
+          "weekday": "Tue",
+          "hour": 20,
+          "orders": 369
+        },
+        {
+          "weekday": "Tue",
+          "hour": 21,
+          "orders": 417
+        },
+        {
+          "weekday": "Tue",
+          "hour": 22,
+          "orders": 346
+        },
+        {
+          "weekday": "Tue",
+          "hour": 23,
+          "orders": 226
+        },
+        {
+          "weekday": "Wed",
+          "hour": 10,
+          "orders": 125
+        },
+        {
+          "weekday": "Wed",
+          "hour": 11,
+          "orders": 238
+        },
+        {
+          "weekday": "Wed",
+          "hour": 12,
+          "orders": 351
+        },
+        {
+          "weekday": "Wed",
+          "hour": 13,
+          "orders": 374
+        },
+        {
+          "weekday": "Wed",
+          "hour": 14,
+          "orders": 306
+        },
+        {
+          "weekday": "Wed",
+          "hour": 15,
+          "orders": 193
+        },
+        {
+          "weekday": "Wed",
+          "hour": 16,
+          "orders": 147
+        },
+        {
+          "weekday": "Wed",
+          "hour": 17,
+          "orders": 170
+        },
+        {
+          "weekday": "Wed",
+          "hour": 18,
+          "orders": 238
+        },
+        {
+          "weekday": "Wed",
+          "hour": 19,
+          "orders": 295
+        },
+        {
+          "weekday": "Wed",
+          "hour": 20,
+          "orders": 351
+        },
+        {
+          "weekday": "Wed",
+          "hour": 21,
+          "orders": 397
+        },
+        {
+          "weekday": "Wed",
+          "hour": 22,
+          "orders": 329
+        },
+        {
+          "weekday": "Wed",
+          "hour": 23,
+          "orders": 215
+        },
+        {
+          "weekday": "Thu",
+          "hour": 10,
+          "orders": 114
+        },
+        {
+          "weekday": "Thu",
+          "hour": 11,
+          "orders": 218
+        },
+        {
+          "weekday": "Thu",
+          "hour": 12,
+          "orders": 321
+        },
+        {
+          "weekday": "Thu",
+          "hour": 13,
+          "orders": 342
+        },
+        {
+          "weekday": "Thu",
+          "hour": 14,
+          "orders": 280
+        },
+        {
+          "weekday": "Thu",
+          "hour": 15,
+          "orders": 176
+        },
+        {
+          "weekday": "Thu",
+          "hour": 16,
+          "orders": 135
+        },
+        {
+          "weekday": "Thu",
+          "hour": 17,
+          "orders": 155
+        },
+        {
+          "weekday": "Thu",
+          "hour": 18,
+          "orders": 218
+        },
+        {
+          "weekday": "Thu",
+          "hour": 19,
+          "orders": 270
+        },
+        {
+          "weekday": "Thu",
+          "hour": 20,
+          "orders": 321
+        },
+        {
+          "weekday": "Thu",
+          "hour": 21,
+          "orders": 363
+        },
+        {
+          "weekday": "Thu",
+          "hour": 22,
+          "orders": 301
+        },
+        {
+          "weekday": "Thu",
+          "hour": 23,
+          "orders": 197
+        },
+        {
+          "weekday": "Fri",
+          "hour": 10,
+          "orders": 134
+        },
+        {
+          "weekday": "Fri",
+          "hour": 11,
+          "orders": 255
+        },
+        {
+          "weekday": "Fri",
+          "hour": 12,
+          "orders": 377
+        },
+        {
+          "weekday": "Fri",
+          "hour": 13,
+          "orders": 401
+        },
+        {
+          "weekday": "Fri",
+          "hour": 14,
+          "orders": 328
+        },
+        {
+          "weekday": "Fri",
+          "hour": 15,
+          "orders": 207
+        },
+        {
+          "weekday": "Fri",
+          "hour": 16,
+          "orders": 158
+        },
+        {
+          "weekday": "Fri",
+          "hour": 17,
+          "orders": 182
+        },
+        {
+          "weekday": "Fri",
+          "hour": 18,
+          "orders": 255
+        },
+        {
+          "weekday": "Fri",
+          "hour": 19,
+          "orders": 363
+        },
+        {
+          "weekday": "Fri",
+          "hour": 20,
+          "orders": 433
+        },
+        {
+          "weekday": "Fri",
+          "hour": 21,
+          "orders": 489
+        },
+        {
+          "weekday": "Fri",
+          "hour": 22,
+          "orders": 405
+        },
+        {
+          "weekday": "Fri",
+          "hour": 23,
+          "orders": 231
+        },
+        {
+          "weekday": "Sat",
+          "hour": 10,
+          "orders": 147
+        },
+        {
+          "weekday": "Sat",
+          "hour": 11,
+          "orders": 280
+        },
+        {
+          "weekday": "Sat",
+          "hour": 12,
+          "orders": 414
+        },
+        {
+          "weekday": "Sat",
+          "hour": 13,
+          "orders": 441
+        },
+        {
+          "weekday": "Sat",
+          "hour": 14,
+          "orders": 361
+        },
+        {
+          "weekday": "Sat",
+          "hour": 15,
+          "orders": 227
+        },
+        {
+          "weekday": "Sat",
+          "hour": 16,
+          "orders": 174
+        },
+        {
+          "weekday": "Sat",
+          "hour": 17,
+          "orders": 200
+        },
+        {
+          "weekday": "Sat",
+          "hour": 18,
+          "orders": 280
+        },
+        {
+          "weekday": "Sat",
+          "hour": 19,
+          "orders": 399
+        },
+        {
+          "weekday": "Sat",
+          "hour": 20,
+          "orders": 476
+        },
+        {
+          "weekday": "Sat",
+          "hour": 21,
+          "orders": 537
+        },
+        {
+          "weekday": "Sat",
+          "hour": 22,
+          "orders": 445
+        },
+        {
+          "weekday": "Sat",
+          "hour": 23,
+          "orders": 254
+        },
+        {
+          "weekday": "Sun",
+          "hour": 10,
+          "orders": 124
+        },
+        {
+          "weekday": "Sun",
+          "hour": 11,
+          "orders": 236
+        },
+        {
+          "weekday": "Sun",
+          "hour": 12,
+          "orders": 348
+        },
+        {
+          "weekday": "Sun",
+          "hour": 13,
+          "orders": 371
+        },
+        {
+          "weekday": "Sun",
+          "hour": 14,
+          "orders": 303
+        },
+        {
+          "weekday": "Sun",
+          "hour": 15,
+          "orders": 191
+        },
+        {
+          "weekday": "Sun",
+          "hour": 16,
+          "orders": 146
+        },
+        {
+          "weekday": "Sun",
+          "hour": 17,
+          "orders": 168
+        },
+        {
+          "weekday": "Sun",
+          "hour": 18,
+          "orders": 236
+        },
+        {
+          "weekday": "Sun",
+          "hour": 19,
+          "orders": 336
+        },
+        {
+          "weekday": "Sun",
+          "hour": 20,
+          "orders": 401
+        },
+        {
+          "weekday": "Sun",
+          "hour": 21,
+          "orders": 452
+        },
+        {
+          "weekday": "Sun",
+          "hour": 22,
+          "orders": 375
+        },
+        {
+          "weekday": "Sun",
+          "hour": 23,
+          "orders": 213
+        }
+      ]
+    },
+    "topBottomDishes": {
+      "top": [
+        {
+          "rank": 1,
+          "itemId": "itm-001",
+          "name": "Chicken Biryani",
+          "category": "Biryani & Rice",
+          "revenue": 2490285,
+          "quantity": 5188,
+          "marginPct": 35.3,
+          "rating": 4.2,
+          "performanceClass": "profit_driver"
+        },
+        {
+          "rank": 2,
+          "itemId": "itm-014",
+          "name": "Chicken Tikka",
+          "category": "BBQ & Kebabs",
+          "revenue": 2004828,
+          "quantity": 3855,
+          "marginPct": 40.5,
+          "rating": 4.3,
+          "performanceClass": "profit_driver"
+        },
+        {
+          "rank": 3,
+          "itemId": "itm-002",
+          "name": "Beef Biryani",
+          "category": "Biryani & Rice",
+          "revenue": 1823829,
+          "quantity": 3316,
+          "marginPct": 36.2,
+          "rating": 4.5,
+          "performanceClass": "profit_driver"
+        },
+        {
+          "rank": 4,
+          "itemId": "itm-008",
+          "name": "Chicken Karahi",
+          "category": "Karahi & Handi",
+          "revenue": 1720805,
+          "quantity": 1043,
+          "marginPct": 35.2,
+          "rating": 4.5,
+          "performanceClass": "profit_driver"
+        },
+        {
+          "rank": 5,
+          "itemId": "itm-015",
+          "name": "Seekh Kebab",
+          "category": "BBQ & Kebabs",
+          "revenue": 1473940,
+          "quantity": 2632,
+          "marginPct": 40.2,
+          "rating": 4.8,
+          "performanceClass": "profit_driver"
+        },
+        {
+          "rank": 6,
+          "itemId": "itm-020",
+          "name": "Zinger Burger",
+          "category": "Burgers & Sandwiches",
+          "revenue": 1425456,
+          "quantity": 2299,
+          "marginPct": 26.9,
+          "rating": 3.9,
+          "performanceClass": "volume_driver"
+        },
+        {
+          "rank": 7,
+          "itemId": "itm-009",
+          "name": "Mutton Karahi",
+          "category": "Karahi & Handi",
+          "revenue": 1411667,
+          "quantity": 588,
+          "marginPct": 38.1,
+          "rating": 4.5,
+          "performanceClass": "profit_driver"
+        },
+        {
+          "rank": 8,
+          "itemId": "itm-024",
+          "name": "Chicken Shawarma",
+          "category": "Wraps & Rolls",
+          "revenue": 1221736,
+          "quantity": 3491,
+          "marginPct": 22.2,
+          "rating": 4.1,
+          "performanceClass": "volume_driver"
+        }
+      ],
+      "bottom": [
+        {
+          "rank": 1,
+          "itemId": "itm-049",
+          "name": "Jumbo Platter",
+          "category": "Family Deals",
+          "revenue": 149821,
+          "quantity": 33,
+          "marginPct": 14.3,
+          "rating": 3.4,
+          "performanceClass": "low_performer"
+        },
+        {
+          "rank": 2,
+          "itemId": "itm-046",
+          "name": "Russian Salad",
+          "category": "Soups & Salads",
+          "revenue": 149528,
+          "quantity": 516,
+          "marginPct": 13,
+          "rating": 3.4,
+          "performanceClass": "low_performer"
+        },
+        {
+          "rank": 3,
+          "itemId": "itm-006",
+          "name": "Zarda",
+          "category": "Biryani & Rice",
+          "revenue": 140321,
+          "quantity": 561,
+          "marginPct": 10.4,
+          "rating": 3.5,
+          "performanceClass": "low_performer"
+        },
+        {
+          "rank": 4,
+          "itemId": "itm-031",
+          "name": "Dragon Chicken",
+          "category": "Chinese",
+          "revenue": 139786,
+          "quantity": 157,
+          "marginPct": 12.5,
+          "rating": 3.2,
+          "performanceClass": "low_performer"
+        }
+      ]
+    }
+  },
+  "meta": {
+    "generatedAt": "2026-09-24T08:29:51.861Z",
+    "filters": {}
+  },
+  "insight": {
+    "summary": [
+      "Revenue reached PKR 48.9M across 26.6K orders in the last 30 days, up 8.4% versus the previous period, with dine-in contributing 44% of revenue.",
+      "A promotion window during Sep 4–8 lifted affected days by an estimated 12%, and Sep 19 closed as the period's revenue peak.",
+      "Wastage cost is the fastest-growing negative metric at PKR 1.9M (+3.2%), concentrated in beverages and frozen sides."
+    ],
+    "whyItMatters": "Top-line growth is holding while contribution margin improves slowly; wastage growth erodes margin faster than price increases can recover it, so preparation accuracy is the highest-leverage fix this period.",
+    "evidence": [
+      {
+        "metric": "Revenue",
+        "value": "PKR 48.9M",
+        "detail": "+8.4% vs previous 30 days"
+      },
+      {
+        "metric": "Wastage cost",
+        "value": "PKR 1.9M",
+        "detail": "4.0% of revenue"
+      },
+      {
+        "metric": "Repeat customers",
+        "value": "7,860",
+        "detail": "43.1% of active customers"
+      }
+    ],
+    "affectedDimension": "Nationwide · All channels",
+    "period": "Aug 25 – Sep 23, 2026",
+    "recommendedAction": "Review over-preparation on beverages and frozen sides at flagged outlets — see critical recommendations below."
+  }
+}

@@ -1,0 +1,291 @@
+{
+  "problem": "hourly restaurant demand regression",
+  "target": "Count of order records with order_datetime in [hour_start, hour_start + 1 hour), regardless of eventual order status.",
+  "prediction_point": "At the start of each UTC timestamp hour in the source data, before that hour's orders occur; restaurant-specific time zones are not provided.",
+  "features": [
+    "restaurant_id",
+    "hour_of_day",
+    "day_of_week",
+    "month",
+    "lag_1h",
+    "lag_24h",
+    "lag_168h"
+  ],
+  "leakage_exclusions": [
+    "order_status",
+    "subtotal",
+    "discount_amount",
+    "tax_amount",
+    "delivery_fee",
+    "final_amount",
+    "payment_method",
+    "promotion_id",
+    "customer_id",
+    "order items",
+    "ratings",
+    "inventory and wastage observed during/after target hour"
+  ],
+  "source": "/dineq/processed/v4/orders",
+  "panel_rows": 329400,
+  "usable_rows": 325200,
+  "split": {
+    "train": 233400,
+    "validation": 36600,
+    "test": 55200,
+    "train_range": "2025-03-08 00:00 through 2026-03-31 23:00",
+    "validation_range": "2026-04-01 through 2026-05-31",
+    "test_range": "2026-06-01 through 2026-08-31"
+  },
+  "seed": 42,
+  "feature_preprocessing": "lag history (1h/24h/168h), median imputation, restaurant StringIndexer + OneHotEncoder, VectorAssembler",
+  "models": {
+    "linear_regression": {
+      "validation": {
+        "rmse": 1.6110556731115924,
+        "mae": 1.1934593982723511,
+        "r2": 0.3936547139910713
+      },
+      "hyperparameters": {
+        "maxBlockSizeInMB": 0.0,
+        "aggregationDepth": 2,
+        "solver": "auto",
+        "standardization": true,
+        "fitIntercept": true,
+        "elasticNetParam": 0.0,
+        "predictionCol": "prediction",
+        "featuresCol": "features",
+        "labelCol": "order_count",
+        "maxIter": 50,
+        "regParam": 0.05,
+        "tol": 1e-06,
+        "loss": "squaredError",
+        "epsilon": 1.35
+      }
+    },
+    "random_forest": {
+      "validation": {
+        "rmse": 1.5559936770633822,
+        "mae": 1.1420761342960155,
+        "r2": 0.4343932755222476
+      },
+      "hyperparameters": {
+        "seed": 42,
+        "maxDepth": 8,
+        "maxBins": 32,
+        "minInstancesPerNode": 1,
+        "minInfoGain": 0.0,
+        "maxMemoryInMB": 256,
+        "cacheNodeIds": false,
+        "checkpointInterval": 10,
+        "impurity": "variance",
+        "subsamplingRate": 1.0,
+        "numTrees": 40,
+        "featureSubsetStrategy": "sqrt",
+        "leafCol": "",
+        "minWeightFractionPerNode": 0.0,
+        "bootstrap": true,
+        "predictionCol": "prediction",
+        "featuresCol": "features",
+        "labelCol": "order_count"
+      }
+    },
+    "gradient_boosted_trees": {
+      "validation": {
+        "rmse": 1.4382917655010181,
+        "mae": 1.05281081187286,
+        "r2": 0.5167265946204396
+      },
+      "hyperparameters": {
+        "seed": 42,
+        "maxDepth": 5,
+        "maxBins": 32,
+        "minInstancesPerNode": 1,
+        "minInfoGain": 0.0,
+        "maxMemoryInMB": 256,
+        "cacheNodeIds": false,
+        "subsamplingRate": 1.0,
+        "checkpointInterval": 10,
+        "lossType": "squared",
+        "maxIter": 30,
+        "stepSize": 0.08,
+        "impurity": "variance",
+        "featureSubsetStrategy": "all",
+        "validationTol": 0.01,
+        "leafCol": "",
+        "minWeightFractionPerNode": 0.0,
+        "predictionCol": "prediction",
+        "featuresCol": "features",
+        "labelCol": "order_count"
+      }
+    }
+  },
+  "selected_model": "gradient_boosted_trees",
+  "selection_basis": "lowest validation MAE; test set was not used for selection",
+  "test_metrics": {
+    "rmse": 1.3930551948484493,
+    "mae": 1.0232209696775245,
+    "r2": 0.5034293530509903
+  },
+  "sample_predictions": [
+    {
+      "restaurant_id": "R001",
+      "timestamp": "2026-06-01 00:00:00",
+      "order_count": 1.0,
+      "prediction": 0.43321428745688173
+    },
+    {
+      "restaurant_id": "R002",
+      "timestamp": "2026-06-01 00:00:00",
+      "order_count": 0.0,
+      "prediction": 0.43321428745688173
+    },
+    {
+      "restaurant_id": "R003",
+      "timestamp": "2026-06-01 00:00:00",
+      "order_count": 0.0,
+      "prediction": 0.43321428745688173
+    },
+    {
+      "restaurant_id": "R004",
+      "timestamp": "2026-06-01 00:00:00",
+      "order_count": 2.0,
+      "prediction": 0.43321428745688173
+    },
+    {
+      "restaurant_id": "R005",
+      "timestamp": "2026-06-01 00:00:00",
+      "order_count": 0.0,
+      "prediction": 0.43321428745688173
+    },
+    {
+      "restaurant_id": "R006",
+      "timestamp": "2026-06-01 00:00:00",
+      "order_count": 1.0,
+      "prediction": 0.43321428745688173
+    },
+    {
+      "restaurant_id": "R007",
+      "timestamp": "2026-06-01 00:00:00",
+      "order_count": 1.0,
+      "prediction": 0.43321428745688173
+    },
+    {
+      "restaurant_id": "R008",
+      "timestamp": "2026-06-01 00:00:00",
+      "order_count": 1.0,
+      "prediction": 0.43321428745688173
+    },
+    {
+      "restaurant_id": "R009",
+      "timestamp": "2026-06-01 00:00:00",
+      "order_count": 0.0,
+      "prediction": 0.43321428745688173
+    },
+    {
+      "restaurant_id": "R010",
+      "timestamp": "2026-06-01 00:00:00",
+      "order_count": 2.0,
+      "prediction": 0.43321428745688173
+    },
+    {
+      "restaurant_id": "R011",
+      "timestamp": "2026-06-01 00:00:00",
+      "order_count": 0.0,
+      "prediction": 0.43321428745688173
+    },
+    {
+      "restaurant_id": "R012",
+      "timestamp": "2026-06-01 00:00:00",
+      "order_count": 0.0,
+      "prediction": 0.43321428745688173
+    },
+    {
+      "restaurant_id": "R013",
+      "timestamp": "2026-06-01 00:00:00",
+      "order_count": 1.0,
+      "prediction": 0.43321428745688173
+    },
+    {
+      "restaurant_id": "R014",
+      "timestamp": "2026-06-01 00:00:00",
+      "order_count": 1.0,
+      "prediction": 0.35362136638152075
+    },
+    {
+      "restaurant_id": "R015",
+      "timestamp": "2026-06-01 00:00:00",
+      "order_count": 0.0,
+      "prediction": 0.43321428745688173
+    },
+    {
+      "restaurant_id": "R016",
+      "timestamp": "2026-06-01 00:00:00",
+      "order_count": 0.0,
+      "prediction": 0.43321428745688173
+    },
+    {
+      "restaurant_id": "R017",
+      "timestamp": "2026-06-01 00:00:00",
+      "order_count": 0.0,
+      "prediction": 0.43321428745688173
+    },
+    {
+      "restaurant_id": "R018",
+      "timestamp": "2026-06-01 00:00:00",
+      "order_count": 1.0,
+      "prediction": 0.43321428745688173
+    },
+    {
+      "restaurant_id": "R019",
+      "timestamp": "2026-06-01 00:00:00",
+      "order_count": 1.0,
+      "prediction": 0.43321428745688173
+    },
+    {
+      "restaurant_id": "R020",
+      "timestamp": "2026-06-01 00:00:00",
+      "order_count": 0.0,
+      "prediction": 0.43321428745688173
+    },
+    {
+      "restaurant_id": "R021",
+      "timestamp": "2026-06-01 00:00:00",
+      "order_count": 1.0,
+      "prediction": 0.43321428745688173
+    },
+    {
+      "restaurant_id": "R022",
+      "timestamp": "2026-06-01 00:00:00",
+      "order_count": 0.0,
+      "prediction": 0.43321428745688173
+    },
+    {
+      "restaurant_id": "R023",
+      "timestamp": "2026-06-01 00:00:00",
+      "order_count": 1.0,
+      "prediction": 0.43321428745688173
+    },
+    {
+      "restaurant_id": "R024",
+      "timestamp": "2026-06-01 00:00:00",
+      "order_count": 1.0,
+      "prediction": 0.43321428745688173
+    },
+    {
+      "restaurant_id": "R025",
+      "timestamp": "2026-06-01 00:00:00",
+      "order_count": 0.0,
+      "prediction": 0.43321428745688173
+    }
+  ],
+  "model_path": "hdfs://localhost:9000/dineq/models/v1/selected_demand_model",
+  "hdfs_model_path": "hdfs://localhost:9000/dineq/models/v1/selected_demand_model",
+  "hdfs_features_path": "hdfs://localhost:9000/dineq/features/v1/hourly_demand",
+  "spark_version": "3.5.7",
+  "timestamp_utc": "2026-09-26T18:59:12.798392+00:00",
+  "elapsed_seconds": 57.194,
+  "reload_smoke_test": {
+    "rows_with_prediction": 8,
+    "passed": true
+  }
+}

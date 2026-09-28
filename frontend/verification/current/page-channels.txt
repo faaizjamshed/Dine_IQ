@@ -1,0 +1,190 @@
+DineIQ
+
+ANALYTICS PLATFORM
+
+OVERVIEW
+
+Executive Dashboard
+
+INTELLIGENCE
+
+Menu Intelligence
+Customer Intelligence
+Basket & Bundles
+
+OPERATIONS
+
+Demand Forecast
+Wastage
+Locations
+Channels
+
+DECISIONS & ACTIONS
+
+Pricing & Promotions
+Anomalies
+Recommendations
+What-If Simulator
+
+PLATFORM
+
+Model Comparison
+Reports & Export
+Admin
+Collapse
+Channels
+Full history
+Outlets:
+All outlets
+Categories:
+All categories
+Channels:
+All channels
+API CONNECTED
+API CONNECTED
+Search
+⌘K
+F
+
+Full historical period. Channel basket size, discounts, platform fees, margins and hourly breakdowns are unavailable. · Data unavailable: the backend exposes overall weekday/hour demand, but no channel-by-hour breakdown.
+
+Channel Economics
+
+Dine-in, delivery, takeaway and app side by side — one card per channel
+
+Mobile App
+PKR 1.5B
+REVENUE SHARE
+29.1%
+ORDERS
+177,285
+BASKET SIZE
+— items/order
+AOV
+PKR 8,465
+DISCOUNT
+—
+PLATFORM FEE
+—
+CONTRIBUTION MARGIN
+—
+
+Peak
+
+Dine-In
+PKR 1.2B
+REVENUE SHARE
+23.8%
+ORDERS
+146,439
+BASKET SIZE
+— items/order
+AOV
+PKR 8,373
+DISCOUNT
+—
+PLATFORM FEE
+—
+CONTRIBUTION MARGIN
+—
+
+Peak
+
+Delivery Partner
+PKR 1.1B
+REVENUE SHARE
+22.1%
+ORDERS
+134,353
+BASKET SIZE
+— items/order
+AOV
+PKR 8,478
+DISCOUNT
+—
+PLATFORM FEE
+—
+CONTRIBUTION MARGIN
+—
+
+Peak
+
+Takeaway
+PKR 712M
+REVENUE SHARE
+13.8%
+ORDERS
+84,808
+BASKET SIZE
+— items/order
+AOV
+PKR 8,392
+DISCOUNT
+—
+PLATFORM FEE
+—
+CONTRIBUTION MARGIN
+—
+
+Peak
+
+Website
+PKR 569M
+REVENUE SHARE
+11.0%
+ORDERS
+67,042
+BASKET SIZE
+— items/order
+AOV
+PKR 8,487
+DISCOUNT
+—
+PLATFORM FEE
+—
+CONTRIBUTION MARGIN
+—
+
+Peak
+
+Unknown
+PKR 10.3M
+REVENUE SHARE
+0.2%
+ORDERS
+1,224
+BASKET SIZE
+— items/order
+AOV
+PKR 8,444
+DISCOUNT
+—
+PLATFORM FEE
+—
+CONTRIBUTION MARGIN
+—
+
+Peak
+
+Channel × Hour Order Heatmap
+
+Hourly channel detail is unavailable in the existing backend
+
+No hourly channel data for the selected filters.
+
+Channel Comparison
+
+Full economics rows per channel, as shipped by the backend
+
+Channels with revenue, orders, average order value, basket size, discount, platform fee, contribution margin and peak hours
+CHANNEL	REVENUE	ORDERS	AOV	BASKET	DISCOUNT	FEE	MARGIN	PEAK HOURS
+Mobile App	PKR 1.5B	177,285	PKR 8,465	—	—	—	—	
+Dine-In	PKR 1.2B	146,439	PKR 8,373	—	—	—	—	
+Delivery Partner	PKR 1.1B	134,353	PKR 8,478	—	—	—	—	
+Takeaway	PKR 712M	84,808	PKR 8,392	—	—	—	—	
+Website	PKR 569M	67,042	PKR 8,487	—	—	—	—	
+Unknown	PKR 10.3M	1,224	PKR 8,444	—	—	—	—	
+
+Fee 0% = first-party channel (no aggregator cut) · values verbatim from GET /api/channels
+
+Classic Burger 1

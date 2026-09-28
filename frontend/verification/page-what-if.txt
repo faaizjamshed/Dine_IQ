@@ -1,0 +1,85 @@
+DineIQ
+
+ANALYTICS PLATFORM
+
+OVERVIEW
+
+Executive Dashboard
+
+INTELLIGENCE
+
+Menu Intelligence
+Customer Intelligence
+Basket & Bundles
+
+OPERATIONS
+
+Demand Forecast
+Wastage
+Locations
+Channels
+
+DECISIONS & ACTIONS
+
+Pricing & Promotions
+Anomalies
+Recommendations
+What-If Simulator
+
+PLATFORM
+
+Model Comparison
+Reports & Export
+Admin
+Collapse
+What-If Simulator
+Full history
+Outlets:
+All outlets
+Categories:
+All categories
+Channels:
+All channels
+API CONNECTED
+API CONNECTED
+Search
+⌘K
+F
+Scenario
+
+Price arithmetic using historical units and your elasticity assumption
+
+Menu item
+Choose an item…
+Price change
+0%
+
+Applied to the catalog price. Demand response uses the elasticity you supply below.
+
+Discount
+0%
+
+Reduces the adjusted price. No promotion lift or fatigue is inferred.
+
+Preparation / stock change
+0%
+
+Unavailable for this combined price scenario. The backend requires separate preparation inputs.
+
+Elasticity assumption (−10 to 0)
+
+0 means unchanged demand. This is your assumption, not a fitted causal estimate.
+
+Horizon unavailable · full historical units
+7 days
+14 days
+30 days
+Run simulation
+
+Uses full historical units and catalog unit price/cost from the selected item. Date, outlet and channel scopes are unavailable.
+
+No simulation yet
+
+Choose a menu item, set price, discount and your elasticity assumption, then run the simulation. No estimates are shown until the scenario engine returns output — this panel never invents numbers.
+
+Classic Burger 1

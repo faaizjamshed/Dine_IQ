@@ -1,0 +1,3882 @@
+{
+  ".gitignore": {
+    "sha256": "52a638fe21693844ccd495d724e56a9dee129483a5bb18509eb7929d4ffe20af",
+    "bytes": 1267
+  },
+  "AI_USAGE.md": {
+    "sha256": "1c2d800392cf7b3eb2c289aae05cb50e43c1b8711a9da696e9cf8ec9dd04e993",
+    "bytes": 1840
+  },
+  "ARCHITECTURE.md": {
+    "sha256": "98c11d75d067b3028cfd28a7fcda4a4e54c552de015223b215649f4cac15ef0f",
+    "bytes": 4594
+  },
+  "ASSUMPTIONS_LIMITATIONS.md": {
+    "sha256": "d9a1e24e65e6886c41b049fb0d6d0fbdfb62cd027e3f2524d5c3f2a4586016e1",
+    "bytes": 4267
+  },
+  "DATA_DICTIONARY.md": {
+    "sha256": "474f0d185bd8ff56b43e36ec5ce7c15148942064083a621d047d996f95c15ce3",
+    "bytes": 10006
+  },
+  "DEVELOPMENT_LOG.md": {
+    "sha256": "f981e4105e878b9817fd154dea0f1e602f2b4067c674648443b2e25a02e41873",
+    "bytes": 1779
+  },
+  "docker-compose.yml": {
+    "sha256": "70b7bd44f261740d4e2f56e7e146b90a9adf288562d5467fb1f141cac9c72f4a",
+    "bytes": 1870
+  },
+  "EVALUATOR_INSTRUCTIONS.md": {
+    "sha256": "bef5c913c754f227e41d07df7ac307da6ac24b68be13fb3c55283bb3a1b5fc8f",
+    "bytes": 3791
+  },
+  "EVIDENCE_INDEX.md": {
+    "sha256": "237241401bf806aa2fbd44ecb84d23024f5405c2d6815ab123fd56983aa0553c",
+    "bytes": 9334
+  },
+  "GITHUB_REPO_STRUCTURE.md": {
+    "sha256": "401ee48c53d98c7a3ac8f0248c76942c7be454191ad70b3aae3dae14795e0b39",
+    "bytes": 2179
+  },
+  "INSTALLATION.md": {
+    "sha256": "f361707fabd059ce72b87fd1ac216a17ac2e5336b19d112eb00c8baf39573687",
+    "bytes": 7411
+  },
+  "LICENSE": {
+    "sha256": "66708e30358fb4bbaa5cc52f36a1053bc902a40335fdd77b0c76a8249f6a0882",
+    "bytes": 1084
+  },
+  "PROJECT_SUMMARY_ALL_DETAILS.txt": {
+    "sha256": "eb7752325bfe958fbcb6bf848652928d77661d4b145b65d94fe9c61d95cdd7cc",
+    "bytes": 9359
+  },
+  "README.md": {
+    "sha256": "986252df99b6ea03688f33f60415918034c2eb4994f9e0cfbae059280c721dd1",
+    "bytes": 7488
+  },
+  "requirements-app.txt": {
+    "sha256": "35fde835d2cdf4ccbfb67738c7e5d2f8829fd441d3cbcb34b1f4c948a0a11cd4",
+    "bytes": 13
+  },
+  "requirements.txt": {
+    "sha256": "d55d88871ea4492fc336474e9754f05c4fc6e08de85c607db109bbecbf6b21c8",
+    "bytes": 253
+  },
+  "app/backend.py": {
+    "sha256": "2ecfeda228165a5c6d59d9d66c251bad003f1fcfb5374bce6358d8bbfe5513a2",
+    "bytes": 46179
+  },
+  "app/operational_store.py": {
+    "sha256": "19181a071b502475340381e9090db5781450675e580eadd1ef7fb12e2f620139",
+    "bytes": 28910
+  },
+  "app/operations_api.py": {
+    "sha256": "8d7cb5030f7fd6c51197bd48ef3c627732183fda86b53002591e42f68ef22a03",
+    "bytes": 17100
+  },
+  "app/what_if.py": {
+    "sha256": "67791d14f2efea0abcf9c976c09f8df8c54c0bd56f7f68ca50516fe550253524",
+    "bytes": 5323
+  },
+  "app/__init__.py": {
+    "sha256": "62ef8a6382d0decbccdae107d9d334bb1d97836e8e98598bf63593066b91cd51",
+    "bytes": 44
+  },
+  "app/static/app.css": {
+    "sha256": "6899da9cc018e0995cfe67620ff8034947b96b8a295b759baa012b2c62d6c657",
+    "bytes": 14255
+  },
+  "app/static/app.js": {
+    "sha256": "e7cbaa794771406a76534567ba5250e7ea00506924152f22b4b27ac4fa2609a1",
+    "bytes": 61082
+  },
+  "app/static/index.html": {
+    "sha256": "8373076fa7b0568042ba58a290528c3492f05a464852e021edf4e1c32a37d071",
+    "bytes": 3535
+  },
+  "config/core-site.xml": {
+    "sha256": "409ea98617e1f2aca728ba6c6aa9842279db480e08b6f1f553385a408eb2b1a5",
+    "bytes": 146
+  },
+  "config/hdfs-site.xml": {
+    "sha256": "11b9a4447cd732c1c9987a0b075fd9b59aca7d295e65d7f97305c7456b1815ac",
+    "bytes": 1294
+  },
+  "data/spark_hdfs_test.csv": {
+    "sha256": "9c4b7b5d1dabd63025d33eb8c90fdad66249b15c9b417520ca90b2a56984e902",
+    "bytes": 81
+  },
+  "data/generated/customers.csv": {
+    "sha256": "7eb1d9dd3ed97354879053958a216770863e3a0a0e3113b4671961c466d90b17",
+    "bytes": 7870384
+  },
+  "data/generated/inventory.csv": {
+    "sha256": "c92b6b2c5d501286b0dccc90c2770a4f7f41f9b7cdfebfd8d1b93bf1a45ac20a",
+    "bytes": 5349366
+  },
+  "data/generated/menu_categories.csv": {
+    "sha256": "92b283e036ce44458efa3c32877c309e247aee693dd9041a56e600ee68bf5d39",
+    "bytes": 704
+  },
+  "data/generated/menu_items.csv": {
+    "sha256": "18d6e4cb45280d0aec78e40d31678eaa7a8fabd27ff5defee18a320118e1d05a",
+    "bytes": 14003
+  },
+  "data/generated/orders.csv": {
+    "sha256": "bb850ecf031fbeb50d648f12b823ecdc7b1236f3a5e964418033e114f4631b24",
+    "bytes": 69135712
+  },
+  "data/generated/order_items.csv": {
+    "sha256": "8c1151dc5892d1255cc18793f70fead8ebe9dcb71896e8fc8811ea39eef83dac",
+    "bytes": 151239039
+  },
+  "data/generated/pricing_history.csv": {
+    "sha256": "e3f0fe7ea4797c8de8982a523590a3171b9f334848e38132d98dffad76af6a79",
+    "bytes": 210067
+  },
+  "data/generated/promotions.csv": {
+    "sha256": "93d985ab37a6abac431a044ce43e5eea43eef723b012ec84cacf12445b24f660",
+    "bytes": 6828
+  },
+  "data/generated/ratings.csv": {
+    "sha256": "b64d473b23343ced1f8a578dfc6b177ff87331f686dc1135ba597689995e83d1",
+    "bytes": 13633800
+  },
+  "data/generated/restaurants.csv": {
+    "sha256": "076e958f55a17a9b2b32392061b51605313d4eabcf52f2294f965aec2a64270d",
+    "bytes": 1798
+  },
+  "data/generated/wastage.csv": {
+    "sha256": "294f9c12c236b91f418409469cac330b6db41c5589df5ef658b5ee8e65bf453e",
+    "bytes": 6985966
+  },
+  "data/sample/customers.csv": {
+    "sha256": "5250537135f2483ccdc1da9247f9e215917447035f8a5b7ae0204ec4915d3564",
+    "bytes": 104177
+  },
+  "data/sample/inventory.csv": {
+    "sha256": "1b1e04a70000e266d165350612af5fedf74f52383feb6ad80014796291c87691",
+    "bytes": 178447
+  },
+  "data/sample/menu_categories.csv": {
+    "sha256": "69ef760aade2a63265097e2bc35263be7a312d6113a4ed6bb779e43a01d23345",
+    "bytes": 565
+  },
+  "data/sample/menu_items.csv": {
+    "sha256": "77a64c8cbcdff04685d7bbdece7d0f608b657be6633f9842dcf7a369616f3c75",
+    "bytes": 13967
+  },
+  "data/sample/orders.csv": {
+    "sha256": "60a16b07203f0fd1bba4fa90b4a875bc0647a163f7f8fbe89c3d5ca238922b98",
+    "bytes": 529549
+  },
+  "data/sample/order_items.csv": {
+    "sha256": "5452c96d9dd694281bfe9a25c166ca1b08e15aafd4ec74ef70cca224faf61ab8",
+    "bytes": 1008161
+  },
+  "data/sample/pricing_history.csv": {
+    "sha256": "f5518fa0dc5f9afb01f52a378ea8bb60cec13a715f5a2979d19076d473ddffea",
+    "bytes": 82638
+  },
+  "data/sample/promotions.csv": {
+    "sha256": "1ea3b1323ebfa841f3ca59d53c415bd3d1bea20ecc72e5de9ee9241b235518aa",
+    "bytes": 2633
+  },
+  "data/sample/ratings.csv": {
+    "sha256": "4ae744d5a516eaedcbbc0dd8c125a4033607753df5c2b88f6712c899975c0ca0",
+    "bytes": 123840
+  },
+  "data/sample/restaurants.csv": {
+    "sha256": "076e958f55a17a9b2b32392061b51605313d4eabcf52f2294f965aec2a64270d",
+    "bytes": 1798
+  },
+  "data/sample/wastage.csv": {
+    "sha256": "56c91af773706221db526b210cd2dccfd3df029b43f20e17219f2e24c22f97ed",
+    "bytes": 95107
+  },
+  "instance/dineq_operational.sqlite3": {
+    "sha256": "7446ae44333064e776882623e5c0e2c99d1e69db85d9abd24ce773cfb5018c95",
+    "bytes": 802816
+  },
+  "instance/dineq_operational.sqlite3-shm": {
+    "sha256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb",
+    "bytes": 32768
+  },
+  "instance/dineq_operational.sqlite3-wal": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/regression_full.log": {
+    "sha256": "d73a31ba109a019507b8679ff5bad1dce4bf0e30c1953b7c7ce2dcde49514b7a",
+    "bytes": 86840
+  },
+  "results/analytics/gap1/directional_baskets_run.log": {
+    "sha256": "6ddd94668d7adc612b7ebb86b41d68baf7d0b58d3948b23c39c69169f47f4244",
+    "bytes": 36488
+  },
+  "results/analytics/gap1/implementation_evidence.json": {
+    "sha256": "05382378bd6edaf5d144cd0d43150b50f6a21ced95f3ac89b45234c40a4d6877",
+    "bytes": 326210
+  },
+  "results/analytics/gap1/spark_gap1.json": {
+    "sha256": "61add1c23cfe946a4814742a12e0db0bdd90313189d01fa20ea430b97bc72e87",
+    "bytes": 61024
+  },
+  "results/analytics/gap1/spark_gap1_v6_run.log": {
+    "sha256": "42ac3ae3299d05431fc18e6a518b42f0e316dac1e25bcbd0f2844734cb7d2d5f",
+    "bytes": 293244
+  },
+  "results/analytics/gap1/v11/directional_basket_recommendations.json": {
+    "sha256": "7ea5459cf088581c4f2cd8aa607dbd8a6ee235fdcb8056ad419b0f2cf03df123",
+    "bytes": 16975
+  },
+  "results/analytics/gap1/v3/spark_gap1.json": {
+    "sha256": "527e38e857b34a270ea3eb9f60f927f60d0793f89a123efc05a2b601e2386595",
+    "bytes": 61767
+  },
+  "results/analytics/gap1/v4/all_tests.log": {
+    "sha256": "3e92d4c5aa92f84bafb812e7c3ec58b25d9fb06807486c504044e23df5e495d3",
+    "bytes": 9638
+  },
+  "results/analytics/gap1/v4/all_tests_final.log": {
+    "sha256": "37cfedb30b2dd24b6108e1a9e21d2c3fe882e89c65ff4e514b4f46865a32c077",
+    "bytes": 10312
+  },
+  "results/analytics/gap1/v4/app_integration_tests.log": {
+    "sha256": "fc4a141d3b4ca648351209af547d462fb19765d4845a2dc527a35d6a4245d309",
+    "bytes": 5624
+  },
+  "results/analytics/gap1/v4/gap1_tests.log": {
+    "sha256": "c36b7bc44cecc6cfd75ab310f4c446869bdf344ed3b8b44749b3f0d7871c9246",
+    "bytes": 3836
+  },
+  "results/analytics/gap1/v4/readback_verification.json": {
+    "sha256": "5726b0d8eaa2ccb1b1adf65a6cd875a5a5841d41f591242c0d66f5238bca32c7",
+    "bytes": 9054
+  },
+  "results/analytics/gap1/v4/spark_gap1.json": {
+    "sha256": "e8eb385120496f292e1a556e469e62a09db7598d79235d585e3a138b4802a9b6",
+    "bytes": 64726
+  },
+  "results/analytics/gap1/v4/spark_menu_profitability.csv": {
+    "sha256": "303656db9b709cf05b1c489c312bf60c894e0da0ca6d8342563ac7758aec2e32",
+    "bytes": 79157
+  },
+  "results/analytics/gap1/v5/spark_gap1.json": {
+    "sha256": "fd7aa3e096897555d381182eee82247aaab8f920ed13e2e48c210a5bb831c0cc",
+    "bytes": 66141
+  },
+  "results/analytics/gap1/v6/all_tests_final.log": {
+    "sha256": "a8d37c1157c445dc3a7afe5ca90f518effa59cd7e09045c7a59e6b8a04a6c81d",
+    "bytes": 35046
+  },
+  "results/analytics/gap1/v6/all_tests_final2.log": {
+    "sha256": "47afe3af0b8ad4c420d917b246ca3f8992a89c3834821c5f5bc8b6e79a57b45e",
+    "bytes": 10436
+  },
+  "results/analytics/gap1/v6/all_tests_final3.log": {
+    "sha256": "7f1b4bfd525b8353927c36c2253a8fd98c8e181bae477ff919c6040fe1489b67",
+    "bytes": 10602
+  },
+  "results/analytics/gap1/v6/readback_verification.json": {
+    "sha256": "03d2091e0478ec1cc9be8603e28cad6743917038533f24c28753adb490cc50e6",
+    "bytes": 9329
+  },
+  "results/analytics/gap1/v6/spark_gap1.json": {
+    "sha256": "b353bcad83a02d65cf69c5c7bc37620ce6b95baaf1e1ef4fdfb7d9a3139552d5",
+    "bytes": 66141
+  },
+  "results/analytics/gap1/v6/spark_menu_profitability.csv": {
+    "sha256": "c027566e5a53fb98157826b143116f256a4f99c1e526535ff0b0f9745bf097ae",
+    "bytes": 82856
+  },
+  "results/analytics/gap1/v7/attempt.json": {
+    "sha256": "05a2685cef163d695f9b63cabb5a3cccadd76e0903a5e8d192dd93f4c5d03c7b",
+    "bytes": 944
+  },
+  "results/analytics/gap1/wastage_risk_v1/run.log": {
+    "sha256": "1c01004a530920e2da8b70a7b629e4495aaf2b7aa55fa67258db6c475292ce5a",
+    "bytes": 5940
+  },
+  "results/analytics/gap1/wastage_risk_v1/run_final.log": {
+    "sha256": "8c1feb26ed753618f72219e50cafa460201186d957d037691aed2c51af0d15cc",
+    "bytes": 11300
+  },
+  "results/analytics/gap1/wastage_risk_v1/run_reduced.log": {
+    "sha256": "99565cb8cb801111716f28ea9bc91b0fd3e79169188969248eba40de6908f1c7",
+    "bytes": 20518
+  },
+  "results/analytics/gap1/wastage_risk_v1/run_v2.log": {
+    "sha256": "0cca57a6edfbbfb477875d567fdf3653a134e3f4dcb0c2b48a627b7253554c9e",
+    "bytes": 20358
+  },
+  "results/analytics/gap1/wastage_risk_v3/all_tests_elevated.log": {
+    "sha256": "168349361441c96bcb34b4080954d13612b2a3e4e7d634d436f1eefe48dea609",
+    "bytes": 10892
+  },
+  "results/analytics/gap1/wastage_risk_v3/all_tests_final.log": {
+    "sha256": "4a32b4b7e774b137413a29081e99a3674792b87da8cb61953ccdfee0f1ab1a25",
+    "bytes": 35330
+  },
+  "results/analytics/gap1/wastage_risk_v3/all_tests_final2.log": {
+    "sha256": "29b94eadb8857889a621750d8d29cdd1c422819f1eb62a451f80cbd29ad346f9",
+    "bytes": 35332
+  },
+  "results/analytics/gap1/wastage_risk_v3/gap1_tests.log": {
+    "sha256": "96f71565a531d2a8e50f2c8cbc1ba75577b617cda251111274b6263563c9952a",
+    "bytes": 3296
+  },
+  "results/analytics/gap1/wastage_risk_v3/pipeline.json": {
+    "sha256": "6015ffc409ccdfbaf7ca307b02f43c71ca7dbc2693c594b2c67b739b2c055c20",
+    "bytes": 123435
+  },
+  "results/analytics/gap1/wastage_risk_v3/run.log": {
+    "sha256": "9e58c17bd42305f2136e6f7b3444ad65fe250499af9f5784693d77efc9cf19c6",
+    "bytes": 16446
+  },
+  "results/app/api_performance.json": {
+    "sha256": "8e064f8be891226d5ffd7c7f0559052a509b181ccc27dc7246651b2abdb77ef0",
+    "bytes": 4591
+  },
+  "results/app/browser_overview.png": {
+    "sha256": "f79bbbf6af365f46a557a96165fc1b6f79e16af8cff9501c196bf996486e31ec",
+    "bytes": 51016
+  },
+  "results/app/browser_routes.json": {
+    "sha256": "0295ff1136e2d465bdad934e56b60152109b8ae113361ae087c5bfe3262c9926",
+    "bytes": 2238
+  },
+  "results/app/browser_verification.json": {
+    "sha256": "17da0d37ea7f288c7eaef2f077dfd4db95cb6a3918bf454b07625ac8ff1d03fd",
+    "bytes": 6509
+  },
+  "results/app/browser_verification.md": {
+    "sha256": "a7aedcd69092c3228a62bcb8a2b4adfbef2198f994aeb1f089555d6c79fd8083",
+    "bytes": 1153
+  },
+  "results/app/tests.log": {
+    "sha256": "6276f6b0131c675c13400a32e96f747bd8aeb4fad36414ddc61ea60408667682",
+    "bytes": 2522
+  },
+  "results/app/phase2/analytics_tests.log": {
+    "sha256": "326aa5f582afbca28b60b0a7b3d5afda5c268c67b82067e1d9a0bb9740d17e48",
+    "bytes": 3616
+  },
+  "results/app/phase2/app_integration_tests.log": {
+    "sha256": "7aee23bd31d381d96a55089d5d0eff98890c3c70112f5cb12612e8933ee928cb",
+    "bytes": 8956
+  },
+  "results/app/phase2/backend.log": {
+    "sha256": "77bdb2728528f4241db6b273f330ddb70706f62680f08ba6a74f75802db5974e",
+    "bytes": 26796
+  },
+  "results/app/phase2/browser_operational.sqlite3": {
+    "sha256": "7782dc8e4251d2c692f2d6dd73d4852874f9820a317eb6e6bc29355b2b9a1bf5",
+    "bytes": 811008
+  },
+  "results/app/phase2/browser_run.log": {
+    "sha256": "09b67d97b26ed78647541f3095c69f1bdb4099ce8d709b947deaa2c8e4d2b08c",
+    "bytes": 2544
+  },
+  "results/app/phase2/browser_verification.json": {
+    "sha256": "87d511da73da05407791a306dceed8728baa41c8108220a7c1e0e7cbe5c9ea8e",
+    "bytes": 6729
+  },
+  "results/app/phase2/browser_verification.md": {
+    "sha256": "45287338a109ed6bf22e9c78fc23173a80afa5030a5f7caa5a91129effb11c21",
+    "bytes": 4705
+  },
+  "results/app/phase2/complete_suite.log": {
+    "sha256": "b022ad604dbe88efb3d0ba9f71c7addf240d55237ffe704b792b109fd86b880c",
+    "bytes": 14946
+  },
+  "results/app/phase2/complete_suite_phase2_final.log": {
+    "sha256": "53f8d835378389d489b8ff8029c24728b4c40362c5e337f48009c43964713670",
+    "bytes": 15478
+  },
+  "results/app/phase2/complete_suite_resumed.log": {
+    "sha256": "db382bddf23d525b57915c1f13c744e19a87f89ed65472e3e5e941edfb08879c",
+    "bytes": 14968
+  },
+  "results/app/phase2/ml_tests.log": {
+    "sha256": "73f4892585ec2dcc110f4123753668d663aee1a9f0ee334ebed65c810f051d4a",
+    "bytes": 2372
+  },
+  "results/app/phase2/new_functionality_tests.log": {
+    "sha256": "42a1f7aff80939421b1e67c373cb93f08e94d4f6f893fbf1e0332afdaf31cf55",
+    "bytes": 2146
+  },
+  "results/app/phase2/phase2_intelligence.png": {
+    "sha256": "f7d95d415227b11e3e50326990adebabb8577c74e9d5020d4071db78be867718",
+    "bytes": 159123
+  },
+  "results/app/phase2/phase2_intelligence_mobile.png": {
+    "sha256": "593b5390226d9469a270b91dc0a79420d99c68326a8fe0eece9281a675a53019",
+    "bytes": 131693
+  },
+  "results/app/phase2/phase2_management.png": {
+    "sha256": "648f40ce7621240fac66424854f43456c3f3d3f3b2069ca4d0c3311d96ab02b2",
+    "bytes": 107591
+  },
+  "results/app/phase2/phase2_menu_recovery.png": {
+    "sha256": "d33c9b2d8b6968a6b82621b04d58af4201269a0c4036bdac4799022a7fc14b1f",
+    "bytes": 468315
+  },
+  "results/app/phase2/phase2_overview.png": {
+    "sha256": "2782fc20f28e2beb31e907657ec451f3ac6948c8a8d58dfc0cadda8e6df8c151",
+    "bytes": 55577
+  },
+  "results/app/phase2/phase2_spark_monitoring.png": {
+    "sha256": "9cfcdfd99c3984b6a2bee8ba354c38d76be34b7e2f94e3b406dbc47580be3c06",
+    "bytes": 59787
+  },
+  "results/app/phase2/python_comparison_tests.log": {
+    "sha256": "ed4ffe8ff636f227117314365bec9686c8233570243fa1827e681f7df96698e7",
+    "bytes": 2270
+  },
+  "results/app/phase2/edge-profile/FirstLaunchAfterInstallation": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/first_party_sets.db": {
+    "sha256": "ed61f2ae9d808d408ff50cd3b0d4f82c70ad960b27bf048c7f1e69f0c62fd537",
+    "bytes": 49152
+  },
+  "results/app/phase2/edge-profile/first_party_sets.db-journal": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Last Browser": {
+    "sha256": "9c70f766d3b84fc2bb298efa37cc9191f28bec336329cc11468cfadbc3b137f4",
+    "bytes": 120
+  },
+  "results/app/phase2/edge-profile/Last Version": {
+    "sha256": "75baac6a02c8f63abd477cf2c247d1bd2c6daf8275bab211fdf9b966c370df0c",
+    "bytes": 13
+  },
+  "results/app/phase2/edge-profile/Local State": {
+    "sha256": "090031b10c5402ab7307505dfbe448b7f92789cf9a1e2130493fc456f685418c",
+    "bytes": 22926
+  },
+  "results/app/phase2/edge-profile/Variations": {
+    "sha256": "7c782809649ae44d26ad9ec63f900a8b306e91ed01410eedd6a9ab778770ed2b",
+    "bytes": 87
+  },
+  "results/app/phase2/edge-profile/VariationsRuntimeSeedV2": {
+    "sha256": "1560b22b2264f7cb6b7f6910164813f76c5e8a06fb1acf85b375e687ee49c1ad",
+    "bytes": 19
+  },
+  "results/app/phase2/edge-profile/VariationsSafeSeedV2": {
+    "sha256": "b4cc4174735c28360b9081be3c3d0552d8a4b3cdb54431ac00ed0d622bab6296",
+    "bytes": 11
+  },
+  "results/app/phase2/edge-profile/VariationsSeedV2": {
+    "sha256": "b4cc4174735c28360b9081be3c3d0552d8a4b3cdb54431ac00ed0d622bab6296",
+    "bytes": 11
+  },
+  "results/app/phase2/edge-profile/Ad Blocking/blocklist": {
+    "sha256": "6fa1b02b96b249c932f11a4c4f1eb52f042c98bf33d02c325fd422f437c15214",
+    "bytes": 107893
+  },
+  "results/app/phase2/edge-profile/component_crx_cache/77ab8c118fd534ab1cf48f984963d6d35ebf06580b0041ec7d594ce88561ad84": {
+    "sha256": "77ab8c118fd534ab1cf48f984963d6d35ebf06580b0041ec7d594ce88561ad84",
+    "bytes": 579893
+  },
+  "results/app/phase2/edge-profile/component_crx_cache/a9592ae40712c6cfdf7d142e2563ca4ec8f696cfe53e267ad0ea630c43beaa33": {
+    "sha256": "a9592ae40712c6cfdf7d142e2563ca4ec8f696cfe53e267ad0ea630c43beaa33",
+    "bytes": 2772537
+  },
+  "results/app/phase2/edge-profile/component_crx_cache/df5bb9f2afeb58b7c813d43eaa32cf6b240e346614ec52425bb5ff323450cd51": {
+    "sha256": "df5bb9f2afeb58b7c813d43eaa32cf6b240e346614ec52425bb5ff323450cd51",
+    "bytes": 20895
+  },
+  "results/app/phase2/edge-profile/component_crx_cache/metadata.json": {
+    "sha256": "1a423abaa03054bb9b0f1e8742ccffb8acc3a826f76cb91f2a7625b5bfe04822",
+    "bytes": 348
+  },
+  "results/app/phase2/edge-profile/Crashpad/metadata": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Crashpad/settings.dat": {
+    "sha256": "95f54ab2bb67f61d6a089e4f99919dbf46c248b34c1557f0e226e374131b30c4",
+    "bytes": 288
+  },
+  "results/app/phase2/edge-profile/Crashpad/throttle_store.dat": {
+    "sha256": "41c91a9c93d76295746a149dce7ebb3b9ee2cb551d84365fff108e59a61cc304",
+    "bytes": 20
+  },
+  "results/app/phase2/edge-profile/Default/Affiliation Database": {
+    "sha256": "52b369ae1ac4db15be400b8d45b01d9e4c4054299fd3743f811e785a6abcbe3a",
+    "bytes": 53248
+  },
+  "results/app/phase2/edge-profile/Default/Affiliation Database-journal": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/arbitration_service_config.json": {
+    "sha256": "10fd9f7498f2534271aec65104fa7659b1bcf58a593dc3a526dfc099e1f82b91",
+    "bytes": 20347
+  },
+  "results/app/phase2/edge-profile/Default/BookmarkMergedSurfaceOrdering": {
+    "sha256": "4489f9e3e454748b3521eb214e0a5694d562cff3d9ff511cb456953c8f534c00",
+    "bytes": 6
+  },
+  "results/app/phase2/edge-profile/Default/declarative_performance_observer.db": {
+    "sha256": "eda4c9567974174f08a1dbcd8badf4d6199a7e9a8b78b8826548f49e20e7badf",
+    "bytes": 32768
+  },
+  "results/app/phase2/edge-profile/Default/declarative_performance_observer.db-journal": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/DIPS": {
+    "sha256": "97e8d54f8a7255106f66cf1b213c4a4d7b558d21310b1c2bfedc3d0d526dddda",
+    "bytes": 4096
+  },
+  "results/app/phase2/edge-profile/Default/DIPS-wal": {
+    "sha256": "9c23e2ed1ab411c8ed5e6d0a35f14ce49a170e88452f53a3370e98a4cdbd6785",
+    "bytes": 168952
+  },
+  "results/app/phase2/edge-profile/Default/ExtensionActivityComp": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/ExtensionActivityEdge": {
+    "sha256": "dc26af192a29b7a5cf5edf9ad5f25dcc30a45744fcaed301509950e70e8ab160",
+    "bytes": 32768
+  },
+  "results/app/phase2/edge-profile/Default/ExtensionActivityEdge-journal": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/Favicons": {
+    "sha256": "1fbc7ea9722b2154b0d69c9d0ed80b6c0c98c5d389cf31ac1a2b8db030724840",
+    "bytes": 20480
+  },
+  "results/app/phase2/edge-profile/Default/Favicons-journal": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/favorites_diagnostic.log": {
+    "sha256": "40cd8b26a6f100861b3feccfa3611ba29d72f0e406a20d78be1d495874c8509e",
+    "bytes": 15083
+  },
+  "results/app/phase2/edge-profile/Default/heavy_ad_intervention_opt_out.db": {
+    "sha256": "2adb7920679589545e8f37e3918b42d962ca404ddbd569930383478f6525b6ee",
+    "bytes": 16384
+  },
+  "results/app/phase2/edge-profile/Default/heavy_ad_intervention_opt_out.db-journal": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/History": {
+    "sha256": "7f03826c00ade3a9f0db339186a411c26f7c29ecd456ae2a9a0538b686e853d7",
+    "bytes": 262144
+  },
+  "results/app/phase2/edge-profile/Default/History-journal": {
+    "sha256": "3c6dd27f24eedf8d5cf0df5c058e3940f38849eef3758b1b05fd1cef95bbd9bf",
+    "bytes": 49760
+  },
+  "results/app/phase2/edge-profile/Default/HubApps": {
+    "sha256": "3c65e0ed62dfe21494a7299e6ba16e22435fa02581a630e18d80c0b8c2162d1f",
+    "bytes": 106431
+  },
+  "results/app/phase2/edge-profile/Default/HubApps Icons": {
+    "sha256": "5fb632fd6da74c7f797600382215cbeec68cbb132cc3beb0d57562ecdcff6b54",
+    "bytes": 28672
+  },
+  "results/app/phase2/edge-profile/Default/HubApps Icons-journal": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/load_statistics.db": {
+    "sha256": "97e8d54f8a7255106f66cf1b213c4a4d7b558d21310b1c2bfedc3d0d526dddda",
+    "bytes": 4096
+  },
+  "results/app/phase2/edge-profile/Default/load_statistics.db-shm": {
+    "sha256": "7660f5f0143cafa286c22072a2dd4b22ae74ba9f2fdcfcf4f875bd5c2b25efa2",
+    "bytes": 32768
+  },
+  "results/app/phase2/edge-profile/Default/load_statistics.db-wal": {
+    "sha256": "97492faa895ada7e665a322f4cf02b336a03c5f11cdce8eccff3515cf572c7e4",
+    "bytes": 317272
+  },
+  "results/app/phase2/edge-profile/Default/LOCK": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/LOG": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/LOG.old": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/Login Data": {
+    "sha256": "4825922749265b3039e3d5fabc9e5cbdd00406b0d256bafea9a835234ab38683",
+    "bytes": 51200
+  },
+  "results/app/phase2/edge-profile/Default/Login Data For Account": {
+    "sha256": "4825922749265b3039e3d5fabc9e5cbdd00406b0d256bafea9a835234ab38683",
+    "bytes": 51200
+  },
+  "results/app/phase2/edge-profile/Default/Login Data For Account-journal": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/Login Data-journal": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/Network Action Predictor": {
+    "sha256": "78c0f24e5b07037e9eb99ca2344f1b99ccc3a21c2ccecbe4282605e48a2751e7",
+    "bytes": 53248
+  },
+  "results/app/phase2/edge-profile/Default/Network Action Predictor-journal": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/Preferences": {
+    "sha256": "b10263c2cb6353ab1e69de6ac3b5326e99869e2a08f95351e3d3ec68fe34b600",
+    "bytes": 14759
+  },
+  "results/app/phase2/edge-profile/Default/PreferredApps": {
+    "sha256": "42b55d126d1e640b1ed7a6bdcb9a46c81df461fa7e131f4f8c7108c2c61c14de",
+    "bytes": 33
+  },
+  "results/app/phase2/edge-profile/Default/README": {
+    "sha256": "a0c9abae18599f0a65fc654ad36251f6330794bea66b718a09d8b297f3e38e87",
+    "bytes": 182
+  },
+  "results/app/phase2/edge-profile/Default/Secure Preferences": {
+    "sha256": "dbb54c8eecbc8d7da93ab9a239f6cff2758cbfcdfa08ceb5f071f5956d875753",
+    "bytes": 118824
+  },
+  "results/app/phase2/edge-profile/Default/ServerCertificate": {
+    "sha256": "180ffbc2a4f10b5563f5a7bfe62d23909f0aa77572a06e59a9be4c6fca7176f7",
+    "bytes": 20480
+  },
+  "results/app/phase2/edge-profile/Default/ServerCertificate-journal": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/settings_diagnostic.log": {
+    "sha256": "3d9cce45d7c7e6fec57d7476c3d6684fa3a9cf339f495f114f43563f7307de14",
+    "bytes": 1333
+  },
+  "results/app/phase2/edge-profile/Default/Shortcuts": {
+    "sha256": "4d50f902dd988a05350991f9d575138fa62d7ee143eba5125bf5aac983ecd5de",
+    "bytes": 20480
+  },
+  "results/app/phase2/edge-profile/Default/Shortcuts-journal": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/Top Sites": {
+    "sha256": "b23fa4373fe028f6872325d690702ac96eff1dcda1bf67bccc16d91ea0901bf6",
+    "bytes": 20480
+  },
+  "results/app/phase2/edge-profile/Default/Top Sites-journal": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/Vpn Tokens": {
+    "sha256": "0750267321d06309dfd0bc3957b29483fe4f76cdb105e02e64dbe9ec240ddc03",
+    "bytes": 28672
+  },
+  "results/app/phase2/edge-profile/Default/Vpn Tokens-journal": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/Web Data": {
+    "sha256": "635d9e87853fa78e500fb3185dbcd35c59402c111929d161f1353656ac53a403",
+    "bytes": 239616
+  },
+  "results/app/phase2/edge-profile/Default/Web Data-journal": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/AutofillAiModelCache/LOCK": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/AutofillAiModelCache/LOG": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/AutofillAiModelCache/LOG.old": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/AutofillStrikeDatabase/LOCK": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/AutofillStrikeDatabase/LOG": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/AutofillStrikeDatabase/LOG.old": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/BudgetDatabase/LOCK": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/BudgetDatabase/LOG": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/BudgetDatabase/LOG.old": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/Cache/Cache_Data/data_0": {
+    "sha256": "65ea035c7ca820a20b6ee773154695a5532aeb89e90f61c471d9c62814e375a5",
+    "bytes": 45056
+  },
+  "results/app/phase2/edge-profile/Default/Cache/Cache_Data/data_1": {
+    "sha256": "517e4ce94a4b60b65e83af712663019c256eb0f0c4f887de7bb512d872e5262f",
+    "bytes": 270336
+  },
+  "results/app/phase2/edge-profile/Default/Cache/Cache_Data/data_2": {
+    "sha256": "39a6188e6d8703ada30d8b388136f4e89ff1bc62b92516d6958635996da3204f",
+    "bytes": 1056768
+  },
+  "results/app/phase2/edge-profile/Default/Cache/Cache_Data/data_3": {
+    "sha256": "09877b668e38e8e6407ad2def7a2a7f9f47304e11edf5ec34400202b6282268a",
+    "bytes": 4202496
+  },
+  "results/app/phase2/edge-profile/Default/Cache/Cache_Data/f_00003e": {
+    "sha256": "e7cbaa794771406a76534567ba5250e7ea00506924152f22b4b27ac4fa2609a1",
+    "bytes": 61082
+  },
+  "results/app/phase2/edge-profile/Default/Cache/Cache_Data/f_000105": {
+    "sha256": "597e2122ca3dd7b08b0c1dbaff73a5370bf5aa371b0d06096adb8d193f23b641",
+    "bytes": 39550
+  },
+  "results/app/phase2/edge-profile/Default/Cache/Cache_Data/f_000106": {
+    "sha256": "5df4afb60e8853361a2d602f7eca2a1473c02d80f0baa5ef9cfe3a06d9592bfe",
+    "bytes": 27568
+  },
+  "results/app/phase2/edge-profile/Default/Cache/Cache_Data/f_000107": {
+    "sha256": "865478187e4f692abbaad06e0fc4026809e68daf5475b08c94a42a10ca2588ba",
+    "bytes": 29594
+  },
+  "results/app/phase2/edge-profile/Default/Cache/Cache_Data/f_000108": {
+    "sha256": "e58405d70d2076fd16440b8f3082af0219d8bb567f95290b8c2d7cae40d7b015",
+    "bytes": 19722
+  },
+  "results/app/phase2/edge-profile/Default/Cache/Cache_Data/f_000109": {
+    "sha256": "0bb6dfb6b63df8d149de6cca7a692ff0cfd85b3082e59791cf5f5128f1591ef4",
+    "bytes": 173942
+  },
+  "results/app/phase2/edge-profile/Default/Cache/Cache_Data/f_00010a": {
+    "sha256": "e1f286dfd53ff9a2f46dcaccf8fd567d590485f89dfa6a3d551a5b70fbe4c4d8",
+    "bytes": 31233
+  },
+  "results/app/phase2/edge-profile/Default/Cache/Cache_Data/f_00010b": {
+    "sha256": "912cde1bc71c00ba21c603f6b8acabcd137063a62e1f74252a8ae39ee1cc4710",
+    "bytes": 28643
+  },
+  "results/app/phase2/edge-profile/Default/Cache/Cache_Data/f_00010c": {
+    "sha256": "912d2123336f8122a57c1ed614204fe9a420fa2ef2efd20586d8a3b3abac4880",
+    "bytes": 39973
+  },
+  "results/app/phase2/edge-profile/Default/Cache/Cache_Data/f_00010d": {
+    "sha256": "f46a39323e22af590e460afc57bf863563988fb6ac7709a4a36be3e303d77d58",
+    "bytes": 37116
+  },
+  "results/app/phase2/edge-profile/Default/Cache/Cache_Data/f_00010e": {
+    "sha256": "3665cacc89fba998647a58c571732934c1259f698484dbf0ad1e7b71bed7df03",
+    "bytes": 38145
+  },
+  "results/app/phase2/edge-profile/Default/Cache/Cache_Data/f_00010f": {
+    "sha256": "fa8c5deaacbb89883fdebe0bdc4a3f4d5b844ea89e93aa1e73277c1f8d727e33",
+    "bytes": 18325
+  },
+  "results/app/phase2/edge-profile/Default/Cache/Cache_Data/f_000110": {
+    "sha256": "50ba79b8e21a52ebc5e01076deacd1b40888895100e0e2c02059bb2fd854b7de",
+    "bytes": 23543
+  },
+  "results/app/phase2/edge-profile/Default/Cache/Cache_Data/f_000111": {
+    "sha256": "c7c676f021c29877b37916004d2c4798755cb7f1aa91d8c5e28d151c76b18b6f",
+    "bytes": 34092
+  },
+  "results/app/phase2/edge-profile/Default/Cache/Cache_Data/f_000112": {
+    "sha256": "c7c676f021c29877b37916004d2c4798755cb7f1aa91d8c5e28d151c76b18b6f",
+    "bytes": 34092
+  },
+  "results/app/phase2/edge-profile/Default/Cache/Cache_Data/f_000113": {
+    "sha256": "0bb6dfb6b63df8d149de6cca7a692ff0cfd85b3082e59791cf5f5128f1591ef4",
+    "bytes": 173942
+  },
+  "results/app/phase2/edge-profile/Default/Cache/Cache_Data/index": {
+    "sha256": "c9c96bc4d4ca15ec160f1feb1cf38fe4436148af72faea3e042553dd1efc7f54",
+    "bytes": 524656
+  },
+  "results/app/phase2/edge-profile/Default/Cache/No_Vary_Search/journal.baj": {
+    "sha256": "9c169428d852e25bd59b27652ed533d2a1f09f96e4c329fa5e06f47e16731543",
+    "bytes": 4
+  },
+  "results/app/phase2/edge-profile/Default/Cache/No_Vary_Search/snapshot.baf": {
+    "sha256": "0c2dd377ed0cc66161e9db8f89f7d8bcb3ad8c06c4a054bdcba214ab05f58c9a",
+    "bytes": 20
+  },
+  "results/app/phase2/edge-profile/Default/ClientCertificates/LOCK": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/ClientCertificates/LOG": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/ClientCertificates/LOG.old": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/Code Cache/js/2a8a6f695a3ff316_0": {
+    "sha256": "2733e3c9609c536d4336724077756854ffd5432e4389aaf51783ed2fcf06d7a2",
+    "bytes": 839
+  },
+  "results/app/phase2/edge-profile/Default/Code Cache/js/2cca9bc741a6516d_0": {
+    "sha256": "3f5d9b853e8767a182276b2ff0542427321b3d3a83db625a4ae43f13591ed5ca",
+    "bytes": 5746
+  },
+  "results/app/phase2/edge-profile/Default/Code Cache/js/5cce1706364839f1_0": {
+    "sha256": "536bc6480e41ae40c24cf0c06a1f7c666ece79bbe96aeb70fdd50904fa61e192",
+    "bytes": 2867
+  },
+  "results/app/phase2/edge-profile/Default/Code Cache/js/5fbb54f36261c413_0": {
+    "sha256": "ec884f3795946bc344468daf207ca56e04ed27616bebbcfa442c31bb33d048c3",
+    "bytes": 2660
+  },
+  "results/app/phase2/edge-profile/Default/Code Cache/js/7de0dc67a2b3a69c_0": {
+    "sha256": "f5f356eb8e941efcc890c576abd2a8ea0f8c520c36c27a2c51c19854b1d15106",
+    "bytes": 1363
+  },
+  "results/app/phase2/edge-profile/Default/Code Cache/js/8020acacb3d13763_0": {
+    "sha256": "0f78b53a250901fb372e467e3250fdfe1c5c8ac43160a1ddf058acfbbf568c5d",
+    "bytes": 2377
+  },
+  "results/app/phase2/edge-profile/Default/Code Cache/js/8bb1867be67136eb_0": {
+    "sha256": "c1e74f72f2997191bc00eb0d19533d1931511fa2a0e643ca5c9c4703a12d5cbe",
+    "bytes": 1265
+  },
+  "results/app/phase2/edge-profile/Default/Code Cache/js/945cb8fb56d09a8e_0": {
+    "sha256": "37621342aee3342b228a1231efbcbfb9214bdfe1ad1966b42edcddb2e5ed389f",
+    "bytes": 2249
+  },
+  "results/app/phase2/edge-profile/Default/Code Cache/js/a0d0b7fce7806812_0": {
+    "sha256": "3939bb3f03a24821310913c8c9c5c95baecd3b5bbb86ccd9c9f08c50127cc9d9",
+    "bytes": 24416
+  },
+  "results/app/phase2/edge-profile/Default/Code Cache/js/b21fb45197b9c728_0": {
+    "sha256": "753b6f57e24d33d3a423da322b79ff25154811cf183f6d3c67fab09ac6d528d0",
+    "bytes": 2383
+  },
+  "results/app/phase2/edge-profile/Default/Code Cache/js/b3c38d73d31dfc22_0": {
+    "sha256": "2c68d5477e56be3f1504a191aa97bb80840885e2edeca09fb0994dee38a720ec",
+    "bytes": 238
+  },
+  "results/app/phase2/edge-profile/Default/Code Cache/js/ba678a2fbd8c358c_0": {
+    "sha256": "7d05f5ac9cdd813de6adc8890adefe5ab054d7697f18d50d02c58ab9477749e6",
+    "bytes": 1250
+  },
+  "results/app/phase2/edge-profile/Default/Code Cache/js/baded5730168391f_0": {
+    "sha256": "dbd5b46b968ecf1eb2eca9ece2337ff9973dc367331eb367d73721f4b9f4e842",
+    "bytes": 1737
+  },
+  "results/app/phase2/edge-profile/Default/Code Cache/js/e94999eac39dfd99_0": {
+    "sha256": "ee843c089b09df09b861dcbf70fe5b0cf03bdf7e874cefb6d0ffffafb782ef20",
+    "bytes": 2317
+  },
+  "results/app/phase2/edge-profile/Default/Code Cache/js/e9a142a21b9ad9ef_0": {
+    "sha256": "56b84482360a0cb4ddbc29589df262b79311b703967f1e42e47a466124c8a8e6",
+    "bytes": 3321
+  },
+  "results/app/phase2/edge-profile/Default/Code Cache/js/ebce9e52a869b921_0": {
+    "sha256": "f17774c350d6d86cb7ef44fb93fd73aec1f9d17d11d4e46320efa0dc3e669504",
+    "bytes": 831
+  },
+  "results/app/phase2/edge-profile/Default/Code Cache/js/f6c5fbeafd83d280_0": {
+    "sha256": "0ede268717ef9f61d7157fa504fda0d4a36868a0ef03fb1dabb0f8c440d0dad6",
+    "bytes": 67080
+  },
+  "results/app/phase2/edge-profile/Default/Code Cache/js/index": {
+    "sha256": "fbcfe23a2ecb82b7100c50811691dde0a33aa3da8d176be9882a9db485dc0f2d",
+    "bytes": 24
+  },
+  "results/app/phase2/edge-profile/Default/Code Cache/js/index-dir/the-real-index": {
+    "sha256": "fc172d58d1231e40cc95c57794b460142edc6ef24f371176b6446265d090b103",
+    "bytes": 456
+  },
+  "results/app/phase2/edge-profile/Default/Code Cache/wasm/index": {
+    "sha256": "fbcfe23a2ecb82b7100c50811691dde0a33aa3da8d176be9882a9db485dc0f2d",
+    "bytes": 24
+  },
+  "results/app/phase2/edge-profile/Default/Code Cache/wasm/index-dir/the-real-index": {
+    "sha256": "eaa672c1c28f692a6348e7cce4a8041d6155dd6ea1e8c088032d0bf53b0c6e17",
+    "bytes": 48
+  },
+  "results/app/phase2/edge-profile/Default/commerce_subscription_db/LOCK": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/commerce_subscription_db/LOG": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/commerce_subscription_db/LOG.old": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/DawnGraphiteCache/data_0": {
+    "sha256": "d6a5fe39cd672781b256e0e3102f7022635f1d4bb7cfcc90a80fffe4d0f3877e",
+    "bytes": 8192
+  },
+  "results/app/phase2/edge-profile/Default/DawnGraphiteCache/data_1": {
+    "sha256": "902f30c1fb0597d0734bc34b979ec5d131f8f39a4b71b338083821216ec8d61b",
+    "bytes": 270336
+  },
+  "results/app/phase2/edge-profile/Default/DawnGraphiteCache/data_2": {
+    "sha256": "ec1702806f4cc7c42a82fc2b38e89835fde7c64bb32060e0823c9077ca92efb7",
+    "bytes": 8192
+  },
+  "results/app/phase2/edge-profile/Default/DawnGraphiteCache/data_3": {
+    "sha256": "e09f42c398d688dce168570291f1f92d079987deda3099a34adb9e8c0522b30c",
+    "bytes": 8192
+  },
+  "results/app/phase2/edge-profile/Default/DawnGraphiteCache/index": {
+    "sha256": "6faa17ca76fb5026115c1f964439823fc72ab5acbd6d00a791dc4b6fe8613c8d",
+    "bytes": 262512
+  },
+  "results/app/phase2/edge-profile/Default/DawnWebGPUCache/data_0": {
+    "sha256": "d6a5fe39cd672781b256e0e3102f7022635f1d4bb7cfcc90a80fffe4d0f3877e",
+    "bytes": 8192
+  },
+  "results/app/phase2/edge-profile/Default/DawnWebGPUCache/data_1": {
+    "sha256": "902f30c1fb0597d0734bc34b979ec5d131f8f39a4b71b338083821216ec8d61b",
+    "bytes": 270336
+  },
+  "results/app/phase2/edge-profile/Default/DawnWebGPUCache/data_2": {
+    "sha256": "ec1702806f4cc7c42a82fc2b38e89835fde7c64bb32060e0823c9077ca92efb7",
+    "bytes": 8192
+  },
+  "results/app/phase2/edge-profile/Default/DawnWebGPUCache/data_3": {
+    "sha256": "e09f42c398d688dce168570291f1f92d079987deda3099a34adb9e8c0522b30c",
+    "bytes": 8192
+  },
+  "results/app/phase2/edge-profile/Default/DawnWebGPUCache/index": {
+    "sha256": "652ef7dd72ccd882bdae22453cd3f752d0c4233b594e8f3878d3c533706d7bfd",
+    "bytes": 262512
+  },
+  "results/app/phase2/edge-profile/Default/discounts_db/LOCK": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/discounts_db/LOG": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/discounts_db/LOG.old": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/discount_infos_db/LOCK": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/discount_infos_db/LOG": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/discount_infos_db/LOG.old": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/DualEngine/SiteList-Consumer.json": {
+    "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "bytes": 2
+  },
+  "results/app/phase2/edge-profile/Default/DualEngine/SiteList-Enterprise.json": {
+    "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "bytes": 2
+  },
+  "results/app/phase2/edge-profile/Default/EdgeCoupons/coupons_data.db/000003.log": {
+    "sha256": "68c7ad234755b9edb06832a084d092660970c89a7305e0c47d327b6ac50dd898",
+    "bytes": 33
+  },
+  "results/app/phase2/edge-profile/Default/EdgeCoupons/coupons_data.db/CURRENT": {
+    "sha256": "0f1bad70c7bd1e0a69562853ec529355462fcd0423263a3d39d6d0d70b780443",
+    "bytes": 16
+  },
+  "results/app/phase2/edge-profile/Default/EdgeCoupons/coupons_data.db/LOCK": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/EdgeCoupons/coupons_data.db/LOG": {
+    "sha256": "7799b8b6cc50b92862ad038975e5d00bf8533fd85b0f9e9fa20c68fa1009c125",
+    "bytes": 322
+  },
+  "results/app/phase2/edge-profile/Default/EdgeCoupons/coupons_data.db/LOG.old": {
+    "sha256": "a2da1eb0080db0ddc77ef4e5b8b023b5c7042a2ce133269047786e5fe7ef2d39",
+    "bytes": 322
+  },
+  "results/app/phase2/edge-profile/Default/EdgeCoupons/coupons_data.db/MANIFEST-000001": {
+    "sha256": "f9d31b278e215eb0d0e9cd709edfa037e828f36214ab7906f612160fead4b2b4",
+    "bytes": 41
+  },
+  "results/app/phase2/edge-profile/Default/EdgeHubAppUsage/EdgeHubAppUsageSQLite.db": {
+    "sha256": "a917da582eb337fff740c1cfdc3c6134c5d6b7819735804a03b89d0237d6a76d",
+    "bytes": 32768
+  },
+  "results/app/phase2/edge-profile/Default/EdgeHubAppUsage/EdgeHubAppUsageSQLite.db-journal": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/EdgePushStorageWithConnectTokenAndKey/LOCK": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/EdgePushStorageWithConnectTokenAndKey/LOG": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/EdgePushStorageWithConnectTokenAndKey/LOG.old": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/EdgeSessions/SessionRestoreLog": {
+    "sha256": "45dec7b5b4485ea630c00a9ef8eab7ab9755c17a318535b79b5d70569e306723",
+    "bytes": 33099
+  },
+  "results/app/phase2/edge-profile/Default/EntityExtraction/domains_config.json": {
+    "sha256": "8b4b80bf0fbad3eda0f53f6dc9875b229dfed6aeedd0f8761a7183d81feff6ef",
+    "bytes": 131562
+  },
+  "results/app/phase2/edge-profile/Default/Extension Rules/000003.log": {
+    "sha256": "39dfdec86949f152a1471442545245ac5f3372b56428a6f61dffac0a3ec159e7",
+    "bytes": 342
+  },
+  "results/app/phase2/edge-profile/Default/Extension Rules/CURRENT": {
+    "sha256": "0f1bad70c7bd1e0a69562853ec529355462fcd0423263a3d39d6d0d70b780443",
+    "bytes": 16
+  },
+  "results/app/phase2/edge-profile/Default/Extension Rules/LOCK": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/Extension Rules/LOG": {
+    "sha256": "304fe24ab87213599987d5f4bbfaf55361f532e81dbf7132e81d60da526fe033",
+    "bytes": 298
+  },
+  "results/app/phase2/edge-profile/Default/Extension Rules/LOG.old": {
+    "sha256": "735767d14f1221f550281f4d9641530850a201a4b0d986ee0915153206c6142c",
+    "bytes": 257
+  },
+  "results/app/phase2/edge-profile/Default/Extension Rules/MANIFEST-000001": {
+    "sha256": "f9d31b278e215eb0d0e9cd709edfa037e828f36214ab7906f612160fead4b2b4",
+    "bytes": 41
+  },
+  "results/app/phase2/edge-profile/Default/Extension Scripts/000003.log": {
+    "sha256": "39dfdec86949f152a1471442545245ac5f3372b56428a6f61dffac0a3ec159e7",
+    "bytes": 342
+  },
+  "results/app/phase2/edge-profile/Default/Extension Scripts/CURRENT": {
+    "sha256": "0f1bad70c7bd1e0a69562853ec529355462fcd0423263a3d39d6d0d70b780443",
+    "bytes": 16
+  },
+  "results/app/phase2/edge-profile/Default/Extension Scripts/LOCK": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/Extension Scripts/LOG": {
+    "sha256": "d9440e5cacad61c4c363c483b984ce903682a95e76b97385f5db7934c8749333",
+    "bytes": 302
+  },
+  "results/app/phase2/edge-profile/Default/Extension Scripts/LOG.old": {
+    "sha256": "6ea5701066b6ab0982edf5e17a662644e6ede703ed25ece2f86c4e21e1e6551a",
+    "bytes": 261
+  },
+  "results/app/phase2/edge-profile/Default/Extension Scripts/MANIFEST-000001": {
+    "sha256": "f9d31b278e215eb0d0e9cd709edfa037e828f36214ab7906f612160fead4b2b4",
+    "bytes": 41
+  },
+  "results/app/phase2/edge-profile/Default/Extension State/000003.log": {
+    "sha256": "9f131df8a956bf99480ebb900b6cc8458f3d061ade0d17319fe271fa98269ba2",
+    "bytes": 1026
+  },
+  "results/app/phase2/edge-profile/Default/Extension State/CURRENT": {
+    "sha256": "0f1bad70c7bd1e0a69562853ec529355462fcd0423263a3d39d6d0d70b780443",
+    "bytes": 16
+  },
+  "results/app/phase2/edge-profile/Default/Extension State/LOCK": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/Extension State/LOG": {
+    "sha256": "1ca7a27ba9ad5b58c5ca83c246af23378c3d60064073c77c83a879fb0261b9d7",
+    "bytes": 295
+  },
+  "results/app/phase2/edge-profile/Default/Extension State/LOG.old": {
+    "sha256": "4428014b04ae6d1890540fc6b8538ebcd0d98e506177179f5c3fb75468f97b6b",
+    "bytes": 298
+  },
+  "results/app/phase2/edge-profile/Default/Extension State/MANIFEST-000001": {
+    "sha256": "f9d31b278e215eb0d0e9cd709edfa037e828f36214ab7906f612160fead4b2b4",
+    "bytes": 41
+  },
+  "results/app/phase2/edge-profile/Default/GPUCache/data_0": {
+    "sha256": "d6a5fe39cd672781b256e0e3102f7022635f1d4bb7cfcc90a80fffe4d0f3877e",
+    "bytes": 8192
+  },
+  "results/app/phase2/edge-profile/Default/GPUCache/data_1": {
+    "sha256": "902f30c1fb0597d0734bc34b979ec5d131f8f39a4b71b338083821216ec8d61b",
+    "bytes": 270336
+  },
+  "results/app/phase2/edge-profile/Default/GPUCache/data_2": {
+    "sha256": "ec1702806f4cc7c42a82fc2b38e89835fde7c64bb32060e0823c9077ca92efb7",
+    "bytes": 8192
+  },
+  "results/app/phase2/edge-profile/Default/GPUCache/data_3": {
+    "sha256": "e09f42c398d688dce168570291f1f92d079987deda3099a34adb9e8c0522b30c",
+    "bytes": 8192
+  },
+  "results/app/phase2/edge-profile/Default/GPUCache/index": {
+    "sha256": "76a2ec957359f022f8ac16c62e44aa64bee1835d1cde1a18f9d39b5cb549fd0f",
+    "bytes": 262512
+  },
+  "results/app/phase2/edge-profile/Default/Local Extension Settings/jdiccldimpdaibmpdkjnbmckianbfold/000003.log": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/Local Extension Settings/jdiccldimpdaibmpdkjnbmckianbfold/CURRENT": {
+    "sha256": "0f1bad70c7bd1e0a69562853ec529355462fcd0423263a3d39d6d0d70b780443",
+    "bytes": 16
+  },
+  "results/app/phase2/edge-profile/Default/Local Extension Settings/jdiccldimpdaibmpdkjnbmckianbfold/LOCK": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/Local Extension Settings/jdiccldimpdaibmpdkjnbmckianbfold/LOG": {
+    "sha256": "5daf5c4d8f9f90a0675179562503fbf053a2e187a260b93711cd47026304e03c",
+    "bytes": 382
+  },
+  "results/app/phase2/edge-profile/Default/Local Extension Settings/jdiccldimpdaibmpdkjnbmckianbfold/LOG.old": {
+    "sha256": "65010a8cc0d1f40f72ca48c5862202c6229a95e9b3e49358565f6933c47554e0",
+    "bytes": 341
+  },
+  "results/app/phase2/edge-profile/Default/Local Extension Settings/jdiccldimpdaibmpdkjnbmckianbfold/MANIFEST-000001": {
+    "sha256": "f9d31b278e215eb0d0e9cd709edfa037e828f36214ab7906f612160fead4b2b4",
+    "bytes": 41
+  },
+  "results/app/phase2/edge-profile/Default/Local Storage/leveldb/000003.log": {
+    "sha256": "8bd2ea70a0b70c91de138a5b87c7936c6a6fa7c4275c54b97f4ef0ccc5b79bb4",
+    "bytes": 30
+  },
+  "results/app/phase2/edge-profile/Default/Local Storage/leveldb/CURRENT": {
+    "sha256": "0f1bad70c7bd1e0a69562853ec529355462fcd0423263a3d39d6d0d70b780443",
+    "bytes": 16
+  },
+  "results/app/phase2/edge-profile/Default/Local Storage/leveldb/LOCK": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/Local Storage/leveldb/LOG": {
+    "sha256": "df73fb2897fc34861ad27a0a5f7bf95e39369833a7c9f7927c9503413c5a96b0",
+    "bytes": 310
+  },
+  "results/app/phase2/edge-profile/Default/Local Storage/leveldb/LOG.old": {
+    "sha256": "0386598690716e757b2e3563af17d3d554560211ad32e2879bdf3db5ee687334",
+    "bytes": 310
+  },
+  "results/app/phase2/edge-profile/Default/Local Storage/leveldb/MANIFEST-000001": {
+    "sha256": "f9d31b278e215eb0d0e9cd709edfa037e828f36214ab7906f612160fead4b2b4",
+    "bytes": 41
+  },
+  "results/app/phase2/edge-profile/Default/Network/Cookies": {
+    "sha256": "328f9ac265f677c9338a743dcde477a14247e507cef80e4b63152aac48cc79cc",
+    "bytes": 20480
+  },
+  "results/app/phase2/edge-profile/Default/Network/Cookies-journal": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/Network/Device Bound Sessions": {
+    "sha256": "6a22ff7ca6e53a73bc4578271e5f5bf34cdd7c1c9e8e13aea5db31ae5b2618d2",
+    "bytes": 20480
+  },
+  "results/app/phase2/edge-profile/Default/Network/Device Bound Sessions-journal": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/Network/Network Persistent State": {
+    "sha256": "0178d3cd64965de13e56a805628521262dc0b9bb2294d6eda186252382fe1f11",
+    "bytes": 59
+  },
+  "results/app/phase2/edge-profile/Default/Network/NetworkDataMigrated": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/Network/Reporting and NEL": {
+    "sha256": "2d6dada0da20730019917ab502a8189099aa5ad98a1b23cd30715d6f9689ef11",
+    "bytes": 36864
+  },
+  "results/app/phase2/edge-profile/Default/Network/Reporting and NEL-journal": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/Network/SCT Auditing Pending Reports": {
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "bytes": 2
+  },
+  "results/app/phase2/edge-profile/Default/Network/Sdch Dictionaries": {
+    "sha256": "6028bd681dbf11a0a58dde8a0cd884115c04caa59d080ba51bde1b086ce0079d",
+    "bytes": 40
+  },
+  "results/app/phase2/edge-profile/Default/Network/Trust Tokens": {
+    "sha256": "88bafa2a265212152b2405502209d64438a416ff594a040e666f031ef442a812",
+    "bytes": 36864
+  },
+  "results/app/phase2/edge-profile/Default/Network/Trust Tokens-journal": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/Nurturing/campaign_history": {
+    "sha256": "bf3caa0226349b642e67dbccd9d8125c8c9c402a60a8e4e6295b7dad48feb3dd",
+    "bytes": 20480
+  },
+  "results/app/phase2/edge-profile/Default/Nurturing/campaign_history-journal": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/optimization_guide_hint_cache_store/LOCK": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/optimization_guide_hint_cache_store/LOG": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/optimization_guide_hint_cache_store/LOG.old": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/parcel_tracking_db/LOCK": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/parcel_tracking_db/LOG": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/parcel_tracking_db/LOG.old": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/PersistentOriginTrials/LOCK": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/PersistentOriginTrials/LOG": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/PersistentOriginTrials/LOG.old": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/Segmentation Platform/SegmentInfoDB/LOCK": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/Segmentation Platform/SegmentInfoDB/LOG": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/Segmentation Platform/SegmentInfoDB/LOG.old": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/Segmentation Platform/SignalDB/LOCK": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/Segmentation Platform/SignalDB/LOG": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/Segmentation Platform/SignalDB/LOG.old": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/Segmentation Platform/SignalStorageConfigDB/LOCK": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/Segmentation Platform/SignalStorageConfigDB/LOG": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/Segmentation Platform/SignalStorageConfigDB/LOG.old": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/Service Worker/Database/000003.log": {
+    "sha256": "37c65f7a91e1580148e71d3dc896b217552cc72f97ffd8c6ed8754cd3ada8993",
+    "bytes": 1038
+  },
+  "results/app/phase2/edge-profile/Default/Service Worker/Database/CURRENT": {
+    "sha256": "0f1bad70c7bd1e0a69562853ec529355462fcd0423263a3d39d6d0d70b780443",
+    "bytes": 16
+  },
+  "results/app/phase2/edge-profile/Default/Service Worker/Database/LOCK": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/Service Worker/Database/LOG": {
+    "sha256": "b57327abf32614c98c1c9b902fa0a3eb6c336a4efb7d596d872e004db8b3620e",
+    "bytes": 314
+  },
+  "results/app/phase2/edge-profile/Default/Service Worker/Database/LOG.old": {
+    "sha256": "80fa654a862ee92027fad8c29d75f15c7acf9cb85ff29f6bee8052541cd22d8b",
+    "bytes": 314
+  },
+  "results/app/phase2/edge-profile/Default/Service Worker/Database/MANIFEST-000001": {
+    "sha256": "f9d31b278e215eb0d0e9cd709edfa037e828f36214ab7906f612160fead4b2b4",
+    "bytes": 41
+  },
+  "results/app/phase2/edge-profile/Default/Service Worker/ScriptCache/2cc80dabc69f58b6_0": {
+    "sha256": "69ebe94509e6c6c9a51f2bdedd1e18e47b7f1da5847a095ae5404c60ed8631a7",
+    "bytes": 318069
+  },
+  "results/app/phase2/edge-profile/Default/Service Worker/ScriptCache/index": {
+    "sha256": "fbcfe23a2ecb82b7100c50811691dde0a33aa3da8d176be9882a9db485dc0f2d",
+    "bytes": 24
+  },
+  "results/app/phase2/edge-profile/Default/Service Worker/ScriptCache/index-dir/the-real-index": {
+    "sha256": "ac13c057a7f99a4d6dc42aacf7cb69bcf0444263876cb9990840a7bc1b5aed74",
+    "bytes": 72
+  },
+  "results/app/phase2/edge-profile/Default/Session Storage/000003.log": {
+    "sha256": "ac7f20464b308d5eb78fe9b4c6b6759e023688fd322e7f7f63352efd112e043f",
+    "bytes": 144
+  },
+  "results/app/phase2/edge-profile/Default/Session Storage/CURRENT": {
+    "sha256": "0f1bad70c7bd1e0a69562853ec529355462fcd0423263a3d39d6d0d70b780443",
+    "bytes": 16
+  },
+  "results/app/phase2/edge-profile/Default/Session Storage/LOCK": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/Session Storage/LOG": {
+    "sha256": "89632f8b262b0f1564d6b882ef776e967426dd060a6cc44bd3778f2ab6f3719f",
+    "bytes": 298
+  },
+  "results/app/phase2/edge-profile/Default/Session Storage/LOG.old": {
+    "sha256": "ea7d504c91cf34e8aba4455a51146a6ac78f37a332d1bbb094b74a3ee39cecea",
+    "bytes": 298
+  },
+  "results/app/phase2/edge-profile/Default/Session Storage/MANIFEST-000001": {
+    "sha256": "f9d31b278e215eb0d0e9cd709edfa037e828f36214ab7906f612160fead4b2b4",
+    "bytes": 41
+  },
+  "results/app/phase2/edge-profile/Default/Sessions/Session_13434899118573457": {
+    "sha256": "247230f630b8b63baee6c5d919b03beeccfc3a5e4b9fe05cb34f96abaf6a7eb5",
+    "bytes": 27511
+  },
+  "results/app/phase2/edge-profile/Default/Sessions/Tabs_13434904956890567": {
+    "sha256": "836b5f42c6daa9dfef884d8fee02eb7273e63c27cfbeeb39ad187aa036c6dfe0",
+    "bytes": 270507
+  },
+  "results/app/phase2/edge-profile/Default/Sessions/Tabs_13434905429489410": {
+    "sha256": "f12697f6d2defbd09575bc0e7ec6a941944ad39c7e25575420b8e1d173fe30eb",
+    "bytes": 294130
+  },
+  "results/app/phase2/edge-profile/Default/Shared Dictionary/db": {
+    "sha256": "0d6287fecedbc44ed9f51ded9de88629ec9f385ecff5da9a34e47e96fd5a9cba",
+    "bytes": 45056
+  },
+  "results/app/phase2/edge-profile/Default/Shared Dictionary/db-journal": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/Shared Dictionary/cache/index": {
+    "sha256": "fbcfe23a2ecb82b7100c50811691dde0a33aa3da8d176be9882a9db485dc0f2d",
+    "bytes": 24
+  },
+  "results/app/phase2/edge-profile/Default/Shared Dictionary/cache/index-dir/the-real-index": {
+    "sha256": "9d3df491e61f0d9ddb93d2554e7dc0dbbc6356cb608660a7f330321f4ad304d4",
+    "bytes": 48
+  },
+  "results/app/phase2/edge-profile/Default/shared_proto_db/000003.log": {
+    "sha256": "b6c6dd9335fbf9365e49a15dc2840d2833c965fb62ef8a1be67c932750d32c7c",
+    "bytes": 12867
+  },
+  "results/app/phase2/edge-profile/Default/shared_proto_db/CURRENT": {
+    "sha256": "0f1bad70c7bd1e0a69562853ec529355462fcd0423263a3d39d6d0d70b780443",
+    "bytes": 16
+  },
+  "results/app/phase2/edge-profile/Default/shared_proto_db/LOCK": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/shared_proto_db/LOG": {
+    "sha256": "c8ea3d0026c477d25c6a5fa2d4802350d2dc3334a3f91e4a167c560f003aa5f3",
+    "bytes": 298
+  },
+  "results/app/phase2/edge-profile/Default/shared_proto_db/LOG.old": {
+    "sha256": "a6d895a82100140a2ff2a244bd550c3bb85c4c657d139cc82ba4a221db67b062",
+    "bytes": 298
+  },
+  "results/app/phase2/edge-profile/Default/shared_proto_db/MANIFEST-000001": {
+    "sha256": "f9d31b278e215eb0d0e9cd709edfa037e828f36214ab7906f612160fead4b2b4",
+    "bytes": 41
+  },
+  "results/app/phase2/edge-profile/Default/shared_proto_db/metadata/000003.log": {
+    "sha256": "9fecafb07e8a6e434a1eac31297f2fa302c69d59558ae451115af83ab2b8eecf",
+    "bytes": 1356
+  },
+  "results/app/phase2/edge-profile/Default/shared_proto_db/metadata/CURRENT": {
+    "sha256": "0f1bad70c7bd1e0a69562853ec529355462fcd0423263a3d39d6d0d70b780443",
+    "bytes": 16
+  },
+  "results/app/phase2/edge-profile/Default/shared_proto_db/metadata/LOCK": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/shared_proto_db/metadata/LOG": {
+    "sha256": "e60174a31485ca6b8e93e8ad15c537c935f4922d90e385e6df39564378788589",
+    "bytes": 316
+  },
+  "results/app/phase2/edge-profile/Default/shared_proto_db/metadata/LOG.old": {
+    "sha256": "697e5e3702f7e9e0756225b5407af64a148f898e14f34c16157adb284c4b85f6",
+    "bytes": 316
+  },
+  "results/app/phase2/edge-profile/Default/shared_proto_db/metadata/MANIFEST-000001": {
+    "sha256": "f9d31b278e215eb0d0e9cd709edfa037e828f36214ab7906f612160fead4b2b4",
+    "bytes": 41
+  },
+  "results/app/phase2/edge-profile/Default/Site Characteristics Database/000003.log": {
+    "sha256": "f096bc366a931fba656bdcd77b24af15a5f29fc53281a727c79f82c608ecfab8",
+    "bytes": 40
+  },
+  "results/app/phase2/edge-profile/Default/Site Characteristics Database/CURRENT": {
+    "sha256": "0f1bad70c7bd1e0a69562853ec529355462fcd0423263a3d39d6d0d70b780443",
+    "bytes": 16
+  },
+  "results/app/phase2/edge-profile/Default/Site Characteristics Database/LOCK": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/Site Characteristics Database/LOG": {
+    "sha256": "c523e7f7403e9db0379d53648babdbe57e306590c90087178482c1d0b1076575",
+    "bytes": 326
+  },
+  "results/app/phase2/edge-profile/Default/Site Characteristics Database/LOG.old": {
+    "sha256": "abaf9049344dad30ab1068650f15142368a7538419b9768dd0b23cbd694ab2f4",
+    "bytes": 326
+  },
+  "results/app/phase2/edge-profile/Default/Site Characteristics Database/MANIFEST-000001": {
+    "sha256": "f9d31b278e215eb0d0e9cd709edfa037e828f36214ab7906f612160fead4b2b4",
+    "bytes": 41
+  },
+  "results/app/phase2/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/declarative_performance_observer.db": {
+    "sha256": "eda4c9567974174f08a1dbcd8badf4d6199a7e9a8b78b8826548f49e20e7badf",
+    "bytes": 32768
+  },
+  "results/app/phase2/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/declarative_performance_observer.db-journal": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Code Cache/js/6f3a0dc5e6916f1e_0": {
+    "sha256": "fee0aa48ed15acb9a2657d8da1f1712c48e87512bc6eee17b2d78cea73ef2a5e",
+    "bytes": 3109
+  },
+  "results/app/phase2/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Code Cache/js/index": {
+    "sha256": "fbcfe23a2ecb82b7100c50811691dde0a33aa3da8d176be9882a9db485dc0f2d",
+    "bytes": 24
+  },
+  "results/app/phase2/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Code Cache/js/index-dir/the-real-index": {
+    "sha256": "a688959403b10b327b1cb5cf18aa8509366a2db5f532f1f42dab20a706e91f72",
+    "bytes": 72
+  },
+  "results/app/phase2/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Code Cache/wasm/index": {
+    "sha256": "fbcfe23a2ecb82b7100c50811691dde0a33aa3da8d176be9882a9db485dc0f2d",
+    "bytes": 24
+  },
+  "results/app/phase2/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Code Cache/wasm/index-dir/the-real-index": {
+    "sha256": "fbd75286eb379c7eaf245af3035d53a21cf6c993ba10fd8b3dc667046e943779",
+    "bytes": 48
+  },
+  "results/app/phase2/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/DawnGraphiteCache/data_0": {
+    "sha256": "d6a5fe39cd672781b256e0e3102f7022635f1d4bb7cfcc90a80fffe4d0f3877e",
+    "bytes": 8192
+  },
+  "results/app/phase2/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/DawnGraphiteCache/data_1": {
+    "sha256": "b1e963d702392fb7224786e7d56d43973e9b9efd1b89c17814d7c558ffc0cdec",
+    "bytes": 270336
+  },
+  "results/app/phase2/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/DawnGraphiteCache/data_2": {
+    "sha256": "ec1702806f4cc7c42a82fc2b38e89835fde7c64bb32060e0823c9077ca92efb7",
+    "bytes": 8192
+  },
+  "results/app/phase2/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/DawnGraphiteCache/data_3": {
+    "sha256": "e09f42c398d688dce168570291f1f92d079987deda3099a34adb9e8c0522b30c",
+    "bytes": 8192
+  },
+  "results/app/phase2/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/DawnGraphiteCache/index": {
+    "sha256": "7d5d0a2f1bfaba53ace6a2cc0133237b9a2c371503900468b39381f1f475c743",
+    "bytes": 262512
+  },
+  "results/app/phase2/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/DawnWebGPUCache/data_0": {
+    "sha256": "d6a5fe39cd672781b256e0e3102f7022635f1d4bb7cfcc90a80fffe4d0f3877e",
+    "bytes": 8192
+  },
+  "results/app/phase2/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/DawnWebGPUCache/data_1": {
+    "sha256": "b1e963d702392fb7224786e7d56d43973e9b9efd1b89c17814d7c558ffc0cdec",
+    "bytes": 270336
+  },
+  "results/app/phase2/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/DawnWebGPUCache/data_2": {
+    "sha256": "ec1702806f4cc7c42a82fc2b38e89835fde7c64bb32060e0823c9077ca92efb7",
+    "bytes": 8192
+  },
+  "results/app/phase2/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/DawnWebGPUCache/data_3": {
+    "sha256": "e09f42c398d688dce168570291f1f92d079987deda3099a34adb9e8c0522b30c",
+    "bytes": 8192
+  },
+  "results/app/phase2/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/DawnWebGPUCache/index": {
+    "sha256": "8d4bec104ddb9b7dd52fb84a44c667cf4ed867bb106892f417ff03cd5b0d9580",
+    "bytes": 262512
+  },
+  "results/app/phase2/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/GPUCache/data_0": {
+    "sha256": "d6a5fe39cd672781b256e0e3102f7022635f1d4bb7cfcc90a80fffe4d0f3877e",
+    "bytes": 8192
+  },
+  "results/app/phase2/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/GPUCache/data_1": {
+    "sha256": "b1e963d702392fb7224786e7d56d43973e9b9efd1b89c17814d7c558ffc0cdec",
+    "bytes": 270336
+  },
+  "results/app/phase2/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/GPUCache/data_2": {
+    "sha256": "ec1702806f4cc7c42a82fc2b38e89835fde7c64bb32060e0823c9077ca92efb7",
+    "bytes": 8192
+  },
+  "results/app/phase2/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/GPUCache/data_3": {
+    "sha256": "e09f42c398d688dce168570291f1f92d079987deda3099a34adb9e8c0522b30c",
+    "bytes": 8192
+  },
+  "results/app/phase2/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/GPUCache/index": {
+    "sha256": "55b3f2bc1f82a7e4deb2aee7838854bfe70aadbd0584f3ed33903b24a3bab2da",
+    "bytes": 262512
+  },
+  "results/app/phase2/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Local Storage/leveldb/000003.log": {
+    "sha256": "8bd2ea70a0b70c91de138a5b87c7936c6a6fa7c4275c54b97f4ef0ccc5b79bb4",
+    "bytes": 30
+  },
+  "results/app/phase2/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Local Storage/leveldb/CURRENT": {
+    "sha256": "0f1bad70c7bd1e0a69562853ec529355462fcd0423263a3d39d6d0d70b780443",
+    "bytes": 16
+  },
+  "results/app/phase2/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Local Storage/leveldb/LOCK": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Local Storage/leveldb/LOG": {
+    "sha256": "14b461d39edd6cbf54c6d3db0e58e971927d7bd1df0beaac4b42970fb10f9e32",
+    "bytes": 408
+  },
+  "results/app/phase2/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Local Storage/leveldb/LOG.old": {
+    "sha256": "5d6bb5eae63b0adbf1d48b02c8946e77112854effccda4ef6cf05bde172f0215",
+    "bytes": 367
+  },
+  "results/app/phase2/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Local Storage/leveldb/MANIFEST-000001": {
+    "sha256": "f9d31b278e215eb0d0e9cd709edfa037e828f36214ab7906f612160fead4b2b4",
+    "bytes": 41
+  },
+  "results/app/phase2/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Network/Device Bound Sessions": {
+    "sha256": "6a22ff7ca6e53a73bc4578271e5f5bf34cdd7c1c9e8e13aea5db31ae5b2618d2",
+    "bytes": 20480
+  },
+  "results/app/phase2/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Network/Device Bound Sessions-journal": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Network/Network Persistent State": {
+    "sha256": "0178d3cd64965de13e56a805628521262dc0b9bb2294d6eda186252382fe1f11",
+    "bytes": 59
+  },
+  "results/app/phase2/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Network/NetworkDataMigrated": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Network/SCT Auditing Pending Reports": {
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "bytes": 2
+  },
+  "results/app/phase2/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Network/Sdch Dictionaries": {
+    "sha256": "6028bd681dbf11a0a58dde8a0cd884115c04caa59d080ba51bde1b086ce0079d",
+    "bytes": 40
+  },
+  "results/app/phase2/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Network/Trust Tokens": {
+    "sha256": "88bafa2a265212152b2405502209d64438a416ff594a040e666f031ef442a812",
+    "bytes": 36864
+  },
+  "results/app/phase2/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Network/Trust Tokens-journal": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Session Storage/000003.log": {
+    "sha256": "ffd700cf04be6fe8d51e2ffb8a2e37bc3fa95a6679a4102fa35e8494c2350eae",
+    "bytes": 49
+  },
+  "results/app/phase2/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Session Storage/CURRENT": {
+    "sha256": "0f1bad70c7bd1e0a69562853ec529355462fcd0423263a3d39d6d0d70b780443",
+    "bytes": 16
+  },
+  "results/app/phase2/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Session Storage/LOCK": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Session Storage/LOG": {
+    "sha256": "9509a96b50ee71f13a9fa849c4f06d83f672828a700013ea73cfc638dedbe339",
+    "bytes": 355
+  },
+  "results/app/phase2/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Session Storage/MANIFEST-000001": {
+    "sha256": "f9d31b278e215eb0d0e9cd709edfa037e828f36214ab7906f612160fead4b2b4",
+    "bytes": 41
+  },
+  "results/app/phase2/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Shared Dictionary/db": {
+    "sha256": "0d6287fecedbc44ed9f51ded9de88629ec9f385ecff5da9a34e47e96fd5a9cba",
+    "bytes": 45056
+  },
+  "results/app/phase2/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Shared Dictionary/db-journal": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Shared Dictionary/cache/index": {
+    "sha256": "fbcfe23a2ecb82b7100c50811691dde0a33aa3da8d176be9882a9db485dc0f2d",
+    "bytes": 24
+  },
+  "results/app/phase2/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Shared Dictionary/cache/index-dir/the-real-index": {
+    "sha256": "ade6d9338280543fae0b0341deccb567f715842102e37cf5022f1c63b75e0462",
+    "bytes": 48
+  },
+  "results/app/phase2/edge-profile/Default/Sync Data/LevelDB/000003.log": {
+    "sha256": "36d7690ba74171fc7089161dc8a77b39231c5f5a4846861a0158b69e3464036b",
+    "bytes": 422
+  },
+  "results/app/phase2/edge-profile/Default/Sync Data/LevelDB/CURRENT": {
+    "sha256": "0f1bad70c7bd1e0a69562853ec529355462fcd0423263a3d39d6d0d70b780443",
+    "bytes": 16
+  },
+  "results/app/phase2/edge-profile/Default/Sync Data/LevelDB/LOCK": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/Default/Sync Data/LevelDB/LOG": {
+    "sha256": "bd3a0a54dec7af626ebfd4cf69931381af58831acd742a98c1797540182a8d8a",
+    "bytes": 302
+  },
+  "results/app/phase2/edge-profile/Default/Sync Data/LevelDB/LOG.old": {
+    "sha256": "9f1fd88b3d28e19d415f2721cd729f68ae94161d00dafbd1b20c8f20f0f0fa61",
+    "bytes": 302
+  },
+  "results/app/phase2/edge-profile/Default/Sync Data/LevelDB/MANIFEST-000001": {
+    "sha256": "f9d31b278e215eb0d0e9cd709edfa037e828f36214ab7906f612160fead4b2b4",
+    "bytes": 41
+  },
+  "results/app/phase2/edge-profile/Default/Sync Data/Logs/sync_diagnostic.log": {
+    "sha256": "35487c09bc1e1c39d5971f9fcc9542d8093adf1b019ca10b9d3d16deec04fded",
+    "bytes": 35434
+  },
+  "results/app/phase2/edge-profile/Default/WebStorage/QuotaManager": {
+    "sha256": "aba8e7c951ebd7a43f5469d68c5b54279e88826e07459e92dba80aa9d38f0c24",
+    "bytes": 40960
+  },
+  "results/app/phase2/edge-profile/Default/WebStorage/QuotaManager-journal": {
+    "sha256": "4c2ba3602aae9dbf71155e69b84cb1584bf798d39182d9e8d25aeec16a4a7feb",
+    "bytes": 8720
+  },
+  "results/app/phase2/edge-profile/Default/Workspaces/Logs/Workspaces Diagnostic Log": {
+    "sha256": "7b31684e3f475fec5231001434aceed4e35a1a8e270f352eef9f8d17826eecf8",
+    "bytes": 658
+  },
+  "results/app/phase2/edge-profile/Default/Workspaces/Logs/Workspaces Internals Logs": {
+    "sha256": "638e9bc17bb276ef505606f479244cfce18c959fbe86b9747e83b44ea59f0bbd",
+    "bytes": 31894
+  },
+  "results/app/phase2/edge-profile/Edge Entity Extraction/2026.9.20.2/manifest.json": {
+    "sha256": "9ece98d06b98c8c40922e56cfe84ac6174821c881f69c187527cf3d9bbf7391b",
+    "bytes": 87
+  },
+  "results/app/phase2/edge-profile/Edge Entity Extraction/2026.9.20.2/domains_config_gz/2.0.0/asset": {
+    "sha256": "efc5ecabfd47f8c5eff3cbae4d3d51c7bf4dbb6af22955e1d89e99ccb65ddfcc",
+    "bytes": 374872
+  },
+  "results/app/phase2/edge-profile/Edge Entity Extraction/2026.9.20.2/domains_config_gz/2.0.0/metadata.json": {
+    "sha256": "fa3ddd74d9fe5418ff9f9298380be88675dd82a9ee5c0f76c36606bdd8635e71",
+    "bytes": 168
+  },
+  "results/app/phase2/edge-profile/Edge Entity Extraction/2026.9.20.2/domains_config_gz/2.0.0-DeepEEEnUs/asset": {
+    "sha256": "765eec784c87d44f7c1898903cfb50482ad78eb2f0f3ec8eb7f38c2a8a66463f",
+    "bytes": 262609
+  },
+  "results/app/phase2/edge-profile/Edge Entity Extraction/2026.9.20.2/domains_config_gz/2.0.0-DeepEEEnUs/metadata.json": {
+    "sha256": "2b956449ab63474af3e7ff1df21344f9288d0a38b7d3afdc9daaa3cecd610d22",
+    "bytes": 179
+  },
+  "results/app/phase2/edge-profile/Edge Entity Extraction/2026.9.20.2/domains_config_gz/2.0.0-DeepEEEnUsProductByRegexOnly/asset": {
+    "sha256": "2ddeeeb9f6088fa6d899f6e2a5271bdc0d526ed403905b1f5c4407fb75ce78f9",
+    "bytes": 262232
+  },
+  "results/app/phase2/edge-profile/Edge Entity Extraction/2026.9.20.2/domains_config_gz/2.0.0-DeepEEEnUsProductByRegexOnly/metadata.json": {
+    "sha256": "40f7c1b268dedce3aa8c283fc59eac1210ddca9dbea81af80831569c63edced9",
+    "bytes": 197
+  },
+  "results/app/phase2/edge-profile/Edge Entity Extraction/2026.9.20.2/domains_config_gz/3.0.0/asset": {
+    "sha256": "58e92ce556f2187b016ea6873b6bb2e7ed6dcadbdab1c99787f7ada8116af4a6",
+    "bytes": 151426
+  },
+  "results/app/phase2/edge-profile/Edge Entity Extraction/2026.9.20.2/domains_config_gz/3.0.0/metadata.json": {
+    "sha256": "dc4aa550e3a072fe4f96d1ba81f2d73d1c000e75096b40ef1b29a25a191261d6",
+    "bytes": 168
+  },
+  "results/app/phase2/edge-profile/Edge Entity Extraction/2026.9.20.2/domains_config_gz/3.0.0-DeepEEEnUs/asset": {
+    "sha256": "6d6ad43971fb97f63a34eac9e40eb853fe47e8c376a9c7ebe5448c9a78d66971",
+    "bytes": 142474
+  },
+  "results/app/phase2/edge-profile/Edge Entity Extraction/2026.9.20.2/domains_config_gz/3.0.0-DeepEEEnUs/metadata.json": {
+    "sha256": "0416ba13c4eb83915d55181dff0c897dd431c5ed4b7fe1764b4c6e0b6a5d8435",
+    "bytes": 179
+  },
+  "results/app/phase2/edge-profile/Edge Entity Extraction/2026.9.20.2/domains_config_gz/3.0.0-DeepEEEnUsProductByRegexOnly/asset": {
+    "sha256": "05502eeaea0d5ecd45676fae4f17eb9a767b4d2217e8a61bd914e6d708a6db8d",
+    "bytes": 142097
+  },
+  "results/app/phase2/edge-profile/Edge Entity Extraction/2026.9.20.2/domains_config_gz/3.0.0-DeepEEEnUsProductByRegexOnly/metadata.json": {
+    "sha256": "9763ab74a214a7326851ba924b467817c21df3c887b99564a33c11cf5caff2b1",
+    "bytes": 197
+  },
+  "results/app/phase2/edge-profile/Edge Entity Extraction/2026.9.20.2/domains_config_gz/3.0.0-DeepEEEnUsRegexOnly/asset": {
+    "sha256": "05502eeaea0d5ecd45676fae4f17eb9a767b4d2217e8a61bd914e6d708a6db8d",
+    "bytes": 142097
+  },
+  "results/app/phase2/edge-profile/Edge Entity Extraction/2026.9.20.2/domains_config_gz/3.0.0-DeepEEEnUsRegexOnly/metadata.json": {
+    "sha256": "b1bc8c97678821181871b8e8b1d1cd77bf4dab99bfa845262b9c8503a316070b",
+    "bytes": 188
+  },
+  "results/app/phase2/edge-profile/Edge Entity Extraction/2026.9.20.2/domains_config_gz/3.0.0-HeuristicClassifierOptimization/asset": {
+    "sha256": "98b00c792d417051eb3b176398ecf221f18325684e93d2e894356a3fd18a398a",
+    "bytes": 162536
+  },
+  "results/app/phase2/edge-profile/Edge Entity Extraction/2026.9.20.2/domains_config_gz/3.0.0-HeuristicClassifierOptimization/metadata.json": {
+    "sha256": "fb5c89091f1035cdbd903ce7cfbcd578b2cef35e9a46f36afa5f19ceca078d18",
+    "bytes": 200
+  },
+  "results/app/phase2/edge-profile/Edge Entity Extraction/2026.9.20.2/domains_config_gz/3.0.0-LogisticProductPageClassifier/asset": {
+    "sha256": "9c64ce01ddbdb1b0b936ce6d870096bb8f78d756589468dad9824608bddf918f",
+    "bytes": 174605
+  },
+  "results/app/phase2/edge-profile/Edge Entity Extraction/2026.9.20.2/domains_config_gz/3.0.0-LogisticProductPageClassifier/metadata.json": {
+    "sha256": "207a727e61b51499c219cc26a82b2f41332e01515ecd7dd6004701f28a16f9a1",
+    "bytes": 198
+  },
+  "results/app/phase2/edge-profile/Edge Entity Extraction/2026.9.20.2/onnx.product.desktop.en/3.2.3/asset": {
+    "sha256": "ae2fc516f1eaed6f291f4ceb313c6f827ce8c7f61a611e19df1fc705fa7c9069",
+    "bytes": 8414000
+  },
+  "results/app/phase2/edge-profile/Edge Entity Extraction/2026.9.20.2/onnx.product.desktop.en/3.2.3/metadata.json": {
+    "sha256": "4f4c17e883f8b957be120e6f84d58c9b007b2ea0585e3feeec7a9b55455ec92b",
+    "bytes": 170
+  },
+  "results/app/phase2/edge-profile/Edge Entity Extraction/2026.9.20.2/pre-release/domains_config_gz/2.0.0/asset": {
+    "sha256": "efc5ecabfd47f8c5eff3cbae4d3d51c7bf4dbb6af22955e1d89e99ccb65ddfcc",
+    "bytes": 374872
+  },
+  "results/app/phase2/edge-profile/Edge Entity Extraction/2026.9.20.2/pre-release/domains_config_gz/2.0.0/metadata.json": {
+    "sha256": "fa3ddd74d9fe5418ff9f9298380be88675dd82a9ee5c0f76c36606bdd8635e71",
+    "bytes": 168
+  },
+  "results/app/phase2/edge-profile/Edge Entity Extraction/2026.9.20.2/pre-release/domains_config_gz/2.0.0-DeepEEEnUs/asset": {
+    "sha256": "765eec784c87d44f7c1898903cfb50482ad78eb2f0f3ec8eb7f38c2a8a66463f",
+    "bytes": 262609
+  },
+  "results/app/phase2/edge-profile/Edge Entity Extraction/2026.9.20.2/pre-release/domains_config_gz/2.0.0-DeepEEEnUs/metadata.json": {
+    "sha256": "2b956449ab63474af3e7ff1df21344f9288d0a38b7d3afdc9daaa3cecd610d22",
+    "bytes": 179
+  },
+  "results/app/phase2/edge-profile/Edge Entity Extraction/2026.9.20.2/pre-release/domains_config_gz/2.0.0-DeepEEEnUsProductByRegexOnly/asset": {
+    "sha256": "2ddeeeb9f6088fa6d899f6e2a5271bdc0d526ed403905b1f5c4407fb75ce78f9",
+    "bytes": 262232
+  },
+  "results/app/phase2/edge-profile/Edge Entity Extraction/2026.9.20.2/pre-release/domains_config_gz/2.0.0-DeepEEEnUsProductByRegexOnly/metadata.json": {
+    "sha256": "40f7c1b268dedce3aa8c283fc59eac1210ddca9dbea81af80831569c63edced9",
+    "bytes": 197
+  },
+  "results/app/phase2/edge-profile/Edge Entity Extraction/2026.9.20.2/pre-release/domains_config_gz/3.0.0/asset": {
+    "sha256": "58e92ce556f2187b016ea6873b6bb2e7ed6dcadbdab1c99787f7ada8116af4a6",
+    "bytes": 151426
+  },
+  "results/app/phase2/edge-profile/Edge Entity Extraction/2026.9.20.2/pre-release/domains_config_gz/3.0.0/metadata.json": {
+    "sha256": "dc4aa550e3a072fe4f96d1ba81f2d73d1c000e75096b40ef1b29a25a191261d6",
+    "bytes": 168
+  },
+  "results/app/phase2/edge-profile/Edge Entity Extraction/2026.9.20.2/pre-release/domains_config_gz/3.0.0-DeepEEEnUs/asset": {
+    "sha256": "6d6ad43971fb97f63a34eac9e40eb853fe47e8c376a9c7ebe5448c9a78d66971",
+    "bytes": 142474
+  },
+  "results/app/phase2/edge-profile/Edge Entity Extraction/2026.9.20.2/pre-release/domains_config_gz/3.0.0-DeepEEEnUs/metadata.json": {
+    "sha256": "0416ba13c4eb83915d55181dff0c897dd431c5ed4b7fe1764b4c6e0b6a5d8435",
+    "bytes": 179
+  },
+  "results/app/phase2/edge-profile/Edge Entity Extraction/2026.9.20.2/pre-release/domains_config_gz/3.0.0-DeepEEEnUsProductByRegexOnly/asset": {
+    "sha256": "05502eeaea0d5ecd45676fae4f17eb9a767b4d2217e8a61bd914e6d708a6db8d",
+    "bytes": 142097
+  },
+  "results/app/phase2/edge-profile/Edge Entity Extraction/2026.9.20.2/pre-release/domains_config_gz/3.0.0-DeepEEEnUsProductByRegexOnly/metadata.json": {
+    "sha256": "9763ab74a214a7326851ba924b467817c21df3c887b99564a33c11cf5caff2b1",
+    "bytes": 197
+  },
+  "results/app/phase2/edge-profile/Edge Entity Extraction/2026.9.20.2/pre-release/domains_config_gz/3.0.0-DeepEEEnUsRegexOnly/asset": {
+    "sha256": "05502eeaea0d5ecd45676fae4f17eb9a767b4d2217e8a61bd914e6d708a6db8d",
+    "bytes": 142097
+  },
+  "results/app/phase2/edge-profile/Edge Entity Extraction/2026.9.20.2/pre-release/domains_config_gz/3.0.0-DeepEEEnUsRegexOnly/metadata.json": {
+    "sha256": "b1bc8c97678821181871b8e8b1d1cd77bf4dab99bfa845262b9c8503a316070b",
+    "bytes": 188
+  },
+  "results/app/phase2/edge-profile/Edge Entity Extraction/2026.9.20.2/pre-release/domains_config_gz/3.0.0-HeuristicClassifierOptimization/asset": {
+    "sha256": "98b00c792d417051eb3b176398ecf221f18325684e93d2e894356a3fd18a398a",
+    "bytes": 162536
+  },
+  "results/app/phase2/edge-profile/Edge Entity Extraction/2026.9.20.2/pre-release/domains_config_gz/3.0.0-HeuristicClassifierOptimization/metadata.json": {
+    "sha256": "fb5c89091f1035cdbd903ce7cfbcd578b2cef35e9a46f36afa5f19ceca078d18",
+    "bytes": 200
+  },
+  "results/app/phase2/edge-profile/Edge Entity Extraction/2026.9.20.2/pre-release/domains_config_gz/3.0.0-LogisticProductPageClassifier/asset": {
+    "sha256": "9c64ce01ddbdb1b0b936ce6d870096bb8f78d756589468dad9824608bddf918f",
+    "bytes": 174605
+  },
+  "results/app/phase2/edge-profile/Edge Entity Extraction/2026.9.20.2/pre-release/domains_config_gz/3.0.0-LogisticProductPageClassifier/metadata.json": {
+    "sha256": "207a727e61b51499c219cc26a82b2f41332e01515ecd7dd6004701f28a16f9a1",
+    "bytes": 198
+  },
+  "results/app/phase2/edge-profile/Edge Entity Extraction/2026.9.20.2/pre-release/onnx.product.desktop.en/3.2.4/asset": {
+    "sha256": "7d43c55e2c9d0bfba4606394e9702081ec287369d8bc8f88f787bd220ceb4ed8",
+    "bytes": 8414008
+  },
+  "results/app/phase2/edge-profile/Edge Entity Extraction/2026.9.20.2/pre-release/onnx.product.desktop.en/3.2.4/metadata.json": {
+    "sha256": "1e008a5b5a3cc5f5c66e3e23b11c94d1f9574f9b1470f806ebb7984257df763a",
+    "bytes": 171
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/manifest.json": {
+    "sha256": "677afb8a4258e82498f67a3ba59bdee3b167d283c8798ccd4cf919b5df98f672",
+    "bytes": 74
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_activity_hub_dark.png/0.0.10/asset": {
+    "sha256": "9c2251663869a18d21678a2b99820e7370ebfdb8ca47a978244f3b0b56bc1aeb",
+    "bytes": 1256
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_activity_hub_dark.png/0.0.10/metadata.json": {
+    "sha256": "88bf2be14dfb11c16fef323ccb9bc84707c0fe92afd3dd8a514649cf1a3085b6",
+    "bytes": 168
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_activity_hub_hc.png/0.0.10/asset": {
+    "sha256": "0023e46c8b4435c969d345715131c07bf133ac3d4e6d5bc13c48def7fbe89df9",
+    "bytes": 441
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_activity_hub_hc.png/0.0.10/metadata.json": {
+    "sha256": "b8725e77698090daa733222633bcff1320e9b07a809037dbdf79aae97230f4e7",
+    "bytes": 166
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_activity_hub_light.png/0.0.10/asset": {
+    "sha256": "1543536ec126a8ffa3bad4f590cd32f70c92f5de02d2cb9a9a868f60dfab9cd6",
+    "bytes": 1486
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_activity_hub_light.png/0.0.10/metadata.json": {
+    "sha256": "80cfbf66cfa9dee2ed6bec13b2fcb9686aadc3276687744ce6224c48e6c2e66c",
+    "bytes": 169
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_amazon_music_dark.png/0.0.1/asset": {
+    "sha256": "8a18581e5ebd9660033da9ca74ac9bb9715d776d392628c4f4204c562087d0f9",
+    "bytes": 922
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_amazon_music_dark.png/0.0.1/metadata.json": {
+    "sha256": "297181f3cff8a53c05ce87cb32bd7d101b2013d8ffdadf6854a6b8282f5e21bf",
+    "bytes": 167
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_amazon_music_hc.png/0.0.1/asset": {
+    "sha256": "c2bc4916416ac4af4f9300828f4e88b3dc0e06b703f1a1593d014c051affc0be",
+    "bytes": 785
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_amazon_music_hc.png/0.0.1/metadata.json": {
+    "sha256": "82256db1f12de369d92c41a91e392acec5746f6143373c03850a7c935d8c180b",
+    "bytes": 165
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_amazon_music_light.png/0.0.1/asset": {
+    "sha256": "387caca784e5c384bbc89f61df3539ce87cc664a36b007a3a0ac827f5153082e",
+    "bytes": 895
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_amazon_music_light.png/0.0.1/metadata.json": {
+    "sha256": "bb16e7e751af940ada58fe7879a881f19e8f057f320ef2e3a4e9b39d16ee6665",
+    "bytes": 168
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_amazon_music_light.png/1.4.13/asset": {
+    "sha256": "387caca784e5c384bbc89f61df3539ce87cc664a36b007a3a0ac827f5153082e",
+    "bytes": 895
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_amazon_music_light.png/1.4.13/metadata.json": {
+    "sha256": "be23c04624150cb07b0f384031dfaa2783dbe47ac24f621305e480cd53d704f4",
+    "bytes": 169
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_apple_music.png/0.0.8/asset": {
+    "sha256": "4aa55139925ce8b958cc9961d7112af4cc9d44aa26a372f7b1576d4689ae67de",
+    "bytes": 1586
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_apple_music.png/0.0.8/metadata.json": {
+    "sha256": "8cca2841bad56129af4691a03ba19b19c4d99bd22c22ce2bb28e7ceb933be1ac",
+    "bytes": 161
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_apple_music.png/1.4.12/asset": {
+    "sha256": "4aa55139925ce8b958cc9961d7112af4cc9d44aa26a372f7b1576d4689ae67de",
+    "bytes": 1586
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_apple_music.png/1.4.12/metadata.json": {
+    "sha256": "ba1f05a80227662ef827c90e0f4b96626d1f41c9f410f3b32c01de60622620c6",
+    "bytes": 162
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_apple_music_hc.png/0.0.8/asset": {
+    "sha256": "1cab84e9a9f9352a554a5f373ce6ae1956ab9a3669f9544734d3b67af2057061",
+    "bytes": 469
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_apple_music_hc.png/0.0.8/metadata.json": {
+    "sha256": "a9b1bf9354e39900f6006df3e0430e5e00a5e433c1e4f35f2708993783f69056",
+    "bytes": 164
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_chatB_active_dark.png/1.6.8/asset": {
+    "sha256": "f68a835c01e590fe04e4506dba802fa9924950bef4082d3348bf7dc3e2d0a872",
+    "bytes": 3064
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_chatB_active_dark.png/1.6.8/metadata.json": {
+    "sha256": "c889a56daf904e5434af5bd2e1296809249b8870ca7b63d33875a1847db552e2",
+    "bytes": 167
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_chatB_active_light.png/1.6.8/asset": {
+    "sha256": "cf244d027a2c9e448072d4b3984ba674c937fb348c0d9c48d203e3caff8e7e3a",
+    "bytes": 3044
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_chatB_active_light.png/1.6.8/metadata.json": {
+    "sha256": "99664d7cad1ad2b13bd2a22bf01eb3cc137c40060e9d7766efbd25e4d04a6183",
+    "bytes": 168
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_chatB_hc.png/1.6.8/asset": {
+    "sha256": "0a4a688e24356dfa8d9abfb3e6af4f36cfec7eb83128ac226c5dcf9d6559998f",
+    "bytes": 1070
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_chatB_hc.png/1.6.8/metadata.json": {
+    "sha256": "aaf4834231325dd206c660475293936c4f69a1450daad8c49434ebf2c428c04b",
+    "bytes": 158
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_compose_hc.png/1.0.2/asset": {
+    "sha256": "a0667262649e439cd1e4809d65a2edd05d9139f8dd3ae1693687c1d3aea1d477",
+    "bytes": 497
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_compose_hc.png/1.0.2/metadata.json": {
+    "sha256": "ce1e1c2aa85a54fe525c10c4a6f08af49c22e73ee65eb8406bb7b58a55b861c0",
+    "bytes": 160
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_compose_maximal_dark.png/1.0.2/asset": {
+    "sha256": "c2a25f1e57b19f3852c14ff572edb479b71df58fff88646ac793449b2ce3c360",
+    "bytes": 1694
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_compose_maximal_dark.png/1.0.2/metadata.json": {
+    "sha256": "c0c707d727001e4219907f8371fa1f70ab75ae5de8fbdfb65910725c657de864",
+    "bytes": 170
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_compose_maximal_light.png/1.0.2/asset": {
+    "sha256": "40245f67a7c55fb2bd97456f20b9a4b64d9d06e6e8329e517cdb6653b61b8c70",
+    "bytes": 1903
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_compose_maximal_light.png/1.0.2/metadata.json": {
+    "sha256": "4c1982c9fc6efe35db5c228e668d4a576e549bcf91fd518b8d9dd0e79721ef36",
+    "bytes": 171
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_controller_hc.png/1.0.11/asset": {
+    "sha256": "c10e7b4effa9b3e54d079c06ca5154f6ca288dce42fac454a2f477fde1025b63",
+    "bytes": 1140
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_controller_hc.png/1.0.11/metadata.json": {
+    "sha256": "89482a5a179482d586b2b36695643f808db8eae3f3bdd23c10ce5ee833f52ef4",
+    "bytes": 164
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_controller_maximal_dark.png/1.0.11/asset": {
+    "sha256": "725d76a6b27dde15c7353e3276606bb1639717b97023c86d85fdd44345760371",
+    "bytes": 1775
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_controller_maximal_dark.png/1.0.11/metadata.json": {
+    "sha256": "b842e66d8e678f2bd3b626053a56a216c6f93d10719030f479410361004ddab5",
+    "bytes": 174
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_controller_maximal_light.png/1.0.11/asset": {
+    "sha256": "f76c425998079907fe2ee99a23af488674d7d93241f37b77041cf2d0f676dd2a",
+    "bytes": 1846
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_controller_maximal_light.png/1.0.11/metadata.json": {
+    "sha256": "ae2edd879ffe3e3cf1338dcc775d5426430d078efdba3ced5162b61e43bf77d7",
+    "bytes": 175
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_copilot_hc.png/1.3.26/asset": {
+    "sha256": "a213a2320c106ac2d63f6664cc8a77fce44597bcaa319e99cfa7216ffd286e32",
+    "bytes": 707
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_copilot_hc.png/1.3.26/metadata.json": {
+    "sha256": "9f5dcab7e9f51b056595c748622c60acbfa40a5bfd5033ee58f5d17e24fb3985",
+    "bytes": 161
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_copilot_rainbow.png/1.3.26/asset": {
+    "sha256": "c6ea6e4836f945199d1b6071bfe3d34a53d5fa8c9b26a2020f55b26bc8deb6f3",
+    "bytes": 2393
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_copilot_rainbow.png/1.3.26/metadata.json": {
+    "sha256": "32aad4583a14d4cdb65807314a9ee4c3371aba8ecd7ddbc9838cfd87247e3d36",
+    "bytes": 166
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_designer_color.png/0.0.1/asset": {
+    "sha256": "c0b1b153177d6e4fba2b2c6013dd0265e9c0f4d7f782df783a0d20bca3792d40",
+    "bytes": 2411
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_designer_color.png/0.0.1/metadata.json": {
+    "sha256": "73cef820411caab3a059858b7b443025bcfb9bc20cc776f8c014f6b6b623cbe6",
+    "bytes": 164
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_designer_color.png/1.0.27/asset": {
+    "sha256": "ae08fe543ebbdc044cd87a50e1100b8b87df6f58c699013450103c38ad660a25",
+    "bytes": 2747
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_designer_color.png/1.0.27/metadata.json": {
+    "sha256": "287386f807d29ddb4c389d5cbf93078b3692adfa77d15a4dfed8d11788b8b6ff",
+    "bytes": 165
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_designer_hc.png/0.0.1/asset": {
+    "sha256": "91eb96f42926f55bcd046ff23b25e2d752561dd5879bf6cc36ef27ae23e75606",
+    "bytes": 646
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_designer_hc.png/0.0.1/metadata.json": {
+    "sha256": "039c91b97308a2543c08defde893554beaa1a1744daf350283e05ae0c113b91b",
+    "bytes": 161
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_designer_hc.png/1.0.27/asset": {
+    "sha256": "145908cf774f5cfdc95723aca18f142628354d6d0d797e89cc36ecaf79dbaad7",
+    "bytes": 1176
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_designer_hc.png/1.0.27/metadata.json": {
+    "sha256": "3377cca323a286d6c27134325036bc831014a258e68aeccb2959a3ae1120c8fc",
+    "bytes": 162
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_discover_maximal_color_dark.png/0.0.8/asset": {
+    "sha256": "1b3ba8d8f1643fd39fdec0a578f3b6b00b57b1f00c7b668ef3bbdb9f93446a25",
+    "bytes": 1790
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_discover_maximal_color_dark.png/0.0.8/metadata.json": {
+    "sha256": "77139c8c4005e5085cda8ccac005fd9d3bb964a1e4e238070ddeaabc928d0f02",
+    "bytes": 177
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_discover_maximal_color_light.png/0.0.8/asset": {
+    "sha256": "73fb67577d39e251816179c5394352796f919f9dda5ba4f704221663991dbe26",
+    "bytes": 1937
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_discover_maximal_color_light.png/0.0.8/metadata.json": {
+    "sha256": "482c67c76ed9d5c3c600c5b3a2b227648f4a3a1c21430281443730e2612e99f5",
+    "bytes": 178
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_discover_maximal_monoline_light.png/0.0.8/asset": {
+    "sha256": "20748515267a5e3bec574ef26b11d4fab666f919c39ed538c201df6d5028c8ee",
+    "bytes": 641
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_discover_maximal_monoline_light.png/0.0.8/metadata.json": {
+    "sha256": "8b196f7fb53fdb9cd5e9822cf23a9377058e430cc1ce9847e522c736155d6b65",
+    "bytes": 181
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_edrop_hc.png/1.1.18/asset": {
+    "sha256": "1bd81dea7c305899cf3cf4cdd4a12cd0ea6246e00bb0e4fcfb5e60a4135eb8c1",
+    "bytes": 920
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_edrop_hc.png/1.1.18/metadata.json": {
+    "sha256": "198348a0f1afcb1ccdee280dfae6daf25ed3280264295af93733e4d56cd85b7c",
+    "bytes": 159
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_edrop_maximal_dark.png/1.1.18/asset": {
+    "sha256": "1a5e35b506648c600dfb44f2c9c99886c03d787a009c0fc6783a42054d30c324",
+    "bytes": 1506
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_edrop_maximal_dark.png/1.1.18/metadata.json": {
+    "sha256": "1948060fb87ed3de48a3e4593e2bdd52d9b292939da23686608cac9ec39327bc",
+    "bytes": 169
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_edrop_maximal_light.png/1.1.18/asset": {
+    "sha256": "f4269895206ed04fb3176fd5808bd080579f59f0c42970af3da8da8ddaed5a80",
+    "bytes": 1524
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_edrop_maximal_light.png/1.1.18/metadata.json": {
+    "sha256": "74d739389017cc80b9f679a0a9fc51a07fecc82b2c9c58d2bf8b3c014fb0d4c8",
+    "bytes": 170
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_etree_hc.png/1.2.3/asset": {
+    "sha256": "9f9616bcacf96fb70e7701b0d9686b82fde96ae7f79a0297ba62a154dc898902",
+    "bytes": 953
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_etree_hc.png/1.2.3/metadata.json": {
+    "sha256": "414444ccaa4dd24225516e69b82d000c98225d67547d30959d411e188bc6af6b",
+    "bytes": 158
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_etree_maximal_dark.png/1.2.3/asset": {
+    "sha256": "3b3cf942f5beccc8d289ec45efa3c360cf178798a57ad460e5e238c0b3a23791",
+    "bytes": 1668
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_etree_maximal_dark.png/1.2.3/metadata.json": {
+    "sha256": "5ef5bf0a8a257589c9e379bf0edf916e33f643064642d5208172232e180c51d1",
+    "bytes": 168
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_etree_maximal_light.png/1.2.3/asset": {
+    "sha256": "e6057c5970c670c8578f2e4be31a3087836dce3d485c366cf41f6e7b72c7682d",
+    "bytes": 1694
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_etree_maximal_light.png/1.2.3/metadata.json": {
+    "sha256": "9ce9c1552086ff55f3292684e1dd7b5995dfd95b1bf81d4dffd2c61c041bb257",
+    "bytes": 169
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_excel.png/1.7.43/asset": {
+    "sha256": "e8aa60d01aa864878ccf89dd6c37a279f1784be3a3a44b766cecb398e97be669",
+    "bytes": 832
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_excel.png/1.7.43/metadata.json": {
+    "sha256": "d5976f616480f845040b376aad8384fec225a15114d89fd95f76afb437189f21",
+    "bytes": 156
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_facebook_messenger.png/0.0.8/asset": {
+    "sha256": "dea15124575c62cbad5fc224e30876d8e8ccdfca8c6d52cb662bd9cff842330c",
+    "bytes": 2165
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_facebook_messenger.png/0.0.8/metadata.json": {
+    "sha256": "e11beee6d73618e3f6d4dacb5ec426a8cc5ec4cc7c62b18f4ecea8886a70a04f",
+    "bytes": 168
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_facebook_messenger.png/1.5.15/asset": {
+    "sha256": "dea15124575c62cbad5fc224e30876d8e8ccdfca8c6d52cb662bd9cff842330c",
+    "bytes": 2165
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_facebook_messenger.png/1.5.15/metadata.json": {
+    "sha256": "d57e31bf0c6db16001bd8b48a3e57103cb6f74d9aed6988babe3069ae1d7b035",
+    "bytes": 169
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_facebook_messenger_hc.png/0.0.8/asset": {
+    "sha256": "7d2c648b272686b583209c3921c97ec09f329046f06725759946b4c5d95c1b3f",
+    "bytes": 535
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_facebook_messenger_hc.png/0.0.8/metadata.json": {
+    "sha256": "1dbcf6c73deff704ae7221c53cc92c7025cbf3bf49e95a4910a92dd93dff8447",
+    "bytes": 171
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_fluent_discover_hc.png/0.0.8/asset": {
+    "sha256": "246fb9f96d55adfd95937f210645b76fde41e38b1acb7c363ec076036a74cfd1",
+    "bytes": 888
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_fluent_discover_hc.png/0.0.8/metadata.json": {
+    "sha256": "5b4a97246fbfadf1317d36465cb3260e04e2847afd50bcd6d81b14334335b103",
+    "bytes": 168
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_fluent_edrop_hc.png/0.0.5/asset": {
+    "sha256": "0e7e23091a16fc51bf612ae760ca3ec99ec06482075701c9007e8dde38b6ee17",
+    "bytes": 837
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_fluent_edrop_hc.png/0.0.5/metadata.json": {
+    "sha256": "696d207c406bcc5375ea03a259d76fb42b0f0dc08e0ddea865124e7b5fda4ea4",
+    "bytes": 165
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_fluent_games_hc.png/0.0.13/asset": {
+    "sha256": "ee2f9eca093104eca53ff75fd1f7488381ff4ac0a99ab549a65d4603a252f657",
+    "bytes": 679
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_fluent_games_hc.png/0.0.13/metadata.json": {
+    "sha256": "00e9f00918f333edda4758ad8bd06e729462ff71b1cb4f66f4589a5260ba4f30",
+    "bytes": 166
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_fluent_office_hc.png/0.0.11/asset": {
+    "sha256": "e7603a834c5bf04b669d8cb8fee1d518fb51d99752acbbcd735491cb6bafc976",
+    "bytes": 686
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_fluent_office_hc.png/0.0.11/metadata.json": {
+    "sha256": "064a77125065af31592a4967174a65eb9143ce104721968099bb6c8c1240fcc8",
+    "bytes": 167
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_fluent_office_hc.png/1.7.43/asset": {
+    "sha256": "e7603a834c5bf04b669d8cb8fee1d518fb51d99752acbbcd735491cb6bafc976",
+    "bytes": 686
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_fluent_office_hc.png/1.7.43/metadata.json": {
+    "sha256": "e6877f43aec07c8f5f1b7245e95454ea51c5487b5b441b6aa49d32b045fb0c23",
+    "bytes": 167
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_fluent_onenote_hc.png/0.0.8/asset": {
+    "sha256": "8bb24f79d0e4af3e229d1189d7149b4b5a4f7af7ec6673ead6140079eb197aa6",
+    "bytes": 411
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_fluent_onenote_hc.png/0.0.8/metadata.json": {
+    "sha256": "eca5b5d812557514e83ba2238d1ce10da51e8562c8cffdfb1dafe68cc602452a",
+    "bytes": 167
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_fluent_outlook_hc.png/0.0.12/asset": {
+    "sha256": "35ced2aed46244fb6cd0c0666419310844a06441bae42bdad26e3050d2c3d750",
+    "bytes": 798
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_fluent_outlook_hc.png/0.0.12/metadata.json": {
+    "sha256": "6e78bda3a837ef3696290a7f2fea2397f8f6c8b87ca9cde182a9cbb8246a97cc",
+    "bytes": 168
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_fluent_search_hc.png/0.0.7/asset": {
+    "sha256": "a470b92ea6bcf475eb9ea5ed13511d5160270e06e3d76440cdfb99fb961749db",
+    "bytes": 735
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_fluent_search_hc.png/0.0.7/metadata.json": {
+    "sha256": "a99d7b96567e5d83fc931e678f8df364104de41b5a43d7a3808f2ebae42d8f9f",
+    "bytes": 166
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_fluent_shopping_hc.png/0.0.7/asset": {
+    "sha256": "6a322c1367a378c0cae9ffaf4f2092c7df64e266210b41a476d9be948e7c8963",
+    "bytes": 648
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_fluent_shopping_hc.png/0.0.7/metadata.json": {
+    "sha256": "e8f6b987f9125085b2f85d8dfa3f9e7779494cd6f43504ea0ba9dd8a9d55b44c",
+    "bytes": 168
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_fluent_teams_hc.png/0.0.2/asset": {
+    "sha256": "f3796baa4e80f14c1a920b3252398be84aae6d7b2a9e5b9da716bcf6bfa0a008",
+    "bytes": 791
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_fluent_teams_hc.png/0.0.2/metadata.json": {
+    "sha256": "29472cef83548a89758a51d5a2860c13d46703c78ad4b4477ebf1ab82aecf894",
+    "bytes": 165
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_fluent_toolbox_hc.png/0.0.7/asset": {
+    "sha256": "89030821bfae51a4d95ffdeb1fd138f53e8c957ce71e0f2d6490ed7d568d4f58",
+    "bytes": 527
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_fluent_toolbox_hc.png/0.0.7/metadata.json": {
+    "sha256": "49018758711c55210e5bde88fbe304803aa6281ec97c3fe92ac63146541c3a27",
+    "bytes": 167
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_games_hc.png/1.7.18/asset": {
+    "sha256": "eb77448705c2d4fe315f7d9b0f613852c40a9283421248b0d2adce8ae8c91ce2",
+    "bytes": 1149
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_games_hc.png/1.7.18/metadata.json": {
+    "sha256": "f9caafde058a5604a472549a25c4ee1e1a041325faac9bab44bfc88facca5050",
+    "bytes": 159
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_games_hc_card.png/1.7.18/asset": {
+    "sha256": "1edfc2667beb206552a2e4179d9c02149fd4f2820dd99d573151f3ad2bb66d04",
+    "bytes": 1020
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_games_hc_card.png/1.7.18/metadata.json": {
+    "sha256": "4d7bc5f88063e738187628f84a35400a965a0e82365047ead571432de9c258cf",
+    "bytes": 164
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_games_hc_controller.png/1.7.18/asset": {
+    "sha256": "42e88c8e0bb85494fdbeeda8daa359bf09de6be6a874850969503b4eaf109f82",
+    "bytes": 705
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_games_hc_controller.png/1.7.18/metadata.json": {
+    "sha256": "63529b9fd14e3782927d5fa614deb9c6ffca2871ac59417c2234da87cea80f2b",
+    "bytes": 170
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_games_hc_joystick.png/1.7.18/asset": {
+    "sha256": "0210c2432ce1f1bda1a652a6aa60632fd294c0bc128ccbffb251f3855ce77719",
+    "bytes": 555
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_games_hc_joystick.png/1.7.18/metadata.json": {
+    "sha256": "e190e2c363e042845ce4455ea1903762b3a4bdfc12d977804926e3f5beec32d2",
+    "bytes": 168
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_games_hc_puzzle.png/1.7.18/asset": {
+    "sha256": "4cd24d7a3cd46ad17fdda46d536b9a38e07e6639653f5215d43611126e1d9b85",
+    "bytes": 668
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_games_hc_puzzle.png/1.7.18/metadata.json": {
+    "sha256": "0ef1d1edc0bbe812a68508b1bb575b8578e1b2603cc5b6628bcf99ae326960c6",
+    "bytes": 166
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_games_maximal_dark.png/1.7.18/asset": {
+    "sha256": "a09a45ba7517515b93b30b49a37bb6c24070a6b3f56b75fb1def4e3aa36b2198",
+    "bytes": 1772
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_games_maximal_dark.png/1.7.18/metadata.json": {
+    "sha256": "b20fbf8ffb34201cbb0954dd2bc8955160c3e8aa7847027602378ac919e34efd",
+    "bytes": 169
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_games_maximal_dark_card.png/1.7.18/asset": {
+    "sha256": "0fc5d90d1b7e016def7744c381b41259629a4c95eee12a81c33b09b881085fa0",
+    "bytes": 2263
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_games_maximal_dark_card.png/1.7.18/metadata.json": {
+    "sha256": "7a5b1dc28b921abdc31afc15d851300f74cb7fd9256d9b3c94958acf91050c8f",
+    "bytes": 174
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_games_maximal_dark_controller.png/1.7.18/asset": {
+    "sha256": "5904b5172da2ac010ac979b4d2a3009f54f95c2e227d19a3751c28f986e8a5aa",
+    "bytes": 2070
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_games_maximal_dark_controller.png/1.7.18/metadata.json": {
+    "sha256": "a3ce78a20313ecec8def5df6f4532b790ea876816a82dbe5dc993fcff6dc3fe4",
+    "bytes": 180
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_games_maximal_dark_joystick.png/1.7.18/asset": {
+    "sha256": "1c94dacac187b73b21ec0428413b1dafa9bf3f09ae3f23aea9bbde21f5ca5586",
+    "bytes": 1260
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_games_maximal_dark_joystick.png/1.7.18/metadata.json": {
+    "sha256": "48078b5f41d2ee0849f9da0bae81df3ce8f3039e72729330fde9ed09e8d4f196",
+    "bytes": 178
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_games_maximal_dark_puzzle.png/1.7.18/asset": {
+    "sha256": "7d0cb12d8aff489cef35ff9c073c397f21a537a5321810759098b2a7d230a2da",
+    "bytes": 1525
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_games_maximal_dark_puzzle.png/1.7.18/metadata.json": {
+    "sha256": "04afe7b32800018fc753e2a8d7baa0bef92e87de4c56cc766f32dd97bc943751",
+    "bytes": 176
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_games_maximal_light.png/1.7.18/asset": {
+    "sha256": "f943debd41535898592f22cadfc7ef27df8581ad86fc52960e64d75299482d76",
+    "bytes": 1785
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_games_maximal_light.png/1.7.18/metadata.json": {
+    "sha256": "a7758882bbb1b58b7bb051506617eb21e6bbf9f04a56fc2d4f6554bee2bb1495",
+    "bytes": 170
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_games_maximal_light_card.png/1.7.18/asset": {
+    "sha256": "e34062ab4b7f29e6b511d227f819b3654c91fb9f5eceaaad15f21ef09e15f004",
+    "bytes": 2295
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_games_maximal_light_card.png/1.7.18/metadata.json": {
+    "sha256": "9091c83fa23461dc422cdbf7520c0346af2869f4d77a9aa2f702392320692e1a",
+    "bytes": 175
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_games_maximal_light_controller.png/1.7.18/asset": {
+    "sha256": "20587258ca06a62b7b34476a748afef5f8eac674a69f8120292412f28913e5d7",
+    "bytes": 2109
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_games_maximal_light_controller.png/1.7.18/metadata.json": {
+    "sha256": "5c9c7804636fa62d3174d1de26c74460ada995955a20e0e1a163390a22d9ae7b",
+    "bytes": 181
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_games_maximal_light_joystick.png/1.7.18/asset": {
+    "sha256": "f9b2a5e4babbf67262da9a34cb2efebfedb805824f92f528a555dc500b139c41",
+    "bytes": 1222
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_games_maximal_light_joystick.png/1.7.18/metadata.json": {
+    "sha256": "9bd22715a26a32b91200990f47390d451a283e17cd3a18b91e03601e9343bb75",
+    "bytes": 179
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_games_maximal_light_puzzle.png/1.7.18/asset": {
+    "sha256": "a819352a67af4265695a238b34cc909c2b5fa09534580e8546cee13e3afc082f",
+    "bytes": 1500
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_games_maximal_light_puzzle.png/1.7.18/metadata.json": {
+    "sha256": "6629c86f636d2be9bfad9ee2540478e239cb12378ce24eb5df10b6fd3b403c84",
+    "bytes": 177
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_gmail.png/0.0.7/asset": {
+    "sha256": "17dc41f2c23582ff8b0a7ee9c005845b303014ee73f1ccf9867e2357764edd35",
+    "bytes": 1073
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_gmail.png/0.0.7/metadata.json": {
+    "sha256": "5c6ea57343e2e7b130adb92f18087e18882a13173564b74c6291439faa8b90b4",
+    "bytes": 155
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_gmail.png/1.5.4/asset": {
+    "sha256": "17dc41f2c23582ff8b0a7ee9c005845b303014ee73f1ccf9867e2357764edd35",
+    "bytes": 1073
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_gmail.png/1.5.4/metadata.json": {
+    "sha256": "164810b501fbee2df6b4c43b081995a7e850f04707eb2d53280df44ba3b0da5d",
+    "bytes": 155
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_gmail_hc.png/0.0.7/asset": {
+    "sha256": "5b056f30ab5bf883d182ec3e74f13d307fa118886f0b9d4ba3568b06ac3d3853",
+    "bytes": 905
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_gmail_hc.png/0.0.7/metadata.json": {
+    "sha256": "05cf9b4c54f03352284474972428c37a5cfa2e3935dd5d1b5dc202a1279859e6",
+    "bytes": 158
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_help.png/1.0.1/asset": {
+    "sha256": "faa7c350e2aa972ddb0347854ffb0ba6d49cb4b85f772a5b8a23d955b517fd54",
+    "bytes": 2620
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_help.png/1.0.1/metadata.json": {
+    "sha256": "9c0585e56d54e3c78086bf3b5287a1ebdaf79b3f6648e3d45cfa3e61991ed330",
+    "bytes": 154
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_iHeart.png/1.0.3/asset": {
+    "sha256": "bc18a6bf132e5eafabaf36839e526945b42f30dad7881fd4ddee21c48ca513f6",
+    "bytes": 2720
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_iHeart.png/1.0.3/metadata.json": {
+    "sha256": "6f73eab63c44f666ee18f2b1c2e39addb8e1fb7a6eecf5e6d8d311e1340ab031",
+    "bytes": 156
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_ImageCreator_DarkMode.png/1.0.25/asset": {
+    "sha256": "e6514b799b866e72c7bd62e023c74217832da297c11ca7cc06ab3e4f22fca7f4",
+    "bytes": 2305
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_ImageCreator_DarkMode.png/1.0.25/metadata.json": {
+    "sha256": "265a2b0b66cbc4af124e5b8ec62552665ed83d3e8f010a8da820f8173e540865",
+    "bytes": 172
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_ImageCreator_HighContrast.png/1.0.25/asset": {
+    "sha256": "3d007e36c9c328583860bc4b64f27408576d4d4c36eab75809c7533d01815b6a",
+    "bytes": 1145
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_ImageCreator_HighContrast.png/1.0.25/metadata.json": {
+    "sha256": "fc2d22e882e933b80420722568886ae7a78eb17b48ada0a027033c17fe73c692",
+    "bytes": 176
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_ImageCreator_LightMode.png/1.0.25/asset": {
+    "sha256": "95414a71383ec6f0b5c2d4b38fd4e3facc31a19e172ca92852095588eac73cee",
+    "bytes": 2287
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_ImageCreator_LightMode.png/1.0.25/metadata.json": {
+    "sha256": "623cf8ecd8e0609f05849f228e6263d510295ef1de51f596771c9967449880e5",
+    "bytes": 173
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_instagram.png/0.0.8/asset": {
+    "sha256": "e703a9462776d31e2c2bd384607f7ed2fd7253f0e788db43bab725c71908acaf",
+    "bytes": 2062
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_instagram.png/0.0.8/metadata.json": {
+    "sha256": "6ae9ce651c835287f38fd9a87b958debaba4e0809fd18dd1a6524454517b9828",
+    "bytes": 159
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_instagram.png/1.4.13/asset": {
+    "sha256": "e703a9462776d31e2c2bd384607f7ed2fd7253f0e788db43bab725c71908acaf",
+    "bytes": 2062
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_instagram.png/1.4.13/metadata.json": {
+    "sha256": "33c24cab49984a869cb548a4f40f17043e5ff6b2b0183673b64221b5480ad764",
+    "bytes": 160
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_instagram_hc.png/0.0.8/asset": {
+    "sha256": "0b3a308356b0b15d98e2f7e7112f41c376e7b827ffc869e3ddbf5babbe5bd9a8",
+    "bytes": 657
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_instagram_hc.png/0.0.8/metadata.json": {
+    "sha256": "054c5c79ac3977cf1b9d355043043fcad8d492009b501799d0e95be03b8e0ad6",
+    "bytes": 162
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_M365_dark.png/1.7.43/asset": {
+    "sha256": "17c47f70c096c92fcf31044f34dd1836f454d2446a6c614e96789a9ca52d152a",
+    "bytes": 2282
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_M365_dark.png/1.7.43/metadata.json": {
+    "sha256": "cd5269a5eb8ba9c180b0976c96bb6ee4bf6390b75ded0bb13b784768a7ca25cb",
+    "bytes": 160
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_M365_hc.png/1.7.43/asset": {
+    "sha256": "f77b6247d1a0d43e7c7c91ab9dece3dbc28af6f3842d98eab460a598e5698dc5",
+    "bytes": 1108
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_M365_hc.png/1.7.43/metadata.json": {
+    "sha256": "ff2f6d2e1da90d1ab04492ff2f4290086543849b7879ef44360d43592aae86fc",
+    "bytes": 158
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_M365_light.png/1.7.43/asset": {
+    "sha256": "17c47f70c096c92fcf31044f34dd1836f454d2446a6c614e96789a9ca52d152a",
+    "bytes": 2282
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_M365_light.png/1.7.43/metadata.json": {
+    "sha256": "8f4a00cb158ab9092d34fde3bea67e10e28023a6ce451eac92f853f8b9a8ee1d",
+    "bytes": 161
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_manifest_gz/4.11.81/asset": {
+    "sha256": "a096dfa4f53c453187b2a891418cf3318280dfc8bfcb1bc5e0e11bb084216ecc",
+    "bytes": 1011125
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_manifest_gz/4.11.81/metadata.json": {
+    "sha256": "86870cf6b45e9e0178ff272e29b57dd12fa75676b2bc3d13916f9c0d8676335e",
+    "bytes": 207
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_maximal_discover_dark.png/0.0.8/asset": {
+    "sha256": "39d7025ac5586bd14e43dd9bec2ade65a32daff6c64f29fa54bb95ff4ad308d6",
+    "bytes": 1615
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_maximal_discover_dark.png/0.0.8/metadata.json": {
+    "sha256": "1cf6356e0ced867d2ed0f1df6d500afef13be3fb2406a6b8bb62ac10a527b358",
+    "bytes": 171
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_maximal_discover_hc.png/0.0.8/asset": {
+    "sha256": "cd2be33fe1051ff84ab29328f8b979125461c76da835d19fc071f6ab5ca41dca",
+    "bytes": 709
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_maximal_discover_hc.png/0.0.8/metadata.json": {
+    "sha256": "7cb598dcaa2a706aba45b5a6a03a8d88d1c8a559129572dd89311fa935870009",
+    "bytes": 169
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_maximal_discover_light.png/0.0.8/asset": {
+    "sha256": "99275e1658a8592f60a7f871085a773ae6a7ea20237792285e5b896a05d4e31f",
+    "bytes": 1743
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_maximal_discover_light.png/0.0.8/metadata.json": {
+    "sha256": "3fc7b28f1bc8ab83054091655ff2011a4dad6d5a2b09dc040b5a7bb173cb3b15",
+    "bytes": 172
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_maximal_edrop_dark.png/0.0.5/asset": {
+    "sha256": "af71df2338acbaaa862ac297ef450431ee85b6e14916cc5c4bdef8f03a76f42d",
+    "bytes": 1513
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_maximal_edrop_dark.png/0.0.5/metadata.json": {
+    "sha256": "2a670aabcc34bf3aa3c9a0933e00c4b1be6a9288d8b3b7f1f3dd4ee9a6b4fe29",
+    "bytes": 168
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_maximal_edrop_hc.png/0.0.5/asset": {
+    "sha256": "1ebffe34050b958706e4450486c9f69be413715fcfbd5cdae56408f8b011f15c",
+    "bytes": 602
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_maximal_edrop_hc.png/0.0.5/metadata.json": {
+    "sha256": "74569190b22f44bcfa0dc148c35a3bd357796f06b6d58bb5952b67c3905ed63f",
+    "bytes": 166
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_maximal_edrop_light.png/0.0.5/asset": {
+    "sha256": "d17c3541a0c0a3e0d2278f1a904d42397e19ce2bba718d4834faaea9f7c6bb0c",
+    "bytes": 1654
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_maximal_edrop_light.png/0.0.5/metadata.json": {
+    "sha256": "02740b37bd52fd693bd6d3624a39b157ae0a6eb8bf136dafc233239311411aea",
+    "bytes": 169
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_maximal_etree_dark.png/0.0.9/asset": {
+    "sha256": "3d7b0b2fe7a1205e9b9c795a6e7d3d21ad2b394e39313e226bf22831419e2842",
+    "bytes": 1756
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_maximal_etree_dark.png/0.0.9/metadata.json": {
+    "sha256": "3d2df0075b7384622f595f25c15108bf8a68e0e6c955efe084016317874e7db9",
+    "bytes": 168
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_maximal_etree_hc.png/0.0.9/asset": {
+    "sha256": "a7d55e97c91f9c98a7909c0f16fddf972ae565ed1d2ae9bea289eb3f549afe34",
+    "bytes": 703
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_maximal_etree_hc.png/0.0.9/metadata.json": {
+    "sha256": "110de156f88c2161e1b7ed673a7f654c49baffe63c81ab09395895c692f0bdf0",
+    "bytes": 166
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_maximal_etree_light.png/0.0.9/asset": {
+    "sha256": "b5d463ab2935efe1458f9c8e234bac16b950f137d3697a4fa529a8004c873ad4",
+    "bytes": 1766
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_maximal_etree_light.png/0.0.9/metadata.json": {
+    "sha256": "a86f6715b648c894962d40b16fcd85cd5f193f8554a207ad33338f93784221f1",
+    "bytes": 169
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_maximal_follow_dark.png/1.1.2/asset": {
+    "sha256": "29460dcd2685fdf188cb20f4537019d33d7486acd7bff51b1ff31a9d7a729c80",
+    "bytes": 1836
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_maximal_follow_dark.png/1.1.2/metadata.json": {
+    "sha256": "2e6645f4a5e459407587a8c19d6c1cfcc2d6e980a5f4c36b541a2d35dc765743",
+    "bytes": 169
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_maximal_follow_hc.png/1.1.2/asset": {
+    "sha256": "bc79793b17f1aabbd6e58ccdcf40bcab0725c022d619b1cb53522cb05de43c7c",
+    "bytes": 578
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_maximal_follow_hc.png/1.1.2/metadata.json": {
+    "sha256": "e2a8dc0ad3fb924068d7d2af67ec1f1efd58388ea51b3131f99dc0918900bc1c",
+    "bytes": 167
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_maximal_follow_light.png/1.1.2/asset": {
+    "sha256": "1e83f1ba93748b9167142e8f8c9348886839fb3f4f998cbf11d8ebd9ba7cee8e",
+    "bytes": 2362
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_maximal_follow_light.png/1.1.2/metadata.json": {
+    "sha256": "baa90dcb729b2d3c765e52e71d2392566dd1986d53aab5fbc47993f0a35759fc",
+    "bytes": 170
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_maximal_games_dark.png/0.0.13/asset": {
+    "sha256": "9c7cf64fba9b1127b863e72a74291ac3329e5820c25f245eb82bce74f8f04072",
+    "bytes": 2020
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_maximal_games_dark.png/0.0.13/metadata.json": {
+    "sha256": "277af01f9c22bea28606ae1c911294bf8402cf803140dd70d88f635e2545cc41",
+    "bytes": 169
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_maximal_games_hc.png/0.0.13/asset": {
+    "sha256": "3e968a1b686707e60b97eac420ebaf579e522c71a978130cd61ee3405b7a6051",
+    "bytes": 713
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_maximal_games_hc.png/0.0.13/metadata.json": {
+    "sha256": "9cf418c7ca46797ae157ef2ea251d43b9c860a55b1d34e9583b773870ad11e26",
+    "bytes": 167
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_maximal_games_light.png/0.0.13/asset": {
+    "sha256": "57f8942b9c8311bb340a7362fea9570e1a1d52b444237368e71c6896a4fa675e",
+    "bytes": 2178
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_maximal_games_light.png/0.0.13/metadata.json": {
+    "sha256": "9cfa9aec708e720b16515558e148446cdadcd5058cada5b434a1407c2d6148e8",
+    "bytes": 170
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_maximal_search_dark.png/0.0.7/asset": {
+    "sha256": "9ec64130e85b7f4e0f698eaad52b4a1f9dfc75ca5fa727a63bf58baa9e410033",
+    "bytes": 1542
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_maximal_search_dark.png/0.0.7/metadata.json": {
+    "sha256": "66239fbb15613a9465a9cb9dcab7d586cadc4ac890084835f77dae28251db93d",
+    "bytes": 169
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_maximal_search_hc.png/0.0.7/asset": {
+    "sha256": "a7a9701de1b762de10733538a2203f4c8f006f63236e08bab6f144ea2ecd6fe4",
+    "bytes": 706
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_maximal_search_hc.png/0.0.7/metadata.json": {
+    "sha256": "38b3288ed389c0367ce1a2abf60d06cb035cf4751d38aab167d76b94fd44ce7a",
+    "bytes": 167
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_maximal_search_light.png/0.0.7/asset": {
+    "sha256": "a358cbc48b8b0d8d7e92da611ca5300d6453f770784bcdec31d99e7e1e08f5ca",
+    "bytes": 1736
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_maximal_search_light.png/0.0.7/metadata.json": {
+    "sha256": "32629bdedbcda0f4b9085200663da6098a589c3ecd1d78074b98eef1b0c14efb",
+    "bytes": 170
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_maximal_shopping_dark.png/0.0.7/asset": {
+    "sha256": "ee90263431b7f60f791ae04426647335cb0e019e7f2b104725d4702fe33e99f2",
+    "bytes": 1415
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_maximal_shopping_dark.png/0.0.7/metadata.json": {
+    "sha256": "73f719093a239470fa5f9919945d12183a7dc850f7589ce277d38c4676852d3f",
+    "bytes": 171
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_maximal_shopping_hc.png/0.0.7/asset": {
+    "sha256": "615f40d9fb95545113e7ffd425bf770e6e56f06067f8f81eaca14cf2d4c5ca11",
+    "bytes": 424
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_maximal_shopping_hc.png/0.0.7/metadata.json": {
+    "sha256": "e449881ca3cc18861556de2a631a88c627f49750c271beb3735ad759625e1803",
+    "bytes": 169
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_maximal_shopping_light.png/0.0.7/asset": {
+    "sha256": "03b847417438c95bb4ab0e43a62ed88e3c8d6510239d29e03a3246de4008c503",
+    "bytes": 1778
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_maximal_shopping_light.png/0.0.7/metadata.json": {
+    "sha256": "f1334929c4dece9f4bb7d0475ccbcfe801faf3aeebdfb30e1768c2fb202884f8",
+    "bytes": 172
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_maximal_toolbox_dark.png/0.0.7/asset": {
+    "sha256": "b28197068f22b7c6db95ea76d6736f7fc6c7dd2a4bba780553f9bc10214bd452",
+    "bytes": 1643
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_maximal_toolbox_dark.png/0.0.7/metadata.json": {
+    "sha256": "938595966511a95390c55c46d58596011f2b1b75855ed871c7e2f5316e6df485",
+    "bytes": 170
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_maximal_toolbox_hc.png/0.0.7/asset": {
+    "sha256": "140837f74aa1259b8c5033cb977f13a93a043a1413191cc2c37d75298c55b1ce",
+    "bytes": 381
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_maximal_toolbox_hc.png/0.0.7/metadata.json": {
+    "sha256": "3ea9b018abdb188c985d23ed38466f7a2ea70bdf04ccc32cbe0f44f5e8758306",
+    "bytes": 168
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_maximal_toolbox_light.png/0.0.7/asset": {
+    "sha256": "f20d769248d42ccea133331d8664cda7ea02ff6b152d8be15c9e0381765b4b5a",
+    "bytes": 1755
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_maximal_toolbox_light.png/0.0.7/metadata.json": {
+    "sha256": "03a488a8170eec5ad9cd5fc3240df68c392fb116a090a0557597fd240be25758",
+    "bytes": 171
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_msstart_logo_dark.png/1.2.17/asset": {
+    "sha256": "b7ee8d7be05bdac08abfe97a01a34a0595a687b1fa81b0e27aa05969ee63c5ba",
+    "bytes": 3821
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_msstart_logo_dark.png/1.2.17/metadata.json": {
+    "sha256": "fa898e0d20bbe851ab529663e8f60720d45872243d044f38ceff60fd18cad2be",
+    "bytes": 168
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_msstart_logo_light.png/1.2.17/asset": {
+    "sha256": "319728562fc3e1a583f3ac83a39f903d8dc8063b444b3bd827e6b190a958f976",
+    "bytes": 3443
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_msstart_logo_light.png/1.2.17/metadata.json": {
+    "sha256": "670032f0e45be69eadd178e12f456f4f173c1a3ae4335bf6b802988812ad0718",
+    "bytes": 169
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_mstravel_logo_dark.png/1.0.0/asset": {
+    "sha256": "c85c699eaa1cab3b2e2dac48bbe8a2d6adb73e6809643e3af9a3cfea0d912df4",
+    "bytes": 1459
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_mstravel_logo_dark.png/1.0.0/metadata.json": {
+    "sha256": "fa7f085b78396d24761c2ccd9feaa61dc74b03c9a88732155769313db62c01e0",
+    "bytes": 168
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_mstravel_logo_hc.png/1.0.0/asset": {
+    "sha256": "c85c699eaa1cab3b2e2dac48bbe8a2d6adb73e6809643e3af9a3cfea0d912df4",
+    "bytes": 1459
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_mstravel_logo_hc.png/1.0.0/metadata.json": {
+    "sha256": "d75edffe8307c3a2da42759e69224c0a4ae4dfec18cf6a0a2930a76ff112f4f6",
+    "bytes": 166
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_mstravel_logo_light.png/1.0.0/asset": {
+    "sha256": "c85c699eaa1cab3b2e2dac48bbe8a2d6adb73e6809643e3af9a3cfea0d912df4",
+    "bytes": 1459
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_mstravel_logo_light.png/1.0.0/metadata.json": {
+    "sha256": "36a939f249f5fd2b4424f7f3dcaf4c84267f53267f1bb91a6c0b1829174de98e",
+    "bytes": 169
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_office.png/0.0.11/asset": {
+    "sha256": "d888d9ed781466463666a13b91d326a18b801c7dcd36163e25467e155fc3784a",
+    "bytes": 1777
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_office.png/0.0.11/metadata.json": {
+    "sha256": "335784cf1618386b05aaef4f24c78d0fcaf563aaa8c6001ab3c4e5b72ca50a6c",
+    "bytes": 157
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_office.png/1.7.43/asset": {
+    "sha256": "d888d9ed781466463666a13b91d326a18b801c7dcd36163e25467e155fc3784a",
+    "bytes": 1777
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_office.png/1.7.43/metadata.json": {
+    "sha256": "65ae593b241b2d183145c41c986a38f1a36d3347a14a3609e235f999a190daef",
+    "bytes": 157
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_onenote.png/0.0.8/asset": {
+    "sha256": "157109e316ec3fdaad3167015a6e63fa0c97706609f2deda985b74991508b5eb",
+    "bytes": 691
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_onenote.png/0.0.8/metadata.json": {
+    "sha256": "91accb90689c3868fc8cf498a1c006f83ebce6bc15b1b0d51bcc98e4c4e6cf09",
+    "bytes": 157
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_onenote_dark.png/1.4.13/asset": {
+    "sha256": "fbded32c4291c0b5c97397d8aac5385256f237023beb21e90a6c8b7eb0e8aa68",
+    "bytes": 861
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_onenote_dark.png/1.4.13/metadata.json": {
+    "sha256": "b0cf990a488ddc85757f9ea3274643adb188a8eb8d27ba32b57c389f15ad8f9a",
+    "bytes": 163
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_onenote_hc.png/1.4.13/asset": {
+    "sha256": "2774a7376bd72c2610d2e9dadb1005abf0dcb3876a062c331a7833783880abef",
+    "bytes": 623
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_onenote_hc.png/1.4.13/metadata.json": {
+    "sha256": "989da950355790ea2df57a8206db320b651d138186e0809e89264884dec29881",
+    "bytes": 161
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_onenote_light.png/1.4.13/asset": {
+    "sha256": "fbded32c4291c0b5c97397d8aac5385256f237023beb21e90a6c8b7eb0e8aa68",
+    "bytes": 861
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_onenote_light.png/1.4.13/metadata.json": {
+    "sha256": "39c516732aa52f93f414ce8704364a79b3ed83b4d8046b9274e090be592198d3",
+    "bytes": 164
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_outlook.png/0.0.12/asset": {
+    "sha256": "812291ffe214a9675eff8f930bf1366675cb96c7b39112a9efd18f67c6453b93",
+    "bytes": 1158
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_outlook.png/0.0.12/metadata.json": {
+    "sha256": "6e08943f65a8b563be56cfd1e020e35a0508295d2baf56f10230b3b14e90d5e2",
+    "bytes": 158
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_outlook_dark.png/1.12.17/asset": {
+    "sha256": "1e08328bdb799d6e1ba7fc3cc4bd43ce6509a7c9ad2a61c5176bf7d5fd88e3d8",
+    "bytes": 1225
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_outlook_dark.png/1.12.17/metadata.json": {
+    "sha256": "3ac8452e3dd9bbd85130289e79dc3f5563981f718432efa1d91ffef56be6b26a",
+    "bytes": 164
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_outlook_hc.png/1.12.17/asset": {
+    "sha256": "d70024748e06a7d7804e322699bb1f5bfdcad16ac8507cda1c799fc7c8545d4d",
+    "bytes": 874
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_outlook_hc.png/1.12.17/metadata.json": {
+    "sha256": "d8cc8c1390c4ee8f674174c32a03eb51cbae46596324fc1eab2d20711d3d566f",
+    "bytes": 162
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_outlook_light.png/1.12.17/asset": {
+    "sha256": "1e08328bdb799d6e1ba7fc3cc4bd43ce6509a7c9ad2a61c5176bf7d5fd88e3d8",
+    "bytes": 1225
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_outlook_light.png/1.12.17/metadata.json": {
+    "sha256": "86242e636f24c907381010f79bd0622427e3c68d5b3e961692e3b3bcf9e9084f",
+    "bytes": 165
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_performance_dark.png/0.0.4/asset": {
+    "sha256": "9424edde5372ec78619f63e3048c2bbffca8bf88d8985102f02b7ef1f3fe0256",
+    "bytes": 1872
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_performance_dark.png/0.0.4/metadata.json": {
+    "sha256": "996d918f180a2df5df5258ae651dcd2bf4fdbf98f7fcaa8ee6a43953fef0dfb5",
+    "bytes": 166
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_performance_hc.png/0.0.4/asset": {
+    "sha256": "c8893df9762f43b6f8236415c1c9888beca107a9f002abfba5b2e91e3cbb9c99",
+    "bytes": 567
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_performance_hc.png/0.0.4/metadata.json": {
+    "sha256": "ed69eee8f93ad4629753cc759c40cd4845af3c211f75d475bc726142da30ad67",
+    "bytes": 164
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_performance_hc.png/1.1.3/asset": {
+    "sha256": "522a96d17fc3af4e9f0cca13d5918627ac85ab92ff227c65cd81f1c7f62cdc1d",
+    "bytes": 841
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_performance_hc.png/1.1.3/metadata.json": {
+    "sha256": "e0da6ca3fbccda9e15671d8247c37c1b5cbb5ae3c05b88721625fce860f7b07e",
+    "bytes": 164
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_performance_light.png/0.0.4/asset": {
+    "sha256": "104968b6ffb275116df9e48eb5e805a8bf31c4865298d8cd90aa7127b1ddb7fe",
+    "bytes": 2125
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_performance_light.png/0.0.4/metadata.json": {
+    "sha256": "6304c2531882b694cbca9790909e0601972b9f70b79e60b4a7391af115738aab",
+    "bytes": 167
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_performance_maximal_dark.png/1.1.3/asset": {
+    "sha256": "34a855d34d561354585450d5a9a5b8543ecce4b24e1b69049a55aad06ec344ba",
+    "bytes": 1662
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_performance_maximal_dark.png/1.1.3/metadata.json": {
+    "sha256": "01ea61a9b8946a1f569278b93a02c6523bff96128b47349afd80b61fec0fb494",
+    "bytes": 174
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_performance_maximal_light.png/1.1.3/asset": {
+    "sha256": "2174aa2f578ad7cd779ccd953bee6935b5b9650bbe12cbc042ed96aca855842f",
+    "bytes": 1762
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_performance_maximal_light.png/1.1.3/metadata.json": {
+    "sha256": "fcf4b2d01051a37fa576cab7d3e868173a003734b4541c23b9b98f34d478aa87",
+    "bytes": 175
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_power_point.png/1.7.43/asset": {
+    "sha256": "fff386f05522372be88207a81ffa7528b9be1923c1cae48d3ecffd6b57344c2d",
+    "bytes": 747
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_power_point.png/1.7.43/metadata.json": {
+    "sha256": "ef02a1d34f16256eccecabe235fb051c0722445dcfe09661c313df2361605c0d",
+    "bytes": 162
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_rewards_hc.png/1.2.1/asset": {
+    "sha256": "35b17b59c9677f10863f5cee981f038bd202203893f88df68123033e574629e7",
+    "bytes": 830
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_rewards_hc.png/1.2.1/metadata.json": {
+    "sha256": "f6f479a4ac23db2c0080b3b32bcf9efb53c0d70e69d9e0034eab1a91bca96dba",
+    "bytes": 160
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_rewards_maximal_dark.png/1.2.1/asset": {
+    "sha256": "c1404a9f322445e8c283006d8102a0ddc971738c2aa78fc0345d1404716a7646",
+    "bytes": 1906
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_rewards_maximal_dark.png/1.2.1/metadata.json": {
+    "sha256": "4e76f321a91faf25189c05d62eafa6a5d218f922cfddb5dc28d2b6e50e5f8cc1",
+    "bytes": 170
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_rewards_maximal_light.png/1.2.1/asset": {
+    "sha256": "d37498af6014865b10c4548c1cb50c18803534638b6c845751d2d3ab0ec1fcb5",
+    "bytes": 1940
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_rewards_maximal_light.png/1.2.1/metadata.json": {
+    "sha256": "f948067ce898bb7373b5c12f2c1157facfce4fb8ba7a2efabc7911cd9b40359c",
+    "bytes": 171
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_search_hc.png/1.3.20/asset": {
+    "sha256": "199b70f69ef2d92d50a1e6c42f20d53d6500f1531130cbdfcd15bd5bd54c554b",
+    "bytes": 1012
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_search_hc.png/1.3.20/metadata.json": {
+    "sha256": "bf819c43ee6539c2a475c4ec0df0a96202d2256f0450b4d8e714482a78f8fdf3",
+    "bytes": 160
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_search_maximal_dark.png/1.3.20/asset": {
+    "sha256": "da14a7b3fcb812065615cd6e332cc2571594c9d0fedb3e9e924957bffba0f100",
+    "bytes": 1353
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_search_maximal_dark.png/1.3.20/metadata.json": {
+    "sha256": "a98a2286cfe04e91a0d6ac59d36f286d2e87fc5234fec2e5305018c01afb3108",
+    "bytes": 170
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_search_maximal_light.png/1.3.20/asset": {
+    "sha256": "e62bf2c4c85ba3ca50bb6c206f2a823b85b1263da786937c291bf3f068916dcf",
+    "bytes": 1311
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_search_maximal_light.png/1.3.20/metadata.json": {
+    "sha256": "3bb570e5fe4fb4b6bbc11c96ac48d5d636d730b063f74fb0a025270e3960198d",
+    "bytes": 171
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_settings_dark.png/1.1.18/asset": {
+    "sha256": "7ef95732ee6e615496d505b1696c6fa24e29d544e788c43db26e6ace8132d86e",
+    "bytes": 1132
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_settings_dark.png/1.1.18/metadata.json": {
+    "sha256": "00c27196df65cababf446ad60ab7e7a157fa7f61e4a248acba9752856ae21368",
+    "bytes": 164
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_settings_dark.png/1.5.18/asset": {
+    "sha256": "3a67a7777664dfca7ae45d7168cdb841cc5743b2b00f7cd2bf2ea21d57947fa1",
+    "bytes": 261
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_settings_dark.png/1.5.18/metadata.json": {
+    "sha256": "2a52141bd648affd96a7efa2102ce820654173d99322d4ebadeab2be34c75ddf",
+    "bytes": 164
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_settings_dark.png/1.5.7/asset": {
+    "sha256": "7ef95732ee6e615496d505b1696c6fa24e29d544e788c43db26e6ace8132d86e",
+    "bytes": 1132
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_settings_dark.png/1.5.7/metadata.json": {
+    "sha256": "de534118e2e83419d7f9f5a0079ad4b638dbe8f09102333debf3b870c3a36043",
+    "bytes": 163
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_settings_hc.png/1.1.18/asset": {
+    "sha256": "f353ca269811e78272e9db7f79e5af00f73b8af4602129e4665dfe2d1da0b9d5",
+    "bytes": 1294
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_settings_hc.png/1.1.18/metadata.json": {
+    "sha256": "814ff08dd3cb3696ed181f010722cec88ffb3ced83fdc98790f7f519ab48b9af",
+    "bytes": 162
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_settings_hc.png/1.5.18/asset": {
+    "sha256": "9fcd4bf1e7e327e9e66766959a0f697ba69378b09c1d0fc13e289e4e62f5178b",
+    "bytes": 256
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_settings_hc.png/1.5.18/metadata.json": {
+    "sha256": "9fc772fce4e355a92b1c499e9ccf50519de7503b42e2780bd37951a6de204b54",
+    "bytes": 162
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_settings_hc.png/1.5.7/asset": {
+    "sha256": "f353ca269811e78272e9db7f79e5af00f73b8af4602129e4665dfe2d1da0b9d5",
+    "bytes": 1294
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_settings_hc.png/1.5.7/metadata.json": {
+    "sha256": "e46ef9d40d2f7234b3144f7c6aea4d856c20ee93de0e4ed33b062dfadd373f10",
+    "bytes": 161
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_settings_light.png/1.1.18/asset": {
+    "sha256": "f353ca269811e78272e9db7f79e5af00f73b8af4602129e4665dfe2d1da0b9d5",
+    "bytes": 1294
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_settings_light.png/1.1.18/metadata.json": {
+    "sha256": "d36855c29369640b1b6b14080144a56d0d1c395697f6fef3de67657966432956",
+    "bytes": 165
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_settings_light.png/1.5.18/asset": {
+    "sha256": "9fcd4bf1e7e327e9e66766959a0f697ba69378b09c1d0fc13e289e4e62f5178b",
+    "bytes": 256
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_settings_light.png/1.5.18/metadata.json": {
+    "sha256": "77fe3f8920ded9fd48235d2d35eb51f4c137b8166bbf65463cb7fce227d630f8",
+    "bytes": 165
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_settings_light.png/1.5.7/asset": {
+    "sha256": "f353ca269811e78272e9db7f79e5af00f73b8af4602129e4665dfe2d1da0b9d5",
+    "bytes": 1294
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_settings_light.png/1.5.7/metadata.json": {
+    "sha256": "14ad17f629c4f8c5258bbb521a2c7e4ee1d32633c3eae29c198c653065b11412",
+    "bytes": 164
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_shopping_hc.png/1.5.7/asset": {
+    "sha256": "514cae733e30fa9c37241c018a88369f4a2a3704747c2f8779a00cbac9a82b50",
+    "bytes": 619
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_shopping_hc.png/1.5.7/metadata.json": {
+    "sha256": "5bd91adca4566c6e58e26c9bbc0e8ac7ea3ce08f698103da40594a771fb6d715",
+    "bytes": 161
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_shopping_maximal_dark.png/1.5.7/asset": {
+    "sha256": "45c11eff4dcf2dfbb2244c90d4b30ff3a79576c4345268657e64ceb72a869da6",
+    "bytes": 1586
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_shopping_maximal_dark.png/1.5.7/metadata.json": {
+    "sha256": "157ab65332912c8363ff91842e8409f17adbd8da903e56f79d4b8fa8db628f76",
+    "bytes": 171
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_shopping_maximal_light.png/1.5.7/asset": {
+    "sha256": "6bb99c5bc12f9ed720b8eaba38f9759ddb49ab13e4764be2823f300be2c11363",
+    "bytes": 1638
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_shopping_maximal_light.png/1.5.7/metadata.json": {
+    "sha256": "a9cd5cf9ef985e877a1930e2e19cd84e88452437edc62132120aea2b4cfc4965",
+    "bytes": 172
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_sound_cloud.png/1.0.3/asset": {
+    "sha256": "67c7d24b78d0784e7e3bdd7184286eb05b7a3c8082b0b029e096ac2485cb536e",
+    "bytes": 1360
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_sound_cloud.png/1.0.3/metadata.json": {
+    "sha256": "a8d1ac71cfcc80152d78151fcb2c2ede6d16c23c3ea69f71dbedb2559539a3be",
+    "bytes": 161
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_spotify.png/0.0.6/asset": {
+    "sha256": "26781054eb1010667bd307cf420224744f25df24f45372187a07e55fb66c2dff",
+    "bytes": 1690
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_spotify.png/0.0.6/metadata.json": {
+    "sha256": "d23b797a1a6601e0a785a7cd02728057ecb6ef70de03ccd8660a99f0bf3e86ce",
+    "bytes": 157
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_spotify.png/1.4.14/asset": {
+    "sha256": "26781054eb1010667bd307cf420224744f25df24f45372187a07e55fb66c2dff",
+    "bytes": 1690
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_spotify.png/1.4.14/metadata.json": {
+    "sha256": "7e60c579673372260e7de8224815cef4dd6063a9a591ebf15a73b95db3099dd1",
+    "bytes": 158
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_spotify_hc.png/0.0.6/asset": {
+    "sha256": "f84679a79b596aaa277cf53eb8a935de049810d8c6667af3873e29e212b8d7b2",
+    "bytes": 659
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_spotify_hc.png/0.0.6/metadata.json": {
+    "sha256": "a988391a9dc49383ca50f36900b6802a1151516d926291a8d3c087d91ba7b8b8",
+    "bytes": 160
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_StreamCameraIcon_Dark.png/0.0.8/asset": {
+    "sha256": "a479696630f94cded0cbd070def56591b7cdbb53f8d9b7682141616c714e495e",
+    "bytes": 1228
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_StreamCameraIcon_Dark.png/0.0.8/metadata.json": {
+    "sha256": "a92f67a0d9059a70290ff0b67191823efb9161f6b1d724985520389f5e65e5e3",
+    "bytes": 171
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_StreamCameraIcon_HC.png/0.0.8/asset": {
+    "sha256": "798254a653f145c98d95e89ae6338d33b2e4b5593eb7500ae7a56ad2be911cb4",
+    "bytes": 367
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_StreamCameraIcon_HC.png/0.0.8/metadata.json": {
+    "sha256": "170767006cfd954b4ae78263eeb18b94b089bfc79141cf15974b7f470717db4b",
+    "bytes": 169
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_StreamCameraIcon_Light.png/0.0.8/asset": {
+    "sha256": "3537b948a23a80a6e5aa24336ed7bbc56f63add601e13eb8c5cbf03f4f197dd7",
+    "bytes": 1210
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_StreamCameraIcon_Light.png/0.0.8/metadata.json": {
+    "sha256": "69e2cdfce3dc929046475ab59a5ea85acc495d557b55368211bb65ff1fc8b646",
+    "bytes": 172
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_teams.png/0.0.2/asset": {
+    "sha256": "aafafe2f07fb1e0e9ecdca29706ca5b6217b50bdcb08a30879a3aaa5b04eced3",
+    "bytes": 833
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_teams.png/0.0.2/metadata.json": {
+    "sha256": "e1d6aa183da2a74a0967443dc48acf3d689a84e954631a0a53f5630c618742a9",
+    "bytes": 155
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_teams_dark.png/1.5.15/asset": {
+    "sha256": "7204f78497cd59dfcec76dc185b204af293922a18e1722c5cbe47e3fabd2e118",
+    "bytes": 998
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_teams_dark.png/1.5.15/metadata.json": {
+    "sha256": "80c4eec4dbe215e76e6a88c812946f316c05f98734af27760ed4cbc156a6caae",
+    "bytes": 161
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_teams_hc.png/1.5.15/asset": {
+    "sha256": "f87684fdb952287f6046324437295504621a738c4d75a41f87c28ea31597a319",
+    "bytes": 866
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_teams_hc.png/1.5.15/metadata.json": {
+    "sha256": "f8ece6c9009fc150b8ee0db6ea430c6f17df5aaae2b7cbe242d21c2395ef12e9",
+    "bytes": 159
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_teams_light.png/1.5.15/asset": {
+    "sha256": "7204f78497cd59dfcec76dc185b204af293922a18e1722c5cbe47e3fabd2e118",
+    "bytes": 998
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_teams_light.png/1.5.15/metadata.json": {
+    "sha256": "c0e7028a14bd5f66bae7f4b418d54640def2e4e6dc36957907c83e9aa10a6bb5",
+    "bytes": 162
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_telegram.png/1.0.4/asset": {
+    "sha256": "c962e0d74827029e80c27896b4abbfd571ae48d360b0150b15e246cea5583475",
+    "bytes": 1944
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_telegram.png/1.0.4/metadata.json": {
+    "sha256": "b37e7c2f3af7bf51bfeb074a183944d27a06db3d8bc553ea9976bfb78142cff4",
+    "bytes": 158
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_theater_hc.png/1.0.9/asset": {
+    "sha256": "66d8649b9a13953bd351a5b7e5834e1656745df96a25cf8642afaa81f453eae2",
+    "bytes": 802
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_theater_hc.png/1.0.9/metadata.json": {
+    "sha256": "ac39649192460681fdc532839f247fc634a4135c9b36da5a344be4d11a3e0431",
+    "bytes": 160
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_theater_maximal_dark.png/1.0.9/asset": {
+    "sha256": "0997438bda8d23bf5f5ea5baf5d1d9423e5bda0525e0a11c20b81858b1897bd2",
+    "bytes": 1886
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_theater_maximal_dark.png/1.0.9/metadata.json": {
+    "sha256": "b957a274044b0a232a9fb41ce496cce018bacb1f087d30eab3aa055a05f957d1",
+    "bytes": 170
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_theater_maximal_light.png/1.0.9/asset": {
+    "sha256": "f9080b043b3d27babe16a18a5f8c475a4b49a54f93ceb0e733cd3fbde9b7486d",
+    "bytes": 1960
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_theater_maximal_light.png/1.0.9/metadata.json": {
+    "sha256": "539e36a34e221bc79b09035ea5601e6dff852a78c9592011a539ac76aef6a916",
+    "bytes": 171
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_tidal.png/1.0.3/asset": {
+    "sha256": "39ce3958b9a95477666c690c23c3e39e0a6cfc2acea21583ee6b0ed3c96df091",
+    "bytes": 1028
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_tidal.png/1.0.3/metadata.json": {
+    "sha256": "848b9a9539db622b4a0ce8b8b278ef38283e5cc1289e7ae0b8edda6b1b036fb0",
+    "bytes": 155
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_toolbox_hc.png/1.5.18/asset": {
+    "sha256": "938add111df9cfb26725bd21b7bf513a4517083fd4c278a16b0dfbae13c98fa5",
+    "bytes": 579
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_toolbox_hc.png/1.5.18/metadata.json": {
+    "sha256": "7a741b98e213e2c41980f2b82a1fa3ac3229403f4cc54a3408dcea000c92a5fd",
+    "bytes": 161
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_toolbox_maximal_dark.png/1.5.18/asset": {
+    "sha256": "6faa19ae87e4012aa1e0b221fb0b317b2f5bb6c0a45242073b8cda2f1e9f7e8f",
+    "bytes": 1476
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_toolbox_maximal_dark.png/1.5.18/metadata.json": {
+    "sha256": "a0ac804b331df23b20ce7a6aaaaaeb7dc3607240575d1fc8327c29398bd92e16",
+    "bytes": 171
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_toolbox_maximal_light.png/1.5.18/asset": {
+    "sha256": "74298037889845af2739bcb382ad676b10d07449fff98388b785c2b0878a2aca",
+    "bytes": 1493
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_toolbox_maximal_light.png/1.5.18/metadata.json": {
+    "sha256": "4313f24f7cb24bfca60baac3f52b785d2489797931557331cb7e3e686dcf3bd8",
+    "bytes": 172
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_twitter_light.png/1.0.9/asset": {
+    "sha256": "14b62599d52b97cca580a3d7517c290b4da05f2755aeab802538704af6715b6e",
+    "bytes": 3020
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_twitter_light.png/1.0.9/metadata.json": {
+    "sha256": "0eef0df10df3f3d714cb093affa0f3582a6eaaca5a9d669494efd4da095b7945",
+    "bytes": 163
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_whatsapp.png/0.0.8/asset": {
+    "sha256": "a227328421b6aedc4e03f18257bd192937eb70e1d8c907e8763002e1cec06113",
+    "bytes": 2743
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_whatsapp.png/0.0.8/metadata.json": {
+    "sha256": "74820b0663aad9ca58b73f1b43d316d39d8d3ef17175153bb13ad62d809dceae",
+    "bytes": 158
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_whatsapp_hc.png/0.0.8/asset": {
+    "sha256": "0d9eaa58f834838a1cca4b8bcfa88de28b3a5d0afa440d6c4c37ebf0e69e1a30",
+    "bytes": 703
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_whatsapp_hc.png/0.0.8/metadata.json": {
+    "sha256": "2d3a798986461999ca04a7cbb8ffdd4f0ef0d4f70cdee95fa2501c415a44c84f",
+    "bytes": 161
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_whatsapp_light.png/1.4.12/asset": {
+    "sha256": "178f59cb1e93865749e0a38b44b16a68f8e76ce50b3418e40700bffd72df8708",
+    "bytes": 5639
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_whatsapp_light.png/1.4.12/metadata.json": {
+    "sha256": "53adbe8e45f72e9809bd0f59c82f2f2743ba5080e227b2c2370c1be04bfa86f7",
+    "bytes": 165
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_whats_new.png/1.0.1/asset": {
+    "sha256": "119b110f8babeb0c61f0d53e2110b5e19db91e760c9a0a5ee2be3d53c3617e12",
+    "bytes": 1770
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_whats_new.png/1.0.1/metadata.json": {
+    "sha256": "d1365c03be0fad1502f131e690a15184462e45a4940915a6858c5bcf9adcd8e3",
+    "bytes": 159
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_word.png/1.7.43/asset": {
+    "sha256": "c27ce932f5370fb6b3ddc914fbc5da77ed8e5137ea0ecbd4067f29aa24e34ecf",
+    "bytes": 885
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_word.png/1.7.43/metadata.json": {
+    "sha256": "120f3a9c2766552f030f794654820a95f3cd6e7aed31528d17727a902b20c829",
+    "bytes": 155
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_wrench.png/1.0.1/asset": {
+    "sha256": "8a1a0f1615d2bc4dd0e90d83878bc385937d69ef18a8ad55826aaf5c698cdea3",
+    "bytes": 1136
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_wrench.png/1.0.1/metadata.json": {
+    "sha256": "b96ad7086ee0c067b3743e67a5c7c2a6b908ae782d551225dfca1f63f93e9c49",
+    "bytes": 156
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_yandex_music.png/1.0.10/asset": {
+    "sha256": "ec6c5ca6c057e195200b78e05056c042a4da8dd017872d8809447fd93430b7aa",
+    "bytes": 1407
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_yandex_music.png/1.0.10/metadata.json": {
+    "sha256": "168da050e5e77fead3938597575001e016b527bd429dee985f91bff232d5c10a",
+    "bytes": 163
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_youtube.png/0.0.4/asset": {
+    "sha256": "04cc7a34de2de21261cfffde014cb4927bd2ead5c70bbdbccfd351fc23f3fe83",
+    "bytes": 451
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_youtube.png/0.0.4/metadata.json": {
+    "sha256": "b54f3f98f7a809218de30107d81a95bd11667ef1ea5393ffb72e1f8507464459",
+    "bytes": 157
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_youtube.png/1.4.14/asset": {
+    "sha256": "04cc7a34de2de21261cfffde014cb4927bd2ead5c70bbdbccfd351fc23f3fe83",
+    "bytes": 451
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_youtube.png/1.4.14/metadata.json": {
+    "sha256": "2772787742bff5d070dd0119a5af29e41592c3c5c3cc4254ef7fb43f5d97b10a",
+    "bytes": 158
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_youtube_hc.png/0.0.4/asset": {
+    "sha256": "8358a93d6cc3db4c87e39c9b1aa56652df4754d02852370a8457295b67ab2f3f",
+    "bytes": 638
+  },
+  "results/app/phase2/edge-profile/Edge Sidebar/2026.2.24.1/edge_hub_apps_youtube_hc.png/0.0.4/metadata.json": {
+    "sha256": "f48328f8c081d9e23cd043eda7877078a80c99a7b049fdd4db4b2752b2e266b3",
+    "bytes": 160
+  },
+  "results/app/phase2/edge-profile/EdgeArbitration/2026.5.28.1/manifest.json": {
+    "sha256": "00c316b6e91555dfdfaa8fe98e8751ac3c1ce2217ec53659583ae185341f475e",
+    "bytes": 92
+  },
+  "results/app/phase2/edge-profile/EdgeArbitration/2026.5.28.1/arbitration_priority_list/38.0.1/asset": {
+    "sha256": "f88a916d6ddd78aa2843e2959abc1f61d64f07890f05ad2f3348988223d450ac",
+    "bytes": 21389
+  },
+  "results/app/phase2/edge-profile/EdgeArbitration/2026.5.28.1/arbitration_priority_list/38.0.1/metadata.json": {
+    "sha256": "495b2bf071c64471aa451a5d2c1219136eeebdc76c33e5b52dec11960093bfe4",
+    "bytes": 173
+  },
+  "results/app/phase2/edge-profile/EdgeArbitration/2026.5.28.1/arbitration_priority_list/39.0.3/asset": {
+    "sha256": "d9b217d473ebdefcece40259f08678c2f11cfc790e157a7999fce1fe4e0957d2",
+    "bytes": 21029
+  },
+  "results/app/phase2/edge-profile/EdgeArbitration/2026.5.28.1/arbitration_priority_list/39.0.3/metadata.json": {
+    "sha256": "a11534d839b2b9f50982352c2f84785080b992058011e733a99ebf4e3932a577",
+    "bytes": 173
+  },
+  "results/app/phase2/edge-profile/EdgeArbitration/2026.5.28.1/arbitration_priority_list/40.0.2/asset": {
+    "sha256": "2f1bc234a006f67058e7a24f805a691bdd858b0fd8fb7a63f8956114a73d0027",
+    "bytes": 21436
+  },
+  "results/app/phase2/edge-profile/EdgeArbitration/2026.5.28.1/arbitration_priority_list/40.0.2/metadata.json": {
+    "sha256": "a73ff06e170c9a4cfd32d1d82dffe5924c81bea0384ae009216250b0f461477e",
+    "bytes": 173
+  },
+  "results/app/phase2/edge-profile/EdgeArbitration/2026.5.28.1/arbitration_priority_list/41.0.0/asset": {
+    "sha256": "2ed14e57794993c0dc36a6e9efe42e99d5f53d5b67796ff019ce81ae27b30fcf",
+    "bytes": 21436
+  },
+  "results/app/phase2/edge-profile/EdgeArbitration/2026.5.28.1/arbitration_priority_list/41.0.0/metadata.json": {
+    "sha256": "f98461c6be4b5669826249bef081b8bf2a9132af8bba38786fce246b18170f73",
+    "bytes": 173
+  },
+  "results/app/phase2/edge-profile/EdgeLanguageDetectionModel/2026.1.30.1/manifest.json": {
+    "sha256": "7ab2209f3bfa7b6ddfe031101bf67d1be6e5c7a8b78cb51a4054312d927870fe",
+    "bytes": 95
+  },
+  "results/app/phase2/edge-profile/EdgeLanguageDetectionModel/2026.1.30.1/model.ftz": {
+    "sha256": "4bbf90cb7ca689fded250fec7afc466a3b629cca62c541beaa12ff09030d73cd",
+    "bytes": 3334766
+  },
+  "results/app/phase2/edge-profile/GPUPersistentCache/DawnGraphiteCache/ZBRSUVJ7IMDXK2RUP4UNAHPCKJL4BWQB/cache.db": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/GPUPersistentCache/DawnGraphiteCache/ZBRSUVJ7IMDXK2RUP4UNAHPCKJL4BWQB/cache.db-wal": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/GPUPersistentCache/DawnGraphiteCache/ZBRSUVJ7IMDXK2RUP4UNAHPCKJL4BWQB/cache.journal": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/GrShaderCache/data_0": {
+    "sha256": "d6a5fe39cd672781b256e0e3102f7022635f1d4bb7cfcc90a80fffe4d0f3877e",
+    "bytes": 8192
+  },
+  "results/app/phase2/edge-profile/GrShaderCache/data_1": {
+    "sha256": "902f30c1fb0597d0734bc34b979ec5d131f8f39a4b71b338083821216ec8d61b",
+    "bytes": 270336
+  },
+  "results/app/phase2/edge-profile/GrShaderCache/data_2": {
+    "sha256": "ec1702806f4cc7c42a82fc2b38e89835fde7c64bb32060e0823c9077ca92efb7",
+    "bytes": 8192
+  },
+  "results/app/phase2/edge-profile/GrShaderCache/data_3": {
+    "sha256": "e09f42c398d688dce168570291f1f92d079987deda3099a34adb9e8c0522b30c",
+    "bytes": 8192
+  },
+  "results/app/phase2/edge-profile/GrShaderCache/index": {
+    "sha256": "03bfe47fbf09ee9999fa16734bbdf8212cc139fb115d13d57c0628c9cd1e3aa7",
+    "bytes": 262512
+  },
+  "results/app/phase2/edge-profile/Nurturing/campaign_history": {
+    "sha256": "6a8c9428148ad8f9dfdd7e13724fa624f5e810e110a1657f4e6b0c65143076fd",
+    "bytes": 20480
+  },
+  "results/app/phase2/edge-profile/Nurturing/campaign_history-journal": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "results/app/phase2/edge-profile/ShaderCache/data_0": {
+    "sha256": "d6a5fe39cd672781b256e0e3102f7022635f1d4bb7cfcc90a80fffe4d0f3877e",
+    "bytes": 8192
+  },
+  "results/app/phase2/edge-profile/ShaderCache/data_1": {
+    "sha256": "902f30c1fb0597d0734bc34b979ec5d131f8f39a4b71b338083821216ec8d61b",
+    "bytes": 270336
+  },
+  "results/app/phase2/edge-profile/ShaderCache/data_2": {
+    "sha256": "ec1702806f4cc7c42a82fc2b38e89835fde7c64bb32060e0823c9077ca92efb7",
+    "bytes": 8192
+  },
+  "results/app/phase2/edge-profile/ShaderCache/data_3": {
+    "sha256": "e09f42c398d688dce168570291f1f92d079987deda3099a34adb9e8c0522b30c",
+    "bytes": 8192
+  },
+  "results/app/phase2/edge-profile/ShaderCache/index": {
+    "sha256": "b3bc070852db8b11bce9ceb2168fe5414d5491d3c1acd7ddd5f9ed934023e74e",
+    "bytes": 262512
+  },
+  "results/app/phase2/edge-profile/SmartScreen/RemoteData/customSettings": {
+    "sha256": "d8d672f953e823063955bd9981532fc3453800c2e74c0cc3653d091088abd3b3",
+    "bytes": 47
+  },
+  "results/app/phase2/edge-profile/SmartScreen/RemoteData/customSettings_F95BA787499AB4FA9EFFF472CE383A14": {
+    "sha256": "2bae8302f9bd2d87ae26acf692663df1639b8e2068157451da4773bd8bd30a2b",
+    "bytes": 35
+  },
+  "results/app/phase2/edge-profile/SmartScreen/RemoteData/edgeSettings": {
+    "sha256": "42ccb5159b168dbe5d5ddf026e5f7ed3dbf50873cfe47c7c3ef0677bb07b90d4",
+    "bytes": 18
+  },
+  "results/app/phase2/edge-profile/SmartScreen/RemoteData/edgeSettings_2.0-0": {
+    "sha256": "e6beb5ac43dfa3e05ca3c40c4e5de7d763e2e0580203ad9034c6f0527ac0e45b",
+    "bytes": 3552
+  },
+  "results/audit/deliverables_matrix.json": {
+    "sha256": "66918749e8d9d67c860ad7f7642ec9b92150d8f8bbb27415acf0050ada6d8465",
+    "bytes": 18240
+  },
+  "results/audit/deployment_readiness.json": {
+    "sha256": "618601d7048e236792fada2c480cc4e891def6b9c38b662ab45c1fced1577386",
+    "bytes": 7514
+  },
+  "results/audit/functional_requirement_matrix.json": {
+    "sha256": "4a001e1030f4c3f4eef04013c1b4b1d47a15ac1a2110641f9b24de5ae54673fe",
+    "bytes": 50273
+  },
+  "results/audit/official_srs_extracted.txt": {
+    "sha256": "ba97fd57cf76ccee693ec2b698be4ae341b3ca1557a41093400f9f5acec2bdb0",
+    "bytes": 57653
+  },
+  "results/audit/repository_hygiene.md": {
+    "sha256": "8453c4c874065d610dd8906a575d3ebe0012d70c35acd8adc6a1f196c8aab9f9",
+    "bytes": 3772
+  },
+  "results/audit/security_verification.log": {
+    "sha256": "d143cf3e57d1e4c35d7d14e421ccfd00c25435abc7ec9a2c8cb7004c68ea551f",
+    "bytes": 6064
+  },
+  "results/audit/srs_compliance.json": {
+    "sha256": "227c52955583baf131599634be29fa989da534abc7ba86cbed8dbfa205eb6439",
+    "bytes": 51691
+  },
+  "results/audit/srs_compliance.md": {
+    "sha256": "0829824c964f3e0623d23358cce4985f080d98d298c3d0388f41a8b7332ecce1",
+    "bytes": 88298
+  },
+  "results/comparison/execution.log": {
+    "sha256": "baa1f2674d4b95fa024204b3736f21773af635838f795dcee89cf631ec87b783",
+    "bytes": 5862
+  },
+  "results/comparison/spark_vs_python.csv": {
+    "sha256": "6a3cc73a98021489aaaf6101a9808e753a0060f4cff4de8b4c37d782b6514df8",
+    "bytes": 301484
+  },
+  "results/comparison/spark_vs_python.json": {
+    "sha256": "59d6081933e6ef1b29adb7a24686fd9bbf1efb61408bb81db518bb076460fbdc",
+    "bytes": 850323
+  },
+  "results/comparison/test_execution.log": {
+    "sha256": "d400d57bfc0873f2ade32383ed45d50d9b226192785c4abf34eb1376c3ec5eef",
+    "bytes": 2210
+  },
+  "results/comparison/gap1/menu_profitability_spark_python.json": {
+    "sha256": "eb2c84c4e5bb9fa46dbe7f4e419271a16ea9b12cc9fa862bb47aa31c3d658378",
+    "bytes": 1770
+  },
+  "results/comparison/gap1/menu_profitability_spark_python_v6.json": {
+    "sha256": "f6f47516ef1fffa0dc4fb795abf5c2209b851a70dc62af25cae753b1f59e60cc",
+    "bytes": 2036
+  },
+  "results/comparison/spark_reference/category_performance.csv": {
+    "sha256": "887c4b1aa48a86e56fa8308d3eb567eec2a71fd873782f00fe778d88b558768e",
+    "bytes": 727
+  },
+  "results/comparison/spark_reference/channel_performance.csv": {
+    "sha256": "0c8b68442a930d7d82d3409ab25396f46e25debe1a779ac78178ca4957975c64",
+    "bytes": 290
+  },
+  "results/comparison/spark_reference/customer_segment_behavior.csv": {
+    "sha256": "6e7b5799a53f1a1dcd6445e8a78f7574cf920a6d13f31eed675a1ffcf99ae7c9",
+    "bytes": 278
+  },
+  "results/comparison/spark_reference/inventory_status.csv": {
+    "sha256": "8b200da0d319700e4a8674a0f96d1d73cb6f0d88446a84928541d0ce19e42656",
+    "bytes": 82
+  },
+  "results/comparison/spark_reference/menu_item_performance.csv": {
+    "sha256": "ea7fd067438a9041a125b6ddeacf9113b390e10272f821307f958585e91cc9dd",
+    "bytes": 12556
+  },
+  "results/comparison/spark_reference/monthly_demand.csv": {
+    "sha256": "cddb88eddd4a8f30bd5aec9e5d33826db2f13ca204ecaac3be3579fba2612627",
+    "bytes": 670
+  },
+  "results/comparison/spark_reference/pricing_changes.csv": {
+    "sha256": "f5ef5f5a6554ff28e4c74bd1beff5f8d9e670c23bde496556759f36a3158577a",
+    "bytes": 205
+  },
+  "results/comparison/spark_reference/promotion_effectiveness.csv": {
+    "sha256": "df7a72a48b91f5d7c80f6c82f201ba4c38f0c82a4e4dada02ad1da19c690454a",
+    "bytes": 4228
+  },
+  "results/comparison/spark_reference/restaurant_performance.csv": {
+    "sha256": "e7bf6e75b03ebe52c48e5979d6f980c71ff1edda5da6a697dca77206535f6ea6",
+    "bytes": 1498
+  },
+  "results/comparison/spark_reference/restaurant_ratings.csv": {
+    "sha256": "aa03bb65b1c800994ee45f1fe970be7b2143044d9d3039efdbafb356fdceb7c0",
+    "bytes": 791
+  },
+  "results/comparison/spark_reference/wastage_by_reason.csv": {
+    "sha256": "bae63e82fe15a1c8b8965cd5b28437c940b3db73a9229332a666726e15254aca",
+    "bytes": 240
+  },
+  "results/comparison/spark_reference/weekday_peak_hour.csv": {
+    "sha256": "1a5ec85d775cb9084baa2647ef7590402bf09dcdf88a678b878d4bf7482a8955",
+    "bytes": 3112
+  },
+  "results/data_quality/independent_validation.json": {
+    "sha256": "faceb298d517c5cfa0eb1891ba17bfc48fe5d81c7b9af85ca25f1c931c1ca8c2",
+    "bytes": 13543
+  },
+  "results/data_quality/independent_validation_tables.csv": {
+    "sha256": "8dc76d82888094b29b5f113974de01bfba5930b7062eb8b12291745f8498fd0b",
+    "bytes": 485
+  },
+  "results/generation/generation_summary_full.json": {
+    "sha256": "539ed152af28ca23826dec788a1d3fa16c44fcf35f1643a985dfd5c24e097599",
+    "bytes": 2004
+  },
+  "results/generation/generation_summary_sample.json": {
+    "sha256": "10972283bebde8872789c055a90a3803174826660044998887ad90249d2c149d",
+    "bytes": 1975
+  },
+  "results/ml/README.md": {
+    "sha256": "ad1a18d397043f810f5a1155ebbc6961d8d559a8fa0104f518dfe2536802a05a",
+    "bytes": 2914
+  },
+  "results/ml/tests.log": {
+    "sha256": "cec15b542ade595b395fb5cb95966a2fbe0de55adca04da23ae9ff2b3f1d2b2c",
+    "bytes": 791
+  },
+  "results/ml/comparison/spark_vs_python.json": {
+    "sha256": "9bb2895e2d1bb49ede04a3bc326e972272a007ea77b11a830f3c1be9d343d057",
+    "bytes": 14978
+  },
+  "results/ml/gap1/demand_baseline_comparison.json": {
+    "sha256": "a3a049879e36cc2f65760049700e318de63cb8f5db6e8f33abed8e9a62fefa98",
+    "bytes": 149993
+  },
+  "results/ml/gap1/demand_prediction_cases.csv": {
+    "sha256": "1a02eb21fd7cb2942c4b4328d64b1bf740c8fb03e0013cfa085f4c3f362f7717",
+    "bytes": 46442
+  },
+  "results/ml/gap1/verification_20260926/demand_model_comparison.json": {
+    "sha256": "4209a0a50b95ab6773115a6106cb37aa9c528fe1cdeb0cef9912c80edeb8b465",
+    "bytes": 263462
+  },
+  "results/ml/gap1/verification_20260926/demand_model_comparison_cases.csv": {
+    "sha256": "0a79f544af358992e9ff61a8160bc38a3bb06a1d58cc47f01cc54be172bc0ad7",
+    "bytes": 78490
+  },
+  "results/ml/gap1/verification_20260926/demand_model_major_disagreements.csv": {
+    "sha256": "b9f0d02d26b94a568e62c8da1d1ac6ebe8b74d424cadeb62ab967f563e2ad6fb",
+    "bytes": 1328
+  },
+  "results/ml/python/pipeline.json": {
+    "sha256": "cee6b195b9432207974f9c974d132e86fca3456358f14ceea98c7f4c8d2f3103",
+    "bytes": 7924
+  },
+  "results/ml/python/run.log": {
+    "sha256": "605c9bc64ce287a3798e47e0182db2d2034cd5290f38395e899b6d509cb7dda2",
+    "bytes": 936
+  },
+  "results/ml/python/selected_model.joblib": {
+    "sha256": "a5a088f7f073980609d33a0c3c708b382b8b725e7393e238407f7f51903e379e",
+    "bytes": 11972643
+  },
+  "results/ml/spark/pipeline.json": {
+    "sha256": "ae285bdd94ae2d8e4bb3800e950bc0298d830069f58a0a203ba1993d5cc45f38",
+    "bytes": 8302
+  },
+  "results/ml/spark/publish.log": {
+    "sha256": "21f604994c7c8fd0d82c4f794cb41799ed3ad958cf939cb6caa806bad3574244",
+    "bytes": 2740
+  },
+  "results/ml/spark/publish_final.log": {
+    "sha256": "1565e8ccb18b6ca30de2f7649abce4745f5e5b29671ff94372c1a2db9df045c7",
+    "bytes": 2758
+  },
+  "results/ml/spark/reload_smoke.json": {
+    "sha256": "953333d0f538dc233d526c2b604c9a553ecd05914507f36a8b4d27ba95f86721",
+    "bytes": 318
+  },
+  "results/ml/spark/reload_smoke.log": {
+    "sha256": "e3a68617edf961bee3f8c34a8c16c33a7d10dc65f12e82fb2107fa461d5dc989",
+    "bytes": 3082
+  },
+  "results/ml/spark/run.log": {
+    "sha256": "075f52a6b3703d29077b5a40f6dc100a27760411620fc089dde0ee2d33472c0a",
+    "bytes": 37716
+  },
+  "results/phase3/benchmark/benchmark_run.log": {
+    "sha256": "f379efb68f441a09270ef922031b44f293240f57e4be5084dbce8453bcd6f604",
+    "bytes": 3272
+  },
+  "results/phase3/scalability/benchmark.log": {
+    "sha256": "164ef143ec69251ef67b9b80b6acb1eb7593404ca35d93f1992d1624620d6338",
+    "bytes": 3100
+  },
+  "results/phase3/scalability/benchmark_console.log": {
+    "sha256": "5fa925262179043c1a358d3270889e40d726ac411324ae60e5b2c940617e064f",
+    "bytes": 3616
+  },
+  "results/phase3/scalability/benchmark_run_20260926.log": {
+    "sha256": "b4a1910a2b2cd709b5c9a09570e979336ed78f8b6788e8f467c01cef53e9484f",
+    "bytes": 2588
+  },
+  "results/phase3/scalability/order_items_5m_benchmark.json": {
+    "sha256": "80669945f287ec53a0896053de56be1fc309232bfa311863ca1e5ac0340ba955",
+    "bytes": 4117
+  },
+  "results/phase3/scalability/order_items_5m_by_menu_item.csv": {
+    "sha256": "1d7dbe18e41d5d3e78630256eeb248596b0075a7b291a4104b3f82c53b679e71",
+    "bytes": 6972
+  },
+  "results/python/category_performance.csv": {
+    "sha256": "b1cb8e7f47cd39b5eddaa3ad9bbbb9aac8d8f124cdd259bad52024b75bac102f",
+    "bytes": 727
+  },
+  "results/python/channel_performance.csv": {
+    "sha256": "da77dd2ebf0caee40fc8613af06517a682a01b296d8289e38981a5f695248aba",
+    "bytes": 290
+  },
+  "results/python/customer_segment_behavior.csv": {
+    "sha256": "819000464209840a8f37323378a9868d9856f432d1e719e67073cb62acd44098",
+    "bytes": 278
+  },
+  "results/python/execution.log": {
+    "sha256": "648bcc70232daaad2e177cdb013861d0b6db415fc1771f465e6d97396609689d",
+    "bytes": 1788
+  },
+  "results/python/inventory_status.csv": {
+    "sha256": "8b200da0d319700e4a8674a0f96d1d73cb6f0d88446a84928541d0ce19e42656",
+    "bytes": 82
+  },
+  "results/python/menu_item_performance.csv": {
+    "sha256": "d50d832c3aadc7ad3748ffdf7ed6430aa10969c76c31c324c34cdcb4c301fa27",
+    "bytes": 12556
+  },
+  "results/python/monthly_demand.csv": {
+    "sha256": "cddb88eddd4a8f30bd5aec9e5d33826db2f13ca204ecaac3be3579fba2612627",
+    "bytes": 670
+  },
+  "results/python/pipeline.json": {
+    "sha256": "49db04a3109f06ee0c09e00c6aa8f0c310148f7ce7e92b99fecc4fa71f5caf8b",
+    "bytes": 126214
+  },
+  "results/python/pricing_changes.csv": {
+    "sha256": "065c5fb71aad60826937e84dbe15b332e98faaff950f870f94270a5e6ed6fc5d",
+    "bytes": 205
+  },
+  "results/python/promotion_effectiveness.csv": {
+    "sha256": "88b878e05d8cbd0637617495cf802a55975e62bafcb2a3c12108a53140be4aa3",
+    "bytes": 4228
+  },
+  "results/python/restaurant_performance.csv": {
+    "sha256": "c77321ce81535ef64b29b5d0406d55700a1709d80704b8c9d880e3d58a71553a",
+    "bytes": 1498
+  },
+  "results/python/restaurant_ratings.csv": {
+    "sha256": "50c1d71404098f5687c23f149ca1a542cac060344f94d3657e2b30ac3e3fef9a",
+    "bytes": 791
+  },
+  "results/python/wastage_by_reason.csv": {
+    "sha256": "4ad98f1bb742eee6eee4f34db733ce439dff002d218106e461ef366068d832c7",
+    "bytes": 240
+  },
+  "results/python/weekday_peak_hour.csv": {
+    "sha256": "2b004e414e0842776245add74df05594dd22596ce5707f228051e1ac1558105f",
+    "bytes": 3112
+  },
+  "results/python/gap1/menu_profitability.csv": {
+    "sha256": "ad62e8bb9135bf0637616a2f503bcb2d7cf1571438ab52fdffa491f429825ac1",
+    "bytes": 24326
+  },
+  "results/python/gap1/pipeline.json": {
+    "sha256": "0c5abdd7ff5797845616866714a1e98296218fac7726b04373efb9a55b8bd818",
+    "bytes": 1165
+  },
+  "results/spark/analytics.json": {
+    "sha256": "23bcf2a9a449107da94da0bf77bc24581815b7864e204b0e3e28b66f1fa86c7c",
+    "bytes": 34562
+  },
+  "results/spark/analytics.log": {
+    "sha256": "9bf9cf2b48f65dbcabb75911af883283728417590d214c01424b9c7f819de626",
+    "bytes": 4023054
+  },
+  "results/spark/analytics_v2.log": {
+    "sha256": "1eab5f4ca41cfdea0967aceeea08ca1bbb15a2e1b64ebd81d30797c6d5d3300e",
+    "bytes": 3569920
+  },
+  "results/spark/analytics_v3.log": {
+    "sha256": "88477802d2363642b068095895d9c6509a027723e13da4ad545605ec9b172165",
+    "bytes": 3570072
+  },
+  "results/spark/analytics_v4.log": {
+    "sha256": "5310fa99187fb91649fb07ae772f44217d243b11de855ea8b7cbadb96dc70616",
+    "bytes": 3571982
+  },
+  "results/spark/ingestion.json": {
+    "sha256": "f5d810871a212905b89e3ebd4c07c4c624b368b7aa86003bca61e9863fdc26ce",
+    "bytes": 21429
+  },
+  "results/spark/ingestion.log": {
+    "sha256": "8ba9e5e432792d693ddf8f3d771f1bed63e2ce06e78f4d7e84b5fb0312b791f3",
+    "bytes": 564716
+  },
+  "results/spark/profile_clean.log": {
+    "sha256": "aa27b0983ba9fd9b5e91747617afdd184eb4b725eff266df97d66fd0797cbaf5",
+    "bytes": 4009962
+  },
+  "results/spark/profile_clean_v2.log": {
+    "sha256": "171d9771392045c2f18f7dfaa34183943a84655acacdd2082e5690b7197c6705",
+    "bytes": 3284480
+  },
+  "results/spark/profile_clean_v3.log": {
+    "sha256": "a631e30ab5a3c7474fa023295b15e052aadebf0cd3f26d6d3a341a3f485cff1e",
+    "bytes": 3352136
+  },
+  "results/spark/profile_clean_v4.log": {
+    "sha256": "748decc7fe05c5f58b95128adf1f863f343f723bb18b11730cbbf8b1639da03d",
+    "bytes": 3581108
+  },
+  "results/spark/quality_cleaning.json": {
+    "sha256": "3889ed22124cef1d89fd6d2fd467ba36e66eb689a7c0373755d95f2d2b41c78f",
+    "bytes": 30076
+  },
+  "scripts/spark_hdfs_test.py": {
+    "sha256": "792304802d874bf000df57f991084b4f55a7b79a21684c336034a9f6a9f3b61e",
+    "bytes": 449
+  },
+  "scripts/app/render_audit_markdown.py": {
+    "sha256": "daca4f01018e4ad65fd88b5ca26ec2305ab35ace109d6741a85f94896c4acf66",
+    "bytes": 7218
+  },
+  "scripts/app/run_tests.py": {
+    "sha256": "70cef729d009aff5ef7fb3f76bb0a667ffa905cc350dd212727319fe8e92b529",
+    "bytes": 546
+  },
+  "scripts/app/verify_browser_cdp.py": {
+    "sha256": "21201509724f9018a0bf8d2c9616242392815d33055c6d38fbfd79dba62f1fde",
+    "bytes": 16874
+  },
+  "scripts/app/verify_browser_routes.py": {
+    "sha256": "2519141c439fd0093100f1a84ca117052c28240320c47e88be1d634e3c42945d",
+    "bytes": 2236
+  },
+  "scripts/app/verify_live_app.py": {
+    "sha256": "2f41e5acd30cc8828fb33a7af1ea7543be79f0743aa270e0ddd8cb37158c0257",
+    "bytes": 3300
+  },
+  "scripts/app/verify_phase2_browser.py": {
+    "sha256": "62649934a0f715e4ef3407f93cbc7cae0c3115dd07969e33a4cad751deb8c14c",
+    "bytes": 18780
+  },
+  "scripts/audit/reassess_gap1.py": {
+    "sha256": "8bbce2fa20585488a5afc359586115bcdc09fb1cbf86af6f285f16cb4949fb82",
+    "bytes": 39944
+  },
+  "scripts/data_generation/generate_dineq_dataset.py": {
+    "sha256": "42795029877d733356017104ed4843fb03e8847c4ced5a524c6f8a667cef4a06",
+    "bytes": 27696
+  },
+  "scripts/data_generation/validate_generated_dataset.py": {
+    "sha256": "8969628066a05ece329322b1f43749536af09cd1e4c8949523a867f40d4f3249",
+    "bytes": 15033
+  },
+  "scripts/ml/compare_ml.py": {
+    "sha256": "24c39487622ae50616cb2262cd16c82976b1edf8b8b8bdc6d13e49c5c5dfed5a",
+    "bytes": 3878
+  },
+  "scripts/ml/demand_baseline_comparison.py": {
+    "sha256": "7a145a516cc0870e3f2f0bffe571a7b5ac09b1d493b92c719393e5468867e40c",
+    "bytes": 7968
+  },
+  "scripts/ml/demand_common.py": {
+    "sha256": "db5292896bd1739fcd54723f582310799b9a0bb92864ed75621dc5d5bb58b006",
+    "bytes": 1164
+  },
+  "scripts/ml/finalize_evidence.py": {
+    "sha256": "5a434b0052d0d7653f62b870ccdf224c7abb32b2eeb5057c3309d08381a7cd6c",
+    "bytes": 1842
+  },
+  "scripts/ml/publish_hdfs_evidence.py": {
+    "sha256": "1d3e9a61c763b01eb5b2055f687f3605b5fc83e1592d8bd9d7836a2c2c57485e",
+    "bytes": 1023
+  },
+  "scripts/ml/python_demand.py": {
+    "sha256": "b6cf566d9bd6978d9cdda07258e8b0870c93e4431e73de7b70170dd1a675a6e9",
+    "bytes": 6257
+  },
+  "scripts/ml/run_tests.py": {
+    "sha256": "50107f548ae7aee6419954ce4788fd76647035b104c3e61ebff7b0a17b0f492c",
+    "bytes": 539
+  },
+  "scripts/ml/spark_demand.py": {
+    "sha256": "6da714eadf6d442b9485e6421856c72cf5c3217f470986430835a2e7c25d5bd8",
+    "bytes": 7375
+  },
+  "scripts/ml/spark_reload_smoke.py": {
+    "sha256": "e77b35d305c5a00c8ed07291c0c16447db935eb7c1a5fee66a2f0b4f58316b5f",
+    "bytes": 1534
+  },
+  "scripts/ml/spark_wastage_risk.py": {
+    "sha256": "596e7fbfdd4f2db0852e7dce1dcad4ea391a15254c20b437acc9f08ce04e6d03",
+    "bytes": 14408
+  },
+  "scripts/python/compare_gap1.py": {
+    "sha256": "8e3a2a1d301fc2b6c2760869acfa77ed5f26843f3ac7910b7273bf98dcc68884",
+    "bytes": 2170
+  },
+  "scripts/python/compare_spark_python.py": {
+    "sha256": "f6393cb4957c4c5c0a7dda7e1500c60254a978baccda3983c104e146cf4604e1",
+    "bytes": 8047
+  },
+  "scripts/python/gap1_independent.py": {
+    "sha256": "761281db1f046e86f397ca96c8a5f8b05cfe2ff6ca700a86745caf5209bb83d6",
+    "bytes": 5646
+  },
+  "scripts/python/independent_pipeline.py": {
+    "sha256": "f3bc82cf5ff750d1cd3d532f8e46ab602e9e526c4d9a71151b975b3865d230f2",
+    "bytes": 20000
+  },
+  "scripts/spark/analytics.py": {
+    "sha256": "07e18b1867803d6f2e0ffe122baa0635c71d395beaa964ccf02bc90baf5ec31b",
+    "bytes": 5722
+  },
+  "scripts/spark/common.py": {
+    "sha256": "b731b235f3c7487887ab63b198a69f2a7485b9e63087e2a1801527b29582e75c",
+    "bytes": 5387
+  },
+  "scripts/spark/directional_basket_recommendations.py": {
+    "sha256": "5cfee530f748de0e8ae1abc70f16da1aad3b77ed78d5bd68198cfaa337a7d3fa",
+    "bytes": 3739
+  },
+  "scripts/spark/export_gap1_menu.py": {
+    "sha256": "3b01678c3bf291fef7bb0ac706f294d9249e0f5f6e5070f0184842b7e96a0d4a",
+    "bytes": 1090
+  },
+  "scripts/spark/gap1_analytics.py": {
+    "sha256": "08af458be8ea80958d86ca9a1de03ab0e7613a5c21cf50a0d04b10fc436f5986",
+    "bytes": 21178
+  },
+  "scripts/spark/gap1_recommendations.py": {
+    "sha256": "94242a079036d08200386d6a100f8aebef781a2179b08244caa727445de33c86",
+    "bytes": 5223
+  },
+  "scripts/spark/ingest.py": {
+    "sha256": "076b76df7ce5a358719f696ba86a3c3fdc9201f9f15a005d65e18b69653d3aa1",
+    "bytes": 2544
+  },
+  "scripts/spark/phase3_customer_rfm.py": {
+    "sha256": "e1004310d9a2884de578476848679bd55204aba1721edee32cb38cd6c6aee928",
+    "bytes": 7884
+  },
+  "scripts/spark/phase3_scalability_benchmark.py": {
+    "sha256": "30eb5f5ecbe88a53452e0984867792ac2f93dfb974da10b447ca8e75d6b32acc",
+    "bytes": 14264
+  },
+  "scripts/spark/profile_clean.py": {
+    "sha256": "9d65428ccc72bd94355f9b88aa2ea705a0a35f030db2591692906600aa793173",
+    "bytes": 3596
+  },
+  "scripts/spark/quality_rules.py": {
+    "sha256": "aadfd5fb3c81d7ad168b0366cfe43f6ace0cd6d77a6e6c5b80a1d3f9167970fd",
+    "bytes": 10882
+  },
+  "scripts/spark/verify_gap1.py": {
+    "sha256": "424a56e641a9220651ad95e2b7b68e938d338516b57ed8fa6097aba76317696f",
+    "bytes": 3943
+  },
+  "tests/test_app_integration.py": {
+    "sha256": "3257618c5f98545de9a865821e8b73d014be72bce5851a5ee87b0ddf48de8906",
+    "bytes": 11075
+  },
+  "tests/test_gap1_analytics.py": {
+    "sha256": "effa6a194bf6a12c02bf421b4220f5cfb3691f639740de14c54bac776b820e3c",
+    "bytes": 10117
+  },
+  "tests/test_ml_demand.py": {
+    "sha256": "6d1cd9463f97661efe204f7d23a7b38900fbf1068327702e92700a115ab91d2e",
+    "bytes": 3361
+  },
+  "tests/test_operations_api.py": {
+    "sha256": "ec3779425f2b02eac7279338bea7be97543bc63968ac36db5b0afe58f6253062",
+    "bytes": 11461
+  },
+  "tests/test_phase3_adversarial.py": {
+    "sha256": "b277323ab5b7fe0052cdfe35a422971a806d7603bbab45b9cbdecd0273c3534f",
+    "bytes": 11361
+  },
+  "tests/test_phase3_scalability.py": {
+    "sha256": "32492205a9626688e7de20bcd1a56f114635a5e7e42977d661681feeebf3e7fe",
+    "bytes": 2250
+  },
+  "tests/test_python_comparison.py": {
+    "sha256": "7827c5f9d613805558ba5735c0a81bdbcad13477b35977080941c9da2a235c90",
+    "bytes": 3342
+  }
+}

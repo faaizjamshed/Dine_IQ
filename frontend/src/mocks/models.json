@@ -1,0 +1,308 @@
+{
+  "data": {
+    "kpis": {
+      "agreementPct": 98.6,
+      "sparkJobs": 34,
+      "pythonJobs": 41,
+      "recordsCompared": 1248000,
+      "lastComparedAt": "2026-09-24T08:29:51.861Z"
+    },
+    "metrics": [
+      {
+        "metric": "Avg job runtime",
+        "unit": "sec",
+        "sparkValue": 264,
+        "pythonValue": 702,
+        "better": "spark",
+        "note": "Spark distributes the heavy aggregations"
+      },
+      {
+        "metric": "Peak executor memory",
+        "unit": "GB",
+        "sparkValue": 11.4,
+        "pythonValue": 5.8,
+        "better": "python",
+        "note": "Python jobs run single-node with lower footprint"
+      },
+      {
+        "metric": "Throughput",
+        "unit": "rows/sec",
+        "sparkValue": 48200,
+        "pythonValue": 15600,
+        "better": "spark"
+      },
+      {
+        "metric": "Cold start overhead",
+        "unit": "sec",
+        "sparkValue": 38,
+        "pythonValue": 4,
+        "better": "python"
+      },
+      {
+        "metric": "Cost per run (est.)",
+        "unit": "PKR",
+        "sparkValue": 41,
+        "pythonValue": 63,
+        "better": "spark"
+      },
+      {
+        "metric": "Rows processed (24h)",
+        "unit": "rows",
+        "sparkValue": 986000,
+        "pythonValue": 262000,
+        "better": "spark"
+      }
+    ],
+    "agreement": [
+      {
+        "metric": "Daily revenue rollup",
+        "agreementPct": 99.9,
+        "sampleSize": 360,
+        "maxDeviationPct": 0.02
+      },
+      {
+        "metric": "Item margin table",
+        "agreementPct": 98.4,
+        "sampleSize": 180,
+        "maxDeviationPct": 0.6
+      },
+      {
+        "metric": "Customer RFM tiers",
+        "agreementPct": 99.2,
+        "sampleSize": 1248000,
+        "maxDeviationPct": 0.3
+      },
+      {
+        "metric": "Channel mix shares",
+        "agreementPct": 99.7,
+        "sampleSize": 144,
+        "maxDeviationPct": 0.1
+      }
+    ],
+    "recentRuns": [
+      {
+        "id": "run-0340",
+        "jobName": "nightly_kpis_agg",
+        "pipeline": "spark",
+        "startedAt": "2026-09-24T06:29:51.861Z",
+        "durationSec": 301,
+        "rowsIn": 716815,
+        "rowsOut": 20022,
+        "status": "running"
+      },
+      {
+        "id": "run-0339",
+        "jobName": "menu_item_rollup",
+        "pipeline": "spark",
+        "startedAt": "2026-09-23T23:29:51.861Z",
+        "durationSec": 386,
+        "rowsIn": 956649,
+        "rowsOut": 42264,
+        "status": "success"
+      },
+      {
+        "id": "run-0338",
+        "jobName": "customer_rfm",
+        "pipeline": "python",
+        "startedAt": "2026-09-23T16:29:51.861Z",
+        "durationSec": 597,
+        "rowsIn": 1014619,
+        "rowsOut": 41633,
+        "status": "success"
+      },
+      {
+        "id": "run-0337",
+        "jobName": "basket_fpgrowth",
+        "pipeline": "spark",
+        "startedAt": "2026-09-23T09:29:51.861Z",
+        "durationSec": 221,
+        "rowsIn": 1128578,
+        "rowsOut": 18376,
+        "status": "success"
+      },
+      {
+        "id": "run-0336",
+        "jobName": "demand_forecast_features",
+        "pipeline": "spark",
+        "startedAt": "2026-09-23T02:29:51.861Z",
+        "durationSec": 345,
+        "rowsIn": 653307,
+        "rowsOut": 33956,
+        "status": "failed"
+      },
+      {
+        "id": "run-0335",
+        "jobName": "anomaly_detection",
+        "pipeline": "python",
+        "startedAt": "2026-09-22T19:29:51.861Z",
+        "durationSec": 645,
+        "rowsIn": 503788,
+        "rowsOut": 15200,
+        "status": "success"
+      },
+      {
+        "id": "run-0334",
+        "jobName": "channel_mix_agg",
+        "pipeline": "spark",
+        "startedAt": "2026-09-22T12:29:51.861Z",
+        "durationSec": 263,
+        "rowsIn": 379812,
+        "rowsOut": 45228,
+        "status": "success"
+      },
+      {
+        "id": "run-0333",
+        "jobName": "wastage_breakdown",
+        "pipeline": "spark",
+        "startedAt": "2026-09-22T05:29:51.861Z",
+        "durationSec": 219,
+        "rowsIn": 388615,
+        "rowsOut": 3846,
+        "status": "success"
+      },
+      {
+        "id": "run-0332",
+        "jobName": "elasticity_training",
+        "pipeline": "python",
+        "startedAt": "2026-09-21T22:29:51.861Z",
+        "durationSec": 635,
+        "rowsIn": 418404,
+        "rowsOut": 12165,
+        "status": "success"
+      },
+      {
+        "id": "run-0331",
+        "jobName": "cohort_retention",
+        "pipeline": "spark",
+        "startedAt": "2026-09-21T15:29:51.861Z",
+        "durationSec": 204,
+        "rowsIn": 314230,
+        "rowsOut": 37944,
+        "status": "success"
+      },
+      {
+        "id": "run-0330",
+        "jobName": "ratings_ewma",
+        "pipeline": "spark",
+        "startedAt": "2026-09-21T08:29:51.861Z",
+        "durationSec": 420,
+        "rowsIn": 599735,
+        "rowsOut": 26918,
+        "status": "success"
+      },
+      {
+        "id": "run-0329",
+        "jobName": "outlet_compare",
+        "pipeline": "python",
+        "startedAt": "2026-09-21T01:29:51.861Z",
+        "durationSec": 898,
+        "rowsIn": 942625,
+        "rowsOut": 24118,
+        "status": "success"
+      }
+    ],
+    "recordDiffSample": [
+      {
+        "recordId": "itm-001/2026-09-22",
+        "field": "marginPct",
+        "sparkValue": "38.2",
+        "pythonValue": "38.2",
+        "match": true
+      },
+      {
+        "recordId": "itm-009/2026-09-22",
+        "field": "marginPct",
+        "sparkValue": "36.8",
+        "pythonValue": "36.8",
+        "match": true
+      },
+      {
+        "recordId": "out-03/2026-09-21",
+        "field": "aov",
+        "sparkValue": "1841",
+        "pythonValue": "1840",
+        "match": false
+      },
+      {
+        "recordId": "CUST-58213",
+        "field": "rfmTier",
+        "sparkValue": "Loyal",
+        "pythonValue": "Loyal",
+        "match": true
+      },
+      {
+        "recordId": "itm-042/2026-09-20",
+        "field": "wastagePct",
+        "sparkValue": "14.2",
+        "pythonValue": "14.1",
+        "match": false
+      },
+      {
+        "recordId": "ch-dine_in/2026-09-19",
+        "field": "revenueShare",
+        "sparkValue": "0.44",
+        "pythonValue": "0.44",
+        "match": true
+      },
+      {
+        "recordId": "itm-020/2026-09-21",
+        "field": "promoDependencyPct",
+        "sparkValue": "61.0",
+        "pythonValue": "61.0",
+        "match": true
+      },
+      {
+        "recordId": "cohort/Aug 2026",
+        "field": "m1Retention",
+        "sparkValue": "43.2",
+        "pythonValue": "43.2",
+        "match": true
+      },
+      {
+        "recordId": "out-15/2026-09-18",
+        "field": "profitMarginPct",
+        "sparkValue": "27.4",
+        "pythonValue": "27.4",
+        "match": true
+      },
+      {
+        "recordId": "itm-035/2026-09-19",
+        "field": "wastageCost",
+        "sparkValue": "41200",
+        "pythonValue": "41230",
+        "match": false
+      }
+    ]
+  },
+  "meta": {
+    "generatedAt": "2026-09-24T08:29:51.861Z",
+    "filters": {},
+    "note": "Dual-pipeline parity audit: both engines run the same aggregation contracts nightly and the outputs are diffed record-level."
+  },
+  "insight": {
+    "summary": [
+      "Spark and Python pipelines agree on 98.6% of compared records; the 3 sampled mismatches are rounding-level (≤ PKR 30) rather than logic differences.",
+      "Spark is 2.7× faster on heavy aggregations (264s vs 702s average runtime) while Python keeps a 5.8GB memory footprint for model scoring.",
+      "1 of the last 12 pipeline runs failed (demand_forecast_features) and was retried successfully — the failed run did not reach production tables."
+    ],
+    "whyItMatters": "Pipeline choice is an audit question as much as a performance one: agreement percentages prove the two stacks compute the same business truth, so reviewers can trust either source and route jobs by cost and latency.",
+    "evidence": [
+      {
+        "metric": "Record agreement",
+        "value": "98.6%",
+        "detail": "1,248,000 records compared"
+      },
+      {
+        "metric": "Spark runtime edge",
+        "value": "2.7×",
+        "detail": "264s vs 702s average"
+      },
+      {
+        "metric": "Mismatch sample",
+        "value": "3 / 10 rows",
+        "detail": "Rounding-level, ≤ PKR 30"
+      }
+    ],
+    "period": "Aug 25 – Sep 23, 2026"
+  }
+}

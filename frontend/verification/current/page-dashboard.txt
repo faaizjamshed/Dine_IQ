@@ -1,0 +1,273 @@
+DineIQ
+
+ANALYTICS PLATFORM
+
+OVERVIEW
+
+Executive Dashboard
+
+INTELLIGENCE
+
+Menu Intelligence
+Customer Intelligence
+Basket & Bundles
+
+OPERATIONS
+
+Demand Forecast
+Wastage
+Locations
+Channels
+
+DECISIONS & ACTIONS
+
+Pricing & Promotions
+Anomalies
+Recommendations
+What-If Simulator
+
+PLATFORM
+
+Model Comparison
+Reports & Export
+Admin
+Collapse
+Executive Dashboard
+Full history
+Outlets:
+All outlets
+Categories:
+All categories
+Channels:
+All channels
+API CONNECTED
+API CONNECTED
+Search
+⌘K
+F
+
+Scope: 2025-03 to 2026-08 · full historical period
+
+Canonical project analytics use the existing synthetic dataset. Values are served by the backend; no demo values are loaded.
+
+Completed revenue
+PKR 5.2B
+Orders
+650K
+Completed orders
+611K
+Completed revenue / order
+PKR 8,438
+Restaurants
+25
+Menu items
+200
+Restaurant rating
+4.0 / 5
+Item contribution margin
+49.5%
+Revenue Trend
+
+Monthly completed revenue with whole calendar months — hover for detail
+
+Apr 1
+Jun 1
+Aug 1
+Oct 1
+Dec 1
+Feb 1
+Apr 1
+Jun 1
+Aug 1
+239M
+264M
+289M
+323M
+Channel Mix
+
+Revenue share by ordering channel
+
+TOTAL
+PKR 5.2B
+Mobile App
+29%
+PKR 1.5B
+Dine-In
+24%
+PKR 1.2B
+Delivery Partner
+22%
+PKR 1.1B
+Takeaway
+14%
+PKR 712M
+Website
+11%
+PKR 569M
+Unknown
+0%
+PKR 10.3M
+Order Traffic · Hour × Weekday
+
+When demand actually lands — lunch and late-dinner peaks drive staffing
+
+Peak cell: 10.4K orders
+Dish Rankings
+
+Revenue leaders and laggards with performance class
+
+Top 5
+Bottom 5
+ClassicBurger 1
+Spicy BBQ 1
+DoubleDessert 1
+FreshPakistani 1
+SpecialBreakfast 1
+
+Bar color = API performance class: Unclassified · Profit Driver · Volume Driver · Hidden Opportunity · Low Performer
+
+RecommendationsHistorical evidence · priority unavailable
+Full engine
+UNRANKED
+DIRECTIONAL BASKET ASSOCIATION
+House Beverage 13 -> Double Dessert 1
+
+If a transaction contains House Beverage 13, consider pairing Double Dessert 1; observed directional confidence=0.1014, lift=1.0678
+
+EVIDENCE
+Backend evidence
+pair_count=514; support=0.000841; directional confidence=0.1014; directional lift=1.0678
+
+Time unavailable · Unavailable
+
+UNRANKED
+DIRECTIONAL BASKET ASSOCIATION
+Fiery Chinese 12 -> Double Dessert 1
+
+If a transaction contains Fiery Chinese 12, consider pairing Double Dessert 1; observed directional confidence=0.1007, lift=1.0599
+
+EVIDENCE
+Backend evidence
+pair_count=551; support=0.000902; directional confidence=0.1007; directional lift=1.0599
+
+Time unavailable · Unavailable
+
+UNRANKED
+DIRECTIONAL BASKET ASSOCIATION
+Signature Pizza 13 -> Fresh Pakistani 1
+
+If a transaction contains Signature Pizza 13, consider pairing Fresh Pakistani 1; observed directional confidence=0.1574, lift=1.0353
+
+EVIDENCE
+Backend evidence
+pair_count=814; support=0.001333; directional confidence=0.1574; directional lift=1.0353
+
+Time unavailable · Unavailable
+
+UNRANKED
+DIRECTIONAL BASKET ASSOCIATION
+Masala Rice 9 -> Spicy BBQ 1
+
+If a transaction contains Masala Rice 9, consider pairing Spicy BBQ 1; observed directional confidence=0.1288, lift=1.0332
+
+EVIDENCE
+Backend evidence
+pair_count=843; support=0.001380; directional confidence=0.1288; directional lift=1.0332
+
+Time unavailable · Unavailable
+
+UNRANKED
+DIRECTIONAL BASKET ASSOCIATION
+Creamy Pizza 14 -> Spicy BBQ 1
+
+If a transaction contains Creamy Pizza 14, consider pairing Spicy BBQ 1; observed directional confidence=0.1282, lift=1.0285
+
+EVIDENCE
+Backend evidence
+pair_count=647; support=0.001059; directional confidence=0.1282; directional lift=1.0285
+
+Time unavailable · Unavailable
+
+UNRANKED
+DIRECTIONAL BASKET ASSOCIATION
+Supreme BBQ 14 -> Fresh Pakistani 1
+
+If a transaction contains Supreme BBQ 14, consider pairing Fresh Pakistani 1; observed directional confidence=0.1557, lift=1.0248
+
+EVIDENCE
+Backend evidence
+pair_count=749; support=0.001226; directional confidence=0.1557; directional lift=1.0248
+
+Time unavailable · Unavailable
+
+Anomaly FeedGET /api/intelligence/anomalies · severity-ordered
+Full timeline
+UNRANKED
+SALES
+Nov 16, 2025, 10:00
+
+sales anomaly candidate at R001
+
+Dimension: Restaurant · R001
+same restaurant/hour-of-week robust modified-z >3
+Status: Unavailable
+hour of week
+42
+mad
+1
+median orders
+4
+orders
+9
+UNRANKED
+SALES
+Sep 28, 2025, 11:00
+
+sales anomaly candidate at R001
+
+Dimension: Restaurant · R001
+same restaurant/hour-of-week robust modified-z >3
+Status: Unavailable
+hour of week
+42
+mad
+1
+median orders
+4
+orders
+11
+UNRANKED
+SALES
+Jun 7, 2026, 11:00
+
+sales anomaly candidate at R001
+
+Dimension: Restaurant · R001
+same restaurant/hour-of-week robust modified-z >3
+Status: Unavailable
+hour of week
+42
+mad
+1
+median orders
+4
+orders
+10
+UNRANKED
+SALES
+Jul 26, 2026, 11:00
+
+sales anomaly candidate at R001
+
+Dimension: Restaurant · R001
+same restaurant/hour-of-week robust modified-z >3
+Status: Unavailable
+hour of week
+42
+mad
+1
+median orders
+4
+orders
+9
+Classic Burger 1

@@ -1,0 +1,615 @@
+{
+  "data": {
+    "periodLabel": "Aug 25 – Oct 7, 2026",
+    "kpis": {
+      "horizonDays": 14,
+      "forecastOrders": 13510,
+      "forecastRevenue": 24803865,
+      "mapePct": 8.4,
+      "biasPct": 1.2,
+      "confidence": 0.924
+    },
+    "daily": [
+      {
+        "date": "2026-08-25",
+        "actual": 739,
+        "forecast": 739,
+        "lower": 739,
+        "upper": 739,
+        "isForecast": false
+      },
+      {
+        "date": "2026-08-26",
+        "actual": 786,
+        "forecast": 786,
+        "lower": 786,
+        "upper": 786,
+        "isForecast": false
+      },
+      {
+        "date": "2026-08-27",
+        "actual": 889,
+        "forecast": 889,
+        "lower": 889,
+        "upper": 889,
+        "isForecast": false
+      },
+      {
+        "date": "2026-08-28",
+        "actual": 943,
+        "forecast": 943,
+        "lower": 943,
+        "upper": 943,
+        "isForecast": false
+      },
+      {
+        "date": "2026-08-29",
+        "actual": 1031,
+        "forecast": 1031,
+        "lower": 1031,
+        "upper": 1031,
+        "isForecast": false
+      },
+      {
+        "date": "2026-08-30",
+        "actual": 893,
+        "forecast": 893,
+        "lower": 893,
+        "upper": 893,
+        "isForecast": false
+      },
+      {
+        "date": "2026-08-31",
+        "actual": 645,
+        "forecast": 645,
+        "lower": 645,
+        "upper": 645,
+        "isForecast": false
+      },
+      {
+        "date": "2026-09-01",
+        "actual": 720,
+        "forecast": 720,
+        "lower": 720,
+        "upper": 720,
+        "isForecast": false
+      },
+      {
+        "date": "2026-09-02",
+        "actual": 714,
+        "forecast": 714,
+        "lower": 714,
+        "upper": 714,
+        "isForecast": false
+      },
+      {
+        "date": "2026-09-03",
+        "actual": 884,
+        "forecast": 884,
+        "lower": 884,
+        "upper": 884,
+        "isForecast": false
+      },
+      {
+        "date": "2026-09-04",
+        "actual": 1203,
+        "forecast": 1203,
+        "lower": 1203,
+        "upper": 1203,
+        "isForecast": false
+      },
+      {
+        "date": "2026-09-05",
+        "actual": 1213,
+        "forecast": 1213,
+        "lower": 1213,
+        "upper": 1213,
+        "isForecast": false
+      },
+      {
+        "date": "2026-09-06",
+        "actual": 1080,
+        "forecast": 1080,
+        "lower": 1080,
+        "upper": 1080,
+        "isForecast": false
+      },
+      {
+        "date": "2026-09-07",
+        "actual": 762,
+        "forecast": 762,
+        "lower": 762,
+        "upper": 762,
+        "isForecast": false
+      },
+      {
+        "date": "2026-09-08",
+        "actual": 870,
+        "forecast": 870,
+        "lower": 870,
+        "upper": 870,
+        "isForecast": false
+      },
+      {
+        "date": "2026-09-09",
+        "actual": 737,
+        "forecast": 737,
+        "lower": 737,
+        "upper": 737,
+        "isForecast": false
+      },
+      {
+        "date": "2026-09-10",
+        "actual": 823,
+        "forecast": 823,
+        "lower": 823,
+        "upper": 823,
+        "isForecast": false
+      },
+      {
+        "date": "2026-09-11",
+        "actual": 1052,
+        "forecast": 1052,
+        "lower": 1052,
+        "upper": 1052,
+        "isForecast": false
+      },
+      {
+        "date": "2026-09-12",
+        "actual": 1104,
+        "forecast": 1104,
+        "lower": 1104,
+        "upper": 1104,
+        "isForecast": false
+      },
+      {
+        "date": "2026-09-13",
+        "actual": 917,
+        "forecast": 917,
+        "lower": 917,
+        "upper": 917,
+        "isForecast": false
+      },
+      {
+        "date": "2026-09-14",
+        "actual": 689,
+        "forecast": 689,
+        "lower": 689,
+        "upper": 689,
+        "isForecast": false
+      },
+      {
+        "date": "2026-09-15",
+        "actual": 797,
+        "forecast": 797,
+        "lower": 797,
+        "upper": 797,
+        "isForecast": false
+      },
+      {
+        "date": "2026-09-16",
+        "actual": 726,
+        "forecast": 726,
+        "lower": 726,
+        "upper": 726,
+        "isForecast": false
+      },
+      {
+        "date": "2026-09-17",
+        "actual": 815,
+        "forecast": 815,
+        "lower": 815,
+        "upper": 815,
+        "isForecast": false
+      },
+      {
+        "date": "2026-09-18",
+        "actual": 1021,
+        "forecast": 1021,
+        "lower": 1021,
+        "upper": 1021,
+        "isForecast": false
+      },
+      {
+        "date": "2026-09-19",
+        "actual": 1288,
+        "forecast": 1288,
+        "lower": 1288,
+        "upper": 1288,
+        "isForecast": false
+      },
+      {
+        "date": "2026-09-20",
+        "actual": 1011,
+        "forecast": 1011,
+        "lower": 1011,
+        "upper": 1011,
+        "isForecast": false
+      },
+      {
+        "date": "2026-09-21",
+        "actual": 704,
+        "forecast": 704,
+        "lower": 704,
+        "upper": 704,
+        "isForecast": false
+      },
+      {
+        "date": "2026-09-22",
+        "actual": 795,
+        "forecast": 795,
+        "lower": 795,
+        "upper": 795,
+        "isForecast": false
+      },
+      {
+        "date": "2026-09-23",
+        "actual": 765,
+        "forecast": 765,
+        "lower": 765,
+        "upper": 765,
+        "isForecast": false
+      },
+      {
+        "date": "2026-09-24",
+        "forecast": 920,
+        "lower": 866,
+        "upper": 974,
+        "isForecast": true
+      },
+      {
+        "date": "2026-09-25",
+        "forecast": 1140,
+        "lower": 1068,
+        "upper": 1212,
+        "isForecast": true
+      },
+      {
+        "date": "2026-09-26",
+        "forecast": 1240,
+        "lower": 1157,
+        "upper": 1323,
+        "isForecast": true
+      },
+      {
+        "date": "2026-09-27",
+        "forecast": 1070,
+        "lower": 994,
+        "upper": 1146,
+        "isForecast": true
+      },
+      {
+        "date": "2026-09-28",
+        "forecast": 760,
+        "lower": 703,
+        "upper": 817,
+        "isForecast": true
+      },
+      {
+        "date": "2026-09-29",
+        "forecast": 830,
+        "lower": 764,
+        "upper": 896,
+        "isForecast": true
+      },
+      {
+        "date": "2026-09-30",
+        "forecast": 880,
+        "lower": 807,
+        "upper": 953,
+        "isForecast": true
+      },
+      {
+        "date": "2026-10-01",
+        "forecast": 940,
+        "lower": 858,
+        "upper": 1022,
+        "isForecast": true
+      },
+      {
+        "date": "2026-10-02",
+        "forecast": 1090,
+        "lower": 991,
+        "upper": 1189,
+        "isForecast": true
+      },
+      {
+        "date": "2026-10-03",
+        "forecast": 1190,
+        "lower": 1077,
+        "upper": 1303,
+        "isForecast": true
+      },
+      {
+        "date": "2026-10-04",
+        "forecast": 1030,
+        "lower": 928,
+        "upper": 1132,
+        "isForecast": true
+      },
+      {
+        "date": "2026-10-05",
+        "forecast": 760,
+        "lower": 682,
+        "upper": 838,
+        "isForecast": true
+      },
+      {
+        "date": "2026-10-06",
+        "forecast": 810,
+        "lower": 723,
+        "upper": 897,
+        "isForecast": true
+      },
+      {
+        "date": "2026-10-07",
+        "forecast": 850,
+        "lower": 756,
+        "upper": 944,
+        "isForecast": true
+      }
+    ],
+    "accuracy": [
+      {
+        "modelName": "DemandForecaster (XGBoost)",
+        "pipeline": "python",
+        "mapePct": 8.4,
+        "rmse": 96,
+        "withinTolerancePct": 91.2,
+        "horizonTestedDays": 14
+      },
+      {
+        "modelName": "GBT Regressor (Spark MLlib)",
+        "pipeline": "spark",
+        "mapePct": 9.6,
+        "rmse": 108,
+        "withinTolerancePct": 88.7,
+        "horizonTestedDays": 14
+      },
+      {
+        "modelName": "Seasonal Naïve baseline",
+        "pipeline": "python",
+        "mapePct": 13.9,
+        "rmse": 151,
+        "withinTolerancePct": 74.3,
+        "horizonTestedDays": 14
+      }
+    ],
+    "items": [
+      {
+        "itemId": "itm-001",
+        "name": "Chicken Biryani",
+        "category": "Biryani & Rice",
+        "actualQty": 1211,
+        "forecastQty": 1165,
+        "deltaPct": -3.8,
+        "confidence": 0.78,
+        "trend": "stable"
+      },
+      {
+        "itemId": "itm-008",
+        "name": "Chicken Karahi",
+        "category": "Karahi & Handi",
+        "actualQty": 243,
+        "forecastQty": 263,
+        "deltaPct": 8.4,
+        "confidence": 0.9,
+        "trend": "rising"
+      },
+      {
+        "itemId": "itm-020",
+        "name": "Zinger Burger",
+        "category": "Burgers & Sandwiches",
+        "actualQty": 536,
+        "forecastQty": 585,
+        "deltaPct": 9.1,
+        "confidence": 0.72,
+        "trend": "rising"
+      },
+      {
+        "itemId": "itm-014",
+        "name": "Chicken Tikka",
+        "category": "BBQ & Kebabs",
+        "actualQty": 900,
+        "forecastQty": 870,
+        "deltaPct": -3.3,
+        "confidence": 0.92,
+        "trend": "stable"
+      },
+      {
+        "itemId": "itm-015",
+        "name": "Seekh Kebab",
+        "category": "BBQ & Kebabs",
+        "actualQty": 614,
+        "forecastQty": 696,
+        "deltaPct": 13.3,
+        "confidence": 0.86,
+        "trend": "rising"
+      },
+      {
+        "itemId": "itm-024",
+        "name": "Chicken Shawarma",
+        "category": "Wraps & Rolls",
+        "actualQty": 815,
+        "forecastQty": 869,
+        "deltaPct": 6.6,
+        "confidence": 0.87,
+        "trend": "rising"
+      },
+      {
+        "itemId": "itm-047",
+        "name": "Deal for Two",
+        "category": "Family Deals",
+        "actualQty": 120,
+        "forecastQty": 136,
+        "deltaPct": 13.1,
+        "confidence": 0.74,
+        "trend": "rising"
+      },
+      {
+        "itemId": "itm-016",
+        "name": "Malai Boti",
+        "category": "BBQ & Kebabs",
+        "actualQty": 431,
+        "forecastQty": 470,
+        "deltaPct": 9,
+        "confidence": 0.94,
+        "trend": "rising"
+      },
+      {
+        "itemId": "itm-032",
+        "name": "Loaded Fries",
+        "category": "Snacks & Sides",
+        "actualQty": 492,
+        "forecastQty": 482,
+        "deltaPct": -2.1,
+        "confidence": 0.92,
+        "trend": "stable"
+      },
+      {
+        "itemId": "itm-009",
+        "name": "Mutton Karahi",
+        "category": "Karahi & Handi",
+        "actualQty": 137,
+        "forecastQty": 129,
+        "deltaPct": -5.9,
+        "confidence": 0.72,
+        "trend": "falling"
+      },
+      {
+        "itemId": "itm-011",
+        "name": "Chicken Handi",
+        "category": "Karahi & Handi",
+        "actualQty": 136,
+        "forecastQty": 139,
+        "deltaPct": 2.2,
+        "confidence": 0.8,
+        "trend": "stable"
+      },
+      {
+        "itemId": "itm-050",
+        "name": "Halwa Puri",
+        "category": "Breakfast",
+        "actualQty": 453,
+        "forecastQty": 485,
+        "deltaPct": 7.1,
+        "confidence": 0.82,
+        "trend": "rising"
+      },
+      {
+        "itemId": "itm-041",
+        "name": "Cold Coffee",
+        "category": "Beverages",
+        "actualQty": 627,
+        "forecastQty": 670,
+        "deltaPct": 6.9,
+        "confidence": 0.83,
+        "trend": "rising"
+      },
+      {
+        "itemId": "itm-036",
+        "name": "Gulab Jamun",
+        "category": "Desserts",
+        "actualQty": 1163,
+        "forecastQty": 1196,
+        "deltaPct": 2.8,
+        "confidence": 0.86,
+        "trend": "stable"
+      },
+      {
+        "itemId": "itm-002",
+        "name": "Beef Biryani",
+        "category": "Biryani & Rice",
+        "actualQty": 774,
+        "forecastQty": 764,
+        "deltaPct": -1.3,
+        "confidence": 0.83,
+        "trend": "stable"
+      },
+      {
+        "itemId": "itm-040",
+        "name": "Mint Margarita",
+        "category": "Beverages",
+        "actualQty": 1075,
+        "forecastQty": 1120,
+        "deltaPct": 4.2,
+        "confidence": 0.82,
+        "trend": "rising"
+      },
+      {
+        "itemId": "itm-025",
+        "name": "Chicken Paratha Roll",
+        "category": "Wraps & Rolls",
+        "actualQty": 610,
+        "forecastQty": 564,
+        "deltaPct": -7.6,
+        "confidence": 0.88,
+        "trend": "falling"
+      },
+      {
+        "itemId": "itm-018",
+        "name": "Behari Kebab",
+        "category": "BBQ & Kebabs",
+        "actualQty": 367,
+        "forecastQty": 346,
+        "deltaPct": -5.7,
+        "confidence": 0.82,
+        "trend": "falling"
+      },
+      {
+        "itemId": "itm-007",
+        "name": "Haleem",
+        "category": "Biryani & Rice",
+        "actualQty": 313,
+        "forecastQty": 343,
+        "deltaPct": 9.6,
+        "confidence": 0.79,
+        "trend": "rising"
+      },
+      {
+        "itemId": "itm-052",
+        "name": "Chai",
+        "category": "Breakfast",
+        "actualQty": 1767,
+        "forecastQty": 2007,
+        "deltaPct": 13.6,
+        "confidence": 0.88,
+        "trend": "rising"
+      }
+    ]
+  },
+  "meta": {
+    "generatedAt": "2026-09-24T08:29:51.861Z",
+    "filters": {},
+    "modelName": "DemandForecaster (XGBoost)",
+    "modelVersion": "3.2",
+    "pipeline": "python",
+    "confidence": 0.924
+  },
+  "insight": {
+    "summary": [
+      "The model forecasts 13.5K orders (≈ PKR 24.8M) for the next 14 days, 5.6% versus the trailing week run-rate.",
+      "Backtest MAPE is 8.4% with a +1.2% bias — the model runs slightly hot, so procurement should anchor on the lower band.",
+      "11 of 20 tracked items are forecast to rise; Friday and Saturday dinners remain the highest-variance windows."
+    ],
+    "whyItMatters": "Prep and procurement decisions are made per item per day; the confidence bands translate directly into batch-size boundaries, and the accuracy table shows when to trust the model versus the naive baseline.",
+    "evidence": [
+      {
+        "metric": "Forecast orders (14d)",
+        "value": "13.5K",
+        "detail": "vs trailing 7-day actuals"
+      },
+      {
+        "metric": "Backtest MAPE",
+        "value": "8.4%",
+        "detail": "14-day horizon backtest"
+      },
+      {
+        "metric": "Model confidence",
+        "value": "0.924",
+        "detail": "DemandForecaster v3.2"
+      }
+    ],
+    "period": "Aug 25 – Sep 23, 2026"
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "base_url": "http://127.0.0.1:5000",
+  "verified_at_local": "2026-09-26 01:16:13",
+  "health": {
+    "analytics_source": "hdfs://localhost:9000/dineq/results/v4",
+    "analytics_tables_expected": 12,
+    "analytics_tables_loaded": 12,
+    "canonical_version": "v4",
+    "data_window": {
+      "end": "2026-08",
+      "start": "2025-03"
+    },
+    "error": null,
+    "model_loaded": true,
+    "model_path": "hdfs://localhost:9000/dineq/models/v1/selected_demand_model",
+    "started_at": "2026-09-26T08:15:47.321924+00:00",
+    "startup_seconds": 10.374,
+    "status": "ok"
+  },
+  "verified_endpoints": {
+    "health": {
+      "status": 200,
+      "elapsed_ms": 3.76,
+      "server_elapsed_ms": "0.08",
+      "bytes": 392
+    },
+    "menu_filter": {
+      "status": 200,
+      "elapsed_ms": 1.25,
+      "server_elapsed_ms": "0.17",
+      "bytes": 1724
+    },
+    "categories": {
+      "status": 200,
+      "elapsed_ms": 1.18,
+      "server_elapsed_ms": "0.09",
+      "bytes": 1829
+    },
+    "locations": {
+      "status": 200,
+      "elapsed_ms": 1.14,
+      "server_elapsed_ms": "0.12",
+      "bytes": 3699
+    },
+    "channels": {
+      "status": 200,
+      "elapsed_ms": 1.08,
+      "server_elapsed_ms": "0.06",
+      "bytes": 657
+    },
+    "promotions": {
+      "status": 200,
+      "elapsed_ms": 1.41,
+      "server_elapsed_ms": "0.32",
+      "bytes": 11930
+    },
+    "ratings": {
+      "status": 200,
+      "elapsed_ms": 1.14,
+      "server_elapsed_ms": "0.10",
+      "bytes": 2879
+    },
+    "wastage": {
+      "status": 200,
+      "elapsed_ms": 1.05,
+      "server_elapsed_ms": "0.05",
+      "bytes": 482
+    },
+    "inventory": {
+      "status": 200,
+      "elapsed_ms": 1.05,
+      "server_elapsed_ms": "0.04",
+      "bytes": 155
+    },
+    "pricing": {
+      "status": 200,
+      "elapsed_ms": 1.05,
+      "server_elapsed_ms": "0.04",
+      "bytes": 503
+    },
+    "monthly": {
+      "status": 200,
+      "elapsed_ms": 1.1,
+      "server_elapsed_ms": "0.08",
+      "bytes": 1910
+    },
+    "peak_hours": {
+      "status": 200,
+      "elapsed_ms": 1.28,
+      "server_elapsed_ms": "0.26",
+      "bytes": 11882
+    },
+    "segments": {
+      "status": 200,
+      "elapsed_ms": 1.07,
+      "server_elapsed_ms": "0.05",
+      "bytes": 610
+    },
+    "model": {
+      "status": 200,
+      "elapsed_ms": 1.16,
+      "server_elapsed_ms": "0.10",
+      "bytes": 4478
+    },
+    "evidence": {
+      "status": 200,
+      "elapsed_ms": 1.09,
+      "server_elapsed_ms": "0.07",
+      "bytes": 1545
+    },
+    "performance": {
+      "status": 200,
+      "elapsed_ms": 1.05,
+      "server_elapsed_ms": "0.03",
+      "bytes": 203
+    },
+    "prediction": {
+      "status": 200,
+      "elapsed_ms": 4241.74,
+      "server_elapsed_ms": "4239.72",
+      "bytes": 849
+    },
+    "frontend_": {
+      "status": 200,
+      "elapsed_ms": 27.7,
+      "server_elapsed_ms": "26.00",
+      "bytes": 3225
+    },
+    "frontend_assets_app.js": {
+      "status": 200,
+      "elapsed_ms": 2.02,
+      "server_elapsed_ms": "0.27",
+      "bytes": 35904
+    },
+    "frontend_assets_app.css": {
+      "status": 200,
+      "elapsed_ms": 1.48,
+      "server_elapsed_ms": "0.31",
+      "bytes": 13844
+    }
+  },
+  "overview_repeated_latency_ms": [
+    10.75,
+    1.42,
+    1.24,
+    1.38,
+    1.29
+  ],
+  "overview_payload_bytes": 5140,
+  "menu_filter_returned": 10,
+  "prediction": {
+    "features": {
+      "day_of_week": 2.0,
+      "hour_of_day": 0.0,
+      "lag_168h": 4.0,
+      "lag_1h": 2.0,
+      "lag_24h": 3.0,
+      "month": 9.0,
+      "restaurant_id": "R001"
+    },
+    "model": "gradient_boosted_trees",
+    "model_path": "hdfs://localhost:9000/dineq/models/v1/selected_demand_model",
+    "predicted_order_arrivals": 0.31142982551160564,
+    "restaurant_id": "R001",
+    "target": "hourly restaurant order arrivals",
+    "target_hour_utc": "2026-09-01T00:00:00Z",
+    "test_metrics": {
+      "mae": 1.0232209696775245,
+      "r2": 0.5034293530509905,
+      "rmse": 1.3930551948484493
+    },
+    "unit": "expected orders (regression output may be fractional)",
+    "warnings": [
+      "Lag values were supplied by the caller. Project history ends 2026-08-31; this is not a live forecast unless current lag data is supplied.",
+      "This target month is outside the March\u2013August months represented in model training and test evidence; seasonal extrapolation is not validated."
+    ]
+  },
+  "all_checks_passed": true
+}

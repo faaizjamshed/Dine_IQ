@@ -1,0 +1,455 @@
+{
+  "data": {
+    "periodLabel": "Aug 25 – Sep 23, 2026",
+    "kpis": {
+      "totalCustomers": 61400,
+      "activeCustomers": 18240,
+      "newCustomers": 2310,
+      "repeatRatePct": 43.1,
+      "avgLifetimeValue": 9550,
+      "avgOrdersPerCustomer": 5.2,
+      "highChurnRisk": 1860,
+      "revenueAtRisk": 3410000
+    },
+    "segments": [
+      {
+        "id": "seg-families",
+        "label": "Families",
+        "customers": 16800,
+        "revenue": 199373280,
+        "revenueShare": 0.34,
+        "avgOrderValue": 2410,
+        "avgOrdersPerCustomer": 6.8,
+        "description": "Weekend diners, large baskets, family deals and karahi-heavy orders."
+      },
+      {
+        "id": "seg-professionals",
+        "label": "Professionals",
+        "customers": 14100,
+        "revenue": 158325840,
+        "revenueShare": 0.27,
+        "avgOrderValue": 1780,
+        "avgOrdersPerCustomer": 8.4,
+        "description": "Lunch-hour and app orders, high repeat velocity, promo-tolerant."
+      },
+      {
+        "id": "seg-students",
+        "label": "Students",
+        "customers": 14900,
+        "revenue": 93822720,
+        "revenueShare": 0.16,
+        "avgOrderValue": 920,
+        "avgOrdersPerCustomer": 7.1,
+        "description": "Price-sensitive snack and wrap orders, strongly promo-driven."
+      },
+      {
+        "id": "seg-large-groups",
+        "label": "Large Groups",
+        "customers": 5400,
+        "revenue": 82094880,
+        "revenueShare": 0.14,
+        "avgOrderValue": 4650,
+        "avgOrdersPerCustomer": 2.9,
+        "description": "Platter and jumbo-deal buyers, event-driven, low frequency high ticket."
+      },
+      {
+        "id": "seg-late-night",
+        "label": "Late-night",
+        "customers": 10200,
+        "revenue": 52775280,
+        "revenueShare": 0.09,
+        "avgOrderValue": 1150,
+        "avgOrdersPerCustomer": 5.2,
+        "description": "22:00–01:00 delivery and takeaway, wraps/shawarma dominant."
+      }
+    ],
+    "rfmTiers": [
+      {
+        "tier": "Champions",
+        "customers": 2140,
+        "revenue": 139561296,
+        "revenueShare": 0.24,
+        "avgRecencyDays": 6,
+        "avgFrequency": 14.2,
+        "avgMonetary": 65216
+      },
+      {
+        "tier": "Loyal",
+        "customers": 6380,
+        "revenue": 182954304,
+        "revenueShare": 0.31,
+        "avgRecencyDays": 12,
+        "avgFrequency": 9.6,
+        "avgMonetary": 28676
+      },
+      {
+        "tier": "Potential Loyalist",
+        "customers": 9870,
+        "revenue": 125487888,
+        "revenueShare": 0.21,
+        "avgRecencyDays": 21,
+        "avgFrequency": 5.4,
+        "avgMonetary": 12714
+      },
+      {
+        "tier": "At Risk",
+        "customers": 4720,
+        "revenue": 88545192,
+        "revenueShare": 0.15,
+        "avgRecencyDays": 46,
+        "avgFrequency": 6.1,
+        "avgMonetary": 18760
+      },
+      {
+        "tier": "Hibernating",
+        "customers": 38290,
+        "revenue": 49843320,
+        "revenueShare": 0.09,
+        "avgRecencyDays": 96,
+        "avgFrequency": 1.8,
+        "avgMonetary": 1302
+      }
+    ],
+    "churnRisk": [
+      {
+        "bucket": "high",
+        "label": "High risk",
+        "customers": 1860,
+        "revenueAtRisk": 3410000,
+        "avgDaysSinceLastOrder": 52
+      },
+      {
+        "bucket": "medium",
+        "label": "Medium risk",
+        "customers": 4420,
+        "revenueAtRisk": 5180000,
+        "avgDaysSinceLastOrder": 31
+      },
+      {
+        "bucket": "low",
+        "label": "Low risk",
+        "customers": 11960,
+        "revenueAtRisk": 9840000,
+        "avgDaysSinceLastOrder": 9
+      }
+    ],
+    "cohortRetention": [
+      {
+        "cohort": "Apr 2026",
+        "size": 6900,
+        "retention": [
+          100,
+          38.2,
+          29.4,
+          24.1,
+          21.8,
+          19.6
+        ]
+      },
+      {
+        "cohort": "May 2026",
+        "size": 7240,
+        "retention": [
+          100,
+          40.1,
+          30.2,
+          26,
+          22.7
+        ]
+      },
+      {
+        "cohort": "Jun 2026",
+        "size": 6810,
+        "retention": [
+          100,
+          36.8,
+          28.9,
+          24.6
+        ]
+      },
+      {
+        "cohort": "Jul 2026",
+        "size": 7930,
+        "retention": [
+          100,
+          41.5,
+          31.2
+        ]
+      },
+      {
+        "cohort": "Aug 2026",
+        "size": 8460,
+        "retention": [
+          100,
+          43.2
+        ]
+      },
+      {
+        "cohort": "Sep 2026",
+        "size": 9120,
+        "retention": [
+          100
+        ]
+      }
+    ],
+    "topCustomers": [
+      {
+        "id": "CUST-58210",
+        "segment": "Families",
+        "orders": 53,
+        "lifetimeValue": 84000,
+        "lastOrderDaysAgo": 1,
+        "churnRisk": "low"
+      },
+      {
+        "id": "CUST-58073",
+        "segment": "Professionals",
+        "orders": 87,
+        "lifetimeValue": 70900,
+        "lastOrderDaysAgo": 3,
+        "churnRisk": "low"
+      },
+      {
+        "id": "CUST-57936",
+        "segment": "Students",
+        "orders": 69,
+        "lifetimeValue": 71700,
+        "lastOrderDaysAgo": 5,
+        "churnRisk": "low"
+      },
+      {
+        "id": "CUST-57799",
+        "segment": "Large Groups",
+        "orders": 43,
+        "lifetimeValue": 60700,
+        "lastOrderDaysAgo": 7,
+        "churnRisk": "medium"
+      },
+      {
+        "id": "CUST-57662",
+        "segment": "Late-night",
+        "orders": 62,
+        "lifetimeValue": 54000,
+        "lastOrderDaysAgo": 9,
+        "churnRisk": "low"
+      },
+      {
+        "id": "CUST-57525",
+        "segment": "Families",
+        "orders": 43,
+        "lifetimeValue": 47500,
+        "lastOrderDaysAgo": 11,
+        "churnRisk": "high"
+      },
+      {
+        "id": "CUST-57388",
+        "segment": "Professionals",
+        "orders": 79,
+        "lifetimeValue": 39000,
+        "lastOrderDaysAgo": 13,
+        "churnRisk": "low"
+      },
+      {
+        "id": "CUST-57251",
+        "segment": "Students",
+        "orders": 88,
+        "lifetimeValue": 34300,
+        "lastOrderDaysAgo": 15,
+        "churnRisk": "medium"
+      },
+      {
+        "id": "CUST-57114",
+        "segment": "Large Groups",
+        "orders": 81,
+        "lifetimeValue": 31600,
+        "lastOrderDaysAgo": 17,
+        "churnRisk": "low"
+      },
+      {
+        "id": "CUST-56977",
+        "segment": "Late-night",
+        "orders": 80,
+        "lifetimeValue": 28300,
+        "lastOrderDaysAgo": 19,
+        "churnRisk": "low"
+      },
+      {
+        "id": "CUST-56840",
+        "segment": "Families",
+        "orders": 36,
+        "lifetimeValue": 22300,
+        "lastOrderDaysAgo": 2,
+        "churnRisk": "low"
+      },
+      {
+        "id": "CUST-56703",
+        "segment": "Professionals",
+        "orders": 54,
+        "lifetimeValue": 22100,
+        "lastOrderDaysAgo": 4,
+        "churnRisk": "medium"
+      },
+      {
+        "id": "CUST-56566",
+        "segment": "Students",
+        "orders": 76,
+        "lifetimeValue": 17400,
+        "lastOrderDaysAgo": 6,
+        "churnRisk": "high"
+      },
+      {
+        "id": "CUST-56429",
+        "segment": "Large Groups",
+        "orders": 53,
+        "lifetimeValue": 14800,
+        "lastOrderDaysAgo": 8,
+        "churnRisk": "low"
+      },
+      {
+        "id": "CUST-56292",
+        "segment": "Late-night",
+        "orders": 35,
+        "lifetimeValue": 13100,
+        "lastOrderDaysAgo": 10,
+        "churnRisk": "low"
+      },
+      {
+        "id": "CUST-56155",
+        "segment": "Families",
+        "orders": 39,
+        "lifetimeValue": 12000,
+        "lastOrderDaysAgo": 12,
+        "churnRisk": "medium"
+      },
+      {
+        "id": "CUST-56018",
+        "segment": "Professionals",
+        "orders": 85,
+        "lifetimeValue": 12200,
+        "lastOrderDaysAgo": 14,
+        "churnRisk": "low"
+      },
+      {
+        "id": "CUST-55881",
+        "segment": "Students",
+        "orders": 70,
+        "lifetimeValue": 10400,
+        "lastOrderDaysAgo": 16,
+        "churnRisk": "low"
+      },
+      {
+        "id": "CUST-55744",
+        "segment": "Large Groups",
+        "orders": 47,
+        "lifetimeValue": 7800,
+        "lastOrderDaysAgo": 18,
+        "churnRisk": "low"
+      },
+      {
+        "id": "CUST-55607",
+        "segment": "Late-night",
+        "orders": 56,
+        "lifetimeValue": 7700,
+        "lastOrderDaysAgo": 1,
+        "churnRisk": "medium"
+      },
+      {
+        "id": "CUST-55470",
+        "segment": "Families",
+        "orders": 36,
+        "lifetimeValue": 6200,
+        "lastOrderDaysAgo": 3,
+        "churnRisk": "low"
+      },
+      {
+        "id": "CUST-55333",
+        "segment": "Professionals",
+        "orders": 42,
+        "lifetimeValue": 5800,
+        "lastOrderDaysAgo": 5,
+        "churnRisk": "low"
+      },
+      {
+        "id": "CUST-55196",
+        "segment": "Students",
+        "orders": 48,
+        "lifetimeValue": 5200,
+        "lastOrderDaysAgo": 7,
+        "churnRisk": "low"
+      },
+      {
+        "id": "CUST-55059",
+        "segment": "Large Groups",
+        "orders": 88,
+        "lifetimeValue": 4300,
+        "lastOrderDaysAgo": 9,
+        "churnRisk": "medium"
+      }
+    ],
+    "promoSensitivity": [
+      {
+        "segment": "Families",
+        "promoSharePct": 22.4,
+        "organicSharePct": 77.6,
+        "avgDiscountDepthPct": 8.2
+      },
+      {
+        "segment": "Professionals",
+        "promoSharePct": 31.6,
+        "organicSharePct": 68.4,
+        "avgDiscountDepthPct": 11.4
+      },
+      {
+        "segment": "Students",
+        "promoSharePct": 58.9,
+        "organicSharePct": 41.1,
+        "avgDiscountDepthPct": 16.8
+      },
+      {
+        "segment": "Large Groups",
+        "promoSharePct": 12.1,
+        "organicSharePct": 87.9,
+        "avgDiscountDepthPct": 5.6
+      },
+      {
+        "segment": "Late-night",
+        "promoSharePct": 37.3,
+        "organicSharePct": 62.7,
+        "avgDiscountDepthPct": 12.9
+      }
+    ]
+  },
+  "meta": {
+    "generatedAt": "2026-09-24T08:29:51.861Z",
+    "filters": {},
+    "modelName": "ChurnScorer (XGBoost)",
+    "modelVersion": "0.9",
+    "pipeline": "python"
+  },
+  "insight": {
+    "summary": [
+      "18,240 customers ordered in the last 30 days (43.1% repeat rate) out of 61,400 lifetime accounts.",
+      "Families and Professionals generate 61% of revenue, while Students carry the deepest promo dependency at 58.9% of their orders.",
+      "The churn model flags 1,860 high-risk customers holding an estimated PKR 3.4M of monthly revenue."
+    ],
+    "whyItMatters": "Retention economics beat acquisition here: a repeat order costs a fraction of a new-customer promo, and the At Risk tier still holds double-digit revenue share — targeted win-backs move revenue faster than broad discounting.",
+    "evidence": [
+      {
+        "metric": "Active customers",
+        "value": "18,240",
+        "detail": "43.1% repeat rate"
+      },
+      {
+        "metric": "High churn risk",
+        "value": "1,860",
+        "detail": "PKR 3.4M monthly revenue at risk"
+      },
+      {
+        "metric": "New this period",
+        "value": "2,310",
+        "detail": "First order within 30 days"
+      }
+    ],
+    "period": "Aug 25 – Sep 23, 2026"
+  }
+}

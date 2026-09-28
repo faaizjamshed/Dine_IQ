@@ -1,0 +1,1002 @@
+customer_id,customer_name,gender,age,city,signup_date,customer_segment,preferred_channel,loyalty_points,is_churned,last_order_date
+C0000001,Customer 0000001,Male,56,Multan,2025-06-11,Regular,Mobile App,1794,False,2026-08-10 09:08:28
+C0000002,Customer 0000002,Male,23,Faisalabad,2026-05-10,Regular,Dine-In,5988,False,2026-08-19 15:12:32
+C0000003,Customer 0000003,Male,18,Faisalabad,2025-11-26,Loyal,Delivery Partner,8296,False,2026-08-30 20:45:45
+C0000004,Customer 0000004,Female,64,Karachi,2025-06-15,Regular,Mobile App,5578,False,2026-08-24 13:51:12
+C0000005,Customer 0000005,Female,40,Karachi,2025-05-11,Loyal,Takeaway,5551,False,2026-08-03 01:13:57
+C0000006,Customer 0000006,Male,56,Faisalabad,2025-03-21,New,Mobile App,3845,False,2026-07-14 12:39:24
+C0000007,Customer 0000007,Male,34,Multan,2025-06-30,High Value,Delivery Partner,6906,False,2026-08-29 20:30:37
+C0000008,Customer 0000008,Female,51,Islamabad,2026-06-10,Occasional,Takeaway,378,False,2026-07-23 15:22:25
+C0000009,Customer 0000009,Male,58,Faisalabad,2025-10-01,Loyal,Dine-In,3293,True,2026-08-27 19:16:09
+C0000010,Customer 0000010,Other,46,Karachi,2026-01-25,Occasional,Dine-In,3329,False,2026-07-13 18:07:18
+C0000011,Customer 0000011,Male,26,Rawalpindi,2026-06-02,New,Takeaway,4808,True,2026-08-09 12:36:07
+C0000012,Customer 0000012,Male,30,Lahore,2025-05-27,Regular,Delivery Partner,7937,False,2026-07-08 19:23:23
+C0000013,Customer 0000013,Male,23,Multan,2026-03-08,Loyal,Mobile App,224,False,2026-08-06 17:00:29
+C0000014,Customer 0000014,Female,23,Multan,2025-06-08,Loyal,Takeaway,737,False,2026-08-18 20:03:41
+C0000015,Customer 0000015,Male,37,Rawalpindi,2025-07-09,Regular,Dine-In,235,False,2026-08-11 20:26:51
+C0000016,Customer 0000016,Male,69,,2026-01-03,Regular,Takeaway,711,False,2026-08-28 09:25:13
+C0000017,Customer 0000017,Female,20,Karachi,2026-02-07,New,Delivery Partner,5988,False,2026-07-28 12:27:49
+C0000018,Customer 0000018,Male,34,Faisalabad,2026-07-05,Regular,Takeaway,1888,False,2026-07-19 16:30:51
+C0000019,Customer 0000019,Male,66,Islamabad,2026-04-18,New,Delivery Partner,7173,False,2026-06-28 20:38:20
+C0000020,Customer 0000020,Male,29,Multan,2026-03-21,Loyal,Mobile App,1259,True,2026-08-05 16:47:40
+C0000021,Customer 0000021,Male,65,Multan,2025-09-08,Regular,Dine-In,5246,False,2026-08-21 06:10:08
+C0000022,Customer 0000022,Male,64,Rawalpindi,2025-12-02,New,Delivery Partner,7271,False,2026-08-16 18:03:31
+C0000023,Customer 0000023,Male,62,,2025-08-08,Loyal,Mobile App,748,False,2026-08-23 16:31:21
+C0000024,Customer 0000024,Female,18,Multan,2026-06-03,Loyal,Website,3551,False,2026-06-27 11:09:18
+C0000025,Customer 0000025,Male,34,Islamabad,2026-01-08,Occasional,Delivery Partner,6400,False,2026-07-13 13:46:08
+C0000026,Customer 0000026,Female,20,Rawalpindi,2025-03-22,Loyal,Dine-In,6643,False,2026-08-02 18:36:35
+C0000027,Customer 0000027,Female,43,Islamabad,2025-11-08,Regular,Dine-In,8701,False,2026-06-02 20:03:59
+C0000028,Customer 0000028,Female,32,Faisalabad,2026-06-18,High Value,Website,1823,True,2026-08-27 18:42:32
+C0000029,Customer 0000029,Male,53,Multan,2025-04-28,Loyal,Takeaway,6852,False,2026-08-10 18:59:00
+C0000030,Customer 0000030,Female,49,Lahore,2026-07-24,New,Dine-In,7777,False,2026-07-15 19:02:13
+C0000031,Customer 0000031,Male,49,Multan,2026-06-19,Loyal,Dine-In,4232,False,2026-05-14 22:29:10
+C0000032,Customer 0000032,Male,21,Faisalabad,2025-09-06,Occasional,Dine-In,6519,False,2026-08-23 17:35:06
+C0000033,Customer 0000033,Male,35,Multan,2025-10-30,Regular,Website,1777,False,2026-07-31 15:47:15
+C0000034,Customer 0000034,Female,66,Multan,2026-07-18,Regular,Dine-In,1222,False,2026-08-22 07:05:37
+C0000035,Customer 0000035,Male,36,Karachi,2025-07-09,New,Mobile App,7630,False,2026-08-13 12:21:11
+C0000036,Customer 0000036,Male,60,Multan,2026-06-28,New,Mobile App,1777,False,2026-08-30 17:38:33
+C0000037,Customer 0000037,Male,69,Multan,2025-03-21,Regular,Mobile App,9496,True,2026-08-17 13:39:03
+C0000038,Customer 0000038,Female,52,Islamabad,2025-08-14,Loyal,Dine-In,7490,True,2026-08-24 06:46:28
+C0000039,Customer 0000039,Female,57,Lahore,2025-11-29,New,Delivery Partner,4859,True,2026-08-31 20:52:46
+C0000040,Customer 0000040,Female,31,Islamabad,2026-03-23,Occasional,Dine-In,8893,False,2026-08-28 06:22:07
+C0000041,Customer 0000041,Female,50,Islamabad,2026-01-10,Loyal,Website,8118,True,2026-08-04 21:10:03
+C0000042,Customer 0000042,Female,31,Rawalpindi,2025-03-14,Loyal,Delivery Partner,2989,True,2026-08-31 18:35:36
+C0000043,Customer 0000043,Male,51,Karachi,2025-10-28,High Value,Mobile App,8343,True,2026-03-11 01:09:43
+C0000044,Customer 0000044,Male,21,Islamabad,2026-02-09,New,Mobile App,1325,False,2026-08-11 21:33:25
+C0000045,Customer 0000045,Female,41,Faisalabad,2026-02-03,Regular,Mobile App,9493,False,2026-05-21 11:12:08
+C0000046,Customer 0000046,Female,46,Faisalabad,2025-05-31,Loyal,Mobile App,9903,False,2026-08-17 13:48:16
+C0000047,Customer 0000047,Female,36,Multan,2026-03-02,High Value,Delivery Partner,5127,False,2026-07-05 18:05:18
+C0000048,Customer 0000048,Female,23,Rawalpindi,2026-05-29,High Value,Delivery Partner,8998,False,2026-08-31 18:22:47
+C0000049,Customer 0000049,Female,50,Karachi,2026-05-02,Regular,Takeaway,2722,True,2026-08-14 20:21:41
+C0000050,Customer 0000050,Female,66,Karachi,2026-07-22,Occasional,Mobile App,4656,True,2025-11-29 15:14:32
+C0000051,Customer 0000051,Male,57,Multan,2025-04-04,New,Delivery Partner,1325,False,2026-08-27 19:50:43
+C0000052,Customer 0000052,Male,36,Faisalabad,2025-09-22,Occasional,Delivery Partner,4133,False,2026-08-17 22:27:18
+C0000053,Customer 0000053,Female,18,Lahore,2025-05-20,Occasional,Mobile App,9351,True,2026-03-18 19:17:03
+C0000054,Customer 0000054,Female,22,Rawalpindi,2026-03-23,New,Mobile App,2869,True,2025-12-31 11:10:56
+C0000055,Customer 0000055,Male,44,Multan,2025-03-02,Loyal,Takeaway,1242,False,2026-08-18 15:17:36
+C0000056,Customer 0000056,Female,33,Rawalpindi,2026-03-25,New,Delivery Partner,8539,False,2026-08-23 14:34:36
+C0000057,Customer 0000057,Female,23,Faisalabad,2025-06-14,Regular,Dine-In,1831,False,2026-06-17 13:30:56
+C0000058,Customer 0000058,Male,57,Faisalabad,2026-06-20,Regular,Mobile App,1569,False,2026-05-31 08:36:39
+C0000059,Customer 0000059,Female,30,Lahore,2026-04-06,Loyal,Takeaway,7246,False,2026-05-26 04:58:48
+C0000060,Customer 0000060,Male,65,Lahore,2025-08-09,Occasional,Takeaway,1918,True,2026-08-31 19:30:34
+C0000061,Customer 0000061,Male,52,Karachi,2025-09-18,Loyal,Mobile App,6416,False,2026-06-12 17:03:51
+C0000062,Customer 0000062,Female,36,Rawalpindi,2025-11-25,Regular,Delivery Partner,3232,True,2026-06-18 22:45:59
+C0000063,Customer 0000063,Female,29,Rawalpindi,2025-11-26,High Value,Dine-In,3758,False,2026-08-08 20:24:14
+C0000064,Customer 0000064,Male,33,Faisalabad,2026-05-30,Occasional,Mobile App,5997,False,2026-08-09 18:55:56
+C0000065,Customer 0000065,Female,60,Karachi,2026-06-05,New,Dine-In,2355,True,2026-02-20 17:16:03
+C0000066,Customer 0000066,Female,27,Multan,2025-11-07,Occasional,Dine-In,9589,False,2026-06-26 09:52:40
+C0000067,Customer 0000067,Male,42,Rawalpindi,2025-12-21,New,Mobile App,1824,False,2026-08-09 10:35:47
+C0000068,Customer 0000068,Male,37,Karachi,2026-02-01,High Value,Mobile App,7280,True,2026-08-14 22:17:32
+C0000069,Customer 0000069,Female,48,Karachi,2025-04-22,Regular,Takeaway,4060,False,2026-08-04 04:52:51
+C0000070,Customer 0000070,Male,21,Faisalabad,2025-10-03,New,Takeaway,5324,False,2026-08-10 17:08:26
+C0000071,Customer 0000071,Female,61,Karachi,2025-09-04,Regular,Dine-In,404,True,2026-07-16 15:34:51
+C0000072,Customer 0000072,Male,40,Lahore,2026-03-15,Loyal,Takeaway,1721,False,2026-08-16 09:38:54
+C0000073,Customer 0000073,Male,19,Lahore,2026-07-06,Regular,Delivery Partner,5316,False,2026-07-17 17:24:52
+C0000074,Customer 0000074,Male,39,Islamabad,2025-04-10,New,Delivery Partner,3845,False,2026-06-04 22:02:06
+C0000075,Customer 0000075,Male,68,Faisalabad,2025-08-04,Loyal,Takeaway,4210,True,2026-03-11 08:01:00
+C0000076,Customer 0000076,Male,54,Multan,2025-03-15,Occasional,Mobile App,64,False,2026-08-24 20:01:19
+C0000077,Customer 0000077,Female,25,Islamabad,2025-05-04,Regular,Delivery Partner,9491,False,2026-06-30 13:20:46
+C0000078,Customer 0000078,Male,24,Lahore,2026-08-03,Regular,Dine-In,6382,False,2026-05-25 20:10:49
+C0000079,Customer 0000079,Female,31,Islamabad,2026-02-07,Regular,Delivery Partner,9607,True,2026-04-30 01:12:47
+C0000080,Customer 0000080,Female,20,Faisalabad,2025-07-07,New,Delivery Partner,968,False,2026-07-04 14:42:28
+C0000081,Customer 0000081,Female,67,Faisalabad,2026-06-15,High Value,Dine-In,368,False,2026-07-22 10:27:59
+C0000082,Customer 0000082,Male,33,Karachi,2025-05-02,High Value,Dine-In,8424,False,2026-07-31 21:18:20
+C0000083,Customer 0000083,Male,36,Rawalpindi,2025-07-17,Loyal,Delivery Partner,2242,False,2026-08-29 20:30:13
+C0000084,Customer 0000084,Female,68,Karachi,2026-07-12,Regular,Mobile App,5002,False,2026-07-18 07:36:47
+C0000085,Customer 0000085,Female,35,Faisalabad,2026-03-27,High Value,Dine-In,3083,False,2026-07-12 20:06:54
+C0000086,Customer 0000086,Male,69,Lahore,2026-04-23,Loyal,Takeaway,8073,False,2026-08-30 20:54:54
+C0000087,Customer 0000087,Female,33,Multan,2025-12-14,High Value,Mobile App,9112,False,2026-08-22 13:20:48
+C0000088,Customer 0000088,Female,25,Lahore,2026-03-14,Loyal,Website,8880,False,2026-08-26 15:24:25
+C0000089,Customer 0000089,Male,50,Karachi,2026-07-03,High Value,Website,1469,False,2026-05-25 13:43:33
+C0000090,Customer 0000090,Male,66,Multan,2025-10-17,Loyal,Delivery Partner,4725,False,2026-05-06 21:43:26
+C0000091,Customer 0000091,Male,29,Faisalabad,2025-04-10,Regular,Takeaway,4259,False,2026-07-14 08:09:10
+C0000092,Customer 0000092,Female,28,Lahore,2025-03-28,Occasional,Mobile App,3622,False,2026-08-29 07:46:13
+C0000093,Customer 0000093,Female,22,Faisalabad,2025-07-13,Loyal,Mobile App,823,False,2026-08-03 12:18:17
+C0000094,Customer 0000094,Male,44,Multan,2025-09-17,Loyal,Mobile App,3431,False,2026-07-11 12:22:43
+C0000095,Customer 0000095,Male,29,Multan,2025-04-02,Regular,Dine-In,6528,False,2026-08-15 20:05:29
+C0000096,Customer 0000096,Male,34,Lahore,2025-04-17,Loyal,Delivery Partner,4151,False,2026-08-26 07:31:01
+C0000097,Customer 0000097,Male,23,Faisalabad,2026-07-16,Loyal,Delivery Partner,4213,False,2026-08-08 20:54:48
+C0000098,Customer 0000098,Female,50,Islamabad,2026-04-11,Regular,Mobile App,7420,True,2026-07-26 18:41:58
+C0000099,Customer 0000099,Male,22,Faisalabad,2025-06-07,New,Mobile App,8989,False,2026-08-18 19:20:44
+C0000100,Customer 0000100,Female,45,Multan,2026-08-29,Loyal,Takeaway,779,True,2026-02-27 09:46:56
+C0000101,Customer 0000101,Female,31,Faisalabad,2026-06-05,High Value,Mobile App,2892,True,2026-03-05 18:17:39
+C0000102,Customer 0000102,Male,22,Karachi,2025-03-05,Loyal,Website,5534,True,2025-12-16 18:39:22
+C0000103,Customer 0000103,Female,50,Islamabad,2025-10-04,Regular,Mobile App,3306,True,2026-06-12 12:19:19
+C0000104,Customer 0000104,Female,67,Rawalpindi,2026-07-16,Loyal,Delivery Partner,2902,True,2026-04-22 08:21:52
+C0000105,Customer 0000105,Male,65,Karachi,2026-04-02,New,Mobile App,3718,True,2026-07-16 13:31:14
+C0000106,Customer 0000106,Female,58,Rawalpindi,2026-03-28,Regular,Mobile App,21,True,2026-07-14 09:12:46
+C0000107,Customer 0000107,Male,36,Lahore,2025-09-23,New,Website,1500,False,2026-07-04 13:43:15
+C0000108,Customer 0000108,Female,39,Rawalpindi,2025-03-15,Regular,Dine-In,9034,False,2026-06-30 06:16:21
+C0000109,Customer 0000109,Male,22,Faisalabad,2026-06-04,Regular,Mobile App,9952,True,2025-09-05 16:45:57
+C0000110,Customer 0000110,Female,19,Rawalpindi,2025-10-27,Regular,Takeaway,3641,False,2026-08-02 22:05:10
+C0000111,Customer 0000111,Female,47,Multan,2025-06-04,New,Mobile App,5212,True,2026-08-16 01:21:10
+C0000112,Customer 0000112,Male,64,Karachi,2026-06-28,Regular,Delivery Partner,191,False,2026-05-31 05:42:15
+C0000113,Customer 0000113,Male,56,Karachi,2026-04-11,Regular,Mobile App,8587,False,2026-06-04 17:45:02
+C0000114,Customer 0000114,Male,21,Rawalpindi,2025-10-17,Regular,Delivery Partner,7174,False,2026-07-01 20:51:15
+C0000115,Customer 0000115,Female,50,Karachi,2025-08-18,Regular,Mobile App,5114,True,2026-07-09 22:44:51
+C0000116,Customer 0000116,Male,30,Multan,2026-08-23,High Value,Takeaway,4662,False,2026-07-28 14:59:55
+C0000117,Customer 0000117,Male,37,Karachi,2025-04-05,New,Delivery Partner,4326,True,2025-11-05 23:14:53
+C0000118,Customer 0000118,Male,24,Rawalpindi,2026-08-07,Regular,Takeaway,9065,True,2026-04-12 15:19:11
+C0000119,Customer 0000119,Male,32,Islamabad,2025-08-07,New,Takeaway,4335,True,2026-04-10 18:11:03
+C0000120,Customer 0000120,Female,40,Islamabad,2025-10-29,New,Mobile App,8281,True,2026-04-19 20:40:12
+C0000121,Customer 0000121,Female,31,Lahore,2025-05-25,Loyal,Takeaway,8648,False,2026-08-21 20:32:29
+C0000122,Customer 0000122,Male,40,Karachi,2025-03-28,Loyal,Dine-In,9196,False,2026-08-06 09:56:38
+C0000123,Customer 0000123,Female,36,Rawalpindi,2026-02-03,Occasional,Mobile App,5494,True,2026-03-07 14:45:12
+C0000124,Customer 0000124,Female,46,Karachi,2026-01-25,Loyal,Mobile App,8536,True,2026-05-31 08:21:37
+C0000125,Customer 0000125,Male,37,Faisalabad,2026-07-19,Occasional,Mobile App,2711,True,2026-04-23 11:58:13
+C0000126,Customer 0000126,Male,46,Multan,2026-02-11,New,Delivery Partner,7595,True,2026-05-18 15:33:12
+C0000127,Customer 0000127,Male,41,Karachi,2026-06-16,New,Mobile App,6273,False,2026-07-05 18:11:22
+C0000128,Customer 0000128,Male,35,Karachi,2025-10-17,New,Delivery Partner,6284,False,2026-08-14 13:45:58
+C0000129,Customer 0000129,Male,27,Islamabad,2025-09-06,Regular,Dine-In,9308,True,2026-03-23 03:11:49
+C0000130,Customer 0000130,Female,58,Multan,2025-10-11,Loyal,Mobile App,8817,False,2026-07-21 21:59:02
+C0000131,Customer 0000131,Female,25,Rawalpindi,2026-03-20,Loyal,Delivery Partner,3994,False,2026-05-05 18:29:25
+C0000132,Customer 0000132,Female,43,Karachi,2026-03-12,New,Mobile App,1678,False,2026-06-07 20:20:23
+C0000133,Customer 0000133,Female,46,Islamabad,2025-12-08,Occasional,Website,8414,False,2026-08-15 17:46:55
+C0000134,Customer 0000134,Male,27,Lahore,2025-11-14,High Value,Mobile App,743,False,2026-08-10 20:43:26
+C0000135,Customer 0000135,Female,34,Multan,2026-02-22,Regular,Dine-In,462,False,2026-06-28 14:58:09
+C0000136,Customer 0000136,Female,19,Islamabad,2026-05-30,New,Mobile App,1568,False,2026-07-19 21:39:54
+C0000137,Customer 0000137,Female,23,Islamabad,2026-04-15,New,Mobile App,1736,True,2026-07-25 14:14:04
+C0000138,Customer 0000138,Female,22,Islamabad,2026-01-12,New,Delivery Partner,7903,False,2026-07-12 12:36:59
+C0000139,Customer 0000139,Female,45,Karachi,2025-10-11,New,Takeaway,7002,False,2026-08-15 05:18:41
+C0000140,Customer 0000140,Female,58,Karachi,2025-10-20,Regular,Delivery Partner,8856,False,2026-06-29 18:30:40
+C0000141,Customer 0000141,Female,22,Lahore,2026-03-09,Regular,Delivery Partner,1356,False,2026-07-12 17:24:59
+C0000142,Customer 0000142,Female,35,Faisalabad,2026-06-15,Regular,Takeaway,1014,True,2026-08-10 14:58:45
+C0000143,Customer 0000143,Female,43,Faisalabad,2025-10-19,Occasional,Takeaway,1054,True,2026-04-18 18:10:02
+C0000144,Customer 0000144,Male,37,Faisalabad,2025-06-21,Loyal,Delivery Partner,1764,False,2026-08-13 21:59:50
+C0000145,Customer 0000145,Female,58,Multan,2026-07-10,Occasional,Delivery Partner,6009,True,2026-06-25 18:56:27
+C0000146,Customer 0000146,Female,66,Multan,2026-05-16,New,Mobile App,4458,False,2026-08-21 11:32:40
+C0000147,Customer 0000147,Male,44,Lahore,2025-11-23,Regular,Takeaway,9604,False,2026-06-27 13:26:39
+C0000148,Customer 0000148,Female,66,Multan,2026-07-23,Loyal,Mobile App,667,False,2026-07-19 16:14:03
+C0000149,Customer 0000149,Male,29,Faisalabad,2026-03-21,New,Website,3370,False,2026-05-29 16:47:31
+C0000150,Customer 0000150,Male,24,Faisalabad,2026-03-22,New,Takeaway,5976,True,2026-01-26 15:13:16
+C0000151,Customer 0000151,Female,20,Islamabad,2025-06-21,Loyal,Website,1394,False,2026-08-31 00:48:17
+C0000152,Customer 0000152,Male,27,Multan,2025-05-20,Loyal,Dine-In,8290,True,2026-04-26 09:38:48
+C0000153,Customer 0000153,Female,51,Karachi,2025-06-21,Regular,Dine-In,4070,False,2026-08-17 18:11:04
+C0000154,Customer 0000154,Male,42,Karachi,2025-03-02,Regular,Mobile App,6982,False,2026-07-20 07:37:16
+C0000155,Customer 0000155,Female,52,Islamabad,2025-10-06,Regular,Takeaway,8613,True,2026-04-27 13:35:37
+C0000156,Customer 0000156,Male,33,Islamabad,2025-10-11,New,Takeaway,5599,False,2026-05-21 08:34:43
+C0000157,Customer 0000157,Female,19,Islamabad,2026-03-20,Regular,Mobile App,3650,False,2026-07-20 17:34:45
+C0000158,Customer 0000158,Male,41,Karachi,2026-04-07,New,Takeaway,9324,True,2025-06-14 16:07:40
+C0000159,Customer 0000159,Male,27,Faisalabad,2025-07-08,New,Dine-In,9894,False,2026-07-13 19:41:13
+C0000160,Customer 0000160,Female,55,Islamabad,2025-04-22,Occasional,Takeaway,3620,False,2026-08-09 11:00:52
+C0000161,Customer 0000161,Female,39,Lahore,2026-04-20,Loyal,Delivery Partner,3190,False,2026-06-26 16:00:54
+C0000162,Customer 0000162,Male,43,Islamabad,2025-11-02,Loyal,Mobile App,8789,True,2026-05-25 12:20:58
+C0000163,Customer 0000163,Male,60,Rawalpindi,2026-05-13,Regular,Mobile App,391,True,2026-04-21 20:47:17
+C0000164,Customer 0000164,Female,56,Islamabad,2025-09-19,Regular,Mobile App,1075,False,2026-06-21 15:29:51
+C0000165,Customer 0000165,Male,44,Karachi,2025-08-31,Regular,Delivery Partner,2650,True,2026-03-23 12:29:58
+C0000166,Customer 0000166,Male,46,Multan,2025-07-01,New,Takeaway,2384,False,2026-08-05 13:31:42
+C0000167,Customer 0000167,Male,64,Islamabad,2026-04-05,New,Website,809,False,2026-07-07 12:37:52
+C0000168,Customer 0000168,Female,55,Multan,2025-12-19,High Value,Website,8047,True,2026-03-29 20:18:05
+C0000169,Customer 0000169,Male,37,Rawalpindi,2025-12-05,Loyal,Mobile App,5501,True,2025-11-15 18:54:44
+C0000170,Customer 0000170,Female,44,Lahore,2025-09-14,Loyal,Dine-In,6895,False,2026-08-12 08:49:28
+C0000171,Customer 0000171,Male,58,Multan,2026-07-24,Regular,Website,1159,True,2026-08-24 17:17:22
+C0000172,Customer 0000172,Male,37,Faisalabad,2025-07-22,Occasional,Dine-In,7574,False,2026-08-11 15:59:46
+C0000173,Customer 0000173,Female,61,Islamabad,2025-09-17,New,Mobile App,1531,True,2026-04-29 20:34:57
+C0000174,Customer 0000174,Male,36,Rawalpindi,2025-07-02,Regular,Website,5481,True,2026-03-26 13:37:07
+C0000175,Customer 0000175,Female,37,Rawalpindi,2025-09-03,Regular,Dine-In,7548,False,2026-08-23 17:51:18
+C0000176,Customer 0000176,Other,52,Multan,2026-01-20,High Value,Delivery Partner,4976,False,2026-08-16 09:11:31
+C0000177,Customer 0000177,Male,64,Lahore,2026-06-07,Occasional,Dine-In,5695,True,2026-08-27 19:32:18
+C0000178,Customer 0000178,Male,19,Karachi,2026-02-12,Regular,Delivery Partner,8445,True,2026-04-20 13:22:44
+C0000179,Customer 0000179,Female,47,Islamabad,2026-04-07,Occasional,Mobile App,3548,True,2026-06-07 20:49:03
+C0000180,Customer 0000180,Male,51,Rawalpindi,2026-02-09,High Value,Dine-In,6163,False,2026-06-28 11:53:11
+C0000181,Customer 0000181,Female,39,Lahore,2026-07-24,Regular,Dine-In,6671,False,2026-07-11 08:32:23
+C0000182,Customer 0000182,Female,20,Faisalabad,2025-07-25,Regular,Delivery Partner,5264,True,2026-04-20 23:46:46
+C0000183,Customer 0000183,Male,23,Rawalpindi,2025-07-26,Regular,Dine-In,1231,False,2026-08-29 22:11:49
+C0000184,Customer 0000184,Female,32,Lahore,2026-07-02,Occasional,Dine-In,2423,False,2026-06-02 20:31:34
+C0000185,Customer 0000185,Female,44,Karachi,2026-02-01,Regular,Takeaway,8071,True,
+C0000186,Customer 0000186,Male,27,Karachi,2026-06-16,High Value,Mobile App,4261,False,2026-05-13 14:43:21
+C0000187,Customer 0000187,Female,26,Rawalpindi,2025-07-29,Regular,Mobile App,9765,False,2026-07-06 19:19:50
+C0000188,Customer 0000188,Female,50,Rawalpindi,2026-04-19,Loyal,Dine-In,2908,False,2026-06-23 17:36:36
+C0000189,Customer 0000189,Male,49,Multan,2025-12-23,Regular,Takeaway,4712,False,2026-08-26 13:27:33
+C0000190,Customer 0000190,Female,65,Islamabad,2025-11-18,Loyal,Takeaway,6755,False,2026-07-24 08:35:14
+C0000191,Customer 0000191,Male,23,Lahore,2025-07-22,High Value,Dine-In,9817,False,2026-06-26 20:40:52
+C0000192,Customer 0000192,Male,58,Rawalpindi,2026-02-09,High Value,Mobile App,3883,True,2025-10-22 07:55:01
+C0000193,Customer 0000193,Male,53,Islamabad,2025-03-02,Occasional,Website,3515,False,2026-08-24 16:51:41
+C0000194,Customer 0000194,Male,19,Multan,2025-12-29,New,Dine-In,3403,False,2026-08-27 21:27:17
+C0000195,Customer 0000195,Female,46,Islamabad,2025-11-09,Loyal,Mobile App,4598,True,2025-04-20 14:27:04
+C0000196,Customer 0000196,Female,21,Rawalpindi,2026-05-27,New,Mobile App,5008,False,2026-05-04 09:28:24
+C0000197,Customer 0000197,Male,18,Karachi,2025-04-06,Regular,Delivery Partner,6222,True,2026-05-28 08:03:51
+C0000198,Customer 0000198,Male,36,Lahore,2025-08-07,Loyal,Delivery Partner,4009,False,2026-06-06 12:21:57
+C0000199,Customer 0000199,Male,43,Lahore,2025-03-09,Regular,Delivery Partner,2735,False,2026-07-26 14:32:23
+C0000200,Customer 0000200,Female,42,Karachi,2025-10-19,Regular,Takeaway,4491,False,2026-08-04 15:25:12
+C0000201,Customer 0000201,Female,27,Rawalpindi,2025-06-07,Occasional,Dine-In,8593,False,2026-05-17 19:52:21
+C0000202,Customer 0000202,Female,32,Lahore,2025-09-24,New,Takeaway,974,True,2026-07-14 10:59:41
+C0000203,Customer 0000203,Male,39,Rawalpindi,2025-07-09,Loyal,Takeaway,223,False,2026-08-21 18:56:54
+C0000204,Customer 0000204,Female,68,Multan,2026-04-08,Regular,Mobile App,4613,False,2026-05-24 18:13:25
+C0000205,Customer 0000205,Male,65,Rawalpindi,2025-07-30,New,Website,6777,False,2026-08-06 17:01:22
+C0000206,Customer 0000206,Male,38,Islamabad,2025-04-23,New,Delivery Partner,8427,True,2025-08-19 17:59:40
+C0000207,Customer 0000207,Female,39,Karachi,2025-06-28,Occasional,Delivery Partner,4211,True,2026-03-10 18:22:57
+C0000208,Customer 0000208,Male,53,Rawalpindi,2026-04-24,Occasional,Takeaway,225,True,2026-03-13 19:10:37
+C0000209,Customer 0000209,Female,51,Multan,2026-04-26,Occasional,Website,8183,True,2026-05-26 21:14:27
+C0000210,Customer 0000210,Male,47,Faisalabad,2025-06-12,Occasional,Takeaway,4277,True,2026-03-25 10:51:41
+C0000211,Customer 0000211,Male,42,Karachi,2025-11-09,Regular,Dine-In,1341,False,2026-08-27 07:40:14
+C0000212,Customer 0000212,Male,62,Lahore,2025-10-13,Regular,Website,4036,False,2026-07-29 23:41:34
+C0000213,Customer 0000213,Male,45,Islamabad,2025-06-20,Loyal,Dine-In,8401,True,2025-12-04 20:17:28
+C0000214,Customer 0000214,Female,18,Lahore,2026-07-23,Regular,Mobile App,3727,True,2026-04-05 13:11:36
+C0000215,Customer 0000215,Female,66,Multan,2026-06-16,Regular,Takeaway,3928,False,2026-08-22 19:15:30
+C0000216,Customer 0000216,Male,62,Multan,2025-06-07,Regular,Website,2803,True,2025-03-21 21:40:25
+C0000217,Customer 0000217,Female,21,Lahore,2025-07-31,Loyal,Website,9301,False,2026-06-10 18:45:51
+C0000218,Customer 0000218,Female,24,Karachi,2026-02-01,Loyal,Takeaway,6558,True,2026-06-22 18:05:14
+C0000219,Customer 0000219,Female,66,Lahore,2025-08-10,New,Delivery Partner,393,False,2026-07-29 14:23:03
+C0000220,Customer 0000220,Male,26,Rawalpindi,2025-08-08,Regular,Takeaway,6839,False,2026-07-27 22:49:08
+C0000221,Customer 0000221,Female,53,Lahore,2026-04-02,Loyal,Mobile App,9035,True,2025-11-02 14:04:57
+C0000222,Customer 0000222,Male,36,Islamabad,2025-12-02,Loyal,Website,9716,False,2026-05-24 14:25:27
+C0000223,Customer 0000223,Other,18,Islamabad,2026-07-17,Regular,Website,8795,True,2026-08-08 19:11:40
+C0000224,Customer 0000224,Female,27,Faisalabad,2026-03-27,Loyal,Delivery Partner,581,False,2026-07-04 15:11:16
+C0000225,Customer 0000225,Female,53,Islamabad,2025-07-13,New,Takeaway,132,True,2025-12-04 12:25:31
+C0000226,Customer 0000226,Female,26,Lahore,2025-09-11,Regular,Website,2838,True,2025-10-09 22:12:29
+C0000227,Customer 0000227,Male,62,Islamabad,2026-04-05,High Value,Mobile App,3385,True,2026-06-17 09:51:17
+C0000228,Customer 0000228,Female,63,Karachi,2025-04-02,Loyal,Delivery Partner,3770,False,2026-08-28 18:02:38
+C0000229,Customer 0000229,Female,59,Islamabad,2026-06-03,Regular,Dine-In,2268,True,2026-03-27 08:36:35
+C0000230,Customer 0000230,Female,49,Rawalpindi,2026-06-13,Loyal,Website,975,True,2026-01-15 22:04:05
+C0000231,Customer 0000231,Male,49,Karachi,2026-03-10,Loyal,Mobile App,7605,False,2026-05-08 12:14:48
+C0000232,Customer 0000232,Female,23,Faisalabad,2025-03-22,High Value,Takeaway,7213,True,2026-04-25 20:33:04
+C0000233,Customer 0000233,Male,65,Rawalpindi,2025-04-07,Loyal,Mobile App,9735,True,2026-05-03 21:58:56
+C0000234,Customer 0000234,Male,55,Lahore,2025-10-16,Loyal,Takeaway,2835,False,2026-08-05 08:43:58
+C0000235,Customer 0000235,Female,34,Lahore,2026-02-28,Regular,Mobile App,2738,True,2026-03-04 21:01:06
+C0000236,Customer 0000236,Male,27,Lahore,2026-05-12,New,Delivery Partner,9549,False,2026-08-14 05:21:45
+C0000237,Customer 0000237,Female,67,Rawalpindi,2025-12-08,Regular,Mobile App,4134,False,2026-07-08 18:06:46
+C0000238,Customer 0000238,Male,44,Rawalpindi,2025-03-27,Regular,Mobile App,9508,False,2026-08-07 19:03:22
+C0000239,Customer 0000239,Male,67,Rawalpindi,2025-10-12,Loyal,Mobile App,6833,True,2026-01-14 18:08:02
+C0000240,Customer 0000240,Male,52,Karachi,2025-12-02,Regular,Dine-In,8353,True,2026-04-07 15:13:47
+C0000241,Customer 0000241,Female,69,Multan,2025-12-09,Regular,Takeaway,1909,True,2026-08-13 21:55:55
+C0000242,Customer 0000242,Female,38,Karachi,2026-06-24,New,Mobile App,9319,True,2026-08-31 11:33:43
+C0000243,Customer 0000243,Female,42,Lahore,2026-05-27,Regular,Takeaway,9850,False,2026-05-15 12:11:26
+C0000244,Customer 0000244,Female,45,Multan,2026-07-29,Regular,Dine-In,1963,False,2026-06-07 11:48:17
+C0000245,Customer 0000245,Female,64,Islamabad,2026-08-29,Loyal,Mobile App,5153,False,2026-07-02 11:11:41
+C0000246,Customer 0000246,Female,32,Lahore,2025-09-08,New,Takeaway,966,True,2026-05-03 18:01:49
+C0000247,Customer 0000247,Female,21,Faisalabad,2025-04-18,Loyal,Takeaway,889,True,2026-04-08 17:23:16
+C0000248,Customer 0000248,Female,46,Karachi,2026-07-25,Occasional,Mobile App,3061,False,2026-05-12 08:35:59
+C0000249,Customer 0000249,Male,26,Rawalpindi,2025-03-17,New,Dine-In,6461,True,2026-04-12 13:29:35
+C0000250,Customer 0000250,Male,44,Karachi,2025-08-19,Regular,Delivery Partner,6166,True,2026-04-12 13:58:08
+C0000251,Customer 0000251,Female,43,Rawalpindi,2025-10-06,New,Delivery Partner,6967,False,2026-07-21 13:16:55
+C0000252,Customer 0000252,Female,36,Multan,2025-08-05,Loyal,Website,9858,True,2026-03-05 13:08:43
+C0000253,Customer 0000253,Female,45,Faisalabad,2026-06-20,Loyal,Dine-In,8101,True,2025-12-21 21:10:03
+C0000254,Customer 0000254,Male,34,Multan,2025-04-15,Regular,Website,7379,True,2025-10-28 19:02:55
+C0000255,Customer 0000255,Female,60,Faisalabad,2026-03-08,Loyal,Delivery Partner,9633,True,2026-08-26 13:56:48
+C0000256,Customer 0000256,Male,58,Karachi,2026-07-31,Occasional,Website,7280,True,2025-07-01 22:29:38
+C0000257,Customer 0000257,Male,59,Rawalpindi,2025-06-07,Regular,Dine-In,1067,False,2026-07-07 12:28:36
+C0000258,Customer 0000258,Male,67,Multan,2025-04-06,New,Mobile App,4223,True,2025-06-30 19:53:06
+C0000259,Customer 0000259,Male,37,Faisalabad,2025-12-05,Occasional,Delivery Partner,9018,True,2025-12-09 10:09:58
+C0000260,Customer 0000260,Male,62,Lahore,2026-02-12,Loyal,Mobile App,4607,True,2026-04-01 10:24:48
+C0000261,Customer 0000261,Male,57,Lahore,2026-07-10,Occasional,Mobile App,3985,False,2026-06-26 18:22:34
+C0000262,Customer 0000262,Male,56,Multan,2025-12-27,Loyal,Mobile App,3179,True,2025-06-29 20:37:34
+C0000263,Customer 0000263,Male,66,Rawalpindi,2025-08-28,High Value,Mobile App,4538,False,2026-06-28 20:37:34
+C0000264,Customer 0000264,Male,40,Multan,2025-06-07,Regular,Dine-In,2362,False,2026-06-02 13:57:14
+C0000265,Customer 0000265,Male,64,Karachi,2025-06-24,Loyal,Mobile App,2224,False,2026-05-30 14:54:18
+C0000266,Customer 0000266,Male,49,Faisalabad,2025-09-07,Occasional,Dine-In,6371,False,2026-05-19 15:19:57
+C0000267,Customer 0000267,Female,69,Karachi,2025-11-08,Loyal,Mobile App,1726,True,2026-07-27 16:13:30
+C0000268,Customer 0000268,Female,64,Lahore,2025-08-08,Regular,Takeaway,5791,False,2026-07-09 16:29:48
+C0000269,Customer 0000269,Female,50,Faisalabad,2025-11-11,Regular,Mobile App,8073,True,2026-04-16 14:07:53
+C0000270,Customer 0000270,Female,63,Multan,2026-01-17,Regular,Dine-In,8458,True,2026-04-05 19:23:24
+C0000271,Customer 0000271,Female,22,Karachi,2025-07-06,Regular,Website,7013,False,2026-07-01 17:11:44
+C0000272,Customer 0000272,Female,60,Islamabad,2025-03-18,Regular,Delivery Partner,837,False,2026-08-23 21:15:24
+C0000273,Customer 0000273,Male,65,Rawalpindi,2026-01-17,Loyal,Dine-In,4584,False,2026-07-12 13:55:19
+C0000274,Customer 0000274,Female,51,Rawalpindi,2025-12-13,Loyal,Dine-In,686,True,2026-01-19 16:59:53
+C0000275,Customer 0000275,Male,57,Islamabad,2025-08-02,Regular,Dine-In,356,True,2025-11-01 21:41:35
+C0000276,Customer 0000276,Female,28,Lahore,2026-07-03,Loyal,Delivery Partner,9063,True,2026-04-12 13:35:14
+C0000277,Customer 0000277,Female,67,Faisalabad,2026-03-21,New,Mobile App,4647,True,2025-12-24 12:39:35
+C0000278,Customer 0000278,Male,20,Rawalpindi,2025-06-12,New,Mobile App,4418,False,2026-06-10 19:50:15
+C0000279,Customer 0000279,Male,50,Islamabad,2026-03-28,New,Dine-In,6642,False,2026-07-24 09:49:22
+C0000280,Customer 0000280,Female,28,Multan,2025-11-01,Regular,Mobile App,3391,False,2026-08-31 17:04:06
+C0000281,Customer 0000281,Male,33,Islamabad,2025-08-23,Regular,Delivery Partner,4357,True,2026-01-09 16:36:39
+C0000282,Customer 0000282,Male,35,Lahore,2025-04-08,Regular,Delivery Partner,4879,True,2025-10-17 13:07:54
+C0000283,Customer 0000283,Female,47,Lahore,2026-06-20,Regular,Mobile App,5319,False,2026-07-11 19:18:10
+C0000284,Customer 0000284,Female,65,Karachi,2026-08-20,High Value,Dine-In,2739,False,2026-06-24 19:11:49
+C0000285,Customer 0000285,Male,27,Rawalpindi,2026-04-12,New,Dine-In,9510,False,2026-07-03 20:26:23
+C0000286,Customer 0000286,Male,35,Karachi,2026-08-07,Loyal,Dine-In,9727,True,2025-10-10 17:31:02
+C0000287,Customer 0000287,Male,55,Islamabad,2026-07-19,Loyal,Takeaway,4784,True,2026-08-08 12:55:38
+C0000288,Customer 0000288,Male,36,Faisalabad,2025-04-05,High Value,Dine-In,9964,True,2026-04-02 18:15:02
+C0000289,Customer 0000289,Female,53,Faisalabad,2025-03-20,Occasional,Takeaway,877,True,2026-08-15 12:29:44
+C0000290,Customer 0000290,Female,30,Lahore,2026-01-15,New,Mobile App,2870,True,2026-07-13 20:59:21
+C0000291,Customer 0000291,Female,63,Faisalabad,2026-07-25,New,Delivery Partner,292,True,2026-02-19 09:52:14
+C0000292,Customer 0000292,Male,20,Faisalabad,2026-04-04,Occasional,Mobile App,9843,False,2026-08-05 17:48:24
+C0000293,Customer 0000293,Male,27,Faisalabad,2026-06-14,Regular,Delivery Partner,8728,True,2026-06-05 14:44:41
+C0000294,Customer 0000294,Male,55,Islamabad,2025-07-21,Loyal,Website,2686,False,2026-05-11 12:52:57
+C0000295,Customer 0000295,Female,18,Faisalabad,2025-05-31,Loyal,Dine-In,233,False,2026-07-02 14:02:13
+C0000296,Customer 0000296,Female,44,Multan,2026-02-17,Loyal,Website,2374,True,2025-12-07 18:00:03
+C0000297,Customer 0000297,Male,63,Faisalabad,2025-04-20,Occasional,Takeaway,2272,True,2026-04-21 08:18:21
+C0000298,Customer 0000298,Male,25,Faisalabad,2025-09-06,Occasional,Mobile App,966,False,2026-06-06 06:15:09
+C0000299,Customer 0000299,Male,68,Karachi,2025-07-03,Loyal,Takeaway,889,False,2026-08-30 04:02:33
+C0000300,Customer 0000300,Female,63,Islamabad,2025-07-28,Regular,Delivery Partner,3863,True,2026-05-07 14:04:19
+C0000301,Customer 0000301,Male,59,Lahore,2026-01-08,Occasional,Takeaway,6154,True,2025-07-08 21:55:11
+C0000302,Customer 0000302,Female,34,Karachi,2026-02-05,New,Takeaway,3400,True,2025-12-01 20:46:22
+C0000303,Customer 0000303,Male,26,Rawalpindi,2025-12-30,Regular,Delivery Partner,8226,False,2026-08-16 14:16:38
+C0000304,Customer 0000304,Female,23,Islamabad,2025-04-23,Occasional,Dine-In,4542,False,2026-06-05 15:45:20
+C0000305,Customer 0000305,Male,60,Multan,2026-05-18,Regular,Website,3523,True,2026-02-08 19:20:09
+C0000306,Customer 0000306,Female,42,Islamabad,2025-11-19,Regular,Website,1763,True,2026-04-13 14:13:50
+C0000307,Customer 0000307,Male,56,Rawalpindi,2025-04-22,New,Delivery Partner,3291,True,2026-01-18 23:06:53
+C0000308,Customer 0000308,Female,66,Rawalpindi,2025-03-05,Occasional,Delivery Partner,2488,False,2026-05-28 20:43:16
+C0000309,Customer 0000309,Female,45,Rawalpindi,2025-06-11,Regular,Delivery Partner,1558,False,2026-07-08 09:20:34
+C0000310,Customer 0000310,Female,50,Lahore,2025-09-12,Loyal,Dine-In,4690,False,2026-08-28 12:02:07
+C0000311,Customer 0000311,Female,54,Faisalabad,2026-02-13,Regular,Delivery Partner,6121,False,
+C0000312,Customer 0000312,Female,26,Islamabad,2025-04-16,Loyal,Mobile App,2276,True,2026-03-13 12:15:03
+C0000313,Customer 0000313,Male,35,Faisalabad,2025-11-24,High Value,Mobile App,4439,True,2026-02-24 17:25:55
+C0000314,Customer 0000314,Female,38,Faisalabad,2026-03-05,Regular,Dine-In,1103,False,2026-05-10 20:09:36
+C0000315,Customer 0000315,Male,19,Multan,2025-06-14,Regular,Mobile App,7520,False,2026-07-18 13:25:28
+C0000316,Customer 0000316,Male,60,Rawalpindi,2025-06-28,Regular,Delivery Partner,9611,False,2026-08-10 09:14:50
+C0000317,Customer 0000317,Male,55,Lahore,2025-04-27,Occasional,Delivery Partner,5409,False,2026-08-14 09:14:07
+C0000318,Customer 0000318,Female,57,Multan,2026-02-09,Loyal,Mobile App,9670,False,2026-06-15 11:22:28
+C0000319,Customer 0000319,Female,53,Karachi,2026-06-17,Occasional,Dine-In,7869,False,2026-07-25 13:51:10
+C0000320,Customer 0000320,Male,67,Lahore,2025-06-25,Regular,Mobile App,2956,False,2026-07-27 15:42:38
+C0000321,Customer 0000321,Male,60,Faisalabad,2025-07-05,High Value,Delivery Partner,7710,False,2026-06-02 08:00:40
+C0000322,Customer 0000322,Female,54,Lahore,2026-03-28,High Value,Website,6017,True,2026-02-28 10:12:26
+C0000323,Customer 0000323,Female,32,Rawalpindi,2025-04-27,Loyal,Mobile App,9574,False,2026-08-21 20:56:58
+C0000324,Customer 0000324,Male,45,Karachi,2026-07-26,Occasional,Dine-In,3384,True,2025-12-29 12:47:55
+C0000325,Customer 0000325,Male,35,Rawalpindi,2025-06-04,Regular,Mobile App,9761,True,2026-07-18 06:10:04
+C0000326,Customer 0000326,Female,51,Karachi,2025-06-26,New,Mobile App,28,False,2026-06-27 20:46:31
+C0000327,Customer 0000327,Female,39,Multan,2026-07-01,Loyal,Delivery Partner,8897,True,2026-08-12 08:38:35
+C0000328,Customer 0000328,Male,28,Faisalabad,2025-10-23,Loyal,Mobile App,9212,False,2026-08-03 13:50:58
+C0000329,Customer 0000329,Female,30,Karachi,2025-11-27,Loyal,Takeaway,9638,False,2026-06-12 19:14:49
+C0000330,Customer 0000330,Female,21,Karachi,2025-09-05,Regular,Mobile App,7756,False,2026-07-29 10:36:49
+C0000331,Customer 0000331,Male,39,Karachi,2026-05-21,Regular,Dine-In,6948,False,2026-07-30 09:44:35
+C0000332,Customer 0000332,Male,24,Lahore,2025-11-02,Regular,Delivery Partner,5755,True,2025-09-22 18:55:53
+C0000333,Customer 0000333,Female,60,Multan,2025-05-15,Regular,Mobile App,3602,True,2026-08-05 18:15:19
+C0000334,Customer 0000334,Female,41,Lahore,2025-08-01,Loyal,Mobile App,5062,False,2026-05-29 21:37:48
+C0000335,Customer 0000335,Female,21,Faisalabad,2026-05-09,Loyal,Takeaway,8071,False,2026-06-28 16:34:43
+C0000336,Customer 0000336,Male,45,Karachi,2025-05-25,Regular,Website,7244,True,2026-07-05 18:44:30
+C0000337,Customer 0000337,Male,32,Multan,2025-12-10,Regular,Website,6372,True,2026-04-22 12:53:47
+C0000338,Customer 0000338,Female,18,Multan,2025-10-06,Regular,Website,7105,True,2026-04-26 17:00:51
+C0000339,Customer 0000339,Female,20,Islamabad,2025-05-08,Regular,Takeaway,3581,False,2026-06-19 11:27:44
+C0000340,Customer 0000340,Male,31,Faisalabad,2025-04-16,High Value,Takeaway,2762,False,2026-08-01 11:42:55
+C0000341,Customer 0000341,Male,55,Multan,2025-06-02,Occasional,Dine-In,572,False,2026-08-19 16:22:22
+C0000342,Customer 0000342,Male,67,Karachi,2026-05-27,Regular,Mobile App,7705,False,2026-07-23 17:14:24
+C0000343,Customer 0000343,Male,18,Karachi,2025-09-20,Loyal,Dine-In,614,True,2025-08-01 18:41:48
+C0000344,Customer 0000344,Female,55,Multan,2025-10-04,Occasional,Mobile App,4050,True,2026-07-08 16:46:35
+C0000345,Customer 0000345,Male,55,Lahore,2026-06-17,High Value,Delivery Partner,325,True,2026-02-03 12:03:47
+C0000346,Customer 0000346,Male,38,Faisalabad,2026-05-06,Regular,Delivery Partner,3740,False,2026-07-25 19:22:18
+C0000347,Customer 0000347,Female,65,Karachi,2026-02-04,Occasional,Mobile App,358,True,2026-01-11 19:00:12
+C0000348,Customer 0000348,Female,46,Multan,2025-12-14,Regular,Mobile App,3777,True,2026-02-21 22:12:51
+C0000349,Customer 0000349,Female,22,Karachi,2025-11-09,Regular,Dine-In,5906,False,2026-08-14 08:16:41
+C0000350,Customer 0000350,Female,66,Multan,2026-02-20,New,Website,1721,True,2026-01-20 11:32:29
+C0000351,Customer 0000351,Female,27,Faisalabad,2025-03-23,Regular,Delivery Partner,1349,False,2026-06-24 21:09:54
+C0000352,Customer 0000352,Female,45,Multan,2026-08-04,New,Takeaway,3696,True,2026-01-01 18:15:06
+C0000353,Customer 0000353,Female,38,Islamabad,2025-06-08,Regular,Mobile App,3896,False,2026-08-13 18:26:21
+C0000354,Customer 0000354,Male,67,Multan,2025-08-27,Regular,Delivery Partner,4260,True,2025-12-31 20:46:41
+C0000355,Customer 0000355,Female,24,Multan,2025-10-09,High Value,Delivery Partner,9788,False,
+C0000356,Customer 0000356,Male,20,Faisalabad,2026-05-16,Occasional,Takeaway,9819,False,2026-06-29 05:06:56
+C0000357,Customer 0000357,Male,62,Multan,2026-01-19,Regular,Mobile App,6941,True,2026-04-02 21:17:44
+C0000358,Customer 0000358,Male,64,Faisalabad,2026-07-29,Occasional,Dine-In,3808,False,2026-08-28 12:48:18
+C0000359,Customer 0000359,Male,37,Islamabad,2025-03-16,Occasional,Dine-In,5246,False,2026-07-24 20:58:16
+C0000360,Customer 0000360,Female,36,Faisalabad,2026-01-30,High Value,Delivery Partner,8384,False,2026-05-31 13:26:47
+C0000361,Customer 0000361,Male,52,Karachi,2025-11-13,New,Delivery Partner,3845,True,2026-02-13 12:21:42
+C0000362,Customer 0000362,Female,21,Faisalabad,2026-07-10,Loyal,Website,2577,True,2025-05-30 21:12:49
+C0000363,Customer 0000363,Female,22,Islamabad,2025-08-07,Occasional,Dine-In,91,False,2026-08-23 18:44:41
+C0000364,Customer 0000364,Male,18,Rawalpindi,2026-06-18,Loyal,Delivery Partner,4234,True,2026-08-10 14:04:29
+C0000365,Customer 0000365,Female,21,Multan,2026-03-15,Regular,Mobile App,8672,True,2026-03-23 08:47:27
+C0000366,Customer 0000366,Female,29,Faisalabad,2026-08-27,Regular,Takeaway,6592,False,2026-07-25 15:16:53
+C0000367,Customer 0000367,Male,44,Multan,2026-05-01,Loyal,Mobile App,8128,False,2026-05-16 10:37:21
+C0000368,Customer 0000368,Male,59,Lahore,2025-11-23,Regular,Dine-In,1075,True,2026-01-23 02:07:13
+C0000369,Customer 0000369,Male,40,Karachi,2026-04-21,New,Website,2513,False,2026-05-30 08:44:17
+C0000370,Customer 0000370,Female,42,Karachi,2025-08-15,Regular,Mobile App,8168,True,2025-08-22 18:17:34
+C0000371,Customer 0000371,Male,38,Lahore,2025-04-12,High Value,Dine-In,6861,True,2026-03-14 20:44:56
+C0000372,Customer 0000372,Female,69,Lahore,2025-12-10,Occasional,Dine-In,8990,False,
+C0000373,Customer 0000373,Male,41,Faisalabad,2026-04-01,New,Dine-In,604,True,2026-03-05 14:54:59
+C0000374,Customer 0000374,Male,42,Lahore,2025-03-12,Occasional,Dine-In,2979,False,2026-08-28 17:55:42
+C0000375,Customer 0000375,Male,62,Rawalpindi,2025-12-27,Regular,Mobile App,7140,True,2026-03-12 05:19:13
+C0000376,Customer 0000376,Male,63,Multan,2025-11-08,Loyal,Delivery Partner,7065,True,2026-03-10 18:19:15
+C0000377,Customer 0000377,Female,49,Multan,2026-07-12,Loyal,Dine-In,4916,True,2026-01-13 17:21:32
+C0000378,Customer 0000378,Male,49,Islamabad,2025-04-04,High Value,Dine-In,6800,False,2026-07-15 13:15:22
+C0000379,Customer 0000379,Male,22,Lahore,2025-05-29,Occasional,Mobile App,597,True,2025-11-26 13:04:16
+C0000380,Customer 0000380,Female,53,Lahore,2026-04-22,Regular,Delivery Partner,9724,True,2026-02-10 05:29:10
+C0000381,Customer 0000381,Male,63,Rawalpindi,2025-06-23,Occasional,Takeaway,7320,False,2026-06-22 09:15:20
+C0000382,Customer 0000382,Female,59,Karachi,2025-09-12,New,Takeaway,8705,False,2026-08-30 12:37:05
+C0000383,Customer 0000383,Male,66,Karachi,2026-07-14,Loyal,Mobile App,5622,True,2025-12-10 19:15:23
+C0000384,Customer 0000384,Male,59,Multan,2026-07-06,Loyal,Takeaway,1877,True,2026-06-04 20:10:50
+C0000385,Customer 0000385,Male,56,Multan,2025-05-14,Loyal,Dine-In,1699,True,2025-12-28 13:19:30
+C0000386,Customer 0000386,Female,33,Faisalabad,2026-04-17,Regular,Website,9221,True,2026-04-19 14:14:27
+C0000387,Customer 0000387,Male,50,Rawalpindi,2026-03-11,Occasional,Mobile App,5780,False,2026-07-25 20:46:39
+C0000388,Customer 0000388,Male,66,Islamabad,2026-04-24,New,Mobile App,716,True,2026-04-04 21:41:09
+C0000389,Customer 0000389,Male,38,Islamabad,2025-12-02,New,Website,4086,False,2026-06-30 19:23:46
+C0000390,Customer 0000390,Female,26,Rawalpindi,2026-03-29,Loyal,Website,665,False,2026-05-31 23:58:12
+C0000391,Customer 0000391,Female,23,Islamabad,2026-05-31,Regular,Dine-In,7846,False,2026-08-06 13:38:59
+C0000392,Customer 0000392,Male,68,Karachi,2025-09-08,High Value,Takeaway,6611,True,2026-03-14 12:45:21
+C0000393,Customer 0000393,Female,62,Islamabad,2025-06-07,Regular,Dine-In,1079,True,2026-02-24 17:30:01
+C0000394,Customer 0000394,Male,52,Islamabad,2026-08-30,New,Dine-In,8419,False,2026-05-25 11:54:27
+C0000395,Customer 0000395,Male,56,Rawalpindi,2025-06-04,High Value,Website,8340,False,2026-08-24 21:35:32
+C0000396,Customer 0000396,Male,39,Rawalpindi,2025-09-06,Loyal,Delivery Partner,1069,False,2026-07-27 20:55:20
+C0000397,Customer 0000397,Male,58,Islamabad,2025-04-06,Regular,Delivery Partner,5263,False,2026-07-18 02:18:05
+C0000398,Customer 0000398,Male,22,Lahore,2026-03-04,Loyal,Mobile App,7951,False,2026-05-24 20:34:31
+C0000399,Customer 0000399,Female,59,Rawalpindi,2026-08-07,Regular,Dine-In,1363,False,2026-08-12 20:44:31
+C0000400,Customer 0000400,Female,40,Faisalabad,2025-12-04,Loyal,Dine-In,4508,False,2026-08-25 13:14:15
+C0000401,Customer 0000401,Female,34,Faisalabad,2025-10-03,Regular,Delivery Partner,1755,True,2026-03-18 09:47:27
+C0000402,Customer 0000402,Female,29,Karachi,2025-11-28,High Value,Mobile App,519,True,2026-04-26 08:11:15
+C0000403,Customer 0000403,Male,40,Islamabad,2025-05-01,High Value,Mobile App,5463,False,2026-06-15 08:02:38
+C0000404,Customer 0000404,Male,33,Lahore,2026-02-05,Loyal,Delivery Partner,7233,False,2026-07-25 15:08:07
+C0000405,Customer 0000405,Male,20,Karachi,2026-04-01,New,Website,1102,True,2025-07-26 08:30:30
+C0000406,Customer 0000406,Male,47,Islamabad,2025-03-19,High Value,Delivery Partner,597,False,2026-08-11 18:05:51
+C0000407,Customer 0000407,Other,39,Rawalpindi,2025-08-24,Loyal,Dine-In,3273,False,2026-05-23 19:25:24
+C0000408,Customer 0000408,Male,26,Faisalabad,2026-03-31,Loyal,Website,5781,True,2026-02-03 20:02:51
+C0000409,Customer 0000409,Male,46,Multan,2026-05-19,Regular,Delivery Partner,6256,False,2026-05-30 17:57:00
+C0000410,Customer 0000410,Male,64,Lahore,2025-10-19,Occasional,Takeaway,7258,False,2026-06-30 17:47:23
+C0000411,Customer 0000411,Female,54,Multan,2025-05-15,Loyal,Mobile App,8780,False,2026-06-02 21:01:16
+C0000412,Customer 0000412,Female,40,Faisalabad,2025-11-20,New,Takeaway,6554,True,2026-03-14 16:16:10
+C0000413,Customer 0000413,Female,30,Multan,2026-05-29,Regular,Delivery Partner,9599,True,2025-12-10 22:39:41
+C0000414,Customer 0000414,Male,49,Rawalpindi,2026-03-19,Occasional,Dine-In,8002,True,2025-10-16 15:50:11
+C0000415,Customer 0000415,Male,63,Islamabad,2026-07-19,New,Mobile App,4846,False,2026-06-12 05:29:35
+C0000416,Customer 0000416,Female,69,Rawalpindi,2026-03-02,Occasional,Dine-In,9821,False,2026-07-01 10:49:52
+C0000417,Customer 0000417,Female,64,Multan,2025-07-22,Loyal,Website,9186,False,2026-08-13 19:15:50
+C0000418,Customer 0000418,Male,65,Rawalpindi,2025-05-08,Loyal,Dine-In,4798,False,2026-06-25 07:03:29
+C0000419,Customer 0000419,Female,40,Faisalabad,2025-06-07,Regular,Takeaway,6605,False,2026-08-15 13:26:19
+C0000420,Customer 0000420,Female,62,Lahore,2026-03-31,Regular,Mobile App,2986,False,2026-08-02 10:51:27
+C0000421,Customer 0000421,Male,34,Rawalpindi,2025-03-25,Occasional,Delivery Partner,400,True,2026-06-21 14:11:08
+C0000422,Customer 0000422,Female,57,Faisalabad,2026-06-12,Regular,Dine-In,2855,False,2026-07-13 16:15:54
+C0000423,Customer 0000423,Female,38,Lahore,2026-06-27,High Value,Dine-In,3412,True,2025-11-02 18:38:17
+C0000424,Customer 0000424,Male,19,Islamabad,2025-07-29,Regular,Website,56,True,2025-03-18 08:46:14
+C0000425,Customer 0000425,Male,54,Multan,2025-07-22,New,Mobile App,8022,True,2026-04-24 21:52:15
+C0000426,Customer 0000426,Male,23,Islamabad,2025-04-08,New,Delivery Partner,1875,False,2026-07-23 18:46:50
+C0000427,Customer 0000427,Female,61,Karachi,2025-06-17,Loyal,Dine-In,4543,False,2026-08-29 14:04:43
+C0000428,Customer 0000428,Female,35,Faisalabad,2025-04-11,Occasional,Mobile App,4298,True,2025-08-06 20:04:23
+C0000429,Customer 0000429,Female,47,Lahore,2025-09-02,Regular,Takeaway,3768,True,2025-05-25 13:05:59
+C0000430,Customer 0000430,Male,39,Rawalpindi,2026-04-02,Regular,Dine-In,5752,True,2025-07-21 22:45:49
+C0000431,Customer 0000431,Male,50,Islamabad,2025-10-09,Regular,Website,4833,False,2026-05-09 23:02:53
+C0000432,Customer 0000432,Female,47,Lahore,2025-07-11,Loyal,Mobile App,1353,False,2026-05-28 18:37:18
+C0000433,Customer 0000433,Male,34,Faisalabad,2025-08-10,Regular,Website,4987,True,2026-02-05 18:00:57
+C0000434,Customer 0000434,Female,60,Karachi,2025-10-01,Occasional,Takeaway,6597,True,2026-01-28 18:59:09
+C0000435,Customer 0000435,Female,49,Islamabad,2025-10-21,Regular,Mobile App,4311,False,2026-06-15 19:21:42
+C0000436,Customer 0000436,Female,59,Multan,2025-03-09,Regular,Mobile App,2934,False,2026-05-13 19:01:12
+C0000437,Customer 0000437,Female,68,Lahore,2025-05-13,New,Delivery Partner,22,False,2026-05-20 22:12:36
+C0000438,Customer 0000438,Male,31,Multan,2026-07-05,Occasional,Takeaway,1209,True,2025-05-04 08:15:37
+C0000439,Customer 0000439,Male,27,Lahore,2025-11-08,Regular,Takeaway,8940,False,2026-06-03 07:22:39
+C0000440,Customer 0000440,Female,64,Lahore,2025-10-16,New,Takeaway,804,False,2026-08-19 11:45:20
+C0000441,Customer 0000441,Male,68,Faisalabad,2026-08-01,Loyal,Mobile App,8325,False,2026-05-31 14:45:20
+C0000442,Customer 0000442,Female,53,Faisalabad,2025-08-21,Loyal,Takeaway,4416,False,2026-07-19 23:28:54
+C0000443,Customer 0000443,Male,51,Faisalabad,2025-08-15,Regular,Delivery Partner,8625,False,2026-07-12 13:08:03
+C0000444,Customer 0000444,Male,26,Rawalpindi,2025-08-17,Regular,Takeaway,5141,True,2026-01-31 19:01:15
+C0000445,Customer 0000445,Female,59,Lahore,2026-03-28,High Value,Delivery Partner,4968,False,2026-05-30 10:26:10
+C0000446,Customer 0000446,Male,45,Islamabad,2025-09-10,Regular,Dine-In,3671,True,2026-02-17 20:07:20
+C0000447,Customer 0000447,Female,28,Multan,2026-07-30,High Value,Mobile App,7292,False,2026-05-10 06:49:36
+C0000448,Customer 0000448,Female,31,Faisalabad,2025-03-29,Loyal,Delivery Partner,7001,False,2026-08-22 21:05:12
+C0000449,Customer 0000449,Female,56,Faisalabad,2025-08-12,Regular,Dine-In,2098,False,2026-05-23 15:28:40
+C0000450,Customer 0000450,Male,64,Multan,2026-04-26,Regular,Delivery Partner,8444,True,2025-11-30 08:40:19
+C0000451,Customer 0000451,Male,36,Multan,2026-02-02,Regular,Mobile App,5061,False,2026-06-19 18:12:28
+C0000452,Customer 0000452,Female,32,Lahore,2026-07-09,Loyal,Delivery Partner,9321,True,2025-11-28 13:28:00
+C0000453,Customer 0000453,Male,45,Faisalabad,2026-02-28,Regular,Website,3264,False,2026-05-21 23:24:57
+C0000454,Customer 0000454,Male,41,Multan,2026-02-05,Regular,Takeaway,5435,True,2025-06-29 14:41:39
+C0000455,Customer 0000455,Male,25,Rawalpindi,2026-07-13,Loyal,Dine-In,8493,False,2026-08-12 19:18:52
+C0000456,Customer 0000456,Male,60,Rawalpindi,2026-07-24,Occasional,Takeaway,6691,False,2026-08-25 09:52:23
+C0000457,Customer 0000457,Male,26,Faisalabad,2026-01-21,Regular,Dine-In,2763,False,2026-07-25 13:15:03
+C0000458,Customer 0000458,Female,64,Multan,2025-10-03,Occasional,Dine-In,4005,True,2025-06-28 16:31:13
+C0000459,Customer 0000459,Female,50,Lahore,2025-12-26,Regular,Dine-In,3241,False,2026-05-13 15:44:16
+C0000460,Customer 0000460,Male,50,Lahore,2025-07-10,New,Mobile App,3057,True,2026-06-29 07:36:34
+C0000461,Customer 0000461,Female,36,Lahore,2025-05-09,Regular,Delivery Partner,550,False,2026-08-10 21:27:21
+C0000462,Customer 0000462,Male,20,Karachi,2025-11-07,Regular,Dine-In,5574,True,2026-08-25 17:03:38
+C0000463,Customer 0000463,Male,27,Faisalabad,2026-04-19,Regular,Dine-In,5411,True,2026-04-17 13:22:36
+C0000464,Customer 0000464,Female,57,Lahore,2026-05-19,New,Mobile App,1587,True,2026-08-01 11:55:51
+C0000465,Customer 0000465,Female,64,Rawalpindi,2025-08-29,Occasional,Dine-In,5920,True,2025-12-14 20:07:56
+C0000466,Customer 0000466,Female,59,Multan,2025-08-14,High Value,Dine-In,5260,False,2026-05-26 16:29:30
+C0000467,Customer 0000467,Male,18,Islamabad,2025-05-30,Loyal,Dine-In,4409,False,2026-08-04 13:48:06
+C0000468,Customer 0000468,Female,46,Islamabad,2026-08-13,New,Delivery Partner,5783,True,2026-07-04 06:58:28
+C0000469,Customer 0000469,Female,67,Lahore,2025-04-08,New,Delivery Partner,712,True,2026-08-05 09:19:20
+C0000470,Customer 0000470,Female,51,Islamabad,2025-07-04,New,Takeaway,5406,False,2026-08-25 20:55:17
+C0000471,Customer 0000471,Female,68,Islamabad,2026-05-25,Loyal,Mobile App,7990,False,2026-08-29 08:36:22
+C0000472,Customer 0000472,Male,30,Karachi,2025-08-20,Occasional,Mobile App,7420,False,2026-06-13 13:25:50
+C0000473,Customer 0000473,Female,18,Rawalpindi,2025-10-06,Regular,Website,6843,True,2026-04-20 17:38:54
+C0000474,Customer 0000474,Male,51,Rawalpindi,2025-04-27,New,Website,2433,False,
+C0000475,Customer 0000475,Female,46,Karachi,2026-06-19,Regular,Mobile App,3301,True,2026-03-04 19:37:21
+C0000476,Customer 0000476,Female,65,Karachi,2026-05-30,Regular,Takeaway,270,False,2026-07-23 11:02:35
+C0000477,Customer 0000477,Male,64,Islamabad,2026-02-24,Regular,Dine-In,9986,False,2026-08-20 16:25:40
+C0000478,Customer 0000478,Female,30,Faisalabad,2025-03-01,Loyal,Mobile App,1079,True,2026-03-05 17:45:39
+C0000479,Customer 0000479,Other,65,Multan,2026-03-22,Loyal,Delivery Partner,5322,False,2026-08-23 20:18:08
+C0000480,Customer 0000480,Male,66,Multan,2026-02-11,New,Mobile App,8795,True,2026-02-06 18:16:19
+C0000481,Customer 0000481,Female,46,Islamabad,2025-09-06,New,Delivery Partner,5257,True,2026-04-07 19:31:54
+C0000482,Customer 0000482,Male,56,Multan,2026-07-18,Occasional,Delivery Partner,7982,True,2025-07-06 11:53:49
+C0000483,Customer 0000483,Female,41,Karachi,2025-09-07,Regular,Dine-In,9777,True,2026-07-19 13:31:35
+C0000484,Customer 0000484,Female,43,Rawalpindi,2026-07-21,New,Website,6214,True,2026-08-10 08:28:49
+C0000485,Customer 0000485,Male,34,Multan,2026-03-04,Regular,Website,5006,True,2026-03-05 19:06:49
+C0000486,Customer 0000486,Male,24,Islamabad,2026-04-13,New,Delivery Partner,3985,False,2026-08-30 17:45:13
+C0000487,Customer 0000487,Male,30,Faisalabad,2025-06-25,Regular,Delivery Partner,9587,True,2025-11-13 19:53:20
+C0000488,Customer 0000488,Male,22,Islamabad,2025-07-12,High Value,Website,8791,True,2025-09-05 18:03:20
+C0000489,Customer 0000489,Male,43,Lahore,2025-04-27,Regular,Takeaway,8705,False,2026-07-18 17:21:03
+C0000490,Customer 0000490,Female,66,Islamabad,2025-08-20,Regular,Delivery Partner,5991,False,2026-05-28 12:09:58
+C0000491,Customer 0000491,Female,20,Karachi,2025-07-27,Loyal,Dine-In,6227,True,2026-02-26 00:29:17
+C0000492,Customer 0000492,Male,24,Rawalpindi,2025-05-19,Regular,Delivery Partner,9258,True,2025-07-09 19:47:03
+C0000493,Customer 0000493,Female,66,Rawalpindi,2025-09-29,Occasional,Delivery Partner,7833,True,2026-03-20 23:30:00
+C0000494,Customer 0000494,Male,56,Multan,2025-09-19,Occasional,Mobile App,2886,False,
+C0000495,Customer 0000495,Male,18,Karachi,2025-10-15,New,Mobile App,2653,True,2025-11-26 20:15:08
+C0000496,Customer 0000496,Female,66,Lahore,2025-10-13,High Value,Mobile App,9280,False,2026-05-14 12:54:33
+C0000497,Customer 0000497,Male,34,Karachi,2026-08-14,Regular,Mobile App,4864,False,2026-07-14 22:15:27
+C0000498,Customer 0000498,Male,60,Islamabad,2026-05-15,Occasional,Takeaway,2514,True,2026-04-29 17:13:11
+C0000499,Customer 0000499,Female,42,Karachi,2026-04-06,Regular,Website,3969,False,2026-06-03 16:06:47
+C0000500,Customer 0000500,Male,20,Karachi,2025-04-16,Occasional,Delivery Partner,3284,False,2026-08-04 13:41:32
+C0000501,Customer 0000501,Male,32,Lahore,2025-10-19,Loyal,Delivery Partner,7740,False,
+C0000502,Customer 0000502,Female,46,Islamabad,2025-12-30,Regular,Dine-In,4566,True,2026-02-10 02:39:56
+C0000503,Customer 0000503,Male,60,Faisalabad,2026-08-08,Loyal,Delivery Partner,2196,True,2025-12-13 17:01:10
+C0000504,Customer 0000504,Other,49,Faisalabad,2025-07-21,Occasional,Website,789,False,2026-08-12 13:10:10
+C0000505,Customer 0000505,Female,43,Rawalpindi,2026-04-19,Occasional,Takeaway,3475,True,2026-03-27 11:33:13
+C0000506,Customer 0000506,Male,33,Multan,2026-07-26,New,Dine-In,9856,True,2026-04-01 20:48:05
+C0000507,Customer 0000507,Female,42,Karachi,2026-03-08,Loyal,Takeaway,1309,False,2026-08-13 13:44:23
+C0000508,Customer 0000508,Male,45,Rawalpindi,2025-11-14,Regular,Delivery Partner,864,False,2026-07-31 19:33:44
+C0000509,Customer 0000509,Male,26,Lahore,2026-06-14,New,Mobile App,5389,True,2025-08-31 21:47:56
+C0000510,Customer 0000510,Female,18,Faisalabad,2025-03-12,Regular,Website,3363,True,2025-08-30 13:54:42
+C0000511,Customer 0000511,Female,46,Karachi,2026-01-24,Regular,Takeaway,8215,False,2026-06-22 22:40:27
+C0000512,Customer 0000512,Male,39,Lahore,2026-02-21,High Value,Website,3003,True,2026-02-04 18:26:04
+C0000513,Customer 0000513,Female,33,Multan,2026-04-12,Regular,Dine-In,8502,False,2026-08-02 18:46:01
+C0000514,Customer 0000514,Male,58,Lahore,2026-03-08,High Value,Mobile App,1231,True,2026-03-17 08:29:32
+C0000515,Customer 0000515,Female,68,Karachi,2025-03-08,New,Mobile App,7959,False,2026-08-17 23:42:15
+C0000516,Customer 0000516,Male,61,Multan,2025-06-30,Regular,Dine-In,2711,False,2026-08-22 12:21:31
+C0000517,Customer 0000517,Male,68,Lahore,2026-02-11,Regular,Delivery Partner,6581,False,2026-08-21 21:11:24
+C0000518,Customer 0000518,Male,58,Multan,2025-05-29,Regular,Takeaway,7705,True,2026-04-11 13:28:08
+C0000519,Customer 0000519,Female,24,Karachi,2026-01-10,New,Mobile App,421,False,2026-07-10 13:40:31
+C0000520,Customer 0000520,Male,31,Karachi,2025-08-25,Regular,Mobile App,9965,True,2026-04-17 18:42:13
+C0000521,Customer 0000521,Male,46,Multan,2026-08-22,Loyal,Mobile App,946,True,2026-04-27 11:07:42
+C0000522,Customer 0000522,Female,36,Islamabad,2025-04-10,Regular,Dine-In,9378,True,2026-04-23 08:03:31
+C0000523,Customer 0000523,Female,36,Rawalpindi,2026-07-15,Regular,Dine-In,1834,False,2026-05-22 07:10:13
+C0000524,Customer 0000524,Female,19,Lahore,2025-07-23,Regular,Delivery Partner,1564,False,2026-05-23 13:56:45
+C0000525,Customer 0000525,Male,58,Lahore,2025-09-17,Occasional,Takeaway,7332,True,2025-10-11 13:46:49
+C0000526,Customer 0000526,Male,62,Islamabad,2026-06-04,Occasional,Delivery Partner,4944,True,2025-07-15 20:48:09
+C0000527,Customer 0000527,Female,32,Islamabad,2026-08-29,Regular,Delivery Partner,1308,True,2026-02-25 18:47:50
+C0000528,Customer 0000528,Male,20,Islamabad,2025-11-08,Regular,Dine-In,2986,True,2025-07-20 07:57:41
+C0000529,Customer 0000529,Female,28,,2026-03-25,New,Takeaway,386,False,2026-06-25 18:30:31
+C0000530,Customer 0000530,Female,63,Faisalabad,2025-11-11,Occasional,Website,6131,True,2025-11-30 14:45:51
+C0000531,Customer 0000531,Male,47,Multan,2026-05-24,New,Delivery Partner,9353,True,2026-03-30 21:26:12
+C0000532,Customer 0000532,Male,57,Faisalabad,2025-03-10,Regular,Delivery Partner,3258,False,2026-08-23 18:22:46
+C0000533,Customer 0000533,Male,35,Karachi,2025-10-28,Regular,Mobile App,6121,False,2026-06-11 18:20:42
+C0000534,Customer 0000534,Female,68,Multan,2025-11-06,Regular,Delivery Partner,4811,False,
+C0000535,Customer 0000535,Male,65,Lahore,2025-03-05,New,Dine-In,6574,True,2025-11-23 18:50:52
+C0000536,Customer 0000536,Male,19,Rawalpindi,2025-06-27,High Value,Delivery Partner,6697,True,2025-09-15 20:16:34
+C0000537,Customer 0000537,Female,49,Karachi,2026-03-09,New,Delivery Partner,3933,False,2026-06-21 13:09:28
+C0000538,Customer 0000538,Male,25,Lahore,2025-05-04,Loyal,Dine-In,1439,False,2026-08-08 20:17:01
+C0000539,Customer 0000539,Male,39,Lahore,2025-07-24,New,Takeaway,6169,False,2026-07-14 20:21:22
+C0000540,Customer 0000540,Male,23,Multan,2025-10-10,New,Dine-In,4480,True,2026-03-01 09:02:55
+C0000541,Customer 0000541,Female,29,Islamabad,2025-10-25,Occasional,Takeaway,55,True,2026-07-13 10:56:01
+C0000542,Customer 0000542,Male,64,Islamabad,2025-08-24,Regular,Delivery Partner,3324,False,2026-08-05 18:16:21
+C0000543,Customer 0000543,Male,57,Karachi,2025-12-07,High Value,Mobile App,6777,False,2026-05-04 22:43:26
+C0000544,Customer 0000544,Female,53,Islamabad,2025-05-02,Loyal,Dine-In,105,False,2026-08-11 07:51:38
+C0000545,Customer 0000545,Male,32,Lahore,2025-10-03,New,Takeaway,3201,True,2026-01-24 12:50:00
+C0000546,Customer 0000546,Male,45,Islamabad,2026-06-04,Occasional,Delivery Partner,669,True,2025-09-07 12:23:38
+C0000547,Customer 0000547,Female,69,Faisalabad,2025-06-13,Regular,Mobile App,8934,True,2026-02-28 13:44:28
+C0000548,Customer 0000548,Female,66,Islamabad,2025-06-07,Occasional,Mobile App,966,False,2026-07-06 18:16:56
+C0000549,Customer 0000549,Male,62,Lahore,2026-07-24,New,Dine-In,307,True,2026-03-03 19:47:06
+C0000550,Customer 0000550,Male,35,Multan,2026-03-20,Occasional,Delivery Partner,2138,True,2025-11-21 14:04:46
+C0000551,Customer 0000551,Male,19,Karachi,2026-04-09,New,Delivery Partner,109,False,2026-07-12 16:52:22
+C0000552,Customer 0000552,Male,30,Rawalpindi,2026-07-31,Regular,Takeaway,3632,True,2026-08-31 07:28:27
+C0000553,Customer 0000553,Other,62,Islamabad,2026-06-19,High Value,Dine-In,6728,True,2026-08-27 16:04:24
+C0000554,Customer 0000554,Female,32,Lahore,2026-05-11,Occasional,Dine-In,5684,False,2026-08-22 17:06:03
+C0000555,Customer 0000555,Female,37,Rawalpindi,2025-03-23,Occasional,Dine-In,6499,False,2026-05-26 08:42:33
+C0000556,Customer 0000556,Male,46,Rawalpindi,2026-06-01,High Value,Mobile App,1915,True,2025-09-28 22:09:02
+C0000557,Customer 0000557,Female,59,Faisalabad,2025-05-22,Occasional,Delivery Partner,556,True,2026-03-17 08:01:27
+C0000558,Customer 0000558,Female,46,Rawalpindi,2025-07-23,Regular,Mobile App,7619,True,2026-04-05 12:06:10
+C0000559,Customer 0000559,Female,20,Multan,2025-05-24,Regular,Delivery Partner,104,True,2025-12-06 13:02:33
+C0000560,Customer 0000560,Female,36,Lahore,2025-05-17,Regular,Mobile App,2047,False,2026-05-29 13:28:12
+C0000561,Customer 0000561,Female,20,Lahore,2026-05-31,Regular,Website,145,True,2026-01-15 19:41:47
+C0000562,Customer 0000562,Male,31,Islamabad,2025-03-01,Regular,Website,873,False,2026-06-16 21:51:10
+C0000563,Customer 0000563,Female,57,Islamabad,2025-04-20,Loyal,Dine-In,298,False,2026-06-08 13:18:38
+C0000564,Customer 0000564,Male,21,Islamabad,2026-05-20,New,Mobile App,3238,True,2026-01-20 18:14:59
+C0000565,Customer 0000565,Male,69,Multan,2026-05-23,Loyal,Mobile App,8837,True,2026-05-20 16:21:35
+C0000566,Customer 0000566,Male,28,Rawalpindi,2026-07-01,New,Dine-In,6382,False,2026-05-16 19:31:57
+C0000567,Customer 0000567,Female,48,Rawalpindi,2025-04-03,Regular,Mobile App,2511,True,2026-02-14 15:33:35
+C0000568,Customer 0000568,Male,60,Faisalabad,2026-02-11,Regular,Mobile App,6596,False,2026-07-09 21:18:47
+C0000569,Customer 0000569,Male,49,Multan,2025-06-03,High Value,Delivery Partner,783,False,2026-05-13 12:39:32
+C0000570,Customer 0000570,Male,44,Islamabad,2025-05-11,Loyal,Mobile App,4992,False,2026-06-07 12:45:34
+C0000571,Customer 0000571,Male,47,Karachi,2025-08-01,Loyal,Delivery Partner,370,False,2026-08-19 08:53:48
+C0000572,Customer 0000572,Male,60,Faisalabad,2025-11-05,New,Mobile App,486,False,2026-06-25 19:26:02
+C0000573,Customer 0000573,Female,19,Karachi,2026-05-12,Loyal,Delivery Partner,7378,False,2026-08-12 18:47:19
+C0000574,Customer 0000574,Male,66,Rawalpindi,2025-06-26,New,Mobile App,3196,False,2026-05-09 13:05:26
+C0000575,Customer 0000575,Male,26,Faisalabad,2025-12-31,Regular,Delivery Partner,9552,False,2026-05-09 10:33:38
+C0000576,Customer 0000576,Male,45,Faisalabad,2025-11-23,Regular,Mobile App,4287,False,2026-06-28 21:24:22
+C0000577,Customer 0000577,Other,48,Lahore,2025-04-23,New,Mobile App,2261,False,2026-07-23 14:06:33
+C0000578,Customer 0000578,Female,51,Rawalpindi,2025-10-22,Regular,Mobile App,9148,False,2026-08-05 13:47:26
+C0000579,Customer 0000579,Other,32,Rawalpindi,2026-03-24,Occasional,Mobile App,8572,True,2026-08-23 21:34:02
+C0000580,Customer 0000580,Female,65,Multan,2026-04-05,Occasional,Dine-In,238,False,2026-06-22 07:33:53
+C0000581,Customer 0000581,Female,42,Faisalabad,2025-12-28,Regular,Dine-In,6843,False,
+C0000582,Customer 0000582,Female,53,Rawalpindi,2025-09-23,New,Dine-In,1105,False,2026-06-14 13:15:56
+C0000583,Customer 0000583,Female,25,Faisalabad,2025-10-15,New,Delivery Partner,1386,False,2026-06-27 05:42:36
+C0000584,Customer 0000584,Male,26,Multan,2025-05-14,Regular,Takeaway,9719,False,2026-08-26 12:31:31
+C0000585,Customer 0000585,Female,54,Multan,2026-05-09,Occasional,Dine-In,1667,True,2026-08-08 12:38:52
+C0000586,Customer 0000586,Female,65,Lahore,2025-06-11,New,Website,2691,False,2026-07-11 18:10:40
+C0000587,Customer 0000587,Male,62,Faisalabad,2026-04-26,High Value,Takeaway,7756,True,2026-04-12 16:01:43
+C0000588,Customer 0000588,Male,56,Rawalpindi,2025-12-31,New,Mobile App,1996,False,2026-07-22 13:09:01
+C0000589,Customer 0000589,Male,49,Rawalpindi,2025-06-06,Occasional,Dine-In,1425,False,2026-07-09 12:58:14
+C0000590,Customer 0000590,Male,69,Faisalabad,2026-01-29,Regular,Delivery Partner,8023,False,
+C0000591,Customer 0000591,Male,34,Faisalabad,2026-05-09,High Value,Delivery Partner,6849,True,2025-10-27 19:38:31
+C0000592,Customer 0000592,Female,52,Faisalabad,2026-05-21,Regular,Delivery Partner,3247,True,2026-04-02 00:45:02
+C0000593,Customer 0000593,Female,54,Islamabad,2026-01-02,Loyal,Mobile App,2592,True,2026-01-28 17:23:34
+C0000594,Customer 0000594,Male,36,Rawalpindi,2025-11-04,Regular,Website,1490,True,2026-04-23 18:02:23
+C0000595,Customer 0000595,Female,61,Multan,2025-08-13,New,Dine-In,1224,True,2026-04-24 19:47:34
+C0000596,Customer 0000596,Male,46,Rawalpindi,2026-06-24,Occasional,Dine-In,2587,False,2026-06-06 08:33:55
+C0000597,Customer 0000597,Female,24,Islamabad,2026-01-29,Occasional,Dine-In,7714,False,2026-05-23 12:42:48
+C0000598,Customer 0000598,Female,45,Faisalabad,2026-08-24,Occasional,Mobile App,3064,True,2026-05-20 20:23:34
+C0000599,Customer 0000599,Male,26,Lahore,2025-06-14,Loyal,Mobile App,7804,True,2025-11-07 13:20:55
+C0000600,Customer 0000600,Male,45,Faisalabad,2025-05-20,High Value,Mobile App,832,False,2026-05-27 13:40:11
+C0000601,Customer 0000601,Male,23,Faisalabad,2025-07-11,New,Dine-In,2440,True,2026-02-08 19:26:18
+C0000602,Customer 0000602,Male,46,Islamabad,2025-07-16,Regular,Mobile App,4795,False,2026-08-25 16:27:45
+C0000603,Customer 0000603,Female,34,Rawalpindi,2025-08-31,Regular,Website,1646,False,
+C0000604,Customer 0000604,Female,33,Faisalabad,2026-04-05,Loyal,Mobile App,440,False,2026-07-14 12:09:12
+C0000605,Customer 0000605,Male,40,Rawalpindi,2026-01-24,Regular,Website,5956,False,2026-06-15 01:48:19
+C0000606,Customer 0000606,Male,48,Karachi,2026-07-21,New,Takeaway,9721,True,2026-01-29 18:25:44
+C0000607,Customer 0000607,Female,20,Multan,2025-05-08,Loyal,Delivery Partner,2367,True,2025-09-13 19:03:28
+C0000608,Customer 0000608,Male,38,Rawalpindi,2026-08-28,High Value,Mobile App,6696,True,2026-03-14 21:31:31
+C0000609,Customer 0000609,Female,43,Lahore,2025-04-22,Regular,Dine-In,5190,False,2026-05-24 18:53:13
+C0000610,Customer 0000610,Male,53,Multan,2026-05-24,New,Takeaway,4663,False,2026-06-21 15:33:06
+C0000611,Customer 0000611,Female,59,Lahore,2025-09-21,Regular,Mobile App,7062,True,2025-12-23 11:50:06
+C0000612,Customer 0000612,Male,54,Faisalabad,2025-07-04,Regular,Delivery Partner,4331,True,2026-03-29 19:14:24
+C0000613,Customer 0000613,Male,39,Multan,2025-04-12,Regular,Mobile App,9496,False,2026-05-09 17:25:07
+C0000614,Customer 0000614,Female,59,Rawalpindi,2025-06-19,Loyal,Takeaway,3034,True,2025-10-28 10:54:26
+C0000615,Customer 0000615,Male,29,Multan,2025-08-30,Loyal,Delivery Partner,9377,False,2026-08-17 17:12:05
+C0000616,Customer 0000616,Female,59,Faisalabad,2025-06-03,Loyal,Website,3262,False,2026-07-30 18:37:40
+C0000617,Customer 0000617,Female,30,Islamabad,2026-03-09,Regular,Mobile App,2107,True,2026-01-05 18:28:32
+C0000618,Customer 0000618,Female,28,Lahore,2026-08-02,High Value,Mobile App,7036,True,2025-12-26 18:32:39
+C0000619,Customer 0000619,Female,33,Faisalabad,2026-02-23,Regular,Dine-In,4320,True,2026-06-18 14:48:05
+C0000620,Customer 0000620,Female,25,Islamabad,2025-12-06,Regular,Mobile App,5938,False,
+C0000621,Customer 0000621,Male,57,Multan,2025-09-11,High Value,Takeaway,2747,True,2025-08-10 21:12:12
+C0000622,Customer 0000622,Male,57,Multan,2025-09-11,Regular,Delivery Partner,4677,True,2026-01-11 12:27:52
+C0000623,Customer 0000623,Male,62,Faisalabad,2025-06-01,New,Mobile App,7972,True,2026-03-10 11:34:20
+C0000624,Customer 0000624,Female,19,Rawalpindi,2025-04-30,Occasional,Mobile App,4264,False,2026-07-02 18:20:26
+C0000625,Customer 0000625,Female,47,Multan,2025-04-20,Regular,Mobile App,3133,False,2026-08-09 21:36:35
+C0000626,Customer 0000626,Female,47,Rawalpindi,2026-04-07,Loyal,Delivery Partner,1465,False,
+C0000627,Customer 0000627,Female,29,Rawalpindi,2025-03-05,New,Delivery Partner,4109,True,2025-05-09 06:51:10
+C0000628,Customer 0000628,Male,27,Rawalpindi,2026-06-09,Loyal,Mobile App,2211,True,2026-01-06 13:42:52
+C0000629,Customer 0000629,Female,61,Karachi,2026-08-16,Regular,Website,5539,False,2026-08-13 21:50:27
+C0000630,Customer 0000630,Male,28,Islamabad,2026-04-09,New,Mobile App,9735,True,2026-04-06 13:06:17
+C0000631,Customer 0000631,Male,32,Islamabad,2026-07-26,Loyal,Mobile App,1689,True,2026-03-21 20:17:08
+C0000632,Customer 0000632,Female,33,Multan,2025-10-19,Regular,Dine-In,9763,True,2025-08-02 14:25:00
+C0000633,Customer 0000633,Male,34,Multan,2026-08-06,Regular,Mobile App,7727,True,2025-05-30 13:39:51
+C0000634,Customer 0000634,Male,43,Rawalpindi,2026-02-09,New,Takeaway,7764,False,2026-08-29 10:23:44
+C0000635,Customer 0000635,Male,19,Karachi,2025-04-15,New,Delivery Partner,4541,True,2026-03-02 14:13:25
+C0000636,Customer 0000636,Male,67,Rawalpindi,2026-08-28,Regular,Takeaway,3541,True,2026-03-27 17:44:28
+C0000637,Customer 0000637,Female,29,Karachi,2025-05-17,New,Delivery Partner,818,True,2026-03-14 11:35:41
+C0000638,Customer 0000638,Female,68,Rawalpindi,2025-05-12,Occasional,Mobile App,4521,True,2026-02-27 21:28:43
+C0000639,Customer 0000639,Female,43,Lahore,2025-11-04,New,Mobile App,1124,True,2026-07-31 08:28:57
+C0000640,Customer 0000640,Female,40,Lahore,2025-04-16,Regular,Mobile App,5660,False,
+C0000641,Customer 0000641,Male,35,Faisalabad,2025-06-29,New,Dine-In,5641,True,2026-04-28 08:13:54
+C0000642,Customer 0000642,Female,49,Rawalpindi,2025-09-30,Regular,Mobile App,1129,False,2026-06-22 22:02:45
+C0000643,Customer 0000643,Male,66,Multan,2025-10-25,Occasional,Dine-In,1702,True,2026-03-27 19:10:45
+C0000644,Customer 0000644,Male,55,Islamabad,2025-04-25,New,Mobile App,2001,True,2025-12-13 19:53:36
+C0000645,Customer 0000645,Female,64,Faisalabad,2026-02-13,Occasional,Mobile App,6912,True,2026-05-01 20:54:14
+C0000646,Customer 0000646,Female,20,Multan,2025-06-15,Regular,Website,3878,False,
+C0000647,Customer 0000647,Male,55,Lahore,2025-04-17,Loyal,Takeaway,7232,True,2026-03-20 18:26:53
+C0000648,Customer 0000648,Male,20,Rawalpindi,2026-01-31,Loyal,Dine-In,9998,True,2026-03-16 13:02:44
+C0000649,Customer 0000649,Male,47,Faisalabad,2025-03-26,Occasional,Mobile App,6331,False,2026-06-14 08:53:15
+C0000650,Customer 0000650,Female,18,Rawalpindi,2025-11-12,Loyal,Delivery Partner,6035,False,2026-08-14 22:40:44
+C0000651,Customer 0000651,Female,47,Lahore,2025-03-08,Loyal,Website,6523,False,2026-08-13 05:29:36
+C0000652,Customer 0000652,Female,62,Faisalabad,2025-11-08,Regular,Mobile App,8111,True,2025-10-29 21:02:16
+C0000653,Customer 0000653,Female,49,Lahore,2025-12-28,New,Mobile App,8736,False,2026-08-12 12:25:41
+C0000654,Customer 0000654,Male,45,Karachi,2025-04-25,Occasional,Dine-In,2401,True,2026-01-21 14:56:26
+C0000655,Customer 0000655,Male,38,Lahore,2026-08-08,Regular,Delivery Partner,9481,True,2025-11-20 12:31:21
+C0000656,Customer 0000656,Male,63,Rawalpindi,2026-06-17,Regular,Website,8974,True,2026-08-23 19:39:36
+C0000657,Customer 0000657,Male,30,Islamabad,2025-03-28,Loyal,Takeaway,539,False,2026-05-18 10:49:38
+C0000658,Customer 0000658,Male,44,Lahore,2025-05-17,Regular,Mobile App,5615,False,2026-05-27 09:53:59
+C0000659,Customer 0000659,Female,53,Multan,2025-10-02,Occasional,Dine-In,2956,False,
+C0000660,Customer 0000660,Female,24,Islamabad,2026-03-21,Loyal,Delivery Partner,8077,False,2026-06-09 18:18:45
+C0000661,Customer 0000661,Male,39,Karachi,2026-02-28,Loyal,Dine-In,3722,False,
+C0000662,Customer 0000662,Female,27,Faisalabad,2026-08-08,Occasional,Mobile App,5087,False,2026-08-01 18:58:12
+C0000663,Customer 0000663,Male,56,Faisalabad,2026-01-06,New,Takeaway,6460,True,2026-02-17 22:51:45
+C0000664,Customer 0000664,Male,32,Islamabad,2025-03-07,Regular,Website,2170,True,2026-08-24 18:33:53
+C0000665,Customer 0000665,Female,32,Faisalabad,2025-03-03,Regular,Website,3391,True,2026-01-14 07:42:48
+C0000666,Customer 0000666,Male,21,Lahore,2026-02-26,Regular,Website,6942,True,2026-03-11 16:49:38
+C0000667,Customer 0000667,Male,49,Islamabad,2026-07-21,Loyal,Mobile App,1616,True,2025-11-01 11:51:50
+C0000668,Customer 0000668,Male,40,Rawalpindi,2025-11-29,Occasional,Delivery Partner,9108,False,2026-05-24 13:41:04
+C0000669,Customer 0000669,Male,23,Lahore,2026-07-19,Regular,Dine-In,6458,True,2026-03-21 09:40:44
+C0000670,Customer 0000670,Male,41,Lahore,2025-03-15,Regular,Takeaway,2756,False,2026-05-21 09:48:52
+C0000671,Customer 0000671,Female,37,Lahore,2025-09-08,Occasional,Takeaway,6853,True,2026-03-13 05:51:00
+C0000672,Customer 0000672,Female,54,Rawalpindi,2026-06-28,Regular,Delivery Partner,7709,False,2026-05-15 11:37:19
+C0000673,Customer 0000673,Male,37,Karachi,2025-03-28,Regular,Mobile App,1936,True,2025-07-15 20:17:16
+C0000674,Customer 0000674,Male,29,Multan,2025-04-08,Regular,Website,3091,True,2026-01-01 14:22:12
+C0000675,Customer 0000675,Female,50,Faisalabad,2025-11-28,Occasional,Website,968,False,2026-05-14 13:19:15
+C0000676,Customer 0000676,Female,45,Islamabad,2025-10-17,Loyal,Dine-In,7297,True,2025-11-07 19:34:31
+C0000677,Customer 0000677,Male,25,Karachi,2025-05-25,High Value,Takeaway,3203,True,2026-02-17 16:50:54
+C0000678,Customer 0000678,Male,18,Islamabad,2026-06-17,High Value,Takeaway,6499,True,2026-01-05 18:28:21
+C0000679,Customer 0000679,Male,54,Faisalabad,2025-07-04,Regular,Mobile App,5173,True,2025-08-01 18:01:04
+C0000680,Customer 0000680,Male,39,Rawalpindi,2026-08-19,Regular,Takeaway,889,False,2026-08-11 11:47:21
+C0000681,Customer 0000681,Female,23,Lahore,2025-07-23,High Value,Dine-In,8984,False,2026-08-14 12:38:33
+C0000682,Customer 0000682,Female,38,Lahore,2026-08-07,Regular,Delivery Partner,9173,False,2026-07-05 13:27:05
+C0000683,Customer 0000683,Male,49,Rawalpindi,2025-09-28,High Value,Delivery Partner,7382,True,2025-07-27 13:25:38
+C0000684,Customer 0000684,Female,52,Karachi,2025-03-25,Occasional,Takeaway,3531,True,2026-08-27 08:06:57
+C0000685,Customer 0000685,Female,32,Karachi,2026-03-29,Loyal,Takeaway,801,False,2026-08-16 00:13:32
+C0000686,Customer 0000686,Female,22,Islamabad,2025-05-06,Loyal,Dine-In,8234,True,2025-11-04 16:15:53
+C0000687,Customer 0000687,Male,63,Rawalpindi,2025-10-19,High Value,Website,3349,False,2026-07-03 03:55:19
+C0000688,Customer 0000688,Male,67,Karachi,2025-06-17,High Value,Delivery Partner,8005,True,2025-11-20 07:40:50
+C0000689,Customer 0000689,Female,65,Rawalpindi,2025-07-24,Regular,Dine-In,9969,False,2026-07-27 10:31:44
+C0000690,Customer 0000690,Male,23,Faisalabad,2025-06-19,New,Dine-In,3201,False,2026-06-19 11:52:16
+C0000691,Customer 0000691,Male,42,Lahore,2025-10-14,Regular,Delivery Partner,349,True,2026-04-30 13:35:30
+C0000692,Customer 0000692,Other,63,Lahore,2025-06-19,Loyal,Mobile App,9759,False,2026-05-09 12:06:31
+C0000693,Customer 0000693,Female,57,Lahore,2026-06-13,Regular,Dine-In,9321,True,2026-04-01 19:42:53
+C0000694,Customer 0000694,Male,46,Rawalpindi,2025-04-03,Loyal,Mobile App,9972,True,2025-11-15 09:03:51
+C0000695,Customer 0000695,Female,24,Rawalpindi,2026-03-04,Regular,Takeaway,583,True,2026-04-19 06:53:54
+C0000696,Customer 0000696,Male,57,Islamabad,2026-04-29,Loyal,Mobile App,3377,True,2025-10-30 14:23:19
+C0000697,Customer 0000697,Male,30,Lahore,2026-07-31,Regular,Website,6028,True,2026-07-11 12:25:26
+C0000698,Customer 0000698,Female,55,Islamabad,2025-12-07,Loyal,Delivery Partner,7694,True,2025-10-26 21:40:16
+C0000699,Customer 0000699,Male,35,Lahore,2026-01-14,Loyal,Mobile App,6196,True,2026-06-12 17:48:14
+C0000700,Customer 0000700,Male,19,Islamabad,2026-05-17,Regular,Delivery Partner,7083,True,2026-01-18 08:24:27
+C0000701,Customer 0000701,Female,25,Islamabad,2026-01-09,Regular,Mobile App,3401,False,2026-07-06 12:20:53
+C0000702,Customer 0000702,Male,28,Faisalabad,2026-03-12,Loyal,Website,3185,True,2026-03-17 18:13:00
+C0000703,Customer 0000703,Female,50,Islamabad,2025-12-14,Regular,Mobile App,5285,False,2026-07-06 20:26:16
+C0000704,Customer 0000704,Male,55,Rawalpindi,2026-05-11,Regular,Delivery Partner,9354,False,
+C0000705,Customer 0000705,Female,65,Islamabad,2025-12-02,Occasional,Delivery Partner,6772,True,2025-10-28 19:20:00
+C0000706,Customer 0000706,Male,44,Lahore,2026-07-16,Loyal,Dine-In,8490,False,2026-06-07 18:06:59
+C0000707,Customer 0000707,Female,37,Islamabad,2026-07-29,Occasional,Delivery Partner,3347,False,2026-05-15 19:41:34
+C0000708,Customer 0000708,Male,29,Karachi,2026-02-13,Regular,Delivery Partner,788,True,2026-04-04 10:34:59
+C0000709,Customer 0000709,Male,60,Multan,2026-05-20,Regular,Delivery Partner,4945,True,2025-06-12 02:28:18
+C0000710,Customer 0000710,Male,48,Lahore,2026-02-13,Occasional,Dine-In,2889,True,2026-03-14 17:04:12
+C0000711,Customer 0000711,Male,44,Karachi,2025-07-15,Loyal,Delivery Partner,9569,True,2026-04-17 13:09:40
+C0000712,Customer 0000712,Male,49,Lahore,2025-10-29,Loyal,Delivery Partner,5273,False,2026-06-02 09:01:52
+C0000713,Customer 0000713,Female,27,Rawalpindi,2026-08-25,Regular,Takeaway,3272,False,2026-08-11 14:51:55
+C0000714,Customer 0000714,Female,20,Multan,2025-04-09,Regular,Delivery Partner,9069,True,2025-07-22 21:10:13
+C0000715,Customer 0000715,Male,62,Multan,2025-10-15,New,Dine-In,5234,False,2026-07-26 20:51:58
+C0000716,Customer 0000716,Female,44,Rawalpindi,2026-08-30,Regular,Dine-In,9769,True,2025-03-05 08:48:29
+C0000717,Customer 0000717,Male,52,Multan,2025-10-09,New,Mobile App,6902,False,2026-05-31 05:24:08
+C0000718,Customer 0000718,Male,48,Rawalpindi,2025-03-06,New,Mobile App,7612,True,2025-10-17 18:54:54
+C0000719,Customer 0000719,Female,32,Karachi,2026-01-16,Occasional,Mobile App,2492,False,2026-08-30 11:54:59
+C0000720,Customer 0000720,Male,33,Faisalabad,2026-06-11,Regular,Dine-In,6745,True,2026-01-21 13:11:07
+C0000721,Customer 0000721,Female,30,Lahore,2025-05-14,Loyal,Delivery Partner,9574,True,2026-05-03 14:02:23
+C0000722,Customer 0000722,Male,66,Rawalpindi,2025-03-04,High Value,Dine-In,4240,True,2026-07-13 12:48:17
+C0000723,Customer 0000723,Female,52,Lahore,2025-06-26,Loyal,Dine-In,2322,False,2026-06-05 14:03:28
+C0000724,Customer 0000724,Female,69,Karachi,2026-07-17,New,Dine-In,5298,False,2026-07-06 09:44:05
+C0000725,Customer 0000725,Male,28,Faisalabad,2026-05-15,Loyal,Mobile App,1861,True,2026-04-05 13:52:21
+C0000726,Customer 0000726,Male,38,Karachi,2025-09-10,Loyal,Delivery Partner,6620,True,2026-05-05 20:04:56
+C0000727,Customer 0000727,Male,68,Multan,2026-03-27,Loyal,Website,4047,True,2026-08-02 08:09:27
+C0000728,Customer 0000728,Male,28,Lahore,2025-03-26,High Value,Delivery Partner,7581,True,2025-04-12 12:10:30
+C0000729,Customer 0000729,Female,47,Faisalabad,2026-05-09,Occasional,Dine-In,7320,True,2025-10-28 17:46:15
+C0000730,Customer 0000730,Male,65,Multan,2025-08-20,Loyal,Mobile App,1098,True,2025-10-06 08:13:52
+C0000731,Customer 0000731,Female,52,Faisalabad,2025-12-25,Regular,Mobile App,5247,False,2026-06-17 12:02:19
+C0000732,Customer 0000732,Male,39,Multan,2026-01-20,Loyal,Mobile App,1734,False,2026-06-18 20:47:28
+C0000733,Customer 0000733,Male,55,Karachi,2026-04-14,New,Dine-In,4663,False,2026-08-09 20:33:31
+C0000734,Customer 0000734,Male,48,Rawalpindi,2025-06-26,Occasional,Website,5909,True,2026-03-08 20:59:48
+C0000735,Customer 0000735,Male,31,Lahore,2025-10-11,New,Mobile App,3416,True,2026-04-13 16:56:22
+C0000736,Customer 0000736,Female,41,Islamabad,2026-08-14,Regular,Website,6302,True,2025-04-19 16:08:16
+C0000737,Customer 0000737,Male,67,Islamabad,2025-06-21,High Value,Mobile App,7593,False,2026-08-30 17:12:09
+C0000738,Customer 0000738,Female,66,Karachi,2025-07-18,Loyal,Dine-In,680,True,2025-05-07 12:39:42
+C0000739,Customer 0000739,Male,49,Lahore,2025-03-01,Regular,Mobile App,8163,True,2025-10-16 13:48:13
+C0000740,Customer 0000740,Female,53,Lahore,2025-05-29,Regular,Dine-In,2070,False,2026-06-03 12:22:40
+C0000741,Customer 0000741,Male,49,Karachi,2026-01-14,Occasional,Delivery Partner,6668,True,2026-04-02 12:18:51
+C0000742,Customer 0000742,Male,32,Lahore,2025-07-17,Regular,Mobile App,8001,True,2025-12-30 17:17:42
+C0000743,Customer 0000743,Female,60,Rawalpindi,2026-07-24,Occasional,Dine-In,9921,True,
+C0000744,Customer 0000744,Female,52,Karachi,2025-11-14,New,Delivery Partner,2191,False,2026-07-23 20:03:27
+C0000745,Customer 0000745,Male,20,Rawalpindi,2025-03-10,High Value,Mobile App,8859,False,2026-07-22 15:32:52
+C0000746,Customer 0000746,Female,33,Lahore,2025-11-16,High Value,Dine-In,9804,True,2026-01-26 01:00:00
+C0000747,Customer 0000747,Female,22,Karachi,2025-08-19,Regular,Mobile App,7586,True,2025-12-18 04:30:00
+C0000748,Customer 0000748,Female,38,Lahore,2025-03-13,Regular,Takeaway,8872,True,2026-03-24 11:37:05
+C0000749,Customer 0000749,Female,27,Karachi,2025-08-15,New,Delivery Partner,9164,True,2026-05-30 15:32:36
+C0000750,Customer 0000750,Male,36,Lahore,2026-01-15,Loyal,Delivery Partner,2846,True,2026-03-21 16:10:23
+C0000751,Customer 0000751,Male,42,Rawalpindi,2026-01-13,Loyal,Delivery Partner,2463,True,2025-08-09 13:04:41
+C0000752,Customer 0000752,Female,21,Rawalpindi,2026-01-23,Loyal,Mobile App,6837,False,2026-06-09 21:19:33
+C0000753,Customer 0000753,Female,46,Lahore,2026-04-23,Regular,Mobile App,4922,True,2026-01-24 22:52:10
+C0000754,Customer 0000754,Female,36,Karachi,2025-06-03,Regular,Website,4392,False,2026-06-18 14:17:22
+C0000755,Customer 0000755,Female,60,Islamabad,2026-01-12,New,Dine-In,3183,True,2026-06-14 19:08:01
+C0000756,Customer 0000756,Female,19,Rawalpindi,2025-10-22,Regular,Mobile App,3167,True,2026-06-20 19:27:39
+C0000757,Customer 0000757,Female,27,Rawalpindi,2026-01-28,Loyal,Mobile App,2997,True,2025-08-12 14:45:52
+C0000758,Customer 0000758,Female,60,Multan,2026-03-11,Occasional,Dine-In,6521,False,
+C0000759,Customer 0000759,Male,42,Islamabad,2026-06-02,Loyal,Mobile App,3227,False,2026-06-03 13:52:46
+C0000760,Customer 0000760,Female,37,Lahore,2025-07-15,Regular,Delivery Partner,6564,False,2026-07-24 21:33:12
+C0000761,Customer 0000761,Male,65,Karachi,2026-08-29,Occasional,Delivery Partner,9920,True,2025-08-06 19:19:53
+C0000762,Customer 0000762,Male,36,Multan,2026-07-26,Loyal,Dine-In,2024,False,2026-08-30 10:17:14
+C0000763,Customer 0000763,Male,40,Lahore,2025-12-21,Occasional,Dine-In,329,True,2025-11-14 18:00:53
+C0000764,Customer 0000764,Male,41,Faisalabad,2026-01-14,Loyal,Takeaway,2486,False,2026-06-01 09:59:03
+C0000765,Customer 0000765,Male,28,Rawalpindi,2026-02-12,Regular,Delivery Partner,1155,True,2025-12-09 13:43:37
+C0000766,Customer 0000766,Male,63,Faisalabad,2025-10-15,New,Dine-In,4477,False,2026-05-22 20:26:21
+C0000767,Customer 0000767,Male,51,Rawalpindi,2025-11-25,Loyal,Website,2185,True,2025-11-30 16:22:36
+C0000768,Customer 0000768,Male,45,Rawalpindi,2025-12-16,New,Dine-In,7086,True,2025-11-16 16:20:19
+C0000769,Customer 0000769,Male,22,Faisalabad,2025-08-12,Regular,Mobile App,2317,True,2025-03-15 21:03:44
+C0000770,Customer 0000770,Male,22,Faisalabad,2025-03-05,Loyal,Takeaway,3621,True,2025-03-03 21:37:05
+C0000771,Customer 0000771,Female,68,Lahore,2026-03-14,Loyal,Delivery Partner,4491,True,2026-02-17 07:25:44
+C0000772,Customer 0000772,Female,38,Multan,2025-05-17,Loyal,Takeaway,2511,False,2026-08-08 16:43:33
+C0000773,Customer 0000773,Female,29,Multan,2026-04-14,New,Mobile App,7842,True,2025-07-16 12:15:16
+C0000774,Customer 0000774,Male,67,Faisalabad,2025-07-10,Regular,Takeaway,8641,True,2026-01-16 19:29:31
+C0000775,Customer 0000775,Male,21,Lahore,2025-04-11,Loyal,Website,9546,False,2026-05-18 19:12:50
+C0000776,Customer 0000776,Male,66,Multan,2025-05-28,Occasional,Delivery Partner,7848,False,2026-08-15 11:31:28
+C0000777,Customer 0000777,Male,59,Lahore,2026-04-06,Loyal,Dine-In,5404,True,2026-03-02 12:54:39
+C0000778,Customer 0000778,Male,37,Lahore,2025-12-21,Occasional,Delivery Partner,5393,True,2026-03-08 12:45:41
+C0000779,Customer 0000779,Female,55,Rawalpindi,2025-12-20,High Value,Mobile App,1293,False,
+C0000780,Customer 0000780,Male,42,Multan,2026-08-08,Loyal,Dine-In,2465,True,2026-02-26 19:53:37
+C0000781,Customer 0000781,Male,31,Multan,2026-04-26,Regular,Mobile App,3175,True,2026-04-29 19:24:18
+C0000782,Customer 0000782,Other,28,Rawalpindi,2025-03-23,Loyal,Dine-In,7849,False,2026-08-02 21:23:42
+C0000783,Customer 0000783,Female,49,Faisalabad,2025-07-21,Loyal,Website,9425,True,2026-04-29 10:32:46
+C0000784,Customer 0000784,Male,28,Rawalpindi,2025-07-23,Loyal,Website,9629,True,2026-01-18 18:08:01
+C0000785,Customer 0000785,Male,35,Multan,2025-10-11,Regular,Dine-In,8444,True,2025-07-18 05:26:13
+C0000786,Customer 0000786,Male,44,Multan,2026-07-16,Loyal,Mobile App,8210,True,2025-10-28 18:54:25
+C0000787,Customer 0000787,Male,35,Faisalabad,2025-06-12,Regular,Delivery Partner,2759,True,2026-04-21 14:32:11
+C0000788,Customer 0000788,Male,40,Rawalpindi,2025-04-08,Regular,Delivery Partner,5255,True,2025-04-21 17:50:20
+C0000789,Customer 0000789,Female,28,Karachi,2025-09-14,Regular,Mobile App,8414,False,2026-08-08 20:13:36
+C0000790,Customer 0000790,Male,38,Karachi,2026-03-26,High Value,Delivery Partner,2,True,2026-04-18 18:38:33
+C0000791,Customer 0000791,Male,61,Faisalabad,2025-08-26,Regular,Mobile App,8130,True,2025-05-04 09:07:17
+C0000792,Customer 0000792,Male,22,Rawalpindi,2026-05-22,New,Mobile App,1259,True,2026-01-25 23:20:57
+C0000793,Customer 0000793,Male,40,Rawalpindi,2026-07-13,Regular,Delivery Partner,8190,True,2026-07-15 08:47:25
+C0000794,Customer 0000794,Female,58,Lahore,2025-03-15,Loyal,Mobile App,4323,False,2026-05-04 16:27:18
+C0000795,Customer 0000795,Female,42,Multan,2025-12-14,Regular,Mobile App,5773,True,2026-01-22 14:35:40
+C0000796,Customer 0000796,Male,58,Islamabad,2026-06-21,Regular,Mobile App,2568,True,2026-04-25 08:44:55
+C0000797,Customer 0000797,Male,27,Faisalabad,2025-10-17,Loyal,Delivery Partner,1885,False,
+C0000798,Customer 0000798,Male,39,Islamabad,2026-04-24,Regular,Delivery Partner,7060,False,2026-05-17 18:00:19
+C0000799,Customer 0000799,Female,36,Islamabad,2025-08-04,Occasional,Mobile App,7844,False,2026-06-25 15:03:08
+C0000800,Customer 0000800,Male,18,Faisalabad,2026-05-15,Occasional,Takeaway,6111,True,2026-03-14 09:31:48
+C0000801,Customer 0000801,Male,24,Rawalpindi,2025-06-05,Regular,Mobile App,9491,False,2026-05-11 17:51:33
+C0000802,Customer 0000802,Male,21,Faisalabad,2026-04-15,Regular,Mobile App,2338,True,2025-03-21 07:14:06
+C0000803,Customer 0000803,Female,18,Islamabad,2025-12-14,Loyal,Takeaway,9268,True,2026-04-01 13:54:27
+C0000804,Customer 0000804,Male,32,Multan,2025-11-09,New,Delivery Partner,3758,True,
+C0000805,Customer 0000805,Male,57,Multan,2025-09-12,Regular,Mobile App,4810,True,2025-09-09 19:55:34
+C0000806,Customer 0000806,Female,29,Multan,2026-08-04,Regular,Takeaway,9139,True,2025-09-18 18:47:11
+C0000807,Customer 0000807,Male,39,Rawalpindi,2026-07-30,Occasional,Dine-In,6791,True,2025-05-02 13:33:52
+C0000808,Customer 0000808,Male,39,Karachi,2025-06-26,New,Takeaway,7171,True,2026-02-22 19:18:00
+C0000809,Customer 0000809,Male,67,Faisalabad,2025-08-06,Loyal,Delivery Partner,2731,False,2026-07-24 19:11:18
+C0000810,Customer 0000810,Male,64,Multan,2025-10-14,Loyal,Takeaway,869,False,2026-05-19 13:39:46
+C0000811,Customer 0000811,Female,34,Faisalabad,2025-10-02,Regular,Dine-In,5166,True,2026-02-26 16:37:36
+C0000812,Customer 0000812,Female,46,Multan,2025-03-15,New,Mobile App,93,True,2025-04-16 12:53:43
+C0000813,Customer 0000813,Female,63,Rawalpindi,2025-08-04,Occasional,Takeaway,2987,True,2025-08-28 23:19:58
+C0000814,Customer 0000814,Female,31,Karachi,2025-11-16,Regular,Dine-In,9967,True,2026-02-15 14:15:44
+C0000815,Customer 0000815,Male,67,Karachi,2025-08-04,Loyal,Takeaway,8627,True,2026-01-07 05:15:13
+C0000816,Customer 0000816,Female,37,Multan,2025-04-16,Regular,Mobile App,4947,True,2026-02-16 14:46:52
+C0000817,Customer 0000817,Male,67,Rawalpindi,2026-01-18,Regular,Mobile App,6651,False,2026-07-08 20:08:19
+C0000818,Customer 0000818,Male,65,Lahore,2025-07-08,Regular,Takeaway,6979,False,
+C0000819,Customer 0000819,Male,50,Faisalabad,2026-04-15,New,Mobile App,6794,False,2026-07-23 02:16:47
+C0000820,Customer 0000820,Male,60,Faisalabad,2025-06-03,New,Delivery Partner,6524,True,2025-05-21 17:16:06
+C0000821,Customer 0000821,Male,32,Islamabad,2025-12-17,High Value,Mobile App,3144,True,2026-04-21 17:06:58
+C0000822,Customer 0000822,Male,29,Rawalpindi,2025-12-08,Regular,Takeaway,3587,True,2026-04-15 05:47:19
+C0000823,Customer 0000823,Female,57,Islamabad,2025-05-08,Regular,Takeaway,76,False,2026-07-07 20:04:00
+C0000824,Customer 0000824,Female,37,Multan,2025-03-11,Regular,Mobile App,9007,False,
+C0000825,Customer 0000825,Male,47,Islamabad,2025-11-09,High Value,Website,8959,False,2026-06-26 14:34:33
+C0000826,Customer 0000826,Male,55,Karachi,2025-07-12,New,Dine-In,6553,True,2026-07-10 12:35:52
+C0000827,Customer 0000827,Male,20,Faisalabad,2025-03-23,Loyal,Website,8297,False,2026-05-06 20:50:47
+C0000828,Customer 0000828,Male,45,Islamabad,2026-02-09,New,Dine-In,6694,True,2025-12-11 17:14:05
+C0000829,Customer 0000829,Male,43,Karachi,2025-12-27,New,Mobile App,2873,False,2026-07-31 09:14:34
+C0000830,Customer 0000830,Female,47,Rawalpindi,2026-02-26,New,Website,3346,True,2025-04-05 20:51:10
+C0000831,Customer 0000831,Other,30,Islamabad,2026-03-31,High Value,Takeaway,7024,False,2026-08-27 18:44:18
+C0000832,Customer 0000832,Male,30,Multan,2025-10-04,New,Mobile App,3148,True,2026-04-17 09:41:14
+C0000833,Customer 0000833,Female,19,Multan,2025-07-19,New,Dine-In,9657,True,2025-08-07 17:50:17
+C0000834,Customer 0000834,Male,54,Multan,2025-09-26,Regular,Website,244,False,2026-06-04 19:08:07
+C0000835,Customer 0000835,Female,66,Faisalabad,2026-06-03,High Value,Dine-In,2625,True,2025-04-16 13:59:19
+C0000836,Customer 0000836,Male,55,Islamabad,2026-02-19,Regular,Delivery Partner,3849,True,2026-04-25 03:18:40
+C0000837,Customer 0000837,Male,19,Rawalpindi,2026-01-18,Regular,Dine-In,9597,True,2025-11-15 17:24:55
+C0000838,Customer 0000838,Female,53,Islamabad,2025-07-11,New,Delivery Partner,9173,False,2026-08-23 14:29:50
+C0000839,Customer 0000839,Male,43,Faisalabad,2025-07-05,Regular,Takeaway,7737,True,2025-11-04 20:39:52
+C0000840,Customer 0000840,Male,28,Karachi,2025-06-14,Loyal,Website,8333,True,2025-11-14 19:18:18
+C0000841,Customer 0000841,Female,25,Faisalabad,2026-03-13,Loyal,Takeaway,892,False,2026-05-16 19:25:43
+C0000842,Customer 0000842,Female,61,Multan,2025-04-20,Regular,Delivery Partner,5487,True,
+C0000843,Customer 0000843,Male,57,Karachi,2025-03-29,Regular,Dine-In,7251,True,2026-05-03 09:59:21
+C0000844,Customer 0000844,Female,60,Multan,2026-06-05,New,Dine-In,7310,False,2026-05-21 12:21:57
+C0000845,Customer 0000845,Female,39,Lahore,2025-12-21,Regular,Mobile App,2399,False,2026-07-11 20:34:17
+C0000846,Customer 0000846,Female,37,Faisalabad,2025-12-22,New,Dine-In,4640,False,2026-07-08 14:07:37
+C0000847,Customer 0000847,Female,25,Faisalabad,2026-04-11,High Value,Dine-In,2960,True,2026-06-27 13:48:01
+C0000848,Customer 0000848,Male,46,Rawalpindi,2026-04-09,Occasional,Delivery Partner,7325,True,2026-07-18 09:21:18
+C0000849,Customer 0000849,Male,57,Islamabad,2026-02-09,Occasional,Delivery Partner,1469,False,2026-07-23 08:07:18
+C0000850,Customer 0000850,Female,43,Karachi,2026-04-24,Occasional,Mobile App,3374,False,
+C0000851,Customer 0000851,Male,47,Karachi,2025-08-29,Loyal,Delivery Partner,8847,False,
+C0000852,Customer 0000852,Female,34,Rawalpindi,2025-03-01,Loyal,Mobile App,8234,True,2026-03-17 13:44:01
+C0000853,Customer 0000853,Male,37,Rawalpindi,2026-03-06,Regular,Takeaway,7923,True,2025-12-31 12:16:58
+C0000854,Customer 0000854,Male,69,Islamabad,2026-05-05,Loyal,Website,5122,False,2026-07-30 10:17:56
+C0000855,Customer 0000855,Female,33,Multan,2026-01-03,Regular,Mobile App,9852,True,2025-12-05 21:31:33
+C0000856,Customer 0000856,Male,63,Islamabad,2025-07-15,Regular,Delivery Partner,5387,True,2026-02-19 17:26:25
+C0000857,Customer 0000857,Male,60,Faisalabad,2025-09-18,Loyal,Takeaway,7631,True,2025-11-09 17:57:57
+C0000858,Customer 0000858,Female,24,Multan,2026-05-10,Regular,Website,7226,True,2026-05-02 05:13:14
+C0000859,Customer 0000859,Female,33,Lahore,2026-01-07,Regular,Dine-In,5108,False,2026-07-05 11:37:09
+C0000860,Customer 0000860,Female,62,Islamabad,2025-06-25,Occasional,Dine-In,2224,True,2026-07-12 12:51:36
+C0000861,Customer 0000861,Male,64,Rawalpindi,2025-10-30,New,Dine-In,2110,False,
+C0000862,Customer 0000862,Male,65,Multan,2026-08-19,Regular,Delivery Partner,957,True,2026-05-30 15:27:37
+C0000863,Customer 0000863,Male,44,Islamabad,2025-05-14,Occasional,Delivery Partner,7146,False,2026-08-22 20:12:32
+C0000864,Customer 0000864,Male,40,Karachi,2026-03-21,Loyal,Delivery Partner,560,False,2026-08-08 14:34:39
+C0000865,Customer 0000865,Male,41,Lahore,2025-09-26,Loyal,Mobile App,9522,False,2026-08-31 14:51:00
+C0000866,Customer 0000866,Male,26,Faisalabad,2026-06-18,Regular,Takeaway,7413,False,2026-06-20 15:19:07
+C0000867,Customer 0000867,Male,52,Karachi,2026-04-22,Regular,Dine-In,1312,True,2026-04-30 21:24:29
+C0000868,Customer 0000868,Female,68,Karachi,2026-02-10,Occasional,Takeaway,1821,False,
+C0000869,Customer 0000869,Male,37,Lahore,2026-08-11,Loyal,Mobile App,5646,True,2026-03-09 17:42:56
+C0000870,Customer 0000870,Male,54,Faisalabad,2025-08-26,Regular,Website,4945,False,2026-05-12 14:10:51
+C0000871,Customer 0000871,Female,59,Rawalpindi,2025-08-29,New,Mobile App,5374,True,2026-04-01 06:10:09
+C0000872,Customer 0000872,Male,34,Multan,2025-03-25,New,Dine-In,2651,True,2026-06-18 20:49:39
+C0000873,Customer 0000873,Female,64,Faisalabad,2025-08-27,Occasional,Dine-In,9933,False,2026-08-30 19:39:23
+C0000874,Customer 0000874,Male,48,Islamabad,2026-07-14,Regular,Dine-In,4701,False,
+C0000875,Customer 0000875,Male,25,Karachi,2025-08-08,Loyal,Mobile App,2877,True,2025-09-17 20:46:20
+C0000876,Customer 0000876,Female,32,Islamabad,2025-08-24,New,Delivery Partner,5582,False,2026-06-28 17:57:20
+C0000877,Customer 0000877,Female,48,Rawalpindi,2025-12-10,Loyal,Mobile App,5390,True,2026-07-02 22:38:50
+C0000878,Customer 0000878,Female,47,Islamabad,2025-05-02,Occasional,Delivery Partner,4083,True,2026-04-18 14:50:31
+C0000879,Customer 0000879,Male,63,Faisalabad,2025-08-03,Loyal,Mobile App,745,True,
+C0000880,Customer 0000880,Female,37,Islamabad,2026-06-12,New,Mobile App,8749,False,2026-05-26 18:50:43
+C0000881,Customer 0000881,Male,56,Rawalpindi,2025-04-18,Loyal,Dine-In,941,True,2026-03-30 10:23:46
+C0000882,Customer 0000882,Female,29,Rawalpindi,2025-05-23,High Value,Delivery Partner,4023,True,2026-03-11 17:49:24
+C0000883,Customer 0000883,Other,66,Rawalpindi,2026-02-24,Regular,Delivery Partner,2296,True,2025-10-31 21:04:45
+C0000884,Customer 0000884,Male,34,Faisalabad,2025-07-26,Occasional,Dine-In,939,True,2026-08-29 19:12:08
+C0000885,Customer 0000885,Male,59,Rawalpindi,2026-02-05,Loyal,Mobile App,1610,True,2026-08-02 16:35:14
+C0000886,Customer 0000886,Male,47,Karachi,2026-06-19,Occasional,Mobile App,6300,True,2026-04-14 18:26:14
+C0000887,Customer 0000887,Male,46,Rawalpindi,2025-05-02,Loyal,Mobile App,1725,True,2026-04-10 10:29:31
+C0000888,Customer 0000888,Male,36,Islamabad,2026-02-23,New,Delivery Partner,9176,True,2026-04-01 08:54:50
+C0000889,Customer 0000889,Female,63,Multan,2026-01-21,Regular,Mobile App,9779,False,2026-07-08 08:31:49
+C0000890,Customer 0000890,Female,28,Islamabad,2025-07-19,Regular,Mobile App,9528,True,2026-05-02 18:34:14
+C0000891,Customer 0000891,Female,51,Multan,2025-10-01,Occasional,Dine-In,8853,False,2026-07-10 15:33:10
+C0000892,Customer 0000892,Female,67,Islamabad,2026-05-09,High Value,Dine-In,7187,True,2026-03-07 12:50:48
+C0000893,Customer 0000893,Female,24,Faisalabad,2026-01-12,Loyal,Dine-In,32,True,2026-02-05 07:32:27
+C0000894,Customer 0000894,Male,61,Islamabad,2025-04-01,Regular,Dine-In,5985,True,2025-03-28 08:47:36
+C0000895,Customer 0000895,Other,51,Faisalabad,2025-12-10,Regular,Website,3414,True,2025-12-31 19:10:28
+C0000896,Customer 0000896,Female,37,Faisalabad,2025-12-30,Loyal,Website,1156,False,2026-07-20 21:38:42
+C0000897,Customer 0000897,Male,67,Rawalpindi,2026-05-03,Regular,Dine-In,3126,True,2025-11-08 18:45:55
+C0000898,Customer 0000898,Female,55,Karachi,2026-06-20,Regular,Delivery Partner,8252,False,2026-05-22 08:17:49
+C0000899,Customer 0000899,Male,41,Multan,2025-12-11,Loyal,Dine-In,1543,False,2026-06-13 17:18:20
+C0000900,Customer 0000900,Male,27,Rawalpindi,2025-07-22,New,Takeaway,271,True,2026-01-31 16:03:10
+C0000901,Customer 0000901,Male,49,Rawalpindi,2026-04-28,Regular,Takeaway,5295,True,2025-08-28 19:35:52
+C0000902,Customer 0000902,Male,69,Faisalabad,2025-03-19,Regular,Mobile App,4076,True,2026-04-07 07:10:33
+C0000903,Customer 0000903,Female,32,Faisalabad,2025-03-18,New,Takeaway,5902,False,2026-06-26 11:45:39
+C0000904,Customer 0000904,Male,54,Multan,2026-03-06,Occasional,Mobile App,2709,False,2026-06-02 08:58:10
+C0000905,Customer 0000905,Male,37,Islamabad,2025-08-22,Regular,Mobile App,9346,True,2026-03-15 06:25:59
+C0000906,Customer 0000906,Female,20,Islamabad,2025-09-10,New,Delivery Partner,5221,True,2026-04-07 20:28:43
+C0000907,Customer 0000907,Male,54,Rawalpindi,2026-07-15,Regular,Dine-In,9937,True,2025-10-23 18:06:40
+C0000908,Customer 0000908,Female,57,Lahore,2025-06-21,High Value,Dine-In,8529,True,2026-02-08 13:00:32
+C0000909,Customer 0000909,Male,25,Lahore,2025-06-22,Regular,Dine-In,6722,True,2026-01-18 13:36:51
+C0000910,Customer 0000910,Female,57,Islamabad,2025-10-08,Loyal,Mobile App,8201,True,2026-06-25 19:58:04
+C0000911,Customer 0000911,Female,61,Lahore,2025-11-19,New,Dine-In,4144,False,2026-08-20 10:46:20
+C0000912,Customer 0000912,Male,40,Islamabad,2025-04-24,New,Delivery Partner,5606,False,2026-06-01 18:27:10
+C0000913,Customer 0000913,Male,57,Faisalabad,2026-06-01,Regular,Mobile App,6766,True,2025-12-20 22:27:52
+C0000914,Customer 0000914,Female,28,Rawalpindi,2025-08-09,High Value,Mobile App,730,True,2025-11-05 20:20:35
+C0000915,Customer 0000915,Female,63,Karachi,2026-03-15,Occasional,Mobile App,4890,False,2026-07-26 11:33:11
+C0000916,Customer 0000916,Male,25,Rawalpindi,2025-05-26,New,Dine-In,1648,True,2025-08-16 08:23:32
+C0000917,Customer 0000917,Female,46,Islamabad,2025-04-24,Loyal,Dine-In,4228,False,2026-07-07 23:38:40
+C0000918,Customer 0000918,Female,47,Islamabad,2026-06-19,Occasional,Takeaway,2130,True,2025-07-17 06:08:47
+C0000919,Customer 0000919,Male,27,Rawalpindi,2025-08-25,Regular,Mobile App,4366,False,2026-06-03 19:59:17
+C0000920,Customer 0000920,Male,56,Multan,2026-03-26,High Value,Dine-In,1506,True,2025-06-07 07:21:28
+C0000921,Customer 0000921,Female,45,Islamabad,2026-02-12,New,Dine-In,2158,True,
+C0000922,Customer 0000922,Male,66,Lahore,2025-03-08,Occasional,Delivery Partner,2916,False,2026-06-15 00:27:32
+C0000923,Customer 0000923,Male,53,Lahore,2026-01-07,Loyal,Dine-In,3229,True,2026-03-18 13:16:42
+C0000924,Customer 0000924,Male,30,Islamabad,2026-05-17,Occasional,Delivery Partner,9858,False,2026-08-11 17:03:20
+C0000925,Customer 0000925,Male,49,Islamabad,2026-01-22,Loyal,Delivery Partner,6265,False,2026-05-24 17:55:21
+C0000926,Customer 0000926,Female,53,Multan,2025-04-23,Regular,Takeaway,4136,False,2026-08-21 20:11:12
+C0000927,Customer 0000927,Female,54,Lahore,2025-10-25,Occasional,Dine-In,2689,True,2026-04-26 06:18:07
+C0000928,Customer 0000928,Female,43,Islamabad,2025-10-15,Regular,Dine-In,7190,True,2026-08-31 18:01:36
+C0000929,Customer 0000929,Male,39,Islamabad,2025-04-20,Regular,Website,2810,True,2026-04-26 19:59:30
+C0000930,Customer 0000930,Female,21,Multan,2025-11-19,Loyal,Mobile App,6152,True,2026-03-26 18:27:35
+C0000931,Customer 0000931,Male,48,Multan,2026-04-22,High Value,Delivery Partner,12,False,
+C0000932,Customer 0000932,Female,35,Rawalpindi,2025-06-04,Occasional,Delivery Partner,5938,False,
+C0000933,Customer 0000933,Female,55,Multan,2025-05-27,Regular,Website,7999,True,2026-04-24 13:38:26
+C0000934,Customer 0000934,Male,41,Karachi,2025-05-17,High Value,Dine-In,7219,False,2026-07-12 12:36:40
+C0000935,Customer 0000935,Female,40,Lahore,2025-12-13,Loyal,Takeaway,5328,False,2026-08-20 17:10:18
+C0000936,Customer 0000936,Female,39,Rawalpindi,2025-06-28,New,Delivery Partner,3621,False,2026-08-13 13:12:07
+C0000937,Customer 0000937,Male,19,Karachi,2026-07-04,Regular,Dine-In,3683,True,2025-12-20 16:48:47
+C0000938,Customer 0000938,Female,48,Islamabad,2026-05-26,Regular,Dine-In,7872,False,2026-06-05 20:09:09
+C0000939,Customer 0000939,Male,28,Islamabad,2026-07-13,Regular,Website,5310,True,2026-04-23 20:23:14
+C0000940,Customer 0000940,Male,45,Rawalpindi,2025-08-12,Occasional,Mobile App,652,True,2026-03-21 10:31:06
+C0000941,Customer 0000941,Female,63,Multan,2025-08-29,Loyal,Delivery Partner,5799,True,2026-03-01 18:10:05
+C0000942,Customer 0000942,Male,49,Islamabad,2026-06-12,Loyal,Mobile App,8812,True,2025-11-15 19:15:46
+C0000943,Customer 0000943,Male,22,Faisalabad,2025-03-07,Occasional,Dine-In,3790,True,2026-01-15 16:51:08
+C0000944,Customer 0000944,Female,55,Rawalpindi,2026-01-24,Regular,Delivery Partner,1645,False,
+C0000945,Customer 0000945,Female,27,Karachi,2025-07-29,High Value,Takeaway,4512,False,2026-08-09 15:10:24
+C0000946,Customer 0000946,Female,57,Rawalpindi,2025-05-24,Regular,Takeaway,4759,False,2026-07-16 11:50:17
+C0000947,Customer 0000947,Male,63,Lahore,2025-07-25,Occasional,Mobile App,5874,False,
+C0000948,Customer 0000948,Female,41,Multan,2026-03-16,Regular,Dine-In,3688,False,2026-06-18 10:24:31
+C0000949,Customer 0000949,Male,52,Multan,2026-08-30,Occasional,Mobile App,7689,True,2025-08-21 22:11:04
+C0000950,Customer 0000950,Male,61,Rawalpindi,2025-12-10,Regular,Dine-In,1379,True,2026-02-22 20:16:30
+C0000951,Customer 0000951,Male,65,Islamabad,2025-05-21,Regular,Mobile App,4243,True,2026-04-30 21:12:24
+C0000952,Customer 0000952,Female,40,Islamabad,2026-07-27,Loyal,Takeaway,9580,False,
+C0000953,Customer 0000953,Female,34,Faisalabad,2026-08-05,Regular,Website,6507,True,
+C0000954,Customer 0000954,Male,18,Faisalabad,2026-03-21,Loyal,Delivery Partner,7819,False,
+C0000955,Customer 0000955,Female,48,Multan,2026-06-14,Regular,Dine-In,8593,False,2026-05-15 12:46:07
+C0000956,Customer 0000956,Female,48,Faisalabad,2025-06-27,Loyal,Mobile App,2653,True,2025-12-31 12:24:46
+C0000957,Customer 0000957,Female,59,Karachi,2026-03-31,Regular,Mobile App,5611,False,2026-07-12 18:23:01
+C0000958,Customer 0000958,Female,59,Faisalabad,2026-08-14,New,Dine-In,6127,False,2026-06-12 19:28:09
+C0000959,Customer 0000959,Male,51,Karachi,2025-11-16,Regular,Delivery Partner,3923,True,2025-07-14 18:52:37
+C0000960,Customer 0000960,Female,26,Faisalabad,2025-11-11,Regular,Website,8459,True,2026-03-23 12:07:29
+C0000961,Customer 0000961,Female,39,Multan,2025-10-12,New,Dine-In,5912,True,
+C0000962,Customer 0000962,Female,30,Multan,2025-04-22,Regular,Mobile App,5130,True,2025-11-02 19:28:57
+C0000963,Customer 0000963,Male,42,Karachi,2026-07-13,Regular,Dine-In,5439,False,2026-05-16 11:01:14
+C0000964,Customer 0000964,Male,65,Rawalpindi,2026-07-19,New,Mobile App,7880,True,2026-03-16 10:09:55
+C0000965,Customer 0000965,Female,35,Multan,2026-02-27,Loyal,Dine-In,6449,False,
+C0000966,Customer 0000966,Male,68,Rawalpindi,2025-12-05,Occasional,Delivery Partner,1725,True,2026-08-30 14:53:46
+C0000967,Customer 0000967,Male,29,Islamabad,2025-08-05,New,Delivery Partner,9304,True,2026-04-07 21:06:22
+C0000968,Customer 0000968,Male,57,Karachi,2025-04-28,Loyal,Mobile App,7522,True,2025-11-25 18:25:21
+C0000969,Customer 0000969,Male,34,Multan,2025-07-06,Loyal,Mobile App,4784,True,2026-04-16 08:22:13
+C0000970,Customer 0000970,Female,32,Lahore,2025-06-23,Regular,Delivery Partner,9472,True,2026-04-24 20:16:19
+C0000971,Customer 0000971,Female,59,Islamabad,2025-09-25,Loyal,Mobile App,1232,True,2026-03-14 15:39:35
+C0000972,Customer 0000972,Female,32,Rawalpindi,2026-08-08,Regular,Dine-In,8808,True,2025-09-24 18:52:33
+C0000973,Customer 0000973,Female,32,Multan,2026-08-03,Regular,Mobile App,8338,True,2025-11-29 13:39:24
+C0000974,Customer 0000974,Other,56,Karachi,2025-10-23,New,Delivery Partner,7446,False,
+C0000975,Customer 0000975,Female,30,Faisalabad,2025-12-06,Loyal,Mobile App,4616,False,
+C0000976,Customer 0000976,Female,34,Lahore,2026-02-22,Loyal,Mobile App,4725,False,2026-08-23 09:49:22
+C0000977,Customer 0000977,Male,49,Rawalpindi,2025-09-17,New,Delivery Partner,3677,True,2026-02-08 22:41:48
+C0000978,Customer 0000978,Male,26,Islamabad,2025-12-03,Regular,Delivery Partner,6287,True,2026-08-30 07:14:29
+C0000979,Customer 0000979,Female,57,Karachi,2025-10-21,Occasional,Delivery Partner,8480,True,2025-07-20 08:12:36
+C0000980,Customer 0000980,Female,37,Lahore,2026-07-07,Regular,Dine-In,1409,False,
+C0000981,Customer 0000981,Female,43,Karachi,2025-03-04,Regular,Mobile App,8205,True,2025-03-18 19:15:54
+C0000982,Customer 0000982,Male,44,Multan,2026-05-16,Occasional,Website,256,True,2025-07-29 09:45:52
+C0000983,Customer 0000983,Female,38,Faisalabad,2025-03-29,Loyal,Website,1721,False,
+C0000984,Customer 0000984,Female,35,Islamabad,2025-06-17,Loyal,Mobile App,1423,False,2026-08-08 20:22:16
+C0000985,Customer 0000985,Male,30,Karachi,2025-05-14,High Value,Dine-In,4953,True,2026-08-15 14:46:44
+C0000986,Customer 0000986,Female,33,Rawalpindi,2025-07-24,Occasional,Delivery Partner,2990,True,2025-08-31 14:25:45
+C0000987,Customer 0000987,Male,26,Multan,2025-07-06,Regular,Website,1195,False,2026-07-09 08:06:14
+C0000988,Customer 0000988,Male,29,Multan,2025-04-11,Regular,Dine-In,4559,True,2026-04-07 22:05:36
+C0000989,Customer 0000989,Female,61,Islamabad,2026-02-19,Regular,Mobile App,4365,False,
+C0000990,Customer 0000990,Male,55,Multan,2025-04-10,Occasional,Dine-In,1244,False,
+C0000991,Customer 0000991,Male,36,Rawalpindi,2025-04-03,Loyal,Takeaway,6766,True,2026-02-10 15:35:33
+C0000992,Customer 0000992,Female,24,Karachi,2025-03-17,New,Dine-In,5302,False,2026-06-27 18:28:13
+C0000993,Customer 0000993,Male,52,Islamabad,2025-07-31,Occasional,Mobile App,1306,False,2026-08-12 21:05:46
+C0000994,Customer 0000994,Male,65,Multan,2026-03-13,Regular,Mobile App,2402,False,2026-08-14 06:58:36
+C0000995,Customer 0000995,Male,35,Multan,2026-02-05,New,Mobile App,496,False,2026-08-11 12:27:57
+C0000996,Customer 0000996,Female,33,Rawalpindi,2025-03-27,Loyal,Website,3399,True,2026-04-20 07:50:34
+C0000997,Customer 0000997,Male,56,Faisalabad,2025-12-12,Regular,Delivery Partner,909,True,2025-12-27 09:44:24
+C0000998,Customer 0000998,Female,21,Faisalabad,2025-08-15,Occasional,Dine-In,372,True,2026-03-08 18:32:14
+C0000999,Customer 0000999,Female,42,Multan,2025-11-23,Regular,Dine-In,6236,False,
+C0001000,Customer 0001000,Female,49,Karachi,2026-05-29,High Value,Delivery Partner,1344,True,2026-05-20 20:48:03
+C0000779,Customer 0000779,Female,55,Rawalpindi,2025-12-20,High Value,Mobile App,1293,False,

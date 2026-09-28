@@ -1,0 +1,413 @@
+{
+  "data": {
+    "kpis": {
+      "tablesIngested": 11,
+      "rowsIngested": 1248300,
+      "runsLast24h": 9,
+      "failedJobs": 1,
+      "storageGb": 42.6,
+      "openQualityFails": 1
+    },
+    "sparkJobs": [
+      {
+        "id": "job-1207",
+        "name": "nightly_kpis_agg",
+        "status": "success",
+        "startedAt": "2026-09-24T07:29:51.861Z",
+        "durationSec": 264,
+        "stages": "200/200",
+        "cores": 8,
+        "rowsShuffled": 1248000
+      },
+      {
+        "id": "job-1206",
+        "name": "menu_item_rollup",
+        "status": "success",
+        "startedAt": "2026-09-24T04:29:51.861Z",
+        "durationSec": 188,
+        "stages": "150/150",
+        "cores": 6,
+        "rowsShuffled": 486000
+      },
+      {
+        "id": "job-1205",
+        "name": "customer_rfm",
+        "status": "success",
+        "startedAt": "2026-09-24T01:29:51.861Z",
+        "durationSec": 341,
+        "stages": "220/220",
+        "cores": 8,
+        "rowsShuffled": 984000
+      },
+      {
+        "id": "job-1204",
+        "name": "basket_fpgrowth",
+        "status": "success",
+        "startedAt": "2026-09-23T22:29:51.861Z",
+        "durationSec": 402,
+        "stages": "260/260",
+        "cores": 10,
+        "rowsShuffled": 1248000
+      },
+      {
+        "id": "job-1203",
+        "name": "demand_forecast_features",
+        "status": "failed",
+        "startedAt": "2026-09-23T19:29:51.861Z",
+        "durationSec": 96,
+        "stages": "38/220",
+        "cores": 8,
+        "rowsShuffled": 214000
+      },
+      {
+        "id": "job-1202",
+        "name": "anomaly_detection",
+        "status": "success",
+        "startedAt": "2026-09-23T16:29:51.861Z",
+        "durationSec": 377,
+        "stages": "240/240",
+        "cores": 10,
+        "rowsShuffled": 1248000
+      },
+      {
+        "id": "job-1201",
+        "name": "channel_mix_agg",
+        "status": "success",
+        "startedAt": "2026-09-23T13:29:51.861Z",
+        "durationSec": 141,
+        "stages": "120/120",
+        "cores": 6,
+        "rowsShuffled": 486000
+      },
+      {
+        "id": "job-1200",
+        "name": "elasticity_training",
+        "status": "running",
+        "startedAt": "2026-09-23T10:29:51.861Z",
+        "durationSec": 210,
+        "stages": "88/180",
+        "cores": 8,
+        "rowsShuffled": 742000
+      }
+    ],
+    "dataQuality": [
+      {
+        "id": "dq-01",
+        "table": "orders",
+        "check": "Row count vs source",
+        "status": "pass",
+        "detail": "322,410 rows in the last ingestion — matches the CDC offset.",
+        "lastRun": "2026-09-24T07:59:51.861Z"
+      },
+      {
+        "id": "dq-02",
+        "table": "orders",
+        "check": "Null order_id",
+        "status": "pass",
+        "detail": "0 nulls in the last 30 days.",
+        "lastRun": "2026-09-24T07:29:51.861Z"
+      },
+      {
+        "id": "dq-03",
+        "table": "order_lines",
+        "check": "Duplicate line keys",
+        "status": "fail",
+        "detail": "42 duplicate pairs detected (see anm-002) — quarantine rule active.",
+        "lastRun": "2026-09-24T06:59:51.861Z"
+      },
+      {
+        "id": "dq-04",
+        "table": "order_lines",
+        "check": "FK integrity → orders",
+        "status": "pass",
+        "detail": "100% of line items resolve to an order.",
+        "lastRun": "2026-09-24T06:29:51.861Z"
+      },
+      {
+        "id": "dq-05",
+        "table": "customers",
+        "check": "Duplicate emails",
+        "status": "warn",
+        "detail": "0.4% near-duplicate emails share a phone fingerprint.",
+        "lastRun": "2026-09-24T05:59:51.861Z"
+      },
+      {
+        "id": "dq-06",
+        "table": "menu_items",
+        "check": "Price continuity",
+        "status": "pass",
+        "detail": "No unexplained price jumps > 25% day-over-day.",
+        "lastRun": "2026-09-24T05:29:51.861Z"
+      },
+      {
+        "id": "dq-07",
+        "table": "ratings",
+        "check": "Review velocity",
+        "status": "warn",
+        "detail": "Blue Area burst flagged (anm-006); reviews quarantined from aggregates.",
+        "lastRun": "2026-09-24T04:59:51.861Z"
+      },
+      {
+        "id": "dq-08",
+        "table": "promotions",
+        "check": "Window overlaps",
+        "status": "pass",
+        "detail": "No overlapping campaign windows per channel.",
+        "lastRun": "2026-09-24T04:29:51.861Z"
+      },
+      {
+        "id": "dq-09",
+        "table": "wastage",
+        "check": "Out-of-range percentages",
+        "status": "pass",
+        "detail": "All wastagePct values within 0–25%.",
+        "lastRun": "2026-09-24T03:59:51.861Z"
+      },
+      {
+        "id": "dq-10",
+        "table": "outlets",
+        "check": "Geo coverage",
+        "status": "pass",
+        "detail": "24/24 outlets reporting hourly POS heartbeats.",
+        "lastRun": "2026-09-24T03:29:51.861Z"
+      }
+    ],
+    "modelRegistry": [
+      {
+        "name": "DemandForecaster (XGBoost)",
+        "version": "3.2",
+        "pipeline": "python",
+        "trainedAt": "2026-09-22T08:29:51.861Z",
+        "status": "production",
+        "metrics": [
+          {
+            "name": "MAPE",
+            "value": "8.4%"
+          },
+          {
+            "name": "Bias",
+            "value": "+1.2%"
+          },
+          {
+            "name": "Confidence",
+            "value": "0.924"
+          }
+        ]
+      },
+      {
+        "name": "RecommendationEngine",
+        "version": "1.8",
+        "pipeline": "python",
+        "trainedAt": "2026-09-21T08:29:51.861Z",
+        "status": "production",
+        "metrics": [
+          {
+            "name": "Rules per cycle",
+            "value": "10"
+          },
+          {
+            "name": "Evidence coverage",
+            "value": "100%"
+          }
+        ]
+      },
+      {
+        "name": "AnomalyDetection",
+        "version": "2.1",
+        "pipeline": "spark",
+        "trainedAt": "2026-09-20T08:29:51.861Z",
+        "status": "production",
+        "metrics": [
+          {
+            "name": "Precision",
+            "value": "0.91"
+          },
+          {
+            "name": "Recall",
+            "value": "0.84"
+          }
+        ]
+      },
+      {
+        "name": "WhatIf ScenarioEngine (sklearn)",
+        "version": "1.4",
+        "pipeline": "python",
+        "trainedAt": "2026-09-19T08:29:51.861Z",
+        "status": "production",
+        "metrics": [
+          {
+            "name": "Elasticity R²",
+            "value": "0.78"
+          },
+          {
+            "name": "Confidence",
+            "value": "0.87"
+          }
+        ]
+      },
+      {
+        "name": "ChurnScorer (XGBoost)",
+        "version": "0.9",
+        "pipeline": "python",
+        "trainedAt": "2026-09-18T08:29:51.861Z",
+        "status": "staging",
+        "metrics": [
+          {
+            "name": "AUC",
+            "value": "0.81"
+          },
+          {
+            "name": "Lift@10",
+            "value": "2.6"
+          }
+        ]
+      },
+      {
+        "name": "ElasticityModel (Spark MLlib)",
+        "version": "2.0",
+        "pipeline": "spark",
+        "trainedAt": "2026-09-17T08:29:51.861Z",
+        "status": "staging",
+        "metrics": [
+          {
+            "name": "R²",
+            "value": "0.74"
+          },
+          {
+            "name": "Items scored",
+            "value": "52"
+          }
+        ]
+      }
+    ],
+    "auditTrail": [
+      {
+        "id": "aud-001",
+        "user": "Ayesha Khan",
+        "role": "admin",
+        "action": "auth.login",
+        "target": "session",
+        "at": "2026-09-24T07:29:51.861Z"
+      },
+      {
+        "id": "aud-002",
+        "user": "Ayesha Khan",
+        "role": "admin",
+        "action": "recommendation.acknowledge",
+        "target": "rec-001",
+        "at": "2026-09-24T04:29:51.861Z"
+      },
+      {
+        "id": "aud-003",
+        "user": "Bilal Ahmed",
+        "role": "regional_manager",
+        "action": "recommendation.acknowledge",
+        "target": "rec-005",
+        "at": "2026-09-23T23:29:51.861Z"
+      },
+      {
+        "id": "aud-004",
+        "user": "Bilal Ahmed",
+        "role": "regional_manager",
+        "action": "report.run",
+        "target": "churn-risk-list",
+        "at": "2026-09-23T20:29:51.861Z"
+      },
+      {
+        "id": "aud-005",
+        "user": "Daniyal Raza",
+        "role": "analyst",
+        "action": "report.run",
+        "target": "item-performance",
+        "at": "2026-09-24T01:29:51.861Z"
+      },
+      {
+        "id": "aud-006",
+        "user": "Daniyal Raza",
+        "role": "analyst",
+        "action": "whatif.run",
+        "target": "itm-009 +5%",
+        "at": "2026-09-23T17:29:51.861Z"
+      },
+      {
+        "id": "aud-007",
+        "user": "Sana Malik",
+        "role": "restaurant_manager",
+        "action": "auth.login",
+        "target": "session",
+        "at": "2026-09-24T06:29:51.861Z"
+      },
+      {
+        "id": "aud-008",
+        "user": "Sana Malik",
+        "role": "restaurant_manager",
+        "action": "filter.scope",
+        "target": "out-10",
+        "at": "2026-09-24T06:29:51.861Z"
+      },
+      {
+        "id": "aud-009",
+        "user": "Ayesha Khan",
+        "role": "admin",
+        "action": "anomaly.status",
+        "target": "anm-002 → reviewing",
+        "at": "2026-09-23T10:29:51.861Z"
+      },
+      {
+        "id": "aud-010",
+        "user": "Ayesha Khan",
+        "role": "admin",
+        "action": "anomaly.status",
+        "target": "anm-006 → dismissed",
+        "at": "2026-09-23T06:29:51.861Z"
+      },
+      {
+        "id": "aud-011",
+        "user": "Bilal Ahmed",
+        "role": "regional_manager",
+        "action": "whatif.run",
+        "target": "itm-020 +10%",
+        "at": "2026-09-23T02:29:51.861Z"
+      },
+      {
+        "id": "aud-012",
+        "user": "Daniyal Raza",
+        "role": "analyst",
+        "action": "auth.login",
+        "target": "session",
+        "at": "2026-09-22T22:29:51.861Z"
+      }
+    ]
+  },
+  "meta": {
+    "generatedAt": "2026-09-24T08:29:51.861Z",
+    "filters": {},
+    "note": "Platform operations payload — reflects the sample cluster, not live infrastructure."
+  },
+  "insight": {
+    "summary": [
+      "9 pipeline runs completed in the last 24h with 1 failure (demand_forecast_features, retried); 11 tables ingested 1.25M rows.",
+      "Data quality runs 10 checks per cycle — 1 fail (duplicate order-line keys, quarantined) and 2 warns (near-duplicate customer emails, review velocity).",
+      "6 models are registered: 4 production, 2 staging; every production model carries its evaluation metrics in the registry."
+    ],
+    "whyItMatters": "Every number in this platform is only as trustworthy as the ingestion and quality layer behind it — the fail/warn items here map directly to anomalies visible on the Anomalies page, so data issues stay auditable end to end.",
+    "evidence": [
+      {
+        "metric": "Runs (24h)",
+        "value": "9 · 1 failed",
+        "detail": "Failed job retried successfully"
+      },
+      {
+        "metric": "Quality checks",
+        "value": "10 per cycle",
+        "detail": "1 fail · 2 warn · 7 pass"
+      },
+      {
+        "metric": "Models registered",
+        "value": "6",
+        "detail": "4 production · 2 staging"
+      }
+    ],
+    "period": "Last 24 hours"
+  }
+}

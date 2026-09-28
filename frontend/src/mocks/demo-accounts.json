@@ -1,0 +1,35 @@
+{
+  "accounts": [
+    {
+      "id": "usr-001",
+      "name": "Ayesha Khan",
+      "email": "admin@dineiq.pk",
+      "password": "demo1234",
+      "role": "admin"
+    },
+    {
+      "id": "usr-002",
+      "name": "Bilal Ahmed",
+      "email": "regional@dineiq.pk",
+      "password": "demo1234",
+      "role": "regional_manager"
+    },
+    {
+      "id": "usr-003",
+      "name": "Sana Malik",
+      "email": "manager@dineiq.pk",
+      "password": "demo1234",
+      "role": "restaurant_manager",
+      "outletScope": [
+        "DineIQ Gulberg III"
+      ]
+    },
+    {
+      "id": "usr-004",
+      "name": "Daniyal Raza",
+      "email": "analyst@dineiq.pk",
+      "password": "demo1234",
+      "role": "analyst"
+    }
+  ]
+}

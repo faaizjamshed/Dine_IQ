@@ -1,0 +1,294 @@
+{
+  "status": "PASS",
+  "version": "v4",
+  "source_evidence": "D:\\DineIQ\\results\\analytics\\gap1\\v4\\spark_gap1.json",
+  "checks": {
+    "menu_profitability": {
+      "path": "hdfs://localhost:9000/dineq/results/gap1/v4/menu_profitability",
+      "declared_rows": 200,
+      "readback_rows": 200,
+      "schema_matches": true,
+      "passed": true
+    },
+    "menu_by_location": {
+      "path": "hdfs://localhost:9000/dineq/results/gap1/v4/menu_by_location",
+      "declared_rows": 5000,
+      "readback_rows": 5000,
+      "schema_matches": true,
+      "passed": true
+    },
+    "basket_rules": {
+      "path": "hdfs://localhost:9000/dineq/results/gap1/v4/basket_rules",
+      "declared_rows": 955,
+      "readback_rows": 955,
+      "schema_matches": true,
+      "passed": true
+    },
+    "customer_rfm": {
+      "path": "hdfs://localhost:9000/dineq/results/gap1/v4/customer_rfm",
+      "declared_rows": 74437,
+      "readback_rows": 74437,
+      "schema_matches": true,
+      "passed": true
+    },
+    "wastage_dimensions": {
+      "path": "hdfs://localhost:9000/dineq/results/gap1/v4/wastage_dimensions",
+      "declared_rows": 107941,
+      "readback_rows": 107941,
+      "schema_matches": true,
+      "passed": true
+    },
+    "wastage_risk_ranking": {
+      "path": "hdfs://localhost:9000/dineq/results/gap1/v4/wastage_risk_ranking",
+      "declared_rows": 5000,
+      "readback_rows": 5000,
+      "schema_matches": true,
+      "passed": true
+    },
+    "price_sensitivity": {
+      "path": "hdfs://localhost:9000/dineq/results/gap1/v4/price_sensitivity",
+      "declared_rows": 2992,
+      "readback_rows": 2992,
+      "schema_matches": true,
+      "passed": true
+    },
+    "promotion_intelligence": {
+      "path": "hdfs://localhost:9000/dineq/results/gap1/v4/promotion_intelligence",
+      "declared_rows": 80,
+      "readback_rows": 80,
+      "schema_matches": true,
+      "passed": true
+    },
+    "rating_anomalies": {
+      "path": "hdfs://localhost:9000/dineq/results/gap1/v4/rating_anomalies",
+      "declared_rows": 0,
+      "readback_rows": 0,
+      "schema_matches": true,
+      "passed": true
+    },
+    "sales_anomalies": {
+      "path": "hdfs://localhost:9000/dineq/results/gap1/v4/sales_anomalies",
+      "declared_rows": 2138,
+      "readback_rows": 2138,
+      "schema_matches": true,
+      "passed": true
+    },
+    "recommendations": {
+      "path": "hdfs://localhost:9000/dineq/results/gap1/v4/recommendations",
+      "declared_rows": 1223,
+      "readback_rows": 1223,
+      "schema_matches": true,
+      "passed": true
+    },
+    "menu_all_catalog_items": {
+      "expected": 200,
+      "actual": 200,
+      "passed": true
+    },
+    "basket_thresholds": {
+      "min_pair_count": 500,
+      "min_confidence": 0.1,
+      "passed": true
+    }
+  },
+  "failed_checks": [],
+  "elapsed_seconds": 9.197,
+  "summaries": {
+    "menu_profitability": {
+      "Low Performer": 113,
+      "Profit Driver": 14,
+      "Hidden Opportunity": 36,
+      "Volume Driver": 37
+    },
+    "customer_rfm": {
+      "One-time customer": 2395,
+      "High-value loyal": 788,
+      "Established / lower engagement": 44289,
+      "Recent customer": 1577,
+      "At risk (90d inactive)": 25388
+    },
+    "price_sensitivity": {
+      "Moderately Price Sensitive": 252,
+      "Low Price Sensitivity": 245,
+      "Highly Price Sensitive": 2495
+    },
+    "promotion_intelligence": {
+      "No configured trap signal": 80
+    },
+    "basket_rules_top_lift": [
+      {
+        "item_a_name": "Double Dessert 1",
+        "item_b_name": "House Beverage 13",
+        "pair_count": 514,
+        "support": 0.0008410580313678647,
+        "confidence_a_to_b": 0.008857182244279019,
+        "lift_a_to_b": 1.0672188625507606
+      },
+      {
+        "item_a_name": "Double Dessert 1",
+        "item_b_name": "Fiery Chinese 12",
+        "pair_count": 551,
+        "support": 0.0009016011192289756,
+        "confidence_a_to_b": 0.009494761510890543,
+        "lift_a_to_b": 1.0596386186921278
+      },
+      {
+        "item_a_name": "Fresh Pakistani 1",
+        "item_b_name": "Signature Pizza 13",
+        "pair_count": 814,
+        "support": 0.0013319479329444394,
+        "confidence_a_to_b": 0.00876352478871723,
+        "lift_a_to_b": 1.0351172635780257
+      },
+      {
+        "item_a_name": "Spicy BBQ 1",
+        "item_b_name": "Masala Rice 9",
+        "pair_count": 843,
+        "support": 0.001379400623430175,
+        "confidence_a_to_b": 0.011062701766357838,
+        "lift_a_to_b": 1.0328145805045978
+      },
+      {
+        "item_a_name": "Spicy BBQ 1",
+        "item_b_name": "Creamy Pizza 14",
+        "pair_count": 647,
+        "support": 0.0010586858877334796,
+        "confidence_a_to_b": 0.008490590798141781,
+        "lift_a_to_b": 1.02770790402503
+      },
+      {
+        "item_a_name": "Fresh Pakistani 1",
+        "item_b_name": "Supreme BBQ 14",
+        "pair_count": 749,
+        "support": 0.001225588454269515,
+        "confidence_a_to_b": 0.008063734725736125,
+        "lift_a_to_b": 1.02453856998186
+      },
+      {
+        "item_a_name": "Spicy BBQ 1",
+        "item_b_name": "Spicy Rice 11",
+        "pair_count": 720,
+        "support": 0.0011781357637837794,
+        "confidence_a_to_b": 0.009448570903650822,
+        "lift_a_to_b": 1.0205642239665333
+      },
+      {
+        "item_a_name": "Spicy BBQ 1",
+        "item_b_name": "Loaded Coffee & Tea 8",
+        "pair_count": 882,
+        "support": 0.0014432163106351298,
+        "confidence_a_to_b": 0.011574499356972258,
+        "lift_a_to_b": 1.018954431651288
+      },
+      {
+        "item_a_name": "Spicy BBQ 1",
+        "item_b_name": "Fiery Pizza 7",
+        "pair_count": 1063,
+        "support": 0.0017393865512529965,
+        "confidence_a_to_b": 0.013949765098028923,
+        "lift_a_to_b": 1.015508003952818
+      },
+      {
+        "item_a_name": "Spicy BBQ 1",
+        "item_b_name": "Supreme Breakfast 11",
+        "pair_count": 742,
+        "support": 0.0012141343565660616,
+        "confidence_a_to_b": 0.00973727723681793,
+        "lift_a_to_b": 1.0142817324224862
+      }
+    ],
+    "sales_anomaly_samples": [
+      {
+        "restaurant_id": "R001",
+        "hour_start": "2025-11-16 10:00:00",
+        "orders": 9,
+        "hour_of_week": 42,
+        "median_orders": 4,
+        "mad": 1,
+        "method": "same restaurant/hour-of-week robust modified-z >3"
+      },
+      {
+        "restaurant_id": "R001",
+        "hour_start": "2025-09-28 11:00:00",
+        "orders": 11,
+        "hour_of_week": 42,
+        "median_orders": 4,
+        "mad": 1,
+        "method": "same restaurant/hour-of-week robust modified-z >3"
+      },
+      {
+        "restaurant_id": "R001",
+        "hour_start": "2026-06-07 11:00:00",
+        "orders": 10,
+        "hour_of_week": 42,
+        "median_orders": 4,
+        "mad": 1,
+        "method": "same restaurant/hour-of-week robust modified-z >3"
+      },
+      {
+        "restaurant_id": "R001",
+        "hour_start": "2026-07-26 11:00:00",
+        "orders": 9,
+        "hour_of_week": 42,
+        "median_orders": 4,
+        "mad": 1,
+        "method": "same restaurant/hour-of-week robust modified-z >3"
+      },
+      {
+        "restaurant_id": "R001",
+        "hour_start": "2025-09-15 02:00:00",
+        "orders": 8,
+        "hour_of_week": 57,
+        "median_orders": 2,
+        "mad": 1,
+        "method": "same restaurant/hour-of-week robust modified-z >3"
+      },
+      {
+        "restaurant_id": "R001",
+        "hour_start": "2025-11-24 04:00:00",
+        "orders": 8,
+        "hour_of_week": 60,
+        "median_orders": 3,
+        "mad": 1,
+        "method": "same restaurant/hour-of-week robust modified-z >3"
+      },
+      {
+        "restaurant_id": "R001",
+        "hour_start": "2025-06-09 05:00:00",
+        "orders": 8,
+        "hour_of_week": 60,
+        "median_orders": 3,
+        "mad": 1,
+        "method": "same restaurant/hour-of-week robust modified-z >3"
+      },
+      {
+        "restaurant_id": "R001",
+        "hour_start": "2025-09-22 13:00:00",
+        "orders": 9,
+        "hour_of_week": 68,
+        "median_orders": 4,
+        "mad": 1,
+        "method": "same restaurant/hour-of-week robust modified-z >3"
+      },
+      {
+        "restaurant_id": "R001",
+        "hour_start": "2025-04-16 02:00:00",
+        "orders": 7,
+        "hour_of_week": 105,
+        "median_orders": 2,
+        "mad": 1,
+        "method": "same restaurant/hour-of-week robust modified-z >3"
+      },
+      {
+        "restaurant_id": "R001",
+        "hour_start": "2026-08-19 09:00:00",
+        "orders": 8,
+        "hour_of_week": 112,
+        "median_orders": 2,
+        "mad": 1,
+        "method": "same restaurant/hour-of-week robust modified-z >3"
+      }
+    ],
+    "rating_anomalies_detected": 0
+  }
+}

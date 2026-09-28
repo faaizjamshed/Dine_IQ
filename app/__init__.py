@@ -1,0 +1,1 @@
+"""DineIQ Analytics application package."""

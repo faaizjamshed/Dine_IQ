@@ -1,0 +1,792 @@
+DineIQ
+
+ANALYTICS PLATFORM
+
+OVERVIEW
+
+Executive Dashboard
+
+INTELLIGENCE
+
+Menu Intelligence
+Customer Intelligence
+Basket & Bundles
+
+OPERATIONS
+
+Demand Forecast
+Wastage
+Locations
+Channels
+
+DECISIONS & ACTIONS
+
+Pricing & Promotions
+Anomalies
+Recommendations
+What-If Simulator
+
+PLATFORM
+
+Model Comparison
+Reports & Export
+Admin
+Collapse
+Wastage
+Full history
+Outlets:
+All outlets
+Categories:
+All categories
+Channels:
+All channels
+API CONNECTED
+API CONNECTED
+Search
+⌘K
+F
+
+Scope: Full historical periodHistorical waste costs and quantities. Preparation quantities, waste-unit percentages and previous-period deltas are unavailable. Select a date/outlet for monthly cost detail; dates cover whole calendar months. No predictive waste claims.
+
+Wastage cost
+PKR 117M
+Period total
+% of revenue
+2.6%
+Cost share of revenue
+Delta vs prev period
+—
+Positive = wastage grew
+Over-prep share
+27.7%
+Of wasted cost
+Spoilage share
+25.2%
+Of wasted cost
+Worst offender
+BBQ
+DineIQ F-7
+Wastage Trend
+
+Daily wasted cost vs % of revenue
+
+No wastage trend for the selected filters.
+
+Wastage by Category
+
+Share of total wasted cost · category wastage % on the right
+
+15 categories
+BBQ
+PKR 9.3M · —
+
+Top: Masala BBQ 11
+
+Breakfast
+PKR 9.1M · —
+
+Top: Special Breakfast 9
+
+Pakistani
+PKR 8.6M · —
+
+Top: Royal Pakistani 4
+
+Desserts
+PKR 8.5M · —
+
+Top: Double Dessert 1
+
+Sandwiches
+PKR 8.4M · —
+
+Top: Crispy Sandwiche 1
+
+Salads
+PKR 8.3M · —
+
+Top: House Salad 10
+
+Chinese
+PKR 7.9M · —
+
+Top: Fiery Chinese 12
+
+Burgers
+PKR 7.7M · —
+
+Top: Cheesy Burger 14
+
+Coffee & Tea
+PKR 7.4M · —
+
+Top: Loaded Coffee & Tea 8
+
+Fast Food
+PKR 7.4M · —
+
+Top: Crispy Fast Food 4
+
+Pizza
+PKR 7.4M · —
+
+Top: Smoky Pizza 4
+
+Beverages
+PKR 7.3M · —
+
+Top: Loaded Beverage 10
+
+Pasta
+PKR 6.9M · —
+
+Top: Double Pasta 6
+
+Seafood
+PKR 6.5M · —
+
+Top: Smoky Seafood 6
+
+Rice
+PKR 6.3M · —
+
+Top: Supreme Rice 12
+
+Outlet Wastage
+
+Per-outlet wasted cost and rate across the estate
+
+25 outlets
+OUTLET	CITY	WASTAGE %	COST
+DineIQ F-7	Islamabad	—	PKR 4.9M
+DineIQ Clifton	Karachi	—	PKR 4.8M
+DineIQ Bahadurabad	Karachi	—	PKR 4.8M
+DineIQ Canal Road	Faisalabad	—	PKR 4.8M
+DineIQ G-11	Islamabad	—	PKR 4.7M
+DineIQ Saddar	Rawalpindi	—	PKR 4.7M
+DineIQ Bahria Town	Rawalpindi	—	PKR 4.7M
+DineIQ Johar Town	Lahore	—	PKR 4.7M
+DineIQ D-Ground	Faisalabad	—	PKR 4.7M
+DineIQ North Nazimabad	Karachi	—	PKR 4.7M
+DineIQ Bahadurabad	Karachi	—	PKR 4.7M
+DineIQ DHA	Karachi	—	PKR 4.7M
+DineIQ Gulberg	Lahore	—	PKR 4.7M
+DineIQ Gulshan	Karachi	—	PKR 4.7M
+DineIQ North Nazimabad	Karachi	—	PKR 4.6M
+DineIQ Cantt	Multan	—	PKR 4.6M
+DineIQ Model Town	Lahore	—	PKR 4.6M
+DineIQ DHA	Karachi	—	PKR 4.6M
+DineIQ DHA	Lahore	—	PKR 4.6M
+DineIQ Gulgasht	Multan	—	PKR 4.6M
+DineIQ Blue Area	Islamabad	—	PKR 4.6M
+DineIQ Clifton	Karachi	—	PKR 4.6M
+DineIQ Gulshan	Karachi	—	PKR 4.6M
+DineIQ Gulberg	Lahore	—	PKR 4.6M
+DineIQ F-10	Islamabad	—	PKR 4.5M
+Item Wastage
+
+Item-level wastage rate, cost and prepared vs wasted quantity
+
+200 items
+ITEM	CATEGORY	WASTAGE %	COST	PREPARED	WASTED
+
+Loaded Coffee & Tea 8
+	Coffee & Tea	—	PKR 1.3M	—	1,275
+
+Fiery Chinese 12
+	Chinese	—	PKR 1.2M	—	1,223
+
+House Salad 10
+	Salads	—	PKR 1.2M	—	1,194
+
+Royal Pakistani 4
+	Pakistani	—	PKR 1.2M	—	1,186
+
+Masala BBQ 11
+	BBQ	—	PKR 1.1M	—	1,257
+
+Double Pasta 6
+	Pasta	—	PKR 1.1M	—	1,214
+
+Special Breakfast 9
+	Breakfast	—	PKR 1.1M	—	1,237
+
+Creamy Chinese 3
+	Chinese	—	PKR 1.1M	—	1,172
+
+Crispy Pakistani 11
+	Pakistani	—	PKR 1.1M	—	1,187
+
+Loaded Salad 7
+	Salads	—	PKR 1.1M	—	1,227
+
+Supreme BBQ 10
+	BBQ	—	PKR 1.1M	—	1,261
+
+Grilled Salad 5
+	Salads	—	PKR 1.1M	—	1,200
+
+Special Breakfast 1
+	Breakfast	—	PKR 1.1M	—	1,100
+
+Crispy Sandwiche 1
+	Sandwiches	—	PKR 1.1M	—	1,151
+
+Cheesy Pasta 12
+	Pasta	—	PKR 1M	—	1,187
+
+Herb Coffee & Tea 1
+	Coffee & Tea	—	PKR 1M	—	1,126
+
+Crispy Fast Food 4
+	Fast Food	—	PKR 1M	—	1,192
+
+Double Dessert 1
+	Desserts	—	PKR 1M	—	1,158
+
+Tandoori Dessert 12
+	Desserts	—	PKR 1M	—	1,169
+
+Cheesy Burger 14
+	Burgers	—	PKR 1M	—	1,254
+
+Loaded Salad 11
+	Salads	—	PKR 1M	—	1,330
+
+Loaded Beverage 10
+	Beverages	—	PKR 997K	—	1,070
+
+Smoky Seafood 6
+	Seafood	—	PKR 992K	—	1,168
+
+Herb Coffee & Tea 9
+	Coffee & Tea	—	PKR 990K	—	1,269
+
+Spicy Breakfast 6
+	Breakfast	—	PKR 972K	—	1,219
+
+Royal Pakistani 12
+	Pakistani	—	PKR 969K	—	1,223
+
+House Salad 6
+	Salads	—	PKR 950K	—	1,162
+
+Double Dessert 13
+	Desserts	—	PKR 950K	—	1,271
+
+Special Breakfast 13
+	Breakfast	—	PKR 947K	—	1,262
+
+Smoky Pizza 4
+	Pizza	—	PKR 936K	—	1,265
+
+House Beverage 13
+	Beverages	—	PKR 926K	—	1,128
+
+Deluxe Sandwiche 8
+	Sandwiches	—	PKR 922K	—	1,164
+
+Classic Burger 9
+	Burgers	—	PKR 899K	—	1,177
+
+Creamy Pizza 6
+	Pizza	—	PKR 897K	—	1,143
+
+Classic Pasta 3
+	Pasta	—	PKR 897K	—	1,182
+
+Classic Burger 1
+	Burgers	—	PKR 885K	—	1,304
+
+Fiery Seafood 9
+	Seafood	—	PKR 874K	—	1,188
+
+Special BBQ 12
+	BBQ	—	PKR 870K	—	1,221
+
+Fresh Sandwiche 3
+	Sandwiches	—	PKR 863K	—	1,239
+
+Creamy Pizza 10
+	Pizza	—	PKR 862K	—	1,176
+
+Special BBQ 8
+	BBQ	—	PKR 860K	—	1,179
+
+Deluxe Fast Food 3
+	Fast Food	—	PKR 847K	—	1,245
+
+Grilled Beverage 8
+	Beverages	—	PKR 837K	—	1,179
+
+Supreme Breakfast 3
+	Breakfast	—	PKR 814K	—	1,274
+
+Deluxe Pakistani 6
+	Pakistani	—	PKR 813K	—	1,142
+
+Supreme Rice 12
+	Rice	—	PKR 813K	—	1,155
+
+Spicy BBQ 1
+	BBQ	—	PKR 807K	—	1,157
+
+Cheesy Dessert 3
+	Desserts	—	PKR 804K	—	1,215
+
+Royal Sandwiche 6
+	Sandwiches	—	PKR 804K	—	1,227
+
+Crispy Fast Food 12
+	Fast Food	—	PKR 802K	—	1,261
+
+Classic Dessert 10
+	Desserts	—	PKR 794K	—	1,277
+
+Royal Fast Food 9
+	Fast Food	—	PKR 793K	—	1,234
+
+Fresh Sandwiche 7
+	Sandwiches	—	PKR 782K	—	1,106
+
+Special Breakfast 5
+	Breakfast	—	PKR 782K	—	1,228
+
+Masala Rice 1
+	Rice	—	PKR 780K	—	1,156
+
+Special BBQ 4
+	BBQ	—	PKR 776K	—	1,160
+
+Signature Chinese 2
+	Chinese	—	PKR 776K	—	1,193
+
+Signature Pizza 13
+	Pizza	—	PKR 772K	—	1,265
+
+Double Burger 4
+	Burgers	—	PKR 769K	—	1,152
+
+Creamy Seafood 8
+	Seafood	—	PKR 768K	—	1,177
+
+Signature Seafood 3
+	Seafood	—	PKR 766K	—	1,103
+
+Masala Breakfast 4
+	Breakfast	—	PKR 762K	—	1,105
+
+Masala Rice 13
+	Rice	—	PKR 760K	—	1,196
+
+Smoky Chinese 1
+	Chinese	—	PKR 759K	—	1,198
+
+Supreme BBQ 6
+	BBQ	—	PKR 752K	—	1,204
+
+Smoky Chinese 5
+	Chinese	—	PKR 747K	—	1,268
+
+Spicy Rice 11
+	Rice	—	PKR 746K	—	1,231
+
+Herb Coffee & Tea 5
+	Coffee & Tea	—	PKR 730K	—	1,202
+
+Supreme Breakfast 11
+	Breakfast	—	PKR 727K	—	1,171
+
+Herb Salad 8
+	Salads	—	PKR 706K	—	1,092
+
+Crispy Sandwiche 9
+	Sandwiches	—	PKR 701K	—	1,194
+
+Deluxe Fast Food 7
+	Fast Food	—	PKR 699K	—	1,177
+
+Tandoori Burger 3
+	Burgers	—	PKR 686K	—	1,061
+
+Fresh Pakistani 1
+	Pakistani	—	PKR 686K	—	1,184
+
+Signature Pizza 5
+	Pizza	—	PKR 683K	—	1,198
+
+Deluxe Sandwiche 4
+	Sandwiches	—	PKR 679K	—	1,167
+
+Loaded Beverage 14
+	Beverages	—	PKR 679K	—	1,267
+
+Fresh Sandwiche 11
+	Sandwiches	—	PKR 676K	—	1,156
+
+Royal Fast Food 5
+	Fast Food	—	PKR 675K	—	1,295
+
+Tandoori Pasta 1
+	Pasta	—	PKR 672K	—	1,212
+
+Cheesy Burger 2
+	Burgers	—	PKR 666K	—	1,157
+
+Double Dessert 9
+	Desserts	—	PKR 661K	—	1,242
+
+Classic Dessert 2
+	Desserts	—	PKR 660K	—	1,185
+
+Tandoori Pasta 9
+	Pasta	—	PKR 656K	—	1,220
+
+Crispy Pakistani 7
+	Pakistani	—	PKR 645K	—	1,210
+
+House Coffee & Tea 7
+	Coffee & Tea	—	PKR 641K	—	1,275
+
+Loaded Beverage 6
+	Beverages	—	PKR 639K	—	1,258
+
+Royal Sandwiche 2
+	Sandwiches	—	PKR 639K	—	1,207
+
+Fresh Pakistani 5
+	Pakistani	—	PKR 635K	—	1,192
+
+Tandoori Pasta 13
+	Pasta	—	PKR 634K	—	1,240
+
+House Coffee & Tea 3
+	Coffee & Tea	—	PKR 634K	—	1,259
+
+Masala BBQ 3
+	BBQ	—	PKR 633K	—	1,156
+
+Loaded Coffee & Tea 4
+	Coffee & Tea	—	PKR 626K	—	1,231
+
+Creamy Chinese 11
+	Chinese	—	PKR 619K	—	1,181
+
+Spicy BBQ 13
+	BBQ	—	PKR 612K	—	1,245
+
+Herb Salad 4
+	Salads	—	PKR 609K	—	1,111
+
+Smoky Seafood 2
+	Seafood	—	PKR 608K	—	1,249
+
+Spicy BBQ 9
+	BBQ	—	PKR 600K	—	1,158
+
+Herb Beverage 3
+	Beverages	—	PKR 599K	—	1,084
+
+Fiery Seafood 5
+	Seafood	—	PKR 586K	—	1,059
+
+Smoky Seafood 10
+	Seafood	—	PKR 584K	—	1,116
+
+Royal Sandwiche 10
+	Sandwiches	—	PKR 584K	—	1,192
+
+Fiery Pizza 3
+	Pizza	—	PKR 582K	—	1,160
+
+Special Rice 10
+	Rice	—	PKR 580K	—	1,190
+
+Cheesy Dessert 11
+	Desserts	—	PKR 574K	—	1,160
+
+Fiery Pizza 7
+	Pizza	—	PKR 571K	—	1,170
+
+Deluxe Pakistani 2
+	Pakistani	—	PKR 558K	—	1,128
+
+Grilled Coffee & Tea 6
+	Coffee & Tea	—	PKR 548K	—	1,190
+
+Loaded Beverage 2
+	Beverages	—	PKR 545K	—	1,181
+
+Classic Burger 5
+	Burgers	—	PKR 541K	—	1,214
+
+Smoky Chinese 13
+	Chinese	—	PKR 537K	—	1,165
+
+Cheesy Dessert 7
+	Desserts	—	PKR 537K	—	1,251
+
+Double Burger 8
+	Burgers	—	PKR 524K	—	1,189
+
+Crispy Fast Food 8
+	Fast Food	—	PKR 524K	—	1,164
+
+Tandoori Dessert 4
+	Desserts	—	PKR 511K	—	1,193
+
+Special Rice 6
+	Rice	—	PKR 506K	—	1,149
+
+House Beverage 5
+	Beverages	—	PKR 504K	—	1,141
+
+Royal Fast Food 1
+	Fast Food	—	PKR 502K	—	1,206
+
+Smoky Chinese 9
+	Chinese	—	PKR 499K	—	1,169
+
+Grilled Salad 9
+	Salads	—	PKR 495K	—	1,233
+
+Masala Rice 9
+	Rice	—	PKR 479K	—	1,167
+
+Fiery Chinese 4
+	Chinese	—	PKR 472K	—	1,139
+
+Classic Dessert 6
+	Desserts	—	PKR 470K	—	1,159
+
+Grilled Beverage 12
+	Beverages	—	PKR 466K	—	1,252
+
+Special Rice 2
+	Rice	—	PKR 461K	—	1,142
+
+Signature Chinese 10
+	Chinese	—	PKR 460K	—	1,173
+
+Masala Breakfast 8
+	Breakfast	—	PKR 429K	—	1,151
+
+Creamy Pizza 2
+	Pizza	—	PKR 429K	—	1,154
+
+Tandoori Pasta 5
+	Pasta	—	PKR 427K	—	1,209
+
+Cheesy Burger 10
+	Burgers	—	PKR 424K	—	1,149
+
+Deluxe Fast Food 11
+	Fast Food	—	PKR 408K	—	1,244
+
+Deluxe Pakistani 10
+	Pakistani	—	PKR 403K	—	1,205
+
+Tandoori Burger 11
+	Burgers	—	PKR 391K	—	1,147
+
+Masala Rice 5
+	Rice	—	PKR 391K	—	1,142
+
+Spicy Breakfast 2
+	Breakfast	—	PKR 389K	—	1,120
+
+Fresh Pakistani 13
+	Pakistani	—	PKR 389K	—	1,185
+
+Fiery Pizza 11
+	Pizza	—	PKR 386K	—	1,368
+
+Fresh Fast Food 10
+	Fast Food	—	PKR 383K	—	1,101
+
+Fresh Pakistani 9
+	Pakistani	—	PKR 369K	—	1,132
+
+Spicy Breakfast 10
+	Breakfast	—	PKR 366K	—	1,221
+
+Supreme BBQ 2
+	BBQ	—	PKR 359K	—	1,186
+
+Grilled Beverage 4
+	Beverages	—	PKR 354K	—	1,229
+
+Supreme Breakfast 7
+	Breakfast	—	PKR 345K	—	1,144
+
+Classic Pasta 7
+	Pasta	—	PKR 344K	—	1,149
+
+Double Dessert 5
+	Desserts	—	PKR 343K	—	1,121
+
+Cheesy Burger 6
+	Burgers	—	PKR 342K	—	1,137
+
+Masala BBQ 7
+	BBQ	—	PKR 341K	—	1,146
+
+Deluxe Pakistani 14
+	Pakistani	—	PKR 340K	—	1,142
+
+Masala Breakfast 12
+	Breakfast	—	PKR 332K	—	1,133
+
+Smoky Pizza 12
+	Pizza	—	PKR 322K	—	1,161
+
+Royal Pakistani 8
+	Pakistani	—	PKR 320K	—	1,310
+
+Signature Pizza 1
+	Pizza	—	PKR 317K	—	1,256
+
+Herb Salad 12
+	Salads	—	PKR 310K	—	1,119
+
+Crispy Sandwiche 13
+	Sandwiches	—	PKR 297K	—	1,159
+
+Supreme Rice 4
+	Rice	—	PKR 297K	—	1,169
+
+Fresh Fast Food 2
+	Fast Food	—	PKR 296K	—	1,274
+
+Supreme BBQ 14
+	BBQ	—	PKR 287K	—	1,261
+
+Classic Pasta 11
+	Pasta	—	PKR 287K	—	1,144
+
+Grilled Salad 1
+	Salads	—	PKR 282K	—	1,178
+
+Signature Pizza 9
+	Pizza	—	PKR 273K	—	1,143
+
+Signature Chinese 6
+	Chinese	—	PKR 271K	—	1,236
+
+Creamy Seafood 4
+	Seafood	—	PKR 267K	—	1,145
+
+Fiery Chinese 8
+	Chinese	—	PKR 262K	—	1,154
+
+Fiery Seafood 1
+	Seafood	—	PKR 260K	—	1,100
+
+Spicy Rice 3
+	Rice	—	PKR 259K	—	1,190
+
+Tandoori Burger 7
+	Burgers	—	PKR 256K	—	1,202
+
+Signature Seafood 7
+	Seafood	—	PKR 255K	—	1,302
+
+Double Pasta 2
+	Pasta	—	PKR 254K	—	1,172
+
+House Coffee & Tea 11
+	Coffee & Tea	—	PKR 242K	—	1,219
+
+Herb Beverage 11
+	Beverages	—	PKR 241K	—	1,134
+
+Fiery Seafood 13
+	Seafood	—	PKR 239K	—	1,166
+
+Crispy Sandwiche 5
+	Sandwiches	—	PKR 232K	—	1,220
+
+Fresh Fast Food 6
+	Fast Food	—	PKR 226K	—	1,133
+
+Loaded Salad 3
+	Salads	—	PKR 213K	—	1,161
+
+Grilled Coffee & Tea 10
+	Coffee & Tea	—	PKR 213K	—	1,170
+
+Grilled Salad 13
+	Salads	—	PKR 208K	—	1,232
+
+Spicy BBQ 5
+	BBQ	—	PKR 202K	—	1,329
+
+Tandoori Dessert 8
+	Desserts	—	PKR 200K	—	1,170
+
+Crispy Pakistani 3
+	Pakistani	—	PKR 196K	—	1,198
+
+Cheesy Pasta 8
+	Pasta	—	PKR 196K	—	1,106
+
+Signature Seafood 11
+	Seafood	—	PKR 194K	—	1,288
+
+Creamy Chinese 7
+	Chinese	—	PKR 192K	—	1,103
+
+Creamy Pizza 14
+	Pizza	—	PKR 191K	—	1,172
+
+House Beverage 1
+	Beverages	—	PKR 184K	—	1,087
+
+House Salad 2
+	Salads	—	PKR 183K	—	1,137
+
+Grilled Coffee & Tea 2
+	Coffee & Tea	—	PKR 182K	—	1,331
+
+Royal Fast Food 13
+	Fast Food	—	PKR 181K	—	1,086
+
+Loaded Coffee & Tea 12
+	Coffee & Tea	—	PKR 173K	—	1,230
+
+House Beverage 9
+	Beverages	—	PKR 168K	—	1,256
+
+Herb Beverage 7
+	Beverages	—	PKR 163K	—	1,224
+
+Double Pasta 10
+	Pasta	—	PKR 160K	—	1,130
+
+Classic Burger 13
+	Burgers	—	PKR 159K	—	1,185
+
+Smoky Pizza 8
+	Pizza	—	PKR 153K	—	1,153
+
+Deluxe Sandwiche 12
+	Sandwiches	—	PKR 150K	—	1,045
+
+Double Burger 12
+	Burgers	—	PKR 145K	—	1,079
+
+Cheesy Pasta 4
+	Pasta	—	PKR 142K	—	1,213
+
+Supreme Rice 8
+	Rice	—	PKR 127K	—	1,132
+
+Creamy Seafood 12
+	Seafood	—	PKR 124K	—	1,105
+
+Spicy Rice 7
+	Rice	—	PKR 115K	—	1,166
+
+Herb Coffee & Tea 13
+	Coffee & Tea	—	PKR 112K	—	1,144
+Classic Burger 1

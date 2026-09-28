@@ -1,0 +1,739 @@
+{
+  "routes": [
+    {
+      "route": "dashboard",
+      "loaded": true,
+      "invalid_text": [],
+      "body_characters": 4765,
+      "unavailable_disclosure": true
+    },
+    {
+      "route": "menu",
+      "loaded": true,
+      "invalid_text": [],
+      "body_characters": 17701,
+      "unavailable_disclosure": true
+    },
+    {
+      "route": "customers",
+      "loaded": true,
+      "invalid_text": [],
+      "body_characters": 4435,
+      "unavailable_disclosure": true
+    },
+    {
+      "route": "basket",
+      "loaded": true,
+      "invalid_text": [],
+      "body_characters": 68003,
+      "unavailable_disclosure": true
+    },
+    {
+      "route": "forecast",
+      "loaded": true,
+      "invalid_text": [],
+      "body_characters": 3289,
+      "unavailable_disclosure": true
+    },
+    {
+      "route": "wastage",
+      "loaded": true,
+      "invalid_text": [],
+      "body_characters": 12286,
+      "unavailable_disclosure": true
+    },
+    {
+      "route": "locations",
+      "loaded": true,
+      "invalid_text": [],
+      "body_characters": 3506,
+      "unavailable_disclosure": false
+    },
+    {
+      "route": "channels",
+      "loaded": true,
+      "invalid_text": [],
+      "body_characters": 2465,
+      "unavailable_disclosure": true
+    },
+    {
+      "route": "pricing",
+      "loaded": true,
+      "invalid_text": [],
+      "body_characters": 532588,
+      "unavailable_disclosure": true
+    },
+    {
+      "route": "anomalies",
+      "loaded": true,
+      "invalid_text": [],
+      "body_characters": 216469,
+      "unavailable_disclosure": true
+    },
+    {
+      "route": "recommendations",
+      "loaded": true,
+      "invalid_text": [],
+      "body_characters": 227596,
+      "unavailable_disclosure": true
+    },
+    {
+      "route": "what-if",
+      "loaded": true,
+      "invalid_text": [],
+      "body_characters": 1458,
+      "unavailable_disclosure": true
+    },
+    {
+      "route": "models",
+      "loaded": true,
+      "invalid_text": [],
+      "body_characters": 11907,
+      "unavailable_disclosure": true
+    },
+    {
+      "route": "reports",
+      "loaded": true,
+      "invalid_text": [],
+      "body_characters": 3155,
+      "unavailable_disclosure": true
+    },
+    {
+      "route": "admin",
+      "loaded": true,
+      "invalid_text": [],
+      "body_characters": 6194,
+      "unavailable_disclosure": true
+    }
+  ],
+  "checks": {
+    "protected_route_redirect": true,
+    "login_form": true,
+    "session_restored_on_refresh": true,
+    "direct_menu_navigation": true,
+    "mobile_no_document_overflow": true,
+    "menu_photo_coverage": true,
+    "menu_photos_decode": true,
+    "menu_photo_elements": true,
+    "dashboard_revenue_exact": true,
+    "menu_revenue_exact": true,
+    "margin_fraction_converted": true,
+    "unknown_rating_is_missing": true,
+    "basket_real_rules": true,
+    "unsupported_scope_rejected": true,
+    "whatif_real_response": true,
+    "report_real_rows": true,
+    "forecast_not_fabricated": true,
+    "hourly_model_prediction": true,
+    "legacy_ui_accessible": true,
+    "unsupported_scope_empty_state": true,
+    "loading_state": true,
+    "offline_error_state": true,
+    "server_logout": true,
+    "logout_survives_refresh": true
+  },
+  "console_errors": [],
+  "api_requests": [
+    {
+      "url": "http://127.0.0.1:3001/src/api/endpoints.ts",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/src/api/client.ts",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/src/api/integration.ts",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/src/api/queryKeys.ts",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/src/api/backend.ts",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/src/api/integration-details.ts",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/src/api/integration-system.ts",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/auth/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/auth/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/auth/login",
+      "status": 200,
+      "method": "POST"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/health",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/overview",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/filters",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/intelligence/menu?limit=1000",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/demand/peak-hours",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/intelligence/menu?limit=1000",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/intelligence/recommendations?limit=1000",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/intelligence/anomalies?limit=1000",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/src/api/client.ts",
+      "status": 304,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/src/api/endpoints.ts",
+      "status": 304,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/src/api/integration.ts",
+      "status": 304,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/src/api/queryKeys.ts",
+      "status": 304,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/src/api/backend.ts",
+      "status": 304,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/src/api/integration-details.ts",
+      "status": 304,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/src/api/integration-system.ts",
+      "status": 304,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/auth/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/auth/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/health",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/filters",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/demand/peak-hours",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/overview",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/intelligence/menu?limit=1000",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/intelligence/menu?limit=1000",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/intelligence/recommendations?limit=1000",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/intelligence/anomalies?limit=1000",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/intelligence/menu?limit=1000",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/intelligence/menu?limit=1000",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/intelligence/menu?limit=1000",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/customer-segments",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/intelligence/customers?limit=1000",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/intelligence/churn-risk?limit=1000",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/intelligence/baskets?limit=1000",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/intelligence/menu?limit=1000",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/ml/demand-comparison?limit=100",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/intelligence/menu?limit=1000",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/wastage",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/restaurants?limit=1000",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/reports/wastage_risk",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/export/wastage_risk?format=json&limit=5000",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/restaurants?limit=1000",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/restaurants?limit=1000",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/ratings",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/intelligence/menu?limit=1000",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/ratings",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/reports/locations_menu",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/reports/locations_menu",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/export/locations_menu?format=json&limit=5000",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/reports/locations_menu",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/export/locations_menu?format=json&limit=5000",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/export/locations_menu?format=json&limit=5000",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/channels",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/channels",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/intelligence/promotions?limit=1000",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/promotions?limit=1000",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/intelligence/menu?limit=1000",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/reports/price_sensitivity",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/export/price_sensitivity?format=json&limit=5000",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/intelligence/anomalies?limit=1000",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/intelligence/recommendations?limit=1000",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/system/evidence",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/ml/demand-comparison?limit=100",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/system/spark-jobs",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/auth/me",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/system/spark-jobs",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/system/evidence",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/system/analytics-artifacts",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/system/audit?limit=100",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/src/api/endpoints.ts",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/src/api/client.ts",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/src/api/integration.ts",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/src/api/queryKeys.ts",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/src/api/backend.ts",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/src/api/integration-details.ts",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/src/api/integration-system.ts",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/auth/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/auth/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/health",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/filters",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/intelligence/menu?limit=1000",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/intelligence/menu?limit=1000",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/intelligence/menu?limit=1000",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/intelligence/menu?limit=1000",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/overview",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/intelligence/baskets?limit=1000",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/demand/peak-hours",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/intelligence/menu?limit=1000",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/intelligence/menu?limit=1000",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/overview",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/intelligence/menu?limit=1000",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/intelligence/menu?limit=1000",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/intelligence/menu?limit=1000",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/what-if",
+      "status": 200,
+      "method": "POST"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/reports/menu",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/ml/demand-comparison?limit=100",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/ml/predict",
+      "status": 200,
+      "method": "POST"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/intelligence/menu?limit=1000",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/intelligence/menu?limit=1000",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/channels",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/channels",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/auth/logout",
+      "status": 200,
+      "method": "POST"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/overview",
+      "status": 401,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/src/api/endpoints.ts",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/src/api/client.ts",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/src/api/integration.ts",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/src/api/queryKeys.ts",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/src/api/backend.ts",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/src/api/integration-details.ts",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/src/api/integration-system.ts",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/auth/session",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/auth/session",
+      "status": 200,
+      "method": "GET"
+    }
+  ],
+  "all_passed": true
+}

@@ -1,0 +1,356 @@
+{
+  "data": {
+    "recommendations": [
+      {
+        "id": "rec-001",
+        "priority": "critical",
+        "type": "menu",
+        "action": "Feature Nihari in weekend deals across 6 high-traffic outlets — it holds a 38.2% margin with only 2.1% of its category volume.",
+        "itemId": "itm-013",
+        "categoryId": "cat-karahi-handi",
+        "entityLabel": "Nihari",
+        "estimatedImpact": {
+          "metric": "Monthly revenue",
+          "direction": "increase",
+          "estimate": "PKR 620K"
+        },
+        "evidence": [
+          {
+            "metric": "Margin",
+            "value": "38.2%",
+            "detail": "Highest in its category"
+          },
+          {
+            "metric": "Category volume share",
+            "value": "2.1%",
+            "detail": "Bottleneck is visibility, not demand quality"
+          },
+          {
+            "metric": "Rating",
+            "value": "4.6 / 5",
+            "detail": "Across 1,204 reviews"
+          }
+        ],
+        "status": "new",
+        "createdAt": "2026-09-22T09:15:00+05:00"
+      },
+      {
+        "id": "rec-002",
+        "priority": "critical",
+        "type": "wastage",
+        "action": "Cut Fresh Lime Soda prep batches by 20% on weekdays — 14.2% of prepared volume is being wasted.",
+        "itemId": "itm-042",
+        "categoryId": "cat-beverages",
+        "entityLabel": "Fresh Lime Soda",
+        "estimatedImpact": {
+          "metric": "Monthly wastage cost",
+          "direction": "decrease",
+          "estimate": "PKR 86K"
+        },
+        "evidence": [
+          {
+            "metric": "Wastage",
+            "value": "14.2%",
+            "detail": "Vs 4.0% national average"
+          },
+          {
+            "metric": "Wasted cost",
+            "value": "PKR 86K",
+            "detail": "Trailing 30 days"
+          },
+          {
+            "metric": "Affected outlets",
+            "value": "3",
+            "detail": "Zamzama, Clifton, Gulberg III"
+          }
+        ],
+        "status": "new",
+        "createdAt": "2026-09-21T18:40:00+05:00"
+      },
+      {
+        "id": "rec-003",
+        "priority": "critical",
+        "type": "promotion",
+        "action": "Rebalance Zinger Burger promotion cadence — 61% of its volume is promo-dependent and profit per order falls 18% on promo days.",
+        "itemId": "itm-020",
+        "categoryId": "cat-burgers",
+        "entityLabel": "Zinger Burger",
+        "estimatedImpact": {
+          "metric": "Contribution margin",
+          "direction": "increase",
+          "estimate": "PKR 410K / quarter"
+        },
+        "evidence": [
+          {
+            "metric": "Promo dependency",
+            "value": "61%",
+            "detail": "Share of volume sold on discount"
+          },
+          {
+            "metric": "Profit on promo days",
+            "value": "-18%",
+            "detail": "Per order vs non-promo days"
+          },
+          {
+            "metric": "Volume rank",
+            "value": "#3",
+            "detail": "Nationally by quantity"
+          }
+        ],
+        "status": "new",
+        "createdAt": "2026-09-20T11:05:00+05:00"
+      },
+      {
+        "id": "rec-004",
+        "priority": "high",
+        "type": "pricing",
+        "action": "Test a 5% price increase on Mutton Karahi at Lahore outlets — estimated elasticity is low and margin headroom exists.",
+        "itemId": "itm-009",
+        "categoryId": "cat-karahi-handi",
+        "entityLabel": "Mutton Karahi",
+        "estimatedImpact": {
+          "metric": "Monthly revenue",
+          "direction": "increase",
+          "estimate": "PKR 350K"
+        },
+        "evidence": [
+          {
+            "metric": "Elasticity",
+            "value": "0.42",
+            "detail": "Low sensitivity class"
+          },
+          {
+            "metric": "Margin",
+            "value": "36.8%",
+            "detail": "Category median: 31.4%"
+          },
+          {
+            "metric": "Rating",
+            "value": "4.5 / 5",
+            "detail": "Stable over 90 days"
+          }
+        ],
+        "status": "new",
+        "createdAt": "2026-09-19T15:30:00+05:00"
+      },
+      {
+        "id": "rec-005",
+        "priority": "high",
+        "type": "menu",
+        "action": "Remove Russian Salad from the printed menu at 4 outlets — lowest contribution in its category with a declining trend.",
+        "itemId": "itm-046",
+        "categoryId": "cat-soups-salads",
+        "entityLabel": "Russian Salad",
+        "estimatedImpact": {
+          "metric": "Monthly holding + wastage cost",
+          "direction": "decrease",
+          "estimate": "PKR 54K"
+        },
+        "evidence": [
+          {
+            "metric": "Margin",
+            "value": "9.4%",
+            "detail": "Lowest in Soups & Salads"
+          },
+          {
+            "metric": "90-day trend",
+            "value": "-12.6%",
+            "detail": "Quantity trend"
+          },
+          {
+            "metric": "Quantity share",
+            "value": "0.3%",
+            "detail": "Of national items sold"
+          }
+        ],
+        "status": "acknowledged",
+        "createdAt": "2026-09-17T10:20:00+05:00"
+      },
+      {
+        "id": "rec-006",
+        "priority": "high",
+        "type": "wastage",
+        "action": "Reduce Mozzarella Sticks freezer stock at DineIQ Zamzama — spoilage runs 9.8% against a 3.1% national average.",
+        "itemId": "itm-035",
+        "outletId": "out-05",
+        "entityLabel": "Mozzarella Sticks · DineIQ Zamzama",
+        "estimatedImpact": {
+          "metric": "Monthly wastage cost",
+          "direction": "decrease",
+          "estimate": "PKR 41K"
+        },
+        "evidence": [
+          {
+            "metric": "Wastage",
+            "value": "9.8%",
+            "detail": "At DineIQ Zamzama"
+          },
+          {
+            "metric": "National average",
+            "value": "3.1%",
+            "detail": "Same item, all outlets"
+          },
+          {
+            "metric": "Order trend",
+            "value": "+4.2%",
+            "detail": "Demand is not the cause — stock depth is"
+          }
+        ],
+        "status": "new",
+        "createdAt": "2026-09-18T08:55:00+05:00"
+      },
+      {
+        "id": "rec-007",
+        "priority": "medium",
+        "type": "operations",
+        "action": "Add one kitchen hand during 13:00–15:00 at DineIQ Gulberg III — orders per staffed hour exceed the capacity threshold on Fridays.",
+        "outletId": "out-10",
+        "entityLabel": "DineIQ Gulberg III",
+        "estimatedImpact": {
+          "metric": "Avg fulfilment time",
+          "direction": "decrease",
+          "estimate": "-3.2 min"
+        },
+        "evidence": [
+          {
+            "metric": "Friday peak orders",
+            "value": "142",
+            "detail": "13:00–15:00 average"
+          },
+          {
+            "metric": "Capacity threshold",
+            "value": "120",
+            "detail": "Per current staffing"
+          },
+          {
+            "metric": "Prep time",
+            "value": "18.4 min",
+            "detail": "Peak-hour average vs 12.1 off-peak"
+          }
+        ],
+        "status": "new",
+        "createdAt": "2026-09-16T14:10:00+05:00"
+      },
+      {
+        "id": "rec-008",
+        "priority": "medium",
+        "type": "bundling",
+        "action": "Bundle Falooda with Grill Platter orders — basket analysis shows a 2.3× association lift with 4.1% support.",
+        "itemId": "itm-038",
+        "entityLabel": "Falooda + Grill Platter",
+        "estimatedImpact": {
+          "metric": "Dessert attachment rate",
+          "direction": "increase",
+          "estimate": "+6.8%"
+        },
+        "evidence": [
+          {
+            "metric": "Lift",
+            "value": "2.3x",
+            "detail": "Association strength vs random pairing"
+          },
+          {
+            "metric": "Support",
+            "value": "4.1%",
+            "detail": "Of all baskets contain both"
+          },
+          {
+            "metric": "Confidence",
+            "value": "68%",
+            "detail": "Rule confidence from basket model"
+          }
+        ],
+        "status": "new",
+        "createdAt": "2026-09-15T16:45:00+05:00"
+      },
+      {
+        "id": "rec-009",
+        "priority": "low",
+        "type": "menu",
+        "action": "Pilot Haleem as a weekend-only item at 2 Islamabad outlets before considering a national rollout.",
+        "itemId": "itm-007",
+        "categoryId": "cat-biryani-rice",
+        "entityLabel": "Haleem",
+        "evidence": [
+          {
+            "metric": "Weekend revenue share",
+            "value": "71.4%",
+            "detail": "Of its total weekly sales"
+          },
+          {
+            "metric": "Margin",
+            "value": "33.6%",
+            "detail": "Healthy for its price band"
+          },
+          {
+            "metric": "History",
+            "value": "Insufficient",
+            "detail": "4 months — below model confidence threshold"
+          }
+        ],
+        "status": "new",
+        "createdAt": "2026-09-14T12:30:00+05:00"
+      },
+      {
+        "id": "rec-010",
+        "priority": "low",
+        "type": "pricing",
+        "action": "Refresh menu photography for Chai and other low-visibility profit items in the app ordering flow.",
+        "itemId": "itm-052",
+        "entityLabel": "Chai",
+        "evidence": [
+          {
+            "metric": "Margin",
+            "value": "58.2%",
+            "detail": "Highest-margin beverage"
+          },
+          {
+            "metric": "App channel share",
+            "value": "13%",
+            "detail": "Of national revenue"
+          },
+          {
+            "metric": "Item page views",
+            "value": "Bottom quartile",
+            "detail": "Among beverages"
+          }
+        ],
+        "status": "new",
+        "createdAt": "2026-09-13T09:00:00+05:00"
+      }
+    ]
+  },
+  "meta": {
+    "generatedAt": "2026-09-24T08:29:51.861Z",
+    "filters": {},
+    "modelName": "RecommendationEngine",
+    "modelVersion": "1.8",
+    "pipeline": "python"
+  },
+  "insight": {
+    "summary": [
+      "3 critical and 3 high-priority actions are open across 6 decision levers (menu, wastage, promotion, pricing, operations, bundling).",
+      "8 of 10 recommendations carry a quantified impact estimate; every card includes the evidence that triggered it.",
+      "Acknowledge or dismiss cards to record ownership — the engine re-ranks nightly from fresh pipeline output."
+    ],
+    "whyItMatters": "Acting on evidence-backed recommendations beats broad menu-wide changes: each action names the metrics that produced it, so managers can verify the reasoning before committing kitchen or pricing resources.",
+    "evidence": [
+      {
+        "metric": "Open actions",
+        "value": "10",
+        "detail": "Across all priorities"
+      },
+      {
+        "metric": "Critical",
+        "value": "3",
+        "detail": "Same-week action expected"
+      },
+      {
+        "metric": "With quantified impact",
+        "value": "8 of 10",
+        "detail": "Others include evidence only"
+      }
+    ],
+    "period": "Aug 25 – Sep 23, 2026"
+  }
+}

@@ -1,0 +1,14 @@
+services:
+  web:
+    build: .
+    image: dineiq-serving:submission-v1
+    ports:
+      - "127.0.0.1:5000:5000"
+    environment:
+      DINEIQ_ENV: development
+    volumes:
+      - ./results/submission/serving-v3:/bundle:ro
+      - serving_state:/state
+    restart: unless-stopped
+volumes:
+  serving_state:

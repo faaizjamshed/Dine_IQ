@@ -1,0 +1,4370 @@
+{
+  "pipeline": "independent pandas/NumPy from frozen raw CSV",
+  "source": "data/generated/*.csv",
+  "canonical_cleaning_reference": "results/spark/quality_cleaning.json (rules only; no Spark analytic values read)",
+  "spark_used_for_python_calculation": false,
+  "python_version": "3.11.9",
+  "elapsed_seconds": 23.861,
+  "chunk_size": 150000,
+  "expected_physical_rows": {
+    "customers": 75075,
+    "orders": 650000,
+    "order_items": 3000600,
+    "menu_items": 200,
+    "menu_categories": 15,
+    "restaurants": 25,
+    "pricing_history": 2992,
+    "promotions": 80,
+    "ratings": 220000,
+    "inventory": 90000,
+    "wastage": 110000
+  },
+  "orders_cleaning_audit": {
+    "input_rows": 650000,
+    "duplicate_primary_keys_removed": 0,
+    "missing_channels_filled": 1300,
+    "negative_discounts_nulled": 325
+  },
+  "order_items_cleaning_audit": {
+    "input_rows": 3000600,
+    "duplicate_primary_keys_removed": 600,
+    "invalid_quantity_after_dedup": 1500,
+    "invalid_price_after_dedup": 1200,
+    "line_total_nulled_for_unusable_components": 2699,
+    "valid_line_totals_recomputed": 1498,
+    "unique_order_item_ids": 3000000,
+    "chunk_size": 150000
+  },
+  "outputs": {
+    "restaurant_performance": {
+      "rows": 25,
+      "csv": "D:\\DineIQ\\results\\python\\restaurant_performance.csv",
+      "columns": [
+        "restaurant_id",
+        "restaurant_name",
+        "city",
+        "order_count",
+        "revenue",
+        "avg_order_value"
+      ],
+      "records": [
+        {
+          "restaurant_id": "R001",
+          "restaurant_name": "DineIQ Clifton",
+          "city": "Karachi",
+          "order_count": 24464,
+          "revenue": 207164356.12,
+          "avg_order_value": 8468.13
+        },
+        {
+          "restaurant_id": "R002",
+          "restaurant_name": "DineIQ DHA",
+          "city": "Karachi",
+          "order_count": 24400,
+          "revenue": 205731353.64,
+          "avg_order_value": 8431.61
+        },
+        {
+          "restaurant_id": "R003",
+          "restaurant_name": "DineIQ Gulshan",
+          "city": "Karachi",
+          "order_count": 24151,
+          "revenue": 204159566.57,
+          "avg_order_value": 8453.46
+        },
+        {
+          "restaurant_id": "R004",
+          "restaurant_name": "DineIQ North Nazimabad",
+          "city": "Karachi",
+          "order_count": 24481,
+          "revenue": 207131479.06,
+          "avg_order_value": 8460.91
+        },
+        {
+          "restaurant_id": "R005",
+          "restaurant_name": "DineIQ Bahadurabad",
+          "city": "Karachi",
+          "order_count": 24356,
+          "revenue": 204466778.11,
+          "avg_order_value": 8394.92
+        },
+        {
+          "restaurant_id": "R006",
+          "restaurant_name": "DineIQ Gulberg",
+          "city": "Lahore",
+          "order_count": 24559,
+          "revenue": 207313214.1,
+          "avg_order_value": 8441.44
+        },
+        {
+          "restaurant_id": "R007",
+          "restaurant_name": "DineIQ DHA",
+          "city": "Lahore",
+          "order_count": 24488,
+          "revenue": 206486557.48,
+          "avg_order_value": 8432.15
+        },
+        {
+          "restaurant_id": "R008",
+          "restaurant_name": "DineIQ Johar Town",
+          "city": "Lahore",
+          "order_count": 24690,
+          "revenue": 208883316.54,
+          "avg_order_value": 8460.24
+        },
+        {
+          "restaurant_id": "R009",
+          "restaurant_name": "DineIQ Model Town",
+          "city": "Lahore",
+          "order_count": 24454,
+          "revenue": 206460024.58,
+          "avg_order_value": 8442.79
+        },
+        {
+          "restaurant_id": "R010",
+          "restaurant_name": "DineIQ F-7",
+          "city": "Islamabad",
+          "order_count": 24286,
+          "revenue": 204107381.98,
+          "avg_order_value": 8404.32
+        },
+        {
+          "restaurant_id": "R011",
+          "restaurant_name": "DineIQ F-10",
+          "city": "Islamabad",
+          "order_count": 24448,
+          "revenue": 206186782.27,
+          "avg_order_value": 8433.69
+        },
+        {
+          "restaurant_id": "R012",
+          "restaurant_name": "DineIQ Blue Area",
+          "city": "Islamabad",
+          "order_count": 24194,
+          "revenue": 203695547.89,
+          "avg_order_value": 8419.26
+        },
+        {
+          "restaurant_id": "R013",
+          "restaurant_name": "DineIQ G-11",
+          "city": "Islamabad",
+          "order_count": 24334,
+          "revenue": 204052492.95,
+          "avg_order_value": 8385.49
+        },
+        {
+          "restaurant_id": "R014",
+          "restaurant_name": "DineIQ Saddar",
+          "city": "Rawalpindi",
+          "order_count": 24470,
+          "revenue": 206968007.21,
+          "avg_order_value": 8458.03
+        },
+        {
+          "restaurant_id": "R015",
+          "restaurant_name": "DineIQ Bahria Town",
+          "city": "Rawalpindi",
+          "order_count": 24509,
+          "revenue": 206889114.07,
+          "avg_order_value": 8441.35
+        },
+        {
+          "restaurant_id": "R016",
+          "restaurant_name": "DineIQ D-Ground",
+          "city": "Faisalabad",
+          "order_count": 24562,
+          "revenue": 208068371.43,
+          "avg_order_value": 8471.15
+        },
+        {
+          "restaurant_id": "R017",
+          "restaurant_name": "DineIQ Canal Road",
+          "city": "Faisalabad",
+          "order_count": 24728,
+          "revenue": 208744250.08,
+          "avg_order_value": 8441.61
+        },
+        {
+          "restaurant_id": "R018",
+          "restaurant_name": "DineIQ Gulgasht",
+          "city": "Multan",
+          "order_count": 24504,
+          "revenue": 205426956.32,
+          "avg_order_value": 8383.41
+        },
+        {
+          "restaurant_id": "R019",
+          "restaurant_name": "DineIQ Cantt",
+          "city": "Multan",
+          "order_count": 24278,
+          "revenue": 205514721.29,
+          "avg_order_value": 8465.06
+        },
+        {
+          "restaurant_id": "R020",
+          "restaurant_name": "DineIQ Clifton",
+          "city": "Karachi",
+          "order_count": 24687,
+          "revenue": 208236687.47,
+          "avg_order_value": 8435.07
+        },
+        {
+          "restaurant_id": "R021",
+          "restaurant_name": "DineIQ DHA",
+          "city": "Karachi",
+          "order_count": 24623,
+          "revenue": 208886471.22,
+          "avg_order_value": 8483.39
+        },
+        {
+          "restaurant_id": "R022",
+          "restaurant_name": "DineIQ Gulshan",
+          "city": "Karachi",
+          "order_count": 24428,
+          "revenue": 205736898.45,
+          "avg_order_value": 8422.18
+        },
+        {
+          "restaurant_id": "R023",
+          "restaurant_name": "DineIQ North Nazimabad",
+          "city": "Karachi",
+          "order_count": 24107,
+          "revenue": 203752536.23,
+          "avg_order_value": 8452.01
+        },
+        {
+          "restaurant_id": "R024",
+          "restaurant_name": "DineIQ Bahadurabad",
+          "city": "Karachi",
+          "order_count": 24474,
+          "revenue": 206369665.3,
+          "avg_order_value": 8432.2
+        },
+        {
+          "restaurant_id": "R025",
+          "restaurant_name": "DineIQ Gulberg",
+          "city": "Lahore",
+          "order_count": 24476,
+          "revenue": 206438353.56,
+          "avg_order_value": 8434.32
+        }
+      ]
+    },
+    "channel_performance": {
+      "rows": 6,
+      "csv": "D:\\DineIQ\\results\\python\\channel_performance.csv",
+      "columns": [
+        "ordering_channel",
+        "orders",
+        "avg_order_value",
+        "completed_revenue"
+      ],
+      "records": [
+        {
+          "ordering_channel": "Delivery Partner",
+          "orders": 134353,
+          "avg_order_value": 8477.55,
+          "completed_revenue": 1138984938.2
+        },
+        {
+          "ordering_channel": "Dine-In",
+          "orders": 146439,
+          "avg_order_value": 8372.52,
+          "completed_revenue": 1226063322.05
+        },
+        {
+          "ordering_channel": "Mobile App",
+          "orders": 177285,
+          "avg_order_value": 8465.34,
+          "completed_revenue": 1500778402.2
+        },
+        {
+          "ordering_channel": "Takeaway",
+          "orders": 84808,
+          "avg_order_value": 8392.47,
+          "completed_revenue": 711748822.41
+        },
+        {
+          "ordering_channel": "Unknown",
+          "orders": 1224,
+          "avg_order_value": 8443.74,
+          "completed_revenue": 10335137.35
+        },
+        {
+          "ordering_channel": "Website",
+          "orders": 67042,
+          "avg_order_value": 8486.62,
+          "completed_revenue": 568960261.71
+        }
+      ]
+    },
+    "monthly_demand": {
+      "rows": 18,
+      "csv": "D:\\DineIQ\\results\\python\\monthly_demand.csv",
+      "columns": [
+        "order_month",
+        "total_orders",
+        "completed_orders",
+        "completed_revenue"
+      ],
+      "records": [
+        {
+          "order_month": "2025-03",
+          "total_orders": 37610,
+          "completed_orders": 35354,
+          "completed_revenue": 298361068.4
+        },
+        {
+          "order_month": "2025-04",
+          "total_orders": 37669,
+          "completed_orders": 35477,
+          "completed_revenue": 300213944.79
+        },
+        {
+          "order_month": "2025-05",
+          "total_orders": 36047,
+          "completed_orders": 33927,
+          "completed_revenue": 286884659.12
+        },
+        {
+          "order_month": "2025-06",
+          "total_orders": 36041,
+          "completed_orders": 33890,
+          "completed_revenue": 285588790.22
+        },
+        {
+          "order_month": "2025-07",
+          "total_orders": 35601,
+          "completed_orders": 33510,
+          "completed_revenue": 283556828.21
+        },
+        {
+          "order_month": "2025-08",
+          "total_orders": 35501,
+          "completed_orders": 33353,
+          "completed_revenue": 282890826.21
+        },
+        {
+          "order_month": "2025-09",
+          "total_orders": 32949,
+          "completed_orders": 30964,
+          "completed_revenue": 260897401.37
+        },
+        {
+          "order_month": "2025-10",
+          "total_orders": 36208,
+          "completed_orders": 33926,
+          "completed_revenue": 288042371.58
+        },
+        {
+          "order_month": "2025-11",
+          "total_orders": 37929,
+          "completed_orders": 35695,
+          "completed_revenue": 300493702.52
+        },
+        {
+          "order_month": "2025-12",
+          "total_orders": 40848,
+          "completed_orders": 38331,
+          "completed_revenue": 323397426.62
+        },
+        {
+          "order_month": "2026-01",
+          "total_orders": 35242,
+          "completed_orders": 33170,
+          "completed_revenue": 279570592.0
+        },
+        {
+          "order_month": "2026-02",
+          "total_orders": 30152,
+          "completed_orders": 28405,
+          "completed_revenue": 239383359.0
+        },
+        {
+          "order_month": "2026-03",
+          "total_orders": 37104,
+          "completed_orders": 34868,
+          "completed_revenue": 295032853.79
+        },
+        {
+          "order_month": "2026-04",
+          "total_orders": 38021,
+          "completed_orders": 35801,
+          "completed_revenue": 301460215.22
+        },
+        {
+          "order_month": "2026-05",
+          "total_orders": 36332,
+          "completed_orders": 34173,
+          "completed_revenue": 287579293.92
+        },
+        {
+          "order_month": "2026-06",
+          "total_orders": 35753,
+          "completed_orders": 33645,
+          "completed_revenue": 283425569.24
+        },
+        {
+          "order_month": "2026-07",
+          "total_orders": 35303,
+          "completed_orders": 33180,
+          "completed_revenue": 279159013.58
+        },
+        {
+          "order_month": "2026-08",
+          "total_orders": 35690,
+          "completed_orders": 33482,
+          "completed_revenue": 280932968.13
+        }
+      ]
+    },
+    "weekday_peak_hour": {
+      "rows": 168,
+      "csv": "D:\\DineIQ\\results\\python\\weekday_peak_hour.csv",
+      "columns": [
+        "weekday",
+        "hour_of_day",
+        "orders",
+        "avg_order_value"
+      ],
+      "records": [
+        {
+          "weekday": 1,
+          "hour_of_day": 0,
+          "orders": 1055,
+          "avg_order_value": 8599.79
+        },
+        {
+          "weekday": 1,
+          "hour_of_day": 1,
+          "orders": 494,
+          "avg_order_value": 8229.77
+        },
+        {
+          "weekday": 1,
+          "hour_of_day": 2,
+          "orders": 528,
+          "avg_order_value": 8073.47
+        },
+        {
+          "weekday": 1,
+          "hour_of_day": 3,
+          "orders": 495,
+          "avg_order_value": 8438.63
+        },
+        {
+          "weekday": 1,
+          "hour_of_day": 4,
+          "orders": 520,
+          "avg_order_value": 8476.49
+        },
+        {
+          "weekday": 1,
+          "hour_of_day": 5,
+          "orders": 1062,
+          "avg_order_value": 8401.03
+        },
+        {
+          "weekday": 1,
+          "hour_of_day": 6,
+          "orders": 2020,
+          "avg_order_value": 8435.85
+        },
+        {
+          "weekday": 1,
+          "hour_of_day": 7,
+          "orders": 3707,
+          "avg_order_value": 8429.34
+        },
+        {
+          "weekday": 1,
+          "hour_of_day": 8,
+          "orders": 5257,
+          "avg_order_value": 8437.84
+        },
+        {
+          "weekday": 1,
+          "hour_of_day": 9,
+          "orders": 4316,
+          "avg_order_value": 8413.8
+        },
+        {
+          "weekday": 1,
+          "hour_of_day": 10,
+          "orders": 3109,
+          "avg_order_value": 8459.24
+        },
+        {
+          "weekday": 1,
+          "hour_of_day": 11,
+          "orders": 4152,
+          "avg_order_value": 8539.61
+        },
+        {
+          "weekday": 1,
+          "hour_of_day": 12,
+          "orders": 7878,
+          "avg_order_value": 8551.73
+        },
+        {
+          "weekday": 1,
+          "hour_of_day": 13,
+          "orders": 8781,
+          "avg_order_value": 8460.37
+        },
+        {
+          "weekday": 1,
+          "hour_of_day": 14,
+          "orders": 6872,
+          "avg_order_value": 8458.19
+        },
+        {
+          "weekday": 1,
+          "hour_of_day": 15,
+          "orders": 4156,
+          "avg_order_value": 8354.95
+        },
+        {
+          "weekday": 1,
+          "hour_of_day": 16,
+          "orders": 4214,
+          "avg_order_value": 8487.48
+        },
+        {
+          "weekday": 1,
+          "hour_of_day": 17,
+          "orders": 6742,
+          "avg_order_value": 8374.6
+        },
+        {
+          "weekday": 1,
+          "hour_of_day": 18,
+          "orders": 9417,
+          "avg_order_value": 8394.25
+        },
+        {
+          "weekday": 1,
+          "hour_of_day": 19,
+          "orders": 10363,
+          "avg_order_value": 8496.63
+        },
+        {
+          "weekday": 1,
+          "hour_of_day": 20,
+          "orders": 9412,
+          "avg_order_value": 8550.09
+        },
+        {
+          "weekday": 1,
+          "hour_of_day": 21,
+          "orders": 5295,
+          "avg_order_value": 8442.7
+        },
+        {
+          "weekday": 1,
+          "hour_of_day": 22,
+          "orders": 2551,
+          "avg_order_value": 8437.31
+        },
+        {
+          "weekday": 1,
+          "hour_of_day": 23,
+          "orders": 1681,
+          "avg_order_value": 8301.9
+        },
+        {
+          "weekday": 2,
+          "hour_of_day": 0,
+          "orders": 816,
+          "avg_order_value": 8224.97
+        },
+        {
+          "weekday": 2,
+          "hour_of_day": 1,
+          "orders": 424,
+          "avg_order_value": 8608.48
+        },
+        {
+          "weekday": 2,
+          "hour_of_day": 2,
+          "orders": 391,
+          "avg_order_value": 8232.0
+        },
+        {
+          "weekday": 2,
+          "hour_of_day": 3,
+          "orders": 405,
+          "avg_order_value": 8681.03
+        },
+        {
+          "weekday": 2,
+          "hour_of_day": 4,
+          "orders": 424,
+          "avg_order_value": 8644.66
+        },
+        {
+          "weekday": 2,
+          "hour_of_day": 5,
+          "orders": 814,
+          "avg_order_value": 8374.42
+        },
+        {
+          "weekday": 2,
+          "hour_of_day": 6,
+          "orders": 1650,
+          "avg_order_value": 8265.76
+        },
+        {
+          "weekday": 2,
+          "hour_of_day": 7,
+          "orders": 2893,
+          "avg_order_value": 8489.24
+        },
+        {
+          "weekday": 2,
+          "hour_of_day": 8,
+          "orders": 4056,
+          "avg_order_value": 8369.69
+        },
+        {
+          "weekday": 2,
+          "hour_of_day": 9,
+          "orders": 3304,
+          "avg_order_value": 8377.61
+        },
+        {
+          "weekday": 2,
+          "hour_of_day": 10,
+          "orders": 2426,
+          "avg_order_value": 8454.66
+        },
+        {
+          "weekday": 2,
+          "hour_of_day": 11,
+          "orders": 3185,
+          "avg_order_value": 8600.25
+        },
+        {
+          "weekday": 2,
+          "hour_of_day": 12,
+          "orders": 6188,
+          "avg_order_value": 8449.05
+        },
+        {
+          "weekday": 2,
+          "hour_of_day": 13,
+          "orders": 6986,
+          "avg_order_value": 8389.94
+        },
+        {
+          "weekday": 2,
+          "hour_of_day": 14,
+          "orders": 5264,
+          "avg_order_value": 8405.77
+        },
+        {
+          "weekday": 2,
+          "hour_of_day": 15,
+          "orders": 3261,
+          "avg_order_value": 8488.43
+        },
+        {
+          "weekday": 2,
+          "hour_of_day": 16,
+          "orders": 3207,
+          "avg_order_value": 8321.36
+        },
+        {
+          "weekday": 2,
+          "hour_of_day": 17,
+          "orders": 5413,
+          "avg_order_value": 8392.76
+        },
+        {
+          "weekday": 2,
+          "hour_of_day": 18,
+          "orders": 7496,
+          "avg_order_value": 8408.08
+        },
+        {
+          "weekday": 2,
+          "hour_of_day": 19,
+          "orders": 8099,
+          "avg_order_value": 8406.65
+        },
+        {
+          "weekday": 2,
+          "hour_of_day": 20,
+          "orders": 7384,
+          "avg_order_value": 8378.25
+        },
+        {
+          "weekday": 2,
+          "hour_of_day": 21,
+          "orders": 4105,
+          "avg_order_value": 8344.73
+        },
+        {
+          "weekday": 2,
+          "hour_of_day": 22,
+          "orders": 2025,
+          "avg_order_value": 8290.92
+        },
+        {
+          "weekday": 2,
+          "hour_of_day": 23,
+          "orders": 1280,
+          "avg_order_value": 8588.14
+        },
+        {
+          "weekday": 3,
+          "hour_of_day": 0,
+          "orders": 785,
+          "avg_order_value": 8661.01
+        },
+        {
+          "weekday": 3,
+          "hour_of_day": 1,
+          "orders": 417,
+          "avg_order_value": 8014.09
+        },
+        {
+          "weekday": 3,
+          "hour_of_day": 2,
+          "orders": 424,
+          "avg_order_value": 8630.09
+        },
+        {
+          "weekday": 3,
+          "hour_of_day": 3,
+          "orders": 427,
+          "avg_order_value": 8564.36
+        },
+        {
+          "weekday": 3,
+          "hour_of_day": 4,
+          "orders": 434,
+          "avg_order_value": 8492.07
+        },
+        {
+          "weekday": 3,
+          "hour_of_day": 5,
+          "orders": 826,
+          "avg_order_value": 8575.37
+        },
+        {
+          "weekday": 3,
+          "hour_of_day": 6,
+          "orders": 1556,
+          "avg_order_value": 8553.16
+        },
+        {
+          "weekday": 3,
+          "hour_of_day": 7,
+          "orders": 2858,
+          "avg_order_value": 8402.78
+        },
+        {
+          "weekday": 3,
+          "hour_of_day": 8,
+          "orders": 4054,
+          "avg_order_value": 8431.74
+        },
+        {
+          "weekday": 3,
+          "hour_of_day": 9,
+          "orders": 3260,
+          "avg_order_value": 8593.78
+        },
+        {
+          "weekday": 3,
+          "hour_of_day": 10,
+          "orders": 2406,
+          "avg_order_value": 8562.01
+        },
+        {
+          "weekday": 3,
+          "hour_of_day": 11,
+          "orders": 3276,
+          "avg_order_value": 8327.27
+        },
+        {
+          "weekday": 3,
+          "hour_of_day": 12,
+          "orders": 5923,
+          "avg_order_value": 8489.6
+        },
+        {
+          "weekday": 3,
+          "hour_of_day": 13,
+          "orders": 6791,
+          "avg_order_value": 8562.42
+        },
+        {
+          "weekday": 3,
+          "hour_of_day": 14,
+          "orders": 5321,
+          "avg_order_value": 8435.49
+        },
+        {
+          "weekday": 3,
+          "hour_of_day": 15,
+          "orders": 3224,
+          "avg_order_value": 8451.66
+        },
+        {
+          "weekday": 3,
+          "hour_of_day": 16,
+          "orders": 3171,
+          "avg_order_value": 8532.67
+        },
+        {
+          "weekday": 3,
+          "hour_of_day": 17,
+          "orders": 5127,
+          "avg_order_value": 8408.65
+        },
+        {
+          "weekday": 3,
+          "hour_of_day": 18,
+          "orders": 7289,
+          "avg_order_value": 8344.0
+        },
+        {
+          "weekday": 3,
+          "hour_of_day": 19,
+          "orders": 7917,
+          "avg_order_value": 8408.32
+        },
+        {
+          "weekday": 3,
+          "hour_of_day": 20,
+          "orders": 7283,
+          "avg_order_value": 8463.37
+        },
+        {
+          "weekday": 3,
+          "hour_of_day": 21,
+          "orders": 3992,
+          "avg_order_value": 8369.77
+        },
+        {
+          "weekday": 3,
+          "hour_of_day": 22,
+          "orders": 2080,
+          "avg_order_value": 8400.39
+        },
+        {
+          "weekday": 3,
+          "hour_of_day": 23,
+          "orders": 1288,
+          "avg_order_value": 8469.99
+        },
+        {
+          "weekday": 4,
+          "hour_of_day": 0,
+          "orders": 837,
+          "avg_order_value": 8217.22
+        },
+        {
+          "weekday": 4,
+          "hour_of_day": 1,
+          "orders": 429,
+          "avg_order_value": 8457.94
+        },
+        {
+          "weekday": 4,
+          "hour_of_day": 2,
+          "orders": 401,
+          "avg_order_value": 8241.66
+        },
+        {
+          "weekday": 4,
+          "hour_of_day": 3,
+          "orders": 416,
+          "avg_order_value": 8298.96
+        },
+        {
+          "weekday": 4,
+          "hour_of_day": 4,
+          "orders": 457,
+          "avg_order_value": 8582.02
+        },
+        {
+          "weekday": 4,
+          "hour_of_day": 5,
+          "orders": 854,
+          "avg_order_value": 8366.53
+        },
+        {
+          "weekday": 4,
+          "hour_of_day": 6,
+          "orders": 1602,
+          "avg_order_value": 8419.06
+        },
+        {
+          "weekday": 4,
+          "hour_of_day": 7,
+          "orders": 2865,
+          "avg_order_value": 8516.7
+        },
+        {
+          "weekday": 4,
+          "hour_of_day": 8,
+          "orders": 4182,
+          "avg_order_value": 8470.71
+        },
+        {
+          "weekday": 4,
+          "hour_of_day": 9,
+          "orders": 3376,
+          "avg_order_value": 8451.08
+        },
+        {
+          "weekday": 4,
+          "hour_of_day": 10,
+          "orders": 2385,
+          "avg_order_value": 8315.74
+        },
+        {
+          "weekday": 4,
+          "hour_of_day": 11,
+          "orders": 3154,
+          "avg_order_value": 8517.46
+        },
+        {
+          "weekday": 4,
+          "hour_of_day": 12,
+          "orders": 6173,
+          "avg_order_value": 8453.09
+        },
+        {
+          "weekday": 4,
+          "hour_of_day": 13,
+          "orders": 6928,
+          "avg_order_value": 8404.42
+        },
+        {
+          "weekday": 4,
+          "hour_of_day": 14,
+          "orders": 5266,
+          "avg_order_value": 8416.98
+        },
+        {
+          "weekday": 4,
+          "hour_of_day": 15,
+          "orders": 3289,
+          "avg_order_value": 8345.5
+        },
+        {
+          "weekday": 4,
+          "hour_of_day": 16,
+          "orders": 3287,
+          "avg_order_value": 8370.24
+        },
+        {
+          "weekday": 4,
+          "hour_of_day": 17,
+          "orders": 5141,
+          "avg_order_value": 8465.03
+        },
+        {
+          "weekday": 4,
+          "hour_of_day": 18,
+          "orders": 7300,
+          "avg_order_value": 8415.05
+        },
+        {
+          "weekday": 4,
+          "hour_of_day": 19,
+          "orders": 8156,
+          "avg_order_value": 8395.62
+        },
+        {
+          "weekday": 4,
+          "hour_of_day": 20,
+          "orders": 7203,
+          "avg_order_value": 8353.86
+        },
+        {
+          "weekday": 4,
+          "hour_of_day": 21,
+          "orders": 4016,
+          "avg_order_value": 8543.5
+        },
+        {
+          "weekday": 4,
+          "hour_of_day": 22,
+          "orders": 2027,
+          "avg_order_value": 8356.78
+        },
+        {
+          "weekday": 4,
+          "hour_of_day": 23,
+          "orders": 1193,
+          "avg_order_value": 8334.24
+        },
+        {
+          "weekday": 5,
+          "hour_of_day": 0,
+          "orders": 820,
+          "avg_order_value": 8585.04
+        },
+        {
+          "weekday": 5,
+          "hour_of_day": 1,
+          "orders": 382,
+          "avg_order_value": 8331.26
+        },
+        {
+          "weekday": 5,
+          "hour_of_day": 2,
+          "orders": 412,
+          "avg_order_value": 8024.54
+        },
+        {
+          "weekday": 5,
+          "hour_of_day": 3,
+          "orders": 399,
+          "avg_order_value": 8148.78
+        },
+        {
+          "weekday": 5,
+          "hour_of_day": 4,
+          "orders": 400,
+          "avg_order_value": 8493.66
+        },
+        {
+          "weekday": 5,
+          "hour_of_day": 5,
+          "orders": 795,
+          "avg_order_value": 8263.36
+        },
+        {
+          "weekday": 5,
+          "hour_of_day": 6,
+          "orders": 1603,
+          "avg_order_value": 8133.0
+        },
+        {
+          "weekday": 5,
+          "hour_of_day": 7,
+          "orders": 2877,
+          "avg_order_value": 8500.37
+        },
+        {
+          "weekday": 5,
+          "hour_of_day": 8,
+          "orders": 4078,
+          "avg_order_value": 8372.78
+        },
+        {
+          "weekday": 5,
+          "hour_of_day": 9,
+          "orders": 3308,
+          "avg_order_value": 8450.14
+        },
+        {
+          "weekday": 5,
+          "hour_of_day": 10,
+          "orders": 2450,
+          "avg_order_value": 8400.6
+        },
+        {
+          "weekday": 5,
+          "hour_of_day": 11,
+          "orders": 3247,
+          "avg_order_value": 8307.8
+        },
+        {
+          "weekday": 5,
+          "hour_of_day": 12,
+          "orders": 6186,
+          "avg_order_value": 8530.49
+        },
+        {
+          "weekday": 5,
+          "hour_of_day": 13,
+          "orders": 6859,
+          "avg_order_value": 8394.29
+        },
+        {
+          "weekday": 5,
+          "hour_of_day": 14,
+          "orders": 5168,
+          "avg_order_value": 8366.0
+        },
+        {
+          "weekday": 5,
+          "hour_of_day": 15,
+          "orders": 3241,
+          "avg_order_value": 8435.62
+        },
+        {
+          "weekday": 5,
+          "hour_of_day": 16,
+          "orders": 3237,
+          "avg_order_value": 8294.11
+        },
+        {
+          "weekday": 5,
+          "hour_of_day": 17,
+          "orders": 5250,
+          "avg_order_value": 8532.52
+        },
+        {
+          "weekday": 5,
+          "hour_of_day": 18,
+          "orders": 7354,
+          "avg_order_value": 8507.38
+        },
+        {
+          "weekday": 5,
+          "hour_of_day": 19,
+          "orders": 8188,
+          "avg_order_value": 8403.34
+        },
+        {
+          "weekday": 5,
+          "hour_of_day": 20,
+          "orders": 7232,
+          "avg_order_value": 8440.66
+        },
+        {
+          "weekday": 5,
+          "hour_of_day": 21,
+          "orders": 4078,
+          "avg_order_value": 8316.23
+        },
+        {
+          "weekday": 5,
+          "hour_of_day": 22,
+          "orders": 1982,
+          "avg_order_value": 8261.76
+        },
+        {
+          "weekday": 5,
+          "hour_of_day": 23,
+          "orders": 1233,
+          "avg_order_value": 8523.09
+        },
+        {
+          "weekday": 6,
+          "hour_of_day": 0,
+          "orders": 773,
+          "avg_order_value": 8217.43
+        },
+        {
+          "weekday": 6,
+          "hour_of_day": 1,
+          "orders": 396,
+          "avg_order_value": 8367.29
+        },
+        {
+          "weekday": 6,
+          "hour_of_day": 2,
+          "orders": 382,
+          "avg_order_value": 8527.26
+        },
+        {
+          "weekday": 6,
+          "hour_of_day": 3,
+          "orders": 403,
+          "avg_order_value": 8350.14
+        },
+        {
+          "weekday": 6,
+          "hour_of_day": 4,
+          "orders": 409,
+          "avg_order_value": 8061.01
+        },
+        {
+          "weekday": 6,
+          "hour_of_day": 5,
+          "orders": 799,
+          "avg_order_value": 8615.45
+        },
+        {
+          "weekday": 6,
+          "hour_of_day": 6,
+          "orders": 1701,
+          "avg_order_value": 8608.84
+        },
+        {
+          "weekday": 6,
+          "hour_of_day": 7,
+          "orders": 2825,
+          "avg_order_value": 8474.25
+        },
+        {
+          "weekday": 6,
+          "hour_of_day": 8,
+          "orders": 4085,
+          "avg_order_value": 8434.52
+        },
+        {
+          "weekday": 6,
+          "hour_of_day": 9,
+          "orders": 3330,
+          "avg_order_value": 8417.9
+        },
+        {
+          "weekday": 6,
+          "hour_of_day": 10,
+          "orders": 2430,
+          "avg_order_value": 8459.86
+        },
+        {
+          "weekday": 6,
+          "hour_of_day": 11,
+          "orders": 3209,
+          "avg_order_value": 8248.85
+        },
+        {
+          "weekday": 6,
+          "hour_of_day": 12,
+          "orders": 6017,
+          "avg_order_value": 8456.7
+        },
+        {
+          "weekday": 6,
+          "hour_of_day": 13,
+          "orders": 6690,
+          "avg_order_value": 8443.75
+        },
+        {
+          "weekday": 6,
+          "hour_of_day": 14,
+          "orders": 5236,
+          "avg_order_value": 8415.3
+        },
+        {
+          "weekday": 6,
+          "hour_of_day": 15,
+          "orders": 3219,
+          "avg_order_value": 8448.98
+        },
+        {
+          "weekday": 6,
+          "hour_of_day": 16,
+          "orders": 3214,
+          "avg_order_value": 8441.43
+        },
+        {
+          "weekday": 6,
+          "hour_of_day": 17,
+          "orders": 5268,
+          "avg_order_value": 8333.45
+        },
+        {
+          "weekday": 6,
+          "hour_of_day": 18,
+          "orders": 7207,
+          "avg_order_value": 8484.82
+        },
+        {
+          "weekday": 6,
+          "hour_of_day": 19,
+          "orders": 7997,
+          "avg_order_value": 8446.25
+        },
+        {
+          "weekday": 6,
+          "hour_of_day": 20,
+          "orders": 7131,
+          "avg_order_value": 8427.51
+        },
+        {
+          "weekday": 6,
+          "hour_of_day": 21,
+          "orders": 3967,
+          "avg_order_value": 8275.03
+        },
+        {
+          "weekday": 6,
+          "hour_of_day": 22,
+          "orders": 1981,
+          "avg_order_value": 8508.26
+        },
+        {
+          "weekday": 6,
+          "hour_of_day": 23,
+          "orders": 1177,
+          "avg_order_value": 8594.84
+        },
+        {
+          "weekday": 7,
+          "hour_of_day": 0,
+          "orders": 1001,
+          "avg_order_value": 8859.64
+        },
+        {
+          "weekday": 7,
+          "hour_of_day": 1,
+          "orders": 504,
+          "avg_order_value": 8330.69
+        },
+        {
+          "weekday": 7,
+          "hour_of_day": 2,
+          "orders": 509,
+          "avg_order_value": 8267.01
+        },
+        {
+          "weekday": 7,
+          "hour_of_day": 3,
+          "orders": 531,
+          "avg_order_value": 8363.45
+        },
+        {
+          "weekday": 7,
+          "hour_of_day": 4,
+          "orders": 502,
+          "avg_order_value": 8594.61
+        },
+        {
+          "weekday": 7,
+          "hour_of_day": 5,
+          "orders": 1034,
+          "avg_order_value": 8759.83
+        },
+        {
+          "weekday": 7,
+          "hour_of_day": 6,
+          "orders": 2059,
+          "avg_order_value": 8283.81
+        },
+        {
+          "weekday": 7,
+          "hour_of_day": 7,
+          "orders": 3750,
+          "avg_order_value": 8332.77
+        },
+        {
+          "weekday": 7,
+          "hour_of_day": 8,
+          "orders": 5241,
+          "avg_order_value": 8368.97
+        },
+        {
+          "weekday": 7,
+          "hour_of_day": 9,
+          "orders": 4122,
+          "avg_order_value": 8482.38
+        },
+        {
+          "weekday": 7,
+          "hour_of_day": 10,
+          "orders": 3132,
+          "avg_order_value": 8506.32
+        },
+        {
+          "weekday": 7,
+          "hour_of_day": 11,
+          "orders": 4060,
+          "avg_order_value": 8582.65
+        },
+        {
+          "weekday": 7,
+          "hour_of_day": 12,
+          "orders": 7874,
+          "avg_order_value": 8560.12
+        },
+        {
+          "weekday": 7,
+          "hour_of_day": 13,
+          "orders": 8727,
+          "avg_order_value": 8492.51
+        },
+        {
+          "weekday": 7,
+          "hour_of_day": 14,
+          "orders": 6800,
+          "avg_order_value": 8349.44
+        },
+        {
+          "weekday": 7,
+          "hour_of_day": 15,
+          "orders": 4179,
+          "avg_order_value": 8534.39
+        },
+        {
+          "weekday": 7,
+          "hour_of_day": 16,
+          "orders": 4236,
+          "avg_order_value": 8542.9
+        },
+        {
+          "weekday": 7,
+          "hour_of_day": 17,
+          "orders": 6979,
+          "avg_order_value": 8487.69
+        },
+        {
+          "weekday": 7,
+          "hour_of_day": 18,
+          "orders": 9443,
+          "avg_order_value": 8518.89
+        },
+        {
+          "weekday": 7,
+          "hour_of_day": 19,
+          "orders": 10258,
+          "avg_order_value": 8389.22
+        },
+        {
+          "weekday": 7,
+          "hour_of_day": 20,
+          "orders": 9467,
+          "avg_order_value": 8490.55
+        },
+        {
+          "weekday": 7,
+          "hour_of_day": 21,
+          "orders": 5276,
+          "avg_order_value": 8468.07
+        },
+        {
+          "weekday": 7,
+          "hour_of_day": 22,
+          "orders": 2604,
+          "avg_order_value": 8637.01
+        },
+        {
+          "weekday": 7,
+          "hour_of_day": 23,
+          "orders": 1599,
+          "avg_order_value": 8340.09
+        }
+      ]
+    },
+    "customer_segment_behavior": {
+      "rows": 5,
+      "csv": "D:\\DineIQ\\results\\python\\customer_segment_behavior.csv",
+      "columns": [
+        "customer_segment",
+        "customers",
+        "total_orders",
+        "avg_order_value",
+        "revenue"
+      ],
+      "records": [
+        {
+          "customer_segment": "High Value",
+          "customers": 6775,
+          "total_orders": 54982,
+          "avg_order_value": 8445.4,
+          "revenue": 464345105.82
+        },
+        {
+          "customer_segment": "Loyal",
+          "customers": 17935,
+          "total_orders": 143456,
+          "avg_order_value": 8444.83,
+          "revenue": 1211460832.29
+        },
+        {
+          "customer_segment": "New",
+          "customers": 13558,
+          "total_orders": 111133,
+          "avg_order_value": 8433.18,
+          "revenue": 937204396.06
+        },
+        {
+          "customer_segment": "Occasional",
+          "customers": 11241,
+          "total_orders": 92645,
+          "avg_order_value": 8433.28,
+          "revenue": 781301493.69
+        },
+        {
+          "customer_segment": "Regular",
+          "customers": 25491,
+          "total_orders": 208935,
+          "avg_order_value": 8435.92,
+          "revenue": 1762559056.06
+        }
+      ]
+    },
+    "promotion_effectiveness": {
+      "rows": 80,
+      "csv": "D:\\DineIQ\\results\\python\\promotion_effectiveness.csv",
+      "columns": [
+        "promotion_id",
+        "promotion_name",
+        "used_orders",
+        "avg_subtotal",
+        "avg_discount",
+        "final_revenue"
+      ],
+      "records": [
+        {
+          "promotion_id": "P0001",
+          "promotion_name": "Campaign 001",
+          "used_orders": 2195,
+          "avg_subtotal": 7498.89,
+          "avg_discount": 499.65,
+          "final_revenue": 17791721.71
+        },
+        {
+          "promotion_id": "P0002",
+          "promotion_name": "Campaign 002",
+          "used_orders": 2107,
+          "avg_subtotal": 7441.51,
+          "avg_discount": 371.83,
+          "final_revenue": 17244669.77
+        },
+        {
+          "promotion_id": "P0003",
+          "promotion_name": "Campaign 003",
+          "used_orders": 2128,
+          "avg_subtotal": 7396.28,
+          "avg_discount": 200.0,
+          "final_revenue": 17728532.92
+        },
+        {
+          "promotion_id": "P0004",
+          "promotion_name": "Campaign 004",
+          "used_orders": 2065,
+          "avg_subtotal": 7402.96,
+          "avg_discount": 737.98,
+          "final_revenue": 15943575.65
+        },
+        {
+          "promotion_id": "P0005",
+          "promotion_name": "Campaign 005",
+          "used_orders": 2228,
+          "avg_subtotal": 7515.82,
+          "avg_discount": 95.33,
+          "final_revenue": 19138294.5
+        },
+        {
+          "promotion_id": "P0006",
+          "promotion_name": "Campaign 006",
+          "used_orders": 2114,
+          "avg_subtotal": 7698.88,
+          "avg_discount": 97.16,
+          "final_revenue": 18597442.03
+        },
+        {
+          "promotion_id": "P0007",
+          "promotion_name": "Campaign 007",
+          "used_orders": 1979,
+          "avg_subtotal": 7361.47,
+          "avg_discount": 197.67,
+          "final_revenue": 16418912.94
+        },
+        {
+          "promotion_id": "P0008",
+          "promotion_name": "Campaign 008",
+          "used_orders": 2129,
+          "avg_subtotal": 7270.72,
+          "avg_discount": 1797.45,
+          "final_revenue": 13520798.73
+        },
+        {
+          "promotion_id": "P0009",
+          "promotion_name": "Campaign 009",
+          "used_orders": 2185,
+          "avg_subtotal": 7568.35,
+          "avg_discount": 754.64,
+          "final_revenue": 17239901.76
+        },
+        {
+          "promotion_id": "P0010",
+          "promotion_name": "Campaign 010",
+          "used_orders": 2160,
+          "avg_subtotal": 7604.81,
+          "avg_discount": 199.44,
+          "final_revenue": 18510957.34
+        },
+        {
+          "promotion_id": "P0011",
+          "promotion_name": "Campaign 011",
+          "used_orders": 2082,
+          "avg_subtotal": 7529.7,
+          "avg_discount": 1876.14,
+          "final_revenue": 13650845.77
+        },
+        {
+          "promotion_id": "P0012",
+          "promotion_name": "Campaign 012",
+          "used_orders": 2052,
+          "avg_subtotal": 7529.44,
+          "avg_discount": 150.0,
+          "final_revenue": 17527575.89
+        },
+        {
+          "promotion_id": "P0013",
+          "promotion_name": "Campaign 013",
+          "used_orders": 2159,
+          "avg_subtotal": 7329.81,
+          "avg_discount": 1816.37,
+          "final_revenue": 13815706.96
+        },
+        {
+          "promotion_id": "P0014",
+          "promotion_name": "Campaign 014",
+          "used_orders": 2156,
+          "avg_subtotal": 7472.6,
+          "avg_discount": 291.79,
+          "final_revenue": 17926326.69
+        },
+        {
+          "promotion_id": "P0015",
+          "promotion_name": "Campaign 015",
+          "used_orders": 2165,
+          "avg_subtotal": 7474.09,
+          "avg_discount": 197.69,
+          "final_revenue": 18237651.34
+        },
+        {
+          "promotion_id": "P0016",
+          "promotion_name": "Campaign 016",
+          "used_orders": 2158,
+          "avg_subtotal": 7431.01,
+          "avg_discount": 200.0,
+          "final_revenue": 18068166.15
+        },
+        {
+          "promotion_id": "P0017",
+          "promotion_name": "Campaign 017",
+          "used_orders": 2121,
+          "avg_subtotal": 7418.82,
+          "avg_discount": 299.87,
+          "final_revenue": 17485969.52
+        },
+        {
+          "promotion_id": "P0018",
+          "promotion_name": "Campaign 018",
+          "used_orders": 2010,
+          "avg_subtotal": 7376.9,
+          "avg_discount": 2204.86,
+          "final_revenue": 12068015.53
+        },
+        {
+          "promotion_id": "P0019",
+          "promotion_name": "Campaign 019",
+          "used_orders": 2160,
+          "avg_subtotal": 7459.39,
+          "avg_discount": 474.75,
+          "final_revenue": 17470067.3
+        },
+        {
+          "promotion_id": "P0020",
+          "promotion_name": "Campaign 020",
+          "used_orders": 2215,
+          "avg_subtotal": 7493.07,
+          "avg_discount": 1122.88,
+          "final_revenue": 16353538.25
+        },
+        {
+          "promotion_id": "P0021",
+          "promotion_name": "Campaign 021",
+          "used_orders": 2182,
+          "avg_subtotal": 7478.46,
+          "avg_discount": 95.08,
+          "final_revenue": 18649202.54
+        },
+        {
+          "promotion_id": "P0022",
+          "promotion_name": "Campaign 022",
+          "used_orders": 2171,
+          "avg_subtotal": 7398.13,
+          "avg_discount": 739.42,
+          "final_revenue": 16746891.64
+        },
+        {
+          "promotion_id": "P0023",
+          "promotion_name": "Campaign 023",
+          "used_orders": 2114,
+          "avg_subtotal": 7622.06,
+          "avg_discount": 1143.18,
+          "final_revenue": 15873995.98
+        },
+        {
+          "promotion_id": "P0024",
+          "promotion_name": "Campaign 024",
+          "used_orders": 2107,
+          "avg_subtotal": 7355.31,
+          "avg_discount": 2206.93,
+          "final_revenue": 12591114.58
+        },
+        {
+          "promotion_id": "P0025",
+          "promotion_name": "Campaign 025",
+          "used_orders": 2079,
+          "avg_subtotal": 7397.91,
+          "avg_discount": 188.93,
+          "final_revenue": 17353685.65
+        },
+        {
+          "promotion_id": "P0026",
+          "promotion_name": "Campaign 026",
+          "used_orders": 2114,
+          "avg_subtotal": 7550.74,
+          "avg_discount": 1128.25,
+          "final_revenue": 15734948.99
+        },
+        {
+          "promotion_id": "P0027",
+          "promotion_name": "Campaign 027",
+          "used_orders": 2125,
+          "avg_subtotal": 7448.02,
+          "avg_discount": 291.95,
+          "final_revenue": 17610766.46
+        },
+        {
+          "promotion_id": "P0028",
+          "promotion_name": "Campaign 028",
+          "used_orders": 2080,
+          "avg_subtotal": 7513.18,
+          "avg_discount": 472.34,
+          "final_revenue": 16959815.68
+        },
+        {
+          "promotion_id": "P0029",
+          "promotion_name": "Campaign 029",
+          "used_orders": 2180,
+          "avg_subtotal": 7369.42,
+          "avg_discount": 2202.16,
+          "final_revenue": 13072132.08
+        },
+        {
+          "promotion_id": "P0030",
+          "promotion_name": "Campaign 030",
+          "used_orders": 2088,
+          "avg_subtotal": 7366.91,
+          "avg_discount": 149.07,
+          "final_revenue": 17447513.82
+        },
+        {
+          "promotion_id": "P0031",
+          "promotion_name": "Campaign 031",
+          "used_orders": 2131,
+          "avg_subtotal": 7502.11,
+          "avg_discount": 749.88,
+          "final_revenue": 16668211.57
+        },
+        {
+          "promotion_id": "P0032",
+          "promotion_name": "Campaign 032",
+          "used_orders": 2143,
+          "avg_subtotal": 7397.35,
+          "avg_discount": 2209.76,
+          "final_revenue": 12904410.93
+        },
+        {
+          "promotion_id": "P0033",
+          "promotion_name": "Campaign 033",
+          "used_orders": 2165,
+          "avg_subtotal": 7504.61,
+          "avg_discount": 743.93,
+          "final_revenue": 16958152.79
+        },
+        {
+          "promotion_id": "P0034",
+          "promotion_name": "Campaign 034",
+          "used_orders": 2160,
+          "avg_subtotal": 7526.64,
+          "avg_discount": 99.26,
+          "final_revenue": 18574052.87
+        },
+        {
+          "promotion_id": "P0035",
+          "promotion_name": "Campaign 035",
+          "used_orders": 2021,
+          "avg_subtotal": 7539.18,
+          "avg_discount": 479.46,
+          "final_revenue": 16520104.1
+        },
+        {
+          "promotion_id": "P0036",
+          "promotion_name": "Campaign 036",
+          "used_orders": 2107,
+          "avg_subtotal": 7524.27,
+          "avg_discount": 1128.58,
+          "final_revenue": 15614534.74
+        },
+        {
+          "promotion_id": "P0037",
+          "promotion_name": "Campaign 037",
+          "used_orders": 2071,
+          "avg_subtotal": 7602.33,
+          "avg_discount": 297.1,
+          "final_revenue": 17517365.38
+        },
+        {
+          "promotion_id": "P0038",
+          "promotion_name": "Campaign 038",
+          "used_orders": 2109,
+          "avg_subtotal": 7526.02,
+          "avg_discount": 752.5,
+          "final_revenue": 16545808.01
+        },
+        {
+          "promotion_id": "P0039",
+          "promotion_name": "Campaign 039",
+          "used_orders": 2195,
+          "avg_subtotal": 7435.08,
+          "avg_discount": 471.3,
+          "final_revenue": 17702732.45
+        },
+        {
+          "promotion_id": "P0040",
+          "promotion_name": "Campaign 040",
+          "used_orders": 2201,
+          "avg_subtotal": 7413.31,
+          "avg_discount": 99.27,
+          "final_revenue": 18638916.2
+        },
+        {
+          "promotion_id": "P0041",
+          "promotion_name": "Campaign 041",
+          "used_orders": 2182,
+          "avg_subtotal": 7610.41,
+          "avg_discount": 1521.92,
+          "final_revenue": 15402252.74
+        },
+        {
+          "promotion_id": "P0042",
+          "promotion_name": "Campaign 042",
+          "used_orders": 2200,
+          "avg_subtotal": 7497.8,
+          "avg_discount": 1496.43,
+          "final_revenue": 15300081.24
+        },
+        {
+          "promotion_id": "P0043",
+          "promotion_name": "Campaign 043",
+          "used_orders": 2192,
+          "avg_subtotal": 7480.71,
+          "avg_discount": 99.77,
+          "final_revenue": 18727660.52
+        },
+        {
+          "promotion_id": "P0044",
+          "promotion_name": "Campaign 044",
+          "used_orders": 2052,
+          "avg_subtotal": 7632.42,
+          "avg_discount": 150.0,
+          "final_revenue": 17774541.54
+        },
+        {
+          "promotion_id": "P0045",
+          "promotion_name": "Campaign 045",
+          "used_orders": 2131,
+          "avg_subtotal": 7584.49,
+          "avg_discount": 2272.92,
+          "final_revenue": 13136806.0
+        },
+        {
+          "promotion_id": "P0046",
+          "promotion_name": "Campaign 046",
+          "used_orders": 2143,
+          "avg_subtotal": 7534.43,
+          "avg_discount": 1130.67,
+          "final_revenue": 15899718.48
+        },
+        {
+          "promotion_id": "P0047",
+          "promotion_name": "Campaign 047",
+          "used_orders": 2212,
+          "avg_subtotal": 7514.97,
+          "avg_discount": 99.77,
+          "final_revenue": 18988547.32
+        },
+        {
+          "promotion_id": "P0048",
+          "promotion_name": "Campaign 048",
+          "used_orders": 2129,
+          "avg_subtotal": 7452.7,
+          "avg_discount": 1488.36,
+          "final_revenue": 14723275.6
+        },
+        {
+          "promotion_id": "P0049",
+          "promotion_name": "Campaign 049",
+          "used_orders": 2106,
+          "avg_subtotal": 7495.89,
+          "avg_discount": 2239.46,
+          "final_revenue": 12847793.0
+        },
+        {
+          "promotion_id": "P0050",
+          "promotion_name": "Campaign 050",
+          "used_orders": 2159,
+          "avg_subtotal": 7437.7,
+          "avg_discount": 290.27,
+          "final_revenue": 17868369.61
+        },
+        {
+          "promotion_id": "P0051",
+          "promotion_name": "Campaign 051",
+          "used_orders": 2144,
+          "avg_subtotal": 7553.11,
+          "avg_discount": 144.68,
+          "final_revenue": 18386143.24
+        },
+        {
+          "promotion_id": "P0052",
+          "promotion_name": "Campaign 052",
+          "used_orders": 2092,
+          "avg_subtotal": 7567.24,
+          "avg_discount": 1513.45,
+          "final_revenue": 14686920.58
+        },
+        {
+          "promotion_id": "P0053",
+          "promotion_name": "Campaign 053",
+          "used_orders": 2158,
+          "avg_subtotal": 7407.28,
+          "avg_discount": 100.0,
+          "final_revenue": 18261305.38
+        },
+        {
+          "promotion_id": "P0054",
+          "promotion_name": "Campaign 054",
+          "used_orders": 2149,
+          "avg_subtotal": 7589.92,
+          "avg_discount": 1897.96,
+          "final_revenue": 14186304.04
+        },
+        {
+          "promotion_id": "P0055",
+          "promotion_name": "Campaign 055",
+          "used_orders": 2163,
+          "avg_subtotal": 7459.36,
+          "avg_discount": 142.85,
+          "final_revenue": 18318726.83
+        },
+        {
+          "promotion_id": "P0056",
+          "promotion_name": "Campaign 056",
+          "used_orders": 2217,
+          "avg_subtotal": 7439.2,
+          "avg_discount": 371.98,
+          "final_revenue": 18138379.62
+        },
+        {
+          "promotion_id": "P0057",
+          "promotion_name": "Campaign 057",
+          "used_orders": 2175,
+          "avg_subtotal": 7560.77,
+          "avg_discount": 378.09,
+          "final_revenue": 18091735.54
+        },
+        {
+          "promotion_id": "P0058",
+          "promotion_name": "Campaign 058",
+          "used_orders": 2123,
+          "avg_subtotal": 7472.23,
+          "avg_discount": 189.16,
+          "final_revenue": 17899616.83
+        },
+        {
+          "promotion_id": "P0059",
+          "promotion_name": "Campaign 059",
+          "used_orders": 2155,
+          "avg_subtotal": 7526.12,
+          "avg_discount": 2254.86,
+          "final_revenue": 13183943.63
+        },
+        {
+          "promotion_id": "P0060",
+          "promotion_name": "Campaign 060",
+          "used_orders": 2128,
+          "avg_subtotal": 7543.18,
+          "avg_discount": 296.62,
+          "final_revenue": 17853322.47
+        },
+        {
+          "promotion_id": "P0061",
+          "promotion_name": "Campaign 061",
+          "used_orders": 2099,
+          "avg_subtotal": 7560.09,
+          "avg_discount": 291.71,
+          "final_revenue": 17665746.82
+        },
+        {
+          "promotion_id": "P0062",
+          "promotion_name": "Campaign 062",
+          "used_orders": 2164,
+          "avg_subtotal": 7511.37,
+          "avg_discount": 97.97,
+          "final_revenue": 18568550.05
+        },
+        {
+          "promotion_id": "P0063",
+          "promotion_name": "Campaign 063",
+          "used_orders": 2135,
+          "avg_subtotal": 7592.51,
+          "avg_discount": 99.11,
+          "final_revenue": 18520042.91
+        },
+        {
+          "promotion_id": "P0064",
+          "promotion_name": "Campaign 064",
+          "used_orders": 2117,
+          "avg_subtotal": 7547.13,
+          "avg_discount": 498.35,
+          "final_revenue": 17280405.43
+        },
+        {
+          "promotion_id": "P0065",
+          "promotion_name": "Campaign 065",
+          "used_orders": 2095,
+          "avg_subtotal": 7480.45,
+          "avg_discount": 96.8,
+          "final_revenue": 17904346.38
+        },
+        {
+          "promotion_id": "P0066",
+          "promotion_name": "Campaign 066",
+          "used_orders": 2141,
+          "avg_subtotal": 7435.29,
+          "avg_discount": 371.67,
+          "final_revenue": 17507013.6
+        },
+        {
+          "promotion_id": "P0067",
+          "promotion_name": "Campaign 067",
+          "used_orders": 2176,
+          "avg_subtotal": 7581.75,
+          "avg_discount": 749.86,
+          "final_revenue": 17218570.66
+        },
+        {
+          "promotion_id": "P0068",
+          "promotion_name": "Campaign 068",
+          "used_orders": 2074,
+          "avg_subtotal": 7438.26,
+          "avg_discount": 743.29,
+          "final_revenue": 16081359.78
+        },
+        {
+          "promotion_id": "P0069",
+          "promotion_name": "Campaign 069",
+          "used_orders": 2063,
+          "avg_subtotal": 7455.77,
+          "avg_discount": 1848.09,
+          "final_revenue": 13416304.13
+        },
+        {
+          "promotion_id": "P0070",
+          "promotion_name": "Campaign 070",
+          "used_orders": 2188,
+          "avg_subtotal": 7609.39,
+          "avg_discount": 290.95,
+          "final_revenue": 18538796.22
+        },
+        {
+          "promotion_id": "P0071",
+          "promotion_name": "Campaign 071",
+          "used_orders": 2162,
+          "avg_subtotal": 7700.7,
+          "avg_discount": 199.63,
+          "final_revenue": 18771727.8
+        },
+        {
+          "promotion_id": "P0072",
+          "promotion_name": "Campaign 072",
+          "used_orders": 2058,
+          "avg_subtotal": 7575.79,
+          "avg_discount": 486.39,
+          "final_revenue": 16894264.78
+        },
+        {
+          "promotion_id": "P0073",
+          "promotion_name": "Campaign 073",
+          "used_orders": 2128,
+          "avg_subtotal": 7535.6,
+          "avg_discount": 149.36,
+          "final_revenue": 18198446.59
+        },
+        {
+          "promotion_id": "P0074",
+          "promotion_name": "Campaign 074",
+          "used_orders": 2175,
+          "avg_subtotal": 7566.23,
+          "avg_discount": 378.16,
+          "final_revenue": 18101725.06
+        },
+        {
+          "promotion_id": "P0075",
+          "promotion_name": "Campaign 075",
+          "used_orders": 2102,
+          "avg_subtotal": 7501.68,
+          "avg_discount": 2230.53,
+          "final_revenue": 12856746.12
+        },
+        {
+          "promotion_id": "P0076",
+          "promotion_name": "Campaign 076",
+          "used_orders": 2160,
+          "avg_subtotal": 7502.72,
+          "avg_discount": 189.53,
+          "final_revenue": 18285797.13
+        },
+        {
+          "promotion_id": "P0077",
+          "promotion_name": "Campaign 077",
+          "used_orders": 2074,
+          "avg_subtotal": 7484.82,
+          "avg_discount": 1122.99,
+          "final_revenue": 15286902.77
+        },
+        {
+          "promotion_id": "P0078",
+          "promotion_name": "Campaign 078",
+          "used_orders": 2184,
+          "avg_subtotal": 7650.74,
+          "avg_discount": 1530.16,
+          "final_revenue": 15493515.52
+        },
+        {
+          "promotion_id": "P0079",
+          "promotion_name": "Campaign 079",
+          "used_orders": 2212,
+          "avg_subtotal": 7617.63,
+          "avg_discount": 489.38,
+          "final_revenue": 18253879.33
+        },
+        {
+          "promotion_id": "P0080",
+          "promotion_name": "Campaign 080",
+          "used_orders": 2122,
+          "avg_subtotal": 7555.03,
+          "avg_discount": 296.89,
+          "final_revenue": 17830530.94
+        }
+      ]
+    },
+    "menu_item_performance": {
+      "rows": 200,
+      "csv": "D:\\DineIQ\\results\\python\\menu_item_performance.csv",
+      "columns": [
+        "menu_item_id",
+        "item_name",
+        "category_name",
+        "order_count",
+        "units_sold",
+        "gross_sales",
+        "avg_unit_price"
+      ],
+      "records": [
+        {
+          "menu_item_id": "M0001",
+          "item_name": "Classic Burger 1",
+          "category_name": "Burgers",
+          "order_count": 187375,
+          "units_sold": 343241,
+          "gross_sales": 501827562.7,
+          "avg_unit_price": 1480.03
+        },
+        {
+          "menu_item_id": "M0002",
+          "item_name": "Signature Pizza 1",
+          "category_name": "Pizza",
+          "order_count": 121444,
+          "units_sold": 209301,
+          "gross_sales": 107506618.7,
+          "avg_unit_price": 520.02
+        },
+        {
+          "menu_item_id": "M0003",
+          "item_name": "Fresh Pakistani 1",
+          "category_name": "Pakistani",
+          "order_count": 92958,
+          "units_sold": 155765,
+          "gross_sales": 161527463.68,
+          "avg_unit_price": 1049.88
+        },
+        {
+          "menu_item_id": "M0004",
+          "item_name": "Spicy BBQ 1",
+          "category_name": "BBQ",
+          "order_count": 76269,
+          "units_sold": 126006,
+          "gross_sales": 224007426.0,
+          "avg_unit_price": 1800.21
+        },
+        {
+          "menu_item_id": "M0005",
+          "item_name": "House Beverage 1",
+          "category_name": "Beverages",
+          "order_count": 65961,
+          "units_sold": 107773,
+          "gross_sales": 45768686.88,
+          "avg_unit_price": 430.02
+        },
+        {
+          "menu_item_id": "M0006",
+          "item_name": "Double Dessert 1",
+          "category_name": "Desserts",
+          "order_count": 58082,
+          "units_sold": 94334,
+          "gross_sales": 166781576.15,
+          "avg_unit_price": 1790.08
+        },
+        {
+          "menu_item_id": "M0007",
+          "item_name": "Smoky Chinese 1",
+          "category_name": "Chinese",
+          "order_count": 52577,
+          "units_sold": 85225,
+          "gross_sales": 107735136.0,
+          "avg_unit_price": 1280.03
+        },
+        {
+          "menu_item_id": "M0008",
+          "item_name": "Royal Fast Food 1",
+          "category_name": "Fast Food",
+          "order_count": 47873,
+          "units_sold": 77158,
+          "gross_sales": 67055769.0,
+          "avg_unit_price": 879.99
+        },
+        {
+          "menu_item_id": "M0009",
+          "item_name": "Special Breakfast 1",
+          "category_name": "Breakfast",
+          "order_count": 43896,
+          "units_sold": 70319,
+          "gross_sales": 115301379.75,
+          "avg_unit_price": 1659.87
+        },
+        {
+          "menu_item_id": "M0010",
+          "item_name": "Grilled Salad 1",
+          "category_name": "Salads",
+          "order_count": 40621,
+          "units_sold": 65271,
+          "gross_sales": 27708490.41,
+          "avg_unit_price": 429.99
+        },
+        {
+          "menu_item_id": "M0011",
+          "item_name": "Tandoori Pasta 1",
+          "category_name": "Pasta",
+          "order_count": 38177,
+          "units_sold": 61194,
+          "gross_sales": 69490124.42,
+          "avg_unit_price": 1149.83
+        },
+        {
+          "menu_item_id": "M0012",
+          "item_name": "Fiery Seafood 1",
+          "category_name": "Seafood",
+          "order_count": 36166,
+          "units_sold": 57795,
+          "gross_sales": 32531169.57,
+          "avg_unit_price": 569.9
+        },
+        {
+          "menu_item_id": "M0013",
+          "item_name": "Crispy Sandwiche 1",
+          "category_name": "Sandwiches",
+          "order_count": 34021,
+          "units_sold": 53803,
+          "gross_sales": 79733197.5,
+          "avg_unit_price": 1500.25
+        },
+        {
+          "menu_item_id": "M0014",
+          "item_name": "Masala Rice 1",
+          "category_name": "Rice",
+          "order_count": 32351,
+          "units_sold": 51685,
+          "gross_sales": 87294472.31,
+          "avg_unit_price": 1709.98
+        },
+        {
+          "menu_item_id": "M0015",
+          "item_name": "Herb Coffee & Tea 1",
+          "category_name": "Coffee & Tea",
+          "order_count": 30901,
+          "units_sold": 49242,
+          "gross_sales": 81715968.6,
+          "avg_unit_price": 1680.28
+        },
+        {
+          "menu_item_id": "M0016",
+          "item_name": "Cheesy Burger 2",
+          "category_name": "Burgers",
+          "order_count": 29380,
+          "units_sold": 46654,
+          "gross_sales": 56676988.57,
+          "avg_unit_price": 1229.98
+        },
+        {
+          "menu_item_id": "M0017",
+          "item_name": "Creamy Pizza 2",
+          "category_name": "Pizza",
+          "order_count": 28118,
+          "units_sold": 44802,
+          "gross_sales": 32254407.95,
+          "avg_unit_price": 729.83
+        },
+        {
+          "menu_item_id": "M0018",
+          "item_name": "Deluxe Pakistani 2",
+          "category_name": "Pakistani",
+          "order_count": 26813,
+          "units_sold": 42555,
+          "gross_sales": 50405733.0,
+          "avg_unit_price": 1199.8
+        },
+        {
+          "menu_item_id": "M0019",
+          "item_name": "Supreme BBQ 2",
+          "category_name": "BBQ",
+          "order_count": 26204,
+          "units_sold": 41564,
+          "gross_sales": 25852895.87,
+          "avg_unit_price": 629.94
+        },
+        {
+          "menu_item_id": "M0020",
+          "item_name": "Loaded Beverage 2",
+          "category_name": "Beverages",
+          "order_count": 25237,
+          "units_sold": 40003,
+          "gross_sales": 43877366.04,
+          "avg_unit_price": 1110.17
+        },
+        {
+          "menu_item_id": "M0021",
+          "item_name": "Classic Dessert 2",
+          "category_name": "Desserts",
+          "order_count": 24550,
+          "units_sold": 38782,
+          "gross_sales": 47892162.61,
+          "avg_unit_price": 1250.12
+        },
+        {
+          "menu_item_id": "M0022",
+          "item_name": "Signature Chinese 2",
+          "category_name": "Chinese",
+          "order_count": 23231,
+          "units_sold": 36741,
+          "gross_sales": 45026666.1,
+          "avg_unit_price": 1239.94
+        },
+        {
+          "menu_item_id": "M0023",
+          "item_name": "Fresh Fast Food 2",
+          "category_name": "Fast Food",
+          "order_count": 22592,
+          "units_sold": 35577,
+          "gross_sales": 20379680.4,
+          "avg_unit_price": 579.95
+        },
+        {
+          "menu_item_id": "M0024",
+          "item_name": "Spicy Breakfast 2",
+          "category_name": "Breakfast",
+          "order_count": 22096,
+          "units_sold": 34941,
+          "gross_sales": 20031220.75,
+          "avg_unit_price": 580.19
+        },
+        {
+          "menu_item_id": "M0025",
+          "item_name": "House Salad 2",
+          "category_name": "Salads",
+          "order_count": 21489,
+          "units_sold": 33868,
+          "gross_sales": 8698395.55,
+          "avg_unit_price": 260.03
+        },
+        {
+          "menu_item_id": "M0026",
+          "item_name": "Double Pasta 2",
+          "category_name": "Pasta",
+          "order_count": 20777,
+          "units_sold": 32648,
+          "gross_sales": 14517913.5,
+          "avg_unit_price": 450.03
+        },
+        {
+          "menu_item_id": "M0027",
+          "item_name": "Smoky Seafood 2",
+          "category_name": "Seafood",
+          "order_count": 19944,
+          "units_sold": 31472,
+          "gross_sales": 24541260.81,
+          "avg_unit_price": 790.14
+        },
+        {
+          "menu_item_id": "M0028",
+          "item_name": "Royal Sandwiche 2",
+          "category_name": "Sandwiches",
+          "order_count": 19815,
+          "units_sold": 31153,
+          "gross_sales": 26754533.92,
+          "avg_unit_price": 870.08
+        },
+        {
+          "menu_item_id": "M0029",
+          "item_name": "Special Rice 2",
+          "category_name": "Rice",
+          "order_count": 19494,
+          "units_sold": 30564,
+          "gross_sales": 19927733.1,
+          "avg_unit_price": 660.06
+        },
+        {
+          "menu_item_id": "M0030",
+          "item_name": "Grilled Coffee & Tea 2",
+          "category_name": "Coffee & Tea",
+          "order_count": 18775,
+          "units_sold": 29350,
+          "gross_sales": 7826142.23,
+          "avg_unit_price": 269.96
+        },
+        {
+          "menu_item_id": "M0031",
+          "item_name": "Tandoori Burger 3",
+          "category_name": "Burgers",
+          "order_count": 18193,
+          "units_sold": 28384,
+          "gross_sales": 48797912.85,
+          "avg_unit_price": 1739.89
+        },
+        {
+          "menu_item_id": "M0032",
+          "item_name": "Fiery Pizza 3",
+          "category_name": "Pizza",
+          "order_count": 17748,
+          "units_sold": 27914,
+          "gross_sales": 22876566.96,
+          "avg_unit_price": 829.8
+        },
+        {
+          "menu_item_id": "M0033",
+          "item_name": "Crispy Pakistani 3",
+          "category_name": "Pakistani",
+          "order_count": 17620,
+          "units_sold": 27571,
+          "gross_sales": 8437552.01,
+          "avg_unit_price": 309.86
+        },
+        {
+          "menu_item_id": "M0034",
+          "item_name": "Masala BBQ 3",
+          "category_name": "BBQ",
+          "order_count": 17236,
+          "units_sold": 27036,
+          "gross_sales": 33622706.25,
+          "avg_unit_price": 1259.43
+        },
+        {
+          "menu_item_id": "M0035",
+          "item_name": "Herb Beverage 3",
+          "category_name": "Beverages",
+          "order_count": 17125,
+          "units_sold": 26999,
+          "gross_sales": 24526066.1,
+          "avg_unit_price": 920.1
+        },
+        {
+          "menu_item_id": "M0036",
+          "item_name": "Cheesy Dessert 3",
+          "category_name": "Desserts",
+          "order_count": 16443,
+          "units_sold": 25564,
+          "gross_sales": 45230449.52,
+          "avg_unit_price": 1790.74
+        },
+        {
+          "menu_item_id": "M0037",
+          "item_name": "Creamy Chinese 3",
+          "category_name": "Chinese",
+          "order_count": 16242,
+          "units_sold": 25440,
+          "gross_sales": 40446967.47,
+          "avg_unit_price": 1610.43
+        },
+        {
+          "menu_item_id": "M0038",
+          "item_name": "Deluxe Fast Food 3",
+          "category_name": "Fast Food",
+          "order_count": 15960,
+          "units_sold": 24838,
+          "gross_sales": 32384899.8,
+          "avg_unit_price": 1320.45
+        },
+        {
+          "menu_item_id": "M0039",
+          "item_name": "Supreme Breakfast 3",
+          "category_name": "Breakfast",
+          "order_count": 15449,
+          "units_sold": 24366,
+          "gross_sales": 40619462.61,
+          "avg_unit_price": 1690.19
+        },
+        {
+          "menu_item_id": "M0040",
+          "item_name": "Loaded Salad 3",
+          "category_name": "Salads",
+          "order_count": 15030,
+          "units_sold": 23602,
+          "gross_sales": 10021590.6,
+          "avg_unit_price": 430.13
+        },
+        {
+          "menu_item_id": "M0041",
+          "item_name": "Classic Pasta 3",
+          "category_name": "Pasta",
+          "order_count": 15168,
+          "units_sold": 23836,
+          "gross_sales": 36718784.7,
+          "avg_unit_price": 1559.92
+        },
+        {
+          "menu_item_id": "M0042",
+          "item_name": "Signature Seafood 3",
+          "category_name": "Seafood",
+          "order_count": 14606,
+          "units_sold": 22991,
+          "gross_sales": 27474492.27,
+          "avg_unit_price": 1209.97
+        },
+        {
+          "menu_item_id": "M0043",
+          "item_name": "Fresh Sandwiche 3",
+          "category_name": "Sandwiches",
+          "order_count": 14581,
+          "units_sold": 23092,
+          "gross_sales": 40382939.4,
+          "avg_unit_price": 1770.22
+        },
+        {
+          "menu_item_id": "M0044",
+          "item_name": "Spicy Rice 3",
+          "category_name": "Rice",
+          "order_count": 14296,
+          "units_sold": 22361,
+          "gross_sales": 7952386.5,
+          "avg_unit_price": 360.07
+        },
+        {
+          "menu_item_id": "M0045",
+          "item_name": "House Coffee & Tea 3",
+          "category_name": "Coffee & Tea",
+          "order_count": 14151,
+          "units_sold": 22096,
+          "gross_sales": 23573003.4,
+          "avg_unit_price": 1080.29
+        },
+        {
+          "menu_item_id": "M0046",
+          "item_name": "Double Burger 4",
+          "category_name": "Burgers",
+          "order_count": 14045,
+          "units_sold": 22047,
+          "gross_sales": 35702615.5,
+          "avg_unit_price": 1639.25
+        },
+        {
+          "menu_item_id": "M0047",
+          "item_name": "Smoky Pizza 4",
+          "category_name": "Pizza",
+          "order_count": 13826,
+          "units_sold": 21526,
+          "gross_sales": 34233285.06,
+          "avg_unit_price": 1610.47
+        },
+        {
+          "menu_item_id": "M0048",
+          "item_name": "Royal Pakistani 4",
+          "category_name": "Pakistani",
+          "order_count": 13503,
+          "units_sold": 21126,
+          "gross_sales": 33004623.95,
+          "avg_unit_price": 1580.84
+        },
+        {
+          "menu_item_id": "M0049",
+          "item_name": "Special BBQ 4",
+          "category_name": "BBQ",
+          "order_count": 13377,
+          "units_sold": 20950,
+          "gross_sales": 30005375.58,
+          "avg_unit_price": 1450.51
+        },
+        {
+          "menu_item_id": "M0050",
+          "item_name": "Grilled Beverage 4",
+          "category_name": "Beverages",
+          "order_count": 12970,
+          "units_sold": 20298,
+          "gross_sales": 16037544.0,
+          "avg_unit_price": 799.65
+        },
+        {
+          "menu_item_id": "M0051",
+          "item_name": "Tandoori Dessert 4",
+          "category_name": "Desserts",
+          "order_count": 12870,
+          "units_sold": 20152,
+          "gross_sales": 14912435.55,
+          "avg_unit_price": 749.61
+        },
+        {
+          "menu_item_id": "M0052",
+          "item_name": "Fiery Chinese 4",
+          "category_name": "Chinese",
+          "order_count": 12848,
+          "units_sold": 20110,
+          "gross_sales": 14106232.06,
+          "avg_unit_price": 710.1
+        },
+        {
+          "menu_item_id": "M0053",
+          "item_name": "Crispy Fast Food 4",
+          "category_name": "Fast Food",
+          "order_count": 12486,
+          "units_sold": 19424,
+          "gross_sales": 33955409.9,
+          "avg_unit_price": 1769.5
+        },
+        {
+          "menu_item_id": "M0054",
+          "item_name": "Masala Breakfast 4",
+          "category_name": "Breakfast",
+          "order_count": 12466,
+          "units_sold": 19547,
+          "gross_sales": 21615333.6,
+          "avg_unit_price": 1120.11
+        },
+        {
+          "menu_item_id": "M0055",
+          "item_name": "Herb Salad 4",
+          "category_name": "Salads",
+          "order_count": 12198,
+          "units_sold": 19002,
+          "gross_sales": 16706246.24,
+          "avg_unit_price": 889.79
+        },
+        {
+          "menu_item_id": "M0056",
+          "item_name": "Cheesy Pasta 4",
+          "category_name": "Pasta",
+          "order_count": 11957,
+          "units_sold": 18714,
+          "gross_sales": 4615156.21,
+          "avg_unit_price": 249.96
+        },
+        {
+          "menu_item_id": "M0057",
+          "item_name": "Creamy Seafood 4",
+          "category_name": "Seafood",
+          "order_count": 11968,
+          "units_sold": 18710,
+          "gross_sales": 9243631.25,
+          "avg_unit_price": 499.97
+        },
+        {
+          "menu_item_id": "M0058",
+          "item_name": "Deluxe Sandwiche 4",
+          "category_name": "Sandwiches",
+          "order_count": 11712,
+          "units_sold": 18396,
+          "gross_sales": 24538102.88,
+          "avg_unit_price": 1350.21
+        },
+        {
+          "menu_item_id": "M0059",
+          "item_name": "Supreme Rice 4",
+          "category_name": "Rice",
+          "order_count": 11763,
+          "units_sold": 18312,
+          "gross_sales": 11931488.25,
+          "avg_unit_price": 659.76
+        },
+        {
+          "menu_item_id": "M0060",
+          "item_name": "Loaded Coffee & Tea 4",
+          "category_name": "Coffee & Tea",
+          "order_count": 11663,
+          "units_sold": 18164,
+          "gross_sales": 21190145.0,
+          "avg_unit_price": 1180.47
+        },
+        {
+          "menu_item_id": "M0061",
+          "item_name": "Classic Burger 5",
+          "category_name": "Burgers",
+          "order_count": 11415,
+          "units_sold": 17845,
+          "gross_sales": 15514483.6,
+          "avg_unit_price": 879.92
+        },
+        {
+          "menu_item_id": "M0062",
+          "item_name": "Signature Pizza 5",
+          "category_name": "Pizza",
+          "order_count": 11203,
+          "units_sold": 17540,
+          "gross_sales": 17505627.98,
+          "avg_unit_price": 1010.27
+        },
+        {
+          "menu_item_id": "M0063",
+          "item_name": "Fresh Pakistani 5",
+          "category_name": "Pakistani",
+          "order_count": 11008,
+          "units_sold": 17319,
+          "gross_sales": 20699191.14,
+          "avg_unit_price": 1210.4
+        },
+        {
+          "menu_item_id": "M0064",
+          "item_name": "Spicy BBQ 5",
+          "category_name": "BBQ",
+          "order_count": 11018,
+          "units_sold": 17069,
+          "gross_sales": 7077665.7,
+          "avg_unit_price": 420.09
+        },
+        {
+          "menu_item_id": "M0065",
+          "item_name": "House Beverage 5",
+          "category_name": "Beverages",
+          "order_count": 10809,
+          "units_sold": 16945,
+          "gross_sales": 14232009.03,
+          "avg_unit_price": 849.93
+        },
+        {
+          "menu_item_id": "M0066",
+          "item_name": "Double Dessert 5",
+          "category_name": "Desserts",
+          "order_count": 10727,
+          "units_sold": 16856,
+          "gross_sales": 9654452.35,
+          "avg_unit_price": 579.88
+        },
+        {
+          "menu_item_id": "M0067",
+          "item_name": "Smoky Chinese 5",
+          "category_name": "Chinese",
+          "order_count": 10764,
+          "units_sold": 16878,
+          "gross_sales": 24001797.6,
+          "avg_unit_price": 1440.46
+        },
+        {
+          "menu_item_id": "M0068",
+          "item_name": "Royal Fast Food 5",
+          "category_name": "Fast Food",
+          "order_count": 10531,
+          "units_sold": 16391,
+          "gross_sales": 14900338.4,
+          "avg_unit_price": 920.2
+        },
+        {
+          "menu_item_id": "M0069",
+          "item_name": "Special Breakfast 5",
+          "category_name": "Breakfast",
+          "order_count": 10506,
+          "units_sold": 16435,
+          "gross_sales": 18989351.57,
+          "avg_unit_price": 1169.91
+        },
+        {
+          "menu_item_id": "M0070",
+          "item_name": "Grilled Salad 5",
+          "category_name": "Salads",
+          "order_count": 10495,
+          "units_sold": 16318,
+          "gross_sales": 26258994.23,
+          "avg_unit_price": 1629.81
+        },
+        {
+          "menu_item_id": "M0071",
+          "item_name": "Tandoori Pasta 5",
+          "category_name": "Pasta",
+          "order_count": 10304,
+          "units_sold": 15974,
+          "gross_sales": 9933751.86,
+          "avg_unit_price": 629.8
+        },
+        {
+          "menu_item_id": "M0072",
+          "item_name": "Fiery Seafood 5",
+          "category_name": "Seafood",
+          "order_count": 10121,
+          "units_sold": 15768,
+          "gross_sales": 20881008.95,
+          "avg_unit_price": 1340.45
+        },
+        {
+          "menu_item_id": "M0073",
+          "item_name": "Crispy Sandwiche 5",
+          "category_name": "Sandwiches",
+          "order_count": 10063,
+          "units_sold": 15728,
+          "gross_sales": 6515787.6,
+          "avg_unit_price": 419.89
+        },
+        {
+          "menu_item_id": "M0074",
+          "item_name": "Masala Rice 5",
+          "category_name": "Rice",
+          "order_count": 9886,
+          "units_sold": 15677,
+          "gross_sales": 11147731.2,
+          "avg_unit_price": 720.09
+        },
+        {
+          "menu_item_id": "M0075",
+          "item_name": "Herb Coffee & Tea 5",
+          "category_name": "Coffee & Tea",
+          "order_count": 9776,
+          "units_sold": 15164,
+          "gross_sales": 25602957.46,
+          "avg_unit_price": 1709.44
+        },
+        {
+          "menu_item_id": "M0076",
+          "item_name": "Cheesy Burger 6",
+          "category_name": "Burgers",
+          "order_count": 9747,
+          "units_sold": 15235,
+          "gross_sales": 9928063.2,
+          "avg_unit_price": 660.0
+        },
+        {
+          "menu_item_id": "M0077",
+          "item_name": "Creamy Pizza 6",
+          "category_name": "Pizza",
+          "order_count": 9448,
+          "units_sold": 14675,
+          "gross_sales": 23638838.64,
+          "avg_unit_price": 1630.45
+        },
+        {
+          "menu_item_id": "M0078",
+          "item_name": "Deluxe Pakistani 6",
+          "category_name": "Pakistani",
+          "order_count": 9549,
+          "units_sold": 14893,
+          "gross_sales": 18525795.75,
+          "avg_unit_price": 1259.95
+        },
+        {
+          "menu_item_id": "M0079",
+          "item_name": "Supreme BBQ 6",
+          "category_name": "BBQ",
+          "order_count": 9397,
+          "units_sold": 14658,
+          "gross_sales": 15211384.09,
+          "avg_unit_price": 1050.08
+        },
+        {
+          "menu_item_id": "M0080",
+          "item_name": "Loaded Beverage 6",
+          "category_name": "Beverages",
+          "order_count": 9404,
+          "units_sold": 14735,
+          "gross_sales": 12667243.43,
+          "avg_unit_price": 869.38
+        },
+        {
+          "menu_item_id": "M0081",
+          "item_name": "Classic Dessert 6",
+          "category_name": "Desserts",
+          "order_count": 9155,
+          "units_sold": 14362,
+          "gross_sales": 13044459.2,
+          "avg_unit_price": 919.8
+        },
+        {
+          "menu_item_id": "M0082",
+          "item_name": "Signature Chinese 6",
+          "category_name": "Chinese",
+          "order_count": 9172,
+          "units_sold": 14301,
+          "gross_sales": 8338571.77,
+          "avg_unit_price": 590.2
+        },
+        {
+          "menu_item_id": "M0083",
+          "item_name": "Fresh Fast Food 6",
+          "category_name": "Fast Food",
+          "order_count": 9076,
+          "units_sold": 14112,
+          "gross_sales": 7525147.05,
+          "avg_unit_price": 540.03
+        },
+        {
+          "menu_item_id": "M0084",
+          "item_name": "Spicy Breakfast 6",
+          "category_name": "Breakfast",
+          "order_count": 9151,
+          "units_sold": 14431,
+          "gross_sales": 21974460.2,
+          "avg_unit_price": 1540.04
+        },
+        {
+          "menu_item_id": "M0085",
+          "item_name": "House Salad 6",
+          "category_name": "Salads",
+          "order_count": 9019,
+          "units_sold": 14002,
+          "gross_sales": 23802908.0,
+          "avg_unit_price": 1719.09
+        },
+        {
+          "menu_item_id": "M0086",
+          "item_name": "Double Pasta 6",
+          "category_name": "Pasta",
+          "order_count": 8812,
+          "units_sold": 13821,
+          "gross_sales": 23768717.55,
+          "avg_unit_price": 1739.88
+        },
+        {
+          "menu_item_id": "M0087",
+          "item_name": "Smoky Seafood 6",
+          "category_name": "Seafood",
+          "order_count": 8869,
+          "units_sold": 13833,
+          "gross_sales": 22972366.2,
+          "avg_unit_price": 1680.47
+        },
+        {
+          "menu_item_id": "M0088",
+          "item_name": "Royal Sandwiche 6",
+          "category_name": "Sandwiches",
+          "order_count": 8764,
+          "units_sold": 13644,
+          "gross_sales": 15342638.7,
+          "avg_unit_price": 1139.59
+        },
+        {
+          "menu_item_id": "M0089",
+          "item_name": "Special Rice 6",
+          "category_name": "Rice",
+          "order_count": 8694,
+          "units_sold": 13442,
+          "gross_sales": 15268023.95,
+          "avg_unit_price": 1150.25
+        },
+        {
+          "menu_item_id": "M0090",
+          "item_name": "Grilled Coffee & Tea 6",
+          "category_name": "Coffee & Tea",
+          "order_count": 8715,
+          "units_sold": 13511,
+          "gross_sales": 16678731.3,
+          "avg_unit_price": 1249.47
+        },
+        {
+          "menu_item_id": "M0091",
+          "item_name": "Tandoori Burger 7",
+          "category_name": "Burgers",
+          "order_count": 8487,
+          "units_sold": 13186,
+          "gross_sales": 4557236.32,
+          "avg_unit_price": 349.9
+        },
+        {
+          "menu_item_id": "M0092",
+          "item_name": "Fiery Pizza 7",
+          "category_name": "Pizza",
+          "order_count": 8401,
+          "units_sold": 13086,
+          "gross_sales": 11492939.84,
+          "avg_unit_price": 889.69
+        },
+        {
+          "menu_item_id": "M0093",
+          "item_name": "Crispy Pakistani 7",
+          "category_name": "Pakistani",
+          "order_count": 8379,
+          "units_sold": 13004,
+          "gross_sales": 11946049.91,
+          "avg_unit_price": 930.38
+        },
+        {
+          "menu_item_id": "M0094",
+          "item_name": "Masala BBQ 7",
+          "category_name": "BBQ",
+          "order_count": 8309,
+          "units_sold": 12869,
+          "gross_sales": 8013574.78,
+          "avg_unit_price": 630.11
+        },
+        {
+          "menu_item_id": "M0095",
+          "item_name": "Herb Beverage 7",
+          "category_name": "Beverages",
+          "order_count": 8273,
+          "units_sold": 12964,
+          "gross_sales": 2946501.34,
+          "avg_unit_price": 230.02
+        },
+        {
+          "menu_item_id": "M0096",
+          "item_name": "Cheesy Dessert 7",
+          "category_name": "Desserts",
+          "order_count": 8270,
+          "units_sold": 12940,
+          "gross_sales": 9331033.0,
+          "avg_unit_price": 729.98
+        },
+        {
+          "menu_item_id": "M0097",
+          "item_name": "Creamy Chinese 7",
+          "category_name": "Chinese",
+          "order_count": 8222,
+          "units_sold": 12882,
+          "gross_sales": 4070016.8,
+          "avg_unit_price": 320.03
+        },
+        {
+          "menu_item_id": "M0098",
+          "item_name": "Deluxe Fast Food 7",
+          "category_name": "Fast Food",
+          "order_count": 8125,
+          "units_sold": 12577,
+          "gross_sales": 15282746.88,
+          "avg_unit_price": 1229.95
+        },
+        {
+          "menu_item_id": "M0099",
+          "item_name": "Supreme Breakfast 7",
+          "category_name": "Breakfast",
+          "order_count": 8063,
+          "units_sold": 12610,
+          "gross_sales": 7096232.03,
+          "avg_unit_price": 569.75
+        },
+        {
+          "menu_item_id": "M0100",
+          "item_name": "Loaded Salad 7",
+          "category_name": "Salads",
+          "order_count": 8001,
+          "units_sold": 12367,
+          "gross_sales": 21866196.9,
+          "avg_unit_price": 1789.97
+        },
+        {
+          "menu_item_id": "M0101",
+          "item_name": "Classic Pasta 7",
+          "category_name": "Pasta",
+          "order_count": 7964,
+          "units_sold": 12394,
+          "gross_sales": 6733537.19,
+          "avg_unit_price": 550.01
+        },
+        {
+          "menu_item_id": "M0102",
+          "item_name": "Signature Seafood 7",
+          "category_name": "Seafood",
+          "order_count": 7813,
+          "units_sold": 12060,
+          "gross_sales": 5713364.4,
+          "avg_unit_price": 480.02
+        },
+        {
+          "menu_item_id": "M0103",
+          "item_name": "Fresh Sandwiche 7",
+          "category_name": "Sandwiches",
+          "order_count": 7808,
+          "units_sold": 12177,
+          "gross_sales": 13837420.93,
+          "avg_unit_price": 1150.64
+        },
+        {
+          "menu_item_id": "M0104",
+          "item_name": "Spicy Rice 7",
+          "category_name": "Rice",
+          "order_count": 7778,
+          "units_sold": 12220,
+          "gross_sales": 2414322.0,
+          "avg_unit_price": 199.96
+        },
+        {
+          "menu_item_id": "M0105",
+          "item_name": "House Coffee & Tea 7",
+          "category_name": "Coffee & Tea",
+          "order_count": 7676,
+          "units_sold": 11987,
+          "gross_sales": 15501927.58,
+          "avg_unit_price": 1309.48
+        },
+        {
+          "menu_item_id": "M0106",
+          "item_name": "Double Burger 8",
+          "category_name": "Burgers",
+          "order_count": 7741,
+          "units_sold": 11832,
+          "gross_sales": 10981040.05,
+          "avg_unit_price": 939.98
+        },
+        {
+          "menu_item_id": "M0107",
+          "item_name": "Smoky Pizza 8",
+          "category_name": "Pizza",
+          "order_count": 7715,
+          "units_sold": 12034,
+          "gross_sales": 4276970.1,
+          "avg_unit_price": 359.9
+        },
+        {
+          "menu_item_id": "M0108",
+          "item_name": "Royal Pakistani 8",
+          "category_name": "Pakistani",
+          "order_count": 7584,
+          "units_sold": 11783,
+          "gross_sales": 4997842.52,
+          "avg_unit_price": 430.0
+        },
+        {
+          "menu_item_id": "M0109",
+          "item_name": "Special BBQ 8",
+          "category_name": "BBQ",
+          "order_count": 7518,
+          "units_sold": 11730,
+          "gross_sales": 16442630.85,
+          "avg_unit_price": 1419.58
+        },
+        {
+          "menu_item_id": "M0110",
+          "item_name": "Grilled Beverage 8",
+          "category_name": "Beverages",
+          "order_count": 7474,
+          "units_sold": 11590,
+          "gross_sales": 18886696.14,
+          "avg_unit_price": 1649.29
+        },
+        {
+          "menu_item_id": "M0111",
+          "item_name": "Tandoori Dessert 8",
+          "category_name": "Desserts",
+          "order_count": 7245,
+          "units_sold": 11368,
+          "gross_sales": 3142038.2,
+          "avg_unit_price": 279.86
+        },
+        {
+          "menu_item_id": "M0112",
+          "item_name": "Fiery Chinese 8",
+          "category_name": "Chinese",
+          "order_count": 7394,
+          "units_sold": 11512,
+          "gross_sales": 6933639.68,
+          "avg_unit_price": 609.97
+        },
+        {
+          "menu_item_id": "M0113",
+          "item_name": "Crispy Fast Food 8",
+          "category_name": "Fast Food",
+          "order_count": 7407,
+          "units_sold": 11510,
+          "gross_sales": 9553002.9,
+          "avg_unit_price": 839.98
+        },
+        {
+          "menu_item_id": "M0114",
+          "item_name": "Masala Breakfast 8",
+          "category_name": "Breakfast",
+          "order_count": 7205,
+          "units_sold": 11125,
+          "gross_sales": 7032150.4,
+          "avg_unit_price": 640.08
+        },
+        {
+          "menu_item_id": "M0115",
+          "item_name": "Herb Salad 8",
+          "category_name": "Salads",
+          "order_count": 7314,
+          "units_sold": 11451,
+          "gross_sales": 12888498.0,
+          "avg_unit_price": 1140.19
+        },
+        {
+          "menu_item_id": "M0116",
+          "item_name": "Cheesy Pasta 8",
+          "category_name": "Pasta",
+          "order_count": 7202,
+          "units_sold": 11222,
+          "gross_sales": 4653845.7,
+          "avg_unit_price": 420.03
+        },
+        {
+          "menu_item_id": "M0117",
+          "item_name": "Creamy Seafood 8",
+          "category_name": "Seafood",
+          "order_count": 7104,
+          "units_sold": 10951,
+          "gross_sales": 12324654.0,
+          "avg_unit_price": 1139.63
+        },
+        {
+          "menu_item_id": "M0118",
+          "item_name": "Deluxe Sandwiche 8",
+          "category_name": "Sandwiches",
+          "order_count": 7088,
+          "units_sold": 11049,
+          "gross_sales": 14296763.73,
+          "avg_unit_price": 1309.46
+        },
+        {
+          "menu_item_id": "M0119",
+          "item_name": "Supreme Rice 8",
+          "category_name": "Rice",
+          "order_count": 6955,
+          "units_sold": 10924,
+          "gross_sales": 2589717.6,
+          "avg_unit_price": 240.01
+        },
+        {
+          "menu_item_id": "M0120",
+          "item_name": "Loaded Coffee & Tea 8",
+          "category_name": "Coffee & Tea",
+          "order_count": 6949,
+          "units_sold": 10754,
+          "gross_sales": 18465549.9,
+          "avg_unit_price": 1738.74
+        },
+        {
+          "menu_item_id": "M0121",
+          "item_name": "Classic Burger 9",
+          "category_name": "Burgers",
+          "order_count": 7000,
+          "units_sold": 10861,
+          "gross_sales": 16198800.41,
+          "avg_unit_price": 1510.13
+        },
+        {
+          "menu_item_id": "M0122",
+          "item_name": "Signature Pizza 9",
+          "category_name": "Pizza",
+          "order_count": 6772,
+          "units_sold": 10539,
+          "gross_sales": 4887211.64,
+          "avg_unit_price": 469.82
+        },
+        {
+          "menu_item_id": "M0123",
+          "item_name": "Fresh Pakistani 9",
+          "category_name": "Pakistani",
+          "order_count": 6826,
+          "units_sold": 10604,
+          "gross_sales": 7752556.35,
+          "avg_unit_price": 739.71
+        },
+        {
+          "menu_item_id": "M0124",
+          "item_name": "Spicy BBQ 9",
+          "category_name": "BBQ",
+          "order_count": 6826,
+          "units_sold": 10740,
+          "gross_sales": 10391525.55,
+          "avg_unit_price": 979.36
+        },
+        {
+          "menu_item_id": "M0125",
+          "item_name": "House Beverage 9",
+          "category_name": "Beverages",
+          "order_count": 6761,
+          "units_sold": 10497,
+          "gross_sales": 3318075.2,
+          "avg_unit_price": 319.94
+        },
+        {
+          "menu_item_id": "M0126",
+          "item_name": "Double Dessert 9",
+          "category_name": "Desserts",
+          "order_count": 6690,
+          "units_sold": 10383,
+          "gross_sales": 15589933.2,
+          "avg_unit_price": 1520.0
+        },
+        {
+          "menu_item_id": "M0127",
+          "item_name": "Smoky Chinese 9",
+          "category_name": "Chinese",
+          "order_count": 6730,
+          "units_sold": 10422,
+          "gross_sales": 7914292.61,
+          "avg_unit_price": 769.95
+        },
+        {
+          "menu_item_id": "M0128",
+          "item_name": "Royal Fast Food 9",
+          "category_name": "Fast Food",
+          "order_count": 6682,
+          "units_sold": 10399,
+          "gross_sales": 10990614.59,
+          "avg_unit_price": 1069.82
+        },
+        {
+          "menu_item_id": "M0129",
+          "item_name": "Special Breakfast 9",
+          "category_name": "Breakfast",
+          "order_count": 6798,
+          "units_sold": 10418,
+          "gross_sales": 18110615.6,
+          "avg_unit_price": 1760.12
+        },
+        {
+          "menu_item_id": "M0130",
+          "item_name": "Grilled Salad 9",
+          "category_name": "Salads",
+          "order_count": 6600,
+          "units_sold": 10236,
+          "gross_sales": 10812093.21,
+          "avg_unit_price": 1069.71
+        },
+        {
+          "menu_item_id": "M0131",
+          "item_name": "Tandoori Pasta 9",
+          "category_name": "Pasta",
+          "order_count": 6660,
+          "units_sold": 10353,
+          "gross_sales": 10117020.32,
+          "avg_unit_price": 989.98
+        },
+        {
+          "menu_item_id": "M0132",
+          "item_name": "Fiery Seafood 9",
+          "category_name": "Seafood",
+          "order_count": 6390,
+          "units_sold": 10031,
+          "gross_sales": 17543275.29,
+          "avg_unit_price": 1770.81
+        },
+        {
+          "menu_item_id": "M0133",
+          "item_name": "Crispy Sandwiche 9",
+          "category_name": "Sandwiches",
+          "order_count": 6492,
+          "units_sold": 10178,
+          "gross_sales": 10051145.0,
+          "avg_unit_price": 1000.04
+        },
+        {
+          "menu_item_id": "M0134",
+          "item_name": "Masala Rice 9",
+          "category_name": "Rice",
+          "order_count": 6552,
+          "units_sold": 10200,
+          "gross_sales": 7350402.58,
+          "avg_unit_price": 730.26
+        },
+        {
+          "menu_item_id": "M0135",
+          "item_name": "Herb Coffee & Tea 9",
+          "category_name": "Coffee & Tea",
+          "order_count": 6600,
+          "units_sold": 10317,
+          "gross_sales": 15687186.9,
+          "avg_unit_price": 1540.84
+        },
+        {
+          "menu_item_id": "M0136",
+          "item_name": "Cheesy Burger 10",
+          "category_name": "Burgers",
+          "order_count": 6416,
+          "units_sold": 10083,
+          "gross_sales": 7371635.8,
+          "avg_unit_price": 739.74
+        },
+        {
+          "menu_item_id": "M0137",
+          "item_name": "Creamy Pizza 10",
+          "category_name": "Pizza",
+          "order_count": 6365,
+          "units_sold": 9847,
+          "gross_sales": 17220011.44,
+          "avg_unit_price": 1769.21
+        },
+        {
+          "menu_item_id": "M0138",
+          "item_name": "Deluxe Pakistani 10",
+          "category_name": "Pakistani",
+          "order_count": 6232,
+          "units_sold": 9734,
+          "gross_sales": 6725472.25,
+          "avg_unit_price": 699.98
+        },
+        {
+          "menu_item_id": "M0139",
+          "item_name": "Supreme BBQ 10",
+          "category_name": "BBQ",
+          "order_count": 6232,
+          "units_sold": 9658,
+          "gross_sales": 16888556.72,
+          "avg_unit_price": 1770.07
+        },
+        {
+          "menu_item_id": "M0140",
+          "item_name": "Loaded Beverage 10",
+          "category_name": "Beverages",
+          "order_count": 6411,
+          "units_sold": 9936,
+          "gross_sales": 15608405.57,
+          "avg_unit_price": 1590.79
+        },
+        {
+          "menu_item_id": "M0141",
+          "item_name": "Classic Dessert 10",
+          "category_name": "Desserts",
+          "order_count": 6220,
+          "units_sold": 9677,
+          "gross_sales": 12904477.91,
+          "avg_unit_price": 1350.75
+        },
+        {
+          "menu_item_id": "M0142",
+          "item_name": "Signature Chinese 10",
+          "category_name": "Chinese",
+          "order_count": 6197,
+          "units_sold": 9668,
+          "gross_sales": 6970426.64,
+          "avg_unit_price": 730.32
+        },
+        {
+          "menu_item_id": "M0143",
+          "item_name": "Fresh Fast Food 10",
+          "category_name": "Fast Food",
+          "order_count": 6075,
+          "units_sold": 9304,
+          "gross_sales": 7347198.0,
+          "avg_unit_price": 799.38
+        },
+        {
+          "menu_item_id": "M0144",
+          "item_name": "Spicy Breakfast 10",
+          "category_name": "Breakfast",
+          "order_count": 6116,
+          "units_sold": 9610,
+          "gross_sales": 5320323.4,
+          "avg_unit_price": 560.43
+        },
+        {
+          "menu_item_id": "M0145",
+          "item_name": "House Salad 10",
+          "category_name": "Salads",
+          "order_count": 6140,
+          "units_sold": 9616,
+          "gross_sales": 16706852.8,
+          "avg_unit_price": 1759.73
+        },
+        {
+          "menu_item_id": "M0146",
+          "item_name": "Double Pasta 10",
+          "category_name": "Pasta",
+          "order_count": 6101,
+          "units_sold": 9506,
+          "gross_sales": 2348444.42,
+          "avg_unit_price": 250.06
+        },
+        {
+          "menu_item_id": "M0147",
+          "item_name": "Smoky Seafood 10",
+          "category_name": "Seafood",
+          "order_count": 6106,
+          "units_sold": 9393,
+          "gross_sales": 9650989.4,
+          "avg_unit_price": 1040.79
+        },
+        {
+          "menu_item_id": "M0148",
+          "item_name": "Royal Sandwiche 10",
+          "category_name": "Sandwiches",
+          "order_count": 6077,
+          "units_sold": 9434,
+          "gross_sales": 11002591.4,
+          "avg_unit_price": 1179.79
+        },
+        {
+          "menu_item_id": "M0149",
+          "item_name": "Special Rice 10",
+          "category_name": "Rice",
+          "order_count": 6106,
+          "units_sold": 9576,
+          "gross_sales": 8697850.2,
+          "avg_unit_price": 919.68
+        },
+        {
+          "menu_item_id": "M0150",
+          "item_name": "Grilled Coffee & Tea 10",
+          "category_name": "Coffee & Tea",
+          "order_count": 5944,
+          "units_sold": 9323,
+          "gross_sales": 2759765.25,
+          "avg_unit_price": 299.9
+        },
+        {
+          "menu_item_id": "M0151",
+          "item_name": "Tandoori Burger 11",
+          "category_name": "Burgers",
+          "order_count": 5922,
+          "units_sold": 9293,
+          "gross_sales": 5408869.16,
+          "avg_unit_price": 589.69
+        },
+        {
+          "menu_item_id": "M0152",
+          "item_name": "Fiery Pizza 11",
+          "category_name": "Pizza",
+          "order_count": 5813,
+          "units_sold": 9079,
+          "gross_sales": 5021196.6,
+          "avg_unit_price": 560.23
+        },
+        {
+          "menu_item_id": "M0153",
+          "item_name": "Crispy Pakistani 11",
+          "category_name": "Pakistani",
+          "order_count": 5839,
+          "units_sold": 9201,
+          "gross_sales": 16006034.0,
+          "avg_unit_price": 1760.53
+        },
+        {
+          "menu_item_id": "M0154",
+          "item_name": "Masala BBQ 11",
+          "category_name": "BBQ",
+          "order_count": 5839,
+          "units_sold": 9167,
+          "gross_sales": 15009695.1,
+          "avg_unit_price": 1659.75
+        },
+        {
+          "menu_item_id": "M0155",
+          "item_name": "Herb Beverage 11",
+          "category_name": "Beverages",
+          "order_count": 5883,
+          "units_sold": 9188,
+          "gross_sales": 4820690.2,
+          "avg_unit_price": 530.23
+        },
+        {
+          "menu_item_id": "M0156",
+          "item_name": "Cheesy Dessert 11",
+          "category_name": "Desserts",
+          "order_count": 5630,
+          "units_sold": 8623,
+          "gross_sales": 10905465.6,
+          "avg_unit_price": 1280.08
+        },
+        {
+          "menu_item_id": "M0157",
+          "item_name": "Creamy Chinese 11",
+          "category_name": "Chinese",
+          "order_count": 5664,
+          "units_sold": 8873,
+          "gross_sales": 12800794.55,
+          "avg_unit_price": 1461.27
+        },
+        {
+          "menu_item_id": "M0158",
+          "item_name": "Deluxe Fast Food 11",
+          "category_name": "Fast Food",
+          "order_count": 5774,
+          "units_sold": 8867,
+          "gross_sales": 6213959.06,
+          "avg_unit_price": 709.7
+        },
+        {
+          "menu_item_id": "M0159",
+          "item_name": "Supreme Breakfast 11",
+          "category_name": "Breakfast",
+          "order_count": 5872,
+          "units_sold": 9220,
+          "gross_sales": 9462315.2,
+          "avg_unit_price": 1040.05
+        },
+        {
+          "menu_item_id": "M0160",
+          "item_name": "Loaded Salad 11",
+          "category_name": "Salads",
+          "order_count": 5726,
+          "units_sold": 8934,
+          "gross_sales": 15430095.59,
+          "avg_unit_price": 1748.38
+        },
+        {
+          "menu_item_id": "M0161",
+          "item_name": "Classic Pasta 11",
+          "category_name": "Pasta",
+          "order_count": 5768,
+          "units_sold": 9089,
+          "gross_sales": 3678314.0,
+          "avg_unit_price": 410.02
+        },
+        {
+          "menu_item_id": "M0162",
+          "item_name": "Signature Seafood 11",
+          "category_name": "Seafood",
+          "order_count": 5709,
+          "units_sold": 8915,
+          "gross_sales": 2907930.18,
+          "avg_unit_price": 330.06
+        },
+        {
+          "menu_item_id": "M0163",
+          "item_name": "Fresh Sandwiche 11",
+          "category_name": "Sandwiches",
+          "order_count": 5730,
+          "units_sold": 9005,
+          "gross_sales": 12373272.27,
+          "avg_unit_price": 1390.6
+        },
+        {
+          "menu_item_id": "M0164",
+          "item_name": "Spicy Rice 11",
+          "category_name": "Rice",
+          "order_count": 5663,
+          "units_sold": 8904,
+          "gross_sales": 11172828.13,
+          "avg_unit_price": 1271.17
+        },
+        {
+          "menu_item_id": "M0165",
+          "item_name": "House Coffee & Tea 11",
+          "category_name": "Coffee & Tea",
+          "order_count": 5591,
+          "units_sold": 8664,
+          "gross_sales": 4624187.4,
+          "avg_unit_price": 540.18
+        },
+        {
+          "menu_item_id": "M0166",
+          "item_name": "Double Burger 12",
+          "category_name": "Burgers",
+          "order_count": 5568,
+          "units_sold": 8642,
+          "gross_sales": 3154675.45,
+          "avg_unit_price": 369.94
+        },
+        {
+          "menu_item_id": "M0167",
+          "item_name": "Smoky Pizza 12",
+          "category_name": "Pizza",
+          "order_count": 5498,
+          "units_sold": 8572,
+          "gross_sales": 4736317.6,
+          "avg_unit_price": 559.95
+        },
+        {
+          "menu_item_id": "M0168",
+          "item_name": "Royal Pakistani 12",
+          "category_name": "Pakistani",
+          "order_count": 5498,
+          "units_sold": 8588,
+          "gross_sales": 14507105.31,
+          "avg_unit_price": 1710.82
+        },
+        {
+          "menu_item_id": "M0169",
+          "item_name": "Special BBQ 12",
+          "category_name": "BBQ",
+          "order_count": 5445,
+          "units_sold": 8545,
+          "gross_sales": 9952754.25,
+          "avg_unit_price": 1180.13
+        },
+        {
+          "menu_item_id": "M0170",
+          "item_name": "Grilled Beverage 12",
+          "category_name": "Beverages",
+          "order_count": 5458,
+          "units_sold": 8553,
+          "gross_sales": 7598299.5,
+          "avg_unit_price": 899.71
+        },
+        {
+          "menu_item_id": "M0171",
+          "item_name": "Tandoori Dessert 12",
+          "category_name": "Desserts",
+          "order_count": 5415,
+          "units_sold": 8251,
+          "gross_sales": 13359325.2,
+          "avg_unit_price": 1639.91
+        },
+        {
+          "menu_item_id": "M0172",
+          "item_name": "Fiery Chinese 12",
+          "category_name": "Chinese",
+          "order_count": 5481,
+          "units_sold": 8532,
+          "gross_sales": 14495424.7,
+          "avg_unit_price": 1720.03
+        },
+        {
+          "menu_item_id": "M0173",
+          "item_name": "Crispy Fast Food 12",
+          "category_name": "Fast Food",
+          "order_count": 5402,
+          "units_sold": 8355,
+          "gross_sales": 14432617.5,
+          "avg_unit_price": 1748.87
+        },
+        {
+          "menu_item_id": "M0174",
+          "item_name": "Masala Breakfast 12",
+          "category_name": "Breakfast",
+          "order_count": 5416,
+          "units_sold": 8444,
+          "gross_sales": 4256346.48,
+          "avg_unit_price": 510.05
+        },
+        {
+          "menu_item_id": "M0175",
+          "item_name": "Herb Salad 12",
+          "category_name": "Salads",
+          "order_count": 5363,
+          "units_sold": 8308,
+          "gross_sales": 5831755.33,
+          "avg_unit_price": 710.13
+        },
+        {
+          "menu_item_id": "M0176",
+          "item_name": "Cheesy Pasta 12",
+          "category_name": "Pasta",
+          "order_count": 5396,
+          "units_sold": 8452,
+          "gross_sales": 14858874.85,
+          "avg_unit_price": 1779.38
+        },
+        {
+          "menu_item_id": "M0177",
+          "item_name": "Creamy Seafood 12",
+          "category_name": "Seafood",
+          "order_count": 5300,
+          "units_sold": 8264,
+          "gross_sales": 1632051.0,
+          "avg_unit_price": 200.09
+        },
+        {
+          "menu_item_id": "M0178",
+          "item_name": "Deluxe Sandwiche 12",
+          "category_name": "Sandwiches",
+          "order_count": 5347,
+          "units_sold": 8279,
+          "gross_sales": 2127201.05,
+          "avg_unit_price": 260.12
+        },
+        {
+          "menu_item_id": "M0179",
+          "item_name": "Supreme Rice 12",
+          "category_name": "Rice",
+          "order_count": 5083,
+          "units_sold": 8093,
+          "gross_sales": 11505268.8,
+          "avg_unit_price": 1440.27
+        },
+        {
+          "menu_item_id": "M0180",
+          "item_name": "Loaded Coffee & Tea 12",
+          "category_name": "Coffee & Tea",
+          "order_count": 5211,
+          "units_sold": 8103,
+          "gross_sales": 2000942.54,
+          "avg_unit_price": 250.1
+        },
+        {
+          "menu_item_id": "M0181",
+          "item_name": "Classic Burger 13",
+          "category_name": "Burgers",
+          "order_count": 5254,
+          "units_sold": 8159,
+          "gross_sales": 2255971.9,
+          "avg_unit_price": 279.95
+        },
+        {
+          "menu_item_id": "M0182",
+          "item_name": "Signature Pizza 13",
+          "category_name": "Pizza",
+          "order_count": 5184,
+          "units_sold": 8117,
+          "gross_sales": 13232447.18,
+          "avg_unit_price": 1650.86
+        },
+        {
+          "menu_item_id": "M0183",
+          "item_name": "Fresh Pakistani 13",
+          "category_name": "Pakistani",
+          "order_count": 5131,
+          "units_sold": 7875,
+          "gross_sales": 4899648.48,
+          "avg_unit_price": 630.09
+        },
+        {
+          "menu_item_id": "M0184",
+          "item_name": "Spicy BBQ 13",
+          "category_name": "BBQ",
+          "order_count": 5179,
+          "units_sold": 7972,
+          "gross_sales": 8187121.8,
+          "avg_unit_price": 1039.76
+        },
+        {
+          "menu_item_id": "M0185",
+          "item_name": "House Beverage 13",
+          "category_name": "Beverages",
+          "order_count": 5073,
+          "units_sold": 7921,
+          "gross_sales": 12203275.5,
+          "avg_unit_price": 1559.79
+        },
+        {
+          "menu_item_id": "M0186",
+          "item_name": "Double Dessert 13",
+          "category_name": "Desserts",
+          "order_count": 5081,
+          "units_sold": 7879,
+          "gross_sales": 12601161.9,
+          "avg_unit_price": 1619.9
+        },
+        {
+          "menu_item_id": "M0187",
+          "item_name": "Smoky Chinese 13",
+          "category_name": "Chinese",
+          "order_count": 5126,
+          "units_sold": 7973,
+          "gross_sales": 6841949.78,
+          "avg_unit_price": 869.93
+        },
+        {
+          "menu_item_id": "M0188",
+          "item_name": "Royal Fast Food 13",
+          "category_name": "Fast Food",
+          "order_count": 5074,
+          "units_sold": 7883,
+          "gross_sales": 2259448.44,
+          "avg_unit_price": 290.0
+        },
+        {
+          "menu_item_id": "M0189",
+          "item_name": "Special Breakfast 13",
+          "category_name": "Breakfast",
+          "order_count": 5010,
+          "units_sold": 7843,
+          "gross_sales": 11620657.5,
+          "avg_unit_price": 1500.7
+        },
+        {
+          "menu_item_id": "M0190",
+          "item_name": "Grilled Salad 13",
+          "category_name": "Salads",
+          "order_count": 4973,
+          "units_sold": 7688,
+          "gross_sales": 2884568.6,
+          "avg_unit_price": 379.91
+        },
+        {
+          "menu_item_id": "M0191",
+          "item_name": "Tandoori Pasta 13",
+          "category_name": "Pasta",
+          "order_count": 5085,
+          "units_sold": 7903,
+          "gross_sales": 8989647.65,
+          "avg_unit_price": 1150.03
+        },
+        {
+          "menu_item_id": "M0192",
+          "item_name": "Fiery Seafood 13",
+          "category_name": "Seafood",
+          "order_count": 4883,
+          "units_sold": 7541,
+          "gross_sales": 4023897.75,
+          "avg_unit_price": 539.99
+        },
+        {
+          "menu_item_id": "M0193",
+          "item_name": "Crispy Sandwiche 13",
+          "category_name": "Sandwiches",
+          "order_count": 5051,
+          "units_sold": 7794,
+          "gross_sales": 4227588.8,
+          "avg_unit_price": 549.74
+        },
+        {
+          "menu_item_id": "M0194",
+          "item_name": "Masala Rice 13",
+          "category_name": "Rice",
+          "order_count": 4867,
+          "units_sold": 7629,
+          "gross_sales": 9563766.77,
+          "avg_unit_price": 1268.91
+        },
+        {
+          "menu_item_id": "M0195",
+          "item_name": "Herb Coffee & Tea 13",
+          "category_name": "Coffee & Tea",
+          "order_count": 5116,
+          "units_sold": 7890,
+          "gross_sales": 1793420.98,
+          "avg_unit_price": 230.02
+        },
+        {
+          "menu_item_id": "M0196",
+          "item_name": "Cheesy Burger 14",
+          "category_name": "Burgers",
+          "order_count": 4980,
+          "units_sold": 7806,
+          "gross_sales": 12264262.1,
+          "avg_unit_price": 1589.78
+        },
+        {
+          "menu_item_id": "M0197",
+          "item_name": "Creamy Pizza 14",
+          "category_name": "Pizza",
+          "order_count": 5055,
+          "units_sold": 7816,
+          "gross_sales": 2546387.22,
+          "avg_unit_price": 329.89
+        },
+        {
+          "menu_item_id": "M0198",
+          "item_name": "Deluxe Pakistani 14",
+          "category_name": "Pakistani",
+          "order_count": 4871,
+          "units_sold": 7615,
+          "gross_sales": 5116071.8,
+          "avg_unit_price": 679.81
+        },
+        {
+          "menu_item_id": "M0199",
+          "item_name": "Supreme BBQ 14",
+          "category_name": "BBQ",
+          "order_count": 4817,
+          "units_sold": 7630,
+          "gross_sales": 3312423.4,
+          "avg_unit_price": 439.73
+        },
+        {
+          "menu_item_id": "M0200",
+          "item_name": "Loaded Beverage 14",
+          "category_name": "Beverages",
+          "order_count": 4772,
+          "units_sold": 7368,
+          "gross_sales": 8435618.6,
+          "avg_unit_price": 1159.21
+        }
+      ]
+    },
+    "category_performance": {
+      "rows": 15,
+      "csv": "D:\\DineIQ\\results\\python\\category_performance.csv",
+      "columns": [
+        "category_name",
+        "order_count",
+        "units_sold",
+        "gross_sales",
+        "avg_line_value"
+      ],
+      "records": [
+        {
+          "category_name": "BBQ",
+          "order_count": 178751,
+          "units_sold": 325594,
+          "gross_sales": 423975735.94,
+          "avg_line_value": 2022.4
+        },
+        {
+          "category_name": "Beverages",
+          "order_count": 169117,
+          "units_sold": 304770,
+          "gross_sales": 230926477.53,
+          "avg_line_value": 1175.69
+        },
+        {
+          "category_name": "Breakfast",
+          "order_count": 142027,
+          "units_sold": 249309,
+          "gross_sales": 301429849.09,
+          "avg_line_value": 1877.97
+        },
+        {
+          "category_name": "Burgers",
+          "order_count": 273423,
+          "units_sold": 553268,
+          "gross_sales": 730640117.61,
+          "avg_line_value": 2045.69
+        },
+        {
+          "category_name": "Chinese",
+          "order_count": 151618,
+          "units_sold": 268557,
+          "gross_sales": 299681915.76,
+          "avg_line_value": 1733.13
+        },
+        {
+          "category_name": "Coffee & Tea",
+          "order_count": 124527,
+          "units_sold": 214565,
+          "gross_sales": 237419928.54,
+          "avg_line_value": 1712.47
+        },
+        {
+          "category_name": "Desserts",
+          "order_count": 157089,
+          "units_sold": 279171,
+          "gross_sales": 375348970.39,
+          "avg_line_value": 2082.26
+        },
+        {
+          "category_name": "Fast Food",
+          "order_count": 146063,
+          "units_sold": 256395,
+          "gross_sales": 242280831.92,
+          "avg_line_value": 1460.55
+        },
+        {
+          "category_name": "Pakistani",
+          "order_count": 193755,
+          "units_sold": 357633,
+          "gross_sales": 364551140.15,
+          "avg_line_value": 1581.69
+        },
+        {
+          "category_name": "Pasta",
+          "order_count": 134927,
+          "units_sold": 235106,
+          "gross_sales": 210424132.37,
+          "avg_line_value": 1389.47
+        },
+        {
+          "category_name": "Pizza",
+          "order_count": 218236,
+          "units_sold": 414848,
+          "gross_sales": 301428826.91,
+          "avg_line_value": 1128.49
+        },
+        {
+          "category_name": "Rice",
+          "order_count": 126742,
+          "units_sold": 219587,
+          "gross_sales": 206815991.39,
+          "avg_line_value": 1466.02
+        },
+        {
+          "category_name": "Salads",
+          "order_count": 137997,
+          "units_sold": 240663,
+          "gross_sales": 199616685.46,
+          "avg_line_value": 1286.02
+        },
+        {
+          "category_name": "Sandwiches",
+          "order_count": 129213,
+          "units_sold": 223732,
+          "gross_sales": 261183183.18,
+          "avg_line_value": 1810.2
+        },
+        {
+          "category_name": "Seafood",
+          "order_count": 131168,
+          "units_sold": 227724,
+          "gross_sales": 191440091.07,
+          "avg_line_value": 1303.0
+        }
+      ]
+    },
+    "restaurant_ratings": {
+      "rows": 25,
+      "csv": "D:\\DineIQ\\results\\python\\restaurant_ratings.csv",
+      "columns": [
+        "restaurant_id",
+        "rating_count",
+        "avg_rating",
+        "avg_food_rating",
+        "avg_service_rating"
+      ],
+      "records": [
+        {
+          "restaurant_id": "R001",
+          "rating_count": 8840,
+          "avg_rating": 3.987,
+          "avg_food_rating": 3.918,
+          "avg_service_rating": 3.906
+        },
+        {
+          "restaurant_id": "R002",
+          "rating_count": 8785,
+          "avg_rating": 4.018,
+          "avg_food_rating": 3.937,
+          "avg_service_rating": 3.922
+        },
+        {
+          "restaurant_id": "R003",
+          "rating_count": 8733,
+          "avg_rating": 4.006,
+          "avg_food_rating": 3.924,
+          "avg_service_rating": 3.908
+        },
+        {
+          "restaurant_id": "R004",
+          "rating_count": 8744,
+          "avg_rating": 3.983,
+          "avg_food_rating": 3.922,
+          "avg_service_rating": 3.901
+        },
+        {
+          "restaurant_id": "R005",
+          "rating_count": 8795,
+          "avg_rating": 3.989,
+          "avg_food_rating": 3.918,
+          "avg_service_rating": 3.897
+        },
+        {
+          "restaurant_id": "R006",
+          "rating_count": 8915,
+          "avg_rating": 3.975,
+          "avg_food_rating": 3.901,
+          "avg_service_rating": 3.877
+        },
+        {
+          "restaurant_id": "R007",
+          "rating_count": 8930,
+          "avg_rating": 3.992,
+          "avg_food_rating": 3.922,
+          "avg_service_rating": 3.9
+        },
+        {
+          "restaurant_id": "R008",
+          "rating_count": 8827,
+          "avg_rating": 3.985,
+          "avg_food_rating": 3.926,
+          "avg_service_rating": 3.899
+        },
+        {
+          "restaurant_id": "R009",
+          "rating_count": 8922,
+          "avg_rating": 3.989,
+          "avg_food_rating": 3.927,
+          "avg_service_rating": 3.897
+        },
+        {
+          "restaurant_id": "R010",
+          "rating_count": 8591,
+          "avg_rating": 3.985,
+          "avg_food_rating": 3.913,
+          "avg_service_rating": 3.898
+        },
+        {
+          "restaurant_id": "R011",
+          "rating_count": 8852,
+          "avg_rating": 3.978,
+          "avg_food_rating": 3.903,
+          "avg_service_rating": 3.884
+        },
+        {
+          "restaurant_id": "R012",
+          "rating_count": 8677,
+          "avg_rating": 3.999,
+          "avg_food_rating": 3.923,
+          "avg_service_rating": 3.909
+        },
+        {
+          "restaurant_id": "R013",
+          "rating_count": 8722,
+          "avg_rating": 3.985,
+          "avg_food_rating": 3.915,
+          "avg_service_rating": 3.889
+        },
+        {
+          "restaurant_id": "R014",
+          "rating_count": 8834,
+          "avg_rating": 3.996,
+          "avg_food_rating": 3.93,
+          "avg_service_rating": 3.906
+        },
+        {
+          "restaurant_id": "R015",
+          "rating_count": 8818,
+          "avg_rating": 4.001,
+          "avg_food_rating": 3.937,
+          "avg_service_rating": 3.914
+        },
+        {
+          "restaurant_id": "R016",
+          "rating_count": 8839,
+          "avg_rating": 3.986,
+          "avg_food_rating": 3.921,
+          "avg_service_rating": 3.901
+        },
+        {
+          "restaurant_id": "R017",
+          "rating_count": 8758,
+          "avg_rating": 3.985,
+          "avg_food_rating": 3.906,
+          "avg_service_rating": 3.9
+        },
+        {
+          "restaurant_id": "R018",
+          "rating_count": 8999,
+          "avg_rating": 4.011,
+          "avg_food_rating": 3.939,
+          "avg_service_rating": 3.916
+        },
+        {
+          "restaurant_id": "R019",
+          "rating_count": 8593,
+          "avg_rating": 4.011,
+          "avg_food_rating": 3.943,
+          "avg_service_rating": 3.929
+        },
+        {
+          "restaurant_id": "R020",
+          "rating_count": 8825,
+          "avg_rating": 3.981,
+          "avg_food_rating": 3.903,
+          "avg_service_rating": 3.889
+        },
+        {
+          "restaurant_id": "R021",
+          "rating_count": 8868,
+          "avg_rating": 3.99,
+          "avg_food_rating": 3.919,
+          "avg_service_rating": 3.887
+        },
+        {
+          "restaurant_id": "R022",
+          "rating_count": 8720,
+          "avg_rating": 3.999,
+          "avg_food_rating": 3.931,
+          "avg_service_rating": 3.907
+        },
+        {
+          "restaurant_id": "R023",
+          "rating_count": 8591,
+          "avg_rating": 3.993,
+          "avg_food_rating": 3.917,
+          "avg_service_rating": 3.91
+        },
+        {
+          "restaurant_id": "R024",
+          "rating_count": 8934,
+          "avg_rating": 3.988,
+          "avg_food_rating": 3.915,
+          "avg_service_rating": 3.894
+        },
+        {
+          "restaurant_id": "R025",
+          "rating_count": 8888,
+          "avg_rating": 3.98,
+          "avg_food_rating": 3.911,
+          "avg_service_rating": 3.881
+        }
+      ]
+    },
+    "wastage_by_reason": {
+      "rows": 5,
+      "csv": "D:\\DineIQ\\results\\python\\wastage_by_reason.csv",
+      "columns": [
+        "reason",
+        "records",
+        "quantity_wasted",
+        "wastage_cost"
+      ],
+      "records": [
+        {
+          "reason": "Damaged",
+          "records": 10927,
+          "quantity_wasted": 23578.21,
+          "wastage_cost": 11661629.16
+        },
+        {
+          "reason": "Expired",
+          "records": 27541,
+          "quantity_wasted": 59461.03,
+          "wastage_cost": 29420238.55
+        },
+        {
+          "reason": "Overproduction",
+          "records": 30699,
+          "quantity_wasted": 66183.82,
+          "wastage_cost": 32361090.23
+        },
+        {
+          "reason": "Preparation Error",
+          "records": 18816,
+          "quantity_wasted": 40458.78,
+          "wastage_cost": 19910718.8
+        },
+        {
+          "reason": "Unsold",
+          "records": 21962,
+          "quantity_wasted": 47713.18,
+          "wastage_cost": 23579588.43
+        }
+      ]
+    },
+    "pricing_changes": {
+      "rows": 5,
+      "csv": "D:\\DineIQ\\results\\python\\pricing_changes.csv",
+      "columns": [
+        "change_reason",
+        "changes",
+        "avg_price_change",
+        "avg_percent_change"
+      ],
+      "records": [
+        {
+          "change_reason": "Inflation",
+          "changes": 593,
+          "avg_price_change": 75.04,
+          "avg_percent_change": 7.05
+        },
+        {
+          "change_reason": "Menu Review",
+          "changes": 602,
+          "avg_price_change": 76.5,
+          "avg_percent_change": 7.16
+        },
+        {
+          "change_reason": "Promotion End",
+          "changes": 633,
+          "avg_price_change": 76.48,
+          "avg_percent_change": 6.9
+        },
+        {
+          "change_reason": "Seasonal Adjustment",
+          "changes": 562,
+          "avg_price_change": 77.47,
+          "avg_percent_change": 7.0
+        },
+        {
+          "change_reason": "Supplier Cost",
+          "changes": 602,
+          "avg_price_change": 75.15,
+          "avg_percent_change": 6.9
+        }
+      ]
+    },
+    "inventory_status": {
+      "rows": 2,
+      "csv": "D:\\DineIQ\\results\\python\\inventory_status.csv",
+      "columns": [
+        "stock_status",
+        "observations",
+        "avg_closing_stock"
+      ],
+      "records": [
+        {
+          "stock_status": "Low",
+          "observations": 17911,
+          "avg_closing_stock": 21.0
+        },
+        {
+          "stock_status": "Normal",
+          "observations": 72089,
+          "avg_closing_stock": 138.44
+        }
+      ]
+    }
+  }
+}

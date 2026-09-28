@@ -1,0 +1,484 @@
+{
+  "data": {
+    "periodLabel": "Aug 25 – Sep 23, 2026",
+    "kpis": {
+      "basketsAnalyzed": 26616,
+      "avgBasketSize": 3.05,
+      "avgBasketValue": 1836,
+      "attachRatePct": 31.4,
+      "strongRules": 10,
+      "bundleOpportunities": 4
+    },
+    "rules": [
+      {
+        "id": "rule-001",
+        "antecedent": {
+          "itemId": "itm-019",
+          "name": "Grill Platter"
+        },
+        "consequent": {
+          "itemId": "itm-038",
+          "name": "Falooda"
+        },
+        "category": "BBQ & Kebabs",
+        "supportPct": 4.1,
+        "confidencePct": 68,
+        "lift": 2.3,
+        "pairOrders": 1091,
+        "opportunity": "bundle_candidate",
+        "estimatedImpact": {
+          "metric": "Dessert attachment",
+          "estimate": "+6.8%"
+        }
+      },
+      {
+        "id": "rule-002",
+        "antecedent": {
+          "itemId": "itm-014",
+          "name": "Chicken Tikka"
+        },
+        "consequent": {
+          "itemId": "itm-040",
+          "name": "Mint Margarita"
+        },
+        "category": "BBQ & Kebabs",
+        "supportPct": 5.8,
+        "confidencePct": 61,
+        "lift": 1.9,
+        "pairOrders": 1544,
+        "opportunity": "cross_sell",
+        "estimatedImpact": {
+          "metric": "Beverage attach",
+          "estimate": "+4.1%"
+        }
+      },
+      {
+        "id": "rule-003",
+        "antecedent": {
+          "itemId": "itm-020",
+          "name": "Zinger Burger"
+        },
+        "consequent": {
+          "itemId": "itm-032",
+          "name": "Loaded Fries"
+        },
+        "category": "Burgers & Sandwiches",
+        "supportPct": 6.2,
+        "confidencePct": 57,
+        "lift": 1.8,
+        "pairOrders": 1650,
+        "opportunity": "bundle_candidate",
+        "estimatedImpact": {
+          "metric": "Combo uptake",
+          "estimate": "+5.2%"
+        }
+      },
+      {
+        "id": "rule-004",
+        "antecedent": {
+          "itemId": "itm-008",
+          "name": "Chicken Karahi"
+        },
+        "consequent": {
+          "itemId": "itm-036",
+          "name": "Gulab Jamun"
+        },
+        "category": "Karahi & Handi",
+        "supportPct": 3.4,
+        "confidencePct": 44,
+        "lift": 1.6,
+        "pairOrders": 905,
+        "opportunity": "cross_sell"
+      },
+      {
+        "id": "rule-005",
+        "antecedent": {
+          "itemId": "itm-047",
+          "name": "Deal for Two"
+        },
+        "consequent": {
+          "itemId": "itm-041",
+          "name": "Cold Coffee"
+        },
+        "category": "Family Deals",
+        "supportPct": 2.9,
+        "confidencePct": 39,
+        "lift": 1.5,
+        "pairOrders": 772,
+        "opportunity": "menu_placement"
+      },
+      {
+        "id": "rule-006",
+        "antecedent": {
+          "itemId": "itm-009",
+          "name": "Mutton Karahi"
+        },
+        "consequent": {
+          "itemId": "itm-042",
+          "name": "Fresh Lime Soda"
+        },
+        "category": "Karahi & Handi",
+        "supportPct": 2.6,
+        "confidencePct": 41,
+        "lift": 1.7,
+        "pairOrders": 692,
+        "opportunity": "cross_sell"
+      },
+      {
+        "id": "rule-007",
+        "antecedent": {
+          "itemId": "itm-015",
+          "name": "Seekh Kebab"
+        },
+        "consequent": {
+          "itemId": "itm-016",
+          "name": "Malai Boti"
+        },
+        "category": "BBQ & Kebabs",
+        "supportPct": 3.8,
+        "confidencePct": 36,
+        "lift": 1.5,
+        "pairOrders": 1011,
+        "opportunity": "bundle_candidate",
+        "estimatedImpact": {
+          "metric": "BBQ combo uptake",
+          "estimate": "+3.9%"
+        }
+      },
+      {
+        "id": "rule-008",
+        "antecedent": {
+          "itemId": "itm-024",
+          "name": "Chicken Shawarma"
+        },
+        "consequent": {
+          "itemId": "itm-033",
+          "name": "Masala Fries"
+        },
+        "category": "Wraps & Rolls",
+        "supportPct": 4.9,
+        "confidencePct": 52,
+        "lift": 2.1,
+        "pairOrders": 1304,
+        "opportunity": "bundle_candidate",
+        "estimatedImpact": {
+          "metric": "Snack attach",
+          "estimate": "+4.6%"
+        }
+      },
+      {
+        "id": "rule-009",
+        "antecedent": {
+          "itemId": "itm-001",
+          "name": "Chicken Biryani"
+        },
+        "consequent": {
+          "itemId": "itm-037",
+          "name": "Kheer"
+        },
+        "category": "Biryani & Rice",
+        "supportPct": 2.2,
+        "confidencePct": 33,
+        "lift": 1.4,
+        "pairOrders": 586,
+        "opportunity": "none"
+      },
+      {
+        "id": "rule-010",
+        "antecedent": {
+          "itemId": "itm-048",
+          "name": "Family Feast Deal"
+        },
+        "consequent": {
+          "itemId": "itm-040",
+          "name": "Mint Margarita"
+        },
+        "category": "Family Deals",
+        "supportPct": 2.4,
+        "confidencePct": 37,
+        "lift": 1.6,
+        "pairOrders": 639,
+        "opportunity": "menu_placement"
+      },
+      {
+        "id": "rule-011",
+        "antecedent": {
+          "itemId": "itm-025",
+          "name": "Chicken Paratha Roll"
+        },
+        "consequent": {
+          "itemId": "itm-041",
+          "name": "Cold Coffee"
+        },
+        "category": "Wraps & Rolls",
+        "supportPct": 3.1,
+        "confidencePct": 34,
+        "lift": 1.4,
+        "pairOrders": 825,
+        "opportunity": "none"
+      },
+      {
+        "id": "rule-012",
+        "antecedent": {
+          "itemId": "itm-007",
+          "name": "Haleem"
+        },
+        "consequent": {
+          "itemId": "itm-027",
+          "name": "Shawarma Roll"
+        },
+        "category": "Biryani & Rice",
+        "supportPct": 1.6,
+        "confidencePct": 29,
+        "lift": 1.5,
+        "pairOrders": 426,
+        "opportunity": "menu_placement"
+      },
+      {
+        "id": "rule-013",
+        "antecedent": {
+          "itemId": "itm-016",
+          "name": "Malai Boti"
+        },
+        "consequent": {
+          "itemId": "itm-036",
+          "name": "Gulab Jamun"
+        },
+        "category": "BBQ & Kebabs",
+        "supportPct": 2.7,
+        "confidencePct": 31,
+        "lift": 1.5,
+        "pairOrders": 719,
+        "opportunity": "cross_sell"
+      },
+      {
+        "id": "rule-014",
+        "antecedent": {
+          "itemId": "itm-044",
+          "name": "Chicken Corn Soup"
+        },
+        "consequent": {
+          "itemId": "itm-023",
+          "name": "Club Sandwich"
+        },
+        "category": "Soups & Salads",
+        "supportPct": 1.8,
+        "confidencePct": 27,
+        "lift": 1.4,
+        "pairOrders": 479,
+        "opportunity": "none"
+      }
+    ],
+    "categoryPairs": [
+      {
+        "categoryA": "BBQ & Kebabs",
+        "categoryB": "Beverages",
+        "pairOrders": 1038,
+        "lift": 2.1
+      },
+      {
+        "categoryA": "Burgers & Sandwiches",
+        "categoryB": "Snacks & Sides",
+        "pairOrders": 1118,
+        "lift": 2.4
+      },
+      {
+        "categoryA": "Karahi & Handi",
+        "categoryB": "Desserts",
+        "pairOrders": 932,
+        "lift": 1.7
+      },
+      {
+        "categoryA": "Biryani & Rice",
+        "categoryB": "Beverages",
+        "pairOrders": 905,
+        "lift": 1.6
+      },
+      {
+        "categoryA": "Wraps & Rolls",
+        "categoryB": "Snacks & Sides",
+        "pairOrders": 1065,
+        "lift": 2.2
+      },
+      {
+        "categoryA": "Family Deals",
+        "categoryB": "Beverages",
+        "pairOrders": 958,
+        "lift": 1.8
+      },
+      {
+        "categoryA": "BBQ & Kebabs",
+        "categoryB": "Desserts",
+        "pairOrders": 878,
+        "lift": 1.5
+      },
+      {
+        "categoryA": "Chinese",
+        "categoryB": "Beverages",
+        "pairOrders": 852,
+        "lift": 1.4
+      },
+      {
+        "categoryA": "Burgers & Sandwiches",
+        "categoryB": "Beverages",
+        "pairOrders": 878,
+        "lift": 1.5
+      },
+      {
+        "categoryA": "Biryani & Rice",
+        "categoryB": "Desserts",
+        "pairOrders": 825,
+        "lift": 1.3
+      }
+    ],
+    "basketSizeDist": [
+      {
+        "size": 1,
+        "baskets": 3779,
+        "sharePct": 14.2
+      },
+      {
+        "size": 2,
+        "baskets": 6601,
+        "sharePct": 24.8
+      },
+      {
+        "size": 3,
+        "baskets": 7213,
+        "sharePct": 27.1
+      },
+      {
+        "size": 4,
+        "baskets": 4684,
+        "sharePct": 17.6
+      },
+      {
+        "size": 5,
+        "baskets": 2422,
+        "sharePct": 9.1
+      },
+      {
+        "size": 6,
+        "baskets": 1171,
+        "sharePct": 4.4
+      },
+      {
+        "size": 7,
+        "baskets": 506,
+        "sharePct": 1.9
+      },
+      {
+        "size": 8,
+        "baskets": 240,
+        "sharePct": 0.9
+      }
+    ],
+    "bundles": [
+      {
+        "id": "bundle-01",
+        "items": [
+          {
+            "itemId": "itm-019",
+            "name": "Grill Platter",
+            "price": 2450
+          },
+          {
+            "itemId": "itm-038",
+            "name": "Falooda",
+            "price": 340
+          }
+        ],
+        "combinedPrice": 2790,
+        "suggestedPrice": 2570,
+        "basis": "68% of Grill Platter baskets already add Falooda (lift 2.3×) — a 8% bundle discount is cheaper than the discount depth needed to drive the same attachment organically."
+      },
+      {
+        "id": "bundle-02",
+        "items": [
+          {
+            "itemId": "itm-020",
+            "name": "Zinger Burger",
+            "price": 620
+          },
+          {
+            "itemId": "itm-032",
+            "name": "Loaded Fries",
+            "price": 420
+          }
+        ],
+        "combinedPrice": 1040,
+        "suggestedPrice": 960,
+        "basis": "57% of Zinger Burger baskets already add Loaded Fries (lift 1.8×) — a 8% bundle discount is cheaper than the discount depth needed to drive the same attachment organically."
+      },
+      {
+        "id": "bundle-03",
+        "items": [
+          {
+            "itemId": "itm-015",
+            "name": "Seekh Kebab",
+            "price": 560
+          },
+          {
+            "itemId": "itm-016",
+            "name": "Malai Boti",
+            "price": 640
+          }
+        ],
+        "combinedPrice": 1200,
+        "suggestedPrice": 1100,
+        "basis": "36% of Seekh Kebab baskets already add Malai Boti (lift 1.5×) — a 8% bundle discount is cheaper than the discount depth needed to drive the same attachment organically."
+      },
+      {
+        "id": "bundle-04",
+        "items": [
+          {
+            "itemId": "itm-024",
+            "name": "Chicken Shawarma",
+            "price": 350
+          },
+          {
+            "itemId": "itm-033",
+            "name": "Masala Fries",
+            "price": 280
+          }
+        ],
+        "combinedPrice": 630,
+        "suggestedPrice": 580,
+        "basis": "52% of Chicken Shawarma baskets already add Masala Fries (lift 2.1×) — a 8% bundle discount is cheaper than the discount depth needed to drive the same attachment organically."
+      }
+    ]
+  },
+  "meta": {
+    "generatedAt": "2026-09-24T08:29:51.861Z",
+    "filters": {},
+    "modelName": "BasketRules (Spark FP-Growth)",
+    "modelVersion": "2.3",
+    "pipeline": "spark"
+  },
+  "insight": {
+    "summary": [
+      "26.6K baskets were analyzed over the last 30 days; the strongest pairing is Grill Platter → Falooda at 2.3× lift with 4.1% support.",
+      "10 of 14 association rules clear the lift ≥ 1.5 and support ≥ 2% bar; 4 bundle opportunities are backed by rules, not intuition.",
+      "Snacks & Sides pairs with Burgers at the highest category lift (2.4×), making combo menus the cheapest attachment lever."
+    ],
+    "whyItMatters": "Attachment via association rules raises average order value without discounting headline items — every bundle below is priced from observed pair frequency so the discount only pays for behavior that already exists.",
+    "evidence": [
+      {
+        "metric": "Baskets analyzed",
+        "value": "26.6K",
+        "detail": "Trailing 30 days"
+      },
+      {
+        "metric": "Strong rules",
+        "value": "10",
+        "detail": "lift ≥ 1.5 · support ≥ 2%"
+      },
+      {
+        "metric": "Top lift",
+        "value": "2.3×",
+        "detail": "Grill Platter → Falooda"
+      }
+    ],
+    "period": "Aug 25 – Sep 23, 2026"
+  }
+}

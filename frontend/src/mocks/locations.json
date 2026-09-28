@@ -1,0 +1,348 @@
+{
+  "data": {
+    "outlets": [
+      {
+        "id": "out-01",
+        "name": "DineIQ DHA Phase 6",
+        "city": "Karachi",
+        "revenue": 7011439,
+        "orders": 3896,
+        "aov": 1800,
+        "profitMarginPct": 28.9,
+        "rating": 3.7,
+        "performanceClass": "profit_driver",
+        "revenueShare": 0.14,
+        "flags": []
+      },
+      {
+        "id": "out-02",
+        "name": "DineIQ Clifton",
+        "city": "Karachi",
+        "revenue": 5063458,
+        "orders": 2739,
+        "aov": 1849,
+        "profitMarginPct": 32.6,
+        "rating": 4.3,
+        "performanceClass": "profit_driver",
+        "revenueShare": 0.1,
+        "flags": []
+      },
+      {
+        "id": "out-03",
+        "name": "DineIQ Gulshan-e-Iqbal",
+        "city": "Karachi",
+        "revenue": 3965347,
+        "orders": 2094,
+        "aov": 1894,
+        "profitMarginPct": 31.7,
+        "rating": 4.2,
+        "performanceClass": "profit_driver",
+        "revenueShare": 0.08,
+        "flags": []
+      },
+      {
+        "id": "out-04",
+        "name": "DineIQ Bahadurabad",
+        "city": "Karachi",
+        "revenue": 2745290,
+        "orders": 1419,
+        "aov": 1935,
+        "profitMarginPct": 27.3,
+        "rating": 4.2,
+        "performanceClass": "profit_driver",
+        "revenueShare": 0.06,
+        "flags": []
+      },
+      {
+        "id": "out-05",
+        "name": "DineIQ Zamzama",
+        "city": "Karachi",
+        "revenue": 2775350,
+        "orders": 1579,
+        "aov": 1758,
+        "profitMarginPct": 32,
+        "rating": 4.2,
+        "performanceClass": "profit_driver",
+        "revenueShare": 0.06,
+        "flags": [
+          "wastage_abnormal"
+        ]
+      },
+      {
+        "id": "out-06",
+        "name": "DineIQ Nazimabad",
+        "city": "Karachi",
+        "revenue": 2435810,
+        "orders": 1374,
+        "aov": 1773,
+        "profitMarginPct": 24.4,
+        "rating": 4.1,
+        "performanceClass": "profit_driver",
+        "revenueShare": 0.05,
+        "flags": []
+      },
+      {
+        "id": "out-07",
+        "name": "DineIQ Malir Cantt",
+        "city": "Karachi",
+        "revenue": 2153141,
+        "orders": 1199,
+        "aov": 1796,
+        "profitMarginPct": 29.9,
+        "rating": 4.3,
+        "performanceClass": "profit_driver",
+        "revenueShare": 0.04,
+        "flags": []
+      },
+      {
+        "id": "out-08",
+        "name": "DineIQ North Nazimabad",
+        "city": "Karachi",
+        "revenue": 1855727,
+        "orders": 1035,
+        "aov": 1793,
+        "profitMarginPct": 33.5,
+        "rating": 3.7,
+        "performanceClass": "profit_driver",
+        "revenueShare": 0.04,
+        "flags": []
+      },
+      {
+        "id": "out-09",
+        "name": "DineIQ Shahra-e-Faisal",
+        "city": "Karachi",
+        "revenue": 1707266,
+        "orders": 920,
+        "aov": 1856,
+        "profitMarginPct": 33.5,
+        "rating": 4.4,
+        "performanceClass": "profit_driver",
+        "revenueShare": 0.03,
+        "flags": []
+      },
+      {
+        "id": "out-10",
+        "name": "DineIQ Gulberg III",
+        "city": "Lahore",
+        "revenue": 1894116,
+        "orders": 974,
+        "aov": 1945,
+        "profitMarginPct": 30,
+        "rating": 3.8,
+        "performanceClass": "volume_driver",
+        "revenueShare": 0.04,
+        "flags": []
+      },
+      {
+        "id": "out-11",
+        "name": "DineIQ DHA Phase 5",
+        "city": "Lahore",
+        "revenue": 1586135,
+        "orders": 859,
+        "aov": 1846,
+        "profitMarginPct": 29.4,
+        "rating": 4.4,
+        "performanceClass": "volume_driver",
+        "revenueShare": 0.03,
+        "flags": []
+      },
+      {
+        "id": "out-12",
+        "name": "DineIQ Johar Town",
+        "city": "Lahore",
+        "revenue": 1394296,
+        "orders": 802,
+        "aov": 1739,
+        "profitMarginPct": 27.7,
+        "rating": 4.6,
+        "performanceClass": "volume_driver",
+        "revenueShare": 0.03,
+        "flags": []
+      },
+      {
+        "id": "out-13",
+        "name": "DineIQ Bahria Town",
+        "city": "Lahore",
+        "revenue": 1367285,
+        "orders": 692,
+        "aov": 1976,
+        "profitMarginPct": 32.2,
+        "rating": 4.4,
+        "performanceClass": "volume_driver",
+        "revenueShare": 0.03,
+        "flags": []
+      },
+      {
+        "id": "out-14",
+        "name": "DineIQ Model Town",
+        "city": "Lahore",
+        "revenue": 1535564,
+        "orders": 835,
+        "aov": 1839,
+        "profitMarginPct": 24.4,
+        "rating": 3.9,
+        "performanceClass": "volume_driver",
+        "revenueShare": 0.03,
+        "flags": []
+      },
+      {
+        "id": "out-15",
+        "name": "DineIQ MM Alam Road",
+        "city": "Lahore",
+        "revenue": 1281537,
+        "orders": 718,
+        "aov": 1785,
+        "profitMarginPct": 31.2,
+        "rating": 4.1,
+        "performanceClass": "volume_driver",
+        "revenueShare": 0.03,
+        "flags": []
+      },
+      {
+        "id": "out-16",
+        "name": "DineIQ F-7 Markaz",
+        "city": "Islamabad",
+        "revenue": 1194143,
+        "orders": 663,
+        "aov": 1801,
+        "profitMarginPct": 24.8,
+        "rating": 3.8,
+        "performanceClass": "volume_driver",
+        "revenueShare": 0.02,
+        "flags": []
+      },
+      {
+        "id": "out-17",
+        "name": "DineIQ Blue Area",
+        "city": "Islamabad",
+        "revenue": 1260429,
+        "orders": 699,
+        "aov": 1803,
+        "profitMarginPct": 24.6,
+        "rating": 4,
+        "performanceClass": "volume_driver",
+        "revenueShare": 0.03,
+        "flags": [
+          "rating_drop"
+        ]
+      },
+      {
+        "id": "out-18",
+        "name": "DineIQ DHA Phase 2",
+        "city": "Islamabad",
+        "revenue": 1259554,
+        "orders": 690,
+        "aov": 1825,
+        "profitMarginPct": 30.3,
+        "rating": 4.7,
+        "performanceClass": "hidden_opportunity",
+        "revenueShare": 0.03,
+        "flags": []
+      },
+      {
+        "id": "out-19",
+        "name": "DineIQ Bahria Enclave",
+        "city": "Islamabad",
+        "revenue": 1258066,
+        "orders": 684,
+        "aov": 1839,
+        "profitMarginPct": 31.2,
+        "rating": 4.3,
+        "performanceClass": "hidden_opportunity",
+        "revenueShare": 0.03,
+        "flags": []
+      },
+      {
+        "id": "out-20",
+        "name": "DineIQ Saddar",
+        "city": "Rawalpindi",
+        "revenue": 1134790,
+        "orders": 665,
+        "aov": 1706,
+        "profitMarginPct": 31.9,
+        "rating": 4.7,
+        "performanceClass": "hidden_opportunity",
+        "revenueShare": 0.02,
+        "flags": [
+          "sales_drop"
+        ]
+      },
+      {
+        "id": "out-21",
+        "name": "DineIQ Bahria Town",
+        "city": "Rawalpindi",
+        "revenue": 1036479,
+        "orders": 535,
+        "aov": 1937,
+        "profitMarginPct": 25.8,
+        "rating": 3.9,
+        "performanceClass": "hidden_opportunity",
+        "revenueShare": 0.02,
+        "flags": []
+      },
+      {
+        "id": "out-22",
+        "name": "DineIQ D Ground",
+        "city": "Faisalabad",
+        "revenue": 1042456,
+        "orders": 524,
+        "aov": 1989,
+        "profitMarginPct": 25.6,
+        "rating": 4.1,
+        "performanceClass": "low_performer",
+        "revenueShare": 0.02,
+        "flags": []
+      },
+      {
+        "id": "out-23",
+        "name": "DineIQ Kohinoor City",
+        "city": "Faisalabad",
+        "revenue": 928601,
+        "orders": 480,
+        "aov": 1935,
+        "profitMarginPct": 30.1,
+        "rating": 4.1,
+        "performanceClass": "low_performer",
+        "revenueShare": 0.02,
+        "flags": []
+      },
+      {
+        "id": "out-24",
+        "name": "DineIQ Gulgasht",
+        "city": "Multan",
+        "revenue": 979722,
+        "orders": 512,
+        "aov": 1914,
+        "profitMarginPct": 25.3,
+        "rating": 4.1,
+        "performanceClass": "low_performer",
+        "revenueShare": 0.02,
+        "flags": []
+      }
+    ]
+  },
+  "meta": {
+    "generatedAt": "2026-09-24T08:29:51.861Z",
+    "filters": {}
+  },
+  "insight": {
+    "summary": [
+      "9 of 24 outlets currently classify as profit drivers; 4 carry performance flags.",
+      "Zamzama shows abnormal wastage and Blue Area a sustained rating decline — both are detailed in their outlet insights."
+    ],
+    "whyItMatters": "Outlet-level variance is larger than category-level variance this period, so per-outlet corrections move national numbers more than menu-wide changes.",
+    "evidence": [
+      {
+        "metric": "Outlets",
+        "value": "24",
+        "detail": "Across 6 cities"
+      },
+      {
+        "metric": "Flagged outlets",
+        "value": "3",
+        "detail": "wastage_abnormal, rating_drop, sales_drop"
+      }
+    ],
+    "period": "Aug 25 – Sep 23, 2026"
+  }
+}

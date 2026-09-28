@@ -1,0 +1,13 @@
+category_id,category_name,description,is_active
+CAT001,Burgers,Burgers menu category,True
+CAT002,Pizza,Pizza menu category,True
+CAT003,Pakistani,Pakistani menu category,True
+CAT004,BBQ,BBQ menu category,True
+CAT005,Beverages,Beverages menu category,True
+CAT006,Desserts,Desserts menu category,True
+CAT007,Chinese,Chinese menu category,True
+CAT008,Fast Food,Fast Food menu category,True
+CAT009,Breakfast,Breakfast menu category,True
+CAT010,Salads,Salads menu category,True
+CAT011,Pasta,Pasta menu category,True
+CAT012,Seafood,Seafood menu category,True

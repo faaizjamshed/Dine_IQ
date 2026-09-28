@@ -1,0 +1,31 @@
+promotion_id,promotion_name,promotion_type,discount_type,discount_value,start_date,end_date,minimum_order_value,channel,is_active
+P0001,Campaign 001,Retention,Fixed,500,2025-04-26,2025-05-19,0,Takeaway,False
+P0002,Campaign 002,Acquisition,Percentage,5,2025-09-19,2025-11-01,750,Takeaway,False
+P0003,Campaign 003,Retention,Fixed,200,2026-03-28,2026-04-10,0,Dine-In,False
+P0004,Campaign 004,Flash Sale,Percentage,10,2025-11-10,2025-12-12,1500,All,False
+P0005,Campaign 005,Flash Sale,Fixed,100,2025-06-26,2025-08-02,2000,Dine-In,False
+P0006,Campaign 006,Retention,Fixed,100,2025-10-10,2025-10-16,1500,Website,False
+P0007,Campaign 007,Seasonal,Fixed,200,2025-12-19,2026-01-18,1000,Dine-In,False
+P0008,Campaign 008,Flash Sale,Percentage,25,2026-07-08,2026-08-02,2000,Mobile App,True
+P0009,Campaign 009,Flash Sale,Percentage,10,2025-04-15,2025-05-17,1500,Website,False
+P0010,Campaign 010,Retention,Fixed,200,2025-11-24,2025-12-04,500,Mobile App,False
+P0011,Campaign 011,Seasonal,Percentage,25,2026-04-03,2026-04-18,1500,Delivery Partner,False
+P0012,Campaign 012,Acquisition,Fixed,150,2025-06-08,2025-07-05,0,Takeaway,False
+P0013,Campaign 013,Acquisition,Percentage,25,2025-07-10,2025-07-27,2000,Dine-In,False
+P0014,Campaign 014,Bundle,Fixed,300,2025-05-30,2025-07-14,1500,Website,False
+P0015,Campaign 015,Acquisition,Fixed,200,2026-02-12,2026-03-25,1000,Dine-In,False
+P0016,Campaign 016,Bundle,Fixed,200,2025-10-27,2025-11-29,0,Mobile App,False
+P0017,Campaign 017,Flash Sale,Fixed,300,2025-11-15,2025-11-24,0,Dine-In,False
+P0018,Campaign 018,Seasonal,Percentage,30,2025-09-05,2025-09-28,1500,Delivery Partner,False
+P0019,Campaign 019,Bundle,Fixed,500,2025-11-15,2025-12-14,2000,Dine-In,False
+P0020,Campaign 020,Bundle,Percentage,15,2025-10-17,2025-11-27,1000,Delivery Partner,False
+P0021,Campaign 021,Retention,Fixed,100,2025-05-17,2025-05-25,2000,Dine-In,False
+P0022,Campaign 022,Flash Sale,Percentage,10,2025-11-14,2025-11-30,1000,Delivery Partner,False
+P0023,Campaign 023,Retention,Percentage,15,2025-11-23,2026-01-06,750,Website,False
+P0024,Campaign 024,Retention,Percentage,30,2025-09-26,2025-10-22,0,Mobile App,False
+P0025,Campaign 025,Retention,Fixed,200,2025-04-18,2025-05-28,2000,All,False
+P0026,Campaign 026,Seasonal,Percentage,15,2026-07-07,2026-08-19,1500,All,True
+P0027,Campaign 027,Acquisition,Fixed,300,2025-05-12,2025-06-08,1500,All,False
+P0028,Campaign 028,Flash Sale,Fixed,500,2026-06-24,2026-07-04,2000,Mobile App,False
+P0029,Campaign 029,Flash Sale,Percentage,30,2026-04-21,2026-05-04,1500,Mobile App,False
+P0030,Campaign 030,Acquisition,Fixed,150,2025-03-10,2025-04-07,750,Website,False

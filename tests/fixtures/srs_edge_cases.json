@@ -1,0 +1,17 @@
+[
+  {"id":"high_selling_loss_making","units":1000,"margin_pct":-0.20,"waste_ratio":0.05,"rating":4.0,"promo_share":0.1,"expected_class":"Volume Driver","expected_findings":["high_sales_loss_making"]},
+  {"id":"low_selling_high_margin","units":10,"margin_pct":0.80,"waste_ratio":0.02,"rating":4.2,"promo_share":0.0,"expected_class":"Hidden Opportunity","expected_findings":["low_sales_high_margin"]},
+  {"id":"popular_high_wastage","units":900,"margin_pct":0.35,"waste_ratio":0.40,"rating":4.1,"promo_share":0.2,"expected_class":"Volume Driver","expected_findings":["popular_high_wastage"]},
+  {"id":"high_rating_low_profit","units":300,"margin_pct":0.05,"waste_ratio":0.03,"rating":4.9,"promo_share":0.0,"expected_class":"Volume Driver","expected_findings":["high_rating_low_profit"]},
+  {"id":"low_rating_high_sales","units":800,"margin_pct":0.30,"waste_ratio":0.04,"rating":1.5,"promo_share":0.0,"expected_class":"Volume Driver","expected_findings":["low_rating_high_sales"]},
+  {"id":"promotion_dependent","units":100,"margin_pct":0.25,"waste_ratio":0.03,"rating":4.0,"promo_share":0.95,"promo_units":100,"nonpromo_units":5,"expected_class":"Volume Driver","expected_findings":["promotion_dependent"]},
+  {"id":"location_split","units":500,"margin_pct":0.25,"waste_ratio":0.04,"rating":4.0,"promo_share":0.1,"location_margins":{"Lahore":0.50,"Karachi":-0.10},"expected_class":"Volume Driver","expected_findings":["location_contradiction"]},
+  {"id":"weekend_only","units":100,"margin_pct":0.30,"waste_ratio":0.03,"rating":4.0,"promo_share":0.1,"weekend_units":95,"weekday_units":5,"expected_class":"Volume Driver","expected_findings":["weekend_concentration"]},
+  {"id":"seasonal_menu_item","units":200,"margin_pct":0.30,"waste_ratio":0.03,"rating":4.0,"promo_share":0.1,"peak_month_share":0.70,"expected_class":"Volume Driver","expected_findings":["seasonal_menu"]},
+  {"id":"new_item_insufficient_history","units":20,"margin_pct":0.25,"waste_ratio":0.02,"rating":4.0,"promo_share":0.0,"history_days":20,"expected_class":"Insufficient history","expected_findings":["new_item_insufficient_history"]},
+  {"id":"price_sensitive","units":100,"margin_pct":0.30,"waste_ratio":0.02,"rating":4.0,"promo_share":0.0,"price_change_pct":0.20,"unit_change_pct":-0.35,"expected_class":"Volume Driver","expected_findings":["high_price_sensitivity"]},
+  {"id":"rating_spike","units":100,"margin_pct":0.30,"waste_ratio":0.02,"rating":4.0,"promo_share":0.0,"baseline_rating":3.2,"recent_rating":4.5,"expected_class":"Volume Driver","expected_findings":["rating_spike"]},
+  {"id":"sales_spike","units":100,"margin_pct":0.30,"waste_ratio":0.02,"rating":4.0,"promo_share":0.0,"baseline_units":20,"recent_units":100,"expected_class":"Volume Driver","expected_findings":["sales_spike"]},
+  {"id":"churn_decline","units":100,"margin_pct":0.30,"waste_ratio":0.02,"rating":4.0,"promo_share":0.0,"recency_increase_days":45,"frequency_change":-2,"monetary_change_pct":-0.40,"expected_class":"Volume Driver","expected_findings":["churn_risk"]},
+  {"id":"spark_python_disagreement","units":100,"margin_pct":0.30,"waste_ratio":0.02,"rating":4.0,"promo_share":0.0,"spark_label":"Volume Driver","python_label":"Profit Driver","expected_class":"Volume Driver","expected_findings":["spark_python_disagreement"]}
+]

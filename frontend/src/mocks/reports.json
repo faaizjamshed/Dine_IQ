@@ -1,0 +1,130 @@
+{
+  "data": {
+    "reports": [
+      {
+        "id": "daily-revenue",
+        "name": "Daily Revenue Summary",
+        "description": "Day-level revenue, orders and AOV across the selected scope.",
+        "format": "csv",
+        "rows": 30,
+        "lastGenerated": "2026-09-24T02:29:51.861Z",
+        "requiresPermission": "analytics.view",
+        "scopeNote": "Exports honor the global date-range and dimension filters where the underlying table supports them."
+      },
+      {
+        "id": "item-performance",
+        "name": "Item Performance",
+        "description": "Per-item revenue, margin, trend and performance class.",
+        "format": "csv",
+        "rows": 52,
+        "lastGenerated": "2026-09-23T20:29:51.861Z",
+        "requiresPermission": "analytics.view",
+        "scopeNote": "Exports honor the global date-range and dimension filters where the underlying table supports them."
+      },
+      {
+        "id": "customer-segments",
+        "name": "Customer Segments",
+        "description": "Segment sizes, revenue contribution and order behavior.",
+        "format": "xlsx",
+        "rows": 5,
+        "lastGenerated": "2026-09-23T14:29:51.861Z",
+        "requiresPermission": "exports.run",
+        "scopeNote": "Exports honor the global date-range and dimension filters where the underlying table supports them."
+      },
+      {
+        "id": "rfm-tiers",
+        "name": "RFM Tier Distribution",
+        "description": "Recency/frequency/monetary tiers with revenue share.",
+        "format": "csv",
+        "rows": 5,
+        "lastGenerated": "2026-09-23T08:29:51.861Z",
+        "requiresPermission": "exports.run",
+        "scopeNote": "Exports honor the global date-range and dimension filters where the underlying table supports them."
+      },
+      {
+        "id": "churn-risk-list",
+        "name": "Churn Risk List",
+        "description": "Top at-risk customer accounts with LTV and recency.",
+        "format": "xlsx",
+        "rows": 1200,
+        "lastGenerated": "2026-09-23T02:29:51.861Z",
+        "requiresPermission": "exports.run",
+        "scopeNote": "Exports honor the global date-range and dimension filters where the underlying table supports them."
+      },
+      {
+        "id": "basket-rules",
+        "name": "Association Rules",
+        "description": "Market-basket rules with support, confidence and lift.",
+        "format": "csv",
+        "rows": 14,
+        "lastGenerated": "2026-09-22T20:29:51.861Z",
+        "requiresPermission": "analytics.view",
+        "scopeNote": "Exports honor the global date-range and dimension filters where the underlying table supports them."
+      },
+      {
+        "id": "demand-forecast",
+        "name": "Demand Forecast (14d)",
+        "description": "Item-level forecast quantities with confidence bands.",
+        "format": "csv",
+        "rows": 20,
+        "lastGenerated": "2026-09-22T14:29:51.861Z",
+        "requiresPermission": "analytics.view",
+        "scopeNote": "Exports honor the global date-range and dimension filters where the underlying table supports them."
+      },
+      {
+        "id": "wastage-detail",
+        "name": "Wastage Detail",
+        "description": "Wastage cost and percentage by item, category and outlet.",
+        "format": "xlsx",
+        "rows": 56,
+        "lastGenerated": "2026-09-22T08:29:51.861Z",
+        "requiresPermission": "analytics.view",
+        "scopeNote": "Exports honor the global date-range and dimension filters where the underlying table supports them."
+      },
+      {
+        "id": "outlet-comparison",
+        "name": "Outlet Comparison",
+        "description": "Revenue, AOV, margin and flags for all 24 outlets.",
+        "format": "csv",
+        "rows": 24,
+        "lastGenerated": "2026-09-22T02:29:51.861Z",
+        "requiresPermission": "analytics.view",
+        "scopeNote": "Exports honor the global date-range and dimension filters where the underlying table supports them."
+      },
+      {
+        "id": "channel-economics",
+        "name": "Channel Economics",
+        "description": "Fees, discounts and contribution margin per channel.",
+        "format": "csv",
+        "rows": 4,
+        "lastGenerated": "2026-09-21T20:29:51.861Z",
+        "requiresPermission": "analytics.view",
+        "scopeNote": "Exports honor the global date-range and dimension filters where the underlying table supports them."
+      },
+      {
+        "id": "anomaly-log",
+        "name": "Anomaly Log",
+        "description": "All detected anomalies with severity, evidence and status.",
+        "format": "csv",
+        "rows": 8,
+        "lastGenerated": "2026-09-21T14:29:51.861Z",
+        "requiresPermission": "analytics.view",
+        "scopeNote": "Exports honor the global date-range and dimension filters where the underlying table supports them."
+      },
+      {
+        "id": "pipeline-audit",
+        "name": "Pipeline Audit Log",
+        "description": "Spark/Python run history and record-level diffs (admin only).",
+        "format": "csv",
+        "rows": 500,
+        "lastGenerated": "2026-09-21T08:29:51.861Z",
+        "requiresPermission": "admin.access",
+        "scopeNote": "Exports honor the global date-range and dimension filters where the underlying table supports them."
+      }
+    ]
+  },
+  "meta": {
+    "generatedAt": "2026-09-24T08:29:51.861Z",
+    "filters": {}
+  }
+}

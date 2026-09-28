@@ -1,0 +1,170 @@
+DineIQ
+
+ANALYTICS PLATFORM
+
+OVERVIEW
+
+Executive Dashboard
+
+INTELLIGENCE
+
+Menu Intelligence
+Customer Intelligence
+Basket & Bundles
+
+OPERATIONS
+
+Demand Forecast
+Wastage
+Locations
+Channels
+
+DECISIONS & ACTIONS
+
+Pricing & Promotions
+Anomalies
+Recommendations
+What-If Simulator
+
+PLATFORM
+
+Model Comparison
+Reports & Export
+Admin
+Collapse
+Customer Intelligence
+Full history
+Outlets:
+All outlets
+Categories:
+All categories
+Channels:
+All channels
+API CONNECTED
+API CONNECTED
+Search
+⌘K
+F
+
+RFM table summarizes only the top 1000 returned customer records by monetary value (74437 total). Inactivity is descriptive, not predictive churn. Cohorts, promotion sensitivity, population averages and revenue-at-risk are unavailable.
+
+Scope: Historical customer analytics · RFM as of 2026-08-31
+
+Customers with completed orders
+74,437
+Historical RFM population
+Repeat rate
+—
+Ordered more than once
+New this period
+—
+First order within 30 days
+Avg lifetime value
+—
+Historical period
+90+ days inactive
+25,388
+Descriptive inactivity; at least 2 orders
+Avg orders / customer
+—
+Historical period
+Segment Revenue Contribution
+
+Historical revenue by source customer segment
+
+5 segments
+Regular
+PKR 1.8B · 34% · 25,491 customers
+
+Source customer segment · historical completed orders
+
+Loyal
+PKR 1.2B · 23% · 17,935 customers
+
+Source customer segment · historical completed orders
+
+New
+PKR 937M · 18% · 13,558 customers
+
+Source customer segment · historical completed orders
+
+Occasional
+PKR 781M · 15% · 11,241 customers
+
+Source customer segment · historical completed orders
+
+High Value
+PKR 464M · 9% · 6,775 customers
+
+Source customer segment · historical completed orders
+
+RFM Value Tiers — Returned Sample
+
+Top returned records by monetary value; not population totals
+
+TIER
+CUSTOMERS
+REVENUE SHARE
+AVG MONETARY
+Established / lower engagement
+1,000
+100% · PKR 728M
+PKR 728K
+R8.5d · F85.6
+Customer Inactivity
+
+Descriptive 90+ day inactivity rule, evaluated at the backend analysis date
+
+90+ DAYS INACTIVE (DESCRIPTIVE)
+25,388
+— revenue · last order —d ago
+Cohort Retention
+
+% of each monthly signup cohort still ordering · M0 → M5
+
+No cohort data for the selected filters.
+
+RFM table summarizes only the top 1000 returned customer records by monetary value (74437 total). Inactivity is descriptive, not predictive churn. Cohorts, promotion sensitivity, population averages and revenue-at-risk are unavailable.
+
+Promotion Sensitivity by Segment
+
+Share of orders placed on promotion vs organic — discount depth on top
+
+No promo sensitivity data for the selected filters.
+
+Win-back Shortlist
+
+Highest historical monetary value among 90+ day inactive customers
+
+CUSTOMER	SEGMENT	ORDERS	HISTORICAL VALUE	LAST ORDER	RISK
+C0001731	At risk (90d inactive)	30	PKR 278K	93d	Inactive
+C0001477	At risk (90d inactive)	29	PKR 248K	99d	Inactive
+C0002320	At risk (90d inactive)	27	PKR 227K	94d	Inactive
+C0003668	At risk (90d inactive)	24	PKR 226K	112d	Inactive
+C0002564	At risk (90d inactive)	22	PKR 221K	164d	Inactive
+C0012701	At risk (90d inactive)	21	PKR 220K	114d	Inactive
+C0002892	At risk (90d inactive)	24	PKR 220K	108d	Inactive
+C0002032	At risk (90d inactive)	26	PKR 216K	91d	Inactive
+C0001953	At risk (90d inactive)	23	PKR 206K	92d	Inactive
+C0003133	At risk (90d inactive)	22	PKR 203K	98d	Inactive
+C0002603	At risk (90d inactive)	20	PKR 201K	126d	Inactive
+C0001981	At risk (90d inactive)	21	PKR 201K	113d	Inactive
+C0001931	At risk (90d inactive)	25	PKR 200K	91d	Inactive
+C0002596	At risk (90d inactive)	21	PKR 198K	90d	Inactive
+C0003342	At risk (90d inactive)	26	PKR 198K	120d	Inactive
+C0004145	At risk (90d inactive)	17	PKR 197K	136d	Inactive
+C0002893	At risk (90d inactive)	24	PKR 195K	92d	Inactive
+C0002661	At risk (90d inactive)	23	PKR 194K	101d	Inactive
+C0001835	At risk (90d inactive)	24	PKR 192K	96d	Inactive
+C0002882	At risk (90d inactive)	25	PKR 191K	108d	Inactive
+C0003303	At risk (90d inactive)	22	PKR 190K	135d	Inactive
+C0002929	At risk (90d inactive)	22	PKR 190K	98d	Inactive
+C0003867	At risk (90d inactive)	19	PKR 188K	123d	Inactive
+C0002041	At risk (90d inactive)	24	PKR 185K	129d	Inactive
+C0003559	At risk (90d inactive)	17	PKR 183K	126d	Inactive
+C0004144	At risk (90d inactive)	23	PKR 183K	117d	Inactive
+C0003738	At risk (90d inactive)	23	PKR 182K	123d	Inactive
+C0008862	At risk (90d inactive)	17	PKR 180K	107d	Inactive
+C0004544	At risk (90d inactive)	15	PKR 178K	115d	Inactive
+C0002932	At risk (90d inactive)	22	PKR 175K	93d	Inactive
+Classic Burger 1

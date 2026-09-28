@@ -1,0 +1,896 @@
+{
+  "source": "D:/SRS_Data Science Intelligence Arena/DineIQ Analytics-Data Science Intelligence Arena_SRS.pdf, section 1.6",
+  "audit_date": "2026-09-28",
+  "status_counts": {
+    "COMPLETE": 37,
+    "PARTIAL": 29
+  },
+  "requirement_count": 66,
+  "requirements": [
+    {
+      "id": "FR-i",
+      "description": "User registration and secure authentication.",
+      "status": "COMPLETE",
+      "evidence": "Registration, login/logout, server-side sessions, scrypt password hashes, CSRF protection on mutations and throttled failed-login attempts are implemented.",
+      "paths": [
+        "app/backend.py",
+        "app/operations_api.py",
+        "app/operational_store.py",
+        "app/static/index.html",
+        "tests/test_operations_api.py"
+      ],
+      "test": "Operations API auth tests and final 48-test regression suite passed; Edge admin/manager login and logout passed.",
+      "action": "Configure a managed session secret, TLS and secure cookies for any production deployment."
+    },
+    {
+      "id": "FR-ii",
+      "description": "Role-based permissions.",
+      "status": "COMPLETE",
+      "evidence": "Administrator, regional manager, restaurant manager and analyst roles are enforced server-side; location scope and CSRF are checked for mutations.",
+      "paths": [
+        "app/operations_api.py",
+        "app/operational_store.py",
+        "tests/test_operations_api.py",
+        "results/app/phase2/browser_verification.json"
+      ],
+      "test": "Analyst mutation denial, manager location-scope denial and browser HTTP 403 checks passed.",
+      "action": "Reassess role permissions when additional operational workflows are introduced."
+    },
+    {
+      "id": "FR-iii",
+      "description": "Administrator can create and maintain restaurant locations.",
+      "status": "COMPLETE",
+      "evidence": "Operational SQLite location records support authorized list/create/read/update/delete workflows without changing canonical analytics.",
+      "paths": [
+        "app/operational_store.py",
+        "app/operations_api.py",
+        "app/static/app.js",
+        "tests/test_operations_api.py",
+        "results/app/phase2/browser_verification.json"
+      ],
+      "test": "Admin CRUD and manager-scope API tests passed; Edge verified operational location persistence.",
+      "action": "Retain the operational/analytical data boundary."
+    },
+    {
+      "id": "FR-iv",
+      "description": "Menu management for categories, items, prices, costs, descriptions and availability.",
+      "status": "COMPLETE",
+      "evidence": "Operational CRUD stores menu categories and items with description, availability, price and cost fields; price edits create history rows.",
+      "paths": [
+        "app/operational_store.py",
+        "app/operations_api.py",
+        "app/static/app.js",
+        "tests/test_operations_api.py",
+        "results/app/phase2/browser_verification.json"
+      ],
+      "test": "Menu/category CRUD, price-history API assertions and Edge management workflow passed.",
+      "action": "Keep operational edits isolated from canonical Spark v4 outputs."
+    },
+    {
+      "id": "FR-v",
+      "description": "Maintain menu-item pricing history.",
+      "status": "COMPLETE",
+      "evidence": "Menu creation and price updates append effective-time pricing history with actor and reason in SQLite.",
+      "paths": [
+        "app/operational_store.py",
+        "app/operations_api.py",
+        "tests/test_operations_api.py",
+        "results/app/phase2/browser_verification.json"
+      ],
+      "test": "Price changes produced initial and update history rows with old/new values; browser verified initial history.",
+      "action": "Keep history append-only and review any future correction workflow."
+    },
+    {
+      "id": "FR-vi",
+      "description": "Maintain anonymized customer profiles and behavior.",
+      "status": "COMPLETE",
+      "evidence": "Operational customer creation generates an application-issued anon_ key and rejects direct personal identifiers in behavior profiles.",
+      "paths": [
+        "app/operational_store.py",
+        "app/operations_api.py",
+        "tests/test_operations_api.py"
+      ],
+      "test": "Privacy regression verifies generated anonymized ID and rejects an email-bearing profile; final 48-test regression suite passed.",
+      "action": "Review privacy controls and retention before any production use."
+    },
+    {
+      "id": "FR-vii",
+      "description": "Store order headers and detailed order-line transactions.",
+      "status": "COMPLETE",
+      "evidence": "Operational SQLite stores order headers and order lines with linked customer, location, promotion and menu-item constraints.",
+      "paths": [
+        "app/operational_store.py",
+        "app/operations_api.py",
+        "tests/test_operations_api.py"
+      ],
+      "test": "Manager order creation passed and cross-location order mutation was denied.",
+      "action": "Continue enforcing the configured foreign-key and location-scope rules."
+    },
+    {
+      "id": "FR-viii",
+      "description": "Maintain promotions, discounts, coupons, campaigns and applicable items.",
+      "status": "PARTIAL",
+      "evidence": "Operational promotion records support date ranges, discount percentages, active state and applicable menu items; distinct coupon codes/redemption tracking are not modeled.",
+      "paths": [
+        "app/operational_store.py",
+        "app/operations_api.py",
+        "app/static/app.js"
+      ],
+      "test": "Generic operational CRUD, relational constraints and the full suite passed; promotion-specific coupon/redemption scenarios remain untested.",
+      "action": "Add coupon identifiers, redemption rules and dedicated promotion CRUD tests if required."
+    },
+    {
+      "id": "FR-ix",
+      "description": "Store ratings linked to items or restaurants.",
+      "status": "COMPLETE",
+      "evidence": "Operational ratings persist customer, restaurant, optional menu item, score and timestamp with relational constraints.",
+      "paths": [
+        "app/operational_store.py",
+        "app/operations_api.py",
+        "app/static/app.js"
+      ],
+      "test": "Rating entity is included in the validated operational CRUD registry; final application suite passed.",
+      "action": "Add rating-specific edge-case tests for future workflow changes."
+    },
+    {
+      "id": "FR-x",
+      "description": "Maintain inventory use, stock, replenishment and consumption.",
+      "status": "COMPLETE",
+      "evidence": "Operational inventory CRUD persists on-hand, consumed, replenishment and reorder quantities with nonnegative constraints.",
+      "paths": [
+        "app/operational_store.py",
+        "app/operations_api.py",
+        "app/static/app.js"
+      ],
+      "test": "Inventory fields and validation are registered in operational CRUD; final application suite passed.",
+      "action": "Add inventory-specific consumption and replenishment workflow tests."
+    },
+    {
+      "id": "FR-xi",
+      "description": "Maintain wastage with quantity, cost, item, location, date and reason.",
+      "status": "COMPLETE",
+      "evidence": "Operational wastage CRUD persists quantity, cost, item, location, date and reason under nonnegative and foreign-key constraints.",
+      "paths": [
+        "app/operational_store.py",
+        "app/operations_api.py",
+        "app/static/app.js"
+      ],
+      "test": "Wastage entity fields and validation are registered in operational CRUD; final application suite passed.",
+      "action": "Add wastage-specific edge-case tests and keep records separate from canonical analytics."
+    },
+    {
+      "id": "FR-xii",
+      "description": "Use Spark/PySpark to ingest large restaurant datasets.",
+      "status": "COMPLETE",
+      "evidence": "PySpark loads 11 HDFS source tables with recorded row counts.",
+      "paths": [
+        "scripts/spark/ingest.py",
+        "results/spark/ingestion.json",
+        "results/spark/ingestion.log"
+      ],
+      "test": "V4 full ingestion execution evidence; live HDFS-backed app health succeeds.",
+      "action": "Add automated ingestion regression tests."
+    },
+    {
+      "id": "FR-xiii",
+      "description": "Validate required columns, datatypes and relationships.",
+      "status": "COMPLETE",
+      "evidence": "Explicit StructType and schema checks; FK audit included.",
+      "paths": [
+        "scripts/spark/common.py",
+        "scripts/spark/ingest.py",
+        "scripts/spark/profile_clean.py",
+        "results/spark/ingestion.json",
+        "results/spark/quality_cleaning.json"
+      ],
+      "test": "V4 schema_valid records and FK orphan counts.",
+      "action": "Automate the contracts as tests."
+    },
+    {
+      "id": "FR-xiv",
+      "description": "Identify missing, duplicate, inconsistent, invalid and anomalous data.",
+      "status": "COMPLETE",
+      "evidence": "Submission-quality v2 catalog identifies missing, duplicate, inconsistent, invalid, anomalous and referential problems.",
+      "paths": [
+        "DATA_QUALITY_VALIDATION.md",
+        "results/submission/quality/v2/quality_cleaning.json"
+      ],
+      "test": "Passed quality submission tests and read-back checks.",
+      "action": "Maintain evidence if the model/data snapshot changes."
+    },
+    {
+      "id": "FR-xv",
+      "description": "Clean/manage problems under documented rules.",
+      "status": "COMPLETE",
+      "evidence": "Accepted/quarantine/deduplicate/repair rules are documented and persisted with before/after accounting.",
+      "paths": [
+        "DATA_QUALITY_VALIDATION.md",
+        "scripts/spark/profile_clean.py"
+      ],
+      "test": "Malformed and invalid-case coverage is implemented.",
+      "action": "Maintain evidence if the model/data snapshot changes."
+    },
+    {
+      "id": "FR-xvi",
+      "description": "Use Spark SQL for complex analytical queries/aggregations.",
+      "status": "COMPLETE",
+      "evidence": "Twelve Spark SQL queries are executed over registered Parquet tables.",
+      "paths": [
+        "scripts/spark/analytics.py",
+        "results/spark/analytics.json",
+        "results/spark/analytics_v4.log"
+      ],
+      "test": "V4 execution outputs include SQL definitions, schemas, rows and runtime.",
+      "action": "Package standalone SQL query files if needed for evaluator deliverable."
+    },
+    {
+      "id": "FR-xvii",
+      "description": "Partition large datasets appropriately.",
+      "status": "PARTIAL",
+      "evidence": "Orders Parquet partitioned by month and input partition counts captured; no broader partition strategy/scale proof.",
+      "paths": [
+        "scripts/spark/profile_clean.py",
+        "results/spark/ingestion.json"
+      ],
+      "test": "V4 Parquet reads completed; no partition-pruning test.",
+      "action": "Document and verify partition strategy at scale."
+    },
+    {
+      "id": "FR-xviii",
+      "description": "Store at least one processed Big Data dataset in Parquet.",
+      "status": "COMPLETE",
+      "evidence": "Processed v4 entities and analytical result tables are Parquet in HDFS.",
+      "paths": [
+        "scripts/spark/profile_clean.py",
+        "scripts/spark/analytics.py",
+        "results/spark/quality_cleaning.json"
+      ],
+      "test": "Read-back counts/schemas plus live app loading.",
+      "action": "Provide portable access instructions."
+    },
+    {
+      "id": "FR-xix",
+      "description": "Generate derived analytical and ML features.",
+      "status": "COMPLETE",
+      "evidence": "Spark and ML feature generation exists for analytics, demand forecasting, wastage risk, RFM and baskets.",
+      "paths": [
+        "scripts/analytics/spark_features.py",
+        "scripts/ml/spark_demand.py",
+        "scripts/ml/daily_forecast.py"
+      ],
+      "test": "Fresh forecast and app integration checks passed.",
+      "action": "Maintain evidence if the model/data snapshot changes."
+    },
+    {
+      "id": "FR-xx",
+      "description": "Calculate revenue, cost, contribution margin and profitability.",
+      "status": "PARTIAL",
+      "evidence": "Menu net revenue allocates order-level discounts proportionally across item lines; cost, contribution margin, margin percent and wastage proxy calculated for 200 items. Independent pandas values for units/orders/gross/net revenue/cost/margin agree within 0.01 on all 200 items. It omits repeat rate, rating-linked attribution, promotion dependency and sales trend; costs use static menu cost.",
+      "paths": [
+        "scripts/spark/gap1_analytics.py",
+        "scripts/python/gap1_independent.py",
+        "scripts/python/compare_gap1.py",
+        "results/python/gap1/menu_profitability.csv",
+        "results/comparison/gap1/menu_profitability_spark_python_v6.json",
+        "results/analytics/gap1/v6/spark_gap1.json",
+        "results/analytics/gap1/v6/readback_verification.json",
+        "results/analytics/gap1/wastage_risk_v3/gap1_tests.log"
+      ],
+      "test": "Full regression: 48 passed; security API suite: 8 passed; live Edge/CDP browser verification: all routes and checks passed. See results/regression_full.log, results/audit/security_verification.log, and results/app/browser_verification.json.",
+      "action": "Complete omitted SRS dimensions and validate static cost semantics."
+    },
+    {
+      "id": "FR-xxi",
+      "description": "Classify every menu item into defined performance groups.",
+      "status": "PARTIAL",
+      "evidence": "All 200 items receive SRS classes when sufficient data exist; p75 sales/margin/waste-ratio thresholds are data-derived. New (<90 day) launches and invalid cost are explicit exceptions. Tricky-case tests cover high-pop/low-margin, low-pop/high-margin, high-waste, zero-sales, missing cost and new items.",
+      "paths": [
+        "scripts/spark/gap1_analytics.py",
+        "results/analytics/gap1/v6/spark_gap1.json",
+        "tests/test_gap1_analytics.py",
+        "results/analytics/gap1/v6/readback_verification.json"
+      ],
+      "test": "Full regression: 48 passed; security API suite: 8 passed; live Edge/CDP browser verification: all routes and checks passed. See results/regression_full.log, results/audit/security_verification.log, and results/app/browser_verification.json.",
+      "action": "Add item-rating, promotion and location contradictions plus UI exposure."
+    },
+    {
+      "id": "FR-xxii",
+      "description": "Identify peak hours, days and seasonal periods.",
+      "status": "PARTIAL",
+      "evidence": "Completed orders aggregated by weekday/hour; monthly trend available. Seasonal decomposition/location-specific peak analytics absent.",
+      "paths": [
+        "scripts/spark/analytics.py",
+        "results/spark/analytics.json"
+      ],
+      "test": "V4 aggregate outputs and browser heatmap rendered.",
+      "action": "Add seasonal and location-specific comparisons where meaningful."
+    },
+    {
+      "id": "FR-xxiii",
+      "description": "Segment customers by behavioral patterns.",
+      "status": "PARTIAL",
+      "evidence": "RFM-derived customer groups were added; synthetic source customer_segment is not used. Current grouping only uses recency/frequency/monetary, not category, promo/channel/time preferences.",
+      "paths": [
+        "scripts/spark/gap1_analytics.py",
+        "results/analytics/gap1/v6/spark_gap1.json",
+        "results/analytics/gap1/v6/readback_verification.json"
+      ],
+      "test": "Full regression: 48 passed; security API suite: 8 passed; live Edge/CDP browser verification: all routes and checks passed. See results/regression_full.log, results/audit/security_verification.log, and results/app/browser_verification.json.",
+      "action": "Extend segments with the other SRS behavioral dimensions and independent validation."
+    },
+    {
+      "id": "FR-xxiv",
+      "description": "Calculate customer recency, frequency and monetary value.",
+      "status": "PARTIAL",
+      "evidence": "Per-purchasing-customer recency, distinct completed-order frequency, monetary value, average order value and restaurant diversity are saved. Source customers with no completed orders are omitted.",
+      "paths": [
+        "scripts/spark/gap1_analytics.py",
+        "results/analytics/gap1/v6/spark_gap1.json",
+        "results/analytics/gap1/v6/readback_verification.json"
+      ],
+      "test": "Full regression: 48 passed; security API suite: 8 passed; live Edge/CDP browser verification: all routes and checks passed. See results/regression_full.log, results/audit/security_verification.log, and results/app/browser_verification.json.",
+      "action": "Include zero-order customers with explicit null recency and verify all source customers."
+    },
+    {
+      "id": "FR-xxv",
+      "description": "Discover frequently purchased menu combinations.",
+      "status": "COMPLETE",
+      "evidence": "Distinct-item baskets for completed orders yield 955 retained item-pair rows from 611,135 baskets using minimum count 100.",
+      "paths": [
+        "scripts/spark/gap1_analytics.py",
+        "results/analytics/gap1/v6/spark_gap1.json",
+        "results/analytics/gap1/v6/readback_verification.json",
+        "results/analytics/gap1/wastage_risk_v3/gap1_tests.log"
+      ],
+      "test": "Full regression: 48 passed; security API suite: 8 passed; live Edge/CDP browser verification: all routes and checks passed. See results/regression_full.log, results/audit/security_verification.log, and results/app/browser_verification.json.",
+      "action": "Consider larger itemsets only if operationally useful."
+    },
+    {
+      "id": "FR-xxvi",
+      "description": "Calculate support, confidence and lift.",
+      "status": "COMPLETE",
+      "evidence": "Support, both-direction confidence and lift are calculated from keyed completed-order baskets; minimum pair count 100 and confidence threshold 0.10 are recorded.",
+      "paths": [
+        "scripts/spark/gap1_analytics.py",
+        "results/analytics/gap1/v6/spark_gap1.json",
+        "results/analytics/gap1/v6/readback_verification.json",
+        "tests/test_gap1_analytics.py"
+      ],
+      "test": "Full regression: 48 passed; security API suite: 8 passed; live Edge/CDP browser verification: all routes and checks passed. See results/regression_full.log, results/audit/security_verification.log, and results/app/browser_verification.json.",
+      "action": "Thresholds are discovery cutoffs, not statistical significance tests."
+    },
+    {
+      "id": "FR-xxvii",
+      "description": "Recommend bundle/cross-sell products from associations.",
+      "status": "COMPLETE",
+      "evidence": "Verified directional basket recommendations are generated from observed association rules, retained at confidence >=0.10 and lift >1.0, and served with antecedent-to-consequent wording and direction-specific confidence. They are deterministic candidates, not causal claims.",
+      "paths": [
+        "scripts/spark/directional_basket_recommendations.py",
+        "results/analytics/gap1/v11/directional_basket_recommendations.json",
+        "app/backend.py",
+        "tests/test_app_integration.py"
+      ],
+      "test": "Full regression: 48 passed; security API suite: 8 passed; live Edge/CDP browser verification: all routes and checks passed. See results/regression_full.log, results/audit/security_verification.log, and results/app/browser_verification.json.",
+      "action": "Keep candidate wording noncausal and monitor recommendation acceptance before claiming business impact."
+    },
+    {
+      "id": "FR-xxviii",
+      "description": "Predict future demand.",
+      "status": "COMPLETE",
+      "evidence": "Future demand is predicted at restaurant-hour scope and frozen item/category/location daily scopes.",
+      "paths": [
+        "results/ml/spark/pipeline.json",
+        "results/submission/forecast-v1/evaluation.json",
+        "app/daily_forecasts.py"
+      ],
+      "test": "Live/reconciled production forecasting remains future work.",
+      "action": "Maintain evidence if the model/data snapshot changes."
+    },
+    {
+      "id": "FR-xxix",
+      "description": "Evaluate forecasts with suitable metrics.",
+      "status": "COMPLETE",
+      "evidence": "Freshly scored the saved Spark/Python models and seasonal-naive baseline on the identical 55,200-row held-out June-August period; a separate 500-case report records evenly spaced keyed predictions. Spark uses Sunday=0 and the saved Python model uses Monday=0, so cross-model case differences remain descriptive, not feature-equivalent.",
+      "paths": [
+        "scripts/ml/demand_baseline_comparison.py",
+        "results/ml/gap1/verification_20260926/demand_model_comparison.json",
+        "results/ml/gap1/verification_20260926/demand_model_comparison_cases.csv"
+      ],
+      "test": "Full regression: 48 passed; security API suite: 8 passed; live Edge/CDP browser verification: all routes and checks passed. See results/regression_full.log, results/audit/security_verification.log, and results/app/browser_verification.json.",
+      "action": "Retain the weekday encoding caveat; align semantics only through a separately trained and validated model."
+    },
+    {
+      "id": "FR-xxx",
+      "description": "Analyze food wastage trends.",
+      "status": "PARTIAL",
+      "evidence": "Wastage quantity/cost is grouped by restaurant, item/category, month, weekday and reason. Demand, inventory, promotion, preparation quantity and exposure-normalized rates are not all integrated.",
+      "paths": [
+        "scripts/spark/gap1_analytics.py",
+        "results/analytics/gap1/v6/spark_gap1.json",
+        "results/analytics/gap1/v6/readback_verification.json"
+      ],
+      "test": "Full regression: 48 passed; security API suite: 8 passed; live Edge/CDP browser verification: all routes and checks passed. See results/regression_full.log, results/audit/security_verification.log, and results/app/browser_verification.json.",
+      "action": "Add remaining aligned operational dimensions and denominators."
+    },
+    {
+      "id": "FR-xxxi",
+      "description": "Predict high-risk wastage items/periods.",
+      "status": "COMPLETE",
+      "evidence": "A weekly future wastage-cost risk classifier is trained and tested on a chronological panel. Target is next-week item/location cost >= training-only positive-week p75 (1,596.2); prediction is at target-week start from lagged waste/demand and known calendar/category/location. Three Spark ML models compared on validation, logistic regression selected by PR-AUC then validation F1; test is isolated. Test PR-AUC 0.0906 vs prevalence/majority baseline PR-AUC 0.0587, recall 0.5467, precision 0.0907, F1 0.1556; persistence/reload inference 16/16 passed. This is low-precision risk triage, not causal attribution.",
+      "paths": [
+        "scripts/ml/spark_wastage_risk.py",
+        "results/analytics/gap1/wastage_risk_v3/pipeline.json",
+        "results/analytics/gap1/wastage_risk_v3/run.log",
+        "tests/test_gap1_analytics.py",
+        "results/analytics/gap1/wastage_risk_v3/gap1_tests.log"
+      ],
+      "test": "Full regression: 48 passed; security API suite: 8 passed; live Edge/CDP browser verification: all routes and checks passed. See results/regression_full.log, results/audit/security_verification.log, and results/app/browser_verification.json.",
+      "action": "Treat as a screening signal only; improve precision/utility and broaden cost drivers before operational use."
+    },
+    {
+      "id": "FR-xxxii",
+      "description": "Analyze demand changes following price changes and classify price sensitivity.",
+      "status": "PARTIAL",
+      "evidence": "Observed before/after 30-day item/location unit response and sensitivity bands are calculated for 2,992 price-change records. The association is not controlled or causal.",
+      "paths": [
+        "scripts/spark/gap1_analytics.py",
+        "results/analytics/gap1/v6/spark_gap1.json",
+        "results/analytics/gap1/v6/readback_verification.json"
+      ],
+      "test": "Full regression: 48 passed; security API suite: 8 passed; live Edge/CDP browser verification: all routes and checks passed. See results/regression_full.log, results/audit/security_verification.log, and results/app/browser_verification.json.",
+      "action": "Account for zeros, concurrent promotions, exposure duration, and confounding; validate sensitivity classification."
+    },
+    {
+      "id": "FR-xxxiii",
+      "description": "Evaluate promotions by revenue, profit, customer behavior and wastage.",
+      "status": "PARTIAL",
+      "evidence": "Promotion orders have revenue, order/customer counts, AOV and estimated contribution margin. Customer acquisition/repeat cohorts, wastage and post-promotion outcomes are absent.",
+      "paths": [
+        "scripts/spark/gap1_analytics.py",
+        "results/analytics/gap1/v6/spark_gap1.json",
+        "results/analytics/gap1/v6/readback_verification.json"
+      ],
+      "test": "Full regression: 48 passed; security API suite: 8 passed; live Edge/CDP browser verification: all routes and checks passed. See results/regression_full.log, results/audit/security_verification.log, and results/app/browser_verification.json.",
+      "action": "Add acquisition/repeat/post-period and wastage measures with noncausal wording."
+    },
+    {
+      "id": "FR-xxxiv",
+      "description": "Detect promotion traps where sales rise but profitability or other KPIs fall.",
+      "status": "PARTIAL",
+      "evidence": "A simple trap signal compares promotional cohorts with overall non-promotion averages for AOV and estimated per-order margin; no promotion met this rule in this dataset. This is uncontrolled.",
+      "paths": [
+        "scripts/spark/gap1_analytics.py",
+        "results/analytics/gap1/v6/spark_gap1.json",
+        "results/analytics/gap1/v6/readback_verification.json"
+      ],
+      "test": "Full regression: 48 passed; security API suite: 8 passed; live Edge/CDP browser verification: all routes and checks passed. See results/regression_full.log, results/audit/security_verification.log, and results/app/browser_verification.json.",
+      "action": "Implement SRS-listed customer, wastage and substitution signals using defensible matched periods."
+    },
+    {
+      "id": "FR-xxxv",
+      "description": "Analyze ratings against menu items and restaurant performance.",
+      "status": "PARTIAL",
+      "evidence": "Existing restaurant ratings plus order-linked data are available; this phase detects temporal restaurant-level ratings but does not provide validated menu-item ratings.",
+      "paths": [
+        "scripts/spark/gap1_analytics.py",
+        "results/analytics/gap1/v6/spark_gap1.json",
+        "results/analytics/gap1/v6/readback_verification.json"
+      ],
+      "test": "Full regression: 48 passed; security API suite: 8 passed; live Edge/CDP browser verification: all routes and checks passed. See results/regression_full.log, results/audit/security_verification.log, and results/app/browser_verification.json.",
+      "action": "Add item-linkage interpretation and profitability/sales/repeat comparison."
+    },
+    {
+      "id": "FR-xxxvi",
+      "description": "Flag unusual rating patterns.",
+      "status": "PARTIAL",
+      "evidence": "Robust restaurant-day rating-mean anomaly rule (n>=30, modified-z>3) executed and detected zero candidates. It does not test all SRS cases such as identical rating bursts.",
+      "paths": [
+        "scripts/spark/gap1_analytics.py",
+        "results/analytics/gap1/v6/spark_gap1.json",
+        "results/analytics/gap1/v6/readback_verification.json"
+      ],
+      "test": "Full regression: 48 passed; security API suite: 8 passed; live Edge/CDP browser verification: all routes and checks passed. See results/regression_full.log, results/audit/security_verification.log, and results/app/browser_verification.json.",
+      "action": "Implement burst/identical-pattern tests and validate detection on controlled fixtures."
+    },
+    {
+      "id": "FR-xxxvii",
+      "description": "Detect unusual sales/transaction behavior.",
+      "status": "PARTIAL",
+      "evidence": "Restaurant-hour counts are flagged against same restaurant/hour-of-week median and MAD; 2,138 candidates saved. This is a candidate detector, not adjudicated unusual events, and omits high-value/discount/duplicate checks.",
+      "paths": [
+        "scripts/spark/gap1_analytics.py",
+        "results/analytics/gap1/v6/spark_gap1.json",
+        "results/analytics/gap1/v6/readback_verification.json"
+      ],
+      "test": "Full regression: 48 passed; security API suite: 8 passed; live Edge/CDP browser verification: all routes and checks passed. See results/regression_full.log, results/audit/security_verification.log, and results/app/browser_verification.json.",
+      "action": "Add remaining anomaly types and review false positives."
+    },
+    {
+      "id": "FR-xxxviii",
+      "description": "Compare restaurant locations on standardized indicators.",
+      "status": "COMPLETE",
+      "evidence": "Restaurant aggregate includes completed orders, revenue and average order value; app supports city filter.",
+      "paths": [
+        "scripts/spark/analytics.py",
+        "results/spark/analytics.json",
+        "app/backend.py",
+        "app/static/app.js"
+      ],
+      "test": "Spark/Python comparison and browser route/city control verified.",
+      "action": "Add item/location metrics under FR-xxxix."
+    },
+    {
+      "id": "FR-xxxix",
+      "description": "Analyze menu items independently across locations.",
+      "status": "COMPLETE",
+      "evidence": "Read-back check confirms 5,000 unique restaurant-item combinations = 25 restaurants \u00d7 200 menu items. Each includes units, gross/net revenue, estimated cost and contribution margin; output counts and schemas match.",
+      "paths": [
+        "scripts/spark/gap1_analytics.py",
+        "results/analytics/gap1/v6/spark_gap1.json",
+        "results/analytics/gap1/v6/readback_verification.json",
+        "results/analytics/gap1/wastage_risk_v3/gap1_tests.log"
+      ],
+      "test": "Full regression: 48 passed; security API suite: 8 passed; live Edge/CDP browser verification: all routes and checks passed. See results/regression_full.log, results/audit/security_verification.log, and results/app/browser_verification.json.",
+      "action": "Add location-specific rating/waste context only if needed for broader multi-factor analysis."
+    },
+    {
+      "id": "FR-xl",
+      "description": "Compare ordering channel behavior.",
+      "status": "COMPLETE",
+      "evidence": "Channel order count, average order value and revenue are calculated and displayed.",
+      "paths": [
+        "scripts/spark/analytics.py",
+        "results/spark/analytics.json",
+        "app/backend.py",
+        "app/static/app.js"
+      ],
+      "test": "Python aggregate comparison, API endpoint and browser page verified.",
+      "action": "Add additional channel comparisons only where supported."
+    },
+    {
+      "id": "FR-xli",
+      "description": "Identify customers at churn risk/declining engagement.",
+      "status": "PARTIAL",
+      "evidence": "A descriptive 90-day inactivity indicator is computed at max observed completed-order date for customers with >=2 orders. Synthetic is_churned/last_order_date are excluded; no future label or predictive classifier is claimed.",
+      "paths": [
+        "scripts/spark/gap1_analytics.py",
+        "results/analytics/gap1/v6/spark_gap1.json",
+        "results/analytics/gap1/v6/readback_verification.json"
+      ],
+      "test": "Full regression: 48 passed; security API suite: 8 passed; live Edge/CDP browser verification: all routes and checks passed. See results/regression_full.log, results/audit/security_verification.log, and results/app/browser_verification.json.",
+      "action": "Use multiple historical snapshots to identify change in engagement; validate an ML churn target only if future labels can be built."
+    },
+    {
+      "id": "FR-xlii",
+      "description": "Train/evaluate at least three suitable Spark MLlib models.",
+      "status": "COMPLETE",
+      "evidence": "Spark linear regression, random forest and GBT trained on chronological split; validation metrics and selection saved.",
+      "paths": [
+        "scripts/ml/spark_demand.py",
+        "results/ml/spark/pipeline.json"
+      ],
+      "test": "Model evidence tests and reload smoke passed.",
+      "action": "Add baseline evaluation for full forecast-quality requirement."
+    },
+    {
+      "id": "FR-xliii",
+      "description": "Develop independent Python ML models.",
+      "status": "COMPLETE",
+      "evidence": "Separate pandas/scikit-learn pipeline reads frozen CSV, independently aggregates/features/trains three regressors.",
+      "paths": [
+        "scripts/ml/python_demand.py",
+        "results/ml/python/pipeline.json"
+      ],
+      "test": "Saved Python model load/inference test passed.",
+      "action": "Document complete compatible dependency lock."
+    },
+    {
+      "id": "FR-xliv",
+      "description": "Compare independently generated Spark and Python predictions.",
+      "status": "COMPLETE",
+      "evidence": "Spark and Python predictions are compared on an aligned common held-out panel.",
+      "paths": [
+        "results/submission/aligned-comparison-v1/demand_model_comparison.json"
+      ],
+      "test": "500 sampled cases and 55,200 verified common rows.",
+      "action": "Maintain evidence if the model/data snapshot changes."
+    },
+    {
+      "id": "FR-xlv",
+      "description": "Calculate model agreement/disagreement.",
+      "status": "COMPLETE",
+      "evidence": "Agreement/disagreement rates and major differences are reported.",
+      "paths": [
+        "results/submission/aligned-comparison-v1/demand_model_comparison.json",
+        "results/submission/aligned-comparison-v1/demand_model_comparison_cases.csv"
+      ],
+      "test": "100% within one order on sampled cases.",
+      "action": "Maintain evidence if the model/data snapshot changes."
+    },
+    {
+      "id": "FR-xlvi",
+      "description": "Provide suitable model evaluation metrics.",
+      "status": "COMPLETE",
+      "evidence": "Spark and Python regression holdout RMSE, MAE and R2 plus validation metrics.",
+      "paths": [
+        "results/ml/spark/pipeline.json",
+        "results/ml/python/pipeline.json",
+        "results/ml/comparison/spark_vs_python.json"
+      ],
+      "test": "Metric structure tests and recorded test metrics.",
+      "action": "Compare against a simple baseline per FR-xxix."
+    },
+    {
+      "id": "FR-xlvii",
+      "description": "Generate evidence-based recommendations.",
+      "status": "PARTIAL",
+      "evidence": "Evidence-backed deterministic recommendations now combine directional basket rules, menu classes, RFM segments and low-stock records; the live API/browser route exposes them. No predictive ML claim is made.",
+      "paths": [
+        "scripts/spark/directional_basket_recommendations.py",
+        "results/analytics/gap1/v11/directional_basket_recommendations.json",
+        "app/backend.py",
+        "tests/test_app_integration.py",
+        "results/app/browser_verification.json"
+      ],
+      "test": "Full regression: 48 passed; security API suite: 8 passed; live Edge/CDP browser verification: all routes and checks passed. See results/regression_full.log, results/audit/security_verification.log, and results/app/browser_verification.json.",
+      "action": "Add recommendation acceptance/cost tracking and remaining SRS evidence sources."
+    },
+    {
+      "id": "FR-xlviii",
+      "description": "Recommend menu promotion, repricing, bundling, redesign or removal.",
+      "status": "PARTIAL",
+      "evidence": "Menu classes drive review/visibility/cost actions and basket rules support bundles. Slow-moving criteria are not fully combined (purchase gaps, repeat rate, trend, ratings, promotion dependence).",
+      "paths": [
+        "scripts/spark/gap1_analytics.py",
+        "results/analytics/gap1/v6/spark_gap1.json",
+        "results/analytics/gap1/v6/readback_verification.json"
+      ],
+      "test": "Full regression: 48 passed; security API suite: 8 passed; live Edge/CDP browser verification: all routes and checks passed. See results/regression_full.log, results/audit/security_verification.log, and results/app/browser_verification.json.",
+      "action": "Complete multi-factor slow-mover/menu optimization and expose in UI."
+    },
+    {
+      "id": "FR-xlix",
+      "description": "Use forecast/wastage outputs to recommend inventory plans.",
+      "status": "PARTIAL",
+      "evidence": "Latest inventory records marked Low generate a deterministic replenishment-review recommendation; this does not use forecast/wastage risk outputs.",
+      "paths": [
+        "scripts/spark/gap1_analytics.py",
+        "results/analytics/gap1/v6/spark_gap1.json",
+        "results/analytics/gap1/v6/readback_verification.json"
+      ],
+      "test": "Full regression: 48 passed; security API suite: 8 passed; live Edge/CDP browser verification: all routes and checks passed. See results/regression_full.log, results/audit/security_verification.log, and results/app/browser_verification.json.",
+      "action": "Connect validated demand/wastage estimates to inventory plans."
+    },
+    {
+      "id": "FR-l",
+      "description": "Map customer segments to suitable targeting strategies.",
+      "status": "PARTIAL",
+      "evidence": "RFM segments map to simple retention/loyalty/repeat-visit suggestions; no channel, category, timing or promotion response model is evaluated.",
+      "paths": [
+        "scripts/spark/gap1_analytics.py",
+        "results/analytics/gap1/v6/spark_gap1.json",
+        "results/analytics/gap1/v6/readback_verification.json"
+      ],
+      "test": "Full regression: 48 passed; security API suite: 8 passed; live Edge/CDP browser verification: all routes and checks passed. See results/regression_full.log, results/audit/security_verification.log, and results/app/browser_verification.json.",
+      "action": "Add preference dimensions and evaluate targeting response."
+    },
+    {
+      "id": "FR-li",
+      "description": "Simulate pricing, promotion, demand and inventory what-if changes.",
+      "status": "PARTIAL",
+      "evidence": "Validated POST /api/what-if endpoint supports price, promotion, demand, inventory and item-removal arithmetic with bounds and explicit assumptions. It has no interactive UI or preparation-quantity scenario; outputs are not forecasts.",
+      "paths": [
+        "app/backend.py",
+        "app/what_if.py",
+        "tests/test_gap1_analytics.py",
+        "results/analytics/gap1/wastage_risk_v3/gap1_tests.log"
+      ],
+      "test": "Full regression: 48 passed; security API suite: 8 passed; live Edge/CDP browser verification: all routes and checks passed. See results/regression_full.log, results/audit/security_verification.log, and results/app/browser_verification.json.",
+      "action": "Add preparation scenario and UI; extend scenario impact to wastage/cost when inputs support it."
+    },
+    {
+      "id": "FR-lii",
+      "description": "Display important restaurant KPIs on an executive dashboard.",
+      "status": "PARTIAL",
+      "evidence": "Executive page displays canonical aggregate KPIs and charts; profitability, recommendations, anomaly and full SRS business insights are absent.",
+      "paths": [
+        "app/static/app.js",
+        "app/backend.py",
+        "results/app/phase2/browser_verification.json"
+      ],
+      "test": "Executive route rendered and API endpoint passed.",
+      "action": "Complete KPIs/insights after implementing missing analytics."
+    },
+    {
+      "id": "FR-liii",
+      "description": "Display menu-item performance on menu dashboard.",
+      "status": "PARTIAL",
+      "evidence": "Menu sales counts, units, gross sales and average unit price are shown; multi-factor profitability/classification absent.",
+      "paths": [
+        "app/static/app.js",
+        "scripts/spark/analytics.py"
+      ],
+      "test": "Browser rendered 200 rows and interactive category filter.",
+      "action": "Add profitability/classification metrics and cases."
+    },
+    {
+      "id": "FR-liv",
+      "description": "Display customer segment behavior.",
+      "status": "PARTIAL",
+      "evidence": "Aggregate segment behavior table is shown without per-customer RFM or churn insights.",
+      "paths": [
+        "app/static/app.js",
+        "results/spark/analytics.json"
+      ],
+      "test": "Locations/guests route rendered and API test passed.",
+      "action": "Add RFM and validated behavioral segmentation."
+    },
+    {
+      "id": "FR-lv",
+      "description": "Display wastage quantity, cost, item, location, date and reason.",
+      "status": "PARTIAL",
+      "evidence": "Existing output reports quantity/cost by reason only.",
+      "paths": [
+        "scripts/spark/analytics.py",
+        "app/static/app.js"
+      ],
+      "test": "Operations route rendered and wastage API test passed.",
+      "action": "Add item/location/date dimensions."
+    },
+    {
+      "id": "FR-lvi",
+      "description": "Display historical and forecast demand.",
+      "status": "COMPLETE",
+      "evidence": "Dashboard/API expose historical demand, restaurant-hour prediction and frozen daily item/category/location outlook.",
+      "paths": [
+        "frontend/src/features/forecast/DailyOutlook.tsx",
+        "app/daily_forecasts.py",
+        "tests/test_app_integration.py"
+      ],
+      "test": "App integration tests verify the authenticated route.",
+      "action": "Maintain evidence if the model/data snapshot changes."
+    },
+    {
+      "id": "FR-lvii",
+      "description": "Display Spark/Python result comparison dashboard.",
+      "status": "PARTIAL",
+      "evidence": "System page displays status and metric comparison evidence, but not paired per-case predictions/agreement dashboard.",
+      "paths": [
+        "app/static/app.js",
+        "app/backend.py",
+        "results/ml/comparison/spark_vs_python.json"
+      ],
+      "test": "System route rendered; comparison evidence summary read from file.",
+      "action": "Add \u2265100-row comparison and interactive disagreement view."
+    },
+    {
+      "id": "FR-lviii",
+      "description": "Support search and multiple useful filters.",
+      "status": "PARTIAL",
+      "evidence": "Menu category/query/sort; city; channel; date month range; promotion search; rating restaurant; peak weekday/hour filters are backed by actual data.",
+      "paths": [
+        "app/backend.py",
+        "app/static/app.js",
+        "tests/test_app_integration.py",
+        "results/app/phase2/browser_verification.json"
+      ],
+      "test": "API filter/error tests and browser category filter passed.",
+      "action": "Add only filters required by completed analytics, with browser tests for each."
+    },
+    {
+      "id": "FR-lix",
+      "description": "Download analytical reports.",
+      "status": "COMPLETE",
+      "evidence": "Authenticated report endpoints return downloadable JSON attachments for supported analytical datasets.",
+      "paths": [
+        "app/operations_api.py",
+        "app/static/app.js",
+        "tests/test_operations_api.py",
+        "results/app/phase2/browser_verification.json"
+      ],
+      "test": "Report response/auth tests and Edge attachment/content-type verification passed.",
+      "action": "Add PDF output only if explicitly required by the target report workflow."
+    },
+    {
+      "id": "FR-lx",
+      "description": "Export selected results.",
+      "status": "COMPLETE",
+      "evidence": "Authenticated CSV/JSON export endpoints support dataset selection, row limits and location filters; UI provides menu CSV, basket JSON and promotion report downloads.",
+      "paths": [
+        "app/operations_api.py",
+        "app/static/app.js",
+        "tests/test_operations_api.py",
+        "results/app/phase2/browser_verification.json"
+      ],
+      "test": "Filtered export/report API tests and Edge CSV attachment check passed.",
+      "action": "Retain access, row-limit, filter and audit checks for new exports."
+    },
+    {
+      "id": "FR-lxi",
+      "description": "Securely store application configuration, metadata, users, recommendations and results.",
+      "status": "COMPLETE",
+      "evidence": "Versioned SQLite schema/migrations persist users, settings, operational entities, pricing history, analytics metadata, recommendations and durable audit events; analytics remain in HDFS.",
+      "paths": [
+        "app/operational_store.py",
+        "app/backend.py",
+        "app/operations_api.py",
+        "tests/test_operations_api.py"
+      ],
+      "test": "SQLite migration, password-hash, privacy, audit, CRUD and full 48-test regression suite checks passed.",
+      "action": "Set production session-secret, backup and database-retention policies before release."
+    },
+    {
+      "id": "FR-lxii",
+      "description": "Identify model version used by each prediction.",
+      "status": "COMPLETE",
+      "evidence": "Model endpoint and prediction payload identify selected Spark model/path/version; system page reports model version v1.",
+      "paths": [
+        "app/backend.py",
+        "app/static/app.js",
+        "results/ml/spark/pipeline.json"
+      ],
+      "test": "App model endpoint/prediction contract tests and browser forecast check passed.",
+      "action": "Expose version in portable deployment manifest too."
+    },
+    {
+      "id": "FR-lxiii",
+      "description": "Audit processing jobs, predictions, exports and admin actions.",
+      "status": "PARTIAL",
+      "evidence": "SQLite audit events persist login, registration, CRUD, settings, model predictions, exports/reports and account administration with actor, outcome, record key and redacted details; Spark execution history is separately labeled historical.",
+      "paths": [
+        "app/operational_store.py",
+        "app/operations_api.py",
+        "app/backend.py",
+        "tests/test_operations_api.py",
+        "results/app/phase2/browser_verification.json"
+      ],
+      "test": "Audit export/admin assertions, browser CRUD/prediction/export flow and secret-redaction checks passed.",
+      "action": "Add durable audit records for future live processing-job starts, completions and failures; define retention."
+    },
+    {
+      "id": "FR-lxiv",
+      "description": "Display understandable processing/model/Spark/database errors.",
+      "status": "PARTIAL",
+      "evidence": "Structured validation/auth/database errors, degraded startup health, invalid forecast/risk messages and a retryable API-unavailable page are implemented.",
+      "paths": [
+        "app/backend.py",
+        "app/static/app.js",
+        "tests/test_app_integration.py",
+        "results/app/phase2/browser_verification.json"
+      ],
+      "test": "Edge verified invalid forecast, invalid risk week, API outage and successful retry; full 48-test regression suite passed. Startup/model-failure injection remains uncovered.",
+      "action": "Add startup/model-failure injection tests and durable operational error logging."
+    },
+    {
+      "id": "FR-lxv",
+      "description": "Monitor Spark processing job status.",
+      "status": "PARTIAL",
+      "evidence": "System page/API report evidence-backed historical-success or unknown status, elapsed time and evidence paths while explicitly returning active_jobs=null and live=false. Live Spark job/task state is not available.",
+      "paths": [
+        "app/backend.py",
+        "app/static/app.js",
+        "tests/test_app_integration.py",
+        "results/app/phase2/browser_verification.json"
+      ],
+      "test": "API contract asserts truthful historical-only semantics; Edge verified the status table and limitation.",
+      "action": "Connect a live Spark listener/job store only if active-job monitoring is required."
+    },
+    {
+      "id": "FR-lxvi",
+      "description": "Provide responsive browser interface.",
+      "status": "COMPLETE",
+      "evidence": "The responsive SPA was rendered in Microsoft Edge 154 at desktop and 390px mobile widths; all eight routes passed, with no horizontal overflow at the mobile viewport.",
+      "paths": [
+        "app/static/index.html",
+        "app/static/app.css",
+        "app/static/app.js",
+        "results/app/browser_verification.json",
+        "results/app/browser_verification.md",
+        "results/app/browser_overview.png"
+      ],
+      "test": "Full regression: 48 passed; security API suite: 8 passed; live Edge/CDP browser verification: all routes and checks passed. See results/regression_full.log, results/audit/security_verification.log, and results/app/browser_verification.json.",
+      "action": "Test additional supported browsers and accessibility before release."
+    }
+  ],
+  "note": "Operational CRUD statuses refer to application-local SQLite workflows and do not imply mutation of canonical HDFS analytics. COMPLETE reflects local implementation and verification only, not competition acceptance or deployment readiness."
+}

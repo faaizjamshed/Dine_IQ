@@ -1,0 +1,732 @@
+DineIQ
+
+ANALYTICS PLATFORM
+
+OVERVIEW
+
+Executive Dashboard
+
+INTELLIGENCE
+
+Menu Intelligence
+Customer Intelligence
+Basket & Bundles
+
+OPERATIONS
+
+Demand Forecast
+Wastage
+Locations
+Channels
+
+DECISIONS & ACTIONS
+
+Pricing & Promotions
+Anomalies
+Recommendations
+What-If Simulator
+
+PLATFORM
+
+Model Comparison
+Reports & Export
+Admin
+Collapse
+Menu Intelligence
+Full history
+Outlets:
+All outlets
+Categories:
+All categories
+Channels:
+All channels
+API CONNECTED
+API CONNECTED
+Search
+⌘K
+F
+
+Scope: Stored historical period · selected menu items
+
+Historical completed-order menu analytics. Margin is contribution / net item revenue. Wastage is waste cost / estimated item cost. Item ratings, repeat rates, promotion dependency and 90-day trends are unavailable. Scatter guides use the backend 75th-percentile thresholds, not medians. A separate watchlist is unavailable.
+
+Items tracked
+200
+100% of national revenue
+Weighted margin
+49.5%
+Across tracked items
+Mean rating
+—
+Across tracked items
+Promo-dependent
+—
+> 50% promo-driven volume
+Waste / estimated cost
+5.2%
+Cost ratio, not units wasted
+Watchlist cases
+Unavailable
+Backend-flagged, see below
+Popularity × Margin
+
+Backend 75th-percentile thresholds: 0.46% popularity · 54.7% margin
+
+Profit Driver
+Volume Driver
+Hidden Opportunity
+Low Performer
+
+Quadrants (API labels): “Above backend 75th-percentile thresholds” · “Below backend 75th-percentile thresholds”
+
+Performance Classes
+
+Tracked revenue by API-assigned class
+
+Volume Driver37 items
+47.8%
+
+PKR 2.1B tracked revenue
+
+Profit Driver14 items
+16.2%
+
+PKR 720M tracked revenue
+
+Low Performer113 items
+26.7%
+
+PKR 1.2B tracked revenue
+
+Hidden Opportunity36 items
+9.3%
+
+PKR 413M tracked revenue
+
+Tricky Menu Cases
+
+Backend-flagged watchlist
+
+A separate menu watchlist is unavailable from the existing backend.
+
+Every threshold rule is clear in the current scope.
+
+Menu Items
+
+200 of 200 tracked items · sortable, searchable
+
+All classes
+Menu items with price, revenue, quantity, margin, rating, trend and performance class
+ITEM
+	CATEGORY
+	PRICE
+	REVENUE
+	QTY
+	MARGIN
+	RATING
+	90D TREND
+	CLASS
+
+Classic Burger 1
+	Burgers	PKR 1,480	PKR 488M	342,984	52.3%	—	—	VOLUME DRIVER
+
+Spicy BBQ 1
+	BBQ	PKR 1,800	PKR 218M	125,902	59.7%	—	—	PROFIT DRIVER
+
+Double Dessert 1
+	Desserts	PKR 1,790	PKR 162M	94,258	48.7%	—	—	VOLUME DRIVER
+
+Fresh Pakistani 1
+	Pakistani	PKR 1,050	PKR 157M	155,614	42.6%	—	—	VOLUME DRIVER
+
+Special Breakfast 1
+	Breakfast	PKR 1,660	PKR 112M	70,255	39.2%	—	—	VOLUME DRIVER
+
+Smoky Chinese 1
+	Chinese	PKR 1,280	PKR 105M	85,131	48.5%	—	—	VOLUME DRIVER
+
+Signature Pizza 1
+	Pizza	PKR 520	PKR 104M	209,099	49.5%	—	—	VOLUME DRIVER
+
+Masala Rice 1
+	Rice	PKR 1,710	PKR 84.9M	51,637	58.9%	—	—	PROFIT DRIVER
+
+Herb Coffee & Tea 1
+	Coffee & Tea	PKR 1,680	PKR 79.4M	49,192	42.4%	—	—	VOLUME DRIVER
+
+Crispy Sandwiche 1
+	Sandwiches	PKR 1,500	PKR 77.5M	53,761	36.1%	—	—	VOLUME DRIVER
+
+Tandoori Pasta 1
+	Pasta	PKR 1,150	PKR 67.5M	61,154	49.8%	—	—	VOLUME DRIVER
+
+Royal Fast Food 1
+	Fast Food	PKR 880	PKR 65.1M	77,079	50.8%	—	—	VOLUME DRIVER
+
+Cheesy Burger 2
+	Burgers	PKR 1,230	PKR 55.1M	46,615	51.3%	—	—	VOLUME DRIVER
+
+Deluxe Pakistani 2
+	Pakistani	PKR 1,200	PKR 49M	42,509	57.1%	—	—	PROFIT DRIVER
+
+Tandoori Burger 3
+	Burgers	PKR 1,740	PKR 47.4M	28,363	61.3%	—	—	PROFIT DRIVER
+
+Classic Dessert 2
+	Desserts	PKR 1,250	PKR 46.5M	38,762	53.6%	—	—	VOLUME DRIVER
+
+House Beverage 1
+	Beverages	PKR 430	PKR 44.5M	107,695	59.0%	—	—	PROFIT DRIVER
+
+Cheesy Dessert 3
+	Desserts	PKR 1,790	PKR 44M	25,544	61.6%	—	—	PROFIT DRIVER
+
+Signature Chinese 2
+	Chinese	PKR 1,240	PKR 43.8M	36,712	45.5%	—	—	VOLUME DRIVER
+
+Loaded Beverage 2
+	Beverages	PKR 1,110	PKR 42.6M	39,949	56.8%	—	—	PROFIT DRIVER
+
+Supreme Breakfast 3
+	Breakfast	PKR 1,690	PKR 39.5M	24,323	60.7%	—	—	PROFIT DRIVER
+
+Creamy Chinese 3
+	Chinese	PKR 1,610	PKR 39.3M	25,414	38.9%	—	—	VOLUME DRIVER
+
+Fresh Sandwiche 3
+	Sandwiches	PKR 1,770	PKR 39.3M	23,067	59.1%	—	—	PROFIT DRIVER
+
+Classic Pasta 3
+	Pasta	PKR 1,560	PKR 35.7M	23,813	49.3%	—	—	VOLUME DRIVER
+
+Double Burger 4
+	Burgers	PKR 1,640	PKR 34.7M	22,016	57.7%	—	—	PROFIT DRIVER
+
+Smoky Pizza 4
+	Pizza	PKR 1,610	PKR 33.3M	21,507	52.2%	—	—	VOLUME DRIVER
+
+Crispy Fast Food 4
+	Fast Food	PKR 1,770	PKR 33M	19,405	48.6%	—	—	LOW PERFORMER
+
+Masala BBQ 3
+	BBQ	PKR 1,260	PKR 32.7M	27,010	54.7%	—	—	VOLUME DRIVER
+
+Royal Pakistani 4
+	Pakistani	PKR 1,580	PKR 32.1M	21,114	36.2%	—	—	VOLUME DRIVER
+
+Fiery Seafood 1
+	Seafood	PKR 570	PKR 31.6M	57,751	56.7%	—	—	PROFIT DRIVER
+
+Deluxe Fast Food 3
+	Fast Food	PKR 1,320	PKR 31.5M	24,812	46.4%	—	—	VOLUME DRIVER
+
+Creamy Pizza 2
+	Pizza	PKR 730	PKR 31.3M	44,729	46.9%	—	—	VOLUME DRIVER
+
+Special BBQ 4
+	BBQ	PKR 1,450	PKR 29.2M	20,930	52.0%	—	—	VOLUME DRIVER
+
+Grilled Salad 1
+	Salads	PKR 430	PKR 26.9M	65,204	42.1%	—	—	VOLUME DRIVER
+
+Signature Seafood 3
+	Seafood	PKR 1,210	PKR 26.7M	22,978	40.3%	—	—	VOLUME DRIVER
+
+Royal Sandwiche 2
+	Sandwiches	PKR 870	PKR 26M	31,112	36.6%	—	—	VOLUME DRIVER
+
+Grilled Salad 5
+	Salads	PKR 1,630	PKR 25.5M	16,294	42.7%	—	—	LOW PERFORMER
+
+Supreme BBQ 2
+	BBQ	PKR 630	PKR 25.1M	41,534	49.9%	—	—	VOLUME DRIVER
+
+Herb Coffee & Tea 5
+	Coffee & Tea	PKR 1,710	PKR 24.9M	15,153	63.0%	—	—	HIDDEN OPPORTUNITY
+
+Deluxe Sandwiche 4
+	Sandwiches	PKR 1,350	PKR 23.9M	18,371	55.2%	—	—	HIDDEN OPPORTUNITY
+
+Smoky Seafood 2
+	Seafood	PKR 790	PKR 23.8M	31,440	35.8%	—	—	VOLUME DRIVER
+
+Herb Beverage 3
+	Beverages	PKR 920	PKR 23.8M	26,981	37.4%	—	—	VOLUME DRIVER
+
+Smoky Chinese 5
+	Chinese	PKR 1,440	PKR 23.4M	16,863	57.5%	—	—	HIDDEN OPPORTUNITY
+
+House Salad 6
+	Salads	PKR 1,720	PKR 23.1M	13,988	50.5%	—	—	LOW PERFORMER
+
+Double Pasta 6
+	Pasta	PKR 1,740	PKR 23.1M	13,815	43.4%	—	—	LOW PERFORMER
+
+Creamy Pizza 6
+	Pizza	PKR 1,630	PKR 23M	14,664	49.9%	—	—	LOW PERFORMER
+
+House Coffee & Tea 3
+	Coffee & Tea	PKR 1,080	PKR 22.9M	22,075	51.4%	—	—	VOLUME DRIVER
+
+Smoky Seafood 6
+	Seafood	PKR 1,680	PKR 22.4M	13,818	47.5%	—	—	LOW PERFORMER
+
+Fiery Pizza 3
+	Pizza	PKR 830	PKR 22.2M	27,892	37.1%	—	—	VOLUME DRIVER
+
+Spicy Breakfast 6
+	Breakfast	PKR 1,540	PKR 21.4M	14,421	46.2%	—	—	LOW PERFORMER
+
+Loaded Salad 7
+	Salads	PKR 1,790	PKR 21.2M	12,357	48.1%	—	—	LOW PERFORMER
+
+Masala Breakfast 4
+	Breakfast	PKR 1,120	PKR 21M	19,523	35.8%	—	—	LOW PERFORMER
+
+Loaded Coffee & Tea 4
+	Coffee & Tea	PKR 1,180	PKR 20.6M	18,156	55.2%	—	—	HIDDEN OPPORTUNITY
+
+Fiery Seafood 5
+	Seafood	PKR 1,340	PKR 20.3M	15,761	57.0%	—	—	HIDDEN OPPORTUNITY
+
+Fresh Pakistani 5
+	Pakistani	PKR 1,210	PKR 20.1M	17,300	54.2%	—	—	LOW PERFORMER
+
+Fresh Fast Food 2
+	Fast Food	PKR 580	PKR 19.8M	35,548	58.2%	—	—	PROFIT DRIVER
+
+Spicy Breakfast 2
+	Breakfast	PKR 580	PKR 19.5M	34,927	37.6%	—	—	VOLUME DRIVER
+
+Special Rice 2
+	Rice	PKR 660	PKR 19.3M	30,519	36.3%	—	—	VOLUME DRIVER
+
+Special Breakfast 5
+	Breakfast	PKR 1,170	PKR 18.5M	16,429	43.4%	—	—	LOW PERFORMER
+
+Grilled Beverage 8
+	Beverages	PKR 1,650	PKR 18.4M	11,584	55.2%	—	—	HIDDEN OPPORTUNITY
+
+Deluxe Pakistani 6
+	Pakistani	PKR 1,260	PKR 18M	14,883	41.2%	—	—	LOW PERFORMER
+
+Loaded Coffee & Tea 8
+	Coffee & Tea	PKR 1,740	PKR 18M	10,743	40.1%	—	—	LOW PERFORMER
+
+Special Breakfast 9
+	Breakfast	PKR 1,760	PKR 17.6M	10,401	46.5%	—	—	LOW PERFORMER
+
+Fiery Seafood 9
+	Seafood	PKR 1,770	PKR 17M	10,020	56.7%	—	—	HIDDEN OPPORTUNITY
+
+Signature Pizza 5
+	Pizza	PKR 1,010	PKR 17M	17,532	41.3%	—	—	LOW PERFORMER
+
+Creamy Pizza 10
+	Pizza	PKR 1,770	PKR 16.7M	9,837	56.9%	—	—	HIDDEN OPPORTUNITY
+
+Supreme BBQ 10
+	BBQ	PKR 1,770	PKR 16.4M	9,651	49.7%	—	—	LOW PERFORMER
+
+House Salad 10
+	Salads	PKR 1,760	PKR 16.2M	9,610	42.2%	—	—	LOW PERFORMER
+
+Herb Salad 4
+	Salads	PKR 890	PKR 16.2M	18,984	35.9%	—	—	LOW PERFORMER
+
+Grilled Coffee & Tea 6
+	Coffee & Tea	PKR 1,250	PKR 16.2M	13,499	61.7%	—	—	HIDDEN OPPORTUNITY
+
+Special BBQ 8
+	BBQ	PKR 1,420	PKR 16M	11,721	46.5%	—	—	LOW PERFORMER
+
+Classic Burger 9
+	Burgers	PKR 1,510	PKR 15.7M	10,857	47.4%	—	—	LOW PERFORMER
+
+Grilled Beverage 4
+	Beverages	PKR 800	PKR 15.6M	20,277	62.5%	—	—	PROFIT DRIVER
+
+Crispy Pakistani 11
+	Pakistani	PKR 1,760	PKR 15.6M	9,190	45.2%	—	—	LOW PERFORMER
+
+Herb Coffee & Tea 9
+	Coffee & Tea	PKR 1,540	PKR 15.2M	10,313	47.2%	—	—	LOW PERFORMER
+
+Double Dessert 9
+	Desserts	PKR 1,520	PKR 15.2M	10,377	63.6%	—	—	HIDDEN OPPORTUNITY
+
+Loaded Beverage 10
+	Beverages	PKR 1,590	PKR 15.2M	9,928	38.9%	—	—	LOW PERFORMER
+
+Classic Burger 5
+	Burgers	PKR 880	PKR 15.1M	17,831	47.2%	—	—	LOW PERFORMER
+
+House Coffee & Tea 7
+	Coffee & Tea	PKR 1,310	PKR 15M	11,976	59.9%	—	—	HIDDEN OPPORTUNITY
+
+Loaded Salad 11
+	Salads	PKR 1,750	PKR 15M	8,925	55.2%	—	—	HIDDEN OPPORTUNITY
+
+Royal Sandwiche 6
+	Sandwiches	PKR 1,140	PKR 14.9M	13,622	40.2%	—	—	LOW PERFORMER
+
+Deluxe Fast Food 7
+	Fast Food	PKR 1,230	PKR 14.8M	12,566	49.7%	—	—	LOW PERFORMER
+
+Special Rice 6
+	Rice	PKR 1,150	PKR 14.8M	13,429	60.1%	—	—	HIDDEN OPPORTUNITY
+
+Supreme BBQ 6
+	BBQ	PKR 1,050	PKR 14.8M	14,651	38.2%	—	—	LOW PERFORMER
+
+Masala BBQ 11
+	BBQ	PKR 1,660	PKR 14.6M	9,158	42.7%	—	—	LOW PERFORMER
+
+Royal Fast Food 5
+	Fast Food	PKR 920	PKR 14.5M	16,383	41.1%	—	—	LOW PERFORMER
+
+Tandoori Dessert 4
+	Desserts	PKR 750	PKR 14.5M	20,140	40.4%	—	—	VOLUME DRIVER
+
+Cheesy Pasta 12
+	Pasta	PKR 1,780	PKR 14.4M	8,444	48.4%	—	—	LOW PERFORMER
+
+Royal Pakistani 12
+	Pakistani	PKR 1,710	PKR 14.1M	8,581	51.9%	—	—	LOW PERFORMER
+
+Double Pasta 2
+	Pasta	PKR 450	PKR 14.1M	32,624	49.9%	—	—	VOLUME DRIVER
+
+Fiery Chinese 12
+	Chinese	PKR 1,720	PKR 14.1M	8,525	40.3%	—	—	LOW PERFORMER
+
+Crispy Fast Food 12
+	Fast Food	PKR 1,750	PKR 14M	8,347	62.1%	—	—	HIDDEN OPPORTUNITY
+
+Deluxe Sandwiche 8
+	Sandwiches	PKR 1,310	PKR 13.9M	11,039	37.2%	—	—	LOW PERFORMER
+
+House Beverage 5
+	Beverages	PKR 850	PKR 13.8M	16,926	45.9%	—	—	LOW PERFORMER
+
+Fiery Chinese 4
+	Chinese	PKR 710	PKR 13.7M	20,095	39.2%	—	—	LOW PERFORMER
+
+Fresh Sandwiche 7
+	Sandwiches	PKR 1,150	PKR 13.5M	12,170	36.1%	—	—	LOW PERFORMER
+
+Tandoori Dessert 12
+	Desserts	PKR 1,640	PKR 13M	8,241	45.4%	—	—	LOW PERFORMER
+
+Signature Pizza 13
+	Pizza	PKR 1,650	PKR 12.9M	8,111	61.5%	—	—	HIDDEN OPPORTUNITY
+
+Classic Dessert 6
+	Desserts	PKR 920	PKR 12.7M	14,345	54.0%	—	—	LOW PERFORMER
+
+Classic Dessert 10
+	Desserts	PKR 1,350	PKR 12.5M	9,664	52.1%	—	—	LOW PERFORMER
+
+Herb Salad 8
+	Salads	PKR 1,140	PKR 12.5M	11,444	40.9%	—	—	LOW PERFORMER
+
+Creamy Chinese 11
+	Chinese	PKR 1,460	PKR 12.4M	8,857	62.7%	—	—	HIDDEN OPPORTUNITY
+
+Loaded Beverage 6
+	Beverages	PKR 870	PKR 12.3M	14,728	39.2%	—	—	LOW PERFORMER
+
+Double Dessert 13
+	Desserts	PKR 1,620	PKR 12.2M	7,875	51.9%	—	—	LOW PERFORMER
+
+Fresh Sandwiche 11
+	Sandwiches	PKR 1,390	PKR 12M	8,999	56.2%	—	—	HIDDEN OPPORTUNITY
+
+Creamy Seafood 8
+	Seafood	PKR 1,140	PKR 12M	10,942	40.4%	—	—	LOW PERFORMER
+
+Cheesy Burger 14
+	Burgers	PKR 1,590	PKR 11.9M	7,801	47.6%	—	—	LOW PERFORMER
+
+House Beverage 13
+	Beverages	PKR 1,560	PKR 11.9M	7,916	45.3%	—	—	LOW PERFORMER
+
+Crispy Pakistani 7
+	Pakistani	PKR 930	PKR 11.6M	12,997	40.3%	—	—	LOW PERFORMER
+
+Supreme Rice 4
+	Rice	PKR 660	PKR 11.6M	18,291	59.9%	—	—	HIDDEN OPPORTUNITY
+
+Special Breakfast 13
+	Breakfast	PKR 1,500	PKR 11.3M	7,835	47.8%	—	—	LOW PERFORMER
+
+Supreme Rice 12
+	Rice	PKR 1,440	PKR 11.2M	8,086	49.1%	—	—	LOW PERFORMER
+
+Fiery Pizza 7
+	Pizza	PKR 890	PKR 11.2M	13,074	42.9%	—	—	LOW PERFORMER
+
+Spicy Rice 11
+	Rice	PKR 1,270	PKR 10.9M	8,897	50.3%	—	—	LOW PERFORMER
+
+Masala Rice 5
+	Rice	PKR 720	PKR 10.8M	15,649	50.4%	—	—	LOW PERFORMER
+
+Royal Sandwiche 10
+	Sandwiches	PKR 1,180	PKR 10.7M	9,428	56.8%	—	—	HIDDEN OPPORTUNITY
+
+Double Burger 8
+	Burgers	PKR 940	PKR 10.7M	11,821	51.2%	—	—	LOW PERFORMER
+
+Royal Fast Food 9
+	Fast Food	PKR 1,070	PKR 10.7M	10,384	37.4%	—	—	LOW PERFORMER
+
+Cheesy Dessert 11
+	Desserts	PKR 1,280	PKR 10.6M	8,617	59.7%	—	—	HIDDEN OPPORTUNITY
+
+Grilled Salad 9
+	Salads	PKR 1,070	PKR 10.5M	10,234	60.9%	—	—	HIDDEN OPPORTUNITY
+
+Spicy BBQ 9
+	BBQ	PKR 980	PKR 10.1M	10,734	45.0%	—	—	LOW PERFORMER
+
+Tandoori Pasta 9
+	Pasta	PKR 990	PKR 9.8M	10,341	43.3%	—	—	LOW PERFORMER
+
+Crispy Sandwiche 9
+	Sandwiches	PKR 1,000	PKR 9.7M	10,163	38.8%	—	—	LOW PERFORMER
+
+Loaded Salad 3
+	Salads	PKR 430	PKR 9.7M	23,586	55.6%	—	—	PROFIT DRIVER
+
+Special BBQ 12
+	BBQ	PKR 1,180	PKR 9.7M	8,535	37.2%	—	—	LOW PERFORMER
+
+Tandoori Pasta 5
+	Pasta	PKR 630	PKR 9.6M	15,965	41.6%	—	—	LOW PERFORMER
+
+Cheesy Burger 6
+	Burgers	PKR 660	PKR 9.6M	15,227	52.5%	—	—	LOW PERFORMER
+
+Double Dessert 5
+	Desserts	PKR 580	PKR 9.4M	16,852	45.1%	—	—	LOW PERFORMER
+
+Smoky Seafood 10
+	Seafood	PKR 1,040	PKR 9.4M	9,380	47.7%	—	—	LOW PERFORMER
+
+Masala Rice 13
+	Rice	PKR 1,270	PKR 9.3M	7,626	47.9%	—	—	LOW PERFORMER
+
+Crispy Fast Food 8
+	Fast Food	PKR 840	PKR 9.3M	11,495	44.2%	—	—	LOW PERFORMER
+
+Supreme Breakfast 11
+	Breakfast	PKR 1,040	PKR 9.2M	9,210	37.8%	—	—	LOW PERFORMER
+
+Cheesy Dessert 7
+	Desserts	PKR 730	PKR 9.1M	12,932	38.7%	—	—	LOW PERFORMER
+
+Creamy Seafood 4
+	Seafood	PKR 500	PKR 9M	18,690	51.4%	—	—	LOW PERFORMER
+
+Tandoori Pasta 13
+	Pasta	PKR 1,150	PKR 8.7M	7,893	53.7%	—	—	LOW PERFORMER
+
+House Salad 2
+	Salads	PKR 260	PKR 8.4M	33,822	35.5%	—	—	VOLUME DRIVER
+
+Special Rice 10
+	Rice	PKR 920	PKR 8.4M	9,562	44.7%	—	—	LOW PERFORMER
+
+Loaded Beverage 14
+	Beverages	PKR 1,160	PKR 8.2M	7,362	51.8%	—	—	LOW PERFORMER
+
+Crispy Pakistani 3
+	Pakistani	PKR 310	PKR 8.2M	27,542	45.0%	—	—	VOLUME DRIVER
+
+Signature Chinese 6
+	Chinese	PKR 590	PKR 8.1M	14,287	61.3%	—	—	HIDDEN OPPORTUNITY
+
+Spicy BBQ 13
+	BBQ	PKR 1,040	PKR 7.9M	7,971	50.7%	—	—	LOW PERFORMER
+
+Masala BBQ 7
+	BBQ	PKR 630	PKR 7.8M	12,851	50.9%	—	—	LOW PERFORMER
+
+Spicy Rice 3
+	Rice	PKR 360	PKR 7.7M	22,339	37.0%	—	—	VOLUME DRIVER
+
+Smoky Chinese 9
+	Chinese	PKR 770	PKR 7.7M	10,410	42.2%	—	—	LOW PERFORMER
+
+Grilled Coffee & Tea 2
+	Coffee & Tea	PKR 270	PKR 7.6M	29,331	47.1%	—	—	VOLUME DRIVER
+
+Fresh Pakistani 9
+	Pakistani	PKR 740	PKR 7.5M	10,599	54.2%	—	—	LOW PERFORMER
+
+Grilled Beverage 12
+	Beverages	PKR 900	PKR 7.4M	8,536	56.9%	—	—	HIDDEN OPPORTUNITY
+
+Fresh Fast Food 6
+	Fast Food	PKR 540	PKR 7.3M	14,094	61.6%	—	—	HIDDEN OPPORTUNITY
+
+Cheesy Burger 10
+	Burgers	PKR 740	PKR 7.2M	10,078	48.0%	—	—	LOW PERFORMER
+
+Masala Rice 9
+	Rice	PKR 730	PKR 7.1M	10,193	41.3%	—	—	LOW PERFORMER
+
+Fresh Fast Food 10
+	Fast Food	PKR 800	PKR 7.1M	9,288	54.6%	—	—	LOW PERFORMER
+
+Supreme Breakfast 7
+	Breakfast	PKR 570	PKR 6.9M	12,601	44.9%	—	—	LOW PERFORMER
+
+Spicy BBQ 5
+	BBQ	PKR 420	PKR 6.9M	17,054	62.2%	—	—	HIDDEN OPPORTUNITY
+
+Masala Breakfast 8
+	Breakfast	PKR 640	PKR 6.8M	11,120	39.4%	—	—	LOW PERFORMER
+
+Signature Chinese 10
+	Chinese	PKR 730	PKR 6.8M	9,655	44.2%	—	—	LOW PERFORMER
+
+Fiery Chinese 8
+	Chinese	PKR 610	PKR 6.7M	11,504	61.2%	—	—	HIDDEN OPPORTUNITY
+
+Smoky Chinese 13
+	Chinese	PKR 870	PKR 6.6M	7,966	44.7%	—	—	LOW PERFORMER
+
+Deluxe Pakistani 10
+	Pakistani	PKR 700	PKR 6.5M	9,730	50.2%	—	—	LOW PERFORMER
+
+Classic Pasta 7
+	Pasta	PKR 550	PKR 6.5M	12,385	43.2%	—	—	LOW PERFORMER
+
+Crispy Sandwiche 5
+	Sandwiches	PKR 420	PKR 6.3M	15,716	52.6%	—	—	LOW PERFORMER
+
+Deluxe Fast Food 11
+	Fast Food	PKR 710	PKR 6M	8,859	51.9%	—	—	LOW PERFORMER
+
+Herb Salad 12
+	Salads	PKR 710	PKR 5.7M	8,305	59.4%	—	—	HIDDEN OPPORTUNITY
+
+Signature Seafood 7
+	Seafood	PKR 480	PKR 5.5M	12,033	57.4%	—	—	HIDDEN OPPORTUNITY
+
+Tandoori Burger 11
+	Burgers	PKR 590	PKR 5.3M	9,284	39.8%	—	—	LOW PERFORMER
+
+Spicy Breakfast 10
+	Breakfast	PKR 560	PKR 5.2M	9,605	44.3%	—	—	LOW PERFORMER
+
+Deluxe Pakistani 14
+	Pakistani	PKR 680	PKR 5M	7,613	54.5%	—	—	LOW PERFORMER
+
+Fiery Pizza 11
+	Pizza	PKR 560	PKR 4.9M	9,070	47.4%	—	—	LOW PERFORMER
+
+Royal Pakistani 8
+	Pakistani	PKR 430	PKR 4.8M	11,767	40.6%	—	—	LOW PERFORMER
+
+Fresh Pakistani 13
+	Pakistani	PKR 630	PKR 4.8M	7,866	45.8%	—	—	LOW PERFORMER
+
+Signature Pizza 9
+	Pizza	PKR 470	PKR 4.8M	10,532	47.1%	—	—	LOW PERFORMER
+
+Herb Beverage 11
+	Beverages	PKR 530	PKR 4.7M	9,187	58.2%	—	—	HIDDEN OPPORTUNITY
+
+Smoky Pizza 12
+	Pizza	PKR 560	PKR 4.6M	8,568	48.4%	—	—	LOW PERFORMER
+
+Cheesy Pasta 8
+	Pasta	PKR 420	PKR 4.5M	11,209	56.0%	—	—	HIDDEN OPPORTUNITY
+
+House Coffee & Tea 11
+	Coffee & Tea	PKR 540	PKR 4.5M	8,662	61.7%	—	—	HIDDEN OPPORTUNITY
+
+Cheesy Pasta 4
+	Pasta	PKR 250	PKR 4.5M	18,697	51.2%	—	—	LOW PERFORMER
+
+Tandoori Burger 7
+	Burgers	PKR 350	PKR 4.4M	13,179	36.4%	—	—	LOW PERFORMER
+
+Smoky Pizza 8
+	Pizza	PKR 360	PKR 4.2M	12,026	61.7%	—	—	HIDDEN OPPORTUNITY
+
+Masala Breakfast 12
+	Breakfast	PKR 510	PKR 4.1M	8,433	40.3%	—	—	LOW PERFORMER
+
+Crispy Sandwiche 13
+	Sandwiches	PKR 550	PKR 4.1M	7,783	51.4%	—	—	LOW PERFORMER
+
+Creamy Chinese 7
+	Chinese	PKR 320	PKR 4M	12,875	43.3%	—	—	LOW PERFORMER
+
+Fiery Seafood 13
+	Seafood	PKR 540	PKR 3.9M	7,533	60.5%	—	—	HIDDEN OPPORTUNITY
+
+Classic Pasta 11
+	Pasta	PKR 410	PKR 3.6M	9,084	36.3%	—	—	LOW PERFORMER
+
+Supreme BBQ 14
+	BBQ	PKR 440	PKR 3.2M	7,621	46.2%	—	—	LOW PERFORMER
+
+House Beverage 9
+	Beverages	PKR 320	PKR 3.2M	10,492	56.4%	—	—	HIDDEN OPPORTUNITY
+
+Double Burger 12
+	Burgers	PKR 370	PKR 3.1M	8,637	62.2%	—	—	HIDDEN OPPORTUNITY
+
+Tandoori Dessert 8
+	Desserts	PKR 280	PKR 3.1M	11,360	36.5%	—	—	LOW PERFORMER
+
+Herb Beverage 7
+	Beverages	PKR 230	PKR 2.9M	12,953	39.6%	—	—	LOW PERFORMER
+
+Signature Seafood 11
+	Seafood	PKR 330	PKR 2.8M	8,901	52.5%	—	—	LOW PERFORMER
+
+Grilled Salad 13
+	Salads	PKR 380	PKR 2.8M	7,685	53.5%	—	—	LOW PERFORMER
+
+Grilled Coffee & Tea 10
+	Coffee & Tea	—	PKR 2.7M	9,313	36.9%	—	—	LOW PERFORMER
+
+Supreme Rice 8
+	Rice	PKR 240	PKR 2.5M	10,906	51.4%	—	—	LOW PERFORMER
+
+Creamy Pizza 14
+	Pizza	PKR 330	PKR 2.5M	7,807	48.7%	—	—	LOW PERFORMER
+
+Spicy Rice 7
+	Rice	PKR 200	PKR 2.3M	12,208	48.5%	—	—	LOW PERFORMER
+
+Double Pasta 10
+	Pasta	PKR 250	PKR 2.3M	9,500	41.2%	—	—	LOW PERFORMER
+
+Royal Fast Food 13
+	Fast Food	PKR 290	PKR 2.2M	7,882	40.0%	—	—	LOW PERFORMER
+
+Classic Burger 13
+	Burgers	PKR 280	PKR 2.2M	8,153	50.0%	—	—	LOW PERFORMER
+
+Deluxe Sandwiche 12
+	Sandwiches	PKR 260	PKR 2.1M	8,273	42.6%	—	—	LOW PERFORMER
+
+Loaded Coffee & Tea 12
+	Coffee & Tea	PKR 250	PKR 1.9M	8,097	41.6%	—	—	LOW PERFORMER
+
+Herb Coffee & Tea 13
+	Coffee & Tea	PKR 230	PKR 1.7M	7,882	55.9%	—	—	HIDDEN OPPORTUNITY
+
+Creamy Seafood 12
+	Seafood	PKR 200	PKR 1.6M	8,255	41.2%	—	—	LOW PERFORMER
+
+Dot color = API performance class · values verbatim from GET /api/intelligence/menu
+
+Classic Burger 1

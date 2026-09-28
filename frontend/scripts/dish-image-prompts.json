@@ -1,0 +1,82 @@
+{
+  "generator": "Built-in image_gen tool",
+  "scope": "15 category illustrations mapped to 200 menu items; numbered variants share their category image.",
+  "assets": [
+    {
+      "slug": "burgers",
+      "prompt": "Use case: product-mockup. Asset type: square food photo for a small restaurant menu thumbnail. Subject: a beautiful classic cheeseburger with toasted sesame bun, melted cheddar, lettuce, tomato, pickles and a thick grilled patty, centered whole burger filling most of frame. Photorealistic professional food photography, appetizing natural textures, soft warm side light, shallow depth of field, dark charcoal tabletop and minimal dark background, slightly elevated three-quarter angle. Square 1:1 composition. Only the food and its plain serving plate, no people, hands, words, labels, logos, borders, collage, watermarks or decorative graphics. This is a representative menu illustration, not a real restaurant product photograph.",
+      "path": "frontend/public/images/dishes/catalog/burgers.jpg"
+    },
+    {
+      "slug": "pizza",
+      "prompt": "Use case: product-mockup. Asset type: square restaurant menu food thumbnail. Subject: a whole wood-fired pizza with golden blistered crust, melted mozzarella, tomato, bell peppers and basil on a dark round plate, elevated three-quarter view. Photorealistic professional food photography, appetizing natural textures, soft warm side light, minimal dark charcoal tabletop and background. One coherent food scene centered and filling most of a square 1:1 frame so the food remains recognizable at 48px. No people, hands, text, labels, logos, watermarks, graphic overlays, collage or borders. Representative food illustration.",
+      "path": "frontend/public/images/dishes/catalog/pizza.jpg"
+    },
+    {
+      "slug": "pakistani",
+      "prompt": "Use case: product-mockup. Asset type: square restaurant menu food thumbnail. Subject: a traditional Pakistani chicken karahi in a small black iron karahi pan, richly textured tomato masala with ginger juliennes, fresh coriander and green chillies, a small piece of naan beside it, elevated three-quarter view. Photorealistic professional food photography, appetizing natural textures, soft warm side light, minimal dark charcoal tabletop and background. One coherent food scene centered and filling most of a square 1:1 frame so the food remains recognizable at 48px. No people, hands, text, labels, logos, watermarks, graphic overlays, collage or borders. Representative food illustration.",
+      "path": "frontend/public/images/dishes/catalog/pakistani.jpg"
+    },
+    {
+      "slug": "bbq",
+      "prompt": "Use case: product-mockup. Asset type: square restaurant menu food thumbnail. Subject: an appetizing Pakistani barbecue platter of chargrilled tikka pieces and seekh kebabs with a lemon wedge and a little fresh garnish, clearly visible char marks, elevated three-quarter view. Photorealistic professional food photography, appetizing natural textures, soft warm side light, minimal dark charcoal tabletop and background. One coherent food scene centered and filling most of a square 1:1 frame so the food remains recognizable at 48px. No people, hands, text, labels, logos, watermarks, graphic overlays, collage or borders. Representative food illustration.",
+      "path": "frontend/public/images/dishes/catalog/bbq.jpg"
+    },
+    {
+      "slug": "beverages",
+      "prompt": "Use case: product-mockup. Asset type: square restaurant menu food thumbnail. Subject: a chilled tall clear glass of fresh citrus mint lemonade with a lime slice, mint leaves, ice and condensation, dark tabletop, three-quarter view. Photorealistic professional food photography, appetizing natural textures, soft warm side light, minimal dark charcoal tabletop and background. One coherent food scene centered and filling most of a square 1:1 frame so the food remains recognizable at 48px. No people, hands, text, labels, logos, watermarks, graphic overlays, collage or borders. Representative food illustration.",
+      "path": "frontend/public/images/dishes/catalog/beverages.jpg"
+    },
+    {
+      "slug": "desserts",
+      "prompt": "Use case: product-mockup. Asset type: square restaurant menu food thumbnail. Subject: a rich slice of chocolate layer cake with glossy chocolate ganache and a small scoop of vanilla ice cream on a dark ceramic plate, elevated three-quarter view. Photorealistic professional food photography, appetizing natural textures, soft warm side light, minimal dark charcoal tabletop and background. One coherent food scene centered and filling most of a square 1:1 frame so the food remains recognizable at 48px. No people, hands, text, labels, logos, watermarks, graphic overlays, collage or borders. Representative food illustration.",
+      "path": "frontend/public/images/dishes/catalog/desserts.jpg"
+    },
+    {
+      "slug": "chinese",
+      "prompt": "Use case: product-mockup. Asset type: square restaurant menu food thumbnail. Subject: a bowl of glossy stir-fried chow mein noodles with colorful bell peppers, carrots, spring onions and sesame, elevated three-quarter view. Photorealistic professional food photography, appetizing natural textures, soft warm side light, minimal dark charcoal tabletop and background. One coherent food scene centered and filling most of a square 1:1 frame so the food remains recognizable at 48px. No people, hands, text, labels, logos, watermarks, graphic overlays, collage or borders. Representative food illustration.",
+      "path": "frontend/public/images/dishes/catalog/chinese.jpg"
+    },
+    {
+      "slug": "fast-food",
+      "prompt": "Use case: product-mockup. Asset type: square restaurant menu food thumbnail. Subject: a generous portion of golden crispy french fries with fried chicken strips on a small dark plate, a little tomato dipping sauce, elevated three-quarter view. Photorealistic professional food photography, appetizing natural textures, soft warm side light, minimal dark charcoal tabletop and background. One coherent food scene centered and filling most of a square 1:1 frame so the food remains recognizable at 48px. No people, hands, text, labels, logos, watermarks, graphic overlays, collage or borders. Representative food illustration.",
+      "path": "frontend/public/images/dishes/catalog/fast-food.jpg"
+    },
+    {
+      "slug": "breakfast",
+      "prompt": "Use case: product-mockup. Asset type: square restaurant menu food thumbnail. Subject: a traditional Pakistani breakfast plate of golden puffed puri, chickpea curry and a small portion of golden semolina halwa, elevated three-quarter view. Photorealistic professional food photography, appetizing natural textures, soft warm side light, minimal dark charcoal tabletop and background. One coherent food scene centered and filling most of a square 1:1 frame so the food remains recognizable at 48px. No people, hands, text, labels, logos, watermarks, graphic overlays, collage or borders. Representative food illustration.",
+      "path": "frontend/public/images/dishes/catalog/breakfast.jpg"
+    },
+    {
+      "slug": "salads",
+      "prompt": "Use case: product-mockup. Asset type: square restaurant menu food thumbnail. Subject: a fresh colorful salad with crisp mixed lettuce, cherry tomatoes, cucumber, sweetcorn, grilled bell pepper and a light herb dressing in a dark ceramic bowl, elevated three-quarter view. Photorealistic professional food photography, appetizing natural textures, soft warm side light, minimal dark charcoal tabletop and background. One coherent food scene centered and filling most of a square 1:1 frame so the food remains recognizable at 48px. No people, hands, text, labels, logos, watermarks, graphic overlays, collage or borders. Representative food illustration.",
+      "path": "frontend/public/images/dishes/catalog/salads.jpg"
+    },
+    {
+      "slug": "pasta",
+      "prompt": "Use case: product-mockup. Asset type: square restaurant menu food thumbnail. Subject: a generous bowl of penne pasta in a creamy tomato sauce with melted cheese, basil and a little grilled chicken, appetizing sauce clinging to the pasta, elevated three-quarter view. Photorealistic professional food photography, appetizing natural textures, soft warm side light, minimal dark charcoal tabletop and background. One coherent food scene centered and filling most of a square 1:1 frame so the food remains recognizable at 48px. No people, hands, text, labels, logos, watermarks, graphic overlays, collage or borders. Representative food illustration.",
+      "path": "frontend/public/images/dishes/catalog/pasta.jpg"
+    },
+    {
+      "slug": "seafood",
+      "prompt": "Use case: product-mockup. Asset type: square restaurant menu food thumbnail. Subject: a beautifully plated grilled fish fillet with golden seared surface, a few grilled prawns, lemon wedges and fresh herbs on a dark ceramic plate, elevated three-quarter view. Photorealistic professional food photography, appetizing natural textures, soft warm side light, minimal dark charcoal tabletop and background. One coherent food scene centered and filling most of a square 1:1 frame so the food remains recognizable at 48px. No people, hands, text, labels, logos, watermarks, graphic overlays, collage or borders. Representative food illustration.",
+      "path": "frontend/public/images/dishes/catalog/seafood.jpg"
+    },
+    {
+      "slug": "sandwiches",
+      "prompt": "Use case: product-mockup. Asset type: square restaurant menu food thumbnail. Subject: two triangular toasted club sandwich halves showing layers of chicken, fresh lettuce, tomato and cheese, crisp golden bread, on a dark plate, elevated three-quarter view. Photorealistic professional food photography, appetizing natural textures, soft warm side light, minimal dark charcoal tabletop and background. One coherent food scene centered and filling most of a square 1:1 frame so the food remains recognizable at 48px. No people, hands, text, labels, logos, watermarks, graphic overlays, collage or borders. Representative food illustration.",
+      "path": "frontend/public/images/dishes/catalog/sandwiches.jpg"
+    },
+    {
+      "slug": "rice",
+      "prompt": "Use case: product-mockup. Asset type: square restaurant menu food thumbnail. Subject: a fragrant plate of Pakistani masala basmati rice, long fluffy separate grains in white and golden saffron tones, browned onions and fresh coriander garnish, on a dark ceramic plate, elevated three-quarter view. Photorealistic professional food photography, appetizing natural textures, soft warm side light, minimal dark charcoal tabletop and background. One coherent food scene centered and filling most of a square 1:1 frame so the food remains recognizable at 48px. No people, hands, text, labels, logos, watermarks, graphic overlays, collage or borders. Representative food illustration.",
+      "path": "frontend/public/images/dishes/catalog/rice.jpg"
+    },
+    {
+      "slug": "coffee-tea",
+      "prompt": "Use case: product-mockup. Asset type: square restaurant menu food thumbnail. Subject: a beautiful steaming ceramic cup of rich milky Pakistani chai in the foreground and a small cup of cappuccino with latte art just behind it, a few cardamom pods and coffee beans on the dark tabletop, close three-quarter view. Photorealistic professional food photography, appetizing natural textures, soft warm side light, minimal dark charcoal tabletop and background. One coherent food scene centered and filling most of a square 1:1 frame so the food remains recognizable at 48px. No people, hands, text, labels, logos, watermarks, graphic overlays, collage or borders. Representative food illustration.",
+      "path": "frontend/public/images/dishes/catalog/coffee-tea.jpg"
+    }
+  ],
+  "delivery": "256x256 JPEG thumbnails; full-size generated PNG originals preserved in frontend/.cache/menu-photo-originals/"
+}

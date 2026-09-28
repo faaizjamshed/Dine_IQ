@@ -1,0 +1,162 @@
+{
+  "timestamp_utc": "2026-09-26T14:10:41.030819+00:00",
+  "browser": "Microsoft Edge headless via Chrome DevTools Protocol",
+  "base_url": "http://127.0.0.1:5000",
+  "passed": true,
+  "checks": {
+    "login page rendered": {
+      "passed": true,
+      "detail": "real Edge DOM"
+    },
+    "administrator login": {
+      "passed": true,
+      "detail": "authenticated Flask session"
+    },
+    "executive dashboard KPI cards": {
+      "passed": true,
+      "detail": "rendered real API values"
+    },
+    "menu profitability classes": {
+      "passed": true,
+      "detail": "actual Spark gap1 rows"
+    },
+    "location comparison table": {
+      "passed": true,
+      "detail": ""
+    },
+    "peak-period heatmap": {
+      "passed": true,
+      "detail": ""
+    },
+    "promotions and pricing page": {
+      "passed": true,
+      "detail": ""
+    },
+    "operations ratings and wastage page": {
+      "passed": true,
+      "detail": ""
+    },
+    "forecast form rendered": {
+      "passed": true,
+      "detail": ""
+    },
+    "forecast invalid-input message": {
+      "passed": true,
+      "detail": "backend validation response; target_hour must be an ISO 8601 timestamp at an exact hour."
+    },
+    "forecast valid inference": {
+      "passed": true,
+      "detail": "persisted Spark model inference"
+    },
+    "advanced intelligence tables": {
+      "passed": true,
+      "detail": ""
+    },
+    "directional cross-sell wording": {
+      "passed": true,
+      "detail": "A\u2192B wording carries directional confidence"
+    },
+    "wastage-risk invalid week": {
+      "passed": true,
+      "detail": "Monday prediction-point validation"
+    },
+    "wastage-risk canonical dimension pair": {
+      "passed": true,
+      "detail": "held-out predictions from canonical v4 dimensions"
+    },
+    "wastage-risk model inference": {
+      "passed": true,
+      "detail": "actual saved Spark v3 risk model; SCREENING RESULT \u00b7 2026-09-14\n\n44.5% estimated classification probability\n\nLow-precision screening signal; not a causal explanation or inventory/wastage guarantee."
+    },
+    "what-if simulation UI": {
+      "passed": true,
+      "detail": "bounded scenario response"
+    },
+    "selected analytics CSV export": {
+      "passed": true,
+      "detail": "{\"status\": 200, \"type\": \"text/csv; charset=utf-8\", \"disposition\": \"attachment; filename=dineq-menu.csv\", \"text\": \"menu_item_id,category_id,item_name,base_price,cost_price,preparation_time_min,is_vegetarian,is_avail\"}"
+    },
+    "downloadable report response": {
+      "passed": true,
+      "detail": "{\"status\": 200, \"type\": \"application/json\", \"disposition\": \"attachment; filename=dineq-promotions-report.json\", \"text\": \"{\\\"report\\\": \\\"promotions\\\", \\\"generated_at\\\": \\\"2026-09-26T14:10:37.707786+00:00\\\", \\\"so\"}"
+    },
+    "admin CRUD and account controls": {
+      "passed": true,
+      "detail": ""
+    },
+    "operational location record persisted": {
+      "passed": true,
+      "detail": "SQLite operational DB only"
+    },
+    "operational category record persisted": {
+      "passed": true,
+      "detail": ""
+    },
+    "operational menu record and price history persisted": {
+      "passed": true,
+      "detail": ""
+    },
+    "administrator provisions restaurant manager": {
+      "passed": true,
+      "detail": "role and location assigned server-side"
+    },
+    "administrator logout": {
+      "passed": true,
+      "detail": ""
+    },
+    "restaurant manager login": {
+      "passed": true,
+      "detail": ""
+    },
+    "RBAC hides admin/account controls": {
+      "passed": true,
+      "detail": ""
+    },
+    "RBAC hides forbidden location write controls": {
+      "passed": true,
+      "detail": ""
+    },
+    "server-side RBAC denial": {
+      "passed": true,
+      "detail": "{\"status\": 403, \"body\": {\"error\": {\"code\": \"forbidden\", \"message\": \"Your role cannot manage this entity.\"}}}"
+    },
+    "responsive mobile-width page": {
+      "passed": true,
+      "detail": "{\"viewport\": 390, \"body\": 390, \"rendered\": true}"
+    },
+    "API unavailable state": {
+      "passed": true,
+      "detail": "{\"hash\":\"#/menu\",\"requests\":[\"/api/menu?sort=gross_sales&limit=1000\"],\"page\":\"APPLICATION STATUS\\n\\nData could not be loaded\\n\\nThe dashboard does not substitute sample values when canonical data is unavailable.\\n\\nConnection issue\\nThe DineIQ API is unavailable. Start the local backend and try again.\\n\\nLocal service\\n\\nStart the backend with .venv\\\\Scripts\\\\python.exe -m app.backend. The API reads the precomputed Spark v4 result tables and the persisted HDFS model.\\n\\nRetry connection\"}"
+    },
+    "loading/error recovery": {
+      "passed": true,
+      "detail": "unblocked API retry renders real data"
+    },
+    "truthful historical Spark job monitoring": {
+      "passed": true,
+      "detail": "{\"active_jobs\": null, \"jobs\": [{\"available\": true, \"elapsed_seconds\": 26.213, \"evidence_file\": \"results/spark/analytics.json\", \"job\": \"canonical_v4_analytics\", \"live\": false, \"status\": \"historical-success\"}, {\"available\": true, \"elapsed_seconds\": 124.826, \"evidence_file\": \"results/analytics/gap1/v6/spark_gap1.json\", \"job\": \"gap1_analytics_v6\", \"live\": false, \"status\": \"historical-success\"}, {\"available\": true, \"elapsed_seconds\": 50.614, \"evidence_file\": \"results/analytics/gap1/wastage_risk_v3/pipeline.json\", \"job\": \"wastage_risk_v3\", \"live\": false, \"status\": \"historical-success\"}], \"monitoring_mode\": \"historical evidence; no claim of live job state\"}"
+    },
+    "browser console/runtime error-free": {
+      "passed": true,
+      "detail": ""
+    }
+  },
+  "screenshots": [
+    "results/app/phase2/phase2_overview.png",
+    "results/app/phase2/phase2_intelligence.png",
+    "results/app/phase2/phase2_management.png",
+    "results/app/phase2/phase2_intelligence_mobile.png",
+    "results/app/phase2/phase2_menu_recovery.png",
+    "results/app/phase2/phase2_spark_monitoring.png"
+  ],
+  "console_runtime_errors": [
+    "Failed to load resource: the server responded with a status of 400 (BAD REQUEST)",
+    "Failed to load resource: the server responded with a status of 400 (BAD REQUEST)",
+    "Failed to load resource: the server responded with a status of 403 (FORBIDDEN)"
+  ],
+  "local_only_operational_database": "results/app/phase2/browser_operational.sqlite3 (ignored by Git)",
+  "limitations": [
+    "No public deployment performed.",
+    "HDFS-backed API responses were verified locally."
+  ]
+}

@@ -1,0 +1,12 @@
+# Serving-only dependencies. Dockerfile also supplies Java and Spark 3.5.7.
+# Native hosts should install requirements.txt, which includes PySpark.
+blinker==1.9.0
+click==8.5.0
+Flask==3.1.3
+itsdangerous==2.2.0
+Jinja2==3.1.6
+MarkupSafe==3.0.3
+numpy==2.4.6
+psutil==7.0.0
+waitress==3.0.2
+Werkzeug==3.1.8

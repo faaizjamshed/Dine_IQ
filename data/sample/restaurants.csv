@@ -1,0 +1,26 @@
+restaurant_id,restaurant_name,city,area,opening_date,seating_capacity,location_type,is_active
+R001,DineIQ Clifton,Karachi,Clifton,2023-06-04,46,Commercial,True
+R002,DineIQ DHA,Karachi,DHA,2021-12-04,97,Mall,True
+R003,DineIQ Gulshan,Karachi,Gulshan,2023-07-11,179,High Street,True
+R004,DineIQ North Nazimabad,Karachi,North Nazimabad,2019-12-10,48,High Street,True
+R005,DineIQ Bahadurabad,Karachi,Bahadurabad,2023-08-16,95,Mall,True
+R006,DineIQ Gulberg,Lahore,Gulberg,2019-01-03,46,Mall,True
+R007,DineIQ DHA,Lahore,DHA,2018-07-24,147,Mall,True
+R008,DineIQ Johar Town,Lahore,Johar Town,2019-08-21,111,High Street,True
+R009,DineIQ Model Town,Lahore,Model Town,2022-11-19,148,Commercial,True
+R010,DineIQ F-7,Islamabad,F-7,2021-07-22,79,Mall,True
+R011,DineIQ F-10,Islamabad,F-10,2020-11-24,66,High Street,True
+R012,DineIQ Blue Area,Islamabad,Blue Area,2020-05-30,64,Commercial,True
+R013,DineIQ G-11,Islamabad,G-11,2020-10-25,107,High Street,True
+R014,DineIQ Saddar,Rawalpindi,Saddar,2019-07-10,177,High Street,True
+R015,DineIQ Bahria Town,Rawalpindi,Bahria Town,2020-06-05,60,Commercial,True
+R016,DineIQ D-Ground,Faisalabad,D-Ground,2020-08-13,89,High Street,True
+R017,DineIQ Canal Road,Faisalabad,Canal Road,2024-02-28,98,Commercial,True
+R018,DineIQ Gulgasht,Multan,Gulgasht,2023-10-12,99,High Street,True
+R019,DineIQ Cantt,Multan,Cantt,2020-05-30,111,Residential,True
+R020,DineIQ Clifton,Karachi,Clifton,2020-07-31,81,Commercial,True
+R021,DineIQ DHA,Karachi,DHA,2020-09-08,93,Commercial,True
+R022,DineIQ Gulshan,Karachi,Gulshan,2023-11-15,83,Mall,True
+R023,DineIQ North Nazimabad,Karachi,North Nazimabad,2022-11-03,158,Residential,True
+R024,DineIQ Bahadurabad,Karachi,Bahadurabad,2021-08-24,96,Commercial,True
+R025,DineIQ Gulberg,Lahore,Gulberg,2024-01-17,98,High Street,True

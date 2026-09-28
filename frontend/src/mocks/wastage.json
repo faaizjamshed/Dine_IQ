@@ -1,0 +1,648 @@
+{
+  "data": {
+    "periodLabel": "Aug 25 – Sep 23, 2026",
+    "kpis": {
+      "wastageCost": 1949753,
+      "wastagePctOfRevenue": 4,
+      "deltaPct": 3.2,
+      "prepWasteSharePct": 58,
+      "spoilageSharePct": 27,
+      "worstCategory": "Beverages",
+      "worstOutlet": "DineIQ Zamzama"
+    },
+    "trend": [
+      {
+        "date": "2026-08-25",
+        "wastageCost": 56554,
+        "wastagePct": 4.3
+      },
+      {
+        "date": "2026-08-26",
+        "wastageCost": 60398,
+        "wastagePct": 4.3
+      },
+      {
+        "date": "2026-08-27",
+        "wastageCost": 57950,
+        "wastagePct": 3.7
+      },
+      {
+        "date": "2026-08-28",
+        "wastageCost": 66216,
+        "wastagePct": 3.8
+      },
+      {
+        "date": "2026-08-29",
+        "wastageCost": 75402,
+        "wastagePct": 4
+      },
+      {
+        "date": "2026-08-30",
+        "wastageCost": 60434,
+        "wastagePct": 3.7
+      },
+      {
+        "date": "2026-08-31",
+        "wastageCost": 50406,
+        "wastagePct": 4.2
+      },
+      {
+        "date": "2026-09-01",
+        "wastageCost": 54637,
+        "wastagePct": 4.2
+      },
+      {
+        "date": "2026-09-02",
+        "wastageCost": 50275,
+        "wastagePct": 3.8
+      },
+      {
+        "date": "2026-09-03",
+        "wastageCost": 71622,
+        "wastagePct": 4.4
+      },
+      {
+        "date": "2026-09-04",
+        "wastageCost": 91269,
+        "wastagePct": 4.2
+      },
+      {
+        "date": "2026-09-05",
+        "wastageCost": 94068,
+        "wastagePct": 4.3
+      },
+      {
+        "date": "2026-09-06",
+        "wastageCost": 81766,
+        "wastagePct": 4.2
+      },
+      {
+        "date": "2026-09-07",
+        "wastageCost": 58209,
+        "wastagePct": 4.1
+      },
+      {
+        "date": "2026-09-08",
+        "wastageCost": 68496,
+        "wastagePct": 4.3
+      },
+      {
+        "date": "2026-09-09",
+        "wastageCost": 51872,
+        "wastagePct": 3.9
+      },
+      {
+        "date": "2026-09-10",
+        "wastageCost": 60936,
+        "wastagePct": 4.1
+      },
+      {
+        "date": "2026-09-11",
+        "wastageCost": 77263,
+        "wastagePct": 4
+      },
+      {
+        "date": "2026-09-12",
+        "wastageCost": 72767,
+        "wastagePct": 3.6
+      },
+      {
+        "date": "2026-09-13",
+        "wastageCost": 63426,
+        "wastagePct": 3.8
+      },
+      {
+        "date": "2026-09-14",
+        "wastageCost": 49138,
+        "wastagePct": 3.9
+      },
+      {
+        "date": "2026-09-15",
+        "wastageCost": 57049,
+        "wastagePct": 4
+      },
+      {
+        "date": "2026-09-16",
+        "wastageCost": 49329,
+        "wastagePct": 3.7
+      },
+      {
+        "date": "2026-09-17",
+        "wastageCost": 60758,
+        "wastagePct": 4.2
+      },
+      {
+        "date": "2026-09-18",
+        "wastageCost": 78201,
+        "wastagePct": 4.2
+      },
+      {
+        "date": "2026-09-19",
+        "wastageCost": 95328,
+        "wastagePct": 4.1
+      },
+      {
+        "date": "2026-09-20",
+        "wastageCost": 70013,
+        "wastagePct": 3.8
+      },
+      {
+        "date": "2026-09-21",
+        "wastageCost": 54981,
+        "wastagePct": 4.2
+      },
+      {
+        "date": "2026-09-22",
+        "wastageCost": 51997,
+        "wastagePct": 3.6
+      },
+      {
+        "date": "2026-09-23",
+        "wastageCost": 58996,
+        "wastagePct": 4.3
+      }
+    ],
+    "byCategory": [
+      {
+        "categoryId": "cat-biryani-rice",
+        "category": "Biryani & Rice",
+        "wastageCost": 218270,
+        "wastagePct": 2.1,
+        "topItem": "Beef Biryani",
+        "shareOfWastage": 0.11
+      },
+      {
+        "categoryId": "cat-karahi-handi",
+        "category": "Karahi & Handi",
+        "wastageCost": 142823,
+        "wastagePct": 1.8,
+        "topItem": "Mutton Handi",
+        "shareOfWastage": 0.07
+      },
+      {
+        "categoryId": "cat-bbq-kebabs",
+        "category": "BBQ & Kebabs",
+        "wastageCost": 275616,
+        "wastagePct": 2.6,
+        "topItem": "Chicken Tikka",
+        "shareOfWastage": 0.14
+      },
+      {
+        "categoryId": "cat-burgers",
+        "category": "Burgers & Sandwiches",
+        "wastageCost": 145939,
+        "wastagePct": 3.4,
+        "topItem": "Zinger Burger",
+        "shareOfWastage": 0.07
+      },
+      {
+        "categoryId": "cat-chinese",
+        "category": "Chinese",
+        "wastageCost": 76081,
+        "wastagePct": 3.1,
+        "topItem": "Chicken Manchurian",
+        "shareOfWastage": 0.04
+      },
+      {
+        "categoryId": "cat-wraps-rolls",
+        "category": "Wraps & Rolls",
+        "wastageCost": 169362,
+        "wastagePct": 3.8,
+        "topItem": "Chicken Paratha Roll",
+        "shareOfWastage": 0.09
+      },
+      {
+        "categoryId": "cat-snacks-sides",
+        "category": "Snacks & Sides",
+        "wastageCost": 196851,
+        "wastagePct": 5.9,
+        "topItem": "Mozzarella Sticks",
+        "shareOfWastage": 0.1
+      },
+      {
+        "categoryId": "cat-desserts",
+        "category": "Desserts",
+        "wastageCost": 147126,
+        "wastagePct": 4.4,
+        "topItem": "Chocolate Lava Cake",
+        "shareOfWastage": 0.08
+      },
+      {
+        "categoryId": "cat-beverages",
+        "category": "Beverages",
+        "wastageCost": 349998,
+        "wastagePct": 6.8,
+        "topItem": "Fresh Lime Soda",
+        "shareOfWastage": 0.18
+      },
+      {
+        "categoryId": "cat-soups-salads",
+        "category": "Soups & Salads",
+        "wastageCost": 74116,
+        "wastagePct": 4.9,
+        "topItem": "Russian Salad",
+        "shareOfWastage": 0.04
+      },
+      {
+        "categoryId": "cat-family-deals",
+        "category": "Family Deals",
+        "wastageCost": 60944,
+        "wastagePct": 2.2,
+        "topItem": "Family Feast Deal",
+        "shareOfWastage": 0.03
+      },
+      {
+        "categoryId": "cat-breakfast",
+        "category": "Breakfast",
+        "wastageCost": 92627,
+        "wastagePct": 3.6,
+        "topItem": "Halwa Puri",
+        "shareOfWastage": 0.05
+      }
+    ],
+    "byItem": [
+      {
+        "itemId": "itm-042",
+        "name": "Fresh Lime Soda",
+        "category": "Beverages",
+        "wastagePct": 14.2,
+        "wastageCost": 114325,
+        "preparedQty": 4839,
+        "wastedQty": 602
+      },
+      {
+        "itemId": "itm-035",
+        "name": "Mozzarella Sticks",
+        "category": "Snacks & Sides",
+        "wastagePct": 9.8,
+        "wastageCost": 18560,
+        "preparedQty": 462,
+        "wastedQty": 41
+      },
+      {
+        "itemId": "itm-034",
+        "name": "Chicken Nuggets",
+        "category": "Snacks & Sides",
+        "wastagePct": 6.5,
+        "wastageCost": 11220,
+        "preparedQty": 484,
+        "wastedQty": 30
+      },
+      {
+        "itemId": "itm-012",
+        "name": "Mutton Handi",
+        "category": "Karahi & Handi",
+        "wastagePct": 6.4,
+        "wastageCost": 11062,
+        "preparedQty": 84,
+        "wastedQty": 5
+      },
+      {
+        "itemId": "itm-020",
+        "name": "Zinger Burger",
+        "category": "Burgers & Sandwiches",
+        "wastagePct": 6.3,
+        "wastageCost": 89804,
+        "preparedQty": 2444,
+        "wastedQty": 145
+      },
+      {
+        "itemId": "itm-039",
+        "name": "Chocolate Lava Cake",
+        "category": "Desserts",
+        "wastagePct": 6.3,
+        "wastageCost": 10784,
+        "preparedQty": 371,
+        "wastedQty": 22
+      },
+      {
+        "itemId": "itm-013",
+        "name": "Nihari",
+        "category": "Karahi & Handi",
+        "wastagePct": 6.2,
+        "wastageCost": 33924,
+        "preparedQty": 1076,
+        "wastedQty": 63
+      },
+      {
+        "itemId": "itm-008",
+        "name": "Chicken Karahi",
+        "category": "Karahi & Handi",
+        "wastagePct": 6.1,
+        "wastageCost": 104969,
+        "preparedQty": 1107,
+        "wastedQty": 64
+      },
+      {
+        "itemId": "itm-002",
+        "name": "Beef Biryani",
+        "category": "Biryani & Rice",
+        "wastagePct": 5.9,
+        "wastageCost": 107606,
+        "preparedQty": 3512,
+        "wastedQty": 196
+      },
+      {
+        "itemId": "itm-010",
+        "name": "White Karahi",
+        "category": "Karahi & Handi",
+        "wastagePct": 5.8,
+        "wastageCost": 27273,
+        "preparedQty": 276,
+        "wastedQty": 15
+      },
+      {
+        "itemId": "itm-004",
+        "name": "Chicken Pulao",
+        "category": "Biryani & Rice",
+        "wastagePct": 5.7,
+        "wastageCost": 61267,
+        "preparedQty": 2525,
+        "wastedQty": 136
+      },
+      {
+        "itemId": "itm-046",
+        "name": "Russian Salad",
+        "category": "Soups & Salads",
+        "wastagePct": 5.6,
+        "wastageCost": 8374,
+        "preparedQty": 545,
+        "wastedQty": 29
+      },
+      {
+        "itemId": "itm-029",
+        "name": "Chicken Manchurian",
+        "category": "Chinese",
+        "wastagePct": 5.4,
+        "wastageCost": 26116,
+        "preparedQty": 680,
+        "wastedQty": 35
+      },
+      {
+        "itemId": "itm-014",
+        "name": "Chicken Tikka",
+        "category": "BBQ & Kebabs",
+        "wastagePct": 5.3,
+        "wastageCost": 106256,
+        "preparedQty": 4059,
+        "wastedQty": 204
+      },
+      {
+        "itemId": "itm-025",
+        "name": "Chicken Paratha Roll",
+        "category": "Wraps & Rolls",
+        "wastagePct": 5.1,
+        "wastageCost": 50703,
+        "preparedQty": 2749,
+        "wastedQty": 133
+      },
+      {
+        "itemId": "itm-037",
+        "name": "Kheer",
+        "category": "Desserts",
+        "wastagePct": 5,
+        "wastageCost": 19900,
+        "preparedQty": 1608,
+        "wastedQty": 77
+      },
+      {
+        "itemId": "itm-021",
+        "name": "Beef Burger",
+        "category": "Burgers & Sandwiches",
+        "wastagePct": 4.9,
+        "wastageCost": 45958,
+        "preparedQty": 1696,
+        "wastedQty": 79
+      },
+      {
+        "itemId": "itm-028",
+        "name": "Chicken Chowmein",
+        "category": "Chinese",
+        "wastagePct": 4.8,
+        "wastageCost": 37700,
+        "preparedQty": 1193,
+        "wastedQty": 55
+      },
+      {
+        "itemId": "itm-033",
+        "name": "Masala Fries",
+        "category": "Snacks & Sides",
+        "wastagePct": 4.7,
+        "wastageCost": 43454,
+        "preparedQty": 3457,
+        "wastedQty": 155
+      },
+      {
+        "itemId": "itm-048",
+        "name": "Family Feast Deal",
+        "category": "Family Deals",
+        "wastagePct": 4.7,
+        "wastageCost": 24758,
+        "preparedQty": 141,
+        "wastedQty": 6
+      }
+    ],
+    "byOutlet": [
+      {
+        "outletId": "out-01",
+        "outlet": "DineIQ DHA Phase 6",
+        "city": "Karachi",
+        "wastageCost": 395442,
+        "wastagePct": 4.3
+      },
+      {
+        "outletId": "out-02",
+        "outlet": "DineIQ Clifton",
+        "city": "Karachi",
+        "wastageCost": 162031,
+        "wastagePct": 3.2
+      },
+      {
+        "outletId": "out-03",
+        "outlet": "DineIQ Gulshan-e-Iqbal",
+        "city": "Karachi",
+        "wastageCost": 122926,
+        "wastagePct": 3.1
+      },
+      {
+        "outletId": "out-04",
+        "outlet": "DineIQ Bahadurabad",
+        "city": "Karachi",
+        "wastageCost": 87849,
+        "wastagePct": 3.2
+      },
+      {
+        "outletId": "out-05",
+        "outlet": "DineIQ Zamzama",
+        "city": "Karachi",
+        "wastageCost": 172072,
+        "wastagePct": 6.2,
+        "flag": "wastage_abnormal"
+      },
+      {
+        "outletId": "out-06",
+        "outlet": "DineIQ Nazimabad",
+        "city": "Karachi",
+        "wastageCost": 109611,
+        "wastagePct": 4.5
+      },
+      {
+        "outletId": "out-07",
+        "outlet": "DineIQ Malir Cantt",
+        "city": "Karachi",
+        "wastageCost": 66747,
+        "wastagePct": 3.1
+      },
+      {
+        "outletId": "out-08",
+        "outlet": "DineIQ North Nazimabad",
+        "city": "Karachi",
+        "wastageCost": 61239,
+        "wastagePct": 3.3
+      },
+      {
+        "outletId": "out-09",
+        "outlet": "DineIQ Shahra-e-Faisal",
+        "city": "Karachi",
+        "wastageCost": 51218,
+        "wastagePct": 3
+      },
+      {
+        "outletId": "out-10",
+        "outlet": "DineIQ Gulberg III",
+        "city": "Lahore",
+        "wastageCost": 51141,
+        "wastagePct": 2.7
+      },
+      {
+        "outletId": "out-11",
+        "outlet": "DineIQ DHA Phase 5",
+        "city": "Lahore",
+        "wastageCost": 53929,
+        "wastagePct": 3.4
+      },
+      {
+        "outletId": "out-12",
+        "outlet": "DineIQ Johar Town",
+        "city": "Lahore",
+        "wastageCost": 65532,
+        "wastagePct": 4.7
+      },
+      {
+        "outletId": "out-13",
+        "outlet": "DineIQ Bahria Town",
+        "city": "Lahore",
+        "wastageCost": 60161,
+        "wastagePct": 4.4
+      },
+      {
+        "outletId": "out-14",
+        "outlet": "DineIQ Model Town",
+        "city": "Lahore",
+        "wastageCost": 64494,
+        "wastagePct": 4.2
+      },
+      {
+        "outletId": "out-15",
+        "outlet": "DineIQ MM Alam Road",
+        "city": "Lahore",
+        "wastageCost": 49980,
+        "wastagePct": 3.9
+      },
+      {
+        "outletId": "out-16",
+        "outlet": "DineIQ F-7 Markaz",
+        "city": "Islamabad",
+        "wastageCost": 47766,
+        "wastagePct": 4
+      },
+      {
+        "outletId": "out-17",
+        "outlet": "DineIQ Blue Area",
+        "city": "Islamabad",
+        "wastageCost": 37813,
+        "wastagePct": 3
+      },
+      {
+        "outletId": "out-18",
+        "outlet": "DineIQ DHA Phase 2",
+        "city": "Islamabad",
+        "wastageCost": 35268,
+        "wastagePct": 2.8
+      },
+      {
+        "outletId": "out-19",
+        "outlet": "DineIQ Bahria Enclave",
+        "city": "Islamabad",
+        "wastageCost": 52839,
+        "wastagePct": 4.2
+      },
+      {
+        "outletId": "out-20",
+        "outlet": "DineIQ Saddar",
+        "city": "Rawalpindi",
+        "wastageCost": 38583,
+        "wastagePct": 3.4
+      },
+      {
+        "outletId": "out-21",
+        "outlet": "DineIQ Bahria Town",
+        "city": "Rawalpindi",
+        "wastageCost": 42496,
+        "wastagePct": 4.1
+      },
+      {
+        "outletId": "out-22",
+        "outlet": "DineIQ D Ground",
+        "city": "Faisalabad",
+        "wastageCost": 37528,
+        "wastagePct": 3.6
+      },
+      {
+        "outletId": "out-23",
+        "outlet": "DineIQ Kohinoor City",
+        "city": "Faisalabad",
+        "wastageCost": 39001,
+        "wastagePct": 4.2
+      },
+      {
+        "outletId": "out-24",
+        "outlet": "DineIQ Gulgasht",
+        "city": "Multan",
+        "wastageCost": 44087,
+        "wastagePct": 4.5
+      }
+    ]
+  },
+  "meta": {
+    "generatedAt": "2026-09-24T08:29:51.861Z",
+    "filters": {},
+    "note": "Wastage totals reconcile exactly with the Executive Dashboard wastage KPI."
+  },
+  "insight": {
+    "summary": [
+      "Wastage cost reached PKR 1.9M (4% of revenue) over the last 30 days, up 3.2% versus the previous period.",
+      "Beverages runs the highest category wastage at 6.8%, led by Fresh Lime Soda; DineIQ Zamzama is the worst outlet at 6.2%.",
+      "Over-preparation causes 58% of wasted cost and spoilage 27% — batch-size correction on beverages and frozen sides is the highest-leverage fix."
+    ],
+    "whyItMatters": "Every point of wastage comes straight out of contribution margin; because the cost concentrates in a handful of items and one flagged outlet, targeted prep changes recover more margin than any menu-wide price move.",
+    "evidence": [
+      {
+        "metric": "Wastage cost",
+        "value": "PKR 1.9M",
+        "detail": "Reconciles with the dashboard KPI"
+      },
+      {
+        "metric": "Worst category",
+        "value": "Beverages · 6.8%",
+        "detail": "Led by Fresh Lime Soda"
+      },
+      {
+        "metric": "Worst outlet",
+        "value": "DineIQ Zamzama · 6.2%",
+        "detail": "Carries the wastage_abnormal flag"
+      }
+    ],
+    "period": "Aug 25 – Sep 23, 2026"
+  }
+}

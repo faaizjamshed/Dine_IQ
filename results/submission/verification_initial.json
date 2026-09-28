@@ -1,0 +1,37 @@
+{
+  "timestamp_utc": "2026-09-28T12:18:47.372896+00:00",
+  "python": "3.11.9",
+  "scope": "All discovered Python tests, including live HDFS API/model tests, malformed quality fixtures and production configuration checks. No new browser or 5M benchmark run.",
+  "checks": [
+    {
+      "name": "dependency_check",
+      "command": [
+        "python",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.265,
+      "log": "results/submission/dependency_check.log"
+    },
+    {
+      "name": "regression",
+      "command": [
+        "python",
+        "-m",
+        "pytest",
+        "tests",
+        "-q",
+        "--tb=short",
+        "-p",
+        "no:cacheprovider",
+        "--junitxml=results/submission/regression.xml"
+      ],
+      "returncode": 1,
+      "elapsed_seconds": 705.171,
+      "log": "results/submission/regression.log"
+    }
+  ],
+  "passed": false
+}

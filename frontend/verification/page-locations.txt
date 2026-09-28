@@ -1,0 +1,211 @@
+DineIQ
+
+ANALYTICS PLATFORM
+
+OVERVIEW
+
+Executive Dashboard
+
+INTELLIGENCE
+
+Menu Intelligence
+Customer Intelligence
+Basket & Bundles
+
+OPERATIONS
+
+Demand Forecast
+Wastage
+Locations
+Channels
+
+DECISIONS & ACTIONS
+
+Pricing & Promotions
+Anomalies
+Recommendations
+What-If Simulator
+
+PLATFORM
+
+Model Comparison
+Reports & Export
+Admin
+Collapse
+Locations
+Full history
+Outlets:
+All outlets
+Categories:
+All categories
+Channels:
+All channels
+API CONNECTED
+API CONNECTED
+Search
+⌘K
+F
+
+Scope: Full historical period · canonical restaurants
+
+City totals and the matrix summarize complete API-returned rows. Best/worst outlet means highest/lowest reported revenue.
+
+Outlets
+25
+In current scope
+Cities
+6
+Network footprint
+Best outlet
+DineIQ DHA
+Flagged outlets
+—
+Nothing flagged
+Avg contribution margin
+49.5%
+Across scoped outlets
+City Aggregates
+
+Revenue, share and margin rolled up by city
+
+CITY
+OUTLETS
+REVENUE
+SHARE
+MARGIN
+BEST / WORST
+Karachi
+10
+PKR 2.1B
+40%
+49.5%
+DineIQ DHA
+DineIQ North Nazimabad
+Lahore
+5
+PKR 1B
+20%
+49.5%
+DineIQ Johar Town
+DineIQ Gulberg
+Faisalabad
+2
+PKR 417M
+8%
+49.5%
+DineIQ Canal Road
+DineIQ D-Ground
+Rawalpindi
+2
+PKR 414M
+8%
+49.5%
+DineIQ Saddar
+DineIQ Bahria Town
+Islamabad
+4
+PKR 818M
+16%
+49.5%
+DineIQ F-10
+DineIQ Blue Area
+Multan
+2
+PKR 411M
+8%
+49.5%
+DineIQ Cantt
+DineIQ Gulgasht
+
+Green dot = best outlet · rose dot = worst outlet (by revenue, computed by the backend)
+
+Outlet Comparison
+
+All outlets in scope, ranked by revenue
+
+Outlets with revenue, orders, average order value, margin, rating, performance class and flags
+OUTLET	CITY	REVENUE	ORDERS	AOV	MARGIN	RATING	FLAGS
+
+DineIQ DHA
+	Karachi	PKR 209M	24,623	PKR 8,483	49.5%	4.0 / 5	—
+
+DineIQ Johar Town
+	Lahore	PKR 209M	24,690	PKR 8,460	49.4%	4.0 / 5	—
+
+DineIQ Canal Road
+	Faisalabad	PKR 209M	24,728	PKR 8,442	49.5%	4.0 / 5	—
+
+DineIQ Clifton
+	Karachi	PKR 208M	24,687	PKR 8,435	49.5%	4.0 / 5	—
+
+DineIQ D-Ground
+	Faisalabad	PKR 208M	24,562	PKR 8,471	49.5%	4.0 / 5	—
+
+DineIQ Gulberg
+	Lahore	PKR 207M	24,559	PKR 8,441	49.6%	4.0 / 5	—
+
+DineIQ Clifton
+	Karachi	PKR 207M	24,464	PKR 8,468	49.6%	4.0 / 5	—
+
+DineIQ North Nazimabad
+	Karachi	PKR 207M	24,481	PKR 8,461	49.5%	4.0 / 5	—
+
+DineIQ Saddar
+	Rawalpindi	PKR 207M	24,470	PKR 8,458	49.5%	4.0 / 5	—
+
+DineIQ Bahria Town
+	Rawalpindi	PKR 207M	24,509	PKR 8,441	49.5%	4.0 / 5	—
+
+DineIQ DHA
+	Lahore	PKR 206M	24,488	PKR 8,432	49.5%	4.0 / 5	—
+
+DineIQ Model Town
+	Lahore	PKR 206M	24,454	PKR 8,443	49.5%	4.0 / 5	—
+
+DineIQ Gulberg
+	Lahore	PKR 206M	24,476	PKR 8,434	49.5%	4.0 / 5	—
+
+DineIQ Bahadurabad
+	Karachi	PKR 206M	24,474	PKR 8,432	49.5%	4.0 / 5	—
+
+DineIQ F-10
+	Islamabad	PKR 206M	24,448	PKR 8,434	49.5%	4.0 / 5	—
+
+DineIQ Gulshan
+	Karachi	PKR 206M	24,428	PKR 8,422	49.5%	4.0 / 5	—
+
+DineIQ DHA
+	Karachi	PKR 206M	24,400	PKR 8,432	49.5%	4.0 / 5	—
+
+DineIQ Cantt
+	Multan	PKR 206M	24,278	PKR 8,465	49.6%	4.0 / 5	—
+
+DineIQ Gulgasht
+	Multan	PKR 205M	24,504	PKR 8,383	49.5%	4.0 / 5	—
+
+DineIQ Bahadurabad
+	Karachi	PKR 204M	24,356	PKR 8,395	49.4%	4.0 / 5	—
+
+DineIQ Gulshan
+	Karachi	PKR 204M	24,151	PKR 8,453	49.5%	4.0 / 5	—
+
+DineIQ F-7
+	Islamabad	PKR 204M	24,286	PKR 8,404	49.5%	4.0 / 5	—
+
+DineIQ G-11
+	Islamabad	PKR 204M	24,334	PKR 8,385	49.5%	4.0 / 5	—
+
+DineIQ North Nazimabad
+	Karachi	PKR 204M	24,107	PKR 8,452	49.5%	4.0 / 5	—
+
+DineIQ Blue Area
+	Islamabad	PKR 204M	24,194	PKR 8,419	49.5%	4.0 / 5	—
+
+Dot color = API performance class · flags rendered verbatim from GET /api/restaurants
+
+Outlet × Category Revenue Matrix
+
+Revenue by outlet (rows) and menu category (columns)
+
+25 outlets × 15 categories
+Classic Burger 1

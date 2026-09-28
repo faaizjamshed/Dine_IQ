@@ -1,0 +1,1146 @@
+{
+  "source": "hdfs://localhost:9000/dineq/processed/v4",
+  "output_root": "hdfs://localhost:9000/dineq/results/v4",
+  "outputs": {
+    "menu_item_performance": {
+      "rows": 200,
+      "path": "hdfs://localhost:9000/dineq/results/v4/menu_item_performance",
+      "schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "menu_item_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "item_name",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "category_name",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "order_count",
+            "type": "long",
+            "nullable": false,
+            "metadata": {}
+          },
+          {
+            "name": "units_sold",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "gross_sales",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "avg_unit_price",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "preview": [
+        {
+          "menu_item_id": "M0138",
+          "item_name": "Deluxe Pakistani 10",
+          "category_name": "Pakistani",
+          "order_count": 6232,
+          "units_sold": 9734,
+          "gross_sales": 6725472.25,
+          "avg_unit_price": 699.98
+        },
+        {
+          "menu_item_id": "M0162",
+          "item_name": "Signature Seafood 11",
+          "category_name": "Seafood",
+          "order_count": 5709,
+          "units_sold": 8915,
+          "gross_sales": 2907930.18,
+          "avg_unit_price": 330.06
+        },
+        {
+          "menu_item_id": "M0036",
+          "item_name": "Cheesy Dessert 3",
+          "category_name": "Desserts",
+          "order_count": 16443,
+          "units_sold": 25564,
+          "gross_sales": 45230449.52,
+          "avg_unit_price": 1790.74
+        },
+        {
+          "menu_item_id": "M0031",
+          "item_name": "Tandoori Burger 3",
+          "category_name": "Burgers",
+          "order_count": 18193,
+          "units_sold": 28384,
+          "gross_sales": 48797912.85,
+          "avg_unit_price": 1739.89
+        },
+        {
+          "menu_item_id": "M0197",
+          "item_name": "Creamy Pizza 14",
+          "category_name": "Pizza",
+          "order_count": 5055,
+          "units_sold": 7816,
+          "gross_sales": 2546387.22,
+          "avg_unit_price": 329.89
+        },
+        {
+          "menu_item_id": "M0029",
+          "item_name": "Special Rice 2",
+          "category_name": "Rice",
+          "order_count": 19494,
+          "units_sold": 30564,
+          "gross_sales": 19927733.1,
+          "avg_unit_price": 660.06
+        },
+        {
+          "menu_item_id": "M0129",
+          "item_name": "Special Breakfast 9",
+          "category_name": "Breakfast",
+          "order_count": 6798,
+          "units_sold": 10418,
+          "gross_sales": 18110615.6,
+          "avg_unit_price": 1760.12
+        },
+        {
+          "menu_item_id": "M0046",
+          "item_name": "Double Burger 4",
+          "category_name": "Burgers",
+          "order_count": 14045,
+          "units_sold": 22047,
+          "gross_sales": 35702615.5,
+          "avg_unit_price": 1639.25
+        },
+        {
+          "menu_item_id": "M0105",
+          "item_name": "House Coffee & Tea 7",
+          "category_name": "Coffee & Tea",
+          "order_count": 7676,
+          "units_sold": 11987,
+          "gross_sales": 15501927.58,
+          "avg_unit_price": 1309.48
+        },
+        {
+          "menu_item_id": "M0132",
+          "item_name": "Fiery Seafood 9",
+          "category_name": "Seafood",
+          "order_count": 6390,
+          "units_sold": 10031,
+          "gross_sales": 17543275.29,
+          "avg_unit_price": 1770.81
+        }
+      ]
+    },
+    "category_performance": {
+      "rows": 15,
+      "path": "hdfs://localhost:9000/dineq/results/v4/category_performance",
+      "schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "category_name",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "order_count",
+            "type": "long",
+            "nullable": false,
+            "metadata": {}
+          },
+          {
+            "name": "units_sold",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "gross_sales",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "avg_line_value",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "preview": [
+        {
+          "category_name": "Rice",
+          "order_count": 126742,
+          "units_sold": 219587,
+          "gross_sales": 206815991.39,
+          "avg_line_value": 1466.02
+        },
+        {
+          "category_name": "Pasta",
+          "order_count": 134927,
+          "units_sold": 235106,
+          "gross_sales": 210424132.37,
+          "avg_line_value": 1389.47
+        },
+        {
+          "category_name": "Breakfast",
+          "order_count": 142027,
+          "units_sold": 249309,
+          "gross_sales": 301429849.09,
+          "avg_line_value": 1877.97
+        },
+        {
+          "category_name": "Salads",
+          "order_count": 137997,
+          "units_sold": 240663,
+          "gross_sales": 199616685.46,
+          "avg_line_value": 1286.02
+        },
+        {
+          "category_name": "Sandwiches",
+          "order_count": 129213,
+          "units_sold": 223732,
+          "gross_sales": 261183183.18,
+          "avg_line_value": 1810.2
+        },
+        {
+          "category_name": "Beverages",
+          "order_count": 169117,
+          "units_sold": 304770,
+          "gross_sales": 230926477.53,
+          "avg_line_value": 1175.69
+        },
+        {
+          "category_name": "Pizza",
+          "order_count": 218236,
+          "units_sold": 414848,
+          "gross_sales": 301428826.91,
+          "avg_line_value": 1128.49
+        },
+        {
+          "category_name": "Desserts",
+          "order_count": 157089,
+          "units_sold": 279171,
+          "gross_sales": 375348970.39,
+          "avg_line_value": 2082.26
+        },
+        {
+          "category_name": "Chinese",
+          "order_count": 151618,
+          "units_sold": 268557,
+          "gross_sales": 299681915.76,
+          "avg_line_value": 1733.13
+        },
+        {
+          "category_name": "BBQ",
+          "order_count": 178751,
+          "units_sold": 325594,
+          "gross_sales": 423975735.94,
+          "avg_line_value": 2022.4
+        }
+      ]
+    },
+    "restaurant_performance": {
+      "rows": 25,
+      "path": "hdfs://localhost:9000/dineq/results/v4/restaurant_performance",
+      "schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "restaurant_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "restaurant_name",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "city",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "order_count",
+            "type": "long",
+            "nullable": false,
+            "metadata": {}
+          },
+          {
+            "name": "revenue",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "avg_order_value",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "preview": [
+        {
+          "restaurant_id": "R015",
+          "restaurant_name": "DineIQ Bahria Town",
+          "city": "Rawalpindi",
+          "order_count": 24509,
+          "revenue": 206889114.07,
+          "avg_order_value": 8441.35
+        },
+        {
+          "restaurant_id": "R025",
+          "restaurant_name": "DineIQ Gulberg",
+          "city": "Lahore",
+          "order_count": 24476,
+          "revenue": 206438353.56,
+          "avg_order_value": 8434.32
+        },
+        {
+          "restaurant_id": "R011",
+          "restaurant_name": "DineIQ F-10",
+          "city": "Islamabad",
+          "order_count": 24448,
+          "revenue": 206186782.27,
+          "avg_order_value": 8433.69
+        },
+        {
+          "restaurant_id": "R005",
+          "restaurant_name": "DineIQ Bahadurabad",
+          "city": "Karachi",
+          "order_count": 24356,
+          "revenue": 204466778.11,
+          "avg_order_value": 8394.92
+        },
+        {
+          "restaurant_id": "R024",
+          "restaurant_name": "DineIQ Bahadurabad",
+          "city": "Karachi",
+          "order_count": 24474,
+          "revenue": 206369665.3,
+          "avg_order_value": 8432.2
+        },
+        {
+          "restaurant_id": "R022",
+          "restaurant_name": "DineIQ Gulshan",
+          "city": "Karachi",
+          "order_count": 24428,
+          "revenue": 205736898.45,
+          "avg_order_value": 8422.18
+        },
+        {
+          "restaurant_id": "R012",
+          "restaurant_name": "DineIQ Blue Area",
+          "city": "Islamabad",
+          "order_count": 24194,
+          "revenue": 203695547.89,
+          "avg_order_value": 8419.26
+        },
+        {
+          "restaurant_id": "R004",
+          "restaurant_name": "DineIQ North Nazimabad",
+          "city": "Karachi",
+          "order_count": 24481,
+          "revenue": 207131479.06,
+          "avg_order_value": 8460.91
+        },
+        {
+          "restaurant_id": "R017",
+          "restaurant_name": "DineIQ Canal Road",
+          "city": "Faisalabad",
+          "order_count": 24728,
+          "revenue": 208744250.08,
+          "avg_order_value": 8441.61
+        },
+        {
+          "restaurant_id": "R019",
+          "restaurant_name": "DineIQ Cantt",
+          "city": "Multan",
+          "order_count": 24278,
+          "revenue": 205514721.29,
+          "avg_order_value": 8465.06
+        }
+      ]
+    },
+    "channel_performance": {
+      "rows": 6,
+      "path": "hdfs://localhost:9000/dineq/results/v4/channel_performance",
+      "schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "ordering_channel",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "orders",
+            "type": "long",
+            "nullable": false,
+            "metadata": {}
+          },
+          {
+            "name": "avg_order_value",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "completed_revenue",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "preview": [
+        {
+          "ordering_channel": "Mobile App",
+          "orders": 177285,
+          "avg_order_value": 8465.34,
+          "completed_revenue": 1500778402.2
+        },
+        {
+          "ordering_channel": "Unknown",
+          "orders": 1224,
+          "avg_order_value": 8443.74,
+          "completed_revenue": 10335137.35
+        },
+        {
+          "ordering_channel": "Website",
+          "orders": 67042,
+          "avg_order_value": 8486.62,
+          "completed_revenue": 568960261.71
+        },
+        {
+          "ordering_channel": "Delivery Partner",
+          "orders": 134353,
+          "avg_order_value": 8477.55,
+          "completed_revenue": 1138984938.2
+        },
+        {
+          "ordering_channel": "Dine-In",
+          "orders": 146439,
+          "avg_order_value": 8372.52,
+          "completed_revenue": 1226063322.05
+        },
+        {
+          "ordering_channel": "Takeaway",
+          "orders": 84808,
+          "avg_order_value": 8392.47,
+          "completed_revenue": 711748822.41
+        }
+      ]
+    },
+    "promotion_effectiveness": {
+      "rows": 80,
+      "path": "hdfs://localhost:9000/dineq/results/v4/promotion_effectiveness",
+      "schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "promotion_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "promotion_name",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "used_orders",
+            "type": "long",
+            "nullable": false,
+            "metadata": {}
+          },
+          {
+            "name": "avg_subtotal",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "avg_discount",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "final_revenue",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "preview": [
+        {
+          "promotion_id": "P0004",
+          "promotion_name": "Campaign 004",
+          "used_orders": 2065,
+          "avg_subtotal": 7402.96,
+          "avg_discount": 737.98,
+          "final_revenue": 15943575.65
+        },
+        {
+          "promotion_id": "P0008",
+          "promotion_name": "Campaign 008",
+          "used_orders": 2129,
+          "avg_subtotal": 7270.72,
+          "avg_discount": 1797.45,
+          "final_revenue": 13520798.73
+        },
+        {
+          "promotion_id": "P0020",
+          "promotion_name": "Campaign 020",
+          "used_orders": 2215,
+          "avg_subtotal": 7493.07,
+          "avg_discount": 1122.88,
+          "final_revenue": 16353538.25
+        },
+        {
+          "promotion_id": "P0027",
+          "promotion_name": "Campaign 027",
+          "used_orders": 2125,
+          "avg_subtotal": 7448.02,
+          "avg_discount": 291.95,
+          "final_revenue": 17610766.46
+        },
+        {
+          "promotion_id": "P0028",
+          "promotion_name": "Campaign 028",
+          "used_orders": 2080,
+          "avg_subtotal": 7513.18,
+          "avg_discount": 472.34,
+          "final_revenue": 16959815.68
+        },
+        {
+          "promotion_id": "P0031",
+          "promotion_name": "Campaign 031",
+          "used_orders": 2131,
+          "avg_subtotal": 7502.11,
+          "avg_discount": 749.88,
+          "final_revenue": 16668211.57
+        },
+        {
+          "promotion_id": "P0052",
+          "promotion_name": "Campaign 052",
+          "used_orders": 2092,
+          "avg_subtotal": 7567.24,
+          "avg_discount": 1513.45,
+          "final_revenue": 14686920.58
+        },
+        {
+          "promotion_id": "P0067",
+          "promotion_name": "Campaign 067",
+          "used_orders": 2176,
+          "avg_subtotal": 7581.75,
+          "avg_discount": 749.86,
+          "final_revenue": 17218570.66
+        },
+        {
+          "promotion_id": "P0078",
+          "promotion_name": "Campaign 078",
+          "used_orders": 2184,
+          "avg_subtotal": 7650.74,
+          "avg_discount": 1530.16,
+          "final_revenue": 15493515.52
+        },
+        {
+          "promotion_id": "P0018",
+          "promotion_name": "Campaign 018",
+          "used_orders": 2010,
+          "avg_subtotal": 7376.9,
+          "avg_discount": 2204.86,
+          "final_revenue": 12068015.53
+        }
+      ]
+    },
+    "monthly_demand": {
+      "rows": 18,
+      "path": "hdfs://localhost:9000/dineq/results/v4/monthly_demand",
+      "schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "order_month",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "total_orders",
+            "type": "long",
+            "nullable": false,
+            "metadata": {}
+          },
+          {
+            "name": "completed_orders",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "completed_revenue",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "preview": [
+        {
+          "order_month": "2025-03",
+          "total_orders": 37610,
+          "completed_orders": 35354,
+          "completed_revenue": 298361068.4
+        },
+        {
+          "order_month": "2025-04",
+          "total_orders": 37669,
+          "completed_orders": 35477,
+          "completed_revenue": 300213944.79
+        },
+        {
+          "order_month": "2025-05",
+          "total_orders": 36047,
+          "completed_orders": 33927,
+          "completed_revenue": 286884659.12
+        },
+        {
+          "order_month": "2025-06",
+          "total_orders": 36041,
+          "completed_orders": 33890,
+          "completed_revenue": 285588790.22
+        },
+        {
+          "order_month": "2025-07",
+          "total_orders": 35601,
+          "completed_orders": 33510,
+          "completed_revenue": 283556828.21
+        },
+        {
+          "order_month": "2025-08",
+          "total_orders": 35501,
+          "completed_orders": 33353,
+          "completed_revenue": 282890826.21
+        },
+        {
+          "order_month": "2025-09",
+          "total_orders": 32949,
+          "completed_orders": 30964,
+          "completed_revenue": 260897401.37
+        },
+        {
+          "order_month": "2025-10",
+          "total_orders": 36208,
+          "completed_orders": 33926,
+          "completed_revenue": 288042371.58
+        },
+        {
+          "order_month": "2025-11",
+          "total_orders": 37929,
+          "completed_orders": 35695,
+          "completed_revenue": 300493702.52
+        },
+        {
+          "order_month": "2025-12",
+          "total_orders": 40848,
+          "completed_orders": 38331,
+          "completed_revenue": 323397426.62
+        }
+      ]
+    },
+    "weekday_peak_hour": {
+      "rows": 168,
+      "path": "hdfs://localhost:9000/dineq/results/v4/weekday_peak_hour",
+      "schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "weekday",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "hour_of_day",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "orders",
+            "type": "long",
+            "nullable": false,
+            "metadata": {}
+          },
+          {
+            "name": "avg_order_value",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "preview": [
+        {
+          "weekday": 2,
+          "hour_of_day": 14,
+          "orders": 5264,
+          "avg_order_value": 8405.77
+        },
+        {
+          "weekday": 3,
+          "hour_of_day": 20,
+          "orders": 7283,
+          "avg_order_value": 8463.37
+        },
+        {
+          "weekday": 2,
+          "hour_of_day": 7,
+          "orders": 2893,
+          "avg_order_value": 8489.24
+        },
+        {
+          "weekday": 6,
+          "hour_of_day": 10,
+          "orders": 2430,
+          "avg_order_value": 8459.86
+        },
+        {
+          "weekday": 4,
+          "hour_of_day": 8,
+          "orders": 4182,
+          "avg_order_value": 8470.71
+        },
+        {
+          "weekday": 3,
+          "hour_of_day": 22,
+          "orders": 2080,
+          "avg_order_value": 8400.39
+        },
+        {
+          "weekday": 3,
+          "hour_of_day": 10,
+          "orders": 2406,
+          "avg_order_value": 8562.01
+        },
+        {
+          "weekday": 5,
+          "hour_of_day": 10,
+          "orders": 2450,
+          "avg_order_value": 8400.6
+        },
+        {
+          "weekday": 6,
+          "hour_of_day": 5,
+          "orders": 799,
+          "avg_order_value": 8615.45
+        },
+        {
+          "weekday": 4,
+          "hour_of_day": 4,
+          "orders": 457,
+          "avg_order_value": 8582.02
+        }
+      ]
+    },
+    "customer_segment_behavior": {
+      "rows": 5,
+      "path": "hdfs://localhost:9000/dineq/results/v4/customer_segment_behavior",
+      "schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "customer_segment",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "customers",
+            "type": "long",
+            "nullable": false,
+            "metadata": {}
+          },
+          {
+            "name": "total_orders",
+            "type": "long",
+            "nullable": false,
+            "metadata": {}
+          },
+          {
+            "name": "avg_order_value",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "revenue",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "preview": [
+        {
+          "customer_segment": "Occasional",
+          "customers": 11241,
+          "total_orders": 92645,
+          "avg_order_value": 8433.28,
+          "revenue": 781301493.69
+        },
+        {
+          "customer_segment": "Regular",
+          "customers": 25491,
+          "total_orders": 208935,
+          "avg_order_value": 8435.92,
+          "revenue": 1762559056.06
+        },
+        {
+          "customer_segment": "High Value",
+          "customers": 6775,
+          "total_orders": 54982,
+          "avg_order_value": 8445.4,
+          "revenue": 464345105.82
+        },
+        {
+          "customer_segment": "New",
+          "customers": 13558,
+          "total_orders": 111133,
+          "avg_order_value": 8433.18,
+          "revenue": 937204396.06
+        },
+        {
+          "customer_segment": "Loyal",
+          "customers": 17935,
+          "total_orders": 143456,
+          "avg_order_value": 8444.83,
+          "revenue": 1211460832.29
+        }
+      ]
+    },
+    "restaurant_ratings": {
+      "rows": 25,
+      "path": "hdfs://localhost:9000/dineq/results/v4/restaurant_ratings",
+      "schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "restaurant_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "rating_count",
+            "type": "long",
+            "nullable": false,
+            "metadata": {}
+          },
+          {
+            "name": "avg_rating",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "avg_food_rating",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "avg_service_rating",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "preview": [
+        {
+          "restaurant_id": "R008",
+          "rating_count": 8827,
+          "avg_rating": 3.985,
+          "avg_food_rating": 3.926,
+          "avg_service_rating": 3.899
+        },
+        {
+          "restaurant_id": "R024",
+          "rating_count": 8934,
+          "avg_rating": 3.988,
+          "avg_food_rating": 3.915,
+          "avg_service_rating": 3.894
+        },
+        {
+          "restaurant_id": "R022",
+          "rating_count": 8720,
+          "avg_rating": 3.999,
+          "avg_food_rating": 3.931,
+          "avg_service_rating": 3.907
+        },
+        {
+          "restaurant_id": "R010",
+          "rating_count": 8591,
+          "avg_rating": 3.985,
+          "avg_food_rating": 3.913,
+          "avg_service_rating": 3.898
+        },
+        {
+          "restaurant_id": "R023",
+          "rating_count": 8591,
+          "avg_rating": 3.993,
+          "avg_food_rating": 3.917,
+          "avg_service_rating": 3.91
+        },
+        {
+          "restaurant_id": "R015",
+          "rating_count": 8818,
+          "avg_rating": 4.001,
+          "avg_food_rating": 3.937,
+          "avg_service_rating": 3.914
+        },
+        {
+          "restaurant_id": "R014",
+          "rating_count": 8834,
+          "avg_rating": 3.996,
+          "avg_food_rating": 3.93,
+          "avg_service_rating": 3.906
+        },
+        {
+          "restaurant_id": "R020",
+          "rating_count": 8825,
+          "avg_rating": 3.981,
+          "avg_food_rating": 3.903,
+          "avg_service_rating": 3.889
+        },
+        {
+          "restaurant_id": "R018",
+          "rating_count": 8999,
+          "avg_rating": 4.011,
+          "avg_food_rating": 3.939,
+          "avg_service_rating": 3.916
+        },
+        {
+          "restaurant_id": "R019",
+          "rating_count": 8593,
+          "avg_rating": 4.011,
+          "avg_food_rating": 3.943,
+          "avg_service_rating": 3.929
+        }
+      ]
+    },
+    "wastage_by_reason": {
+      "rows": 5,
+      "path": "hdfs://localhost:9000/dineq/results/v4/wastage_by_reason",
+      "schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "reason",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "records",
+            "type": "long",
+            "nullable": false,
+            "metadata": {}
+          },
+          {
+            "name": "quantity_wasted",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "wastage_cost",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "preview": [
+        {
+          "reason": "Expired",
+          "records": 27541,
+          "quantity_wasted": 59461.03,
+          "wastage_cost": 29420238.55
+        },
+        {
+          "reason": "Preparation Error",
+          "records": 18816,
+          "quantity_wasted": 40458.78,
+          "wastage_cost": 19910718.8
+        },
+        {
+          "reason": "Damaged",
+          "records": 10927,
+          "quantity_wasted": 23578.21,
+          "wastage_cost": 11661629.16
+        },
+        {
+          "reason": "Unsold",
+          "records": 21962,
+          "quantity_wasted": 47713.18,
+          "wastage_cost": 23579588.43
+        },
+        {
+          "reason": "Overproduction",
+          "records": 30699,
+          "quantity_wasted": 66183.82,
+          "wastage_cost": 32361090.23
+        }
+      ]
+    },
+    "pricing_changes": {
+      "rows": 5,
+      "path": "hdfs://localhost:9000/dineq/results/v4/pricing_changes",
+      "schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "change_reason",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "changes",
+            "type": "long",
+            "nullable": false,
+            "metadata": {}
+          },
+          {
+            "name": "avg_price_change",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "avg_percent_change",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "preview": [
+        {
+          "change_reason": "Supplier Cost",
+          "changes": 602,
+          "avg_price_change": 75.15,
+          "avg_percent_change": 6.9
+        },
+        {
+          "change_reason": "Seasonal Adjustment",
+          "changes": 562,
+          "avg_price_change": 77.47,
+          "avg_percent_change": 7.0
+        },
+        {
+          "change_reason": "Menu Review",
+          "changes": 602,
+          "avg_price_change": 76.5,
+          "avg_percent_change": 7.16
+        },
+        {
+          "change_reason": "Inflation",
+          "changes": 593,
+          "avg_price_change": 75.04,
+          "avg_percent_change": 7.05
+        },
+        {
+          "change_reason": "Promotion End",
+          "changes": 633,
+          "avg_price_change": 76.48,
+          "avg_percent_change": 6.9
+        }
+      ]
+    },
+    "inventory_status": {
+      "rows": 2,
+      "path": "hdfs://localhost:9000/dineq/results/v4/inventory_status",
+      "schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "stock_status",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "observations",
+            "type": "long",
+            "nullable": false,
+            "metadata": {}
+          },
+          {
+            "name": "avg_closing_stock",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "preview": [
+        {
+          "stock_status": "Low",
+          "observations": 17911,
+          "avg_closing_stock": 21.0
+        },
+        {
+          "stock_status": "Normal",
+          "observations": 72089,
+          "avg_closing_stock": 138.44
+        }
+      ]
+    }
+  },
+  "sql": {
+    "menu_item_performance": "SELECT m.menu_item_id,m.item_name,c.category_name,COUNT(DISTINCT o.order_id) order_count,SUM(i.quantity) units_sold,ROUND(SUM(i.line_total),2) gross_sales,ROUND(AVG(i.unit_price),2) avg_unit_price FROM order_items i JOIN orders o ON i.order_id=o.order_id JOIN menu_items m ON i.menu_item_id=m.menu_item_id JOIN menu_categories c ON m.category_id=c.category_id WHERE o.order_status='Completed' GROUP BY m.menu_item_id,m.item_name,c.category_name",
+    "category_performance": "SELECT c.category_name,COUNT(DISTINCT o.order_id) order_count,SUM(i.quantity) units_sold,ROUND(SUM(i.line_total),2) gross_sales,ROUND(AVG(i.line_total),2) avg_line_value FROM order_items i JOIN orders o ON i.order_id=o.order_id JOIN menu_items m ON i.menu_item_id=m.menu_item_id JOIN menu_categories c ON m.category_id=c.category_id WHERE o.order_status='Completed' GROUP BY c.category_name",
+    "restaurant_performance": "SELECT r.restaurant_id,r.restaurant_name,r.city,COUNT(DISTINCT o.order_id) order_count,ROUND(SUM(o.final_amount),2) revenue,ROUND(AVG(o.final_amount),2) avg_order_value FROM orders o JOIN restaurants r ON o.restaurant_id=r.restaurant_id WHERE o.order_status='Completed' GROUP BY r.restaurant_id,r.restaurant_name,r.city",
+    "channel_performance": "SELECT ordering_channel,COUNT(*) orders,ROUND(AVG(final_amount),2) avg_order_value,ROUND(SUM(final_amount),2) completed_revenue FROM orders WHERE order_status='Completed' GROUP BY ordering_channel",
+    "promotion_effectiveness": "SELECT p.promotion_id,p.promotion_name,COUNT(o.order_id) used_orders,ROUND(AVG(o.subtotal),2) avg_subtotal,ROUND(AVG(o.discount_amount),2) avg_discount,ROUND(SUM(o.final_amount),2) final_revenue FROM promotions p LEFT JOIN orders o ON p.promotion_id=o.promotion_id AND o.order_status='Completed' GROUP BY p.promotion_id,p.promotion_name",
+    "monthly_demand": "SELECT order_month,COUNT(*) total_orders,SUM(CASE WHEN order_status='Completed' THEN 1 ELSE 0 END) completed_orders,ROUND(SUM(CASE WHEN order_status='Completed' THEN final_amount ELSE 0 END),2) completed_revenue FROM orders GROUP BY order_month ORDER BY order_month",
+    "weekday_peak_hour": "SELECT dayofweek(order_datetime) weekday,hour(order_datetime) hour_of_day,COUNT(*) orders,ROUND(AVG(final_amount),2) avg_order_value FROM orders WHERE order_status='Completed' GROUP BY dayofweek(order_datetime),hour(order_datetime)",
+    "customer_segment_behavior": "SELECT c.customer_segment,COUNT(DISTINCT c.customer_id) customers,COUNT(o.order_id) total_orders,ROUND(AVG(o.final_amount),2) avg_order_value,ROUND(SUM(o.final_amount),2) revenue FROM customers c LEFT JOIN orders o ON c.customer_id=o.customer_id AND o.order_status='Completed' GROUP BY c.customer_segment",
+    "restaurant_ratings": "SELECT restaurant_id,COUNT(*) rating_count,ROUND(AVG(rating),3) avg_rating,ROUND(AVG(food_rating),3) avg_food_rating,ROUND(AVG(service_rating),3) avg_service_rating FROM ratings GROUP BY restaurant_id",
+    "wastage_by_reason": "SELECT reason,COUNT(*) records,ROUND(SUM(quantity_wasted),2) quantity_wasted,ROUND(SUM(wastage_cost),2) wastage_cost FROM wastage WHERE quantity_wasted>=0 GROUP BY reason",
+    "pricing_changes": "SELECT change_reason,COUNT(*) changes,ROUND(AVG(new_price-old_price),2) avg_price_change,ROUND(AVG((new_price-old_price)/NULLIF(old_price,0)*100),2) avg_percent_change FROM pricing_history GROUP BY change_reason",
+    "inventory_status": "SELECT stock_status,COUNT(*) observations,ROUND(AVG(closing_stock),2) avg_closing_stock FROM inventory GROUP BY stock_status"
+  },
+  "elapsed_seconds": 26.674
+}

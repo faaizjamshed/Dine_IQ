@@ -1,0 +1,856 @@
+{
+  "source": "hdfs://localhost:9000/dineq/raw",
+  "schema_mode": "explicit StructType for production",
+  "tables": {
+    "customers": {
+      "expected_rows": 75075,
+      "actual_rows": 75075,
+      "row_count_match": true,
+      "schema_valid": true,
+      "schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "customer_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "customer_name",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "gender",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "age",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "city",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "signup_date",
+            "type": "date",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "customer_segment",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "preferred_channel",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "loyalty_points",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "is_churned",
+            "type": "boolean",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "last_order_date",
+            "type": "date",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "input_partitions": 2,
+      "source_files": [
+        "hdfs://localhost:9000/dineq/raw/customers.csv"
+      ],
+      "null_observations": {
+        "city": 226,
+        "last_order_date": 563
+      }
+    },
+    "orders": {
+      "expected_rows": 650000,
+      "actual_rows": 650000,
+      "row_count_match": true,
+      "schema_valid": true,
+      "schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "order_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "customer_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "restaurant_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "promotion_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "order_datetime",
+            "type": "timestamp",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ordering_channel",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "order_status",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "subtotal",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "discount_amount",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "tax_amount",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "delivery_fee",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "final_amount",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "payment_method",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "input_partitions": 8,
+      "source_files": [
+        "hdfs://localhost:9000/dineq/raw/orders.csv"
+      ],
+      "null_observations": {
+        "promotion_id": 468311,
+        "ordering_channel": 1300
+      }
+    },
+    "order_items": {
+      "expected_rows": 3000600,
+      "actual_rows": 3000600,
+      "row_count_match": true,
+      "schema_valid": true,
+      "schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "order_item_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "order_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "menu_item_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "quantity",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "unit_price",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "item_discount",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "line_total",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "special_request",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "input_partitions": 8,
+      "source_files": [
+        "hdfs://localhost:9000/dineq/raw/order_items.csv"
+      ],
+      "null_observations": {
+        "special_request": 2820924
+      }
+    },
+    "menu_items": {
+      "expected_rows": 200,
+      "actual_rows": 200,
+      "row_count_match": true,
+      "schema_valid": true,
+      "schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "menu_item_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "category_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "item_name",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "base_price",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "cost_price",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "preparation_time_min",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "is_vegetarian",
+            "type": "boolean",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "is_available",
+            "type": "boolean",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "launch_date",
+            "type": "date",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "input_partitions": 1,
+      "source_files": [
+        "hdfs://localhost:9000/dineq/raw/menu_items.csv"
+      ],
+      "null_observations": {
+        "base_price": 1
+      }
+    },
+    "menu_categories": {
+      "expected_rows": 15,
+      "actual_rows": 15,
+      "row_count_match": true,
+      "schema_valid": true,
+      "schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "category_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "category_name",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "description",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "is_active",
+            "type": "boolean",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "input_partitions": 1,
+      "source_files": [
+        "hdfs://localhost:9000/dineq/raw/menu_categories.csv"
+      ],
+      "null_observations": {}
+    },
+    "restaurants": {
+      "expected_rows": 25,
+      "actual_rows": 25,
+      "row_count_match": true,
+      "schema_valid": true,
+      "schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "restaurant_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "restaurant_name",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "city",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "area",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "opening_date",
+            "type": "date",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "seating_capacity",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "location_type",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "is_active",
+            "type": "boolean",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "input_partitions": 1,
+      "source_files": [
+        "hdfs://localhost:9000/dineq/raw/restaurants.csv"
+      ],
+      "null_observations": {}
+    },
+    "pricing_history": {
+      "expected_rows": 2992,
+      "actual_rows": 2992,
+      "row_count_match": true,
+      "schema_valid": true,
+      "schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "price_history_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "menu_item_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "restaurant_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "old_price",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "new_price",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "effective_from",
+            "type": "date",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "effective_to",
+            "type": "date",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "change_reason",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "input_partitions": 1,
+      "source_files": [
+        "hdfs://localhost:9000/dineq/raw/pricing_history.csv"
+      ],
+      "null_observations": {
+        "effective_to": 1000
+      }
+    },
+    "promotions": {
+      "expected_rows": 80,
+      "actual_rows": 80,
+      "row_count_match": true,
+      "schema_valid": true,
+      "schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "promotion_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "promotion_name",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "promotion_type",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "discount_type",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "discount_value",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "start_date",
+            "type": "date",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "end_date",
+            "type": "date",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "minimum_order_value",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "channel",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "is_active",
+            "type": "boolean",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "input_partitions": 1,
+      "source_files": [
+        "hdfs://localhost:9000/dineq/raw/promotions.csv"
+      ],
+      "null_observations": {}
+    },
+    "ratings": {
+      "expected_rows": 220000,
+      "actual_rows": 220000,
+      "row_count_match": true,
+      "schema_valid": true,
+      "schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "rating_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "order_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "customer_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "restaurant_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "rating",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "food_rating",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "service_rating",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "delivery_rating",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "review_text",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "rating_date",
+            "type": "date",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "input_partitions": 4,
+      "source_files": [
+        "hdfs://localhost:9000/dineq/raw/ratings.csv"
+      ],
+      "null_observations": {
+        "food_rating": 440,
+        "delivery_rating": 52750,
+        "review_text": 180450
+      }
+    },
+    "inventory": {
+      "expected_rows": 90000,
+      "actual_rows": 90000,
+      "row_count_match": true,
+      "schema_valid": true,
+      "schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "inventory_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "restaurant_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "menu_item_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "record_date",
+            "type": "date",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "opening_stock",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "stock_received",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "stock_used",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "closing_stock",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "reorder_level",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "stock_status",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "input_partitions": 2,
+      "source_files": [
+        "hdfs://localhost:9000/dineq/raw/inventory.csv"
+      ],
+      "null_observations": {}
+    },
+    "wastage": {
+      "expected_rows": 110000,
+      "actual_rows": 110000,
+      "row_count_match": true,
+      "schema_valid": true,
+      "schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "wastage_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "restaurant_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "menu_item_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "wastage_date",
+            "type": "date",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "quantity_wasted",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "unit_cost",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "wastage_cost",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "reason",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "input_partitions": 2,
+      "source_files": [
+        "hdfs://localhost:9000/dineq/raw/wastage.csv"
+      ],
+      "null_observations": {}
+    }
+  },
+  "inference_demo": {
+    "table": "menu_categories",
+    "inferred_schema": {
+      "type": "struct",
+      "fields": [
+        {
+          "name": "category_id",
+          "type": "string",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "category_name",
+          "type": "string",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "is_active",
+          "type": "boolean",
+          "nullable": true,
+          "metadata": {}
+        }
+      ]
+    },
+    "explicit_schema": {
+      "type": "struct",
+      "fields": [
+        {
+          "name": "category_id",
+          "type": "string",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "category_name",
+          "type": "string",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "is_active",
+          "type": "boolean",
+          "nullable": true,
+          "metadata": {}
+        }
+      ]
+    },
+    "schemas_equal": true,
+    "production_uses_inference": false
+  },
+  "elapsed_seconds": 13.39
+}

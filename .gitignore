@@ -1,0 +1,75 @@
+# Local Python environment and interpreter artifacts
+.venv/
+.venv*/
+venv/
+.vscode/
+frontend/node_modules/
+**/__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+
+# Runtime database and operational state
+instance/*.sqlite3*
+instance/**/*.sqlite3*
+instance/**/*.db
+instance/**/*.db-shm
+instance/**/*.db-wal
+
+# HDFS runtime and local storage artifacts
+docker/
+hdfs/
+logs/
+jobs/
+notebooks/.ipynb_checkpoints/
+
+# Large, reproducible or disposable data files
+data/generated/*.csv
+data/generated/**/*.csv
+data/raw/**/*.csv
+data/processed/**/*.parquet
+data/**/*.parquet
+data/**/*.crc
+data/spark_hdfs_test.csv
+
+# Generated benchmark copies and temporary benchmark files
+results/phase3/scalability/*.csv
+results/phase3/scalability/*.json
+results/phase3/scalability/*.parquet
+results/phase3/scalability/**/*.csv
+results/phase3/scalability/**/*.json
+
+# Re-creatable execution logs; preserve compact evidence JSON in results/
+logs/
+results/**/*.log
+results/**/*.tmp
+results/app/phase2/*.sqlite*
+results/**/edge-profile/
+results/**/browser_profile/
+
+# Large serialized local estimator artifacts
+results/ml/python/selected_model.joblib
+results/ml/python/**/*.joblib
+results/ml/**/*.pkl
+
+# Environment secrets and local settings
+.env
+.env.*
+*.env
+
+# Temporary editor and process files
+*.tmp
+*.swp
+*.bak
+results/submission/serving-*/
+results/submission/dependencies/
+results/submission/forecast-v1/*.joblib
+results/submission/aligned-python-v1/*.joblib
+results/submission/validated/
+results/submission/quarantine/
+results/submission/*.zip
+frontend/.cache/
+
+frontend/.cache/

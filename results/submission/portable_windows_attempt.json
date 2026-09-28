@@ -1,0 +1,27 @@
+{
+  "timestamp_utc": "2026-09-28T11:45:15.100238+00:00",
+  "hdfs_protocol_disabled": true,
+  "relocated_bundle": true,
+  "artifact_count": 27,
+  "corruption_rejected": true,
+  "injected_file_rejected": true,
+  "health": {
+    "status": "degraded",
+    "storage_backend": "local_bundle",
+    "bundle_verified": true,
+    "canonical_version": "v4",
+    "data_window": null,
+    "analytics_source": "hdfs://localhost:9000/dineq/results/v4",
+    "analytics_tables_loaded": 0,
+    "analytics_tables_expected": 12,
+    "model_loaded": false,
+    "model_path": "hdfs://localhost:9000/dineq/models/v1/selected_demand_model",
+    "startup_seconds": 3.39,
+    "started_at": "2026-09-28T11:45:16.318778+00:00",
+    "error": "Py4JJavaError: An error occurred while calling o55.parquet.\n: java.lang.UnsatisfiedLinkError: 'boolean org.apache.hadoop.io.nativeio.NativeIO$Windows.access0(java.lang.String, int)'\r\n\tat org.apache.hadoop.io.nativeio.NativeIO$Windows.access0(Native Method)\r\n\tat org.apache.hadoop.io.nativeio.NativeIO$Windows.access(NativeIO.java:793)\r\n\tat org.apache.hadoop.fs.FileUtil.canRead(FileUtil.java:1249)\r\n\tat org.apache.hadoop.fs.FileUtil.list(FileUtil.java:1454)\r\n\tat org.apache.hadoop.fs.RawLocalFileSystem.listStatus(RawLocalFileSystem.java:601)\r\n\tat org.apache.hadoop.fs.FileSystem.listStatus(FileSystem.java:1972)\r\n\tat org.apache.hadoop.fs.FileSystem.listStatus(FileSystem.java:2014)\r\n\tat org.apache.hadoop.fs.ChecksumFileSystem.listStatus(ChecksumFileSystem.java:761)\r\n\tat org.apache.spark.util.HadoopFSUtils$.listLeafFiles(HadoopFSUtils.scala:180)\r\n\tat org.apache.spark.util.HadoopFSUtils$.$anonfun$parallelListLeafFilesInternal$1(HadoopFSUtils.scala:95)\r\n\tat scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:286)\r\n\tat scala.collection.mutable.ResizableArray.foreach(ResizableArray.scala:62)\r\n\tat scala.collection.mutable.ResizableArray.foreach$(ResizableArray.scala:55)\r\n\tat scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:49)\r\n\tat scala.collection.TraversableLike.map(TraversableLike.scala:286)\r\n\tat scala.collection.TraversableLike.map$(TraversableLike.scala:279)\r\n\tat scala.collection.AbstractTraversable.map(Traversable.scala:108)\r\n\tat org.apache.spark.util.HadoopFSUtils$.parallelListLeafFilesInternal(HadoopFSUtils.scala:85)\r\n\tat org.apache.spark.util.HadoopFSUtils$.parallelListLeafFiles(HadoopFSUtils.scala:69)\r\n\tat org.apache.spark.sql.execution.datasources.InMemoryFileIndex$.bulkListLeafFiles(InMemoryFileIndex.scala:163)\r\n\tat org.apache.spark.sql.execution.datasources.InMemoryFileIndex.listLeafFiles(InMemoryFileIndex.scala:134)\r\n\tat org.apache.spark.sql.execution.datasources.InMemoryFileIndex.refresh0(InMemoryFileIndex.scala:96)\r\n\tat org.apache.spark.sql.execution.datasources.InMemoryFileIndex.<init>(InMemoryFileIndex.scala:68)\r\n\tat org.apache.spark.sql.execution.datasources.DataSource.createInMemoryFileIndex(DataSource.scala:539)\r\n\tat org.apache.spark.sql.execution.datasources.DataSource.resolveRelation(DataSource.scala:405)\r\n\tat org.apache.spark.sql.DataFrameReader.loadV1Source(DataFrameReader.scala:229)\r\n\tat org.apache.spark.sql.DataFrameReader.$anonfun$load$2(DataFrameReader.scala:211)\r\n\tat scala.Option.getOrElse(Option.scala:189)\r\n\tat org.apache.spark.sql.DataFrameReader.load(DataFrameReader.scala:211)\r\n\tat org.apache.spark.sql.DataFrameReader.parquet(DataFrameReader.scala:563)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:569)\r\n\tat py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)\r\n\tat py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)\r\n\tat py4j.Gateway.invoke(Gateway.java:282)\r\n\tat py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)\r\n\tat py4j.commands.CallCommand.execute(CallCommand.java:79)\r\n\tat py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)\r\n\tat py4j.ClientServerConnection.run(ClientServerConnection.java:106)\r\n\tat java.base/java.lang.Thread.run(Thread.java:840)\r\n"
+  },
+  "tests_run": 8,
+  "failures": 15,
+  "errors": 4,
+  "passed": false
+}

@@ -1,0 +1,136 @@
+DineIQ
+
+ANALYTICS PLATFORM
+
+OVERVIEW
+
+Executive Dashboard
+
+INTELLIGENCE
+
+Menu Intelligence
+Customer Intelligence
+Basket & Bundles
+
+OPERATIONS
+
+Demand Forecast
+Wastage
+Locations
+Channels
+
+DECISIONS & ACTIONS
+
+Pricing & Promotions
+Anomalies
+Recommendations
+What-If Simulator
+
+PLATFORM
+
+Model Comparison
+Reports & Export
+Admin
+Collapse
+Admin
+Full history
+Outlets:
+All outlets
+Categories:
+All categories
+Channels:
+All channels
+API CONNECTED
+API CONNECTED
+Search
+⌘K
+F
+
+Administrator audit events come from operational SQLite. Spark jobs and model artifacts are historical evidence. Live run counts, warehouse storage, individual quality-check outcomes and training timestamps are unavailable.
+
+Tables ingested
+11
+Curated warehouse tables
+Rows ingested
+4.1M
+4,148,987 rows total
+Runs (24h)
+—
+Ingestion + quality cycles
+Failed jobs
+—
+Last 24 hours
+Storage
+— GB
+Warehouse footprint
+Open quality fails
+—
+Checks currently failing
+Spark Job Monitor
+
+Cluster jobs on the sample platform — stages, cores and shuffle volume
+
+JOB	STATUS	STARTED	DURATION	STAGES	CORES	ROWS SHUFFLED
+Canonical V4 Analytics	Success	Time unavailable	0m 27s	Unavailable	—	—
+Gap1 Analytics V6	Success	Time unavailable	1m 51s	Unavailable	—	—
+Wastage Risk V3	Success	Time unavailable	0m 47s	Unavailable	—	—
+Data Quality Checks
+
+Ingestion gate per cycle — fail/warn items map to the Anomalies page
+
+No quality checks registered for this platform.
+
+Model Registry
+
+Registered models with training dates and evaluation metrics
+
+MODEL	VERSION	PIPELINE	TRAINED	STATUS	METRICS
+wastage-risk-v3	vgap1-v3	Spark	Unavailable	Evidence	
+
+demand-ml-v1	vml-v1	Spark	Unavailable	Evidence	
+Audit Trail
+
+Recent privileged actions across the workspace
+
+USER	ROLE	ACTION	TARGET	WHEN
+User 1	Admin	export	price_sensitivity	just now
+User 1	Admin	report_download	price_sensitivity	just now
+User 1	Admin	export	locations_menu	just now
+User 1	Admin	report_download	locations_menu	just now
+User 1	Admin	export	locations_menu	just now
+User 1	Admin	export	locations_menu	just now
+User 1	Admin	report_download	locations_menu	just now
+User 1	Admin	report_download	locations_menu	just now
+User 1	Admin	export	wastage_risk	just now
+User 1	Admin	report_download	wastage_risk	just now
+User 1	Admin	login		just now
+User 1	Admin	demand_prediction	hourly_demand / R001:2026-08-31T12:00:00	4m ago
+User 1	Admin	report_download	menu	4m ago
+User 1	Admin	export	price_sensitivity	5m ago
+User 1	Admin	report_download	price_sensitivity	5m ago
+User 1	Admin	export	locations_menu	5m ago
+User 1	Admin	export	locations_menu	5m ago
+User 1	Admin	export	locations_menu	5m ago
+User 1	Admin	report_download	locations_menu	5m ago
+User 1	Admin	report_download	locations_menu	5m ago
+User 1	Admin	report_download	locations_menu	5m ago
+User 1	Admin	export	wastage_risk	5m ago
+User 1	Admin	report_download	wastage_risk	5m ago
+User 1	Admin	login		5m ago
+User 1	Admin	login		21m ago
+Unauthenticated	Unknown	login		17h ago
+Unauthenticated	System	spark_job_complete	spark_job / 3d8d78e3-9138-493f-a611-f74647250dbe	18h ago
+Unauthenticated	System	spark_job_start	spark_job / 3d8d78e3-9138-493f-a611-f74647250dbe	18h ago
+Unauthenticated	System	spark_job_failure	spark_job / d36b8332-ea45-4c12-a01d-df29495055c0	18h ago
+Unauthenticated	System	spark_job_start	spark_job / e870c9b0-b069-4f8a-aae6-4f14d073bd9a	18h ago
+Unauthenticated	System	spark_job_start	spark_job / d36b8332-ea45-4c12-a01d-df29495055c0	18h ago
+Unauthenticated	System	spark_job_failure	spark_job / 472ed3d6-e2ea-4738-98cf-8c9d55b0f3ea	18h ago
+Unauthenticated	System	spark_job_start	spark_job / 472ed3d6-e2ea-4738-98cf-8c9d55b0f3ea	18h ago
+Unauthenticated	System	spark_job_start	spark_job / 2e34da5c-5a72-4e24-9c33-c859a5a29bf4	18h ago
+Unauthenticated	System	spark_job_start	spark_job / 101f7d69-6da2-4bc0-9ccd-16d635286980	21h ago
+Unauthenticated	System	spark_job_start	spark_job / db750b83-f094-4652-9a1d-ed4e64be382e	21h ago
+Unauthenticated	System	spark_job_start	spark_job / 6f180564-ecf3-4b9a-b5e3-a7e822f362de	22h ago
+Unauthenticated	System	spark_job_start	spark_job / 895075f7-4a87-4a78-9950-b7fec114bb9b	22h ago
+Unauthenticated	System	spark_job_failure	spark_job / ef1a0c19-f15f-4d4e-9b7e-816ae57cd46f	23h ago
+Unauthenticated	System	spark_job_start	spark_job / ef1a0c19-f15f-4d4e-9b7e-816ae57cd46f	23h ago
+Classic Burger 1

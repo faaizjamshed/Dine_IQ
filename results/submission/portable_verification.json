@@ -1,0 +1,30 @@
+{
+  "timestamp_utc": "2026-09-28T15:00:30.442956+00:00",
+  "hdfs_protocol_disabled": true,
+  "relocated_bundle": true,
+  "artifact_count": 27,
+  "corruption_rejected": true,
+  "injected_file_rejected": true,
+  "health": {
+    "status": "ok",
+    "storage_backend": "local_bundle",
+    "bundle_verified": true,
+    "canonical_version": "v4",
+    "data_window": {
+      "start": "2025-03",
+      "end": "2026-08"
+    },
+    "analytics_source": "hdfs://localhost:9000/dineq/results/v4",
+    "analytics_tables_loaded": 12,
+    "analytics_tables_expected": 12,
+    "model_loaded": true,
+    "model_path": "hdfs://localhost:9000/dineq/models/v1/selected_demand_model",
+    "startup_seconds": 13.72,
+    "started_at": "2026-09-28T15:00:32.928292+00:00",
+    "error": null
+  },
+  "tests_run": 10,
+  "failures": 0,
+  "errors": 0,
+  "passed": true
+}

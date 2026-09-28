@@ -1,0 +1,12 @@
+table,expected_rows,actual_rows,pk_duplicate_observations,full_duplicate_observations,null_field_count,fk_orphan_count
+customers,75075,75075,75,75,789,0
+restaurants,25,25,0,0,0,0
+menu_categories,15,15,0,0,0,0
+menu_items,200,200,0,0,1,0
+promotions,80,80,0,0,0,0
+orders,650000,650000,0,0,469611,0
+order_items,3000600,3000600,600,600,2820924,0
+pricing_history,2992,2992,0,0,1000,0
+ratings,220000,220000,0,0,233640,0
+inventory,90000,90000,0,0,0,0
+wastage,110000,110000,0,0,0,0

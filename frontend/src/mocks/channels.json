@@ -1,0 +1,78 @@
+{
+  "data": {
+    "channels": [
+      {
+        "channel": "dine_in",
+        "label": "Dine-in",
+        "revenue": 21501040,
+        "orders": 10000,
+        "basketSize": 3.4,
+        "aov": 2150,
+        "discountPct": 2.1,
+        "peakHours": [
+          13,
+          14,
+          20,
+          21
+        ],
+        "platformFeePct": 0,
+        "contributionMarginPct": 31.1,
+        "revenueShare": 0.44
+      },
+      {
+        "channel": "delivery",
+        "label": "Delivery",
+        "revenue": 12705160,
+        "orders": 7138,
+        "basketSize": 3.1,
+        "aov": 1780,
+        "discountPct": 8.4,
+        "peakHours": [
+          20,
+          21,
+          22
+        ],
+        "platformFeePct": 22,
+        "contributionMarginPct": 22.8,
+        "revenueShare": 0.26
+      },
+      {
+        "channel": "takeaway",
+        "label": "Takeaway",
+        "revenue": 8307220,
+        "orders": 5850,
+        "basketSize": 2.2,
+        "aov": 1420,
+        "discountPct": 3.2,
+        "peakHours": [
+          13,
+          20
+        ],
+        "platformFeePct": 0,
+        "contributionMarginPct": 30.4,
+        "revenueShare": 0.17
+      },
+      {
+        "channel": "app",
+        "label": "App",
+        "revenue": 6352580,
+        "orders": 3326,
+        "basketSize": 3.6,
+        "aov": 1910,
+        "discountPct": 12.6,
+        "peakHours": [
+          19,
+          20,
+          21
+        ],
+        "platformFeePct": 15,
+        "contributionMarginPct": 24.6,
+        "revenueShare": 0.13
+      }
+    ]
+  },
+  "meta": {
+    "generatedAt": "2026-09-24T08:29:51.861Z",
+    "filters": {}
+  }
+}

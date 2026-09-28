@@ -1,0 +1,75 @@
+{
+  "generated_at": "2026-09-24T14:21:45",
+  "mode": "full",
+  "seed": 42,
+  "history_start": "2025-03-01",
+  "history_end": "2026-08-31",
+  "table_counts_after_dirty_injection": {
+    "customers": 75075,
+    "orders": 650000,
+    "order_items": 3000600,
+    "menu_items": 200,
+    "menu_categories": 15,
+    "restaurants": 25,
+    "pricing_history": 2992,
+    "promotions": 80,
+    "ratings": 220000,
+    "inventory": 90000,
+    "wastage": 110000
+  },
+  "clean_base_validation": {
+    "customers_pk": true,
+    "restaurants_pk": true,
+    "categories_pk": true,
+    "menu_items_pk": true,
+    "promotions_pk": true,
+    "orders_pk": true,
+    "order_items_pk": true,
+    "ratings_pk": true,
+    "inventory_pk": true,
+    "wastage_pk": true,
+    "pricing_history_pk": true,
+    "orders_customer_fk": true,
+    "orders_restaurant_fk": true,
+    "order_items_order_fk": true,
+    "order_items_menu_fk": true,
+    "menu_category_fk": true,
+    "ratings_order_fk": true,
+    "inventory_restaurant_fk": true,
+    "inventory_menu_fk": true,
+    "wastage_nonnegative": true,
+    "inventory_formula": true,
+    "line_total_formula": true
+  },
+  "dirty_data_manifest": {
+    "customers": {
+      "missing_city": 225,
+      "duplicate_rows": 75
+    },
+    "orders": {
+      "missing_channel": 1300,
+      "negative_discount": 325
+    },
+    "order_items": {
+      "invalid_quantity": 1500,
+      "invalid_price": 1200,
+      "incorrect_line_total": 1500,
+      "duplicate_rows": 600
+    },
+    "ratings": {
+      "invalid_rating": 220,
+      "missing_food_rating": 440
+    },
+    "wastage": {
+      "invalid_negative_quantity": 55
+    },
+    "menu_items": {
+      "missing_base_price": 1
+    }
+  },
+  "notes": [
+    "Ordering channel is stored in Orders, not as a separate table.",
+    "Base dataset is validated before controlled dirty-data injection.",
+    "Parquet is intentionally produced later by the Spark processing pipeline."
+  ]
+}

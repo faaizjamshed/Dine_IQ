@@ -1,0 +1,236 @@
+{
+  "data": {
+    "anomalies": [
+      {
+        "id": "anm-001",
+        "type": "sales_spike",
+        "severity": "high",
+        "detectedAt": "2026-09-19T20:30:00+05:00",
+        "dimension": "outlet",
+        "dimensionRef": "DineIQ DHA Phase 6",
+        "summary": "Dine-in orders at DineIQ DHA Phase 6 ran 23% above the 4-week baseline on Sep 19.",
+        "detectionMethod": "STL decomposition + z-score",
+        "evidence": [
+          {
+            "metric": "Baseline",
+            "value": "1,860 orders/day",
+            "detail": "4-week trailing average"
+          },
+          {
+            "metric": "Observed",
+            "value": "2,288",
+            "detail": "Same day, dine-in channel"
+          },
+          {
+            "metric": "Deviation",
+            "value": "+23.0%",
+            "detail": "z-score 3.1"
+          }
+        ],
+        "status": "new"
+      },
+      {
+        "id": "anm-002",
+        "type": "duplicate_transactions",
+        "severity": "critical",
+        "detectedAt": "2026-09-17T11:45:00+05:00",
+        "dimension": "channel",
+        "dimensionRef": "POS / Dine-in",
+        "summary": "42 duplicate transaction pairs were detected within a 90-second window at 3 outlets.",
+        "detectionMethod": "Duplicate hash rule (order content + amount + window)",
+        "evidence": [
+          {
+            "metric": "Duplicate pairs",
+            "value": "42",
+            "detail": "Within 90 seconds"
+          },
+          {
+            "metric": "Affected outlets",
+            "value": "3",
+            "detail": "All using POS firmware v2.3.1"
+          },
+          {
+            "metric": "Exposure",
+            "value": "PKR 118K",
+            "detail": "Potentially double-counted revenue"
+          }
+        ],
+        "status": "reviewing"
+      },
+      {
+        "id": "anm-003",
+        "type": "rating_drop",
+        "severity": "high",
+        "detectedAt": "2026-09-21T09:10:00+05:00",
+        "dimension": "item",
+        "dimensionRef": "Chicken Shawarma",
+        "summary": "Chicken Shawarma rating fell from 4.5 to 3.6 across Lahore outlets over 5 days.",
+        "detectionMethod": "EWMA control chart",
+        "evidence": [
+          {
+            "metric": "Rating before",
+            "value": "4.5 / 5",
+            "detail": "30-day average"
+          },
+          {
+            "metric": "Rating after",
+            "value": "3.6 / 5",
+            "detail": "Last 5 days"
+          },
+          {
+            "metric": "Review count",
+            "value": "214",
+            "detail": "Reviews in the drop window"
+          }
+        ],
+        "status": "new"
+      },
+      {
+        "id": "anm-004",
+        "type": "sales_drop",
+        "severity": "high",
+        "detectedAt": "2026-09-14T22:00:00+05:00",
+        "dimension": "channel",
+        "dimensionRef": "Delivery",
+        "summary": "Delivery revenue in Islamabad fell 18.2% week-over-week.",
+        "evidence": [
+          {
+            "metric": "WoW delta",
+            "value": "-18.2%",
+            "detail": "Week ending Sep 14"
+          },
+          {
+            "metric": "Affected outlets",
+            "value": "4",
+            "detail": "Islamabad cluster"
+          },
+          {
+            "metric": "Baseline",
+            "value": "PKR 2.1M / wk",
+            "detail": "Prior 4-week average"
+          }
+        ],
+        "status": "resolved"
+      },
+      {
+        "id": "anm-005",
+        "type": "abnormal_orders",
+        "severity": "medium",
+        "detectedAt": "2026-09-20T03:15:00+05:00",
+        "dimension": "customer",
+        "dimensionRef": "CUST-58213",
+        "summary": "A single customer account placed 87 orders in 24 hours through the app.",
+        "detectionMethod": "Order velocity rule",
+        "evidence": [
+          {
+            "metric": "Orders in 24h",
+            "value": "87",
+            "detail": "All via app channel"
+          },
+          {
+            "metric": "Typical daily orders",
+            "value": "1.4",
+            "detail": "For this account historically"
+          },
+          {
+            "metric": "Pattern",
+            "value": "Uniform 4-min gaps",
+            "detail": "Consistent with reseller or bot behavior"
+          }
+        ],
+        "status": "new"
+      },
+      {
+        "id": "anm-006",
+        "type": "rating_burst",
+        "severity": "medium",
+        "detectedAt": "2026-09-16T14:20:00+05:00",
+        "dimension": "outlet",
+        "dimensionRef": "DineIQ Blue Area",
+        "summary": "214 five-star reviews for DineIQ Blue Area were posted within 3 hours.",
+        "detectionMethod": "Review velocity outlier",
+        "evidence": [
+          {
+            "metric": "Reviews in 3h",
+            "value": "214",
+            "detail": "All 5-star"
+          },
+          {
+            "metric": "Usual rate",
+            "value": "2.1 / hour",
+            "detail": "Trailing 30-day average"
+          },
+          {
+            "metric": "Source",
+            "value": "App reviews",
+            "detail": "Single device fingerprint cluster"
+          }
+        ],
+        "status": "dismissed"
+      },
+      {
+        "id": "anm-007",
+        "type": "sales_drop",
+        "severity": "medium",
+        "detectedAt": "2026-09-08T12:00:00+05:00",
+        "dimension": "region",
+        "dimensionRef": "Nationwide",
+        "summary": "Nationwide orders dropped 14% below baseline on Sep 8 during the monsoon holiday.",
+        "detectionMethod": "Holiday-aware baseline",
+        "evidence": [
+          {
+            "metric": "Baseline",
+            "value": "26,410 orders",
+            "detail": "Expected for the day"
+          },
+          {
+            "metric": "Observed",
+            "value": "22,710",
+            "detail": "Actual orders"
+          },
+          {
+            "metric": "Deviation",
+            "value": "-14.0%",
+            "detail": "Recovered fully by Sep 10"
+          }
+        ],
+        "status": "reviewing"
+      },
+      {
+        "id": "anm-008",
+        "type": "rating_spike",
+        "severity": "low",
+        "detectedAt": "2026-09-10T08:40:00+05:00",
+        "dimension": "category",
+        "dimensionRef": "Breakfast",
+        "summary": "Breakfast category rating rose 0.5 points after the Sep 1 menu update.",
+        "detectionMethod": "Pre/post comparison",
+        "evidence": [
+          {
+            "metric": "Rating before",
+            "value": "3.9 / 5",
+            "detail": "30 days pre-update"
+          },
+          {
+            "metric": "Rating after",
+            "value": "4.4 / 5",
+            "detail": "10 days post-update"
+          },
+          {
+            "metric": "Review count",
+            "value": "489",
+            "detail": "Reviews in the post window"
+          }
+        ],
+        "status": "new"
+      }
+    ]
+  },
+  "meta": {
+    "generatedAt": "2026-09-24T08:29:51.861Z",
+    "filters": {},
+    "modelName": "AnomalyDetection",
+    "modelVersion": "2.1",
+    "pipeline": "spark"
+  }
+}

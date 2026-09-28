@@ -1,0 +1,80 @@
+{
+  "browser": "Microsoft Edge headless",
+  "route_count": 8,
+  "passed_routes": 0,
+  "all_passed": false,
+  "routes": [
+    {
+      "route": "overview",
+      "expected_heading": "A clearer view of restaurant performance",
+      "passed": false,
+      "elapsed_seconds": 0.73,
+      "browser_exit_code": 0,
+      "rendered_heading_found": false,
+      "error_state": false
+    },
+    {
+      "route": "menu",
+      "expected_heading": "Understand what earns its place",
+      "passed": false,
+      "elapsed_seconds": 0.74,
+      "browser_exit_code": 0,
+      "rendered_heading_found": false,
+      "error_state": false
+    },
+    {
+      "route": "locations",
+      "expected_heading": "Performance by place and customer segment",
+      "passed": false,
+      "elapsed_seconds": 0.71,
+      "browser_exit_code": 0,
+      "rendered_heading_found": false,
+      "error_state": false
+    },
+    {
+      "route": "orders",
+      "expected_heading": "Read the rhythm of demand",
+      "passed": false,
+      "elapsed_seconds": 2.3,
+      "browser_exit_code": 0,
+      "rendered_heading_found": false,
+      "error_state": false
+    },
+    {
+      "route": "growth",
+      "expected_heading": "Measure offers and price movement",
+      "passed": false,
+      "elapsed_seconds": 0.78,
+      "browser_exit_code": 0,
+      "rendered_heading_found": false,
+      "error_state": false
+    },
+    {
+      "route": "operations",
+      "expected_heading": "Track guest feedback and operating signals",
+      "passed": false,
+      "elapsed_seconds": 0.84,
+      "browser_exit_code": 0,
+      "rendered_heading_found": false,
+      "error_state": false
+    },
+    {
+      "route": "forecast",
+      "expected_heading": "Explore an hourly order-arrival estimate",
+      "passed": false,
+      "elapsed_seconds": 1.62,
+      "browser_exit_code": 0,
+      "rendered_heading_found": false,
+      "error_state": false
+    },
+    {
+      "route": "system",
+      "expected_heading": "Know what powers each decision",
+      "passed": false,
+      "elapsed_seconds": 0.75,
+      "browser_exit_code": 0,
+      "rendered_heading_found": false,
+      "error_state": false
+    }
+  ]
+}

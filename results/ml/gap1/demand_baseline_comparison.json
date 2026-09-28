@@ -1,0 +1,4537 @@
+{
+  "target": "Count of order records with order_datetime in [hour_start, hour_start + 1 hour), regardless of eventual order status.",
+  "prediction_point": "At the start of each UTC timestamp hour in the source data, before that hour's orders occur; restaurant-specific time zones are not provided.",
+  "baseline": "seasonal naive: same restaurant and hour-of-week at lag 168 hours",
+  "test_period": "2026-06-01 through 2026-08-31",
+  "test_rows": 55200,
+  "split": "same chronological untouched Spark held-out test interval",
+  "baseline_metrics": {
+    "rmse": 1.9613567472173623,
+    "mae": 1.3595289855072463,
+    "r2": 0.015631781617784335
+  },
+  "spark_selected_model": "gradient_boosted_trees",
+  "spark_test_metrics_recomputed": {
+    "rmse": 1.3930551948484506,
+    "mae": 1.0232209696775267,
+    "r2": 0.5034293530509892
+  },
+  "python_selected_model": "random_forest",
+  "python_test_metrics_as_saved": {
+    "rmse": 1.3892008222174532,
+    "mae": 1.0240631050745732,
+    "r2": 0.5061734230460346
+  },
+  "python_test_metrics_on_common_feature_panel": {
+    "rmse": 1.3892008222174532,
+    "mae": 1.024063105074573,
+    "r2": 0.5061734230460346
+  },
+  "feature_semantics_note": "Spark training day_of_week maps Sunday=0; Python training uses pandas Monday=0. Python inference here uses its native Monday=0 convention. Metrics are same-period but feature semantics differ; this is not an exact controlled model comparison.",
+  "models_retrained": false,
+  "row_level_cases": [
+    {
+      "restaurant_id": "R001",
+      "hour_start": "2026-06-01 00:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 0.43321428745688173,
+      "python_prediction": 0.5071328469665753,
+      "spark_minus_python": -0.07391855950969362
+    },
+    {
+      "restaurant_id": "R002",
+      "hour_start": "2026-06-01 00:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.43321428745688173,
+      "python_prediction": 0.394565664327642,
+      "spark_minus_python": 0.03864862312923972
+    },
+    {
+      "restaurant_id": "R003",
+      "hour_start": "2026-06-01 00:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.43321428745688173,
+      "python_prediction": 0.43457147501788623,
+      "spark_minus_python": -0.0013571875610045026
+    },
+    {
+      "restaurant_id": "R004",
+      "hour_start": "2026-06-01 00:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.43321428745688173,
+      "python_prediction": 0.5919908234675834,
+      "spark_minus_python": -0.15877653601070163
+    },
+    {
+      "restaurant_id": "R005",
+      "hour_start": "2026-06-01 00:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.43321428745688173,
+      "python_prediction": 0.5038220056018118,
+      "spark_minus_python": -0.07060771814493005
+    },
+    {
+      "restaurant_id": "R006",
+      "hour_start": "2026-06-01 00:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.43321428745688173,
+      "python_prediction": 0.42092355430484246,
+      "spark_minus_python": 0.012290733152039268
+    },
+    {
+      "restaurant_id": "R007",
+      "hour_start": "2026-06-01 00:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 0.43321428745688173,
+      "python_prediction": 0.35457335335263684,
+      "spark_minus_python": 0.07864093410424489
+    },
+    {
+      "restaurant_id": "R008",
+      "hour_start": "2026-06-01 00:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.43321428745688173,
+      "python_prediction": 0.3758808669589638,
+      "spark_minus_python": 0.05733342049791795
+    },
+    {
+      "restaurant_id": "R009",
+      "hour_start": "2026-06-01 00:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.43321428745688173,
+      "python_prediction": 0.4580681349601847,
+      "spark_minus_python": -0.024853847503302995
+    },
+    {
+      "restaurant_id": "R010",
+      "hour_start": "2026-06-01 00:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.43321428745688173,
+      "python_prediction": 0.42343914685330164,
+      "spark_minus_python": 0.00977514060358009
+    },
+    {
+      "restaurant_id": "R011",
+      "hour_start": "2026-06-01 00:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.43321428745688173,
+      "python_prediction": 0.44447602263742114,
+      "spark_minus_python": -0.011261735180539412
+    },
+    {
+      "restaurant_id": "R012",
+      "hour_start": "2026-06-01 00:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.43321428745688173,
+      "python_prediction": 0.4012970213168649,
+      "spark_minus_python": 0.03191726614001683
+    },
+    {
+      "restaurant_id": "R013",
+      "hour_start": "2026-06-01 00:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 0.43321428745688173,
+      "python_prediction": 0.4437268373303496,
+      "spark_minus_python": -0.010512549873467891
+    },
+    {
+      "restaurant_id": "R014",
+      "hour_start": "2026-06-01 00:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 0.35362136638152075,
+      "python_prediction": 0.4008419085384226,
+      "spark_minus_python": -0.04722054215690186
+    },
+    {
+      "restaurant_id": "R015",
+      "hour_start": "2026-06-01 00:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.43321428745688173,
+      "python_prediction": 0.4026973470271452,
+      "spark_minus_python": 0.030516940429736517
+    },
+    {
+      "restaurant_id": "R016",
+      "hour_start": "2026-06-01 00:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 0.43321428745688173,
+      "python_prediction": 0.4347307588068114,
+      "spark_minus_python": -0.00151647134992966
+    },
+    {
+      "restaurant_id": "R017",
+      "hour_start": "2026-06-01 00:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.43321428745688173,
+      "python_prediction": 0.4353856112696059,
+      "spark_minus_python": -0.0021713238127241685
+    },
+    {
+      "restaurant_id": "R018",
+      "hour_start": "2026-06-01 00:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.43321428745688173,
+      "python_prediction": 0.4284352203177568,
+      "spark_minus_python": 0.004779067139124904
+    },
+    {
+      "restaurant_id": "R019",
+      "hour_start": "2026-06-01 00:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.43321428745688173,
+      "python_prediction": 0.41675924560155925,
+      "spark_minus_python": 0.016455041855322483
+    },
+    {
+      "restaurant_id": "R020",
+      "hour_start": "2026-06-01 00:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 0.43321428745688173,
+      "python_prediction": 0.4090152430107806,
+      "spark_minus_python": 0.024199044446101103
+    },
+    {
+      "restaurant_id": "R021",
+      "hour_start": "2026-06-01 00:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.43321428745688173,
+      "python_prediction": 0.4164976381003882,
+      "spark_minus_python": 0.01671664935649353
+    },
+    {
+      "restaurant_id": "R022",
+      "hour_start": "2026-06-01 00:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 0.43321428745688173,
+      "python_prediction": 0.4170698310966821,
+      "spark_minus_python": 0.01614445636019962
+    },
+    {
+      "restaurant_id": "R023",
+      "hour_start": "2026-06-01 00:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.43321428745688173,
+      "python_prediction": 0.3859932428785021,
+      "spark_minus_python": 0.04722104457837961
+    },
+    {
+      "restaurant_id": "R024",
+      "hour_start": "2026-06-01 00:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 0.43321428745688173,
+      "python_prediction": 0.4316399346009729,
+      "spark_minus_python": 0.0015743528559088449
+    },
+    {
+      "restaurant_id": "R025",
+      "hour_start": "2026-06-01 00:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.43321428745688173,
+      "python_prediction": 0.41730837071052373,
+      "spark_minus_python": 0.015905916746357995
+    },
+    {
+      "restaurant_id": "R001",
+      "hour_start": "2026-06-01 01:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.2110906937004101,
+      "spark_minus_python": -0.0011491335162557292
+    },
+    {
+      "restaurant_id": "R002",
+      "hour_start": "2026-06-01 01:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.2118561089149497,
+      "spark_minus_python": -0.001914548730795329
+    },
+    {
+      "restaurant_id": "R003",
+      "hour_start": "2026-06-01 01:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.21971119884127432,
+      "spark_minus_python": -0.009769638657119967
+    },
+    {
+      "restaurant_id": "R004",
+      "hour_start": "2026-06-01 01:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.2062323943192605,
+      "spark_minus_python": 0.0037091658648938652
+    },
+    {
+      "restaurant_id": "R005",
+      "hour_start": "2026-06-01 01:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.2211781857671462,
+      "spark_minus_python": -0.01123662558299185
+    },
+    {
+      "restaurant_id": "R006",
+      "hour_start": "2026-06-01 01:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.2180807514878233,
+      "spark_minus_python": -0.008139191303668941
+    },
+    {
+      "restaurant_id": "R007",
+      "hour_start": "2026-06-01 01:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.22809469807177657,
+      "spark_minus_python": -0.01815313788762221
+    },
+    {
+      "restaurant_id": "R008",
+      "hour_start": "2026-06-01 01:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.22087546440688008,
+      "spark_minus_python": -0.010933904222725721
+    },
+    {
+      "restaurant_id": "R009",
+      "hour_start": "2026-06-01 01:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.20934048517234274,
+      "spark_minus_python": 0.0006010750118116137
+    },
+    {
+      "restaurant_id": "R010",
+      "hour_start": "2026-06-01 01:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.21729481421857272,
+      "spark_minus_python": -0.0073532540344183606
+    },
+    {
+      "restaurant_id": "R011",
+      "hour_start": "2026-06-01 01:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.2230424962168475,
+      "spark_minus_python": -0.013100936032693133
+    },
+    {
+      "restaurant_id": "R012",
+      "hour_start": "2026-06-01 01:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.22484326403663993,
+      "spark_minus_python": -0.01490170385248557
+    },
+    {
+      "restaurant_id": "R013",
+      "hour_start": "2026-06-01 01:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.21859569703357323,
+      "spark_minus_python": -0.008654136849418875
+    },
+    {
+      "restaurant_id": "R014",
+      "hour_start": "2026-06-01 01:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.21115148322934035,
+      "spark_minus_python": -0.0012099230451859955
+    },
+    {
+      "restaurant_id": "R015",
+      "hour_start": "2026-06-01 01:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.2269950022361864,
+      "spark_minus_python": -0.017053442052032047
+    },
+    {
+      "restaurant_id": "R016",
+      "hour_start": "2026-06-01 01:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.22424870042014683,
+      "spark_minus_python": -0.014307140235992472
+    },
+    {
+      "restaurant_id": "R017",
+      "hour_start": "2026-06-01 01:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.22753639766746528,
+      "spark_minus_python": -0.01759483748331092
+    },
+    {
+      "restaurant_id": "R018",
+      "hour_start": "2026-06-01 01:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.2070811213083958,
+      "spark_minus_python": 0.0028604388757585697
+    },
+    {
+      "restaurant_id": "R019",
+      "hour_start": "2026-06-01 01:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.25613768238002577,
+      "spark_minus_python": -0.04619612219587141
+    },
+    {
+      "restaurant_id": "R020",
+      "hour_start": "2026-06-01 01:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.2228846938623615,
+      "spark_minus_python": -0.012943133678207153
+    },
+    {
+      "restaurant_id": "R021",
+      "hour_start": "2026-06-01 01:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.21015653996276215,
+      "spark_minus_python": -0.00021497977860779338
+    },
+    {
+      "restaurant_id": "R022",
+      "hour_start": "2026-06-01 01:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.22582206715334685,
+      "spark_minus_python": -0.015880506969192493
+    },
+    {
+      "restaurant_id": "R023",
+      "hour_start": "2026-06-01 01:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.22429079394894674,
+      "spark_minus_python": -0.014349233764792385
+    },
+    {
+      "restaurant_id": "R024",
+      "hour_start": "2026-06-01 01:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.21821051699014626,
+      "spark_minus_python": -0.008268956805991906
+    },
+    {
+      "restaurant_id": "R025",
+      "hour_start": "2026-06-01 01:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.2518355172725018,
+      "spark_minus_python": -0.04189395708834745
+    },
+    {
+      "restaurant_id": "R001",
+      "hour_start": "2026-06-01 02:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.2199522968681748,
+      "spark_minus_python": -0.010010736684020444
+    },
+    {
+      "restaurant_id": "R002",
+      "hour_start": "2026-06-01 02:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.21231896026456024,
+      "spark_minus_python": -0.002377400080405878
+    },
+    {
+      "restaurant_id": "R003",
+      "hour_start": "2026-06-01 02:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.21880283430963338,
+      "spark_minus_python": -0.008861274125479018
+    },
+    {
+      "restaurant_id": "R004",
+      "hour_start": "2026-06-01 02:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.21222800285064639,
+      "spark_minus_python": -0.002286442666492028
+    },
+    {
+      "restaurant_id": "R005",
+      "hour_start": "2026-06-01 02:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.2142746704323934,
+      "spark_minus_python": -0.0043331102482390416
+    },
+    {
+      "restaurant_id": "R006",
+      "hour_start": "2026-06-01 02:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.21975199972898274,
+      "spark_minus_python": -0.009810439544828381
+    },
+    {
+      "restaurant_id": "R007",
+      "hour_start": "2026-06-01 02:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.24200430315504828,
+      "spark_minus_python": -0.032062742970893926
+    },
+    {
+      "restaurant_id": "R008",
+      "hour_start": "2026-06-01 02:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.21750589522695565,
+      "spark_minus_python": -0.007564335042801296
+    },
+    {
+      "restaurant_id": "R009",
+      "hour_start": "2026-06-01 02:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.2240549304358912,
+      "spark_minus_python": -0.01411337025173684
+    },
+    {
+      "restaurant_id": "R010",
+      "hour_start": "2026-06-01 02:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.22229300819627715,
+      "spark_minus_python": -0.01235144801212279
+    },
+    {
+      "restaurant_id": "R011",
+      "hour_start": "2026-06-01 02:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.21988827969569513,
+      "spark_minus_python": -0.009946719511540775
+    },
+    {
+      "restaurant_id": "R012",
+      "hour_start": "2026-06-01 02:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.22338661909425558,
+      "spark_minus_python": -0.013445058910101226
+    },
+    {
+      "restaurant_id": "R013",
+      "hour_start": "2026-06-01 02:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.2109962747619075,
+      "spark_minus_python": -0.0010547145777531353
+    },
+    {
+      "restaurant_id": "R014",
+      "hour_start": "2026-06-01 02:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.22150110745295865,
+      "spark_minus_python": -0.011559547268804288
+    },
+    {
+      "restaurant_id": "R015",
+      "hour_start": "2026-06-01 02:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.2255865302829984,
+      "spark_minus_python": -0.015644970098844052
+    },
+    {
+      "restaurant_id": "R016",
+      "hour_start": "2026-06-01 02:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.22471155176975738,
+      "spark_minus_python": -0.01476999158560302
+    },
+    {
+      "restaurant_id": "R017",
+      "hour_start": "2026-06-01 02:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.21926540823111065,
+      "spark_minus_python": -0.009323848046956296
+    },
+    {
+      "restaurant_id": "R018",
+      "hour_start": "2026-06-01 02:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.20661272759849297,
+      "spark_minus_python": 0.0033288325856613843
+    },
+    {
+      "restaurant_id": "R019",
+      "hour_start": "2026-06-01 02:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.21457996838018928,
+      "spark_minus_python": -0.004638408196034921
+    },
+    {
+      "restaurant_id": "R020",
+      "hour_start": "2026-06-01 02:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.24540660826139388,
+      "spark_minus_python": -0.03546504807723952
+    },
+    {
+      "restaurant_id": "R021",
+      "hour_start": "2026-06-01 02:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.20405581242420112,
+      "spark_minus_python": 0.005885747759953236
+    },
+    {
+      "restaurant_id": "R022",
+      "hour_start": "2026-06-01 02:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.2061919827645217,
+      "spark_minus_python": 0.003749577419632666
+    },
+    {
+      "restaurant_id": "R023",
+      "hour_start": "2026-06-01 02:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.2239285298045985,
+      "spark_minus_python": -0.013986969620444129
+    },
+    {
+      "restaurant_id": "R024",
+      "hour_start": "2026-06-01 02:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.2186733683397568,
+      "spark_minus_python": -0.008731808155602455
+    },
+    {
+      "restaurant_id": "R025",
+      "hour_start": "2026-06-01 02:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.24003326909049233,
+      "spark_minus_python": -0.03009170890633797
+    },
+    {
+      "restaurant_id": "R001",
+      "hour_start": "2026-06-01 03:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.22194562852960492,
+      "spark_minus_python": -0.012004068345450564
+    },
+    {
+      "restaurant_id": "R002",
+      "hour_start": "2026-06-01 03:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.2129786724651535,
+      "spark_minus_python": -0.003037112280999149
+    },
+    {
+      "restaurant_id": "R003",
+      "hour_start": "2026-06-01 03:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.22764747025441395,
+      "spark_minus_python": -0.017705910070259595
+    },
+    {
+      "restaurant_id": "R004",
+      "hour_start": "2026-06-01 03:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.2211700860761341,
+      "spark_minus_python": -0.01122852589197973
+    },
+    {
+      "restaurant_id": "R005",
+      "hour_start": "2026-06-01 03:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.2193961131285727,
+      "spark_minus_python": -0.009454552944418354
+    },
+    {
+      "restaurant_id": "R006",
+      "hour_start": "2026-06-01 03:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.22696707700488367,
+      "spark_minus_python": -0.01702551682072931
+    },
+    {
+      "restaurant_id": "R007",
+      "hour_start": "2026-06-01 03:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.24807745885612292,
+      "spark_minus_python": -0.038135898671968566
+    },
+    {
+      "restaurant_id": "R008",
+      "hour_start": "2026-06-01 03:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.23129730619944552,
+      "spark_minus_python": -0.021355746015291166
+    },
+    {
+      "restaurant_id": "R009",
+      "hour_start": "2026-06-01 03:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.20765710162459555,
+      "spark_minus_python": 0.002284458559558805
+    },
+    {
+      "restaurant_id": "R010",
+      "hour_start": "2026-06-01 03:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.22548580559124592,
+      "spark_minus_python": -0.015544245407091567
+    },
+    {
+      "restaurant_id": "R011",
+      "hour_start": "2026-06-01 03:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.22462388144928475,
+      "spark_minus_python": -0.014682321265130388
+    },
+    {
+      "restaurant_id": "R012",
+      "hour_start": "2026-06-01 03:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.22986569685135888,
+      "spark_minus_python": -0.019924136667204523
+    },
+    {
+      "restaurant_id": "R013",
+      "hour_start": "2026-06-01 03:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.21575208881108576,
+      "spark_minus_python": -0.005810528626931405
+    },
+    {
+      "restaurant_id": "R014",
+      "hour_start": "2026-06-01 03:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.21396573122590815,
+      "spark_minus_python": -0.004024171041753788
+    },
+    {
+      "restaurant_id": "R015",
+      "hour_start": "2026-06-01 03:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.23503638757628895,
+      "spark_minus_python": -0.02509482739213459
+    },
+    {
+      "restaurant_id": "R016",
+      "hour_start": "2026-06-01 03:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.22355697447520564,
+      "spark_minus_python": -0.013615414291051287
+    },
+    {
+      "restaurant_id": "R017",
+      "hour_start": "2026-06-01 03:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.2246935355927014,
+      "spark_minus_python": -0.01475197540854703
+    },
+    {
+      "restaurant_id": "R018",
+      "hour_start": "2026-06-01 03:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.21044515869548003,
+      "spark_minus_python": -0.0005035985113256702
+    },
+    {
+      "restaurant_id": "R019",
+      "hour_start": "2026-06-01 03:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.21896046260517749,
+      "spark_minus_python": -0.009018902421023128
+    },
+    {
+      "restaurant_id": "R020",
+      "hour_start": "2026-06-01 03:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.2297250703849393,
+      "spark_minus_python": -0.01978351020078495
+    },
+    {
+      "restaurant_id": "R021",
+      "hour_start": "2026-06-01 03:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.2074511208378557,
+      "spark_minus_python": 0.0024904393462986674
+    },
+    {
+      "restaurant_id": "R022",
+      "hour_start": "2026-06-01 03:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.21490950530382769,
+      "spark_minus_python": -0.004967945119673328
+    },
+    {
+      "restaurant_id": "R023",
+      "hour_start": "2026-06-01 03:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.21992552688904396,
+      "spark_minus_python": -0.009983966704889602
+    },
+    {
+      "restaurant_id": "R024",
+      "hour_start": "2026-06-01 03:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.2276966741580689,
+      "spark_minus_python": -0.01775511397391455
+    },
+    {
+      "restaurant_id": "R025",
+      "hour_start": "2026-06-01 03:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.24746227499647827,
+      "spark_minus_python": -0.03752071481232391
+    },
+    {
+      "restaurant_id": "R001",
+      "hour_start": "2026-06-01 04:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.2222223484731268,
+      "spark_minus_python": -0.012280788288972444
+    },
+    {
+      "restaurant_id": "R002",
+      "hour_start": "2026-06-01 04:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.2203705459163643,
+      "spark_minus_python": -0.010428985732209933
+    },
+    {
+      "restaurant_id": "R003",
+      "hour_start": "2026-06-01 04:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.21882650565201045,
+      "spark_minus_python": -0.008884945467856092
+    },
+    {
+      "restaurant_id": "R004",
+      "hour_start": "2026-06-01 04:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.2362038278041144,
+      "spark_minus_python": -0.026262267619960034
+    },
+    {
+      "restaurant_id": "R005",
+      "hour_start": "2026-06-01 04:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.2116946516804406,
+      "spark_minus_python": -0.0017530914962862465
+    },
+    {
+      "restaurant_id": "R006",
+      "hour_start": "2026-06-01 04:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.23031808832522832,
+      "spark_minus_python": -0.020376528141073963
+    },
+    {
+      "restaurant_id": "R007",
+      "hour_start": "2026-06-01 04:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.23653585008566055,
+      "spark_minus_python": -0.026594289901506196
+    },
+    {
+      "restaurant_id": "R008",
+      "hour_start": "2026-06-01 04:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.21992688594130794,
+      "spark_minus_python": -0.00998532575715358
+    },
+    {
+      "restaurant_id": "R009",
+      "hour_start": "2026-06-01 04:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.23211889866930252,
+      "spark_minus_python": -0.022177338485148163
+    },
+    {
+      "restaurant_id": "R010",
+      "hour_start": "2026-06-01 04:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.2292319075419469,
+      "spark_minus_python": -0.01929034735779253
+    },
+    {
+      "restaurant_id": "R011",
+      "hour_start": "2026-06-01 04:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.22898541507301262,
+      "spark_minus_python": -0.019043854888858264
+    },
+    {
+      "restaurant_id": "R012",
+      "hour_start": "2026-06-01 04:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.23013317771114208,
+      "spark_minus_python": -0.020191617526987726
+    },
+    {
+      "restaurant_id": "R013",
+      "hour_start": "2026-06-01 04:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.21273594165392473,
+      "spark_minus_python": -0.002794381469770374
+    },
+    {
+      "restaurant_id": "R014",
+      "hour_start": "2026-06-01 04:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.22286001198670427,
+      "spark_minus_python": -0.012918451802549913
+    },
+    {
+      "restaurant_id": "R015",
+      "hour_start": "2026-06-01 04:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.21553141230010658,
+      "spark_minus_python": -0.005589852115952226
+    },
+    {
+      "restaurant_id": "R016",
+      "hour_start": "2026-06-01 04:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.2291059109205369,
+      "spark_minus_python": -0.019164350736382535
+    },
+    {
+      "restaurant_id": "R017",
+      "hour_start": "2026-06-01 04:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.23014073268105947,
+      "spark_minus_python": -0.020199172496905116
+    },
+    {
+      "restaurant_id": "R018",
+      "hour_start": "2026-06-01 04:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.21248846550618614,
+      "spark_minus_python": -0.0025469053220317783
+    },
+    {
+      "restaurant_id": "R019",
+      "hour_start": "2026-06-01 04:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.23308102178886375,
+      "spark_minus_python": -0.023139461604709394
+    },
+    {
+      "restaurant_id": "R020",
+      "hour_start": "2026-06-01 04:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.26906080584048303,
+      "spark_minus_python": -0.05911924565632867
+    },
+    {
+      "restaurant_id": "R021",
+      "hour_start": "2026-06-01 04:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.21013284151970452,
+      "spark_minus_python": -0.00019128133555015858
+    },
+    {
+      "restaurant_id": "R022",
+      "hour_start": "2026-06-01 04:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.2264339657345041,
+      "spark_minus_python": -0.016492405550349754
+    },
+    {
+      "restaurant_id": "R023",
+      "hour_start": "2026-06-01 04:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.226113489089792,
+      "spark_minus_python": -0.01617192890563765
+    },
+    {
+      "restaurant_id": "R024",
+      "hour_start": "2026-06-01 04:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.23236711068479704,
+      "spark_minus_python": -0.022425550500642683
+    },
+    {
+      "restaurant_id": "R025",
+      "hour_start": "2026-06-01 04:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.20994156018415436,
+      "python_prediction": 0.25175789920029734,
+      "spark_minus_python": -0.041816339016142984
+    },
+    {
+      "restaurant_id": "R001",
+      "hour_start": "2026-06-01 05:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.42305357317116743,
+      "python_prediction": 0.4034416717032327,
+      "spark_minus_python": 0.019611901467934734
+    },
+    {
+      "restaurant_id": "R002",
+      "hour_start": "2026-06-01 05:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.42305357317116743,
+      "python_prediction": 0.41809283987076107,
+      "spark_minus_python": 0.004960733300406361
+    },
+    {
+      "restaurant_id": "R003",
+      "hour_start": "2026-06-01 05:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 0.42305357317116743,
+      "python_prediction": 0.4226268755559374,
+      "spark_minus_python": 0.0004266976152300095
+    },
+    {
+      "restaurant_id": "R004",
+      "hour_start": "2026-06-01 05:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 0.42305357317116743,
+      "python_prediction": 0.4071576263234869,
+      "spark_minus_python": 0.01589594684768053
+    },
+    {
+      "restaurant_id": "R005",
+      "hour_start": "2026-06-01 05:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 0.42305357317116743,
+      "python_prediction": 0.4276533177233953,
+      "spark_minus_python": -0.004599744552227891
+    },
+    {
+      "restaurant_id": "R006",
+      "hour_start": "2026-06-01 05:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 0.42305357317116743,
+      "python_prediction": 0.5381295404093096,
+      "spark_minus_python": -0.11507596723814217
+    },
+    {
+      "restaurant_id": "R007",
+      "hour_start": "2026-06-01 05:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 0.42305357317116743,
+      "python_prediction": 0.4489948134294551,
+      "spark_minus_python": -0.025941240258287646
+    },
+    {
+      "restaurant_id": "R008",
+      "hour_start": "2026-06-01 05:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 0.42305357317116743,
+      "python_prediction": 0.461152907945639,
+      "spark_minus_python": -0.03809933477447158
+    },
+    {
+      "restaurant_id": "R009",
+      "hour_start": "2026-06-01 05:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.42305357317116743,
+      "python_prediction": 0.41065287176915327,
+      "spark_minus_python": 0.012400701402014158
+    },
+    {
+      "restaurant_id": "R010",
+      "hour_start": "2026-06-01 05:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.42305357317116743,
+      "python_prediction": 0.45704115508903576,
+      "spark_minus_python": -0.033987581917868326
+    },
+    {
+      "restaurant_id": "R011",
+      "hour_start": "2026-06-01 05:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.42305357317116743,
+      "python_prediction": 0.4782226568358852,
+      "spark_minus_python": -0.05516908366471779
+    },
+    {
+      "restaurant_id": "R012",
+      "hour_start": "2026-06-01 05:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.42305357317116743,
+      "python_prediction": 0.4561742955910346,
+      "spark_minus_python": -0.03312072241986719
+    },
+    {
+      "restaurant_id": "R013",
+      "hour_start": "2026-06-01 05:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.42305357317116743,
+      "python_prediction": 0.3837651217778852,
+      "spark_minus_python": 0.03928845139328224
+    },
+    {
+      "restaurant_id": "R014",
+      "hour_start": "2026-06-01 05:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.42305357317116743,
+      "python_prediction": 0.4145825373041128,
+      "spark_minus_python": 0.00847103586705461
+    },
+    {
+      "restaurant_id": "R015",
+      "hour_start": "2026-06-01 05:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.42305357317116743,
+      "python_prediction": 0.43203181429502824,
+      "spark_minus_python": -0.008978241123860808
+    },
+    {
+      "restaurant_id": "R016",
+      "hour_start": "2026-06-01 05:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.42305357317116743,
+      "python_prediction": 0.41879010374488806,
+      "spark_minus_python": 0.004263469426279365
+    },
+    {
+      "restaurant_id": "R017",
+      "hour_start": "2026-06-01 05:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.42305357317116743,
+      "python_prediction": 0.4745000718386194,
+      "spark_minus_python": -0.05144649866745199
+    },
+    {
+      "restaurant_id": "R018",
+      "hour_start": "2026-06-01 05:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.42305357317116743,
+      "python_prediction": 0.3956793871425248,
+      "spark_minus_python": 0.02737418602864261
+    },
+    {
+      "restaurant_id": "R019",
+      "hour_start": "2026-06-01 05:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.42305357317116743,
+      "python_prediction": 0.4078694511336181,
+      "spark_minus_python": 0.015184122037549319
+    },
+    {
+      "restaurant_id": "R020",
+      "hour_start": "2026-06-01 05:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 0.42305357317116743,
+      "python_prediction": 0.41376864905929533,
+      "spark_minus_python": 0.009284924111872095
+    },
+    {
+      "restaurant_id": "R021",
+      "hour_start": "2026-06-01 05:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 0.42305357317116743,
+      "python_prediction": 0.4393032218595797,
+      "spark_minus_python": -0.016249648688412277
+    },
+    {
+      "restaurant_id": "R022",
+      "hour_start": "2026-06-01 05:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.42305357317116743,
+      "python_prediction": 0.4195000124516851,
+      "spark_minus_python": 0.0035535607194823182
+    },
+    {
+      "restaurant_id": "R023",
+      "hour_start": "2026-06-01 05:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.42305357317116743,
+      "python_prediction": 0.4138345295988219,
+      "spark_minus_python": 0.009219043572345542
+    },
+    {
+      "restaurant_id": "R024",
+      "hour_start": "2026-06-01 05:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.42305357317116743,
+      "python_prediction": 0.3954845841561725,
+      "spark_minus_python": 0.027568989014994938
+    },
+    {
+      "restaurant_id": "R025",
+      "hour_start": "2026-06-01 05:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 0.42305357317116743,
+      "python_prediction": 0.430663354877003,
+      "spark_minus_python": -0.007609781705835594
+    },
+    {
+      "restaurant_id": "R001",
+      "hour_start": "2026-06-01 06:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 0.8351451796693622,
+      "python_prediction": 1.2835248243167359,
+      "spark_minus_python": -0.4483796446473737
+    },
+    {
+      "restaurant_id": "R002",
+      "hour_start": "2026-06-01 06:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.8351451796693622,
+      "python_prediction": 0.7840964795180566,
+      "spark_minus_python": 0.05104870015130558
+    },
+    {
+      "restaurant_id": "R003",
+      "hour_start": "2026-06-01 06:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.8351451796693622,
+      "python_prediction": 0.7895654679843546,
+      "spark_minus_python": 0.04557971168500763
+    },
+    {
+      "restaurant_id": "R004",
+      "hour_start": "2026-06-01 06:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 0.8351451796693622,
+      "python_prediction": 0.8332799836922113,
+      "spark_minus_python": 0.0018651959771508464
+    },
+    {
+      "restaurant_id": "R005",
+      "hour_start": "2026-06-01 06:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 0.7555522585940014,
+      "python_prediction": 0.8303606201218686,
+      "spark_minus_python": -0.07480836152786718
+    },
+    {
+      "restaurant_id": "R006",
+      "hour_start": "2026-06-01 06:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.8351451796693622,
+      "python_prediction": 0.8457962075825911,
+      "spark_minus_python": -0.010651027913228917
+    },
+    {
+      "restaurant_id": "R007",
+      "hour_start": "2026-06-01 06:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.8351451796693622,
+      "python_prediction": 0.7877980373211461,
+      "spark_minus_python": 0.04734714234821613
+    },
+    {
+      "restaurant_id": "R008",
+      "hour_start": "2026-06-01 06:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 0.8351451796693622,
+      "python_prediction": 0.8310917266095421,
+      "spark_minus_python": 0.004053453059820078
+    },
+    {
+      "restaurant_id": "R009",
+      "hour_start": "2026-06-01 06:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.8351451796693622,
+      "python_prediction": 0.8868941966370096,
+      "spark_minus_python": -0.05174901696764744
+    },
+    {
+      "restaurant_id": "R010",
+      "hour_start": "2026-06-01 06:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 0.8351451796693622,
+      "python_prediction": 0.8771509401796976,
+      "spark_minus_python": -0.042005760510335444
+    },
+    {
+      "restaurant_id": "R011",
+      "hour_start": "2026-06-01 06:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 0.8351451796693622,
+      "python_prediction": 0.7814567493578579,
+      "spark_minus_python": 0.053688430311504276
+    },
+    {
+      "restaurant_id": "R012",
+      "hour_start": "2026-06-01 06:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.8351451796693622,
+      "python_prediction": 0.9125464688732141,
+      "spark_minus_python": -0.07740128920385192
+    },
+    {
+      "restaurant_id": "R013",
+      "hour_start": "2026-06-01 06:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.8351451796693622,
+      "python_prediction": 0.8180721074972622,
+      "spark_minus_python": 0.017073072172099968
+    },
+    {
+      "restaurant_id": "R014",
+      "hour_start": "2026-06-01 06:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.8351451796693622,
+      "python_prediction": 0.8018249512500718,
+      "spark_minus_python": 0.03332022841929039
+    },
+    {
+      "restaurant_id": "R015",
+      "hour_start": "2026-06-01 06:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 0.8351451796693622,
+      "python_prediction": 0.79234384266406,
+      "spark_minus_python": 0.0428013370053022
+    },
+    {
+      "restaurant_id": "R016",
+      "hour_start": "2026-06-01 06:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 0.8351451796693622,
+      "python_prediction": 0.8071465607441194,
+      "spark_minus_python": 0.027998618925242802
+    },
+    {
+      "restaurant_id": "R017",
+      "hour_start": "2026-06-01 06:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 0.8351451796693622,
+      "python_prediction": 0.803777972863591,
+      "spark_minus_python": 0.03136720680577121
+    },
+    {
+      "restaurant_id": "R018",
+      "hour_start": "2026-06-01 06:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.8351451796693622,
+      "python_prediction": 0.8427257991052824,
+      "spark_minus_python": -0.007580619435920255
+    },
+    {
+      "restaurant_id": "R019",
+      "hour_start": "2026-06-01 06:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 0.8351451796693622,
+      "python_prediction": 0.8024054774173079,
+      "spark_minus_python": 0.03273970225205425
+    },
+    {
+      "restaurant_id": "R020",
+      "hour_start": "2026-06-01 06:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.7588138098555706,
+      "python_prediction": 0.7867080838504156,
+      "spark_minus_python": -0.02789427399484501
+    },
+    {
+      "restaurant_id": "R021",
+      "hour_start": "2026-06-01 06:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 0.8351451796693622,
+      "python_prediction": 0.7844012518424012,
+      "spark_minus_python": 0.05074392782696102
+    },
+    {
+      "restaurant_id": "R022",
+      "hour_start": "2026-06-01 06:00:00",
+      "actual": 5.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 0.8351451796693622,
+      "python_prediction": 0.864986171254389,
+      "spark_minus_python": -0.029840991585026844
+    },
+    {
+      "restaurant_id": "R023",
+      "hour_start": "2026-06-01 06:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 0.8351451796693622,
+      "python_prediction": 0.8832555413942096,
+      "spark_minus_python": -0.048110361724847395
+    },
+    {
+      "restaurant_id": "R024",
+      "hour_start": "2026-06-01 06:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 0.8351451796693622,
+      "python_prediction": 0.8145608787433133,
+      "spark_minus_python": 0.020584300926048904
+    },
+    {
+      "restaurant_id": "R025",
+      "hour_start": "2026-06-01 06:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 0.8351451796693622,
+      "python_prediction": 0.9344003452576957,
+      "spark_minus_python": -0.09925516558833347
+    },
+    {
+      "restaurant_id": "R001",
+      "hour_start": "2026-06-01 07:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.743175891807898,
+      "python_prediction": 1.600606504951142,
+      "spark_minus_python": 0.1425693868567559
+    },
+    {
+      "restaurant_id": "R002",
+      "hour_start": "2026-06-01 07:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.743175891807898,
+      "python_prediction": 1.595524947492335,
+      "spark_minus_python": 0.14765094431556292
+    },
+    {
+      "restaurant_id": "R003",
+      "hour_start": "2026-06-01 07:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 1.5064160389623842,
+      "python_prediction": 1.5754400073142325,
+      "spark_minus_python": -0.06902396835184832
+    },
+    {
+      "restaurant_id": "R004",
+      "hour_start": "2026-06-01 07:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.743175891807898,
+      "python_prediction": 1.5050417943125949,
+      "spark_minus_python": 0.238134097495303
+    },
+    {
+      "restaurant_id": "R005",
+      "hour_start": "2026-06-01 07:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 1.5064160389623842,
+      "python_prediction": 1.4926293808921314,
+      "spark_minus_python": 0.01378665807025281
+    },
+    {
+      "restaurant_id": "R006",
+      "hour_start": "2026-06-01 07:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.743175891807898,
+      "python_prediction": 1.5724765023324399,
+      "spark_minus_python": 0.17069938947545804
+    },
+    {
+      "restaurant_id": "R007",
+      "hour_start": "2026-06-01 07:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.743175891807898,
+      "python_prediction": 1.5450110362127185,
+      "spark_minus_python": 0.19816485559517938
+    },
+    {
+      "restaurant_id": "R008",
+      "hour_start": "2026-06-01 07:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 1.743175891807898,
+      "python_prediction": 1.5559680380677825,
+      "spark_minus_python": 0.1872078537401154
+    },
+    {
+      "restaurant_id": "R009",
+      "hour_start": "2026-06-01 07:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 1.743175891807898,
+      "python_prediction": 1.4317986359346224,
+      "spark_minus_python": 0.31137725587327547
+    },
+    {
+      "restaurant_id": "R010",
+      "hour_start": "2026-06-01 07:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 1.743175891807898,
+      "python_prediction": 1.478539087902136,
+      "spark_minus_python": 0.26463680390576183
+    },
+    {
+      "restaurant_id": "R011",
+      "hour_start": "2026-06-01 07:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.743175891807898,
+      "python_prediction": 1.5494714897739112,
+      "spark_minus_python": 0.19370440203398664
+    },
+    {
+      "restaurant_id": "R012",
+      "hour_start": "2026-06-01 07:00:00",
+      "actual": 4.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 1.743175891807898,
+      "python_prediction": 1.5590619467654323,
+      "spark_minus_python": 0.1841139450424656
+    },
+    {
+      "restaurant_id": "R013",
+      "hour_start": "2026-06-01 07:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.743175891807898,
+      "python_prediction": 1.51355209646239,
+      "spark_minus_python": 0.2296237953455078
+    },
+    {
+      "restaurant_id": "R014",
+      "hour_start": "2026-06-01 07:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 1.743175891807898,
+      "python_prediction": 1.5478865147525753,
+      "spark_minus_python": 0.19528937705532257
+    },
+    {
+      "restaurant_id": "R015",
+      "hour_start": "2026-06-01 07:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.743175891807898,
+      "python_prediction": 1.506922531152094,
+      "spark_minus_python": 0.23625336065580393
+    },
+    {
+      "restaurant_id": "R016",
+      "hour_start": "2026-06-01 07:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 1.743175891807898,
+      "python_prediction": 1.5213913376169261,
+      "spark_minus_python": 0.22178455419097176
+    },
+    {
+      "restaurant_id": "R017",
+      "hour_start": "2026-06-01 07:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.743175891807898,
+      "python_prediction": 1.5669206490986654,
+      "spark_minus_python": 0.17625524270923254
+    },
+    {
+      "restaurant_id": "R018",
+      "hour_start": "2026-06-01 07:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.743175891807898,
+      "python_prediction": 1.5007635817740652,
+      "spark_minus_python": 0.24241231003383268
+    },
+    {
+      "restaurant_id": "R019",
+      "hour_start": "2026-06-01 07:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 1.743175891807898,
+      "python_prediction": 1.4906059210666744,
+      "spark_minus_python": 0.25256997074122345
+    },
+    {
+      "restaurant_id": "R020",
+      "hour_start": "2026-06-01 07:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 1.743175891807898,
+      "python_prediction": 1.5065821133539865,
+      "spark_minus_python": 0.23659377845391139
+    },
+    {
+      "restaurant_id": "R021",
+      "hour_start": "2026-06-01 07:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 1.743175891807898,
+      "python_prediction": 1.5338444205288728,
+      "spark_minus_python": 0.20933147127902507
+    },
+    {
+      "restaurant_id": "R022",
+      "hour_start": "2026-06-01 07:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 4.0,
+      "spark_prediction": 1.5035414378611802,
+      "python_prediction": 1.4671628751923622,
+      "spark_minus_python": 0.036378562668818004
+    },
+    {
+      "restaurant_id": "R023",
+      "hour_start": "2026-06-01 07:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 1.743175891807898,
+      "python_prediction": 1.5686891245396661,
+      "spark_minus_python": 0.17448676726823176
+    },
+    {
+      "restaurant_id": "R024",
+      "hour_start": "2026-06-01 07:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 1.743175891807898,
+      "python_prediction": 1.5338444205288728,
+      "spark_minus_python": 0.20933147127902507
+    },
+    {
+      "restaurant_id": "R025",
+      "hour_start": "2026-06-01 07:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 1.5064160389623842,
+      "python_prediction": 1.4896499567251789,
+      "spark_minus_python": 0.016766082237205326
+    },
+    {
+      "restaurant_id": "R001",
+      "hour_start": "2026-06-01 08:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 2.024587297846297,
+      "python_prediction": 2.158857226707897,
+      "spark_minus_python": -0.13426992886160027
+    },
+    {
+      "restaurant_id": "R002",
+      "hour_start": "2026-06-01 08:00:00",
+      "actual": 4.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 2.024587297846297,
+      "python_prediction": 2.1703923963910587,
+      "spark_minus_python": -0.14580509854476187
+    },
+    {
+      "restaurant_id": "R003",
+      "hour_start": "2026-06-01 08:00:00",
+      "actual": 4.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 2.024587297846297,
+      "python_prediction": 2.096205121392548,
+      "spark_minus_python": -0.07161782354625101
+    },
+    {
+      "restaurant_id": "R004",
+      "hour_start": "2026-06-01 08:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 2.100918667660088,
+      "python_prediction": 2.193157302125066,
+      "spark_minus_python": -0.09223863446497793
+    },
+    {
+      "restaurant_id": "R005",
+      "hour_start": "2026-06-01 08:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 2.100918667660088,
+      "python_prediction": 2.236378108195554,
+      "spark_minus_python": -0.13545944053546588
+    },
+    {
+      "restaurant_id": "R006",
+      "hour_start": "2026-06-01 08:00:00",
+      "actual": 6.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 2.024587297846297,
+      "python_prediction": 2.2246540734030043,
+      "spark_minus_python": -0.20006677555670738
+    },
+    {
+      "restaurant_id": "R007",
+      "hour_start": "2026-06-01 08:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 2.100918667660088,
+      "python_prediction": 2.194450866502097,
+      "spark_minus_python": -0.0935321988420088
+    },
+    {
+      "restaurant_id": "R008",
+      "hour_start": "2026-06-01 08:00:00",
+      "actual": 5.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 2.100918667660088,
+      "python_prediction": 2.209303695978838,
+      "spark_minus_python": -0.10838502831874974
+    },
+    {
+      "restaurant_id": "R009",
+      "hour_start": "2026-06-01 08:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 2.024587297846297,
+      "python_prediction": 2.217848096064227,
+      "spark_minus_python": -0.19326079821792996
+    },
+    {
+      "restaurant_id": "R010",
+      "hour_start": "2026-06-01 08:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 2.024587297846297,
+      "python_prediction": 2.0940065218701474,
+      "spark_minus_python": -0.06941922402385048
+    },
+    {
+      "restaurant_id": "R011",
+      "hour_start": "2026-06-01 08:00:00",
+      "actual": 7.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 2.2942078176321856,
+      "python_prediction": 2.190812483216139,
+      "spark_minus_python": 0.10339533441604676
+    },
+    {
+      "restaurant_id": "R012",
+      "hour_start": "2026-06-01 08:00:00",
+      "actual": 4.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 2.024587297846297,
+      "python_prediction": 2.1868484010091036,
+      "spark_minus_python": -0.16226110316280673
+    },
+    {
+      "restaurant_id": "R013",
+      "hour_start": "2026-06-01 08:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 2.100918667660088,
+      "python_prediction": 2.191358628872152,
+      "spark_minus_python": -0.09043996121206366
+    },
+    {
+      "restaurant_id": "R014",
+      "hour_start": "2026-06-01 08:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 2.100918667660088,
+      "python_prediction": 2.2210647923682574,
+      "spark_minus_python": -0.12014612470816921
+    },
+    {
+      "restaurant_id": "R015",
+      "hour_start": "2026-06-01 08:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 2.024587297846297,
+      "python_prediction": 2.283818182882917,
+      "spark_minus_python": -0.25923088503662006
+    },
+    {
+      "restaurant_id": "R016",
+      "hour_start": "2026-06-01 08:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 2.2942078176321856,
+      "python_prediction": 2.211307258472677,
+      "spark_minus_python": 0.08290055915950845
+    },
+    {
+      "restaurant_id": "R017",
+      "hour_start": "2026-06-01 08:00:00",
+      "actual": 4.0,
+      "seasonal_naive_lag_168h": 4.0,
+      "spark_prediction": 2.2942078176321856,
+      "python_prediction": 2.1476650076396813,
+      "spark_minus_python": 0.14654280999250435
+    },
+    {
+      "restaurant_id": "R018",
+      "hour_start": "2026-06-01 08:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 2.2942078176321856,
+      "python_prediction": 2.204061789943222,
+      "spark_minus_python": 0.0901460276889634
+    },
+    {
+      "restaurant_id": "R019",
+      "hour_start": "2026-06-01 08:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 2.100918667660088,
+      "python_prediction": 2.2136431205220157,
+      "spark_minus_python": -0.11272445286192756
+    },
+    {
+      "restaurant_id": "R020",
+      "hour_start": "2026-06-01 08:00:00",
+      "actual": 5.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 2.2942078176321856,
+      "python_prediction": 2.1896196686522726,
+      "spark_minus_python": 0.10458814897991298
+    },
+    {
+      "restaurant_id": "R021",
+      "hour_start": "2026-06-01 08:00:00",
+      "actual": 4.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 2.2942078176321856,
+      "python_prediction": 2.150600522943542,
+      "spark_minus_python": 0.14360729468864353
+    },
+    {
+      "restaurant_id": "R022",
+      "hour_start": "2026-06-01 08:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 4.0,
+      "spark_prediction": 2.2942078176321856,
+      "python_prediction": 2.216376764955478,
+      "spark_minus_python": 0.07783105267670765
+    },
+    {
+      "restaurant_id": "R023",
+      "hour_start": "2026-06-01 08:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 2.100918667660088,
+      "python_prediction": 2.2070552762591946,
+      "spark_minus_python": -0.10613660859910645
+    },
+    {
+      "restaurant_id": "R024",
+      "hour_start": "2026-06-01 08:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 2.024587297846297,
+      "python_prediction": 2.167179016272051,
+      "spark_minus_python": -0.1425917184257539
+    },
+    {
+      "restaurant_id": "R025",
+      "hour_start": "2026-06-01 08:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 2.2942078176321856,
+      "python_prediction": 2.14083448007444,
+      "spark_minus_python": 0.15337333755774551
+    },
+    {
+      "restaurant_id": "R001",
+      "hour_start": "2026-06-01 09:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 1.7835397049467487,
+      "python_prediction": 1.8058433539915058,
+      "spark_minus_python": -0.022303649044757012
+    },
+    {
+      "restaurant_id": "R002",
+      "hour_start": "2026-06-01 09:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 1.7835397049467487,
+      "python_prediction": 1.773708632857066,
+      "spark_minus_python": 0.009831072089682813
+    },
+    {
+      "restaurant_id": "R003",
+      "hour_start": "2026-06-01 09:00:00",
+      "actual": 4.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.707208335132957,
+      "python_prediction": 1.7217414560137585,
+      "spark_minus_python": -0.014533120880801498
+    },
+    {
+      "restaurant_id": "R004",
+      "hour_start": "2026-06-01 09:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 1.7835397049467487,
+      "python_prediction": 1.814500078012238,
+      "spark_minus_python": -0.030960373065489266
+    },
+    {
+      "restaurant_id": "R005",
+      "hour_start": "2026-06-01 09:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 1.7835397049467487,
+      "python_prediction": 1.8001151091794434,
+      "spark_minus_python": -0.016575404232694657
+    },
+    {
+      "restaurant_id": "R006",
+      "hour_start": "2026-06-01 09:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 1.8035570139238088,
+      "python_prediction": 1.8401956472291399,
+      "spark_minus_python": -0.036638633305331014
+    },
+    {
+      "restaurant_id": "R007",
+      "hour_start": "2026-06-01 09:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 1.707208335132957,
+      "python_prediction": 1.962129165924798,
+      "spark_minus_python": -0.2549208307918409
+    },
+    {
+      "restaurant_id": "R008",
+      "hour_start": "2026-06-01 09:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 1.7220591760991961,
+      "python_prediction": 1.729144081510102,
+      "spark_minus_python": -0.007084905410905895
+    },
+    {
+      "restaurant_id": "R009",
+      "hour_start": "2026-06-01 09:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 1.976828854918846,
+      "python_prediction": 1.9398206301187817,
+      "spark_minus_python": 0.03700822480006427
+    },
+    {
+      "restaurant_id": "R010",
+      "hour_start": "2026-06-01 09:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.7835397049467487,
+      "python_prediction": 1.8007051383400956,
+      "spark_minus_python": -0.017165433393346863
+    },
+    {
+      "restaurant_id": "R011",
+      "hour_start": "2026-06-01 09:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.8035570139238088,
+      "python_prediction": 1.8274773652262515,
+      "spark_minus_python": -0.023920351302442633
+    },
+    {
+      "restaurant_id": "R012",
+      "hour_start": "2026-06-01 09:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.7835397049467487,
+      "python_prediction": 1.7207625853519695,
+      "spark_minus_python": 0.06277711959477927
+    },
+    {
+      "restaurant_id": "R013",
+      "hour_start": "2026-06-01 09:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 1.707208335132957,
+      "python_prediction": 1.8291008019417674,
+      "spark_minus_python": -0.12189246680881038
+    },
+    {
+      "restaurant_id": "R014",
+      "hour_start": "2026-06-01 09:00:00",
+      "actual": 4.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 1.7835397049467487,
+      "python_prediction": 1.7335692808170264,
+      "spark_minus_python": 0.0499704241297223
+    },
+    {
+      "restaurant_id": "R015",
+      "hour_start": "2026-06-01 09:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 1.976828854918846,
+      "python_prediction": 1.8400584230418349,
+      "spark_minus_python": 0.1367704318770111
+    },
+    {
+      "restaurant_id": "R016",
+      "hour_start": "2026-06-01 09:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 1.7835397049467487,
+      "python_prediction": 1.7815753352364883,
+      "spark_minus_python": 0.001964369710260483
+    },
+    {
+      "restaurant_id": "R017",
+      "hour_start": "2026-06-01 09:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 1.976828854918846,
+      "python_prediction": 1.8780586986710042,
+      "spark_minus_python": 0.0987701562478418
+    },
+    {
+      "restaurant_id": "R018",
+      "hour_start": "2026-06-01 09:00:00",
+      "actual": 5.0,
+      "seasonal_naive_lag_168h": 4.0,
+      "spark_prediction": 1.976828854918846,
+      "python_prediction": 1.836037915026338,
+      "spark_minus_python": 0.14079093989250802
+    },
+    {
+      "restaurant_id": "R019",
+      "hour_start": "2026-06-01 09:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.707208335132957,
+      "python_prediction": 1.7102612038107146,
+      "spark_minus_python": -0.0030528686777575587
+    },
+    {
+      "restaurant_id": "R020",
+      "hour_start": "2026-06-01 09:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 1.7983905459129879,
+      "python_prediction": 1.8119323235021891,
+      "spark_minus_python": -0.013541777589201276
+    },
+    {
+      "restaurant_id": "R021",
+      "hour_start": "2026-06-01 09:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 1.976828854918846,
+      "python_prediction": 1.9672216875211763,
+      "spark_minus_python": 0.009607167397669647
+    },
+    {
+      "restaurant_id": "R022",
+      "hour_start": "2026-06-01 09:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.7835397049467487,
+      "python_prediction": 1.8194964499767488,
+      "spark_minus_python": -0.035956745030000015
+    },
+    {
+      "restaurant_id": "R023",
+      "hour_start": "2026-06-01 09:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.7835397049467487,
+      "python_prediction": 1.7987517118613063,
+      "spark_minus_python": -0.015212006914557596
+    },
+    {
+      "restaurant_id": "R024",
+      "hour_start": "2026-06-01 09:00:00",
+      "actual": 4.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 1.7835397049467487,
+      "python_prediction": 1.7856584020754387,
+      "spark_minus_python": -0.0021186971286899503
+    },
+    {
+      "restaurant_id": "R025",
+      "hour_start": "2026-06-01 09:00:00",
+      "actual": 5.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.7835397049467487,
+      "python_prediction": 1.7478410660087025,
+      "spark_minus_python": 0.03569863893804626
+    },
+    {
+      "restaurant_id": "R001",
+      "hour_start": "2026-06-01 10:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.4475978075501275,
+      "python_prediction": 1.3203723968694443,
+      "spark_minus_python": 0.12722541068068316
+    },
+    {
+      "restaurant_id": "R002",
+      "hour_start": "2026-06-01 10:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 1.4475978075501275,
+      "python_prediction": 1.3035868850726717,
+      "spark_minus_python": 0.14401092247745573
+    },
+    {
+      "restaurant_id": "R003",
+      "hour_start": "2026-06-01 10:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 1.4475978075501275,
+      "python_prediction": 1.4023874116756574,
+      "spark_minus_python": 0.045210395874470066
+    },
+    {
+      "restaurant_id": "R004",
+      "hour_start": "2026-06-01 10:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.4475978075501275,
+      "python_prediction": 1.2839203464236373,
+      "spark_minus_python": 0.16367746112649018
+    },
+    {
+      "restaurant_id": "R005",
+      "hour_start": "2026-06-01 10:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.4475978075501275,
+      "python_prediction": 1.3036860524698661,
+      "spark_minus_python": 0.14391175508026133
+    },
+    {
+      "restaurant_id": "R006",
+      "hour_start": "2026-06-01 10:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 1.4475978075501275,
+      "python_prediction": 1.3065531783986102,
+      "spark_minus_python": 0.14104462915151728
+    },
+    {
+      "restaurant_id": "R007",
+      "hour_start": "2026-06-01 10:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 1.4475978075501275,
+      "python_prediction": 1.3498667573937648,
+      "spark_minus_python": 0.09773105015636263
+    },
+    {
+      "restaurant_id": "R008",
+      "hour_start": "2026-06-01 10:00:00",
+      "actual": 5.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 1.4475978075501275,
+      "python_prediction": 1.3328740086889443,
+      "spark_minus_python": 0.11472379886118311
+    },
+    {
+      "restaurant_id": "R009",
+      "hour_start": "2026-06-01 10:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 1.4475978075501275,
+      "python_prediction": 1.278576121210363,
+      "spark_minus_python": 0.16902168633976444
+    },
+    {
+      "restaurant_id": "R010",
+      "hour_start": "2026-06-01 10:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 1.4475978075501275,
+      "python_prediction": 1.2961133841552694,
+      "spark_minus_python": 0.15148442339485801
+    },
+    {
+      "restaurant_id": "R011",
+      "hour_start": "2026-06-01 10:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.4475978075501275,
+      "python_prediction": 1.32977338421094,
+      "spark_minus_python": 0.11782442333918741
+    },
+    {
+      "restaurant_id": "R012",
+      "hour_start": "2026-06-01 10:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 1.4475978075501275,
+      "python_prediction": 1.325735838105919,
+      "spark_minus_python": 0.12186196944420846
+    },
+    {
+      "restaurant_id": "R013",
+      "hour_start": "2026-06-01 10:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 1.4475978075501275,
+      "python_prediction": 1.3093130534793456,
+      "spark_minus_python": 0.1382847540707819
+    },
+    {
+      "restaurant_id": "R014",
+      "hour_start": "2026-06-01 10:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 1.4475978075501275,
+      "python_prediction": 1.4199362528193438,
+      "spark_minus_python": 0.02766155473078369
+    },
+    {
+      "restaurant_id": "R015",
+      "hour_start": "2026-06-01 10:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.4475978075501275,
+      "python_prediction": 1.333646786681578,
+      "spark_minus_python": 0.11395102086854947
+    },
+    {
+      "restaurant_id": "R016",
+      "hour_start": "2026-06-01 10:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 4.0,
+      "spark_prediction": 1.2045160805014417,
+      "python_prediction": 1.6819629836352206,
+      "spark_minus_python": -0.4774469031337789
+    },
+    {
+      "restaurant_id": "R017",
+      "hour_start": "2026-06-01 10:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 1.4475978075501275,
+      "python_prediction": 1.3025164227757355,
+      "spark_minus_python": 0.14508138477439192
+    },
+    {
+      "restaurant_id": "R018",
+      "hour_start": "2026-06-01 10:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.4624486485163666,
+      "python_prediction": 1.2585558268704125,
+      "spark_minus_python": 0.20389282164595413
+    },
+    {
+      "restaurant_id": "R019",
+      "hour_start": "2026-06-01 10:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.4475978075501275,
+      "python_prediction": 1.3857619556811436,
+      "spark_minus_python": 0.06183585186898388
+    },
+    {
+      "restaurant_id": "R020",
+      "hour_start": "2026-06-01 10:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 1.4475978075501275,
+      "python_prediction": 1.3158744010160388,
+      "spark_minus_python": 0.13172340653408865
+    },
+    {
+      "restaurant_id": "R021",
+      "hour_start": "2026-06-01 10:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.4475978075501275,
+      "python_prediction": 1.3779158024630689,
+      "spark_minus_python": 0.06968200508705857
+    },
+    {
+      "restaurant_id": "R022",
+      "hour_start": "2026-06-01 10:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 1.2045160805014417,
+      "python_prediction": 1.2707651930249355,
+      "spark_minus_python": -0.06624911252349386
+    },
+    {
+      "restaurant_id": "R023",
+      "hour_start": "2026-06-01 10:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 1.4475978075501275,
+      "python_prediction": 1.3288892358450242,
+      "spark_minus_python": 0.1187085717051033
+    },
+    {
+      "restaurant_id": "R024",
+      "hour_start": "2026-06-01 10:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.4475978075501275,
+      "python_prediction": 1.3366184917525399,
+      "spark_minus_python": 0.11097931579758757
+    },
+    {
+      "restaurant_id": "R025",
+      "hour_start": "2026-06-01 10:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 1.2193669214676808,
+      "python_prediction": 1.4094235360816387,
+      "spark_minus_python": -0.19005661461395795
+    },
+    {
+      "restaurant_id": "R001",
+      "hour_start": "2026-06-01 11:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.6972782515789775,
+      "python_prediction": 1.7215863073545914,
+      "spark_minus_python": -0.0243080557756139
+    },
+    {
+      "restaurant_id": "R002",
+      "hour_start": "2026-06-01 11:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.524869962073325,
+      "python_prediction": 1.6866790624304748,
+      "spark_minus_python": -0.1618091003571498
+    },
+    {
+      "restaurant_id": "R003",
+      "hour_start": "2026-06-01 11:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.6972782515789775,
+      "python_prediction": 1.6810624037608601,
+      "spark_minus_python": 0.016215847818117357
+    },
+    {
+      "restaurant_id": "R004",
+      "hour_start": "2026-06-01 11:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 1.6972782515789775,
+      "python_prediction": 1.7876588870805594,
+      "spark_minus_python": -0.09038063550158193
+    },
+    {
+      "restaurant_id": "R005",
+      "hour_start": "2026-06-01 11:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.6972782515789775,
+      "python_prediction": 1.701704292130891,
+      "spark_minus_python": -0.004426040551913424
+    },
+    {
+      "restaurant_id": "R006",
+      "hour_start": "2026-06-01 11:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 1.8509901189539153,
+      "python_prediction": 1.6729680290297992,
+      "spark_minus_python": 0.17802208992411606
+    },
+    {
+      "restaurant_id": "R007",
+      "hour_start": "2026-06-01 11:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 1.8509901189539153,
+      "python_prediction": 1.7410617957114418,
+      "spark_minus_python": 0.10992832324247348
+    },
+    {
+      "restaurant_id": "R008",
+      "hour_start": "2026-06-01 11:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 1.5343366345438996,
+      "python_prediction": 1.7875304926278173,
+      "spark_minus_python": -0.2531938580839177
+    },
+    {
+      "restaurant_id": "R009",
+      "hour_start": "2026-06-01 11:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 1.6972782515789775,
+      "python_prediction": 1.7562330584768968,
+      "spark_minus_python": -0.05895480689791932
+    },
+    {
+      "restaurant_id": "R010",
+      "hour_start": "2026-06-01 11:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 5.0,
+      "spark_prediction": 1.8509901189539153,
+      "python_prediction": 1.6186292385434005,
+      "spark_minus_python": 0.23236088041051484
+    },
+    {
+      "restaurant_id": "R011",
+      "hour_start": "2026-06-01 11:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.6972782515789775,
+      "python_prediction": 1.711234501852325,
+      "spark_minus_python": -0.01395625027334746
+    },
+    {
+      "restaurant_id": "R012",
+      "hour_start": "2026-06-01 11:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 1.6972782515789775,
+      "python_prediction": 1.7201987041912967,
+      "spark_minus_python": -0.02292045261231923
+    },
+    {
+      "restaurant_id": "R013",
+      "hour_start": "2026-06-01 11:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 1.6972782515789775,
+      "python_prediction": 1.7072204680459706,
+      "spark_minus_python": -0.009942216466993115
+    },
+    {
+      "restaurant_id": "R014",
+      "hour_start": "2026-06-01 11:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 4.0,
+      "spark_prediction": 1.8509901189539153,
+      "python_prediction": 1.6078608846586515,
+      "spark_minus_python": 0.24312923429526379
+    },
+    {
+      "restaurant_id": "R015",
+      "hour_start": "2026-06-01 11:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 1.6972782515789775,
+      "python_prediction": 1.8054389298782063,
+      "spark_minus_python": -0.10816067829922882
+    },
+    {
+      "restaurant_id": "R016",
+      "hour_start": "2026-06-01 11:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.6972782515789775,
+      "python_prediction": 1.7263368552824871,
+      "spark_minus_python": -0.029058603703509656
+    },
+    {
+      "restaurant_id": "R017",
+      "hour_start": "2026-06-01 11:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 5.0,
+      "spark_prediction": 1.8509901189539153,
+      "python_prediction": 1.6512189293504982,
+      "spark_minus_python": 0.1997711896034171
+    },
+    {
+      "restaurant_id": "R018",
+      "hour_start": "2026-06-01 11:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 1.6972782515789775,
+      "python_prediction": 1.7882769809766015,
+      "spark_minus_python": -0.09099872939762399
+    },
+    {
+      "restaurant_id": "R019",
+      "hour_start": "2026-06-01 11:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.6972782515789775,
+      "python_prediction": 1.6519437358642524,
+      "spark_minus_python": 0.04533451571472513
+    },
+    {
+      "restaurant_id": "R020",
+      "hour_start": "2026-06-01 11:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 1.8509901189539153,
+      "python_prediction": 1.7502771657046208,
+      "spark_minus_python": 0.10071295324929452
+    },
+    {
+      "restaurant_id": "R021",
+      "hour_start": "2026-06-01 11:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 1.8509901189539153,
+      "python_prediction": 1.6139034030086177,
+      "spark_minus_python": 0.23708671594529762
+    },
+    {
+      "restaurant_id": "R022",
+      "hour_start": "2026-06-01 11:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 1.6972782515789775,
+      "python_prediction": 1.6752596632959835,
+      "spark_minus_python": 0.022018588282993967
+    },
+    {
+      "restaurant_id": "R023",
+      "hour_start": "2026-06-01 11:00:00",
+      "actual": 4.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 1.8509901189539153,
+      "python_prediction": 1.5392049738294202,
+      "spark_minus_python": 0.31178514512449507
+    },
+    {
+      "restaurant_id": "R024",
+      "hour_start": "2026-06-01 11:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 1.6972782515789775,
+      "python_prediction": 1.811228545607585,
+      "spark_minus_python": -0.11395029402860746
+    },
+    {
+      "restaurant_id": "R025",
+      "hour_start": "2026-06-01 11:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 1.524869962073325,
+      "python_prediction": 1.783176094459435,
+      "spark_minus_python": -0.25830613238611
+    },
+    {
+      "restaurant_id": "R001",
+      "hour_start": "2026-06-01 12:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 6.0,
+      "spark_prediction": 3.312726285444201,
+      "python_prediction": 3.3443558640434126,
+      "spark_minus_python": -0.03162957859921178
+    },
+    {
+      "restaurant_id": "R002",
+      "hour_start": "2026-06-01 12:00:00",
+      "actual": 4.0,
+      "seasonal_naive_lag_168h": 7.0,
+      "spark_prediction": 3.3318302691807595,
+      "python_prediction": 3.299917222022245,
+      "spark_minus_python": 0.03191304715851473
+    },
+    {
+      "restaurant_id": "R003",
+      "hour_start": "2026-06-01 12:00:00",
+      "actual": 7.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 2.968830302875945,
+      "python_prediction": 3.0817997287905188,
+      "spark_minus_python": -0.11296942591457393
+    },
+    {
+      "restaurant_id": "R004",
+      "hour_start": "2026-06-01 12:00:00",
+      "actual": 5.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 3.312726285444201,
+      "python_prediction": 3.407982396697097,
+      "spark_minus_python": -0.09525611125289624
+    },
+    {
+      "restaurant_id": "R005",
+      "hour_start": "2026-06-01 12:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 3.312726285444201,
+      "python_prediction": 3.241493934320533,
+      "spark_minus_python": 0.07123235112366766
+    },
+    {
+      "restaurant_id": "R006",
+      "hour_start": "2026-06-01 12:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 3.312726285444201,
+      "python_prediction": 3.2888806075461323,
+      "spark_minus_python": 0.023845677898068462
+    },
+    {
+      "restaurant_id": "R007",
+      "hour_start": "2026-06-01 12:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 6.0,
+      "spark_prediction": 3.3318302691807595,
+      "python_prediction": 3.267922917287406,
+      "spark_minus_python": 0.0639073518933535
+    },
+    {
+      "restaurant_id": "R008",
+      "hour_start": "2026-06-01 12:00:00",
+      "actual": 4.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 3.3318302691807595,
+      "python_prediction": 3.3229415787331584,
+      "spark_minus_python": 0.0088886904476011
+    },
+    {
+      "restaurant_id": "R009",
+      "hour_start": "2026-06-01 12:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 3.373171416346625,
+      "python_prediction": 3.2569282072550387,
+      "spark_minus_python": 0.11624320909158614
+    },
+    {
+      "restaurant_id": "R010",
+      "hour_start": "2026-06-01 12:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 7.0,
+      "spark_prediction": 3.312726285444201,
+      "python_prediction": 3.208268931480883,
+      "spark_minus_python": 0.10445735396331779
+    },
+    {
+      "restaurant_id": "R011",
+      "hour_start": "2026-06-01 12:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 2.968830302875945,
+      "python_prediction": 3.3549511547692132,
+      "spark_minus_python": -0.3861208518932684
+    },
+    {
+      "restaurant_id": "R012",
+      "hour_start": "2026-06-01 12:00:00",
+      "actual": 5.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 3.312726285444201,
+      "python_prediction": 3.296373801918944,
+      "spark_minus_python": 0.016352483525256645
+    },
+    {
+      "restaurant_id": "R013",
+      "hour_start": "2026-06-01 12:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 3.373171416346625,
+      "python_prediction": 3.349201225197168,
+      "spark_minus_python": 0.023970191149456976
+    },
+    {
+      "restaurant_id": "R014",
+      "hour_start": "2026-06-01 12:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 2.968830302875945,
+      "python_prediction": 3.3869330377262457,
+      "spark_minus_python": -0.4181027348503008
+    },
+    {
+      "restaurant_id": "R015",
+      "hour_start": "2026-06-01 12:00:00",
+      "actual": 6.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 2.968830302875945,
+      "python_prediction": 3.24500124971291,
+      "spark_minus_python": -0.2761709468369653
+    },
+    {
+      "restaurant_id": "R016",
+      "hour_start": "2026-06-01 12:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 5.0,
+      "spark_prediction": 3.3318302691807595,
+      "python_prediction": 3.3122586762344097,
+      "spark_minus_python": 0.019571592946349803
+    },
+    {
+      "restaurant_id": "R017",
+      "hour_start": "2026-06-01 12:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 6.0,
+      "spark_prediction": 3.3318302691807595,
+      "python_prediction": 3.2137281273303406,
+      "spark_minus_python": 0.1181021418504189
+    },
+    {
+      "restaurant_id": "R018",
+      "hour_start": "2026-06-01 12:00:00",
+      "actual": 5.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 3.373171416346625,
+      "python_prediction": 3.346838346841582,
+      "spark_minus_python": 0.026333069505042772
+    },
+    {
+      "restaurant_id": "R019",
+      "hour_start": "2026-06-01 12:00:00",
+      "actual": 4.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 3.373171416346625,
+      "python_prediction": 3.299009819060294,
+      "spark_minus_python": 0.07416159728633076
+    },
+    {
+      "restaurant_id": "R020",
+      "hour_start": "2026-06-01 12:00:00",
+      "actual": 4.0,
+      "seasonal_naive_lag_168h": 5.0,
+      "spark_prediction": 3.3318302691807595,
+      "python_prediction": 3.3006878371635233,
+      "spark_minus_python": 0.03114243201723621
+    },
+    {
+      "restaurant_id": "R021",
+      "hour_start": "2026-06-01 12:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 3.3318302691807595,
+      "python_prediction": 3.3293439073630173,
+      "spark_minus_python": 0.0024863618177421998
+    },
+    {
+      "restaurant_id": "R022",
+      "hour_start": "2026-06-01 12:00:00",
+      "actual": 7.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 3.373171416346625,
+      "python_prediction": 3.1676646390794434,
+      "spark_minus_python": 0.20550677726718147
+    },
+    {
+      "restaurant_id": "R023",
+      "hour_start": "2026-06-01 12:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 5.0,
+      "spark_prediction": 3.3318302691807595,
+      "python_prediction": 3.402538012405678,
+      "spark_minus_python": -0.07070774322491857
+    },
+    {
+      "restaurant_id": "R024",
+      "hour_start": "2026-06-01 12:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 5.0,
+      "spark_prediction": 3.312726285444201,
+      "python_prediction": 3.273292979116532,
+      "spark_minus_python": 0.03943330632766884
+    },
+    {
+      "restaurant_id": "R025",
+      "hour_start": "2026-06-01 12:00:00",
+      "actual": 4.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 2.968830302875945,
+      "python_prediction": 3.398592200050917,
+      "spark_minus_python": -0.42976189717497215
+    },
+    {
+      "restaurant_id": "R001",
+      "hour_start": "2026-06-01 13:00:00",
+      "actual": 5.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 3.6330517025018407,
+      "python_prediction": 3.57730099536681,
+      "spark_minus_python": 0.05575070713503072
+    },
+    {
+      "restaurant_id": "R002",
+      "hour_start": "2026-06-01 13:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 3.6288978295422156,
+      "python_prediction": 3.5792139419761937,
+      "spark_minus_python": 0.049683887566021934
+    },
+    {
+      "restaurant_id": "R003",
+      "hour_start": "2026-06-01 13:00:00",
+      "actual": 5.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 3.679020467604875,
+      "python_prediction": 3.6510344548879123,
+      "spark_minus_python": 0.027986012716962883
+    },
+    {
+      "restaurant_id": "R004",
+      "hour_start": "2026-06-01 13:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 4.0,
+      "spark_prediction": 3.6627067200953114,
+      "python_prediction": 3.6507184300611497,
+      "spark_minus_python": 0.011988290034161686
+    },
+    {
+      "restaurant_id": "R005",
+      "hour_start": "2026-06-01 13:00:00",
+      "actual": 8.0,
+      "seasonal_naive_lag_168h": 4.0,
+      "spark_prediction": 3.6139477187652824,
+      "python_prediction": 3.7757974374492917,
+      "spark_minus_python": -0.16184971868400932
+    },
+    {
+      "restaurant_id": "R006",
+      "hour_start": "2026-06-01 13:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 3.6288978295422156,
+      "python_prediction": 3.6179631373826346,
+      "spark_minus_python": 0.010934692159580983
+    },
+    {
+      "restaurant_id": "R007",
+      "hour_start": "2026-06-01 13:00:00",
+      "actual": 6.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 3.6288978295422156,
+      "python_prediction": 3.709420351170279,
+      "spark_minus_python": -0.08052252162806317
+    },
+    {
+      "restaurant_id": "R008",
+      "hour_start": "2026-06-01 13:00:00",
+      "actual": 5.0,
+      "seasonal_naive_lag_168h": 7.0,
+      "spark_prediction": 3.6139477187652824,
+      "python_prediction": 3.6249225499200604,
+      "spark_minus_python": -0.010974831154777931
+    },
+    {
+      "restaurant_id": "R009",
+      "hour_start": "2026-06-01 13:00:00",
+      "actual": 6.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 3.6330517025018407,
+      "python_prediction": 3.6788327921859,
+      "spark_minus_python": -0.04578108968405914
+    },
+    {
+      "restaurant_id": "R010",
+      "hour_start": "2026-06-01 13:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 5.0,
+      "spark_prediction": 3.6330517025018407,
+      "python_prediction": 3.6443986783446904,
+      "spark_minus_python": -0.011346975842849716
+    },
+    {
+      "restaurant_id": "R011",
+      "hour_start": "2026-06-01 13:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 5.0,
+      "spark_prediction": 3.6330517025018407,
+      "python_prediction": 3.6857277054833966,
+      "spark_minus_python": -0.052676002981555836
+    },
+    {
+      "restaurant_id": "R012",
+      "hour_start": "2026-06-01 13:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 3.7045598361017658,
+      "python_prediction": 3.58242475543312,
+      "spark_minus_python": 0.12213508066864565
+    },
+    {
+      "restaurant_id": "R013",
+      "hour_start": "2026-06-01 13:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 4.0,
+      "spark_prediction": 3.6330517025018407,
+      "python_prediction": 3.69881001660001,
+      "spark_minus_python": -0.06575831409816946
+    },
+    {
+      "restaurant_id": "R014",
+      "hour_start": "2026-06-01 13:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 4.0,
+      "spark_prediction": 3.6330517025018407,
+      "python_prediction": 3.6209068639034,
+      "spark_minus_python": 0.012144838598440622
+    },
+    {
+      "restaurant_id": "R015",
+      "hour_start": "2026-06-01 13:00:00",
+      "actual": 7.0,
+      "seasonal_naive_lag_168h": 6.0,
+      "spark_prediction": 3.679020467604875,
+      "python_prediction": 3.5651480049758435,
+      "spark_minus_python": 0.11387246262903172
+    },
+    {
+      "restaurant_id": "R016",
+      "hour_start": "2026-06-01 13:00:00",
+      "actual": 5.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 3.6288978295422156,
+      "python_prediction": 3.3940578814106432,
+      "spark_minus_python": 0.23483994813157238
+    },
+    {
+      "restaurant_id": "R017",
+      "hour_start": "2026-06-01 13:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 4.0,
+      "spark_prediction": 3.6330517025018407,
+      "python_prediction": 3.6209068639034,
+      "spark_minus_python": 0.012144838598440622
+    },
+    {
+      "restaurant_id": "R018",
+      "hour_start": "2026-06-01 13:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 6.0,
+      "spark_prediction": 3.6818107038318697,
+      "python_prediction": 3.6348961188645155,
+      "spark_minus_python": 0.046914584967354234
+    },
+    {
+      "restaurant_id": "R019",
+      "hour_start": "2026-06-01 13:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 4.0,
+      "spark_prediction": 3.6330517025018407,
+      "python_prediction": 3.611943526257344,
+      "spark_minus_python": 0.02110817624449668
+    },
+    {
+      "restaurant_id": "R020",
+      "hour_start": "2026-06-01 13:00:00",
+      "actual": 5.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 3.6288978295422156,
+      "python_prediction": 3.5936723933102455,
+      "spark_minus_python": 0.035225436231970164
+    },
+    {
+      "restaurant_id": "R021",
+      "hour_start": "2026-06-01 13:00:00",
+      "actual": 8.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 3.6288978295422156,
+      "python_prediction": 3.68982502071139,
+      "spark_minus_python": -0.06092719116917422
+    },
+    {
+      "restaurant_id": "R022",
+      "hour_start": "2026-06-01 13:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 4.0,
+      "spark_prediction": 3.679020467604875,
+      "python_prediction": 3.7148158367403625,
+      "spark_minus_python": -0.03579536913548731
+    },
+    {
+      "restaurant_id": "R023",
+      "hour_start": "2026-06-01 13:00:00",
+      "actual": 4.0,
+      "seasonal_naive_lag_168h": 4.0,
+      "spark_prediction": 3.6330517025018407,
+      "python_prediction": 3.602847248080471,
+      "spark_minus_python": 0.030204454421369764
+    },
+    {
+      "restaurant_id": "R024",
+      "hour_start": "2026-06-01 13:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 3.6288978295422156,
+      "python_prediction": 3.814607766084774,
+      "spark_minus_python": -0.1857099365425583
+    },
+    {
+      "restaurant_id": "R025",
+      "hour_start": "2026-06-01 13:00:00",
+      "actual": 4.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 3.6288978295422156,
+      "python_prediction": 3.685298038547529,
+      "spark_minus_python": -0.056400209005313506
+    },
+    {
+      "restaurant_id": "R001",
+      "hour_start": "2026-06-01 14:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 2.857337272194886,
+      "python_prediction": 2.8889354487876395,
+      "spark_minus_python": -0.031598176592753546
+    },
+    {
+      "restaurant_id": "R002",
+      "hour_start": "2026-06-01 14:00:00",
+      "actual": 6.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 2.6921174253683633,
+      "python_prediction": 2.7402779851937287,
+      "spark_minus_python": -0.04816055982536538
+    },
+    {
+      "restaurant_id": "R003",
+      "hour_start": "2026-06-01 14:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 2.862563048152336,
+      "python_prediction": 2.7765722097703422,
+      "spark_minus_python": 0.08599083838199384
+    },
+    {
+      "restaurant_id": "R004",
+      "hour_start": "2026-06-01 14:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 3.0721287791450345,
+      "python_prediction": 2.7779312878238844,
+      "spark_minus_python": 0.29419749132115003
+    },
+    {
+      "restaurant_id": "R005",
+      "hour_start": "2026-06-01 14:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 4.0,
+      "spark_prediction": 2.855321654050256,
+      "python_prediction": 3.089698348022778,
+      "spark_minus_python": -0.2343766939725218
+    },
+    {
+      "restaurant_id": "R006",
+      "hour_start": "2026-06-01 14:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 2.6921174253683633,
+      "python_prediction": 2.9392891792711326,
+      "spark_minus_python": -0.24717175390276935
+    },
+    {
+      "restaurant_id": "R007",
+      "hour_start": "2026-06-01 14:00:00",
+      "actual": 6.0,
+      "seasonal_naive_lag_168h": 7.0,
+      "spark_prediction": 2.855321654050256,
+      "python_prediction": 2.891508832084003,
+      "spark_minus_python": -0.036187178033746825
+    },
+    {
+      "restaurant_id": "R008",
+      "hour_start": "2026-06-01 14:00:00",
+      "actual": 7.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 2.646918287354375,
+      "python_prediction": 2.8131556934327193,
+      "spark_minus_python": -0.16623740607834447
+    },
+    {
+      "restaurant_id": "R009",
+      "hour_start": "2026-06-01 14:00:00",
+      "actual": 5.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 2.855321654050256,
+      "python_prediction": 2.969365547181897,
+      "spark_minus_python": -0.11404389313164076
+    },
+    {
+      "restaurant_id": "R010",
+      "hour_start": "2026-06-01 14:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 4.0,
+      "spark_prediction": 2.852425904348483,
+      "python_prediction": 2.9100961895481703,
+      "spark_minus_python": -0.05767028519968731
+    },
+    {
+      "restaurant_id": "R011",
+      "hour_start": "2026-06-01 14:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 3.0721287791450345,
+      "python_prediction": 2.989394154362179,
+      "spark_minus_python": 0.08273462478285554
+    },
+    {
+      "restaurant_id": "R012",
+      "hour_start": "2026-06-01 14:00:00",
+      "actual": 7.0,
+      "seasonal_naive_lag_168h": 6.0,
+      "spark_prediction": 2.857651680305933,
+      "python_prediction": 2.900651577016475,
+      "spark_minus_python": -0.04299989671054183
+    },
+    {
+      "restaurant_id": "R013",
+      "hour_start": "2026-06-01 14:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 2.852425904348483,
+      "python_prediction": 2.909272460651331,
+      "spark_minus_python": -0.05684655630284796
+    },
+    {
+      "restaurant_id": "R014",
+      "hour_start": "2026-06-01 14:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 5.0,
+      "spark_prediction": 2.857651680305933,
+      "python_prediction": 2.7691878341922274,
+      "spark_minus_python": 0.08846384611370572
+    },
+    {
+      "restaurant_id": "R015",
+      "hour_start": "2026-06-01 14:00:00",
+      "actual": 5.0,
+      "seasonal_naive_lag_168h": 5.0,
+      "spark_prediction": 2.855321654050256,
+      "python_prediction": 2.8488914999670056,
+      "spark_minus_python": 0.006430154083250539
+    },
+    {
+      "restaurant_id": "R016",
+      "hour_start": "2026-06-01 14:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 3.0964026672997043,
+      "python_prediction": 2.856151610980006,
+      "spark_minus_python": 0.24025105631969845
+    },
+    {
+      "restaurant_id": "R017",
+      "hour_start": "2026-06-01 14:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 2.6921174253683633,
+      "python_prediction": 2.8602892187501032,
+      "spark_minus_python": -0.16817179338173993
+    },
+    {
+      "restaurant_id": "R018",
+      "hour_start": "2026-06-01 14:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 2.857651680305933,
+      "python_prediction": 2.8438903223258754,
+      "spark_minus_python": 0.013761357980057731
+    },
+    {
+      "restaurant_id": "R019",
+      "hour_start": "2026-06-01 14:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 3.0721287791450345,
+      "python_prediction": 2.874193496899425,
+      "spark_minus_python": 0.1979352822456093
+    },
+    {
+      "restaurant_id": "R020",
+      "hour_start": "2026-06-01 14:00:00",
+      "actual": 6.0,
+      "seasonal_naive_lag_168h": 6.0,
+      "spark_prediction": 2.862563048152336,
+      "python_prediction": 2.6944435833124074,
+      "spark_minus_python": 0.16811946483992868
+    },
+    {
+      "restaurant_id": "R021",
+      "hour_start": "2026-06-01 14:00:00",
+      "actual": 5.0,
+      "seasonal_naive_lag_168h": 4.0,
+      "spark_prediction": 2.855321654050256,
+      "python_prediction": 2.826252421377826,
+      "spark_minus_python": 0.02906923267243
+    },
+    {
+      "restaurant_id": "R022",
+      "hour_start": "2026-06-01 14:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 2.857651680305933,
+      "python_prediction": 2.845679531639111,
+      "spark_minus_python": 0.011972148666822058
+    },
+    {
+      "restaurant_id": "R023",
+      "hour_start": "2026-06-01 14:00:00",
+      "actual": 5.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 2.852425904348483,
+      "python_prediction": 2.944861756557432,
+      "spark_minus_python": -0.09243585220894923
+    },
+    {
+      "restaurant_id": "R024",
+      "hour_start": "2026-06-01 14:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 4.0,
+      "spark_prediction": 2.857651680305933,
+      "python_prediction": 2.778274101428143,
+      "spark_minus_python": 0.07937757887779018
+    },
+    {
+      "restaurant_id": "R025",
+      "hour_start": "2026-06-01 14:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 4.0,
+      "spark_prediction": 2.852425904348483,
+      "python_prediction": 2.880164890866221,
+      "spark_minus_python": -0.027738986517737985
+    },
+    {
+      "restaurant_id": "R001",
+      "hour_start": "2026-06-01 15:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 1.9831018550427404,
+      "python_prediction": 1.8451611738287483,
+      "spark_minus_python": 0.13794068121399206
+    },
+    {
+      "restaurant_id": "R002",
+      "hour_start": "2026-06-01 15:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.8672295035289734,
+      "python_prediction": 1.8200634898255064,
+      "spark_minus_python": 0.04716601370346707
+    },
+    {
+      "restaurant_id": "R003",
+      "hour_start": "2026-06-01 15:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 1.9831018550427404,
+      "python_prediction": 1.8422055827586057,
+      "spark_minus_python": 0.1408962722841347
+    },
+    {
+      "restaurant_id": "R004",
+      "hour_start": "2026-06-01 15:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.8083145179836488,
+      "python_prediction": 1.755559749104218,
+      "spark_minus_python": 0.05275476887943076
+    },
+    {
+      "restaurant_id": "R005",
+      "hour_start": "2026-06-01 15:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 4.0,
+      "spark_prediction": 1.8526413730207016,
+      "python_prediction": 1.7812702275433732,
+      "spark_minus_python": 0.07137114547732848
+    },
+    {
+      "restaurant_id": "R006",
+      "hour_start": "2026-06-01 15:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.8083145179836488,
+      "python_prediction": 1.7417085612194387,
+      "spark_minus_python": 0.0666059567642101
+    },
+    {
+      "restaurant_id": "R007",
+      "hour_start": "2026-06-01 15:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 1.8672295035289734,
+      "python_prediction": 1.8363936635528066,
+      "spark_minus_python": 0.03083583997616679
+    },
+    {
+      "restaurant_id": "R008",
+      "hour_start": "2026-06-01 15:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 1.8672295035289734,
+      "python_prediction": 1.840550233509688,
+      "spark_minus_python": 0.026679270019285495
+    },
+    {
+      "restaurant_id": "R009",
+      "hour_start": "2026-06-01 15:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 1.836490845792924,
+      "python_prediction": 1.7547553349006897,
+      "spark_minus_python": 0.08173551089223441
+    },
+    {
+      "restaurant_id": "R010",
+      "hour_start": "2026-06-01 15:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 1.8639417583615474,
+      "python_prediction": 1.7853321362251777,
+      "spark_minus_python": 0.07860962213636968
+    },
+    {
+      "restaurant_id": "R011",
+      "hour_start": "2026-06-01 15:00:00",
+      "actual": 5.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.8083145179836488,
+      "python_prediction": 1.7577288100541313,
+      "spark_minus_python": 0.050585707929517554
+    },
+    {
+      "restaurant_id": "R012",
+      "hour_start": "2026-06-01 15:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 1.961616670845236,
+      "python_prediction": 1.925558804004473,
+      "spark_minus_python": 0.03605786684076295
+    },
+    {
+      "restaurant_id": "R013",
+      "hour_start": "2026-06-01 15:00:00",
+      "actual": 4.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.8083145179836488,
+      "python_prediction": 1.7317290849941158,
+      "spark_minus_python": 0.07658543298953302
+    },
+    {
+      "restaurant_id": "R014",
+      "hour_start": "2026-06-01 15:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 1.8083145179836488,
+      "python_prediction": 1.7805228147973455,
+      "spark_minus_python": 0.027791703186303307
+    },
+    {
+      "restaurant_id": "R015",
+      "hour_start": "2026-06-01 15:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 1.9308780131091867,
+      "python_prediction": 1.840044692752976,
+      "spark_minus_python": 0.09083332035621061
+    },
+    {
+      "restaurant_id": "R016",
+      "hour_start": "2026-06-01 15:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.9831018550427404,
+      "python_prediction": 1.7204415026602444,
+      "spark_minus_python": 0.26266035238249597
+    },
+    {
+      "restaurant_id": "R017",
+      "hour_start": "2026-06-01 15:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 5.0,
+      "spark_prediction": 1.9089118724775007,
+      "python_prediction": 1.8652826932481616,
+      "spark_minus_python": 0.043629179229339066
+    },
+    {
+      "restaurant_id": "R018",
+      "hour_start": "2026-06-01 15:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 1.8083145179836488,
+      "python_prediction": 1.697688226208836,
+      "spark_minus_python": 0.11062629177481287
+    },
+    {
+      "restaurant_id": "R019",
+      "hour_start": "2026-06-01 15:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 1.8083145179836488,
+      "python_prediction": 1.7957341008913357,
+      "spark_minus_python": 0.012580417092313168
+    },
+    {
+      "restaurant_id": "R020",
+      "hour_start": "2026-06-01 15:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 5.0,
+      "spark_prediction": 1.961616670845236,
+      "python_prediction": 1.8440864470780265,
+      "spark_minus_python": 0.11753022376720956
+    },
+    {
+      "restaurant_id": "R021",
+      "hour_start": "2026-06-01 15:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 2.094387759684848,
+      "python_prediction": 1.714084830733808,
+      "spark_minus_python": 0.38030292895104023
+    },
+    {
+      "restaurant_id": "R022",
+      "hour_start": "2026-06-01 15:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 1.9831018550427404,
+      "python_prediction": 1.7725579769681197,
+      "spark_minus_python": 0.21054387807462072
+    },
+    {
+      "restaurant_id": "R023",
+      "hour_start": "2026-06-01 15:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.836490845792924,
+      "python_prediction": 1.7179134202527124,
+      "spark_minus_python": 0.11857742554021167
+    },
+    {
+      "restaurant_id": "R024",
+      "hour_start": "2026-06-01 15:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 1.9831018550427404,
+      "python_prediction": 1.7826098473901504,
+      "spark_minus_python": 0.20049200765259
+    },
+    {
+      "restaurant_id": "R025",
+      "hour_start": "2026-06-01 15:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.8083145179836488,
+      "python_prediction": 1.7440676978870417,
+      "spark_minus_python": 0.0642468200966071
+    },
+    {
+      "restaurant_id": "R001",
+      "hour_start": "2026-06-01 16:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 1.8639417583615474,
+      "python_prediction": 1.7473221454216588,
+      "spark_minus_python": 0.11661961293988865
+    },
+    {
+      "restaurant_id": "R002",
+      "hour_start": "2026-06-01 16:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 1.8083145179836488,
+      "python_prediction": 1.7283902105652627,
+      "spark_minus_python": 0.07992430741838619
+    },
+    {
+      "restaurant_id": "R003",
+      "hour_start": "2026-06-01 16:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.8083145179836488,
+      "python_prediction": 1.7356630298945195,
+      "spark_minus_python": 0.07265148808912936
+    },
+    {
+      "restaurant_id": "R004",
+      "hour_start": "2026-06-01 16:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.8083145179836488,
+      "python_prediction": 1.7390125053278545,
+      "spark_minus_python": 0.06930201265579439
+    },
+    {
+      "restaurant_id": "R005",
+      "hour_start": "2026-06-01 16:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.8083145179836488,
+      "python_prediction": 1.825607339306103,
+      "spark_minus_python": -0.017292821322454133
+    },
+    {
+      "restaurant_id": "R006",
+      "hour_start": "2026-06-01 16:00:00",
+      "actual": 4.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 1.8083145179836488,
+      "python_prediction": 1.7844478063804405,
+      "spark_minus_python": 0.0238667116032083
+    },
+    {
+      "restaurant_id": "R007",
+      "hour_start": "2026-06-01 16:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.8083145179836488,
+      "python_prediction": 1.7582879196016865,
+      "spark_minus_python": 0.05002659838196233
+    },
+    {
+      "restaurant_id": "R008",
+      "hour_start": "2026-06-01 16:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.8083145179836488,
+      "python_prediction": 1.7450173630079313,
+      "spark_minus_python": 0.06329715497571753
+    },
+    {
+      "restaurant_id": "R009",
+      "hour_start": "2026-06-01 16:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 1.9831018550427404,
+      "python_prediction": 1.7773249886868299,
+      "spark_minus_python": 0.20577686635591053
+    },
+    {
+      "restaurant_id": "R010",
+      "hour_start": "2026-06-01 16:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 1.8083145179836488,
+      "python_prediction": 1.7381956057882888,
+      "spark_minus_python": 0.07011891219536004
+    },
+    {
+      "restaurant_id": "R011",
+      "hour_start": "2026-06-01 16:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 1.919577627768341,
+      "python_prediction": 1.838236507949081,
+      "spark_minus_python": 0.08134111981925995
+    },
+    {
+      "restaurant_id": "R012",
+      "hour_start": "2026-06-01 16:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 1.8526413730207016,
+      "python_prediction": 1.7074451465847882,
+      "spark_minus_python": 0.14519622643591346
+    },
+    {
+      "restaurant_id": "R013",
+      "hour_start": "2026-06-01 16:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 1.8083145179836488,
+      "python_prediction": 1.8107315248420903,
+      "spark_minus_python": -0.002417006858441484
+    },
+    {
+      "restaurant_id": "R014",
+      "hour_start": "2026-06-01 16:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.8083145179836488,
+      "python_prediction": 1.744017114816291,
+      "spark_minus_python": 0.06429740316735777
+    },
+    {
+      "restaurant_id": "R015",
+      "hour_start": "2026-06-01 16:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 1.8083145179836488,
+      "python_prediction": 1.7173785044114886,
+      "spark_minus_python": 0.09093601357216019
+    },
+    {
+      "restaurant_id": "R016",
+      "hour_start": "2026-06-01 16:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 1.9831018550427404,
+      "python_prediction": 1.714421804670629,
+      "spark_minus_python": 0.2686800503721114
+    },
+    {
+      "restaurant_id": "R017",
+      "hour_start": "2026-06-01 16:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.8083145179836488,
+      "python_prediction": 1.7446661078473507,
+      "spark_minus_python": 0.06364841013629818
+    },
+    {
+      "restaurant_id": "R018",
+      "hour_start": "2026-06-01 16:00:00",
+      "actual": 6.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.8083145179836488,
+      "python_prediction": 1.7396414838336138,
+      "spark_minus_python": 0.068673034150035
+    },
+    {
+      "restaurant_id": "R019",
+      "hour_start": "2026-06-01 16:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 1.9831018550427404,
+      "python_prediction": 1.7177713906062635,
+      "spark_minus_python": 0.2653304644364769
+    },
+    {
+      "restaurant_id": "R020",
+      "hour_start": "2026-06-01 16:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 1.8083145179836488,
+      "python_prediction": 1.7517094508195747,
+      "spark_minus_python": 0.0566050671640741
+    },
+    {
+      "restaurant_id": "R021",
+      "hour_start": "2026-06-01 16:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 1.9831018550427404,
+      "python_prediction": 1.7734403101097223,
+      "spark_minus_python": 0.20966154493301814
+    },
+    {
+      "restaurant_id": "R022",
+      "hour_start": "2026-06-01 16:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 1.8639417583615474,
+      "python_prediction": 1.7440483070223796,
+      "spark_minus_python": 0.11989345133916784
+    },
+    {
+      "restaurant_id": "R023",
+      "hour_start": "2026-06-01 16:00:00",
+      "actual": 4.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 1.8083145179836488,
+      "python_prediction": 1.7356012934188505,
+      "spark_minus_python": 0.07271322456479834
+    },
+    {
+      "restaurant_id": "R024",
+      "hour_start": "2026-06-01 16:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 1.8083145179836488,
+      "python_prediction": 1.7688952877317359,
+      "spark_minus_python": 0.03941923025191296
+    },
+    {
+      "restaurant_id": "R025",
+      "hour_start": "2026-06-01 16:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 1.8083145179836488,
+      "python_prediction": 1.7896553147196765,
+      "spark_minus_python": 0.0186592032639723
+    },
+    {
+      "restaurant_id": "R001",
+      "hour_start": "2026-06-01 17:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 2.840229252602538,
+      "python_prediction": 2.803982311312022,
+      "spark_minus_python": 0.03624694129051598
+    },
+    {
+      "restaurant_id": "R002",
+      "hour_start": "2026-06-01 17:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 2.8131582257418053,
+      "python_prediction": 2.82007266770104,
+      "spark_minus_python": -0.0069144419592346296
+    },
+    {
+      "restaurant_id": "R003",
+      "hour_start": "2026-06-01 17:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 2.8382048737242798,
+      "python_prediction": 3.04579522643316,
+      "spark_minus_python": -0.20759035270888004
+    },
+    {
+      "restaurant_id": "R004",
+      "hour_start": "2026-06-01 17:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 2.840229252602538,
+      "python_prediction": 2.8588524877833192,
+      "spark_minus_python": -0.01862323518078135
+    },
+    {
+      "restaurant_id": "R005",
+      "hour_start": "2026-06-01 17:00:00",
+      "actual": 4.0,
+      "seasonal_naive_lag_168h": 4.0,
+      "spark_prediction": 2.840229252602538,
+      "python_prediction": 2.838640246126998,
+      "spark_minus_python": 0.0015890064755397226
+    },
+    {
+      "restaurant_id": "R006",
+      "hour_start": "2026-06-01 17:00:00",
+      "actual": 4.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 2.8382048737242798,
+      "python_prediction": 3.005358578991797,
+      "spark_minus_python": -0.16715370526751716
+    },
+    {
+      "restaurant_id": "R007",
+      "hour_start": "2026-06-01 17:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 2.8131582257418053,
+      "python_prediction": 2.845389617832945,
+      "spark_minus_python": -0.0322313920911399
+    },
+    {
+      "restaurant_id": "R008",
+      "hour_start": "2026-06-01 17:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 4.0,
+      "spark_prediction": 2.8131582257418053,
+      "python_prediction": 2.8954630738142666,
+      "spark_minus_python": -0.0823048480724613
+    },
+    {
+      "restaurant_id": "R009",
+      "hour_start": "2026-06-01 17:00:00",
+      "actual": 5.0,
+      "seasonal_naive_lag_168h": 5.0,
+      "spark_prediction": 2.840229252602538,
+      "python_prediction": 2.7202390767984825,
+      "spark_minus_python": 0.11999017580405535
+    },
+    {
+      "restaurant_id": "R010",
+      "hour_start": "2026-06-01 17:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 6.0,
+      "spark_prediction": 2.8131582257418053,
+      "python_prediction": 2.94010577988215,
+      "spark_minus_python": -0.12694755414034464
+    },
+    {
+      "restaurant_id": "R011",
+      "hour_start": "2026-06-01 17:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 4.0,
+      "spark_prediction": 2.8131582257418053,
+      "python_prediction": 2.887857914806218,
+      "spark_minus_python": -0.07469968906441249
+    },
+    {
+      "restaurant_id": "R012",
+      "hour_start": "2026-06-01 17:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 3.2125968655868626,
+      "python_prediction": 2.805331227842199,
+      "spark_minus_python": 0.4072656377446635
+    },
+    {
+      "restaurant_id": "R013",
+      "hour_start": "2026-06-01 17:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 8.0,
+      "spark_prediction": 2.840229252602538,
+      "python_prediction": 2.9332044283868006,
+      "spark_minus_python": -0.09297517578426273
+    },
+    {
+      "restaurant_id": "R014",
+      "hour_start": "2026-06-01 17:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 3.263147266641521,
+      "python_prediction": 2.8771905560165743,
+      "spark_minus_python": 0.38595671062494663
+    },
+    {
+      "restaurant_id": "R015",
+      "hour_start": "2026-06-01 17:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 4.0,
+      "spark_prediction": 2.840229252602538,
+      "python_prediction": 2.7368656964171,
+      "spark_minus_python": 0.10336355618543802
+    },
+    {
+      "restaurant_id": "R016",
+      "hour_start": "2026-06-01 17:00:00",
+      "actual": 5.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 2.8131582257418053,
+      "python_prediction": 2.833993144821401,
+      "spark_minus_python": -0.02083491907959578
+    },
+    {
+      "restaurant_id": "R017",
+      "hour_start": "2026-06-01 17:00:00",
+      "actual": 4.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 3.263147266641521,
+      "python_prediction": 2.870323004321197,
+      "spark_minus_python": 0.39282426232032375
+    },
+    {
+      "restaurant_id": "R018",
+      "hour_start": "2026-06-01 17:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 3.2069348412401077,
+      "python_prediction": 2.9712696974799284,
+      "spark_minus_python": 0.23566514376017933
+    },
+    {
+      "restaurant_id": "R019",
+      "hour_start": "2026-06-01 17:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 2.8131582257418053,
+      "python_prediction": 2.8180032383364852,
+      "spark_minus_python": -0.004845012594679954
+    },
+    {
+      "restaurant_id": "R020",
+      "hour_start": "2026-06-01 17:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 2.8382048737242798,
+      "python_prediction": 2.8571693071348667,
+      "spark_minus_python": -0.018964433410586956
+    },
+    {
+      "restaurant_id": "R021",
+      "hour_start": "2026-06-01 17:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 2.8382048737242798,
+      "python_prediction": 2.8889316284536557,
+      "spark_minus_python": -0.050726754729375934
+    },
+    {
+      "restaurant_id": "R022",
+      "hour_start": "2026-06-01 17:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 3.263147266641521,
+      "python_prediction": 2.960760383697404,
+      "spark_minus_python": 0.30238688294411675
+    },
+    {
+      "restaurant_id": "R023",
+      "hour_start": "2026-06-01 17:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 4.0,
+      "spark_prediction": 2.840229252602538,
+      "python_prediction": 2.9183179471541605,
+      "spark_minus_python": -0.0780886945516226
+    },
+    {
+      "restaurant_id": "R024",
+      "hour_start": "2026-06-01 17:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 0.0,
+      "spark_prediction": 2.8382048737242798,
+      "python_prediction": 2.9285017436286958,
+      "spark_minus_python": -0.09029686990441599
+    },
+    {
+      "restaurant_id": "R025",
+      "hour_start": "2026-06-01 17:00:00",
+      "actual": 5.0,
+      "seasonal_naive_lag_168h": 6.0,
+      "spark_prediction": 2.840229252602538,
+      "python_prediction": 2.953563478418114,
+      "spark_minus_python": -0.11333422581557606
+    },
+    {
+      "restaurant_id": "R001",
+      "hour_start": "2026-06-01 18:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 4.0,
+      "spark_prediction": 4.051907665113631,
+      "python_prediction": 3.9954328160035915,
+      "spark_minus_python": 0.056474849110039305
+    },
+    {
+      "restaurant_id": "R002",
+      "hour_start": "2026-06-01 18:00:00",
+      "actual": 0.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 3.8380372854076548,
+      "python_prediction": 3.9661198164502722,
+      "spark_minus_python": -0.12808253104261746
+    },
+    {
+      "restaurant_id": "R003",
+      "hour_start": "2026-06-01 18:00:00",
+      "actual": 6.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 3.8380372854076548,
+      "python_prediction": 3.9503402029801804,
+      "spark_minus_python": -0.11230291757252564
+    },
+    {
+      "restaurant_id": "R004",
+      "hour_start": "2026-06-01 18:00:00",
+      "actual": 6.0,
+      "seasonal_naive_lag_168h": 5.0,
+      "spark_prediction": 4.051907665113631,
+      "python_prediction": 4.0154595226076095,
+      "spark_minus_python": 0.03644814250602124
+    },
+    {
+      "restaurant_id": "R005",
+      "hour_start": "2026-06-01 18:00:00",
+      "actual": 4.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 3.8380372854076548,
+      "python_prediction": 3.9375645768220187,
+      "spark_minus_python": -0.0995272914143639
+    },
+    {
+      "restaurant_id": "R006",
+      "hour_start": "2026-06-01 18:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 5.0,
+      "spark_prediction": 4.051907665113631,
+      "python_prediction": 4.0200143819073615,
+      "spark_minus_python": 0.031893283206269274
+    },
+    {
+      "restaurant_id": "R007",
+      "hour_start": "2026-06-01 18:00:00",
+      "actual": 6.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 3.8380372854076548,
+      "python_prediction": 3.9367105002841476,
+      "spark_minus_python": -0.09867321487649283
+    },
+    {
+      "restaurant_id": "R008",
+      "hour_start": "2026-06-01 18:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 6.0,
+      "spark_prediction": 4.051907665113631,
+      "python_prediction": 4.0014976566178335,
+      "spark_minus_python": 0.05041000849579724
+    },
+    {
+      "restaurant_id": "R009",
+      "hour_start": "2026-06-01 18:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 4.035441413912579,
+      "python_prediction": 3.991147011460767,
+      "spark_minus_python": 0.0442944024518126
+    },
+    {
+      "restaurant_id": "R010",
+      "hour_start": "2026-06-01 18:00:00",
+      "actual": 4.0,
+      "seasonal_naive_lag_168h": 5.0,
+      "spark_prediction": 4.051907665113631,
+      "python_prediction": 4.028127389426322,
+      "spark_minus_python": 0.023780275687308894
+    },
+    {
+      "restaurant_id": "R011",
+      "hour_start": "2026-06-01 18:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 5.0,
+      "spark_prediction": 4.051907665113631,
+      "python_prediction": 3.98895762299892,
+      "spark_minus_python": 0.06295004211471067
+    },
+    {
+      "restaurant_id": "R012",
+      "hour_start": "2026-06-01 18:00:00",
+      "actual": 4.0,
+      "seasonal_naive_lag_168h": 6.0,
+      "spark_prediction": 4.051907665113631,
+      "python_prediction": 4.024337793170748,
+      "spark_minus_python": 0.027569871942882962
+    },
+    {
+      "restaurant_id": "R013",
+      "hour_start": "2026-06-01 18:00:00",
+      "actual": 7.0,
+      "seasonal_naive_lag_168h": 4.0,
+      "spark_prediction": 4.051907665113631,
+      "python_prediction": 4.011815323053289,
+      "spark_minus_python": 0.0400923420603414
+    },
+    {
+      "restaurant_id": "R014",
+      "hour_start": "2026-06-01 18:00:00",
+      "actual": 5.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 3.8380372854076548,
+      "python_prediction": 3.9842445772521096,
+      "spark_minus_python": -0.1462072918444548
+    },
+    {
+      "restaurant_id": "R015",
+      "hour_start": "2026-06-01 18:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 5.0,
+      "spark_prediction": 4.051907665113631,
+      "python_prediction": 4.008069042465786,
+      "spark_minus_python": 0.04383862264784444
+    },
+    {
+      "restaurant_id": "R016",
+      "hour_start": "2026-06-01 18:00:00",
+      "actual": 7.0,
+      "seasonal_naive_lag_168h": 7.0,
+      "spark_prediction": 4.035441413912579,
+      "python_prediction": 4.0112488073546775,
+      "spark_minus_python": 0.024192606557901897
+    },
+    {
+      "restaurant_id": "R017",
+      "hour_start": "2026-06-01 18:00:00",
+      "actual": 7.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 3.427235453400125,
+      "python_prediction": 3.9848380165437183,
+      "spark_minus_python": -0.5576025631435932
+    },
+    {
+      "restaurant_id": "R018",
+      "hour_start": "2026-06-01 18:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 6.0,
+      "spark_prediction": 4.051907665113631,
+      "python_prediction": 4.1241759084381435,
+      "spark_minus_python": -0.07226824332451276
+    },
+    {
+      "restaurant_id": "R019",
+      "hour_start": "2026-06-01 18:00:00",
+      "actual": 4.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 3.8380372854076548,
+      "python_prediction": 3.9540618523363458,
+      "spark_minus_python": -0.11602456692869101
+    },
+    {
+      "restaurant_id": "R020",
+      "hour_start": "2026-06-01 18:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 4.051907665113631,
+      "python_prediction": 3.92506201787753,
+      "spark_minus_python": 0.1268456472361006
+    },
+    {
+      "restaurant_id": "R021",
+      "hour_start": "2026-06-01 18:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 5.0,
+      "spark_prediction": 4.051907665113631,
+      "python_prediction": 4.005832519405127,
+      "spark_minus_python": 0.04607514570850402
+    },
+    {
+      "restaurant_id": "R022",
+      "hour_start": "2026-06-01 18:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 5.0,
+      "spark_prediction": 4.051907665113631,
+      "python_prediction": 4.01717983664956,
+      "spark_minus_python": 0.03472782846407085
+    },
+    {
+      "restaurant_id": "R023",
+      "hour_start": "2026-06-01 18:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 4.051907665113631,
+      "python_prediction": 3.9807580634118596,
+      "spark_minus_python": 0.0711496017017712
+    },
+    {
+      "restaurant_id": "R024",
+      "hour_start": "2026-06-01 18:00:00",
+      "actual": 5.0,
+      "seasonal_naive_lag_168h": 4.0,
+      "spark_prediction": 4.051907665113631,
+      "python_prediction": 4.007666624993883,
+      "spark_minus_python": 0.04424104011974794
+    },
+    {
+      "restaurant_id": "R025",
+      "hour_start": "2026-06-01 18:00:00",
+      "actual": 5.0,
+      "seasonal_naive_lag_168h": 4.0,
+      "spark_prediction": 4.035441413912579,
+      "python_prediction": 4.008543787037079,
+      "spark_minus_python": 0.02689762687550079
+    },
+    {
+      "restaurant_id": "R001",
+      "hour_start": "2026-06-01 19:00:00",
+      "actual": 8.0,
+      "seasonal_naive_lag_168h": 6.0,
+      "spark_prediction": 4.256551635061391,
+      "python_prediction": 4.28077501344345,
+      "spark_minus_python": -0.024223378382059124
+    },
+    {
+      "restaurant_id": "R002",
+      "hour_start": "2026-06-01 19:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 5.0,
+      "spark_prediction": 4.256551635061391,
+      "python_prediction": 4.2994998845562495,
+      "spark_minus_python": -0.04294824949485854
+    },
+    {
+      "restaurant_id": "R003",
+      "hour_start": "2026-06-01 19:00:00",
+      "actual": 6.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 4.352620595055858,
+      "python_prediction": 4.4183269563174035,
+      "spark_minus_python": -0.06570636126154561
+    },
+    {
+      "restaurant_id": "R004",
+      "hour_start": "2026-06-01 19:00:00",
+      "actual": 1.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 4.352620595055858,
+      "python_prediction": 4.4016832381499995,
+      "spark_minus_python": -0.049062643094141656
+    },
+    {
+      "restaurant_id": "R005",
+      "hour_start": "2026-06-01 19:00:00",
+      "actual": 2.0,
+      "seasonal_naive_lag_168h": 5.0,
+      "spark_prediction": 4.256551635061391,
+      "python_prediction": 4.304184469860012,
+      "spark_minus_python": -0.04763283479862057
+    },
+    {
+      "restaurant_id": "R006",
+      "hour_start": "2026-06-01 19:00:00",
+      "actual": 9.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 3.939969105412852,
+      "python_prediction": 4.150168065875254,
+      "spark_minus_python": -0.2101989604624026
+    },
+    {
+      "restaurant_id": "R007",
+      "hour_start": "2026-06-01 19:00:00",
+      "actual": 6.0,
+      "seasonal_naive_lag_168h": 4.0,
+      "spark_prediction": 4.352620595055858,
+      "python_prediction": 4.395839132928905,
+      "spark_minus_python": -0.04321853787304697
+    },
+    {
+      "restaurant_id": "R008",
+      "hour_start": "2026-06-01 19:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 7.0,
+      "spark_prediction": 4.256551635061391,
+      "python_prediction": 4.266091371054371,
+      "spark_minus_python": -0.009539735992979637
+    },
+    {
+      "restaurant_id": "R009",
+      "hour_start": "2026-06-01 19:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 3.939969105412852,
+      "python_prediction": 4.22488871752081,
+      "spark_minus_python": -0.284919612107958
+    },
+    {
+      "restaurant_id": "R010",
+      "hour_start": "2026-06-01 19:00:00",
+      "actual": 5.0,
+      "seasonal_naive_lag_168h": 5.0,
+      "spark_prediction": 4.256551635061391,
+      "python_prediction": 4.316405000145996,
+      "spark_minus_python": -0.059853365084604704
+    },
+    {
+      "restaurant_id": "R011",
+      "hour_start": "2026-06-01 19:00:00",
+      "actual": 5.0,
+      "seasonal_naive_lag_168h": 4.0,
+      "spark_prediction": 4.256551635061391,
+      "python_prediction": 4.28691515921136,
+      "spark_minus_python": -0.030363524149969123
+    },
+    {
+      "restaurant_id": "R012",
+      "hour_start": "2026-06-01 19:00:00",
+      "actual": 4.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 3.939969105412852,
+      "python_prediction": 4.314087501772851,
+      "spark_minus_python": -0.3741183963599988
+    },
+    {
+      "restaurant_id": "R013",
+      "hour_start": "2026-06-01 19:00:00",
+      "actual": 4.0,
+      "seasonal_naive_lag_168h": 4.0,
+      "spark_prediction": 4.352620595055858,
+      "python_prediction": 4.380671456467921,
+      "spark_minus_python": -0.028050861412062922
+    },
+    {
+      "restaurant_id": "R014",
+      "hour_start": "2026-06-01 19:00:00",
+      "actual": 4.0,
+      "seasonal_naive_lag_168h": 9.0,
+      "spark_prediction": 4.318891662408331,
+      "python_prediction": 4.325777595418521,
+      "spark_minus_python": -0.00688593301019047
+    },
+    {
+      "restaurant_id": "R015",
+      "hour_start": "2026-06-01 19:00:00",
+      "actual": 10.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 4.256551635061391,
+      "python_prediction": 4.2688631171294915,
+      "spark_minus_python": -0.01231148206810051
+    },
+    {
+      "restaurant_id": "R016",
+      "hour_start": "2026-06-01 19:00:00",
+      "actual": 8.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 4.116470435459836,
+      "python_prediction": 4.177617157844674,
+      "spark_minus_python": -0.06114672238483809
+    },
+    {
+      "restaurant_id": "R017",
+      "hour_start": "2026-06-01 19:00:00",
+      "actual": 4.0,
+      "seasonal_naive_lag_168h": 1.0,
+      "spark_prediction": 4.116470435459836,
+      "python_prediction": 4.31202002595426,
+      "spark_minus_python": -0.19554959049442378
+    },
+    {
+      "restaurant_id": "R018",
+      "hour_start": "2026-06-01 19:00:00",
+      "actual": 4.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 4.256551635061391,
+      "python_prediction": 4.227191309929039,
+      "spark_minus_python": 0.02936032513235176
+    },
+    {
+      "restaurant_id": "R019",
+      "hour_start": "2026-06-01 19:00:00",
+      "actual": 7.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 4.256551635061391,
+      "python_prediction": 4.342612903955055,
+      "spark_minus_python": -0.08606126889366372
+    },
+    {
+      "restaurant_id": "R020",
+      "hour_start": "2026-06-01 19:00:00",
+      "actual": 9.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 4.256551635061391,
+      "python_prediction": 4.2869305765966725,
+      "spark_minus_python": -0.030378941535281534
+    },
+    {
+      "restaurant_id": "R021",
+      "hour_start": "2026-06-01 19:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 4.0,
+      "spark_prediction": 4.256551635061391,
+      "python_prediction": 4.268835773259821,
+      "spark_minus_python": -0.012284138198429773
+    },
+    {
+      "restaurant_id": "R022",
+      "hour_start": "2026-06-01 19:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 8.0,
+      "spark_prediction": 4.256551635061391,
+      "python_prediction": 4.287229166766199,
+      "spark_minus_python": -0.030677531704808025
+    },
+    {
+      "restaurant_id": "R023",
+      "hour_start": "2026-06-01 19:00:00",
+      "actual": 4.0,
+      "seasonal_naive_lag_168h": 4.0,
+      "spark_prediction": 4.256551635061391,
+      "python_prediction": 4.061690105907302,
+      "spark_minus_python": 0.19486152915408894
+    },
+    {
+      "restaurant_id": "R024",
+      "hour_start": "2026-06-01 19:00:00",
+      "actual": 4.0,
+      "seasonal_naive_lag_168h": 2.0,
+      "spark_prediction": 3.660480576857925,
+      "python_prediction": 4.0827593081071,
+      "spark_minus_python": -0.4222787312491749
+    },
+    {
+      "restaurant_id": "R025",
+      "hour_start": "2026-06-01 19:00:00",
+      "actual": 3.0,
+      "seasonal_naive_lag_168h": 3.0,
+      "spark_prediction": 4.318891662408331,
+      "python_prediction": 4.320872457635021,
+      "spark_minus_python": -0.0019807952266903683
+    }
+  ],
+  "row_level_case_count": 500,
+  "mean_absolute_prediction_difference_first_cases": 0.07773475840443075,
+  "elapsed_seconds": 14.264
+}

@@ -1,0 +1,142 @@
+{
+  "version": "v1",
+  "source_manifest": "results\\analytics\\srs_completion\\v1\\features.json",
+  "independent_pipeline": "pandas + scikit-learn; no Spark model/prediction loaded",
+  "counts": {
+    "menu_features": 200,
+    "customer_features": 75000,
+    "customer_month": 425751,
+    "daily_demand": 131757,
+    "basket_pairs": 19900,
+    "weekly_operations": 388454
+  },
+  "menu_dimensions": {
+    "item_count": 200,
+    "rating_coverage": 1.0,
+    "repeat_rate_coverage": 1.0,
+    "promotion_dependency_coverage": 1.0,
+    "trend_coverage": 1.0,
+    "wastage_coverage": 1.0,
+    "location_rows": 5000,
+    "classification_inputs": [
+      "units",
+      "revenue",
+      "cost",
+      "margin",
+      "order_associated_rating",
+      "repeat_buyers",
+      "waste_cost",
+      "promo_orders",
+      "units_recent_90d",
+      "units_previous_90d"
+    ]
+  },
+  "customer_dimensions": {
+    "customers_including_zero_order": 75000,
+    "frequency_coverage": 0.9924933333333333,
+    "category_preference_coverage": 0.9924933333333333,
+    "channel_preference_coverage": 0.9924933333333333,
+    "time_preference_coverage": 0.9924933333333333,
+    "monthly_snapshots": 425751
+  },
+  "wastage_dimensions": {
+    "daily_rows": 107711,
+    "reason_rows": 24246,
+    "weekly_rows": 388454,
+    "inventory_aligned_rows": 107711,
+    "preparation_quantity_status": "unavailable in canonical source schema"
+  },
+  "rating_anomaly_inputs": {
+    "context_rows": 163510,
+    "quality_candidate_rows": 0,
+    "rating_dimensions": [
+      "menu_item_id",
+      "restaurant_id",
+      "month",
+      "promotion_status"
+    ]
+  },
+  "independent_segments": {
+    "counts": {
+      "At risk": 25172,
+      "Established / lower engagement": 17265,
+      "High-value loyal": 15820,
+      "Recent": 13785,
+      "One-time": 2395,
+      "No completed orders": 563
+    },
+    "zero_order": 563
+  },
+  "independent_forecasts": {
+    "cutoff": "2026-06-01",
+    "levels": {
+      "category": {
+        "rows_train": 6435,
+        "rows_test": 1380,
+        "model": {
+          "mae": 32.222417489332635,
+          "rmse": 41.31521324123841
+        },
+        "seasonal_naive_7d": {
+          "mae": 41.018840579710144,
+          "rmse": 52.16371941482323
+        }
+      },
+      "item": {
+        "rows_train": 85798,
+        "rows_test": 18399,
+        "model": {
+          "mae": 7.347126263025326,
+          "rmse": 10.469134684957153
+        },
+        "seasonal_naive_7d": {
+          "mae": 9.093972498505353,
+          "rmse": 12.891710759847221
+        }
+      },
+      "location": {
+        "rows_train": 10725,
+        "rows_test": 2300,
+        "model": {
+          "mae": 41.337613744411236,
+          "rmse": 51.812290524888354
+        },
+        "seasonal_naive_7d": {
+          "mae": 57.348695652173916,
+          "rmse": 72.70771743022225
+        }
+      }
+    },
+    "features": [
+      "lag_1",
+      "lag_7",
+      "lag_28",
+      "dow",
+      "month"
+    ]
+  },
+  "independent_churn_model": {
+    "label": "no orders in next observed month",
+    "features": [
+      "orders",
+      "spend",
+      "visit_days",
+      "promo_share",
+      "category_count"
+    ],
+    "train_rows": 253806,
+    "test_rows": 97508,
+    "positive_rate_test": 0.4372564302416212,
+    "roc_auc": 0.5760228803124975,
+    "threshold_0_5_f1": 0.6008320249784898,
+    "accuracy": 0.5384891496082372
+  },
+  "basket_validation": {
+    "rows": 19900,
+    "support_max_error": 0.0,
+    "lift_max_error": 0.0,
+    "basket_size_rows": 15,
+    "independent_formula_check": true
+  },
+  "elapsed_seconds": 1.56
+}

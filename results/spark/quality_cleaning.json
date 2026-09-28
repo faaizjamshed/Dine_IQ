@@ -1,0 +1,1076 @@
+{
+  "profiled_before_cleaning": {
+    "customers": {
+      "rows": 75075,
+      "nulls": {
+        "city": 226,
+        "last_order_date": 563
+      },
+      "duplicate_pk_rows_in_groups": 150,
+      "anomalies": {
+        "unexpected_categorical:gender": 0,
+        "unexpected_categorical:customer_segment": 0,
+        "unexpected_categorical:preferred_channel": 0
+      },
+      "expected_rows": 75075,
+      "processed_rows": 75000,
+      "processed_schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "customer_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "customer_name",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "gender",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "age",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "city",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "signup_date",
+            "type": "date",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "customer_segment",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "preferred_channel",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "loyalty_points",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "is_churned",
+            "type": "boolean",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "last_order_date",
+            "type": "date",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "processed_path": "hdfs://localhost:9000/dineq/processed/v4/customers"
+    },
+    "orders": {
+      "rows": 650000,
+      "nulls": {
+        "promotion_id": 468311,
+        "ordering_channel": 1300
+      },
+      "duplicate_pk_rows_in_groups": 0,
+      "anomalies": {
+        "unexpected_categorical:ordering_channel": 0,
+        "unexpected_categorical:order_status": 0,
+        "unexpected_categorical:payment_method": 0,
+        "negative_discount": 325,
+        "cancelled": 29102,
+        "refunded": 9747,
+        "unexpected_channel": 0,
+        "unexpected_status": 0
+      },
+      "expected_rows": 650000,
+      "processed_rows": 650000,
+      "processed_schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "order_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "customer_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "restaurant_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "promotion_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "order_datetime",
+            "type": "timestamp",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ordering_channel",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "order_status",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "subtotal",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "discount_amount",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "tax_amount",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "delivery_fee",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "final_amount",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "payment_method",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "order_month",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "processed_path": "hdfs://localhost:9000/dineq/processed/v4/orders"
+    },
+    "order_items": {
+      "rows": 3000600,
+      "nulls": {
+        "special_request": 2820924
+      },
+      "duplicate_pk_rows_in_groups": 1200,
+      "anomalies": {
+        "invalid_quantity": 1500,
+        "invalid_price": 1201,
+        "incorrect_line_total": 4198
+      },
+      "expected_rows": 3000600,
+      "processed_rows": 3000000,
+      "processed_schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "order_item_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "order_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "menu_item_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "quantity",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "unit_price",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "item_discount",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "line_total",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "special_request",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "processed_path": "hdfs://localhost:9000/dineq/processed/v4/order_items"
+    },
+    "menu_items": {
+      "rows": 200,
+      "nulls": {
+        "base_price": 1
+      },
+      "duplicate_pk_rows_in_groups": 0,
+      "anomalies": {
+        "nonpositive_base_price": 0
+      },
+      "expected_rows": 200,
+      "processed_rows": 200,
+      "processed_schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "menu_item_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "category_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "item_name",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "base_price",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "cost_price",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "preparation_time_min",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "is_vegetarian",
+            "type": "boolean",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "is_available",
+            "type": "boolean",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "launch_date",
+            "type": "date",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "processed_path": "hdfs://localhost:9000/dineq/processed/v4/menu_items"
+    },
+    "menu_categories": {
+      "rows": 15,
+      "nulls": {},
+      "duplicate_pk_rows_in_groups": 0,
+      "anomalies": {
+        "unexpected_categorical:category_name": 0
+      },
+      "expected_rows": 15,
+      "processed_rows": 15,
+      "processed_schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "category_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "category_name",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "description",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "is_active",
+            "type": "boolean",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "processed_path": "hdfs://localhost:9000/dineq/processed/v4/menu_categories"
+    },
+    "restaurants": {
+      "rows": 25,
+      "nulls": {},
+      "duplicate_pk_rows_in_groups": 0,
+      "anomalies": {
+        "unexpected_categorical:city": 0,
+        "unexpected_categorical:location_type": 0
+      },
+      "expected_rows": 25,
+      "processed_rows": 25,
+      "processed_schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "restaurant_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "restaurant_name",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "city",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "area",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "opening_date",
+            "type": "date",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "seating_capacity",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "location_type",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "is_active",
+            "type": "boolean",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "processed_path": "hdfs://localhost:9000/dineq/processed/v4/restaurants"
+    },
+    "pricing_history": {
+      "rows": 2992,
+      "nulls": {
+        "effective_to": 1000
+      },
+      "duplicate_pk_rows_in_groups": 0,
+      "anomalies": {
+        "unexpected_categorical:change_reason": 0
+      },
+      "expected_rows": 2992,
+      "processed_rows": 2992,
+      "processed_schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "price_history_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "menu_item_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "restaurant_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "old_price",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "new_price",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "effective_from",
+            "type": "date",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "effective_to",
+            "type": "date",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "change_reason",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "processed_path": "hdfs://localhost:9000/dineq/processed/v4/pricing_history"
+    },
+    "promotions": {
+      "rows": 80,
+      "nulls": {},
+      "duplicate_pk_rows_in_groups": 0,
+      "anomalies": {
+        "unexpected_categorical:promotion_type": 0,
+        "unexpected_categorical:discount_type": 0,
+        "unexpected_categorical:channel": 0
+      },
+      "expected_rows": 80,
+      "processed_rows": 80,
+      "processed_schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "promotion_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "promotion_name",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "promotion_type",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "discount_type",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "discount_value",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "start_date",
+            "type": "date",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "end_date",
+            "type": "date",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "minimum_order_value",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "channel",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "is_active",
+            "type": "boolean",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "processed_path": "hdfs://localhost:9000/dineq/processed/v4/promotions"
+    },
+    "ratings": {
+      "rows": 220000,
+      "nulls": {
+        "food_rating": 440,
+        "delivery_rating": 52750,
+        "review_text": 180450
+      },
+      "duplicate_pk_rows_in_groups": 0,
+      "anomalies": {
+        "invalid_rating": 220,
+        "invalid_food_rating": 0,
+        "invalid_service_rating": 0,
+        "invalid_delivery_rating": 0
+      },
+      "expected_rows": 220000,
+      "processed_rows": 220000,
+      "processed_schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "rating_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "order_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "customer_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "restaurant_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "rating",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "food_rating",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "service_rating",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "delivery_rating",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "review_text",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "rating_date",
+            "type": "date",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "processed_path": "hdfs://localhost:9000/dineq/processed/v4/ratings"
+    },
+    "inventory": {
+      "rows": 90000,
+      "nulls": {},
+      "duplicate_pk_rows_in_groups": 0,
+      "anomalies": {
+        "unexpected_categorical:stock_status": 0
+      },
+      "expected_rows": 90000,
+      "processed_rows": 90000,
+      "processed_schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "inventory_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "restaurant_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "menu_item_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "record_date",
+            "type": "date",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "opening_stock",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "stock_received",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "stock_used",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "closing_stock",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "reorder_level",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "stock_status",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "processed_path": "hdfs://localhost:9000/dineq/processed/v4/inventory"
+    },
+    "wastage": {
+      "rows": 110000,
+      "nulls": {},
+      "duplicate_pk_rows_in_groups": 0,
+      "anomalies": {
+        "unexpected_categorical:reason": 0,
+        "negative_quantity": 55
+      },
+      "expected_rows": 110000,
+      "processed_rows": 110000,
+      "processed_schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "wastage_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "restaurant_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "menu_item_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "wastage_date",
+            "type": "date",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "quantity_wasted",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "unit_cost",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "wastage_cost",
+            "type": "double",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "reason",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "processed_path": "hdfs://localhost:9000/dineq/processed/v4/wastage"
+    }
+  },
+  "foreign_key_orphans": {
+    "orders.customer_id->customers": 0,
+    "orders.restaurant_id->restaurants": 0,
+    "orders.promotion_id->promotions": 0,
+    "menu_items.category_id->menu_categories": 0,
+    "order_items.order_id->orders": 0,
+    "order_items.menu_item_id->menu_items": 0,
+    "pricing_history.menu_item_id->menu_items": 0,
+    "pricing_history.restaurant_id->restaurants": 0,
+    "ratings.order_id->orders": 0,
+    "ratings.customer_id->customers": 0,
+    "ratings.restaurant_id->restaurants": 0,
+    "inventory.restaurant_id->restaurants": 0,
+    "inventory.menu_item_id->menu_items": 0,
+    "wastage.restaurant_id->restaurants": 0,
+    "wastage.menu_item_id->menu_items": 0
+  },
+  "cleaning_audit": [
+    {
+      "table": "customers",
+      "rule": "deduplicate_primary_key",
+      "issue": "repeated primary key",
+      "affected_records": 75,
+      "action": "keep one record per key",
+      "justification": "processed layer requires unique identifiers; raw records remain unchanged",
+      "before_count": 75075,
+      "after_count": 75000
+    },
+    {
+      "table": "customers",
+      "rule": "fill_missing_city",
+      "issue": "missing city",
+      "affected_records": 225,
+      "action": "set city to Unknown",
+      "justification": "retain customer while marking unavailable location explicitly",
+      "before_count": 75075,
+      "after_count": 75000
+    },
+    {
+      "table": "customers",
+      "rule": "table_row_count",
+      "issue": "cleaning row accounting",
+      "affected_records": 75,
+      "action": "row count verified",
+      "justification": "all nonduplicate rows preserved",
+      "before_count": 75075,
+      "after_count": 75000
+    },
+    {
+      "table": "orders",
+      "rule": "fill_missing_channel",
+      "issue": "missing ordering channel",
+      "affected_records": 1300,
+      "action": "set channel to Unknown",
+      "justification": "preserve transaction without inventing a channel",
+      "before_count": 650000,
+      "after_count": 650000
+    },
+    {
+      "table": "orders",
+      "rule": "null_negative_discount",
+      "issue": "negative discount",
+      "affected_records": 325,
+      "action": "set discount to null",
+      "justification": "negative discount is invalid and zero would claim no discount",
+      "before_count": 650000,
+      "after_count": 650000
+    },
+    {
+      "table": "orders",
+      "rule": "table_row_count",
+      "issue": "cleaning row accounting",
+      "affected_records": 0,
+      "action": "row count verified",
+      "justification": "all nonduplicate rows preserved",
+      "before_count": 650000,
+      "after_count": 650000
+    },
+    {
+      "table": "order_items",
+      "rule": "deduplicate_primary_key",
+      "issue": "repeated primary key",
+      "affected_records": 600,
+      "action": "keep one record per key",
+      "justification": "processed layer requires unique identifiers; raw records remain unchanged",
+      "before_count": 3000600,
+      "after_count": 3000000
+    },
+    {
+      "table": "order_items",
+      "rule": "null_invalid_quantity",
+      "issue": "nonpositive quantity",
+      "affected_records": 1500,
+      "action": "set quantity to null",
+      "justification": "do not fabricate a valid quantity or price",
+      "before_count": 3000600,
+      "after_count": 3000000
+    },
+    {
+      "table": "order_items",
+      "rule": "null_invalid_unit_price",
+      "issue": "nonpositive unit_price",
+      "affected_records": 1200,
+      "action": "set unit_price to null",
+      "justification": "do not fabricate a valid quantity or price",
+      "before_count": 3000600,
+      "after_count": 3000000
+    },
+    {
+      "table": "order_items",
+      "rule": "null_unverifiable_line_total",
+      "issue": "line total cannot be checked with invalid components",
+      "affected_records": 2699,
+      "action": "set line_total to null",
+      "justification": "do not keep an amount that cannot be reconciled to its quantity, price and discount",
+      "before_count": 3000600,
+      "after_count": 3000000
+    },
+    {
+      "table": "order_items",
+      "rule": "recompute_line_total",
+      "issue": "incorrect line total",
+      "affected_records": 1498,
+      "action": "recompute from valid quantity, unit price and item discount",
+      "justification": "line total is deterministic from source components",
+      "before_count": 3000600,
+      "after_count": 3000000
+    },
+    {
+      "table": "order_items",
+      "rule": "table_row_count",
+      "issue": "cleaning row accounting",
+      "affected_records": 600,
+      "action": "row count verified",
+      "justification": "all nonduplicate rows preserved",
+      "before_count": 3000600,
+      "after_count": 3000000
+    },
+    {
+      "table": "menu_items",
+      "rule": "retain_missing_base_price",
+      "issue": "base price unavailable",
+      "affected_records": 1,
+      "action": "preserve null base_price",
+      "justification": "no reliable replacement price exists in the source; downstream logic can exclude or handle explicitly",
+      "before_count": 200,
+      "after_count": 200
+    },
+    {
+      "table": "menu_items",
+      "rule": "table_row_count",
+      "issue": "cleaning row accounting",
+      "affected_records": 0,
+      "action": "row count verified",
+      "justification": "all nonduplicate rows preserved",
+      "before_count": 200,
+      "after_count": 200
+    },
+    {
+      "table": "menu_categories",
+      "rule": "table_row_count",
+      "issue": "cleaning row accounting",
+      "affected_records": 0,
+      "action": "row count verified",
+      "justification": "all nonduplicate rows preserved",
+      "before_count": 15,
+      "after_count": 15
+    },
+    {
+      "table": "restaurants",
+      "rule": "table_row_count",
+      "issue": "cleaning row accounting",
+      "affected_records": 0,
+      "action": "row count verified",
+      "justification": "all nonduplicate rows preserved",
+      "before_count": 25,
+      "after_count": 25
+    },
+    {
+      "table": "pricing_history",
+      "rule": "table_row_count",
+      "issue": "cleaning row accounting",
+      "affected_records": 0,
+      "action": "row count verified",
+      "justification": "all nonduplicate rows preserved",
+      "before_count": 2992,
+      "after_count": 2992
+    },
+    {
+      "table": "promotions",
+      "rule": "table_row_count",
+      "issue": "cleaning row accounting",
+      "affected_records": 0,
+      "action": "row count verified",
+      "justification": "all nonduplicate rows preserved",
+      "before_count": 80,
+      "after_count": 80
+    },
+    {
+      "table": "ratings",
+      "rule": "null_out_of_range_rating",
+      "issue": "rating outside 1..5",
+      "affected_records": 220,
+      "action": "set rating to null",
+      "justification": "ratings outside documented five-point scale are invalid",
+      "before_count": 220000,
+      "after_count": 220000
+    },
+    {
+      "table": "ratings",
+      "rule": "retain_missing_food_rating",
+      "issue": "food rating unavailable",
+      "affected_records": 440,
+      "action": "preserve null food_rating",
+      "justification": "rating is not inferable from other review fields",
+      "before_count": 220000,
+      "after_count": 220000
+    },
+    {
+      "table": "ratings",
+      "rule": "table_row_count",
+      "issue": "cleaning row accounting",
+      "affected_records": 0,
+      "action": "row count verified",
+      "justification": "all nonduplicate rows preserved",
+      "before_count": 220000,
+      "after_count": 220000
+    },
+    {
+      "table": "inventory",
+      "rule": "table_row_count",
+      "issue": "cleaning row accounting",
+      "affected_records": 0,
+      "action": "row count verified",
+      "justification": "all nonduplicate rows preserved",
+      "before_count": 90000,
+      "after_count": 90000
+    },
+    {
+      "table": "wastage",
+      "rule": "null_negative_wastage",
+      "issue": "negative wastage",
+      "affected_records": 55,
+      "action": "set quantity to null",
+      "justification": "retain event without changing its sign or inventing a quantity",
+      "before_count": 110000,
+      "after_count": 110000
+    },
+    {
+      "table": "wastage",
+      "rule": "table_row_count",
+      "issue": "cleaning row accounting",
+      "affected_records": 0,
+      "action": "row count verified",
+      "justification": "all nonduplicate rows preserved",
+      "before_count": 110000,
+      "after_count": 110000
+    }
+  ],
+  "cleaning_policy": "documented in script; raw HDFS CSV is never modified",
+  "elapsed_seconds": 59.727,
+  "processed_root": "hdfs://localhost:9000/dineq/processed/v4"
+}

@@ -1,0 +1,455 @@
+{
+  "target_definition": {
+    "spark": "Count of order records with order_datetime in [hour_start, hour_start + 1 hour), regardless of eventual order status.",
+    "python": "Count of order records with order_datetime in [hour_start, hour_start + 1 hour), regardless of eventual order status.",
+    "same": true
+  },
+  "feature_definitions": {
+    "spark": [
+      "restaurant_id",
+      "hour_of_day",
+      "day_of_week",
+      "month",
+      "lag_1h",
+      "lag_24h",
+      "lag_168h"
+    ],
+    "python": [
+      "restaurant_id",
+      "hour_of_day",
+      "day_of_week",
+      "month",
+      "lag_1h",
+      "lag_24h",
+      "lag_168h"
+    ],
+    "same": true
+  },
+  "dataset": {
+    "spark": {
+      "source": "/dineq/processed/v4/orders",
+      "panel_rows": 329400,
+      "usable_rows": 325200,
+      "split": {
+        "train": 233400,
+        "validation": 36600,
+        "test": 55200,
+        "train_range": "2025-03-08 00:00 through 2026-03-31 23:00",
+        "validation_range": "2026-04-01 through 2026-05-31",
+        "test_range": "2026-06-01 through 2026-08-31"
+      }
+    },
+    "python": {
+      "source": "data/generated/orders.csv (frozen source, deduplicated and aggregated independently with pandas)",
+      "panel_rows": 329400,
+      "usable_rows": 325200,
+      "split": {
+        "train": 233400,
+        "validation": 36600,
+        "test": 55200,
+        "train_range": "2025-03-08 00:00 through 2026-03-31 23:00",
+        "validation_range": "2026-04-01 through 2026-05-31",
+        "test_range": "2026-06-01 through 2026-08-31"
+      }
+    },
+    "same_panel_and_splits": true
+  },
+  "algorithm_mapping": {
+    "spark": [
+      "linear_regression",
+      "random_forest",
+      "gradient_boosted_trees"
+    ],
+    "python": [
+      "ridge",
+      "random_forest",
+      "hist_gradient_boosting"
+    ],
+    "notes": "Linear regression vs Ridge (regularized linear baseline); tree ensembles are related model families with different implementations/hyperparameters, not identical estimators."
+  },
+  "hyperparameters": {
+    "spark": {
+      "linear_regression": {
+        "maxIter": 50,
+        "regParam": 0.05,
+        "elasticNetParam": 0.0,
+        "fitIntercept": true,
+        "standardization": true
+      },
+      "random_forest": {
+        "numTrees": 40,
+        "maxDepth": 8,
+        "featureSubsetStrategy": "sqrt",
+        "seed": 42
+      },
+      "gradient_boosted_trees": {
+        "maxIter": 30,
+        "maxDepth": 5,
+        "stepSize": 0.08,
+        "seed": 42
+      }
+    },
+    "python": {
+      "ridge": {
+        "alpha": 1.0,
+        "copy_X": true,
+        "fit_intercept": true,
+        "max_iter": null,
+        "positive": false,
+        "random_state": null,
+        "solver": "auto",
+        "tol": 0.0001
+      },
+      "random_forest": {
+        "bootstrap": true,
+        "ccp_alpha": 0.0,
+        "criterion": "squared_error",
+        "max_depth": 12,
+        "max_features": 0.8,
+        "max_leaf_nodes": null,
+        "max_samples": null,
+        "min_impurity_decrease": 0.0,
+        "min_samples_leaf": 3,
+        "min_samples_split": 2,
+        "min_weight_fraction_leaf": 0.0,
+        "monotonic_cst": null,
+        "n_estimators": 40,
+        "n_jobs": 4,
+        "oob_score": false,
+        "random_state": 42,
+        "verbose": 0,
+        "warm_start": false
+      },
+      "hist_gradient_boosting": {
+        "categorical_features": "from_dtype",
+        "early_stopping": "auto",
+        "interaction_cst": null,
+        "l2_regularization": 1.0,
+        "learning_rate": 0.08,
+        "loss": "squared_error",
+        "max_bins": 255,
+        "max_depth": null,
+        "max_features": 1.0,
+        "max_iter": 100,
+        "max_leaf_nodes": 31,
+        "min_samples_leaf": 20,
+        "monotonic_cst": null,
+        "n_iter_no_change": 10,
+        "quantile": null,
+        "random_state": 42,
+        "scoring": "loss",
+        "tol": 1e-07,
+        "validation_fraction": 0.1,
+        "verbose": 0,
+        "warm_start": false
+      }
+    }
+  },
+  "validation_metrics": {
+    "spark": {
+      "linear_regression": {
+        "rmse": 1.6110556731115924,
+        "mae": 1.1934593982723514,
+        "r2": 0.3936547139910713
+      },
+      "random_forest": {
+        "rmse": 1.5559936770633822,
+        "mae": 1.1420761342960153,
+        "r2": 0.4343932755222476
+      },
+      "gradient_boosted_trees": {
+        "rmse": 1.4382917655010181,
+        "mae": 1.05281081187286,
+        "r2": 0.5167265946204396
+      }
+    },
+    "python": {
+      "ridge": {
+        "rmse": 1.607837389479536,
+        "mae": 1.1905863882536336,
+        "r2": 0.3960747942762197
+      },
+      "random_forest": {
+        "rmse": 1.4358180378629941,
+        "mae": 1.0485276576871727,
+        "r2": 0.5183875353911527
+      },
+      "hist_gradient_boosting": {
+        "rmse": 1.4309994527462053,
+        "mae": 1.0488689531773234,
+        "r2": 0.5216146804615602
+      }
+    }
+  },
+  "selected_models": {
+    "spark": "gradient_boosted_trees",
+    "python": "random_forest",
+    "selection": "lowest validation MAE, separately within each framework"
+  },
+  "test_metrics": {
+    "spark": {
+      "rmse": 1.3930551948484493,
+      "mae": 1.0232209696775245,
+      "r2": 0.5034293530509905
+    },
+    "python": {
+      "rmse": 1.3892008222174532,
+      "mae": 1.0240631050745732,
+      "r2": 0.5061734230460346
+    },
+    "difference_spark_minus_python": {
+      "rmse": 0.0038543726309960835,
+      "mae": -0.0008421353970486933,
+      "r2": -0.002744069995044174
+    }
+  },
+  "runtime_versions": {
+    "spark": {
+      "spark": "3.5.7"
+    },
+    "python": {
+      "python": "3.11.9",
+      "scikit_learn": "1.9.1",
+      "pandas": "3.0.6",
+      "numpy": "2.4.6",
+      "joblib": "1.6.0"
+    }
+  },
+  "execution_seconds": {
+    "spark": 61.334,
+    "python": 13.991,
+    "interpretation": "Measured in distinct runtimes; Spark timing includes model and feature persistence but excludes the separate fresh-process reload smoke test. Not a controlled framework speed benchmark."
+  },
+  "sample_prediction_behavior": {
+    "matched_sample_rows": 25,
+    "rows": [
+      {
+        "restaurant_id": "R001",
+        "hour_start": "2026-06-01 00:00:00",
+        "spark_actual": 1.0,
+        "python_actual": 1.0,
+        "spark_prediction": 0.43321428745688173,
+        "python_prediction": 0.5071328469665755,
+        "prediction_difference_spark_minus_python": -0.07391855950969373
+      },
+      {
+        "restaurant_id": "R002",
+        "hour_start": "2026-06-01 00:00:00",
+        "spark_actual": 0.0,
+        "python_actual": 0.0,
+        "spark_prediction": 0.43321428745688173,
+        "python_prediction": 0.394565664327642,
+        "prediction_difference_spark_minus_python": 0.03864862312923972
+      },
+      {
+        "restaurant_id": "R003",
+        "hour_start": "2026-06-01 00:00:00",
+        "spark_actual": 0.0,
+        "python_actual": 0.0,
+        "spark_prediction": 0.43321428745688173,
+        "python_prediction": 0.43457147501788623,
+        "prediction_difference_spark_minus_python": -0.0013571875610045026
+      },
+      {
+        "restaurant_id": "R004",
+        "hour_start": "2026-06-01 00:00:00",
+        "spark_actual": 2.0,
+        "python_actual": 2.0,
+        "spark_prediction": 0.43321428745688173,
+        "python_prediction": 0.5919908234675834,
+        "prediction_difference_spark_minus_python": -0.15877653601070163
+      },
+      {
+        "restaurant_id": "R005",
+        "hour_start": "2026-06-01 00:00:00",
+        "spark_actual": 0.0,
+        "python_actual": 0.0,
+        "spark_prediction": 0.43321428745688173,
+        "python_prediction": 0.5038220056018118,
+        "prediction_difference_spark_minus_python": -0.07060771814493005
+      },
+      {
+        "restaurant_id": "R006",
+        "hour_start": "2026-06-01 00:00:00",
+        "spark_actual": 1.0,
+        "python_actual": 1.0,
+        "spark_prediction": 0.43321428745688173,
+        "python_prediction": 0.42092355430484235,
+        "prediction_difference_spark_minus_python": 0.01229073315203938
+      },
+      {
+        "restaurant_id": "R007",
+        "hour_start": "2026-06-01 00:00:00",
+        "spark_actual": 1.0,
+        "python_actual": 1.0,
+        "spark_prediction": 0.43321428745688173,
+        "python_prediction": 0.35457335335263684,
+        "prediction_difference_spark_minus_python": 0.07864093410424489
+      },
+      {
+        "restaurant_id": "R008",
+        "hour_start": "2026-06-01 00:00:00",
+        "spark_actual": 1.0,
+        "python_actual": 1.0,
+        "spark_prediction": 0.43321428745688173,
+        "python_prediction": 0.3758808669589638,
+        "prediction_difference_spark_minus_python": 0.05733342049791795
+      },
+      {
+        "restaurant_id": "R009",
+        "hour_start": "2026-06-01 00:00:00",
+        "spark_actual": 0.0,
+        "python_actual": 0.0,
+        "spark_prediction": 0.43321428745688173,
+        "python_prediction": 0.4580681349601847,
+        "prediction_difference_spark_minus_python": -0.024853847503302995
+      },
+      {
+        "restaurant_id": "R010",
+        "hour_start": "2026-06-01 00:00:00",
+        "spark_actual": 2.0,
+        "python_actual": 2.0,
+        "spark_prediction": 0.43321428745688173,
+        "python_prediction": 0.42343914685330164,
+        "prediction_difference_spark_minus_python": 0.00977514060358009
+      },
+      {
+        "restaurant_id": "R011",
+        "hour_start": "2026-06-01 00:00:00",
+        "spark_actual": 0.0,
+        "python_actual": 0.0,
+        "spark_prediction": 0.43321428745688173,
+        "python_prediction": 0.44447602263742114,
+        "prediction_difference_spark_minus_python": -0.011261735180539412
+      },
+      {
+        "restaurant_id": "R012",
+        "hour_start": "2026-06-01 00:00:00",
+        "spark_actual": 0.0,
+        "python_actual": 0.0,
+        "spark_prediction": 0.43321428745688173,
+        "python_prediction": 0.4012970213168649,
+        "prediction_difference_spark_minus_python": 0.03191726614001683
+      },
+      {
+        "restaurant_id": "R013",
+        "hour_start": "2026-06-01 00:00:00",
+        "spark_actual": 1.0,
+        "python_actual": 1.0,
+        "spark_prediction": 0.43321428745688173,
+        "python_prediction": 0.4437268373303496,
+        "prediction_difference_spark_minus_python": -0.010512549873467891
+      },
+      {
+        "restaurant_id": "R014",
+        "hour_start": "2026-06-01 00:00:00",
+        "spark_actual": 1.0,
+        "python_actual": 1.0,
+        "spark_prediction": 0.35362136638152075,
+        "python_prediction": 0.4008419085384226,
+        "prediction_difference_spark_minus_python": -0.04722054215690186
+      },
+      {
+        "restaurant_id": "R015",
+        "hour_start": "2026-06-01 00:00:00",
+        "spark_actual": 0.0,
+        "python_actual": 0.0,
+        "spark_prediction": 0.43321428745688173,
+        "python_prediction": 0.4026973470271452,
+        "prediction_difference_spark_minus_python": 0.030516940429736517
+      },
+      {
+        "restaurant_id": "R016",
+        "hour_start": "2026-06-01 00:00:00",
+        "spark_actual": 0.0,
+        "python_actual": 0.0,
+        "spark_prediction": 0.43321428745688173,
+        "python_prediction": 0.4347307588068114,
+        "prediction_difference_spark_minus_python": -0.00151647134992966
+      },
+      {
+        "restaurant_id": "R017",
+        "hour_start": "2026-06-01 00:00:00",
+        "spark_actual": 0.0,
+        "python_actual": 0.0,
+        "spark_prediction": 0.43321428745688173,
+        "python_prediction": 0.4353856112696059,
+        "prediction_difference_spark_minus_python": -0.0021713238127241685
+      },
+      {
+        "restaurant_id": "R018",
+        "hour_start": "2026-06-01 00:00:00",
+        "spark_actual": 1.0,
+        "python_actual": 1.0,
+        "spark_prediction": 0.43321428745688173,
+        "python_prediction": 0.4284352203177568,
+        "prediction_difference_spark_minus_python": 0.004779067139124904
+      },
+      {
+        "restaurant_id": "R019",
+        "hour_start": "2026-06-01 00:00:00",
+        "spark_actual": 1.0,
+        "python_actual": 1.0,
+        "spark_prediction": 0.43321428745688173,
+        "python_prediction": 0.41675924560155925,
+        "prediction_difference_spark_minus_python": 0.016455041855322483
+      },
+      {
+        "restaurant_id": "R020",
+        "hour_start": "2026-06-01 00:00:00",
+        "spark_actual": 0.0,
+        "python_actual": 0.0,
+        "spark_prediction": 0.43321428745688173,
+        "python_prediction": 0.4090152430107806,
+        "prediction_difference_spark_minus_python": 0.024199044446101103
+      },
+      {
+        "restaurant_id": "R021",
+        "hour_start": "2026-06-01 00:00:00",
+        "spark_actual": 1.0,
+        "python_actual": 1.0,
+        "spark_prediction": 0.43321428745688173,
+        "python_prediction": 0.4164976381003881,
+        "prediction_difference_spark_minus_python": 0.01671664935649364
+      },
+      {
+        "restaurant_id": "R022",
+        "hour_start": "2026-06-01 00:00:00",
+        "spark_actual": 0.0,
+        "python_actual": 0.0,
+        "spark_prediction": 0.43321428745688173,
+        "python_prediction": 0.4170698310966821,
+        "prediction_difference_spark_minus_python": 0.01614445636019962
+      },
+      {
+        "restaurant_id": "R023",
+        "hour_start": "2026-06-01 00:00:00",
+        "spark_actual": 1.0,
+        "python_actual": 1.0,
+        "spark_prediction": 0.43321428745688173,
+        "python_prediction": 0.3859932428785021,
+        "prediction_difference_spark_minus_python": 0.04722104457837961
+      },
+      {
+        "restaurant_id": "R024",
+        "hour_start": "2026-06-01 00:00:00",
+        "spark_actual": 1.0,
+        "python_actual": 1.0,
+        "spark_prediction": 0.43321428745688173,
+        "python_prediction": 0.4316399346009729,
+        "prediction_difference_spark_minus_python": 0.0015743528559088449
+      },
+      {
+        "restaurant_id": "R025",
+        "hour_start": "2026-06-01 00:00:00",
+        "spark_actual": 0.0,
+        "python_actual": 0.0,
+        "spark_prediction": 0.43321428745688173,
+        "python_prediction": 0.41730837071052373,
+        "prediction_difference_spark_minus_python": 0.015905916746357995
+      }
+    ],
+    "mean_absolute_prediction_difference": 0.032172604099914376
+  },
+  "interpretation": "Metrics need not match: preprocessing implementations, random forest parameterization, and boosting algorithms differ. Do not infer framework superiority from these runs."
+}

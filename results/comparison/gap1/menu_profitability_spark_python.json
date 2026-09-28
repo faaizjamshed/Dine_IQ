@@ -1,0 +1,49 @@
+{
+  "rows_compared": 200,
+  "target": "menu-level units, distinct order count, revenue, estimated cost and contribution margin",
+  "metric_comparison": {
+    "units_sold": {
+      "rows": 200,
+      "exact_matches_at_1e_8": 200,
+      "within_tolerance_0_01": 200,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0,
+      "mismatch_rows_at_0_01": 0
+    },
+    "order_count": {
+      "rows": 200,
+      "exact_matches_at_1e_8": 200,
+      "within_tolerance_0_01": 200,
+      "max_abs_difference": 0.0,
+      "mean_abs_difference": 0.0,
+      "mismatch_rows_at_0_01": 0
+    },
+    "revenue": {
+      "rows": 200,
+      "exact_matches_at_1e_8": 190,
+      "within_tolerance_0_01": 200,
+      "max_abs_difference": 1.1920928955078125e-07,
+      "mean_abs_difference": 3.0081719160079956e-09,
+      "mismatch_rows_at_0_01": 0
+    },
+    "estimated_cost": {
+      "rows": 200,
+      "exact_matches_at_1e_8": 54,
+      "within_tolerance_0_01": 200,
+      "max_abs_difference": 2.6553869247436523e-05,
+      "mean_abs_difference": 3.6512850783765314e-07,
+      "mismatch_rows_at_0_01": 0
+    },
+    "contribution_margin": {
+      "rows": 200,
+      "exact_matches_at_1e_8": 54,
+      "within_tolerance_0_01": 200,
+      "max_abs_difference": 2.658367156982422e-05,
+      "mean_abs_difference": 3.652740269899368e-07,
+      "mismatch_rows_at_0_01": 0
+    }
+  },
+  "classification_compared": false,
+  "row_examples_over_tolerance": [],
+  "interpretation": "Pandas reads and independently cleans frozen raw CSV; Spark table is canonical-v4-derived. No tolerance mismatches; residual sub-cent differences are floating-point aggregation order. Duplicate tie winner/cleaning logic can differ. Currency is unspecified."
+}

@@ -1,0 +1,106 @@
+{
+  "categories": {
+    "cat-biryani-rice": {
+      "elasticity": -1.15
+    },
+    "cat-karahi-handi": {
+      "elasticity": -0.42
+    },
+    "cat-bbq-kebabs": {
+      "elasticity": -0.88
+    },
+    "cat-burgers": {
+      "elasticity": -1.35
+    },
+    "cat-chinese": {
+      "elasticity": -1.05
+    },
+    "cat-wraps-rolls": {
+      "elasticity": -1.28
+    },
+    "cat-snacks-sides": {
+      "elasticity": -1.62
+    },
+    "cat-desserts": {
+      "elasticity": -1.45
+    },
+    "cat-beverages": {
+      "elasticity": -1.85
+    },
+    "cat-soups-salads": {
+      "elasticity": -1.1
+    },
+    "cat-family-deals": {
+      "elasticity": -0.75
+    },
+    "cat-breakfast": {
+      "elasticity": -0.95
+    }
+  },
+  "discount": {
+    "liftPer10Pct": 6.8,
+    "fatigueAbovePct": 15,
+    "fatigueDampener": 0.45
+  },
+  "prep": {
+    "shortfallConversion": 0.72,
+    "excessWastagePer10Pct": 1.6
+  },
+  "limits": {
+    "priceChangePct": [
+      -20,
+      20
+    ],
+    "discountPct": [
+      0,
+      30
+    ],
+    "prepChangePct": [
+      -30,
+      10
+    ],
+    "horizonDays": [
+      7,
+      14,
+      30
+    ]
+  },
+  "assumptions": [
+    {
+      "metric": "Price elasticity",
+      "value": "Category-level",
+      "detail": "From historical price tests; |e| < 1 means inelastic demand"
+    },
+    {
+      "metric": "Discount demand lift",
+      "value": "+6.8% per 10%",
+      "detail": "Saturates above 15% discount (fatigue dampener 0.45)"
+    },
+    {
+      "metric": "Unit cost",
+      "value": "Held constant",
+      "detail": "From the item contribution model; no supplier changes assumed"
+    },
+    {
+      "metric": "Competitor response",
+      "value": "Not modeled",
+      "detail": "Estimates assume no matching price moves by competitors"
+    },
+    {
+      "metric": "Baseline volume",
+      "value": "Trailing 30 days",
+      "detail": "Scaled to the selected filters and horizon"
+    }
+  ],
+  "notes": [
+    "Output is a model estimate, not an actual result — validate with a controlled rollout before committing.",
+    "Elasticity is a category-level estimate; individual items may deviate from it.",
+    "Estimates exclude second-order effects such as basket composition and channel-mix shifts."
+  ],
+  "model": {
+    "name": "WhatIf ScenarioEngine (sklearn)",
+    "version": "1.4",
+    "pipeline": "python",
+    "confidence": 0.87
+  }
+}

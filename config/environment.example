@@ -1,0 +1,15 @@
+# Reference only. Application reads process environment, not this file.
+DINEIQ_ENV=development
+DINEIQ_BIND=127.0.0.1
+DINEIQ_PORT=5000
+# Set to an absolute extracted bundle path to serve without HDFS:
+# DINEIQ_ARTIFACT_ROOT=/path/to/serving-v1
+# DINEIQ_DATABASE_PATH=/persistent/path/operations.sqlite3
+# Production: inject a random secret of at least 32 characters from your manager,
+# or mount a secret file. Do not set both the value and _FILE.
+# DINEIQ_SESSION_SECRET_FILE=/run/secrets/session
+# DINEIQ_TRUSTED_HOSTS=dineiq.example.org
+# DINEIQ_COOKIE_SECURE=1
+# DINEIQ_TRUST_PROXY=1
+# DINEIQ_BOOTSTRAP_ADMIN_EMAIL=your-admin-address
+# DINEIQ_BOOTSTRAP_ADMIN_PASSWORD_FILE=/run/secrets/bootstrap-password

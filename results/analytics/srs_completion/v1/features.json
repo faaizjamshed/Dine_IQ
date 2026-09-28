@@ -1,0 +1,499 @@
+{
+  "version": "v1",
+  "status": "COMPLETE",
+  "source": "hdfs://localhost:9000/dineq/processed/v4",
+  "hdfs_output": "hdfs://localhost:9000/dineq/results/srs_completion/v1",
+  "outputs": {
+    "catalog": {
+      "rows": 200,
+      "columns": [
+        "category_id",
+        "menu_item_id",
+        "item_name",
+        "base_price",
+        "cost_price",
+        "preparation_time_min",
+        "is_vegetarian",
+        "is_available",
+        "launch_date",
+        "category_name"
+      ],
+      "keys": [
+        "menu_item_id"
+      ],
+      "hdfs": "hdfs://localhost:9000/dineq/results/srs_completion/v1/catalog",
+      "local": "results\\analytics\\srs_completion\\v1\\catalog.parquet",
+      "sha256": "38b6be98ea77db114356cdb0920564b3f7fcacb9d9f2fdc890d1f562f73fadd4"
+    },
+    "customers": {
+      "rows": 75000,
+      "columns": [
+        "customer_id",
+        "signup_date"
+      ],
+      "keys": [
+        "customer_id"
+      ],
+      "hdfs": "hdfs://localhost:9000/dineq/results/srs_completion/v1/customers",
+      "local": "results\\analytics\\srs_completion\\v1\\customers.parquet",
+      "sha256": "2d93b106b6ef22a58b3f7f2a9a72f7e0919dd04acdac6ab31ea22de318c4e2f6"
+    },
+    "promotions": {
+      "rows": 80,
+      "columns": [
+        "promotion_id",
+        "promotion_name",
+        "promotion_type",
+        "discount_type",
+        "discount_value",
+        "start_date",
+        "end_date",
+        "minimum_order_value",
+        "channel",
+        "is_active"
+      ],
+      "keys": [
+        "promotion_id"
+      ],
+      "hdfs": "hdfs://localhost:9000/dineq/results/srs_completion/v1/promotions",
+      "local": "results\\analytics\\srs_completion\\v1\\promotions.parquet",
+      "sha256": "075aa78fefff8160fd2b0664b6f18c9308a118b64c87eb5ecdf91f6acbc6399d"
+    },
+    "price_events": {
+      "rows": 2992,
+      "columns": [
+        "price_history_id",
+        "menu_item_id",
+        "restaurant_id",
+        "old_price",
+        "new_price",
+        "effective_from",
+        "effective_to",
+        "change_reason"
+      ],
+      "keys": [
+        "price_history_id"
+      ],
+      "hdfs": "hdfs://localhost:9000/dineq/results/srs_completion/v1/price_events",
+      "local": "results\\analytics\\srs_completion\\v1\\price_events.parquet",
+      "sha256": "00f1e2f96b991282cf5fbf85d394566802cb046ca74bd87828786248cdfdebcc"
+    },
+    "inventory_snapshots": {
+      "rows": 90000,
+      "columns": [
+        "inventory_id",
+        "restaurant_id",
+        "menu_item_id",
+        "record_date",
+        "opening_stock",
+        "stock_received",
+        "stock_used",
+        "closing_stock",
+        "reorder_level",
+        "stock_status"
+      ],
+      "keys": [
+        "inventory_id"
+      ],
+      "hdfs": "hdfs://localhost:9000/dineq/results/srs_completion/v1/inventory_snapshots",
+      "local": "results\\analytics\\srs_completion\\v1\\inventory_snapshots.parquet",
+      "sha256": "0f93f837c1706c0a6caec3c2ea71eac01487043c3485b6ede9a1b8fe13a9a6e5"
+    },
+    "menu_features": {
+      "rows": 200,
+      "columns": [
+        "menu_item_id",
+        "category_id",
+        "item_name",
+        "base_price",
+        "cost_price",
+        "preparation_time_min",
+        "is_vegetarian",
+        "is_available",
+        "launch_date",
+        "category_name",
+        "units",
+        "orders",
+        "revenue",
+        "cost",
+        "margin",
+        "gross_revenue",
+        "before_item_discount_revenue",
+        "promo_orders",
+        "promo_revenue",
+        "weekend_units",
+        "first_sale",
+        "last_sale",
+        "units_recent_90d",
+        "units_previous_90d",
+        "invalid_revenue_lines",
+        "invalid_cost_lines",
+        "buyers",
+        "repeat_buyers",
+        "order_associated_rating",
+        "rated_orders",
+        "rating_recent_90d",
+        "rating_previous_90d",
+        "waste_units",
+        "waste_cost"
+      ],
+      "keys": [
+        "menu_item_id"
+      ],
+      "hdfs": "hdfs://localhost:9000/dineq/results/srs_completion/v1/menu_features",
+      "local": "results\\analytics\\srs_completion\\v1\\menu_features.parquet",
+      "sha256": "c6c6bdd36e3c98a049c339ee1b650529d010446ca003a88827d27bc754c6afeb"
+    },
+    "daily_item_location": {
+      "rows": 1388541,
+      "columns": [
+        "restaurant_id",
+        "menu_item_id",
+        "category_id",
+        "day",
+        "units",
+        "orders",
+        "revenue",
+        "margin",
+        "cost",
+        "promo_units",
+        "list_value",
+        "buyers"
+      ],
+      "keys": [
+        "restaurant_id",
+        "menu_item_id",
+        "day"
+      ],
+      "hdfs": "hdfs://localhost:9000/dineq/results/srs_completion/v1/daily_item_location",
+      "local": "results\\analytics\\srs_completion\\v1\\daily_item_location.parquet",
+      "sha256": "8708ffd984b383ecbaa9913f8d9dde191d6e31f946be624fba94ac72ad8e2dc8"
+    },
+    "daily_demand": {
+      "rows": 131757,
+      "columns": [
+        "level",
+        "entity",
+        "day",
+        "units"
+      ],
+      "keys": [
+        "level",
+        "entity",
+        "day"
+      ],
+      "hdfs": "hdfs://localhost:9000/dineq/results/srs_completion/v1/daily_demand",
+      "local": "results\\analytics\\srs_completion\\v1\\daily_demand.parquet",
+      "sha256": "e4795b88b306cbc11bc65771895fba7f706dcc0e488381a6ef4c532eade7eb44"
+    },
+    "location_menu": {
+      "rows": 5000,
+      "columns": [
+        "restaurant_id",
+        "menu_item_id",
+        "units",
+        "revenue",
+        "margin",
+        "cost"
+      ],
+      "keys": [
+        "restaurant_id",
+        "menu_item_id"
+      ],
+      "hdfs": "hdfs://localhost:9000/dineq/results/srs_completion/v1/location_menu",
+      "local": "results\\analytics\\srs_completion\\v1\\location_menu.parquet",
+      "sha256": "6cc0bd916c27fd86f4ec1b5382fb50a7b57f342b50fc172ab84239eb66172027"
+    },
+    "peak_periods": {
+      "rows": 242884,
+      "columns": [
+        "restaurant_id",
+        "ordering_channel",
+        "month",
+        "weekday",
+        "hour",
+        "orders",
+        "revenue"
+      ],
+      "keys": [
+        "restaurant_id",
+        "ordering_channel",
+        "month",
+        "weekday",
+        "hour"
+      ],
+      "hdfs": "hdfs://localhost:9000/dineq/results/srs_completion/v1/peak_periods",
+      "local": "results\\analytics\\srs_completion\\v1\\peak_periods.parquet",
+      "sha256": "38643be7b525022bcc74aba921f089d5a916d670adff9e795eee4bec59638976"
+    },
+    "customer_features": {
+      "rows": 75000,
+      "columns": [
+        "customer_id",
+        "signup_date",
+        "frequency",
+        "monetary",
+        "aov",
+        "first_order",
+        "last_order",
+        "visit_days",
+        "promo_orders",
+        "mean_discount_pct",
+        "weekend_orders",
+        "locations",
+        "category_diversity",
+        "item_diversity",
+        "preferred_ordering_channel",
+        "preferred_hour",
+        "preferred_category_name"
+      ],
+      "keys": [
+        "customer_id"
+      ],
+      "hdfs": "hdfs://localhost:9000/dineq/results/srs_completion/v1/customer_features",
+      "local": "results\\analytics\\srs_completion\\v1\\customer_features.parquet",
+      "sha256": "8330217e4ca9a23158309dff676902b510a0a869fab5389b7f6b1d2f686bc165"
+    },
+    "customer_month": {
+      "rows": 425751,
+      "columns": [
+        "customer_id",
+        "month",
+        "orders",
+        "spend",
+        "visit_days",
+        "last_order_day",
+        "promo_orders",
+        "categories"
+      ],
+      "keys": [
+        "customer_id",
+        "month"
+      ],
+      "hdfs": "hdfs://localhost:9000/dineq/results/srs_completion/v1/customer_month",
+      "local": "results\\analytics\\srs_completion\\v1\\customer_month.parquet",
+      "sha256": "c6a3f571934251dbcfe7546ddaf531aaeddf6cdf604e09d54c06c72e26ff66a8"
+    },
+    "customer_order_history": {
+      "rows": 611151,
+      "columns": [
+        "order_id",
+        "customer_id",
+        "restaurant_id",
+        "promotion_id",
+        "order_datetime",
+        "day",
+        "month",
+        "ordering_channel",
+        "final_amount",
+        "subtotal",
+        "discount_amount"
+      ],
+      "keys": [
+        "order_id"
+      ],
+      "hdfs": "hdfs://localhost:9000/dineq/results/srs_completion/v1/customer_order_history",
+      "local": "results\\analytics\\srs_completion\\v1\\customer_order_history.parquet",
+      "sha256": "1032576d099bb9be2f2d6d8f04b88d304d8581fcf07dc9c42e8300afc0d927ce"
+    },
+    "basket_pairs": {
+      "rows": 19900,
+      "columns": [
+        "item_b",
+        "item_a",
+        "pair_count",
+        "count_a",
+        "count_b",
+        "basket_count",
+        "support",
+        "confidence_a_to_b",
+        "confidence_b_to_a",
+        "lift"
+      ],
+      "keys": [
+        "item_a",
+        "item_b"
+      ],
+      "hdfs": "hdfs://localhost:9000/dineq/results/srs_completion/v1/basket_pairs",
+      "local": "results\\analytics\\srs_completion\\v1\\basket_pairs.parquet",
+      "sha256": "d1d6317b2b6f04fda9e4d53a34262b4ec4066dcf2311ffff5f754e5d24c7ff4e"
+    },
+    "basket_sizes": {
+      "rows": 15,
+      "columns": [
+        "distinct_items",
+        "count"
+      ],
+      "keys": [
+        "distinct_items"
+      ],
+      "hdfs": "hdfs://localhost:9000/dineq/results/srs_completion/v1/basket_sizes",
+      "local": "results\\analytics\\srs_completion\\v1\\basket_sizes.parquet",
+      "sha256": "9a4850af31ce18560ee698e1a3b90ecb0666b90a0f034e60bd87d08e40a1017e"
+    },
+    "wastage_daily": {
+      "rows": 107711,
+      "columns": [
+        "menu_item_id",
+        "restaurant_id",
+        "day",
+        "waste_units",
+        "waste_cost",
+        "category_id"
+      ],
+      "keys": [
+        "restaurant_id",
+        "menu_item_id",
+        "day"
+      ],
+      "hdfs": "hdfs://localhost:9000/dineq/results/srs_completion/v1/wastage_daily",
+      "local": "results\\analytics\\srs_completion\\v1\\wastage_daily.parquet",
+      "sha256": "f12df48d27a267500ba6baceeacbd7d407fb6c96ff051d02e5e3ddbe703b1a9d"
+    },
+    "wastage_reasons": {
+      "rows": 24246,
+      "columns": [
+        "restaurant_id",
+        "menu_item_id",
+        "reason",
+        "waste_units",
+        "waste_cost"
+      ],
+      "keys": [
+        "restaurant_id",
+        "menu_item_id",
+        "reason"
+      ],
+      "hdfs": "hdfs://localhost:9000/dineq/results/srs_completion/v1/wastage_reasons",
+      "local": "results\\analytics\\srs_completion\\v1\\wastage_reasons.parquet",
+      "sha256": "ca46ecc2865eadf0128ca89124cd8795917c71d2908a8f3f2b1308abfade37be"
+    },
+    "weekly_operations": {
+      "rows": 388454,
+      "columns": [
+        "restaurant_id",
+        "menu_item_id",
+        "category_id",
+        "week",
+        "units",
+        "orders",
+        "promo_units",
+        "revenue",
+        "margin",
+        "waste_units",
+        "waste_cost"
+      ],
+      "keys": [
+        "restaurant_id",
+        "menu_item_id",
+        "week"
+      ],
+      "hdfs": "hdfs://localhost:9000/dineq/results/srs_completion/v1/weekly_operations",
+      "local": "results\\analytics\\srs_completion\\v1\\weekly_operations.parquet",
+      "sha256": "e3228b2a02e929e8eb44d99935c323c8ebe745c3cd0ae877bf844118071cd835"
+    },
+    "wastage_inventory_alignment": {
+      "rows": 107711,
+      "columns": [
+        "restaurant_id",
+        "menu_item_id",
+        "day",
+        "waste_units",
+        "waste_cost",
+        "snapshot_stock_used",
+        "snapshot_opening",
+        "snapshot_received",
+        "snapshot_closing",
+        "units",
+        "promo_units",
+        "preparation_quantity"
+      ],
+      "keys": [
+        "restaurant_id",
+        "menu_item_id",
+        "day"
+      ],
+      "hdfs": "hdfs://localhost:9000/dineq/results/srs_completion/v1/wastage_inventory_alignment",
+      "local": "results\\analytics\\srs_completion\\v1\\wastage_inventory_alignment.parquet",
+      "sha256": "fcb5faafe4b4c468e95cd7f4d0d3a804b5906860482c0c82c6df9a214cf41489"
+    },
+    "rating_events": {
+      "rows": 218391,
+      "columns": [
+        "rating_id",
+        "order_id",
+        "customer_id",
+        "restaurant_id",
+        "rating",
+        "food_rating",
+        "rating_date",
+        "day",
+        "promoted",
+        "identity_mismatch",
+        "before_purchase"
+      ],
+      "keys": [
+        "rating_id"
+      ],
+      "hdfs": "hdfs://localhost:9000/dineq/results/srs_completion/v1/rating_events",
+      "local": "results\\analytics\\srs_completion\\v1\\rating_events.parquet",
+      "sha256": "751a434413f0165179f1b4f06baf3c02187fc8fecf917e3ae1c9e7133db732ea"
+    },
+    "rating_context": {
+      "rows": 163510,
+      "columns": [
+        "menu_item_id",
+        "restaurant_id",
+        "month",
+        "promoted",
+        "order_associated_rating",
+        "rating_count"
+      ],
+      "keys": [
+        "menu_item_id",
+        "restaurant_id",
+        "month",
+        "promoted"
+      ],
+      "hdfs": "hdfs://localhost:9000/dineq/results/srs_completion/v1/rating_context",
+      "local": "results\\analytics\\srs_completion\\v1\\rating_context.parquet",
+      "sha256": "ab642266e6cc69a122091c7d1d3b93ab5f0202bed0a1d83df7bae826586e6d12"
+    },
+    "transaction_quality_candidates": {
+      "rows": 0,
+      "columns": [
+        "order_id",
+        "customer_id",
+        "restaurant_id",
+        "promotion_id",
+        "order_datetime",
+        "ordering_channel",
+        "order_status",
+        "subtotal",
+        "discount_amount",
+        "tax_amount",
+        "delivery_fee",
+        "final_amount",
+        "payment_method",
+        "order_month"
+      ],
+      "keys": [
+        "order_id"
+      ],
+      "hdfs": "hdfs://localhost:9000/dineq/results/srs_completion/v1/transaction_quality_candidates",
+      "local": "results\\analytics\\srs_completion\\v1\\transaction_quality_candidates.parquet",
+      "sha256": "ff9559fe10e373da21da37d5dd4f7c964ebd6c7180736677fbbff640a445dfcb"
+    }
+  },
+  "start": "2025-03-01",
+  "as_of": "2026-08-31",
+  "weekday_encoding": "Monday=0",
+  "source_orders": 611151,
+  "rating_semantics": "Order-associated food_rating proxy, not direct item ratings; future-dated ratings excluded.",
+  "inventory_semantics": "Dated source snapshots, not daily consumption flows. No forward-fill in descriptive totals.",
+  "preparation_quantity": "Unavailable in canonical schema; never imputed as actual preparation.",
+  "revenue_semantics": "line_total - order_discount * line_total / source subtotal; static menu cost; positive quantity/nonnegative line values.",
+  "basket_count": 611135,
+  "source_quality_evidence": "results/spark/quality_cleaning.json",
+  "elapsed_seconds": 99.42
+}

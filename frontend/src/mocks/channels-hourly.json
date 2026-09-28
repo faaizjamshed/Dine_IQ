@@ -1,0 +1,325 @@
+{
+  "data": {
+    "channels": [
+      {
+        "channel": "dine_in",
+        "label": "Dine-in"
+      },
+      {
+        "channel": "delivery",
+        "label": "Delivery"
+      },
+      {
+        "channel": "takeaway",
+        "label": "Takeaway"
+      },
+      {
+        "channel": "app",
+        "label": "App"
+      }
+    ],
+    "hours": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "values": [
+      {
+        "channel": "dine_in",
+        "hour": 10,
+        "orders": 295
+      },
+      {
+        "channel": "dine_in",
+        "hour": 11,
+        "orders": 563
+      },
+      {
+        "channel": "dine_in",
+        "hour": 12,
+        "orders": 831
+      },
+      {
+        "channel": "dine_in",
+        "hour": 13,
+        "orders": 1194
+      },
+      {
+        "channel": "dine_in",
+        "hour": 14,
+        "orders": 977
+      },
+      {
+        "channel": "dine_in",
+        "hour": 15,
+        "orders": 456
+      },
+      {
+        "channel": "dine_in",
+        "hour": 16,
+        "orders": 348
+      },
+      {
+        "channel": "dine_in",
+        "hour": 17,
+        "orders": 402
+      },
+      {
+        "channel": "dine_in",
+        "hour": 18,
+        "orders": 563
+      },
+      {
+        "channel": "dine_in",
+        "hour": 19,
+        "orders": 697
+      },
+      {
+        "channel": "dine_in",
+        "hour": 20,
+        "orders": 1122
+      },
+      {
+        "channel": "dine_in",
+        "hour": 21,
+        "orders": 1266
+      },
+      {
+        "channel": "dine_in",
+        "hour": 22,
+        "orders": 777
+      },
+      {
+        "channel": "dine_in",
+        "hour": 23,
+        "orders": 509
+      },
+      {
+        "channel": "delivery",
+        "hour": 10,
+        "orders": 217
+      },
+      {
+        "channel": "delivery",
+        "hour": 11,
+        "orders": 414
+      },
+      {
+        "channel": "delivery",
+        "hour": 12,
+        "orders": 611
+      },
+      {
+        "channel": "delivery",
+        "hour": 13,
+        "orders": 650
+      },
+      {
+        "channel": "delivery",
+        "hour": 14,
+        "orders": 532
+      },
+      {
+        "channel": "delivery",
+        "hour": 15,
+        "orders": 335
+      },
+      {
+        "channel": "delivery",
+        "hour": 16,
+        "orders": 256
+      },
+      {
+        "channel": "delivery",
+        "hour": 17,
+        "orders": 296
+      },
+      {
+        "channel": "delivery",
+        "hour": 18,
+        "orders": 414
+      },
+      {
+        "channel": "delivery",
+        "hour": 19,
+        "orders": 512
+      },
+      {
+        "channel": "delivery",
+        "hour": 20,
+        "orders": 825
+      },
+      {
+        "channel": "delivery",
+        "hour": 21,
+        "orders": 931
+      },
+      {
+        "channel": "delivery",
+        "hour": 22,
+        "orders": 771
+      },
+      {
+        "channel": "delivery",
+        "hour": 23,
+        "orders": 374
+      },
+      {
+        "channel": "takeaway",
+        "hour": 10,
+        "orders": 183
+      },
+      {
+        "channel": "takeaway",
+        "hour": 11,
+        "orders": 350
+      },
+      {
+        "channel": "takeaway",
+        "hour": 12,
+        "orders": 516
+      },
+      {
+        "channel": "takeaway",
+        "hour": 13,
+        "orders": 742
+      },
+      {
+        "channel": "takeaway",
+        "hour": 14,
+        "orders": 449
+      },
+      {
+        "channel": "takeaway",
+        "hour": 15,
+        "orders": 283
+      },
+      {
+        "channel": "takeaway",
+        "hour": 16,
+        "orders": 216
+      },
+      {
+        "channel": "takeaway",
+        "hour": 17,
+        "orders": 250
+      },
+      {
+        "channel": "takeaway",
+        "hour": 18,
+        "orders": 349
+      },
+      {
+        "channel": "takeaway",
+        "hour": 19,
+        "orders": 433
+      },
+      {
+        "channel": "takeaway",
+        "hour": 20,
+        "orders": 697
+      },
+      {
+        "channel": "takeaway",
+        "hour": 21,
+        "orders": 583
+      },
+      {
+        "channel": "takeaway",
+        "hour": 22,
+        "orders": 483
+      },
+      {
+        "channel": "takeaway",
+        "hour": 23,
+        "orders": 316
+      },
+      {
+        "channel": "app",
+        "hour": 10,
+        "orders": 101
+      },
+      {
+        "channel": "app",
+        "hour": 11,
+        "orders": 193
+      },
+      {
+        "channel": "app",
+        "hour": 12,
+        "orders": 286
+      },
+      {
+        "channel": "app",
+        "hour": 13,
+        "orders": 304
+      },
+      {
+        "channel": "app",
+        "hour": 14,
+        "orders": 249
+      },
+      {
+        "channel": "app",
+        "hour": 15,
+        "orders": 157
+      },
+      {
+        "channel": "app",
+        "hour": 16,
+        "orders": 120
+      },
+      {
+        "channel": "app",
+        "hour": 17,
+        "orders": 138
+      },
+      {
+        "channel": "app",
+        "hour": 18,
+        "orders": 193
+      },
+      {
+        "channel": "app",
+        "hour": 19,
+        "orders": 323
+      },
+      {
+        "channel": "app",
+        "hour": 20,
+        "orders": 385
+      },
+      {
+        "channel": "app",
+        "hour": 21,
+        "orders": 435
+      },
+      {
+        "channel": "app",
+        "hour": 22,
+        "orders": 267
+      },
+      {
+        "channel": "app",
+        "hour": 23,
+        "orders": 175
+      }
+    ]
+  },
+  "meta": {
+    "generatedAt": "2026-09-24T08:29:51.861Z",
+    "filters": {},
+    "note": "Per-channel hourly order distribution; each channel row sums to its 30-day order total."
+  }
+}

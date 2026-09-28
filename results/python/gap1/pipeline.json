@@ -1,0 +1,17 @@
+{
+  "source": "frozen raw CSV; independently deduplicated by order_item_id and independently recomputed valid line totals; completed orders only",
+  "input_files": [
+    "data/generated/orders.csv",
+    "data/generated/order_items.csv",
+    "data/generated/menu_items.csv"
+  ],
+  "cleaning_semantics": "drop duplicate order/order-item IDs keeping first; retain positive qty/unit price, non-null item discount, nonnegative recomputed line total, valid nonnegative order discount and positive source subtotal; allocate order discount in proportion to each line total; static item cost",
+  "discount_allocation": "net item revenue = recomputed item line total - order discount * item line total / source order subtotal",
+  "processed_order_item_rows": 2816539,
+  "duplicate_order_item_ids_skipped": 600,
+  "chunks": 16,
+  "menu_items": 200,
+  "elapsed_seconds": 171.879,
+  "output": "results/python/gap1/menu_profitability.csv",
+  "limitations": "Independent source-CSV cleaning may differ on duplicate winner and quality-repair details from canonical Spark v4; compare rows and report actual differences; no label/target or model loaded from Spark."
+}

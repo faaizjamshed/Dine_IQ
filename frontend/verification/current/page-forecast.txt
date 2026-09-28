@@ -1,0 +1,134 @@
+DineIQ
+
+ANALYTICS PLATFORM
+
+OVERVIEW
+
+Executive Dashboard
+
+INTELLIGENCE
+
+Menu Intelligence
+Customer Intelligence
+Basket & Bundles
+
+OPERATIONS
+
+Demand Forecast
+Wastage
+Locations
+Channels
+
+DECISIONS & ACTIONS
+
+Pricing & Promotions
+Anomalies
+Recommendations
+What-If Simulator
+
+PLATFORM
+
+Model Comparison
+Reports & Export
+Admin
+Collapse
+Demand Forecast
+Full history
+Outlets:
+All outlets
+Categories:
+All categories
+Channels:
+All channels
+API CONNECTED
+API CONNECTED
+Search
+⌘K
+F
+
+Multi-day revenue/item forecasts, prediction intervals, MAPE and confidence are unavailable. Use the hourly predictor with explicit lag inputs. Spark training day_of_week maps Sunday=0; Python training uses pandas Monday=0. Python inference here uses its native Monday=0 convention. Metrics are same-period but feature semantics differ; this is not an exact controlled model comparison.
+
+Scope: Historical model evaluation · hourly restaurant order arrivals · Multi-day revenue/item forecasts, prediction intervals, MAPE and confidence are unavailable. Use the hourly predictor with explicit lag inputs. Spark training day_of_week maps Sunday=0; Python training uses pandas Monday=0. Python inference here uses its native Monday=0 convention. Metrics are same-period but feature semantics differ; this is not an exact controlled model comparison.
+
+Multi-day forecast orders
+—
+Data unavailable
+Forecast revenue
+—
+Model estimate — not actuals
+Backtest MAPE
+—
+Not supplied by the backend
+Bias
+—
+positive = over-forecast
+Confidence
+—
+Model-reported
+Horizon
+—
+Forecast window
+Hourly Demand Prediction
+
+Existing persisted model · provide observed order counts for the same restaurant
+
+Restaurant
+Select restaurant
+DineIQ Bahadurabad · Karachi
+DineIQ Bahadurabad · Karachi
+DineIQ Bahria Town · Rawalpindi
+DineIQ Blue Area · Islamabad
+DineIQ Canal Road · Faisalabad
+DineIQ Cantt · Multan
+DineIQ Clifton · Karachi
+DineIQ Clifton · Karachi
+DineIQ D-Ground · Faisalabad
+DineIQ DHA · Karachi
+DineIQ DHA · Lahore
+DineIQ DHA · Karachi
+DineIQ F-10 · Islamabad
+DineIQ F-7 · Islamabad
+DineIQ G-11 · Islamabad
+DineIQ Gulberg · Lahore
+DineIQ Gulberg · Lahore
+DineIQ Gulgasht · Multan
+DineIQ Gulshan · Karachi
+DineIQ Gulshan · Karachi
+DineIQ Johar Town · Lahore
+DineIQ Model Town · Lahore
+DineIQ North Nazimabad · Karachi
+DineIQ North Nazimabad · Karachi
+DineIQ Saddar · Rawalpindi
+Target hour (UTC)
+Orders 1 hour before target
+Orders 24 hours before target
+Orders 168 hours before target
+Predict hourly orders
+Demand Forecast vs Actuals
+
+Daily forecast and confidence intervals unavailable; use the hourly predictor
+
+No forecast data for the selected filters.
+
+Adjust the date range or clear filters to see the modelled window.
+
+Model Accuracy (Backtest)
+
+Held-out hourly order predictions; model weekday semantics differ
+
+MODEL	PIPELINE	MAE	RMSE	R²	HORIZON
+gradient_boosted_trees	Spark	1.023	1.393	0.503	1 hour
+random_forest	Python	1.024	1.389	0.506	1 hour
+
+Historical evaluation only. Lower MAE/RMSE is better; compare the documented feature semantics before interpreting model differences.
+
+Item-Level Forecast (Next 7 Days)
+
+Forecast quantity vs trailing 7-day actuals — model estimates
+
+ITEM	CATEGORY	ACTUAL (7D)	FORECAST (7D)	DELTA	CONF.	TREND
+No items match “”.
+
+Showing 0 of 0 items · trend flag from the API
+
+Classic Burger 1

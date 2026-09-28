@@ -1,0 +1,109 @@
+Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=2 -XX:CICompilerCount=2
+Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=2 -XX:CICompilerCount=2
+26/09/27 10:03:36 WARN Shell: Did not find winutils.exe: java.io.FileNotFoundException: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset. -see https://wiki.apache.org/hadoop/WindowsProblems
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+26/09/27 10:03:36 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+26/09/27 10:03:37 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+26/09/27 10:03:37 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+[Stage 57:>                                                         (0 + 1) / 1]                                                                                DineIQ Analytics listening on http://127.0.0.1:5001
+ * Serving Flask app 'backend'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5001
+Press CTRL+C to quit
+127.0.0.1 - - [27/Sep/2026 10:03:50] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:03:51] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:03:53] "GET /api/auth/session HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:03:53] "GET /api/auth/session HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:03:53] "POST /api/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:03:53] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:03:53] "GET /api/overview HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:03:53] "GET /api/filters HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:03:53] "GET /api/intelligence/menu?limit=1000 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:03:53] "GET /api/demand/peak-hours HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:03:53] "GET /api/intelligence/menu?limit=1000 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:03:53] "GET /api/intelligence/recommendations?limit=1000 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:03:53] "GET /api/intelligence/anomalies?limit=1000 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:03:53] "GET /api/auth/session HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:03:53] "GET /api/auth/session HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:03:54] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:03:54] "GET /api/filters HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:03:54] "GET /api/demand/peak-hours HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:03:54] "GET /api/overview HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:03:54] "GET /api/intelligence/menu?limit=1000 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:03:54] "GET /api/intelligence/menu?limit=1000 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:03:54] "GET /api/intelligence/recommendations?limit=1000 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:03:54] "GET /api/intelligence/anomalies?limit=1000 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:03:55] "GET /api/intelligence/menu?limit=1000 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:03:55] "GET /api/intelligence/menu?limit=1000 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:03:55] "GET /api/intelligence/menu?limit=1000 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:03:55] "GET /api/customer-segments HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:03:55] "GET /api/intelligence/customers?limit=1000 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:03:55] "GET /api/intelligence/churn-risk?limit=1000 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:03:56] "GET /api/intelligence/baskets?limit=1000 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:03:56] "GET /api/intelligence/menu?limit=1000 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:03:59] "GET /api/ml/demand-comparison?limit=100 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:03:59] "GET /api/intelligence/menu?limit=1000 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:03:59] "GET /api/wastage HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:03:59] "GET /api/restaurants?limit=1000 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:03:59] "GET /api/reports/wastage_risk HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:03:59] "GET /api/export/wastage_risk?format=json&limit=5000 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:00] "GET /api/restaurants?limit=1000 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:00] "GET /api/restaurants?limit=1000 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:00] "GET /api/ratings HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:00] "GET /api/intelligence/menu?limit=1000 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:00] "GET /api/ratings HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:00] "GET /api/reports/locations_menu HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:00] "GET /api/reports/locations_menu HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:00] "GET /api/export/locations_menu?format=json&limit=5000 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:00] "GET /api/reports/locations_menu HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:00] "GET /api/export/locations_menu?format=json&limit=5000 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:00] "GET /api/export/locations_menu?format=json&limit=5000 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:01] "GET /api/channels HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:01] "GET /api/channels HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:01] "GET /api/intelligence/promotions?limit=1000 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:01] "GET /api/promotions?limit=1000 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:01] "GET /api/intelligence/menu?limit=1000 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:01] "GET /api/reports/price_sensitivity HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:02] "GET /api/export/price_sensitivity?format=json&limit=5000 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:07] "GET /api/intelligence/anomalies?limit=1000 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:08] "GET /api/intelligence/recommendations?limit=1000 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:10] "GET /api/system/evidence HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:10] "GET /api/ml/demand-comparison?limit=100 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:10] "GET /api/system/spark-jobs HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:10] "GET /api/auth/me HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:11] "GET /api/system/spark-jobs HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:11] "GET /api/system/evidence HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:11] "GET /api/system/analytics-artifacts HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:11] "GET /api/system/audit?limit=100 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:12] "GET /api/auth/session HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:12] "GET /api/auth/session HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:12] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:12] "GET /api/filters HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:12] "GET /api/intelligence/menu?limit=1000 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:12] "GET /api/intelligence/menu?limit=1000 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:12] "GET /api/intelligence/menu?limit=1000 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:12] "GET /api/intelligence/menu?limit=1000 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:13] "GET /api/overview HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:13] "GET /api/intelligence/baskets?limit=1000 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:13] "GET /api/demand/peak-hours HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:13] "GET /api/intelligence/menu?limit=1000 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:13] "GET /api/intelligence/menu?limit=1000 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:13] "GET /api/overview HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:13] "GET /api/intelligence/menu?limit=1000 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:13] "GET /api/intelligence/menu?limit=1000 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:13] "GET /api/intelligence/menu?limit=1000 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:13] "POST /api/what-if HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:13] "GET /api/reports/menu HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:13] "GET /api/ml/demand-comparison?limit=100 HTTP/1.1" 200 -
+[Stage 99:>                                                         (0 + 4) / 4]                                                                                [Stage 100:>                                                        (0 + 3) / 3][Stage 100:======================================>                  (2 + 1) / 3]                                                                                127.0.0.1 - - [27/Sep/2026 10:04:17] "POST /api/ml/predict HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:17] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:17] "GET /api/intelligence/menu?limit=1000 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:18] "GET /api/intelligence/menu?limit=1000 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:18] "GET /api/channels HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:18] "GET /api/channels HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:20] "POST /api/auth/logout HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:20] "GET /api/overview HTTP/1.1" 401 -
+127.0.0.1 - - [27/Sep/2026 10:04:20] "GET /api/auth/session HTTP/1.1" 200 -
+127.0.0.1 - - [27/Sep/2026 10:04:20] "GET /api/auth/session HTTP/1.1" 200 -

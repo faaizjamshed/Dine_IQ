@@ -1,0 +1,218 @@
+{
+  "verified_at_local": "2026-09-26 13:05:51",
+  "browser": "Edg/154.0.4258.37",
+  "method": "Headless Edge via Chrome DevTools Protocol",
+  "url": "http://127.0.0.1:5001",
+  "routes": [
+    {
+      "route": "overview",
+      "expected_heading": "A clearer view of restaurant performance",
+      "actual_heading": "A clearer view of restaurant performance",
+      "passed": true,
+      "snapshot": {
+        "heading": "A clearer view of restaurant performance",
+        "loading": false,
+        "apiError": false,
+        "svgCount": 1,
+        "tableCount": 8,
+        "heatmapCount": 0,
+        "navActive": "overview",
+        "filterIds": [],
+        "bodyWidth": 1425,
+        "viewportWidth": 1440
+      }
+    },
+    {
+      "route": "menu",
+      "expected_heading": "Understand what earns its place",
+      "actual_heading": "Understand what earns its place",
+      "passed": true,
+      "snapshot": {
+        "heading": "Understand what earns its place",
+        "loading": false,
+        "apiError": false,
+        "svgCount": 0,
+        "tableCount": 400,
+        "heatmapCount": 0,
+        "navActive": "menu",
+        "filterIds": [
+          "menu-q",
+          "menu-category",
+          "menu-sort",
+          "profit-class"
+        ],
+        "bodyWidth": 1425,
+        "viewportWidth": 1440
+      }
+    },
+    {
+      "route": "locations",
+      "expected_heading": "Performance by place and customer segment",
+      "actual_heading": "Performance by place and customer segment",
+      "passed": true,
+      "snapshot": {
+        "heading": "Performance by place and customer segment",
+        "loading": false,
+        "apiError": false,
+        "svgCount": 0,
+        "tableCount": 30,
+        "heatmapCount": 0,
+        "navActive": "locations",
+        "filterIds": [
+          "city-filter"
+        ],
+        "bodyWidth": 1425,
+        "viewportWidth": 1440
+      }
+    },
+    {
+      "route": "orders",
+      "expected_heading": "Read the rhythm of demand",
+      "actual_heading": "Read the rhythm of demand",
+      "passed": true,
+      "snapshot": {
+        "heading": "Read the rhythm of demand",
+        "loading": false,
+        "apiError": false,
+        "svgCount": 1,
+        "tableCount": 18,
+        "heatmapCount": 1,
+        "navActive": "orders",
+        "filterIds": [
+          "month-from",
+          "month-to",
+          "channel-filter"
+        ],
+        "bodyWidth": 1425,
+        "viewportWidth": 1440
+      }
+    },
+    {
+      "route": "growth",
+      "expected_heading": "Measure offers and price movement",
+      "actual_heading": "Measure offers and price movement",
+      "passed": true,
+      "snapshot": {
+        "heading": "Measure offers and price movement",
+        "loading": false,
+        "apiError": false,
+        "svgCount": 0,
+        "tableCount": 85,
+        "heatmapCount": 0,
+        "navActive": "growth",
+        "filterIds": [
+          "promotion-search"
+        ],
+        "bodyWidth": 1425,
+        "viewportWidth": 1440
+      }
+    },
+    {
+      "route": "operations",
+      "expected_heading": "Track guest feedback and operating signals",
+      "actual_heading": "Track guest feedback and operating signals",
+      "passed": true,
+      "snapshot": {
+        "heading": "Track guest feedback and operating signals",
+        "loading": false,
+        "apiError": false,
+        "svgCount": 0,
+        "tableCount": 32,
+        "heatmapCount": 0,
+        "navActive": "operations",
+        "filterIds": [
+          "rating-restaurant"
+        ],
+        "bodyWidth": 1425,
+        "viewportWidth": 1440
+      }
+    },
+    {
+      "route": "forecast",
+      "expected_heading": "Explore an hourly order-arrival estimate",
+      "actual_heading": "Explore an hourly order-arrival estimate",
+      "passed": true,
+      "snapshot": {
+        "heading": "Explore an hourly order-arrival estimate",
+        "loading": false,
+        "apiError": false,
+        "svgCount": 1,
+        "tableCount": 0,
+        "heatmapCount": 0,
+        "navActive": "forecast",
+        "filterIds": [
+          "forecast-restaurant",
+          "forecast-hour",
+          "lag_1h",
+          "lag_24h",
+          "lag_168h"
+        ],
+        "bodyWidth": 1425,
+        "viewportWidth": 1440
+      }
+    },
+    {
+      "route": "system",
+      "expected_heading": "Know what powers each decision",
+      "actual_heading": "Know what powers each decision",
+      "passed": true,
+      "snapshot": {
+        "heading": "Know what powers each decision",
+        "loading": false,
+        "apiError": false,
+        "svgCount": 0,
+        "tableCount": 19,
+        "heatmapCount": 0,
+        "navActive": "system",
+        "filterIds": [],
+        "bodyWidth": 1425,
+        "viewportWidth": 1440
+      }
+    }
+  ],
+  "navigation_present": true,
+  "interactive_category_filter": {
+    "present": true,
+    "changed": true,
+    "value": "BBQ",
+    "visible_rows_after_filter": 14
+  },
+  "forecast_invalid_input": {
+    "formPresent": true,
+    "targetValue": "not-a-valid-hour",
+    "restaurantSelected": true,
+    "error_text": "target_hour must be an ISO 8601 timestamp at an exact hour.",
+    "loading_visible": false
+  },
+  "responsive_mobile": {
+    "viewport": 390,
+    "bodyWidth": 390,
+    "sidebarPosition": "fixed",
+    "menuButtonVisible": true
+  },
+  "api_unavailable_error_state": {
+    "visible": true,
+    "text": "Connection issueThe DineIQ API is unavailable. Start the local backend and try again."
+  },
+  "delayed_api_loading_state": {
+    "visible_during_delayed_fetch": true,
+    "loaded_real_data_after_delay": true,
+    "result": {
+      "heading": "Understand what earns its place",
+      "rows": 200,
+      "error": false
+    }
+  },
+  "screenshot": "results/app/browser_overview.png",
+  "expected_client_error_messages": [
+    "Failed to load resource: the server responded with a status of 400 (BAD REQUEST)"
+  ],
+  "browser_runtime_errors": [],
+  "all_routes_passed": true,
+  "all_checks_passed": true,
+  "notes": [
+    "API outage UI was tested by rejecting browser fetch requests; no analytical response/data was mocked.",
+    "Browser errors include Edge runtime/browser log errors and page JavaScript exceptions.",
+    "This is a local rendered smoke check, not a cross-browser or accessibility audit."
+  ]
+}

@@ -1,0 +1,536 @@
+{
+  "status": "PASS",
+  "dataset": "frozen full dataset",
+  "generated_at_manifest": "2026-09-24T14:21:45",
+  "seed": 42,
+  "expected_file_count": 11,
+  "actual_csv_file_count": 11,
+  "missing_files": [],
+  "unexpected_files": [],
+  "structural_failures": [],
+  "expected_data_quality_issues": [
+    {
+      "table": "customers",
+      "pk_duplicate_observations": 75,
+      "full_duplicate_observations": 75,
+      "nulls": {
+        "city": 226,
+        "last_order_date": 563
+      },
+      "issues": {}
+    },
+    {
+      "table": "menu_items",
+      "pk_duplicate_observations": 0,
+      "full_duplicate_observations": 0,
+      "nulls": {
+        "base_price": 1
+      },
+      "issues": {
+        "missing_base_price": 1
+      }
+    },
+    {
+      "table": "orders",
+      "pk_duplicate_observations": 0,
+      "full_duplicate_observations": 0,
+      "nulls": {
+        "promotion_id": 468311,
+        "ordering_channel": 1300
+      },
+      "issues": {
+        "negative_discount": 325,
+        "missing_channel": 1300
+      }
+    },
+    {
+      "table": "order_items",
+      "pk_duplicate_observations": 600,
+      "full_duplicate_observations": 600,
+      "nulls": {
+        "special_request": 2820924
+      },
+      "issues": {
+        "incorrect_line_total": 1498,
+        "invalid_quantity": 1500,
+        "other_line_total_formula_deviation": 2700,
+        "invalid_price": 1201
+      }
+    },
+    {
+      "table": "pricing_history",
+      "pk_duplicate_observations": 0,
+      "full_duplicate_observations": 0,
+      "nulls": {
+        "effective_to": 1000
+      },
+      "issues": {}
+    },
+    {
+      "table": "ratings",
+      "pk_duplicate_observations": 0,
+      "full_duplicate_observations": 0,
+      "nulls": {
+        "review_text": 180450,
+        "delivery_rating": 52750,
+        "food_rating": 440
+      },
+      "issues": {
+        "missing_food_rating": 440,
+        "invalid_rating": 220
+      }
+    },
+    {
+      "table": "wastage",
+      "pk_duplicate_observations": 0,
+      "full_duplicate_observations": 0,
+      "nulls": {},
+      "issues": {
+        "invalid_negative_quantity": 55
+      }
+    }
+  ],
+  "dirty_manifest_comparison": [
+    {
+      "table": "customers",
+      "issue": "missing_city",
+      "manifest_count": 225,
+      "observed_count": 226,
+      "match": false,
+      "status": "EXPLAINED_OBSERVATION_DELTA",
+      "explanation": "Observed CSV occurrences include a missing-city row repeated by the intentional duplicate-row injection."
+    },
+    {
+      "table": "customers",
+      "issue": "duplicate_rows",
+      "manifest_count": 75,
+      "observed_count": 75,
+      "match": true,
+      "status": "MATCH",
+      "explanation": null
+    },
+    {
+      "table": "orders",
+      "issue": "missing_channel",
+      "manifest_count": 1300,
+      "observed_count": 1300,
+      "match": true,
+      "status": "MATCH",
+      "explanation": null
+    },
+    {
+      "table": "orders",
+      "issue": "negative_discount",
+      "manifest_count": 325,
+      "observed_count": 325,
+      "match": true,
+      "status": "MATCH",
+      "explanation": null
+    },
+    {
+      "table": "order_items",
+      "issue": "invalid_quantity",
+      "manifest_count": 1500,
+      "observed_count": 1500,
+      "match": true,
+      "status": "MATCH",
+      "explanation": null
+    },
+    {
+      "table": "order_items",
+      "issue": "invalid_price",
+      "manifest_count": 1200,
+      "observed_count": 1201,
+      "match": false,
+      "status": "EXPLAINED_OBSERVATION_DELTA",
+      "explanation": "Observed CSV occurrences include an invalid-price row repeated by the intentional duplicate-row injection."
+    },
+    {
+      "table": "order_items",
+      "issue": "incorrect_line_total",
+      "manifest_count": 1500,
+      "observed_count": 1498,
+      "match": false,
+      "status": "EXPLAINED_OBSERVATION_DELTA",
+      "explanation": "Two injected incorrect-total records overlap invalid-price records; after those prices change, their residual is no longer exactly +999. Other formula deviations are separately reported and include secondary effects of invalid quantities/prices."
+    },
+    {
+      "table": "order_items",
+      "issue": "duplicate_rows",
+      "manifest_count": 600,
+      "observed_count": 600,
+      "match": true,
+      "status": "MATCH",
+      "explanation": null
+    },
+    {
+      "table": "ratings",
+      "issue": "invalid_rating",
+      "manifest_count": 220,
+      "observed_count": 220,
+      "match": true,
+      "status": "MATCH",
+      "explanation": null
+    },
+    {
+      "table": "ratings",
+      "issue": "missing_food_rating",
+      "manifest_count": 440,
+      "observed_count": 440,
+      "match": true,
+      "status": "MATCH",
+      "explanation": null
+    },
+    {
+      "table": "wastage",
+      "issue": "invalid_negative_quantity",
+      "manifest_count": 55,
+      "observed_count": 55,
+      "match": true,
+      "status": "MATCH",
+      "explanation": null
+    },
+    {
+      "table": "menu_items",
+      "issue": "missing_base_price",
+      "manifest_count": 1,
+      "observed_count": 1,
+      "match": true,
+      "status": "MATCH",
+      "explanation": null
+    }
+  ],
+  "minimum_scale": {
+    "customers": 75000,
+    "orders": 600000,
+    "order_items": 2500000,
+    "menu_items": 200,
+    "menu_categories": 15,
+    "restaurants": 25,
+    "pricing_history": 2500,
+    "promotions": 80,
+    "ratings": 200000,
+    "inventory": 80000,
+    "wastage": 100000
+  },
+  "tables": {
+    "customers": {
+      "file": "data\\generated\\customers.csv",
+      "exists": true,
+      "expected_rows": 75075,
+      "actual_rows": 75075,
+      "header": [
+        "customer_id",
+        "customer_name",
+        "gender",
+        "age",
+        "city",
+        "signup_date",
+        "customer_segment",
+        "preferred_channel",
+        "loyalty_points",
+        "is_churned",
+        "last_order_date"
+      ],
+      "pk_duplicate_observations": 75,
+      "full_duplicate_observations": 75,
+      "nulls": {
+        "city": 226,
+        "last_order_date": 563
+      },
+      "fk_orphans": {},
+      "dates": {
+        "signup_date": {
+          "min": "2025-03-01",
+          "max": "2026-08-30"
+        },
+        "last_order_date": {
+          "min": "2025-03-01",
+          "max": "2026-08-31"
+        }
+      },
+      "issues": {}
+    },
+    "restaurants": {
+      "file": "data\\generated\\restaurants.csv",
+      "exists": true,
+      "expected_rows": 25,
+      "actual_rows": 25,
+      "header": [
+        "restaurant_id",
+        "restaurant_name",
+        "city",
+        "area",
+        "opening_date",
+        "seating_capacity",
+        "location_type",
+        "is_active"
+      ],
+      "pk_duplicate_observations": 0,
+      "full_duplicate_observations": 0,
+      "nulls": {},
+      "fk_orphans": {},
+      "dates": {},
+      "issues": {}
+    },
+    "menu_categories": {
+      "file": "data\\generated\\menu_categories.csv",
+      "exists": true,
+      "expected_rows": 15,
+      "actual_rows": 15,
+      "header": [
+        "category_id",
+        "category_name",
+        "description",
+        "is_active"
+      ],
+      "pk_duplicate_observations": 0,
+      "full_duplicate_observations": 0,
+      "nulls": {},
+      "fk_orphans": {},
+      "dates": {},
+      "issues": {}
+    },
+    "menu_items": {
+      "file": "data\\generated\\menu_items.csv",
+      "exists": true,
+      "expected_rows": 200,
+      "actual_rows": 200,
+      "header": [
+        "menu_item_id",
+        "category_id",
+        "item_name",
+        "base_price",
+        "cost_price",
+        "preparation_time_min",
+        "is_vegetarian",
+        "is_available",
+        "launch_date"
+      ],
+      "pk_duplicate_observations": 0,
+      "full_duplicate_observations": 0,
+      "nulls": {
+        "base_price": 1
+      },
+      "fk_orphans": {},
+      "dates": {
+        "launch_date": {
+          "min": "2025-03-01",
+          "max": "2026-02-28"
+        }
+      },
+      "issues": {
+        "missing_base_price": 1
+      }
+    },
+    "promotions": {
+      "file": "data\\generated\\promotions.csv",
+      "exists": true,
+      "expected_rows": 80,
+      "actual_rows": 80,
+      "header": [
+        "promotion_id",
+        "promotion_name",
+        "promotion_type",
+        "discount_type",
+        "discount_value",
+        "start_date",
+        "end_date",
+        "minimum_order_value",
+        "channel",
+        "is_active"
+      ],
+      "pk_duplicate_observations": 0,
+      "full_duplicate_observations": 0,
+      "nulls": {},
+      "fk_orphans": {},
+      "dates": {},
+      "issues": {}
+    },
+    "orders": {
+      "file": "data\\generated\\orders.csv",
+      "exists": true,
+      "expected_rows": 650000,
+      "actual_rows": 650000,
+      "header": [
+        "order_id",
+        "customer_id",
+        "restaurant_id",
+        "promotion_id",
+        "order_datetime",
+        "ordering_channel",
+        "order_status",
+        "subtotal",
+        "discount_amount",
+        "tax_amount",
+        "delivery_fee",
+        "final_amount",
+        "payment_method"
+      ],
+      "pk_duplicate_observations": 0,
+      "full_duplicate_observations": 0,
+      "nulls": {
+        "promotion_id": 468311,
+        "ordering_channel": 1300
+      },
+      "fk_orphans": {},
+      "dates": {
+        "order_datetime": {
+          "min": "2025-03-01",
+          "max": "2026-08-31"
+        }
+      },
+      "issues": {
+        "negative_discount": 325,
+        "missing_channel": 1300
+      }
+    },
+    "order_items": {
+      "file": "data\\generated\\order_items.csv",
+      "exists": true,
+      "expected_rows": 3000600,
+      "actual_rows": 3000600,
+      "header": [
+        "order_item_id",
+        "order_id",
+        "menu_item_id",
+        "quantity",
+        "unit_price",
+        "item_discount",
+        "line_total",
+        "special_request"
+      ],
+      "pk_duplicate_observations": 600,
+      "full_duplicate_observations": 600,
+      "nulls": {
+        "special_request": 2820924
+      },
+      "fk_orphans": {},
+      "dates": {},
+      "issues": {
+        "incorrect_line_total": 1498,
+        "invalid_quantity": 1500,
+        "other_line_total_formula_deviation": 2700,
+        "invalid_price": 1201
+      }
+    },
+    "pricing_history": {
+      "file": "data\\generated\\pricing_history.csv",
+      "exists": true,
+      "expected_rows": 2992,
+      "actual_rows": 2992,
+      "header": [
+        "price_history_id",
+        "menu_item_id",
+        "restaurant_id",
+        "old_price",
+        "new_price",
+        "effective_from",
+        "effective_to",
+        "change_reason"
+      ],
+      "pk_duplicate_observations": 0,
+      "full_duplicate_observations": 0,
+      "nulls": {
+        "effective_to": 1000
+      },
+      "fk_orphans": {},
+      "dates": {},
+      "issues": {}
+    },
+    "ratings": {
+      "file": "data\\generated\\ratings.csv",
+      "exists": true,
+      "expected_rows": 220000,
+      "actual_rows": 220000,
+      "header": [
+        "rating_id",
+        "order_id",
+        "customer_id",
+        "restaurant_id",
+        "rating",
+        "food_rating",
+        "service_rating",
+        "delivery_rating",
+        "review_text",
+        "rating_date"
+      ],
+      "pk_duplicate_observations": 0,
+      "full_duplicate_observations": 0,
+      "nulls": {
+        "review_text": 180450,
+        "delivery_rating": 52750,
+        "food_rating": 440
+      },
+      "fk_orphans": {},
+      "dates": {
+        "rating_date": {
+          "min": "2025-03-01",
+          "max": "2026-09-07"
+        }
+      },
+      "issues": {
+        "missing_food_rating": 440,
+        "invalid_rating": 220
+      }
+    },
+    "inventory": {
+      "file": "data\\generated\\inventory.csv",
+      "exists": true,
+      "expected_rows": 90000,
+      "actual_rows": 90000,
+      "header": [
+        "inventory_id",
+        "restaurant_id",
+        "menu_item_id",
+        "record_date",
+        "opening_stock",
+        "stock_received",
+        "stock_used",
+        "closing_stock",
+        "reorder_level",
+        "stock_status"
+      ],
+      "pk_duplicate_observations": 0,
+      "full_duplicate_observations": 0,
+      "nulls": {},
+      "fk_orphans": {},
+      "dates": {
+        "record_date": {
+          "min": "2025-03-01",
+          "max": "2026-08-01"
+        }
+      },
+      "issues": {}
+    },
+    "wastage": {
+      "file": "data\\generated\\wastage.csv",
+      "exists": true,
+      "expected_rows": 110000,
+      "actual_rows": 110000,
+      "header": [
+        "wastage_id",
+        "restaurant_id",
+        "menu_item_id",
+        "wastage_date",
+        "quantity_wasted",
+        "unit_cost",
+        "wastage_cost",
+        "reason"
+      ],
+      "pk_duplicate_observations": 0,
+      "full_duplicate_observations": 0,
+      "nulls": {},
+      "fk_orphans": {},
+      "dates": {
+        "wastage_date": {
+          "min": "2025-03-01",
+          "max": "2026-08-31"
+        }
+      },
+      "issues": {
+        "invalid_negative_quantity": 55
+      }
+    }
+  }
+}

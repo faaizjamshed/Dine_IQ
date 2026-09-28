@@ -1,0 +1,171 @@
+DineIQ
+
+ANALYTICS PLATFORM
+
+OVERVIEW
+
+Executive Dashboard
+
+INTELLIGENCE
+
+Menu Intelligence
+Customer Intelligence
+Basket & Bundles
+
+OPERATIONS
+
+Demand Forecast
+Wastage
+Locations
+Channels
+
+DECISIONS & ACTIONS
+
+Pricing & Promotions
+Anomalies
+Recommendations
+What-If Simulator
+
+PLATFORM
+
+Model Comparison
+Reports & Export
+Admin
+Collapse
+Reports & Export
+Full history
+Outlets:
+All outlets
+Categories:
+All categories
+Channels:
+All channels
+API CONNECTED
+API CONNECTED
+Search
+⌘K
+F
+
+Reports use the full historical dataset and include at most 1000 rows. Reset global filters before running a report.
+
+Report Catalog
+
+CSV / Excel-compatible exports generated from the analytics warehouse
+
+11 reports
+Menu profitability
+CSV
+
+Existing canonical analytics report
+
+— rows · last generated Time unavailable
+
+Full historical scope; first 1000 rows. Total size is returned when run. Global filters are unsupported.
+
+Run
+Menu by location
+CSV
+
+Existing canonical analytics report
+
+— rows · last generated Time unavailable
+
+Full historical scope; first 1000 rows. Total size is returned when run. Global filters are unsupported.
+
+Run
+Basket rules
+CSV
+
+Existing canonical analytics report
+
+— rows · last generated Time unavailable
+
+Full historical scope; first 1000 rows. Total size is returned when run. Global filters are unsupported.
+
+Run
+Customer RFM
+CSV
+
+Existing canonical analytics report
+
+— rows · last generated Time unavailable
+
+Full historical scope; first 1000 rows. Total size is returned when run. Global filters are unsupported.
+
+Run
+Wastage dimensions
+CSV
+
+Existing canonical analytics report
+
+— rows · last generated Time unavailable
+
+Full historical scope; first 1000 rows. Total size is returned when run. Global filters are unsupported.
+
+Run
+Historical wastage burden
+CSV
+
+Existing canonical analytics report
+
+— rows · last generated Time unavailable
+
+Full historical scope; first 1000 rows. Total size is returned when run. Global filters are unsupported.
+
+Run
+Price-change observations
+CSV
+
+Existing canonical analytics report
+
+— rows · last generated Time unavailable
+
+Full historical scope; first 1000 rows. Total size is returned when run. Global filters are unsupported.
+
+Run
+Promotion cohorts
+CSV
+
+Existing canonical analytics report
+
+— rows · last generated Time unavailable
+
+Full historical scope; first 1000 rows. Total size is returned when run. Global filters are unsupported.
+
+Run
+Rating anomalies
+CSV
+
+Existing canonical analytics report
+
+— rows · last generated Time unavailable
+
+Full historical scope; first 1000 rows. Total size is returned when run. Global filters are unsupported.
+
+Run
+Sales anomalies
+CSV
+
+Existing canonical analytics report
+
+— rows · last generated Time unavailable
+
+Full historical scope; first 1000 rows. Total size is returned when run. Global filters are unsupported.
+
+Run
+Recommendation evidence
+CSV
+
+Existing canonical analytics report
+
+— rows · last generated Time unavailable
+
+Full historical scope; first 1000 rows. Total size is returned when run. Global filters are unsupported.
+
+Run
+
+No export run yet
+
+Run a report from the catalog to preview its sampled rows and download the CSV here.
+
+Classic Burger 1

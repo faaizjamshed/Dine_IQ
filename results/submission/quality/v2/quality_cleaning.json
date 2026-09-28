@@ -1,0 +1,1569 @@
+{
+  "contract_version": "submission-quality-v1",
+  "timestamp_utc": "2026-09-28T12:31:28.924295+00:00",
+  "source": "file:///D:/DineIQ/data/generated",
+  "processed_root": "hdfs://localhost:9000/dineq/submission/processed/v2",
+  "quality_root": "hdfs://localhost:9000/dineq/submission/quality/v2",
+  "canonical_v4_changed": false,
+  "all_passed": true,
+  "tables": {
+    "customers": {
+      "before_count": 75075,
+      "accepted_count": 62754,
+      "quarantine_count": 12246,
+      "exact_duplicate_copies_removed": 75,
+      "accounting_passed": true,
+      "rule_counts": {
+        "malformed_csv": 0,
+        "conflicting_primary_key": 0,
+        "required:customer_id": 0,
+        "required:signup_date": 0,
+        "invalid_type:age": 0,
+        "invalid_type:signup_date": 0,
+        "invalid_type:loyalty_points": 0,
+        "invalid_type:is_churned": 0,
+        "invalid_type:last_order_date": 0,
+        "domain:gender": 0,
+        "domain:customer_segment": 0,
+        "domain:preferred_channel": 0,
+        "nonnegative:age": 0,
+        "nonnegative:loyalty_points": 0,
+        "date_order": 12246
+      },
+      "repair_counts": {
+        "fill:city": 195
+      },
+      "rules": [
+        {
+          "id": "malformed_csv",
+          "action": "quarantine",
+          "description": "Malformed CSV record"
+        },
+        {
+          "id": "conflicting_primary_key",
+          "action": "quarantine",
+          "description": "Different source records share a primary key; quarantine all variants"
+        },
+        {
+          "id": "required:customer_id",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "required:signup_date",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "invalid_type:age",
+          "action": "quarantine",
+          "description": "Nonempty source must parse as int"
+        },
+        {
+          "id": "invalid_type:signup_date",
+          "action": "quarantine",
+          "description": "Nonempty source must parse as date"
+        },
+        {
+          "id": "invalid_type:loyalty_points",
+          "action": "quarantine",
+          "description": "Nonempty source must parse as int"
+        },
+        {
+          "id": "invalid_type:is_churned",
+          "action": "quarantine",
+          "description": "Nonempty source must parse as boolean"
+        },
+        {
+          "id": "invalid_type:last_order_date",
+          "action": "quarantine",
+          "description": "Nonempty source must parse as date"
+        },
+        {
+          "id": "domain:gender",
+          "action": "quarantine",
+          "description": "Allowed nonmissing values: Female, Male, Other"
+        },
+        {
+          "id": "domain:customer_segment",
+          "action": "quarantine",
+          "description": "Allowed nonmissing values: New, Regular, Loyal, High Value, Occasional"
+        },
+        {
+          "id": "domain:preferred_channel",
+          "action": "quarantine",
+          "description": "Allowed nonmissing values: Dine-In, Takeaway, Mobile App, Website, Delivery Partner"
+        },
+        {
+          "id": "nonnegative:age",
+          "action": "quarantine",
+          "description": "Present value must be zero or greater"
+        },
+        {
+          "id": "nonnegative:loyalty_points",
+          "action": "quarantine",
+          "description": "Present value must be zero or greater"
+        },
+        {
+          "id": "date_order",
+          "action": "quarantine",
+          "description": "last_order_date cannot precede signup_date; optional end may be absent"
+        },
+        {
+          "id": "exact_duplicate",
+          "action": "deduplicate",
+          "description": "Collapse identical complete source records; count removed copies separately"
+        },
+        {
+          "id": "fill:city",
+          "action": "repair",
+          "description": "Missing becomes Unknown; unrecognized present domains are quarantined"
+        }
+      ],
+      "accepted_path": "hdfs://localhost:9000/dineq/submission/processed/v2/customers",
+      "quarantine_path": "hdfs://localhost:9000/dineq/submission/quality/v2/quarantine/customers",
+      "readback_passed": true
+    },
+    "restaurants": {
+      "before_count": 25,
+      "accepted_count": 25,
+      "quarantine_count": 0,
+      "exact_duplicate_copies_removed": 0,
+      "accounting_passed": true,
+      "rule_counts": {
+        "malformed_csv": 0,
+        "conflicting_primary_key": 0,
+        "required:restaurant_id": 0,
+        "required:opening_date": 0,
+        "invalid_type:opening_date": 0,
+        "invalid_type:seating_capacity": 0,
+        "invalid_type:is_active": 0,
+        "domain:city": 0,
+        "domain:location_type": 0,
+        "nonnegative:seating_capacity": 0
+      },
+      "repair_counts": {},
+      "rules": [
+        {
+          "id": "malformed_csv",
+          "action": "quarantine",
+          "description": "Malformed CSV record"
+        },
+        {
+          "id": "conflicting_primary_key",
+          "action": "quarantine",
+          "description": "Different source records share a primary key; quarantine all variants"
+        },
+        {
+          "id": "required:restaurant_id",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "required:opening_date",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "invalid_type:opening_date",
+          "action": "quarantine",
+          "description": "Nonempty source must parse as date"
+        },
+        {
+          "id": "invalid_type:seating_capacity",
+          "action": "quarantine",
+          "description": "Nonempty source must parse as int"
+        },
+        {
+          "id": "invalid_type:is_active",
+          "action": "quarantine",
+          "description": "Nonempty source must parse as boolean"
+        },
+        {
+          "id": "domain:city",
+          "action": "quarantine",
+          "description": "Allowed nonmissing values: Karachi, Lahore, Islamabad, Rawalpindi, Faisalabad, Multan"
+        },
+        {
+          "id": "domain:location_type",
+          "action": "quarantine",
+          "description": "Allowed nonmissing values: High Street, Mall, Commercial, Residential"
+        },
+        {
+          "id": "nonnegative:seating_capacity",
+          "action": "quarantine",
+          "description": "Present value must be zero or greater"
+        },
+        {
+          "id": "exact_duplicate",
+          "action": "deduplicate",
+          "description": "Collapse identical complete source records; count removed copies separately"
+        }
+      ],
+      "accepted_path": "hdfs://localhost:9000/dineq/submission/processed/v2/restaurants",
+      "quarantine_path": "hdfs://localhost:9000/dineq/submission/quality/v2/quarantine/restaurants",
+      "readback_passed": true
+    },
+    "menu_categories": {
+      "before_count": 15,
+      "accepted_count": 15,
+      "quarantine_count": 0,
+      "exact_duplicate_copies_removed": 0,
+      "accounting_passed": true,
+      "rule_counts": {
+        "malformed_csv": 0,
+        "conflicting_primary_key": 0,
+        "required:category_id": 0,
+        "required:category_name": 0,
+        "invalid_type:is_active": 0,
+        "domain:category_name": 0
+      },
+      "repair_counts": {},
+      "rules": [
+        {
+          "id": "malformed_csv",
+          "action": "quarantine",
+          "description": "Malformed CSV record"
+        },
+        {
+          "id": "conflicting_primary_key",
+          "action": "quarantine",
+          "description": "Different source records share a primary key; quarantine all variants"
+        },
+        {
+          "id": "required:category_id",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "required:category_name",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "invalid_type:is_active",
+          "action": "quarantine",
+          "description": "Nonempty source must parse as boolean"
+        },
+        {
+          "id": "domain:category_name",
+          "action": "quarantine",
+          "description": "Allowed nonmissing values: Burgers, Pizza, Pakistani, BBQ, Beverages, Desserts, Chinese, Fast Food, Breakfast, Salads, Pasta, Seafood, Sandwiches, Rice, Coffee & Tea"
+        },
+        {
+          "id": "exact_duplicate",
+          "action": "deduplicate",
+          "description": "Collapse identical complete source records; count removed copies separately"
+        }
+      ],
+      "accepted_path": "hdfs://localhost:9000/dineq/submission/processed/v2/menu_categories",
+      "quarantine_path": "hdfs://localhost:9000/dineq/submission/quality/v2/quarantine/menu_categories",
+      "readback_passed": true
+    },
+    "menu_items": {
+      "before_count": 200,
+      "accepted_count": 200,
+      "quarantine_count": 0,
+      "exact_duplicate_copies_removed": 0,
+      "accounting_passed": true,
+      "rule_counts": {
+        "malformed_csv": 0,
+        "conflicting_primary_key": 0,
+        "required:menu_item_id": 0,
+        "required:category_id": 0,
+        "required:launch_date": 0,
+        "invalid_type:base_price": 0,
+        "nonfinite:base_price": 0,
+        "invalid_type:cost_price": 0,
+        "nonfinite:cost_price": 0,
+        "invalid_type:preparation_time_min": 0,
+        "invalid_type:is_vegetarian": 0,
+        "invalid_type:is_available": 0,
+        "invalid_type:launch_date": 0,
+        "positive:base_price": 0,
+        "positive:cost_price": 0,
+        "positive:preparation_time_min": 0,
+        "foreign_key:category_id": 0
+      },
+      "repair_counts": {},
+      "rules": [
+        {
+          "id": "malformed_csv",
+          "action": "quarantine",
+          "description": "Malformed CSV record"
+        },
+        {
+          "id": "conflicting_primary_key",
+          "action": "quarantine",
+          "description": "Different source records share a primary key; quarantine all variants"
+        },
+        {
+          "id": "required:menu_item_id",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "required:category_id",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "required:launch_date",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "invalid_type:base_price",
+          "action": "quarantine",
+          "description": "Nonempty source must parse as double"
+        },
+        {
+          "id": "nonfinite:base_price",
+          "action": "quarantine",
+          "description": "NaN and infinity are invalid"
+        },
+        {
+          "id": "invalid_type:cost_price",
+          "action": "quarantine",
+          "description": "Nonempty source must parse as double"
+        },
+        {
+          "id": "nonfinite:cost_price",
+          "action": "quarantine",
+          "description": "NaN and infinity are invalid"
+        },
+        {
+          "id": "invalid_type:preparation_time_min",
+          "action": "quarantine",
+          "description": "Nonempty source must parse as int"
+        },
+        {
+          "id": "invalid_type:is_vegetarian",
+          "action": "quarantine",
+          "description": "Nonempty source must parse as boolean"
+        },
+        {
+          "id": "invalid_type:is_available",
+          "action": "quarantine",
+          "description": "Nonempty source must parse as boolean"
+        },
+        {
+          "id": "invalid_type:launch_date",
+          "action": "quarantine",
+          "description": "Nonempty source must parse as date"
+        },
+        {
+          "id": "positive:base_price",
+          "action": "quarantine",
+          "description": "Present value must be greater than zero"
+        },
+        {
+          "id": "positive:cost_price",
+          "action": "quarantine",
+          "description": "Present value must be greater than zero"
+        },
+        {
+          "id": "positive:preparation_time_min",
+          "action": "quarantine",
+          "description": "Present value must be greater than zero"
+        },
+        {
+          "id": "foreign_key:category_id",
+          "action": "quarantine",
+          "description": "Nonmissing value must reference accepted menu_categories.category_id; rejected parents cascade"
+        },
+        {
+          "id": "exact_duplicate",
+          "action": "deduplicate",
+          "description": "Collapse identical complete source records; count removed copies separately"
+        }
+      ],
+      "accepted_path": "hdfs://localhost:9000/dineq/submission/processed/v2/menu_items",
+      "quarantine_path": "hdfs://localhost:9000/dineq/submission/quality/v2/quarantine/menu_items",
+      "readback_passed": true
+    },
+    "promotions": {
+      "before_count": 80,
+      "accepted_count": 80,
+      "quarantine_count": 0,
+      "exact_duplicate_copies_removed": 0,
+      "accounting_passed": true,
+      "rule_counts": {
+        "malformed_csv": 0,
+        "conflicting_primary_key": 0,
+        "required:promotion_id": 0,
+        "required:discount_type": 0,
+        "required:discount_value": 0,
+        "required:start_date": 0,
+        "required:end_date": 0,
+        "required:minimum_order_value": 0,
+        "invalid_type:discount_value": 0,
+        "nonfinite:discount_value": 0,
+        "invalid_type:start_date": 0,
+        "invalid_type:end_date": 0,
+        "invalid_type:minimum_order_value": 0,
+        "nonfinite:minimum_order_value": 0,
+        "invalid_type:is_active": 0,
+        "domain:promotion_type": 0,
+        "domain:discount_type": 0,
+        "domain:channel": 0,
+        "nonnegative:discount_value": 0,
+        "nonnegative:minimum_order_value": 0,
+        "date_order": 0,
+        "percentage_over_100": 0
+      },
+      "repair_counts": {},
+      "rules": [
+        {
+          "id": "malformed_csv",
+          "action": "quarantine",
+          "description": "Malformed CSV record"
+        },
+        {
+          "id": "conflicting_primary_key",
+          "action": "quarantine",
+          "description": "Different source records share a primary key; quarantine all variants"
+        },
+        {
+          "id": "required:promotion_id",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "required:discount_type",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "required:discount_value",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "required:start_date",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "required:end_date",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "required:minimum_order_value",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "invalid_type:discount_value",
+          "action": "quarantine",
+          "description": "Nonempty source must parse as double"
+        },
+        {
+          "id": "nonfinite:discount_value",
+          "action": "quarantine",
+          "description": "NaN and infinity are invalid"
+        },
+        {
+          "id": "invalid_type:start_date",
+          "action": "quarantine",
+          "description": "Nonempty source must parse as date"
+        },
+        {
+          "id": "invalid_type:end_date",
+          "action": "quarantine",
+          "description": "Nonempty source must parse as date"
+        },
+        {
+          "id": "invalid_type:minimum_order_value",
+          "action": "quarantine",
+          "description": "Nonempty source must parse as double"
+        },
+        {
+          "id": "nonfinite:minimum_order_value",
+          "action": "quarantine",
+          "description": "NaN and infinity are invalid"
+        },
+        {
+          "id": "invalid_type:is_active",
+          "action": "quarantine",
+          "description": "Nonempty source must parse as boolean"
+        },
+        {
+          "id": "domain:promotion_type",
+          "action": "quarantine",
+          "description": "Allowed nonmissing values: Seasonal, Acquisition, Retention, Flash Sale, Bundle"
+        },
+        {
+          "id": "domain:discount_type",
+          "action": "quarantine",
+          "description": "Allowed nonmissing values: Percentage, Fixed"
+        },
+        {
+          "id": "domain:channel",
+          "action": "quarantine",
+          "description": "Allowed nonmissing values: Dine-In, Takeaway, Mobile App, Website, Delivery Partner, All"
+        },
+        {
+          "id": "nonnegative:discount_value",
+          "action": "quarantine",
+          "description": "Present value must be zero or greater"
+        },
+        {
+          "id": "nonnegative:minimum_order_value",
+          "action": "quarantine",
+          "description": "Present value must be zero or greater"
+        },
+        {
+          "id": "date_order",
+          "action": "quarantine",
+          "description": "end_date cannot precede start_date; optional end may be absent"
+        },
+        {
+          "id": "percentage_over_100",
+          "action": "quarantine",
+          "description": "Percentage discount cannot exceed 100"
+        },
+        {
+          "id": "exact_duplicate",
+          "action": "deduplicate",
+          "description": "Collapse identical complete source records; count removed copies separately"
+        }
+      ],
+      "accepted_path": "hdfs://localhost:9000/dineq/submission/processed/v2/promotions",
+      "quarantine_path": "hdfs://localhost:9000/dineq/submission/quality/v2/quarantine/promotions",
+      "readback_passed": true
+    },
+    "orders": {
+      "before_count": 650000,
+      "accepted_count": 584306,
+      "quarantine_count": 65694,
+      "exact_duplicate_copies_removed": 0,
+      "accounting_passed": true,
+      "rule_counts": {
+        "malformed_csv": 0,
+        "conflicting_primary_key": 0,
+        "required:order_id": 0,
+        "required:customer_id": 0,
+        "required:restaurant_id": 0,
+        "required:order_datetime": 0,
+        "required:order_status": 0,
+        "required:subtotal": 0,
+        "required:discount_amount": 0,
+        "required:tax_amount": 0,
+        "required:delivery_fee": 0,
+        "required:final_amount": 0,
+        "invalid_type:order_datetime": 0,
+        "invalid_type:subtotal": 0,
+        "nonfinite:subtotal": 0,
+        "invalid_type:discount_amount": 0,
+        "nonfinite:discount_amount": 0,
+        "invalid_type:tax_amount": 0,
+        "nonfinite:tax_amount": 0,
+        "invalid_type:delivery_fee": 0,
+        "nonfinite:delivery_fee": 0,
+        "invalid_type:final_amount": 0,
+        "nonfinite:final_amount": 0,
+        "domain:ordering_channel": 0,
+        "domain:order_status": 0,
+        "domain:payment_method": 0,
+        "nonnegative:subtotal": 0,
+        "nonnegative:discount_amount": 325,
+        "nonnegative:tax_amount": 0,
+        "nonnegative:delivery_fee": 0,
+        "nonnegative:final_amount": 0,
+        "discount_exceeds_subtotal": 0,
+        "order_total_mismatch": 316,
+        "cancelled_settlement": 0,
+        "foreign_key:customer_id": 65403,
+        "foreign_key:restaurant_id": 0,
+        "foreign_key:promotion_id": 0
+      },
+      "repair_counts": {
+        "fill:ordering_channel": 1155
+      },
+      "rules": [
+        {
+          "id": "malformed_csv",
+          "action": "quarantine",
+          "description": "Malformed CSV record"
+        },
+        {
+          "id": "conflicting_primary_key",
+          "action": "quarantine",
+          "description": "Different source records share a primary key; quarantine all variants"
+        },
+        {
+          "id": "required:order_id",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "required:customer_id",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "required:restaurant_id",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "required:order_datetime",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "required:order_status",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "required:subtotal",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "required:discount_amount",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "required:tax_amount",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "required:delivery_fee",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "required:final_amount",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "invalid_type:order_datetime",
+          "action": "quarantine",
+          "description": "Nonempty source must parse as timestamp"
+        },
+        {
+          "id": "invalid_type:subtotal",
+          "action": "quarantine",
+          "description": "Nonempty source must parse as double"
+        },
+        {
+          "id": "nonfinite:subtotal",
+          "action": "quarantine",
+          "description": "NaN and infinity are invalid"
+        },
+        {
+          "id": "invalid_type:discount_amount",
+          "action": "quarantine",
+          "description": "Nonempty source must parse as double"
+        },
+        {
+          "id": "nonfinite:discount_amount",
+          "action": "quarantine",
+          "description": "NaN and infinity are invalid"
+        },
+        {
+          "id": "invalid_type:tax_amount",
+          "action": "quarantine",
+          "description": "Nonempty source must parse as double"
+        },
+        {
+          "id": "nonfinite:tax_amount",
+          "action": "quarantine",
+          "description": "NaN and infinity are invalid"
+        },
+        {
+          "id": "invalid_type:delivery_fee",
+          "action": "quarantine",
+          "description": "Nonempty source must parse as double"
+        },
+        {
+          "id": "nonfinite:delivery_fee",
+          "action": "quarantine",
+          "description": "NaN and infinity are invalid"
+        },
+        {
+          "id": "invalid_type:final_amount",
+          "action": "quarantine",
+          "description": "Nonempty source must parse as double"
+        },
+        {
+          "id": "nonfinite:final_amount",
+          "action": "quarantine",
+          "description": "NaN and infinity are invalid"
+        },
+        {
+          "id": "domain:ordering_channel",
+          "action": "quarantine",
+          "description": "Allowed nonmissing values: Dine-In, Takeaway, Mobile App, Website, Delivery Partner"
+        },
+        {
+          "id": "domain:order_status",
+          "action": "quarantine",
+          "description": "Allowed nonmissing values: Completed, Cancelled, Refunded"
+        },
+        {
+          "id": "domain:payment_method",
+          "action": "quarantine",
+          "description": "Allowed nonmissing values: Cash, Card, Mobile Wallet, Bank Transfer"
+        },
+        {
+          "id": "nonnegative:subtotal",
+          "action": "quarantine",
+          "description": "Present value must be zero or greater"
+        },
+        {
+          "id": "nonnegative:discount_amount",
+          "action": "quarantine",
+          "description": "Present value must be zero or greater"
+        },
+        {
+          "id": "nonnegative:tax_amount",
+          "action": "quarantine",
+          "description": "Present value must be zero or greater"
+        },
+        {
+          "id": "nonnegative:delivery_fee",
+          "action": "quarantine",
+          "description": "Present value must be zero or greater"
+        },
+        {
+          "id": "nonnegative:final_amount",
+          "action": "quarantine",
+          "description": "Present value must be zero or greater"
+        },
+        {
+          "id": "discount_exceeds_subtotal",
+          "action": "quarantine",
+          "description": "Discount cannot exceed subtotal"
+        },
+        {
+          "id": "order_total_mismatch",
+          "action": "quarantine",
+          "description": "Non-cancelled final = subtotal - discount + tax + delivery within PKR 0.011"
+        },
+        {
+          "id": "cancelled_settlement",
+          "action": "quarantine",
+          "description": "Cancelled orders retain quoted subtotal but must have zero settled final amount"
+        },
+        {
+          "id": "foreign_key:customer_id",
+          "action": "quarantine",
+          "description": "Nonmissing value must reference accepted customers.customer_id; rejected parents cascade"
+        },
+        {
+          "id": "foreign_key:restaurant_id",
+          "action": "quarantine",
+          "description": "Nonmissing value must reference accepted restaurants.restaurant_id; rejected parents cascade"
+        },
+        {
+          "id": "foreign_key:promotion_id",
+          "action": "quarantine",
+          "description": "Nonmissing value must reference accepted promotions.promotion_id; rejected parents cascade"
+        },
+        {
+          "id": "exact_duplicate",
+          "action": "deduplicate",
+          "description": "Collapse identical complete source records; count removed copies separately"
+        },
+        {
+          "id": "fill:ordering_channel",
+          "action": "repair",
+          "description": "Missing becomes Unknown; unrecognized present domains are quarantined"
+        }
+      ],
+      "accepted_path": "hdfs://localhost:9000/dineq/submission/processed/v2/orders",
+      "quarantine_path": "hdfs://localhost:9000/dineq/submission/quality/v2/quarantine/orders",
+      "readback_passed": true
+    },
+    "order_items": {
+      "before_count": 3000600,
+      "accepted_count": 2693856,
+      "quarantine_count": 306144,
+      "exact_duplicate_copies_removed": 600,
+      "accounting_passed": true,
+      "rule_counts": {
+        "malformed_csv": 0,
+        "conflicting_primary_key": 0,
+        "required:order_item_id": 0,
+        "required:order_id": 0,
+        "required:menu_item_id": 0,
+        "required:quantity": 0,
+        "required:unit_price": 0,
+        "required:item_discount": 0,
+        "invalid_type:quantity": 0,
+        "invalid_type:unit_price": 0,
+        "nonfinite:unit_price": 0,
+        "invalid_type:item_discount": 0,
+        "nonfinite:item_discount": 0,
+        "invalid_type:line_total": 0,
+        "nonfinite:line_total": 0,
+        "positive:quantity": 1500,
+        "positive:unit_price": 1200,
+        "nonnegative:item_discount": 0,
+        "discount_exceeds_line_value": 2698,
+        "derived_nonfinite": 0,
+        "foreign_key:order_id": 303728,
+        "foreign_key:menu_item_id": 0
+      },
+      "repair_counts": {
+        "recompute:line_total": 1351
+      },
+      "rules": [
+        {
+          "id": "malformed_csv",
+          "action": "quarantine",
+          "description": "Malformed CSV record"
+        },
+        {
+          "id": "conflicting_primary_key",
+          "action": "quarantine",
+          "description": "Different source records share a primary key; quarantine all variants"
+        },
+        {
+          "id": "required:order_item_id",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "required:order_id",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "required:menu_item_id",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "required:quantity",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "required:unit_price",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "required:item_discount",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "invalid_type:quantity",
+          "action": "quarantine",
+          "description": "Nonempty source must parse as int"
+        },
+        {
+          "id": "invalid_type:unit_price",
+          "action": "quarantine",
+          "description": "Nonempty source must parse as double"
+        },
+        {
+          "id": "nonfinite:unit_price",
+          "action": "quarantine",
+          "description": "NaN and infinity are invalid"
+        },
+        {
+          "id": "invalid_type:item_discount",
+          "action": "quarantine",
+          "description": "Nonempty source must parse as double"
+        },
+        {
+          "id": "nonfinite:item_discount",
+          "action": "quarantine",
+          "description": "NaN and infinity are invalid"
+        },
+        {
+          "id": "invalid_type:line_total",
+          "action": "quarantine",
+          "description": "Nonempty source must parse as double"
+        },
+        {
+          "id": "nonfinite:line_total",
+          "action": "quarantine",
+          "description": "NaN and infinity are invalid"
+        },
+        {
+          "id": "positive:quantity",
+          "action": "quarantine",
+          "description": "Present value must be greater than zero"
+        },
+        {
+          "id": "positive:unit_price",
+          "action": "quarantine",
+          "description": "Present value must be greater than zero"
+        },
+        {
+          "id": "nonnegative:item_discount",
+          "action": "quarantine",
+          "description": "Present value must be zero or greater"
+        },
+        {
+          "id": "discount_exceeds_line_value",
+          "action": "quarantine",
+          "description": "Discount cannot exceed quantity times unit price"
+        },
+        {
+          "id": "derived_nonfinite",
+          "action": "quarantine",
+          "description": "Derived amount must not overflow even when components are finite"
+        },
+        {
+          "id": "foreign_key:order_id",
+          "action": "quarantine",
+          "description": "Nonmissing value must reference accepted orders.order_id; rejected parents cascade"
+        },
+        {
+          "id": "foreign_key:menu_item_id",
+          "action": "quarantine",
+          "description": "Nonmissing value must reference accepted menu_items.menu_item_id; rejected parents cascade"
+        },
+        {
+          "id": "exact_duplicate",
+          "action": "deduplicate",
+          "description": "Collapse identical complete source records; count removed copies separately"
+        },
+        {
+          "id": "recompute:line_total",
+          "action": "repair",
+          "description": "Recompute derived value as round(quantity * unit_price - item_discount, 2) after validation"
+        }
+      ],
+      "accepted_path": "hdfs://localhost:9000/dineq/submission/processed/v2/order_items",
+      "quarantine_path": "hdfs://localhost:9000/dineq/submission/quality/v2/quarantine/order_items",
+      "readback_passed": true
+    },
+    "pricing_history": {
+      "before_count": 2992,
+      "accepted_count": 2992,
+      "quarantine_count": 0,
+      "exact_duplicate_copies_removed": 0,
+      "accounting_passed": true,
+      "rule_counts": {
+        "malformed_csv": 0,
+        "conflicting_primary_key": 0,
+        "required:price_history_id": 0,
+        "required:menu_item_id": 0,
+        "required:restaurant_id": 0,
+        "required:old_price": 0,
+        "required:new_price": 0,
+        "required:effective_from": 0,
+        "invalid_type:old_price": 0,
+        "nonfinite:old_price": 0,
+        "invalid_type:new_price": 0,
+        "nonfinite:new_price": 0,
+        "invalid_type:effective_from": 0,
+        "invalid_type:effective_to": 0,
+        "domain:change_reason": 0,
+        "positive:old_price": 0,
+        "positive:new_price": 0,
+        "date_order": 0,
+        "foreign_key:menu_item_id": 0,
+        "foreign_key:restaurant_id": 0
+      },
+      "repair_counts": {},
+      "rules": [
+        {
+          "id": "malformed_csv",
+          "action": "quarantine",
+          "description": "Malformed CSV record"
+        },
+        {
+          "id": "conflicting_primary_key",
+          "action": "quarantine",
+          "description": "Different source records share a primary key; quarantine all variants"
+        },
+        {
+          "id": "required:price_history_id",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "required:menu_item_id",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "required:restaurant_id",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "required:old_price",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "required:new_price",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "required:effective_from",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "invalid_type:old_price",
+          "action": "quarantine",
+          "description": "Nonempty source must parse as double"
+        },
+        {
+          "id": "nonfinite:old_price",
+          "action": "quarantine",
+          "description": "NaN and infinity are invalid"
+        },
+        {
+          "id": "invalid_type:new_price",
+          "action": "quarantine",
+          "description": "Nonempty source must parse as double"
+        },
+        {
+          "id": "nonfinite:new_price",
+          "action": "quarantine",
+          "description": "NaN and infinity are invalid"
+        },
+        {
+          "id": "invalid_type:effective_from",
+          "action": "quarantine",
+          "description": "Nonempty source must parse as date"
+        },
+        {
+          "id": "invalid_type:effective_to",
+          "action": "quarantine",
+          "description": "Nonempty source must parse as date"
+        },
+        {
+          "id": "domain:change_reason",
+          "action": "quarantine",
+          "description": "Allowed nonmissing values: Inflation, Supplier Cost, Seasonal Adjustment, Promotion End, Menu Review"
+        },
+        {
+          "id": "positive:old_price",
+          "action": "quarantine",
+          "description": "Present value must be greater than zero"
+        },
+        {
+          "id": "positive:new_price",
+          "action": "quarantine",
+          "description": "Present value must be greater than zero"
+        },
+        {
+          "id": "date_order",
+          "action": "quarantine",
+          "description": "effective_to cannot precede effective_from; optional end may be absent"
+        },
+        {
+          "id": "foreign_key:menu_item_id",
+          "action": "quarantine",
+          "description": "Nonmissing value must reference accepted menu_items.menu_item_id; rejected parents cascade"
+        },
+        {
+          "id": "foreign_key:restaurant_id",
+          "action": "quarantine",
+          "description": "Nonmissing value must reference accepted restaurants.restaurant_id; rejected parents cascade"
+        },
+        {
+          "id": "exact_duplicate",
+          "action": "deduplicate",
+          "description": "Collapse identical complete source records; count removed copies separately"
+        }
+      ],
+      "accepted_path": "hdfs://localhost:9000/dineq/submission/processed/v2/pricing_history",
+      "quarantine_path": "hdfs://localhost:9000/dineq/submission/quality/v2/quarantine/pricing_history",
+      "readback_passed": true
+    },
+    "ratings": {
+      "before_count": 220000,
+      "accepted_count": 197768,
+      "quarantine_count": 22232,
+      "exact_duplicate_copies_removed": 0,
+      "accounting_passed": true,
+      "rule_counts": {
+        "malformed_csv": 0,
+        "conflicting_primary_key": 0,
+        "required:rating_id": 0,
+        "required:order_id": 0,
+        "required:customer_id": 0,
+        "required:restaurant_id": 0,
+        "required:rating_date": 0,
+        "invalid_type:rating": 0,
+        "invalid_type:food_rating": 0,
+        "nonfinite:food_rating": 0,
+        "invalid_type:service_rating": 0,
+        "nonfinite:service_rating": 0,
+        "invalid_type:delivery_rating": 0,
+        "nonfinite:delivery_rating": 0,
+        "invalid_type:rating_date": 0,
+        "rating_range:rating": 220,
+        "rating_range:food_rating": 0,
+        "rating_range:service_rating": 0,
+        "rating_range:delivery_rating": 0,
+        "foreign_key:order_id": 22029,
+        "foreign_key:customer_id": 21932,
+        "foreign_key:restaurant_id": 0
+      },
+      "repair_counts": {},
+      "rules": [
+        {
+          "id": "malformed_csv",
+          "action": "quarantine",
+          "description": "Malformed CSV record"
+        },
+        {
+          "id": "conflicting_primary_key",
+          "action": "quarantine",
+          "description": "Different source records share a primary key; quarantine all variants"
+        },
+        {
+          "id": "required:rating_id",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "required:order_id",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "required:customer_id",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "required:restaurant_id",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "required:rating_date",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "invalid_type:rating",
+          "action": "quarantine",
+          "description": "Nonempty source must parse as int"
+        },
+        {
+          "id": "invalid_type:food_rating",
+          "action": "quarantine",
+          "description": "Nonempty source must parse as double"
+        },
+        {
+          "id": "nonfinite:food_rating",
+          "action": "quarantine",
+          "description": "NaN and infinity are invalid"
+        },
+        {
+          "id": "invalid_type:service_rating",
+          "action": "quarantine",
+          "description": "Nonempty source must parse as double"
+        },
+        {
+          "id": "nonfinite:service_rating",
+          "action": "quarantine",
+          "description": "NaN and infinity are invalid"
+        },
+        {
+          "id": "invalid_type:delivery_rating",
+          "action": "quarantine",
+          "description": "Nonempty source must parse as double"
+        },
+        {
+          "id": "nonfinite:delivery_rating",
+          "action": "quarantine",
+          "description": "NaN and infinity are invalid"
+        },
+        {
+          "id": "invalid_type:rating_date",
+          "action": "quarantine",
+          "description": "Nonempty source must parse as date"
+        },
+        {
+          "id": "rating_range:rating",
+          "action": "quarantine",
+          "description": "Present rating must be in [1, 5]"
+        },
+        {
+          "id": "rating_range:food_rating",
+          "action": "quarantine",
+          "description": "Present rating must be in [1, 5]"
+        },
+        {
+          "id": "rating_range:service_rating",
+          "action": "quarantine",
+          "description": "Present rating must be in [1, 5]"
+        },
+        {
+          "id": "rating_range:delivery_rating",
+          "action": "quarantine",
+          "description": "Present rating must be in [1, 5]"
+        },
+        {
+          "id": "foreign_key:order_id",
+          "action": "quarantine",
+          "description": "Nonmissing value must reference accepted orders.order_id; rejected parents cascade"
+        },
+        {
+          "id": "foreign_key:customer_id",
+          "action": "quarantine",
+          "description": "Nonmissing value must reference accepted customers.customer_id; rejected parents cascade"
+        },
+        {
+          "id": "foreign_key:restaurant_id",
+          "action": "quarantine",
+          "description": "Nonmissing value must reference accepted restaurants.restaurant_id; rejected parents cascade"
+        },
+        {
+          "id": "exact_duplicate",
+          "action": "deduplicate",
+          "description": "Collapse identical complete source records; count removed copies separately"
+        }
+      ],
+      "accepted_path": "hdfs://localhost:9000/dineq/submission/processed/v2/ratings",
+      "quarantine_path": "hdfs://localhost:9000/dineq/submission/quality/v2/quarantine/ratings",
+      "readback_passed": true
+    },
+    "inventory": {
+      "before_count": 90000,
+      "accepted_count": 90000,
+      "quarantine_count": 0,
+      "exact_duplicate_copies_removed": 0,
+      "accounting_passed": true,
+      "rule_counts": {
+        "malformed_csv": 0,
+        "conflicting_primary_key": 0,
+        "required:inventory_id": 0,
+        "required:restaurant_id": 0,
+        "required:menu_item_id": 0,
+        "required:record_date": 0,
+        "required:opening_stock": 0,
+        "required:stock_received": 0,
+        "required:stock_used": 0,
+        "required:closing_stock": 0,
+        "required:reorder_level": 0,
+        "invalid_type:record_date": 0,
+        "invalid_type:opening_stock": 0,
+        "invalid_type:stock_received": 0,
+        "invalid_type:stock_used": 0,
+        "invalid_type:closing_stock": 0,
+        "invalid_type:reorder_level": 0,
+        "domain:stock_status": 0,
+        "nonnegative:opening_stock": 0,
+        "nonnegative:stock_received": 0,
+        "nonnegative:stock_used": 0,
+        "nonnegative:closing_stock": 0,
+        "nonnegative:reorder_level": 0,
+        "stock_balance": 0,
+        "foreign_key:restaurant_id": 0,
+        "foreign_key:menu_item_id": 0
+      },
+      "repair_counts": {},
+      "rules": [
+        {
+          "id": "malformed_csv",
+          "action": "quarantine",
+          "description": "Malformed CSV record"
+        },
+        {
+          "id": "conflicting_primary_key",
+          "action": "quarantine",
+          "description": "Different source records share a primary key; quarantine all variants"
+        },
+        {
+          "id": "required:inventory_id",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "required:restaurant_id",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "required:menu_item_id",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "required:record_date",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "required:opening_stock",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "required:stock_received",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "required:stock_used",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "required:closing_stock",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "required:reorder_level",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "invalid_type:record_date",
+          "action": "quarantine",
+          "description": "Nonempty source must parse as date"
+        },
+        {
+          "id": "invalid_type:opening_stock",
+          "action": "quarantine",
+          "description": "Nonempty source must parse as int"
+        },
+        {
+          "id": "invalid_type:stock_received",
+          "action": "quarantine",
+          "description": "Nonempty source must parse as int"
+        },
+        {
+          "id": "invalid_type:stock_used",
+          "action": "quarantine",
+          "description": "Nonempty source must parse as int"
+        },
+        {
+          "id": "invalid_type:closing_stock",
+          "action": "quarantine",
+          "description": "Nonempty source must parse as int"
+        },
+        {
+          "id": "invalid_type:reorder_level",
+          "action": "quarantine",
+          "description": "Nonempty source must parse as int"
+        },
+        {
+          "id": "domain:stock_status",
+          "action": "quarantine",
+          "description": "Allowed nonmissing values: Low, Normal"
+        },
+        {
+          "id": "nonnegative:opening_stock",
+          "action": "quarantine",
+          "description": "Present value must be zero or greater"
+        },
+        {
+          "id": "nonnegative:stock_received",
+          "action": "quarantine",
+          "description": "Present value must be zero or greater"
+        },
+        {
+          "id": "nonnegative:stock_used",
+          "action": "quarantine",
+          "description": "Present value must be zero or greater"
+        },
+        {
+          "id": "nonnegative:closing_stock",
+          "action": "quarantine",
+          "description": "Present value must be zero or greater"
+        },
+        {
+          "id": "nonnegative:reorder_level",
+          "action": "quarantine",
+          "description": "Present value must be zero or greater"
+        },
+        {
+          "id": "stock_balance",
+          "action": "quarantine",
+          "description": "Closing = opening + received - used"
+        },
+        {
+          "id": "foreign_key:restaurant_id",
+          "action": "quarantine",
+          "description": "Nonmissing value must reference accepted restaurants.restaurant_id; rejected parents cascade"
+        },
+        {
+          "id": "foreign_key:menu_item_id",
+          "action": "quarantine",
+          "description": "Nonmissing value must reference accepted menu_items.menu_item_id; rejected parents cascade"
+        },
+        {
+          "id": "exact_duplicate",
+          "action": "deduplicate",
+          "description": "Collapse identical complete source records; count removed copies separately"
+        }
+      ],
+      "accepted_path": "hdfs://localhost:9000/dineq/submission/processed/v2/inventory",
+      "quarantine_path": "hdfs://localhost:9000/dineq/submission/quality/v2/quarantine/inventory",
+      "readback_passed": true
+    },
+    "wastage": {
+      "before_count": 110000,
+      "accepted_count": 109945,
+      "quarantine_count": 55,
+      "exact_duplicate_copies_removed": 0,
+      "accounting_passed": true,
+      "rule_counts": {
+        "malformed_csv": 0,
+        "conflicting_primary_key": 0,
+        "required:wastage_id": 0,
+        "required:restaurant_id": 0,
+        "required:menu_item_id": 0,
+        "required:wastage_date": 0,
+        "required:quantity_wasted": 0,
+        "required:unit_cost": 0,
+        "invalid_type:wastage_date": 0,
+        "invalid_type:quantity_wasted": 0,
+        "nonfinite:quantity_wasted": 0,
+        "invalid_type:unit_cost": 0,
+        "nonfinite:unit_cost": 0,
+        "invalid_type:wastage_cost": 0,
+        "nonfinite:wastage_cost": 0,
+        "domain:reason": 0,
+        "nonnegative:quantity_wasted": 55,
+        "nonnegative:unit_cost": 0,
+        "derived_nonfinite": 0,
+        "foreign_key:restaurant_id": 0,
+        "foreign_key:menu_item_id": 0
+      },
+      "repair_counts": {
+        "recompute:wastage_cost": 0
+      },
+      "rules": [
+        {
+          "id": "malformed_csv",
+          "action": "quarantine",
+          "description": "Malformed CSV record"
+        },
+        {
+          "id": "conflicting_primary_key",
+          "action": "quarantine",
+          "description": "Different source records share a primary key; quarantine all variants"
+        },
+        {
+          "id": "required:wastage_id",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "required:restaurant_id",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "required:menu_item_id",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "required:wastage_date",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "required:quantity_wasted",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "required:unit_cost",
+          "action": "quarantine",
+          "description": "Required value missing or unparseable"
+        },
+        {
+          "id": "invalid_type:wastage_date",
+          "action": "quarantine",
+          "description": "Nonempty source must parse as date"
+        },
+        {
+          "id": "invalid_type:quantity_wasted",
+          "action": "quarantine",
+          "description": "Nonempty source must parse as double"
+        },
+        {
+          "id": "nonfinite:quantity_wasted",
+          "action": "quarantine",
+          "description": "NaN and infinity are invalid"
+        },
+        {
+          "id": "invalid_type:unit_cost",
+          "action": "quarantine",
+          "description": "Nonempty source must parse as double"
+        },
+        {
+          "id": "nonfinite:unit_cost",
+          "action": "quarantine",
+          "description": "NaN and infinity are invalid"
+        },
+        {
+          "id": "invalid_type:wastage_cost",
+          "action": "quarantine",
+          "description": "Nonempty source must parse as double"
+        },
+        {
+          "id": "nonfinite:wastage_cost",
+          "action": "quarantine",
+          "description": "NaN and infinity are invalid"
+        },
+        {
+          "id": "domain:reason",
+          "action": "quarantine",
+          "description": "Allowed nonmissing values: Expired, Overproduction, Damaged, Preparation Error, Unsold"
+        },
+        {
+          "id": "nonnegative:quantity_wasted",
+          "action": "quarantine",
+          "description": "Present value must be zero or greater"
+        },
+        {
+          "id": "nonnegative:unit_cost",
+          "action": "quarantine",
+          "description": "Present value must be zero or greater"
+        },
+        {
+          "id": "derived_nonfinite",
+          "action": "quarantine",
+          "description": "Derived amount must not overflow even when components are finite"
+        },
+        {
+          "id": "foreign_key:restaurant_id",
+          "action": "quarantine",
+          "description": "Nonmissing value must reference accepted restaurants.restaurant_id; rejected parents cascade"
+        },
+        {
+          "id": "foreign_key:menu_item_id",
+          "action": "quarantine",
+          "description": "Nonmissing value must reference accepted menu_items.menu_item_id; rejected parents cascade"
+        },
+        {
+          "id": "exact_duplicate",
+          "action": "deduplicate",
+          "description": "Collapse identical complete source records; count removed copies separately"
+        },
+        {
+          "id": "recompute:wastage_cost",
+          "action": "repair",
+          "description": "Recompute derived value as round(quantity_wasted * unit_cost, 2) after validation"
+        }
+      ],
+      "accepted_path": "hdfs://localhost:9000/dineq/submission/processed/v2/wastage",
+      "quarantine_path": "hdfs://localhost:9000/dineq/submission/quality/v2/quarantine/wastage",
+      "readback_passed": true
+    }
+  },
+  "count_semantics": "Raw = accepted + quarantined unique source records + removed exact copies. Rule counts overlap; do not sum them.",
+  "elapsed_seconds": 94.952
+}
